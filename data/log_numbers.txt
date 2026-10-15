@@ -1,0 +1,2 @@
+wrote 191 macros and the class table
+figures written to /home/claude/eca-noise-note/code/../note/figures

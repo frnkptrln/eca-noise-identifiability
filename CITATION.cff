@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this note or its data, please cite it as below."
+title: "Rule identifiability in elementary cellular automata under dynamical noise"
+authors:
+  - family-names: Peterlein
+    given-names: Frank
+version: "0.1"
+date-released: "2026-10-15"
+type: dataset
+repository-code: "https://github.com/frnkptrln/eca-noise-identifiability"
+license: CC-BY-4.0
+keywords:
+  - elementary cellular automata
+  - identifiability
+  - dynamical noise
+  - relative entropy
+  - exact computation
+# doi: to be added after the Zenodo deposit
