@@ -10,8 +10,15 @@ date-released: "2026-10-15"
 type: dataset
 repository-code: "https://github.com/frnkptrln/eca-noise-identifiability"
 license: CC-BY-4.0
-doi: 10.5281/zenodo.23399101
-url: "https://doi.org/10.5281/zenodo.23399101"
+doi: 10.5281/zenodo.23399100
+url: "https://doi.org/10.5281/zenodo.23399100"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23399100
+    description: "Concept DOI, resolves to the latest version"
+  - type: doi
+    value: 10.5281/zenodo.23399101
+    description: "Version 0.1"
 keywords:
   - elementary cellular automata
   - identifiability

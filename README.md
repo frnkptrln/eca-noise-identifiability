@@ -12,9 +12,9 @@ corrupted by independent bit flips with probability ε per cell and step.
 * `VERIFICATION.md` — report of the independent verification session (its findings A1–A10 are fixed in this version)
 * `reproduce.sh` — regenerates `data/`, the figures, `note/numbers.tex`, `note/table_classes.tex` and the PDF
 
-Repository: https://github.com/frnkptrln/eca-noise-identifiability · DOI (v0.1): https://doi.org/10.5281/zenodo.23399101 · License: CC BY 4.0 (`LICENSE`), covering the note, the data and the code.
+Repository: https://github.com/frnkptrln/eca-noise-identifiability · DOI: https://doi.org/10.5281/zenodo.23399100 (all versions) · https://doi.org/10.5281/zenodo.23399101 (v0.1) · License: CC BY 4.0 (`LICENSE`), covering the note, the data and the code.
 
-Cite as: Peterlein, F. (2026). *Rule identifiability in elementary cellular automata under dynamical noise* (v0.1). Zenodo. https://doi.org/10.5281/zenodo.23399101
+Cite as: Peterlein, F. (2026). *Rule identifiability in elementary cellular automata under dynamical noise* (v0.1). Zenodo. https://doi.org/10.5281/zenodo.23399100
 
 ## What is computed
 
