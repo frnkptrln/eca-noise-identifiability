@@ -4,15 +4,17 @@ title: "Rule identifiability in elementary cellular automata under dynamical noi
 authors:
   - family-names: Peterlein
     given-names: Frank
+    orcid: "https://orcid.org/0009-0002-1886-1303"
 version: "0.1"
 date-released: "2026-10-15"
 type: dataset
 repository-code: "https://github.com/frnkptrln/eca-noise-identifiability"
 license: CC-BY-4.0
+doi: 10.5281/zenodo.23399101
+url: "https://doi.org/10.5281/zenodo.23399101"
 keywords:
   - elementary cellular automata
   - identifiability
   - dynamical noise
   - relative entropy
   - exact computation
-# doi: to be added after the Zenodo deposit

@@ -1,5 +1,7 @@
 # Rule identifiability in elementary cellular automata under dynamical noise
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23399101.svg)](https://doi.org/10.5281/zenodo.23399101)
+
 Exact computation (no sampling, no seeds) of how well the rule of an elementary cellular
 automaton on a ring of 12 cells can be identified from a trajectory when the dynamics is
 corrupted by independent bit flips with probability ε per cell and step.
@@ -10,7 +12,9 @@ corrupted by independent bit flips with probability ε per cell and step.
 * `VERIFICATION.md` — report of the independent verification session (its findings A1–A10 are fixed in this version)
 * `reproduce.sh` — regenerates `data/`, the figures, `note/numbers.tex`, `note/table_classes.tex` and the PDF
 
-Repository: https://github.com/frnkptrln/eca-noise-identifiability · License: CC BY 4.0 (`LICENSE`), covering the note, the data and the code.
+Repository: https://github.com/frnkptrln/eca-noise-identifiability · DOI (v0.1): https://doi.org/10.5281/zenodo.23399101 · License: CC BY 4.0 (`LICENSE`), covering the note, the data and the code.
+
+Cite as: Peterlein, F. (2026). *Rule identifiability in elementary cellular automata under dynamical noise* (v0.1). Zenodo. https://doi.org/10.5281/zenodo.23399101
 
 ## What is computed
 

@@ -3,8 +3,19 @@
   "upload_type": "publication",
   "publication_type": "preprint",
   "description": "Exact computation (no sampling, no seeds) of rule identifiability in elementary cellular automata on a ring of 12 cells under dynamical bit-flip noise: zero-noise consistency classes for all 256 rules x 4096 initial states, the identifiability rate rho(f; eps) = lambda(eps) min_c nu_c(f; eps) for all 88 rule classes on a noise grid with the best noise level eps* per class, finite-horizon evidence margins from every initial state, and a boundary check with radius-2 generators. Includes code, data files with a SHA-256 manifest, and the note as PDF.",
-  "creators": [{"name": "Peterlein, Frank"}],
-  "keywords": ["elementary cellular automata", "identifiability", "dynamical noise", "relative entropy", "exact computation"],
+  "creators": [
+    {
+      "name": "Peterlein, Frank",
+      "orcid": "0009-0002-1886-1303"
+    }
+  ],
+  "keywords": [
+    "elementary cellular automata",
+    "identifiability",
+    "dynamical noise",
+    "relative entropy",
+    "exact computation"
+  ],
   "version": "0.1",
   "language": "eng",
   "access_right": "open",
