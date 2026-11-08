@@ -140,3 +140,23 @@ def test_BUG3_single_worker_gth_runs_in_process(monkeypatch):
     import inspect
     src = inspect.getsource(verify_n12.gth_check)
     assert "if workers <= 1" in src
+
+
+def test_checker_accepts_valid_and_rejects_tampered_certificates():
+    import copy
+    for rule, n in ((232, 8), (106, 8), (0, 6), (76, 9)):
+        c0 = cert.make_certificate(fwlib.classify(rule, n))
+        assert check_cert.check(c0) == []
+        bad = copy.deepcopy(c0); bad["gamma"][0] += 1
+        assert check_cert.check(bad)
+        bad = copy.deepcopy(c0); bad["kstar"] = c0["kstar"] + 1
+        assert check_cert.check(bad)
+        bad = copy.deepcopy(c0); bad["k_c"][7]["k"] += 1
+        assert check_cert.check(bad)
+        if c0["m"] > 1:
+            bad = copy.deepcopy(c0)
+            X = next(i for i, v in enumerate(bad["hierarchy"]["y"]) if v > 0)
+            bad["hierarchy"]["y"][X] += 1
+            assert check_cert.check(bad)
+        bad = copy.deepcopy(c0); bad["cycles"] = bad["cycles"][:-1] if c0["m"] > 1 else [[0, 1]]
+        assert check_cert.check(bad) if c0["m"] > 1 else True

@@ -1,0 +1,13 @@
+968 jobs (0 in checkpoint)
+[88/968] n=4 rule=232 0.002s 71.5MB at 9s
+[176/968] n=5 rule=232 0.002s 73.4MB at 19s
+[264/968] n=6 rule=232 0.002s 71.8MB at 29s
+[352/968] n=7 rule=232 0.003s 70.5MB at 39s
+[440/968] n=8 rule=232 0.005s 73.7MB at 49s
+[528/968] n=9 rule=232 0.007s 73.6MB at 59s
+[616/968] n=10 rule=232 0.013s 71.4MB at 69s
+[704/968] n=11 rule=232 0.022s 71.5MB at 79s
+[792/968] n=12 rule=232 0.058s 71.6MB at 90s
+[880/968] n=13 rule=232 0.107s 71.5MB at 103s
+[968/968] n=14 rule=232 0.298s 75.6MB at 122s
+done in 122s; table has 968 rows

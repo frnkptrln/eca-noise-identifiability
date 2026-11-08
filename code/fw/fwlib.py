@@ -278,7 +278,7 @@ class EdgeStore:
         key = (r, L)
         c = self._cache.get(key)
         if c is None:
-            c = np.flatnonzero(self.vrows[r] == L).astype(np.int64)
+            c = np.flatnonzero(self.vrows[r] == L).astype(np.int32)   # int32: halves cache memory
             self._cache[key] = c
         return c
 
