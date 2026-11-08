@@ -237,7 +237,7 @@ def main():
     w(f"- **(a) High-precision stationary laws.** GTH elimination (subtraction-free) at ε = 10^-3 … 10^-12 for all 256 rules, n = {ver['a_nmin']}..{ver['a_nmax']} "
       f"({ver['a_rows']} (rule, n) pairs): the slope of log π_ε(x) between the two smallest noise levels equals the predicted integer order for every state "
       f"(largest deviation {ver['a_devpi']}), and likewise for every ν_c (largest deviation {ver['a_devnu']}); {ver['a_fail']} failures. "
-      "The task asked for n ≤ 8; n = 9, 10 were affordable. n = 11 was stopped on the load budget.")
+      "The task asked for n ≤ 8. A first run was launched up to n = 11 without stating that scope change or its cost (n = 11 is about 90% of it); it was stopped on the author's instruction and rerun for n ≤ 10.")
     w(f"- **(a') Exact trees.** Minimum in-trees on the full state graph, {ver['t_rows']} (n, rule, method) rows, {ver['t_mis']} mismatching states; "
       f"min W = min γ in every case: {ver['t_wmin']}.")
     w(f"- **(b) n = 12 against v0.1's trend.** {int(c12.agree.sum())}/88 agree; the exception (class {lst(fl_rules)}) is explained in Section 5 by GTH solves at n = 12 down to "

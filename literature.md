@@ -84,7 +84,7 @@ Prepared for the v0.2 report of "Rule identifiability in elementary cellular aut
 |---|---|---|
 | Young93 | H. P. Young, "The evolution of conventions", Econometrica 61(1) (1993) 57–84. DOI 10.2307/2951778 | title via DOI only |
 | KMR93 | M. Kandori, G. Mailath, R. Rob, "Learning, mutation, and long run equilibria in games", Econometrica 61(1) (1993) 29–56. DOI 10.2307/2951777 | title only |
-| Ell93 | G. Ellison, "Learning, local interaction, and coordination", Econometrica 61(5) (1993) 1047–1071. DOI 10.2307/2951493 | title only. Players on a circle interacting with neighbours: closest to an ECA setting in economics, but content unverified |
+| Ell93 | G. Ellison, "Learning, local interaction, and coordination", Econometrica 61(5) (1993) 1047–1071. DOI 10.2307/2951493 | full PDF was retrieved by the literature session but not text-extracted or read (correction added after review); content unverified. Players on a circle interacting with neighbours: closest to an ECA setting in economics, but content unverified |
 | Ell00 | G. Ellison, "Basins of attraction, long-run stochastic stability, and the speed of step-by-step evolution", Rev. Econ. Stud. 67 (2000) 17–45 | not retrieved; DOI unverified |
 | FW12 | M. I. Freidlin, A. D. Wentzell, Random Perturbations of Dynamical Systems, 3rd ed., Springer 2012, ch. 6 "Markov perturbations on large time intervals". DOI 10.1007/978-3-642-25847-3_6 | chapter title only |
 | VF70 | A. D. Ventcel, M. I. Freidlin, "On small random perturbations of dynamical systems", Russian Math. Surveys 25(1) (1970) 1–55. DOI 10.1070/RM1970v025n01ABEH001254 | title; MCTT attribution via [PT18] |
