@@ -68,6 +68,12 @@ def witness_path(F, n, sources, target_mask):
     return traj, res
 
 
+def bijective_certificate(rule, n, F):
+    """F bijective => P(x, y) = K(F(x), y) is doubly stochastic, the uniform law is stationary for every
+    eps, every state is on a cycle and ord pi(x) = 0 for all x; every code occurs, so k* = 0."""
+    return dict(rule=rule, n=n, bijective=True, kstar=0, k_c=[dict(code=c, k=0) for c in range(8)])
+
+
 def make_certificate(res, max_trees=None):
     cs, H = res["cs"], res["H"]
     n, F = cs.n, cs.F
@@ -118,8 +124,18 @@ def make_certificate(res, max_trees=None):
 
 
 def write(cert, path):
+    """Write gzip-compressed JSON atomically (path should end in .json.gz)."""
+    import gzip
     tmp = path + ".tmp"
-    with open(tmp, "w") as fh:
-        json.dump(cert, fh, separators=(",", ":"))
-        fh.flush(); os.fsync(fh.fileno())
+    with open(tmp, "wb") as raw:
+        with gzip.GzipFile(fileobj=raw, mode="wb", mtime=0) as fh:     # mtime=0: byte-reproducible
+            fh.write(json.dumps(cert, separators=(",", ":"), sort_keys=True).encode())
+        raw.flush(); os.fsync(raw.fileno())
     os.replace(tmp, path)
+
+
+def read(path):
+    import gzip
+    op = gzip.open if path.endswith(".gz") else open
+    with op(path, "rt") as fh:
+        return json.load(fh)

@@ -4,7 +4,7 @@ Uses only numpy/scipy and the definitions: its own successor map, its own cycle 
 minimum resistances V(C, C') and R(C -> D_c) by Dijkstra (scipy.sparse.csgraph) on the explicit
 two-layer graph (state x -> pre-noise point F(x) at cost 0; pre-noise z -> z XOR e_i at cost 1;
 pre-noise z -> state z at cost 0). It accepts a certificate only if all upper and lower bounds
-coincide. Usage: python3 check_cert.py data/fw_certificates_n12/rule_*.json
+coincide. Usage: python3 check_cert.py data/fw_certificates_n12/rule_*.json.gz
 """
 import json, sys
 import numpy as np
@@ -31,10 +31,17 @@ def codes_of(n):
 
 
 def check(cert):
-    rule, n, m = cert["rule"], cert["n"], cert["m"]
+    rule, n = cert["rule"], cert["n"]
     S = 1 << n
     F = succ(rule, n)
     errs = []
+    if cert.get("bijective"):
+        if len(np.unique(F)) != S:
+            errs.append("claimed bijective, but F is not")
+        if any(item["k"] != 0 for item in cert["k_c"]) or cert["kstar"] != 0:
+            errs.append("bijective rule must have all k_c = 0")
+        return errs
+    m = cert["m"]
     # cycles: each listed cycle is a cycle of F; together they are all cycle states
     img = np.arange(S)
     for _ in range(S):                      # image of F^t stabilises on the cycle states
@@ -77,12 +84,13 @@ def check(cert):
     yv = np.array([y for _, y in sets], dtype=np.int64)
     for k, (mem, _) in enumerate(sets):
         Mem[k, list(mem)] = True
-    # laminarity
-    for a in range(len(sets)):
-        for b in range(a + 1, len(sets)):
-            ia = Mem[a] & Mem[b]
-            if ia.any() and not ((ia == Mem[a]).all() or (ia == Mem[b]).all()):
-                errs.append("dual family not laminar"); break
+    # laminarity: every pairwise intersection is empty or one of the two sets
+    Mi = Mem.astype(np.float64)
+    inter = Mi @ Mi.T
+    size = Mem.sum(axis=1)
+    lam_ok = (inter == 0) | (inter == size[:, None]) | (inter == size[None, :])
+    if not lam_ok.all():
+        errs.append("dual family not laminar")
     # sum over sets containing j but not i  <=  V[j, i]
     inc = Mem.T.astype(np.int64) * yv[None, :]            # (m, sets)
     load = inc @ (~Mem).astype(np.int64)                  # load[j, i] = sum_{S: j in S, i not in S} y_S
@@ -158,7 +166,8 @@ def check(cert):
 if __name__ == "__main__":
     bad = 0
     for p in sys.argv[1:]:
-        e = check(json.load(open(p)))
+        import gzip
+        e = check(json.load(gzip.open(p, "rt") if p.endswith(".gz") else open(p)))
         if e:
             bad += 1
             print(p, "FAILED:", "; ".join(e))

@@ -94,10 +94,18 @@ def gth_check(rules, eps_list, cache_dir, workers=2):
     fn = lambda r, e: os.path.join(cache_dir, f"n12_r{r}_e{e:.0e}.npy")
     jobs = [(r, e, fn(r, e)) for r in rules for e in eps_list if not os.path.exists(fn(r, e))]
     print(f"{len(jobs)} GTH solves at n = 12", flush=True)
-    from multiprocessing import Pool
-    with Pool(workers) as pool:
-        for r, e, dt in pool.imap_unordered(_solve, jobs):
-            print(f"rule {r} eps {e:g}: {dt:.0f}s", flush=True)
+    # BUG-3: a Pool started from a script read on stdin hangs on macOS (spawn cannot re-import
+    # __main__); with one worker, solve in-process.
+    if workers <= 1:
+        it = map(_solve, jobs)
+    else:
+        from multiprocessing import Pool
+        pool = Pool(workers)
+        it = pool.imap_unordered(_solve, jobs)
+    for r, e, dt in it:
+        print(f"rule {r} eps {e:g}: {dt:.0f}s", flush=True)
+    if workers > 1:
+        pool.close(); pool.join()
     cnt = np.zeros((1 << N, 8), dtype=np.int64)
     x = np.arange(1 << N)
     for i in range(N):
@@ -126,8 +134,16 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--gth", default="", help="comma-separated rules for the n = 12 GTH check")
     ap.add_argument("--workers", type=int, default=2)
+    ap.add_argument("--eps", default="1e-4,1e-5,1e-6,1e-7")
+    ap.add_argument("--out", default="fw_n12_gth.csv")
     a = ap.parse_args()
     t0 = time.time()
+    if a.gth and a.out != "fw_n12_gth.csv":       # extra GTH runs only
+        rules = [int(v) for v in a.gth.split(",")]
+        g = gth_check(rules, [float(v) for v in a.eps.split(",")], os.path.join(DATA, "cache", "gth12"), a.workers)
+        g.to_csv(os.path.join(DATA, a.out), index=False)
+        print(g.to_string(index=False))
+        return
     df = all_rules()
     df.to_csv(os.path.join(DATA, "fw_n12_all_rules.csv"), index=False)
     ch = checks(df)
@@ -140,8 +156,8 @@ def main():
           f"{tr[tr.agree == 0].rule.tolist()}; {time.time()-t0:.0f}s", flush=True)
     if a.gth:
         rules = [int(v) for v in a.gth.split(",")]
-        g = gth_check(rules, [1e-4, 1e-5, 1e-6, 1e-7], os.path.join(DATA, "cache", "gth12"), a.workers)
-        g.to_csv(os.path.join(DATA, "fw_n12_gth.csv"), index=False)
+        g = gth_check(rules, [float(v) for v in a.eps.split(",")], os.path.join(DATA, "cache", "gth12"), a.workers)
+        g.to_csv(os.path.join(DATA, a.out), index=False)
         print(g[["rule", "kstar_pred", "k_c_pred", "k_c_obs", "max_dev_pi_last", "max_dev_nu_last", "nu_min_at"]].to_string(index=False))
 
 

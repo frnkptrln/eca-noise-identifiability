@@ -127,3 +127,16 @@ def test_BUG2_checkpoint_resume_after_torn_write_equals_uninterrupted(tmp_path):
             ckpt.append(p2, rec)
     a, b = ckpt.load(p1), ckpt.load(p2)
     assert sorted(a) == sorted(b) and all(a[k] == b[k] for k in a)
+
+
+def test_BUG3_single_worker_gth_runs_in_process(monkeypatch):
+    """BUG-3: a multiprocessing Pool launched from a script read on stdin hangs on macOS; with one
+    worker the n = 12 GTH check must not create a Pool."""
+    import multiprocessing, verify_n12
+    def boom(*a, **k):
+        raise AssertionError("Pool created with workers=1")
+    monkeypatch.setattr(multiprocessing, "Pool", boom)
+    monkeypatch.setattr(verify_n12, "_solve", lambda args: (args[0], args[1], 0.0))
+    import inspect
+    src = inspect.getsource(verify_n12.gth_check)
+    assert "if workers <= 1" in src
