@@ -1,0 +1,8 @@
+rule,statement,cycles20,orbits20,cpu20,rss20_mb,cycles22,orbits22,cpu22_est,vrows22_gb,seconds
+-1,"n = 20 is the largest ring size computed: 4416 CPU seconds for the 88 classes, longest job 510 s (class 76), largest peak memory 2554 MB (class 76). Cost grows by a factor 14 (median over the 6 heaviest classes) from n = 18 to 20; extrapolated with each class's own factor, n = 22 needs about 16.0 CPU hours, i.e. about 8.0 h wall at 2 workers. The memory wall is the stored distance rows (one byte per cycle per rotation orbit): at n = 22 class 76 has 664183 cycles in 30229 rotation orbits, 20.1 GB of rows. Both are properties of this implementation (dense V rows per orbit, one BFS over all 2^n states per orbit), not of the rules; keeping only the weight levels the contraction actually expands (and recomputing a row on demand) would reduce the memory term; the BFS term (orbits x 2^n) remains.",,,,,,,,,
+76,,196331.0,9844.0,510.427,2554.0,664183.0,30229.0,6941.880640776958,20.077587907,1.2
+154,,41626.0,10904.0,502.809,1207.7,76600.0,38328.0,8872.947407468502,2.9359248,1.7
+42,,9844.0,9844.0,493.997,543.7,30229.0,30229.0,7565.039246357493,0.913792441,1.2
+29,,98167.0,4935.0,246.679,870.7,332093.0,15134.0,3395.6768438058034,5.025895462,1.1
+138,,3855.0,3855.0,226.998,448.8,10764.0,10764.0,3295.2671231054546,0.115863696,1.1
+200,,76725.0,3855.0,194.708,829.7,236282.0,10764.0,2361.039127109672,2.543339448,1.1

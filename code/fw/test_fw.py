@@ -142,7 +142,8 @@ def test_BUG3_single_worker_gth_runs_in_process(monkeypatch):
     assert "if workers <= 1" in src
 
 
-def test_checker_accepts_valid_and_rejects_tampered_certificates():
+def test_BUG4_checker_accepts_valid_and_rejects_tampered_certificates():
+    """BUG-4: the checker crashed (instead of rejecting) on a certificate with a truncated cycle list or with a k* inconsistent with its other fields."""
     import copy
     for rule, n in ((232, 8), (106, 8), (0, 6), (76, 9)):
         c0 = cert.make_certificate(fwlib.classify(rule, n))
@@ -160,3 +161,10 @@ def test_checker_accepts_valid_and_rejects_tampered_certificates():
             assert check_cert.check(bad)
         bad = copy.deepcopy(c0); bad["cycles"] = bad["cycles"][:-1] if c0["m"] > 1 else [[0, 1]]
         assert check_cert.check(bad) if c0["m"] > 1 else True
+
+
+def test_PERF3_certificate_size_linear_in_cycles():
+    """PERF-3: one explicit in-tree per noise-selected cycle made certificates quadratic in the number of cycles (rule 76 at n = 13: 422 s); the hierarchy certificate covers all roots at once."""
+    t0 = time.time()
+    c = cert.make_certificate(fwlib.classify(76, 12))
+    assert time.time() - t0 < 3.0 and "trees" not in c and len(c["tree"]["parent"]) == c["m"]

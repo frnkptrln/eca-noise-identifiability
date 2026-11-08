@@ -41,6 +41,14 @@ Cite as: Peterlein, F. (2026). *Rule identifiability in elementary cellular auto
 About two hours on two CPU cores; `pdflatex` is needed for the PDF. Every number in the note
 is a LaTeX macro written by `code/make_numbers.py` from the CSV files — nothing is typed by hand.
 
+## Proposed v0.2: noise-selected cycles (branch `noise-selected-cycles`)
+
+* `report.md` — exact small-noise orders: noise-selected cycles, k_c and k* for all 88 classes at n = 12 and n = 4..20, with certificates, verification and the comparison with v0.1
+* `PREDICTIONS.md` — predictions sealed before the solver was written (first commit of the branch)
+* `literature.md` — literature note with read/not-read status per source
+* `note/note_v0.2.tex`, `note/note_v0.2.diff`, `note/numbers_v02.tex` — proposed v0.2 of the note (v0.1 files unchanged)
+* `code/fw/` — solver, verifiers, certificate checker, tests; `reproduce_v02.sh` regenerates the v0.2 data and report (run after `reproduce.sh`)
+
 ## Conventions
 
 States are integers 0..4095, bit i is cell i (indices mod 12). A rule is its Wolfram number:
