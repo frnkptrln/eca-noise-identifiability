@@ -4,3 +4,5 @@ note/*.aux
 note/*.log
 note/*.out
 note/*.toc
+data/cache/
+.DS_Store

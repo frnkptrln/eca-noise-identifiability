@@ -1,0 +1,7 @@
+256/1536 at 1s
+512/1536 at 5s
+768/1536 at 60s
+1024/1536 at 400s
+1280/1536 at 402s
+1536/1536 at 410s
+wall 410s rows 2392 total mismatching states 0 Wmin==gmin everywhere True nx rows 856 hier rows 1536
