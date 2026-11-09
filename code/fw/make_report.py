@@ -171,7 +171,7 @@ def readme_block(ci, nmin, nmax, vary_nmin, nvary):
            f"for n ≥ {vary_nmin}, {nvary} classes change side with n; verification and the comparison with v0.1\n"
            "* `PREDICTIONS.md` — predictions sealed before the solver was written (first commit of the branch)\n"
            "* `literature.md` — literature note with read/not-read status per source\n"
-           "* `note/note_v0.2.tex`, `note/note_v0.2.diff`, `note/numbers_v02.tex`, `note/table_classes_v02.tex` — proposed v0.2 of the note (v0.1 files unchanged)\n"
+           "* `note/note_v0.2.tex`, `note/note_v0.2.diff`, `note/numbers_v02.tex`, `note/table_classes_v02.tex` — v0.2 of the note, built as `note/note_v0.2.pdf` (v0.1 files unchanged)\n"
            "* `code/fw/` — solver, verifiers, certificate checker, tests; `reproduce_v02.sh` regenerates the v0.2 data and report from scratch "
            "(run after `reproduce.sh`; `REUSE_CHECKPOINTS=1` resumes from the committed sweep checkpoint and the GTH caches instead)\n"
            "* `VERIFICATION_v02.md`, `verify_v02/` — independent verification of v0.2 (own code, sealed sample, outputs, logs) and how each finding was handled\n"

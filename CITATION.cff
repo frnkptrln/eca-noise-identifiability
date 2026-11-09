@@ -5,8 +5,8 @@ authors:
   - family-names: Peterlein
     given-names: Frank
     orcid: "https://orcid.org/0009-0002-1886-1303"
-version: "0.1"
-date-released: "2026-10-15"
+version: "0.2"
+date-released: "2026-11-09"
 type: dataset
 repository-code: "https://github.com/frnkptrln/eca-noise-identifiability"
 license: CC-BY-4.0

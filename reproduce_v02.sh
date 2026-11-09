@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Proposed v0.2: noise-selected cycles and small-noise orders. Run after reproduce.sh (v0.1, unchanged).
+# v0.2: noise-selected cycles and small-noise orders. Run after reproduce.sh (v0.1, unchanged).
 # Worker count: WORKERS (default 2). Approximate wall time at 2 workers on a laptop: about 1.5 h,
 # dominated by the GTH stage (10 min) and the sweep at n = 19, 20 (47 min).
 # By default everything is recomputed from scratch: the committed sweep checkpoint data/fw_sweep.jsonl and the
