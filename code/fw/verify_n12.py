@@ -126,6 +126,8 @@ def gth_check(rules, eps_list, cache_dir, workers=2):
                          max_dev_pi_first=float(np.abs(sl_pi[0] - ordp).max()),
                          max_dev_nu_last=float(np.abs(sl_nu[-1] - res["k_c"]).max()),
                          nu_min_at=" ".join(f"{v:.6g}" for v in nus.min(axis=1)),
+                         # VER-12: full precision, for secants between neighbouring noise levels
+                         nu_min_full=" ".join(repr(float(v)) for v in nus.min(axis=1)),
                          eps=" ".join(f"{e:g}" for e in eps_list)))
     return pd.DataFrame(rows)
 

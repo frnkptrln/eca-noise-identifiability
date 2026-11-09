@@ -1,6 +1,7 @@
 """Regression tests for the small-noise solver (run: python3 -m pytest -q code/fw/test_fw.py).
 
-Every bug found during development has a test here, marked BUG-n with a one-line description."""
+Every bug found during development has a test here, marked BUG-n with a one-line description; findings of the
+independent verification (VERIFICATION_v02.md) that concern code or generated text are marked VER-n (n = finding number)."""
 import itertools, json, os, sys, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np
@@ -161,6 +162,41 @@ def test_BUG4_checker_accepts_valid_and_rejects_tampered_certificates():
             assert check_cert.check(bad)
         bad = copy.deepcopy(c0); bad["cycles"] = bad["cycles"][:-1] if c0["m"] > 1 else [[0, 1]]
         assert check_cert.check(bad) if c0["m"] > 1 else True
+
+
+def test_VER2_dagger_marks_local_maxima_including_class_106():
+    """VER-2: the class table kept v0.1's dagger rule (rising on the grid), so class 106, whose interior maximum is local (k* = 0), had no dagger; the v0.2 table generator also marks interior maxima with k* = 0."""
+    import pandas as pd, make_report
+    c12 = pd.read_csv(os.path.join(make_report.ROOT, "data", "fw_n12_classes.csv"))
+    dag = make_report.table_v02(c12, write=False)
+    assert 106 in dag and 41 in dag
+    assert all(int(c12[c12.rule == r].kstar.iloc[0]) == 0 for r in dag)
+
+
+def test_VER5_power_of_two_criterion_holds_from_n4_and_fails_at_n3():
+    """VER-5: the power-of-two criterion for classes 60 and 90 was stated for all n; it holds for n >= 4 and fails at n = 3 (k* = 1 for both)."""
+    for rule in (60, 90):
+        for n in range(3, 11):
+            k = fwlib.classify(rule, n)["kstar"]
+            assert (k >= 1) == (n in (3, 4, 8)), (rule, n, k)
+
+
+def test_VER9_reproduce_script_recomputes_from_scratch_by_default():
+    """VER-9: reproduce_v02.sh resumed from the committed sweep checkpoint, so the sweep was never recomputed; it now discards the checkpoint and the GTH caches unless REUSE_CHECKPOINTS=1."""
+    src = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "reproduce_v02.sh")).read()
+    guard = src.index('if [ "${REUSE_CHECKPOINTS:-0}" != "1" ]')
+    assert src.index("rm -f data/fw_sweep.jsonl", guard) < src.index("run_sweep.py")
+    assert src.index("rm -rf data/cache", guard) < src.index("verify_stationary.py")
+
+
+def test_VER12_rule106_coefficient_from_secant_at_smallest_eps():
+    """VER-12: the linear coefficient of class 106 was the secant from the largest noise level (1e-4); it is now the secant between the two smallest, from full-precision values."""
+    import pandas as pd, make_report
+    a, c = 0.05, 4000.0
+    eps = [1e-4, 1e-5, 1e-8, 1e-9]
+    g = pd.DataFrame([dict(eps=" ".join(f"{e:g}" for e in eps), nu_min_full=" ".join(repr(a * (1 + c * e + 3e6 * e * e)) for e in eps))])
+    coef, e2, e1 = make_report.coef_106(g)
+    assert abs(coef - c) < 1e-2 * c and (e2, e1) == (1e-8, 1e-9)
 
 
 def test_PERF3_certificate_size_linear_in_cycles():
