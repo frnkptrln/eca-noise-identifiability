@@ -1,0 +1,33 @@
+OK   report s7 per-n counts of k*=0: {4: 16, 5: 26, 6: 22, 7: 30, 8: 24, 9: 27, 10: 30, 11: 32, 12: 28, 13: 30, 14: 30, 15: 27, 16: 25, 17: 32, 18: 29, 19: 30, 20: 30}
+OK   n>=8: all k*=0 20, all k*>=1 55, switching 13 [22, 26, 35, 37, 43, 45, 60, 73, 90, 94, 122, 142, 154]
+OK   SweepVaryRules macro list equals switching set (n>=8)
+DIFF abstract "for n=4..20 ... 13 classes change side with the ring size": classes changing side over n=4..20 = 27: [5, 9, 22, 25, 26, 30, 35, 37, 41, 43, 45, 54, 58, 60, 62, 73, 74, 90, 94, 105, 106, 110, 122, 142, 150, 154, 172]
+OK   5(d) classes differing at some n=4..7 from their n=12 status: 27
+OK   5(c) classes keeping their n=12 classification for every n>=8: 75
+OK   5(e) k*>=1 for all n>=8: 55, constant value: 53; non-constant: [18, 146]
+OK   switching table n-ranges vs fw_sweep.csv: mismatches []
+OK   own pattern labels (n=8..20): 22: none; 26: none; 35: ['k*>=1 iff 3|n']; 37: none; 43: ['k*>=1 iff 4|n']; 45: none; 60: ['k*>=1 iff 8|n', 'k*>=1 iff n power of 2']; 73: none; 90: ['k*>=1 iff 8|n', 'k*>=1 iff n power of 2']; 94: ['k*>=1 iff 3|n']; 122: ['k*=0 iff 4|n']; 142: ['k*>=1 iff 4|n']; 154: ['k*>=1 iff 8|n', 'k*>=1 iff n power of 2']
+OK   report full k* table (88 x 17) vs fw_sweep.csv: mismatching rows []
+OK   own route (b) n=17 class 29: k*=0 vs table 0
+OK   own route (b) n=17 class 4: k*=1 vs table 1
+OK   own route (b) n=17 class 22: k*=0 vs table 0
+OK   own route (b) n=17 class 37: k*=0 vs table 0
+OK   own route (b) n=17 class 72: k*=2 vs table 2
+OK   own route (b) n=20 class 132: k*=1 vs table 1
+OK   own route (b) n=20 class 22: k*=0 vs table 0
+OK   own route (b) n=20 class 37: k*=1 vs table 1
+OK   own route (b) n=20 class 4: k*=1 vs table 1
+OK   own route (b) n=20 class 72: k*=2 vs table 2
+OK   report s5 k* distribution by v0.1 type (own k*): {'B': {1: 29, 2: 5, 3: 8}, 'U-falling': {0: 1, 1: 17, 2: 1}, 'U-rising': {0: 27}}
+OK   46 U classes: 46, k*=0: 28
+OK   agree with v0.1 trend: 87, exceptions [106]
+OK   report s5 table, 88 rows x 9 columns recomputed (v0.1 files + own orders): mismatching rows {}
+OK   class 7: noise-selected cycles (min state, period) [(0, 2)]
+OK   class 19: noise-selected cycles (min state, period) [(0, 2)]
+OK   class 23: noise-selected cycles (min state, period) [(0, 2)]
+OK   class 232: noise-selected cycles (min state, period) [(0, 1), (4095, 1)]
+OK   106 limit of min nu: own 0.047173 (report 0.0472)
+OK   106 linear coefficient b/a: own (secant 1e-8..1e-9) 4062.6; secant from 1e-4: 4102.5 (report "about 4102")
+OK   106 crossing level 10^-56.98 (report about 10^-57)
+OK   106 local maximum: eps*=0.00960, rho*=6.18866 (v0.1: 0.0095, 6.189)
+OK   106 min nu at 1e-4..1e-9 (5 digits): [0.06653, 0.04909, 0.04736, 0.04719, 0.04717, 0.04717]

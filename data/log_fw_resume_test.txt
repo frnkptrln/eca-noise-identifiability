@@ -1,0 +1,5 @@
+resume-equality test (run_sweep.py n=4..11, 88 classes, 2 workers)
+run A uninterrupted: done in 74s; table has 704 rows
+run B killed by timeout after 5 s (46 records checkpointed), then resumed: 658 jobs (46 in checkpoint) / done in 73s; table has 704 rows
+78b6a9a00ce6cb2148be672851c0ac6cc0b9cbedcccdadaf0104271b72f7e550  fw_sweep_resumeA.csv
+78b6a9a00ce6cb2148be672851c0ac6cc0b9cbedcccdadaf0104271b72f7e550  fw_sweep_resumeB.csv

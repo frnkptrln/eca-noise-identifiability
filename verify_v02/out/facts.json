@@ -1,0 +1,603 @@
+{
+ "seed": 20261109,
+ "seed_big": 20262829,
+ "cap": 20000,
+ "n12_drawn": [
+  29,
+  40,
+  43,
+  46,
+  62,
+  90,
+  105,
+  122,
+  140,
+  170
+ ],
+ "n17": [
+  4,
+  22,
+  37,
+  72,
+  29
+ ],
+ "n20": [
+  4,
+  22,
+  37,
+  72,
+  132
+ ],
+ "m17_max": 15777,
+ "m20_max": 15128,
+ "exact_n4_classes": 88,
+ "exact_n4_check_ok": 88,
+ "exact_n4_kstar_hist": {
+  "0": 16,
+  "1": 56,
+  "2": 12,
+  "3": 4
+ },
+ "exact_n4_sec": 5.3,
+ "ab_n4_mismatch": [],
+ "exact_n5_classes": 88,
+ "exact_n5_check_ok": 88,
+ "exact_n5_kstar_hist": {
+  "0": 26,
+  "1": 48,
+  "2": 7,
+  "3": 7
+ },
+ "exact_n5_sec": 117.8,
+ "ab_n5_mismatch": [],
+ "gth12_solves": 120,
+ "gth12_maxres": 6.001566656318311e-14,
+ "gth12_sec_max": 6.45,
+ "ab_n12_mismatch": [],
+ "ab_n12_slope_dev": 0.001656315147322867,
+ "ab_n12_kstar": {
+  "7": 1,
+  "19": 1,
+  "22": 0,
+  "23": 1,
+  "30": 0,
+  "41": 0,
+  "106": 0,
+  "108": 0,
+  "200": 1,
+  "232": 1,
+  "29": 0,
+  "40": 3,
+  "43": 1,
+  "46": 1,
+  "62": 0,
+  "90": 0,
+  "105": 0,
+  "122": 0,
+  "140": 1,
+  "170": 0
+ },
+ "big": [
+  {
+   "n": 17,
+   "rule": 4,
+   "m": 3571,
+   "k_c": "[0, 0, 0, 1, 0, 0, 1, 1]",
+   "kstar": 1,
+   "sel": 3571,
+   "sec": 8.01,
+   "rss": 341.6,
+   "consistent": true
+  },
+  {
+   "n": 17,
+   "rule": 22,
+   "m": 52,
+   "k_c": "[0, 0, 0, 0, 0, 0, 0, 0]",
+   "kstar": 0,
+   "sel": 35,
+   "sec": 0.08,
+   "rss": 341.6,
+   "consistent": true
+  },
+  {
+   "n": 17,
+   "rule": 29,
+   "m": 15777,
+   "k_c": "[0, 0, 0, 0, 0, 0, 0, 0]",
+   "kstar": 0,
+   "sel": 15777,
+   "sec": 334.05,
+   "rss": 4177.3,
+   "consistent": true
+  },
+  {
+   "n": 17,
+   "rule": 37,
+   "m": 349,
+   "k_c": "[0, 0, 0, 0, 0, 0, 0, 0]",
+   "kstar": 0,
+   "sel": 348,
+   "sec": 0.46,
+   "rss": 341.6,
+   "consistent": true
+  },
+  {
+   "n": 17,
+   "rule": 72,
+   "m": 664,
+   "k_c": "[0, 1, 1, 1, 1, 2, 1, 2]",
+   "kstar": 2,
+   "sel": 1,
+   "sec": 1.04,
+   "rss": 341.6,
+   "consistent": true
+  },
+  {
+   "n": 20,
+   "rule": 4,
+   "m": 15127,
+   "k_c": "[0, 0, 0, 1, 0, 0, 1, 1]",
+   "kstar": 1,
+   "sel": 15127,
+   "sec": 642.8,
+   "rss": 4050.6,
+   "consistent": true
+  },
+  {
+   "n": 20,
+   "rule": 22,
+   "m": 170,
+   "k_c": "[0, 0, 0, 0, 0, 0, 0, 0]",
+   "kstar": 0,
+   "sel": 136,
+   "sec": 6.13,
+   "rss": 3951.6,
+   "consistent": true
+  },
+  {
+   "n": 20,
+   "rule": 37,
+   "m": 1046,
+   "k_c": "[0, 0, 1, 0, 0, 1, 0, 0]",
+   "kstar": 1,
+   "sel": 895,
+   "sec": 25.33,
+   "rss": 3951.6,
+   "consistent": true
+  },
+  {
+   "n": 20,
+   "rule": 72,
+   "m": 2090,
+   "k_c": "[0, 1, 1, 1, 1, 2, 1, 2]",
+   "kstar": 2,
+   "sel": 1,
+   "sec": 54.31,
+   "rss": 4050.6,
+   "consistent": true
+  },
+  {
+   "n": 20,
+   "rule": 132,
+   "m": 15128,
+   "k_c": "[0, 0, 0, 1, 0, 0, 1, 1]",
+   "kstar": 1,
+   "sel": 15127,
+   "sec": 659.33,
+   "rss": 3951.6,
+   "consistent": true
+  }
+ ],
+ "reduction_validated_pairs": 792,
+ "reduction_validated_bad": 0,
+ "compare_data": [
+  "fw_sweep.csv: compared 802 (n, class) pairs (n=4..12 all 88, n=17/20 sample); mismatches: 0",
+  "fw_n12_classes.csv: 88 classes, k_c/k*/cycles mismatches []",
+  "fw_n12_all_rules.csv: 256 rules, k* and multiset of k_c vs representative: mismatches []",
+  "fw_n12_all_rules.csv: all 256 rules recomputed by route (b): k_c/k*/cycles mismatches []",
+  "fw_n12_gth.csv rules: [106, 7, 19, 23, 232, 41, 200, 30, 22, 108]",
+  "  rule 106: nu_min file [0.0665254, 0.0490911, 0.0473644, 0.0471919] vs mine [0.0665254, 0.0490911, 0.0473644, 0.0471919]",
+  "  rule 7: nu_min file [0.000600899, 6.0009e-05, 6.00009e-06, 6.00001e-07] vs mine [0.000600899, 6.0009e-05, 6.00009e-06, 6.00001e-07]",
+  "  rule 19: nu_min file [0.00060006, 6.00006e-05, 6.00001e-06, 6e-07] vs mine [0.00060006, 6.00006e-05, 6.00001e-06, 6e-07]",
+  "  rule 23: nu_min file [0.000600024, 6.00002e-05, 6e-06, 6e-07] vs mine [0.000600024, 6.00002e-05, 6e-06, 6e-07]",
+  "  rule 232: nu_min file [0.000600024, 6.00002e-05, 6e-06, 6e-07] vs mine [0.000600024, 6.00002e-05, 6e-06, 6e-07]",
+  "  rule 41: nu_min file [0.230434, 0.228056, 0.227817, 0.227793] vs mine [0.230434, 0.228056, 0.227817, 0.227793]",
+  "  rule 200: nu_min file [1.35732e-05, 1.31971e-06, 1.31594e-07, 1.31557e-08] vs mine [1.35732e-05, 1.31971e-06, 1.31594e-07, 1.31557e-08]",
+  "  rule 30: nu_min file [1.0887, 1.06684, 1.06456, 1.06433] vs mine [1.0887, 1.06684, 1.06456, 1.06433]",
+  "  rule 22: nu_min file [0.30917, 0.307352, 0.307169, 0.307151] vs mine [0.30917, 0.307352, 0.307169, 0.307151]",
+  "  rule 108: nu_min file [0.215483, 0.214958, 0.214905, 0.2149] vs mine [0.215483, 0.214958, 0.214905, 0.2149]"
+ ],
+ "fw_sweep_pairs": 802,
+ "fw_sweep_bad": 0,
+ "cert12": 88,
+ "cert12_ok": 88,
+ "cert12_stubs": 4,
+ "cert12_stub_rules": [
+  15,
+  51,
+  170,
+  204
+ ],
+ "certsw": 898,
+ "certsw_ok": 898,
+ "cert_max_m": 5071,
+ "cert_nrange": [
+  4,
+  14
+ ],
+ "cert_sec": 10.9,
+ "cert_firstpass_fail": 179,
+ "tamper_n": 29,
+ "tamper_accepted": 0,
+ "tamper_kinds": [
+  "cycle dropped",
+  "explicit tree self-loop",
+  "gamma - 1",
+  "internal y moved to parent",
+  "k_7 + 1",
+  "kstar + 1",
+  "leaf y + 1",
+  "selected edge head inside its set",
+  "stable set shortened",
+  "witness end state altered"
+ ],
+ "switch_runs": 77,
+ "switch_bad": 0,
+ "switch_sec_max": 226.85,
+ "switch_rss_max": 1274.5,
+ "switch_cpu": 1285,
+ "r106": {
+  "grid": [
+   [
+    0.001,
+    1.7579537061157229,
+    3
+   ],
+   [
+    0.002,
+    2.969824715173975,
+    3
+   ],
+   [
+    0.003,
+    4.01482667257381,
+    3
+   ],
+   [
+    0.005,
+    5.404080917080152,
+    3
+   ],
+   [
+    0.006,
+    5.781267412603026,
+    3
+   ],
+   [
+    0.0065,
+    5.910703243150135,
+    3
+   ],
+   [
+    0.007,
+    6.00871210522746,
+    3
+   ],
+   [
+    0.0075,
+    6.080580256055984,
+    3
+   ],
+   [
+    0.008,
+    6.130897918164081,
+    3
+   ],
+   [
+    0.0085,
+    6.16356728298339,
+    3
+   ],
+   [
+    0.009,
+    6.181856582716874,
+    3
+   ],
+   [
+    0.0094,
+    6.18797156179853,
+    3
+   ],
+   [
+    0.0095,
+    6.188474809947002,
+    3
+   ],
+   [
+    0.0096,
+    6.188601684440357,
+    3
+   ],
+   [
+    0.01,
+    6.185651528264831,
+    3
+   ],
+   [
+    0.0105,
+    6.175213132879755,
+    3
+   ],
+   [
+    0.011,
+    6.158651385773702,
+    3
+   ],
+   [
+    0.0115,
+    6.137182734165887,
+    3
+   ],
+   [
+    0.012,
+    6.111798414930467,
+    3
+   ],
+   [
+    0.0125,
+    6.083306095358601,
+    3
+   ],
+   [
+    0.013,
+    6.052364106830773,
+    3
+   ],
+   [
+    0.02,
+    5.51405415296063,
+    1
+   ],
+   [
+    0.05,
+    3.9673729207066315,
+    1
+   ],
+   [
+    0.1,
+    2.636518255446871,
+    1
+   ],
+   [
+    0.2,
+    1.2476648781897817,
+    3
+   ]
+  ],
+  "eps_star_fit": 0.009599820485564457,
+  "rho_star_fit": 6.188663413931796,
+  "grid_argmax": [
+   0.0096,
+   6.188601684440357
+  ],
+  "fit_points": 5,
+  "rho_left_neighbour_0p001": 1.7579537061157229,
+  "nu_min_small": [
+   [
+    0.0001,
+    0.06652537762787207
+   ],
+   [
+    1e-05,
+    0.04909109751323183
+   ],
+   [
+    1e-06,
+    0.047364413889175866
+   ],
+   [
+    1e-07,
+    0.04719191495683229
+   ],
+   [
+    1e-08,
+    0.04717466675982186
+   ],
+   [
+    1e-09,
+    0.04717294195708553
+   ]
+  ],
+  "rho_small": [
+   [
+    0.0001,
+    0.6125921755128481
+   ],
+   [
+    1e-05,
+    0.5651703521168787
+   ],
+   [
+    1e-06,
+    0.6543622040662357
+   ],
+   [
+    1e-07,
+    0.7606436423781628
+   ],
+   [
+    1e-08,
+    0.8689894577334841
+   ],
+   [
+    1e-09,
+    0.9775774144851986
+   ]
+  ],
+  "a_limit": 0.04717275031233705,
+  "b_linear": 191.6447484811506,
+  "b_over_a": 4062.61553995146,
+  "log10_crossing": -56.975740299886795,
+  "min_rho_on_small_grid": 0.5651703521168787,
+  "k_c_route_b": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "r106_cycles": 37,
+ "r106_selected": 35,
+ "affine_rows": 549,
+ "affine_classes": [
+  0,
+  15,
+  51,
+  60,
+  90,
+  105,
+  150,
+  170,
+  204
+ ],
+ "affine_compare": [
+  "rows file 549 mine 549 joined 549",
+  "kernel_dim mismatches 0",
+  "gen_kernel_dim mismatches 0",
+  "bijective mismatches 0",
+  "bad_characters file == n * mine (per window): 0 mismatches",
+  "kstar_analytic values [np.int64(-1), np.int64(0)] ; file says k*=0 exactly where mine has uniform marginals or bijective: 0 mismatches",
+  "uniform-marginal (or bijective) rows, n<=20: 128"
+ ],
+ "affine_n3": [
+  "n=3 rule 60: cycles 2, k_c [0, 1, 1, 0, 1, 0, 0, 1], k* 1",
+  "n=3 rule 90: cycles 4, k_c [0, 1, 1, 0, 1, 0, 0, 1], k* 1",
+  "n=3 rule 150: cycles 2, k_c [0, 1, 1, 1, 1, 1, 1, 0], k* 1",
+  "n=3 rule 105: cycles 1, k_c [0, 1, 1, 1, 1, 1, 1, 0], k* 1",
+  " n  rule         k_c_obs  kstar_obs  kstar_pred",
+  " 3    60 0-1-1-0-1-0-0-1          1           1",
+  " 3    90 0-1-1-0-1-0-0-1          1           1",
+  " 3   102 0-1-1-0-1-0-0-1          1           1",
+  " 3   105 0-1-1-1-1-1-1-0          1           1",
+  " 3   150 0-1-1-1-1-1-1-0          1           1"
+ ],
+ "aff60_nonuniform": [
+  4,
+  8,
+  16,
+  32,
+  64
+ ],
+ "aff60_nilpotent": [
+  4,
+  8,
+  16,
+  32,
+  64
+ ],
+ "aff90_nonuniform": [
+  4,
+  8,
+  16,
+  32,
+  64
+ ],
+ "aff90_nilpotent": [
+  4,
+  8,
+  16,
+  32,
+  64
+ ],
+ "check_text": [
+  "OK   report s7 per-n counts of k*=0: {4: 16, 5: 26, 6: 22, 7: 30, 8: 24, 9: 27, 10: 30, 11: 32, 12: 28, 13: 30, 14: 30, 15: 27, 16: 25, 17: 32, 18: 29, 19: 30, 20: 30}",
+  "OK   n>=8: all k*=0 20, all k*>=1 55, switching 13 [22, 26, 35, 37, 43, 45, 60, 73, 90, 94, 122, 142, 154]",
+  "OK   SweepVaryRules macro list equals switching set (n>=8)",
+  "DIFF abstract \"for n=4..20 ... 13 classes change side with the ring size\": classes changing side over n=4..20 = 27: [5, 9, 22, 25, 26, 30, 35, 37, 41, 43, 45, 54, 58, 60, 62, 73, 74, 90, 94, 105, 106, 110, 122, 142, 150, 154, 172]",
+  "OK   5(d) classes differing at some n=4..7 from their n=12 status: 27",
+  "OK   5(c) classes keeping their n=12 classification for every n>=8: 75",
+  "OK   5(e) k*>=1 for all n>=8: 55, constant value: 53; non-constant: [18, 146]",
+  "OK   switching table n-ranges vs fw_sweep.csv: mismatches []",
+  "OK   own pattern labels (n=8..20): 22: none; 26: none; 35: ['k*>=1 iff 3|n']; 37: none; 43: ['k*>=1 iff 4|n']; 45: none; 60: ['k*>=1 iff 8|n', 'k*>=1 iff n power of 2']; 73: none; 90: ['k*>=1 iff 8|n', 'k*>=1 iff n power of 2']; 94: ['k*>=1 iff 3|n']; 122: ['k*=0 iff 4|n']; 142: ['k*>=1 iff 4|n']; 154: ['k*>=1 iff 8|n', 'k*>=1 iff n power of 2']",
+  "OK   report full k* table (88 x 17) vs fw_sweep.csv: mismatching rows []",
+  "OK   own route (b) n=17 class 29: k*=0 vs table 0",
+  "OK   own route (b) n=17 class 4: k*=1 vs table 1",
+  "OK   own route (b) n=17 class 22: k*=0 vs table 0",
+  "OK   own route (b) n=17 class 37: k*=0 vs table 0",
+  "OK   own route (b) n=17 class 72: k*=2 vs table 2",
+  "OK   own route (b) n=20 class 132: k*=1 vs table 1",
+  "OK   own route (b) n=20 class 22: k*=0 vs table 0",
+  "OK   own route (b) n=20 class 37: k*=1 vs table 1",
+  "OK   own route (b) n=20 class 4: k*=1 vs table 1",
+  "OK   own route (b) n=20 class 72: k*=2 vs table 2",
+  "OK   report s5 k* distribution by v0.1 type (own k*): {'B': {1: 29, 2: 5, 3: 8}, 'U-falling': {0: 1, 1: 17, 2: 1}, 'U-rising': {0: 27}}",
+  "OK   46 U classes: 46, k*=0: 28",
+  "OK   agree with v0.1 trend: 87, exceptions [106]",
+  "OK   report s5 table, 88 rows x 9 columns recomputed (v0.1 files + own orders): mismatching rows {}",
+  "OK   class 7: noise-selected cycles (min state, period) [(0, 2)]",
+  "OK   class 19: noise-selected cycles (min state, period) [(0, 2)]",
+  "OK   class 23: noise-selected cycles (min state, period) [(0, 2)]",
+  "OK   class 232: noise-selected cycles (min state, period) [(0, 1), (4095, 1)]",
+  "OK   106 limit of min nu: own 0.047173 (report 0.0472)",
+  "OK   106 linear coefficient b/a: own (secant 1e-8..1e-9) 4062.6; secant from 1e-4: 4102.5 (report \"about 4102\")",
+  "OK   106 crossing level 10^-56.98 (report about 10^-57)",
+  "OK   106 local maximum: eps*=0.00960, rho*=6.18866 (v0.1: 0.0095, 6.189)",
+  "OK   106 min nu at 1e-4..1e-9 (5 digits): [0.06653, 0.04909, 0.04736, 0.04719, 0.04717, 0.04717]"
+ ],
+ "check_cost": [
+  "cost table rows mismatching: []",
+  "n=20: CPU sum 4416 s, longest 510.4 s (class 76), peak 2554 MB (class 76)",
+  "cost_expanded values [0 1 2 3 4]",
+  " rule  cycles20  orbits20   cpu20  rss20_mb  cycles22  orbits22   cpu22_est  vrows22_gb  seconds",
+  "   -1       NaN       NaN     NaN       NaN       NaN       NaN         NaN         NaN      NaN",
+  "   76  196331.0    9844.0 510.427    2554.0  664183.0   30229.0 6941.880641   20.077588      1.2",
+  "  154   41626.0   10904.0 502.809    1207.7   76600.0   38328.0 8872.947407    2.935925      1.7",
+  "   42    9844.0    9844.0 493.997     543.7   30229.0   30229.0 7565.039246    0.913792      1.2",
+  "   29   98167.0    4935.0 246.679     870.7  332093.0   15134.0 3395.676844    5.025895      1.1",
+  "  138    3855.0    3855.0 226.998     448.8   10764.0   10764.0 3295.267123    0.115864      1.1",
+  "  200   76725.0    3855.0 194.708     829.7  236282.0   10764.0 2361.039127    2.543339      1.1",
+  "growth factors 18->20 for [76, 154, 42, 29, 138, 200] [13.6, 17.65, 15.31, 13.77, 14.52, 12.13] median 14.14",
+  "sum of cpu22_est in file (6 classes): 32431.850388623883",
+  "all-class n=22 extrapolation with own factor (cpu20 * cpu20/cpu18) summed over 88 classes: 16.0 CPU h",
+  "n=17 class 76 (the class above my cap): their cost 11.8 s, 210 MB"
+ ],
+ "manifest": [
+  "manifest entries 1009 hash mismatches [] missing files []",
+  "tracked files under data/ 1025 ; not in manifest: ['log_finite_horizon.txt', 'log_fw_check_n12_certs.txt', 'log_fw_check_sweep_certs.txt', 'log_fw_gth.txt', 'log_fw_n12_gth.txt', 'log_fw_pytest.txt', 'log_fw_resume_test.txt', 'log_fw_sweep.txt', 'log_fw_verify_trees.txt', 'log_numbers.txt', 'log_radius2.txt', 'log_refine.txt', 'log_stationary_reps.txt', 'log_stationary_rest.txt', 'log_zero_noise.txt']"
+ ],
+ "bag17": [
+  "classes: 88; attractor counts: Table 2 = own = fw_sweep for 88",
+  "S* rebuilt from their Section 5 recipe vs Table 2: max |diff| = 0.0005 (table has 3 decimals)",
+  "single-flip graph: one closed class for 87 classes; several closed classes: [[232, 2, [1, 1]]]",
+  "one closed class: support of their limit law = number of noise-selected cycles in fw_sweep (n_stable) for 87 of 87",
+  "one closed class: (support covers all 8 codes) == (k* = 0 in fw_sweep) for 87 of 87",
+  "own route (b) at n=17 available for 16 classes [4, 22, 26, 29, 35, 37, 43, 45, 60, 72, 73, 90, 94, 122, 142, 154]: support size = own noise-selected count for 16",
+  "class 232: 2 closed classes, their limit support 2 cycles (min states [0, 131071]), fw_sweep n_stable 2, k* 1, cover mask 129"
+ ],
+ "bag_census": [
+  "pairs 1496 max sec 2.25",
+  "n=4: one closed class 82, several 6 [13, 77, 232, 28, 78, 156]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 6/6, k*=0 verdict from their support wrong for []",
+  "n=5: one closed class 87, several 1 [232]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 1/1, k*=0 verdict from their support wrong for []",
+  "n=6: one closed class 81, several 7 [13, 77, 232, 28, 78, 94, 156]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 7/7, k*=0 verdict from their support wrong for []",
+  "n=7: one closed class 87, several 1 [232]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 1/1, k*=0 verdict from their support wrong for []",
+  "n=8: one closed class 81, several 7 [28, 78, 156, 13, 77, 164, 232]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 7/7, k*=0 verdict from their support wrong for []",
+  "n=9: one closed class 86, several 2 [94, 232]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 2/2, k*=0 verdict from their support wrong for []",
+  "n=10: one closed class 82, several 6 [28, 78, 156, 13, 77, 232]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 6/6, k*=0 verdict from their support wrong for []",
+  "n=11: one closed class 87, several 1 [232]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 1/1, k*=0 verdict from their support wrong for []",
+  "n=12: one closed class 81, several 7 [28, 78, 94, 156, 13, 77, 232]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 7/7, k*=0 verdict from their support wrong for []",
+  "n=13: one closed class 87, several 1 [232]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 1/1, k*=0 verdict from their support wrong for []",
+  "n=14: one closed class 82, several 6 [13, 77, 232, 28, 78, 156]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 6/6, k*=0 verdict from their support wrong for []",
+  "n=15: one closed class 86, several 2 [232, 94]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 2/2, k*=0 verdict from their support wrong for []",
+  "n=16: one closed class 81, several 7 [13, 77, 164, 232, 28, 78, 156]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 6/7, k*=0 verdict from their support wrong for []",
+  "n=17: one closed class 87, several 1 [232]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 1/1, k*=0 verdict from their support wrong for []",
+  "n=18: one closed class 81, several 7 [28, 78, 94, 156, 13, 77, 232]; one-class cases inconsistent with fw_sweep: []; several: their limit support size == n_stable for 7/7, k*=0 verdict from their support wrong for []",
+  "n=19: one closed class 87, several 1 [232]; one-class cases inconsistent with fw_sweep: [138]; several: their limit support size == n_stable for 1/1, k*=0 verdict from their support wrong for []",
+  "n=20: one closed class 82, several 6 [13, 77, 232, 28, 78, 156]; one-class cases inconsistent with fw_sweep: [138]; several: their limit support size == n_stable for 6/6, k*=0 verdict from their support wrong for []"
+ ],
+ "bag17_dSmax": 0.0004880889647780329
+}

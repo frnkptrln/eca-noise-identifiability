@@ -1,0 +1,1 @@
+batch: single-flip closed-class census, 88 classes x n=4..20 (minus 17 done): expected ~10 min wall, < 2.5 GB per worker, 2 workers

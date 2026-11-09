@@ -1,0 +1,1 @@
+post-seal batch: 13 switching classes at n=15..20 (minus 154 at n=20, est. 2 h), 77 runs, est. 31 CPU min -> ~16-20 min wall at 2 workers, peak < 1.5 GB per worker; cap 3 GB per worker

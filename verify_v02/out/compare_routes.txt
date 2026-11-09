@@ -1,0 +1,4 @@
+n=4: exact route (a) vs route (b): 88 classes, k_c mismatches 0 []; exact check at eps=1/7 all true: True
+n=5: exact route (a) vs route (b): 88 classes, k_c mismatches 0 []; exact check at eps=1/7 all true: True
+n=12 GTH: 120 solves, max componentwise relative residual |piP-pi|/pi = 6.002e-14
+n=12: route (a) GTH slopes vs route (b) on the 20 sealed classes: mismatches []; max |slope - integer| over pairs (1e-6,1e-7),(1e-7,1e-8),(1e-8,1e-9) = 1.66e-03

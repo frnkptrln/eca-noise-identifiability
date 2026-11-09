@@ -1,0 +1,32 @@
+{"fails": [], "ok": true, "src": "rule_106.json.gz", "tamper": "none"}
+{"fails": ["C3", "C5", "C6"], "ok": false, "src": "rule_106.json.gz", "tamper": "leaf y + 1"}
+{"fails": ["C6", "C8"], "ok": false, "src": "rule_106.json.gz", "tamper": "gamma - 1"}
+{"fails": ["C3", "C4"], "ok": false, "src": "rule_106.json.gz", "tamper": "selected edge head inside its set"}
+{"fails": ["C9"], "ok": false, "src": "rule_106.json.gz", "tamper": "k_7 + 1"}
+{"fails": ["C1"], "ok": false, "src": "rule_106.json.gz", "tamper": "cycle dropped"}
+{"fails": ["C9"], "ok": false, "src": "rule_106.json.gz", "tamper": "witness end state altered"}
+{"fails": ["C10"], "ok": false, "src": "rule_106.json.gz", "tamper": "kstar + 1"}
+{"fails": ["C8"], "ok": false, "src": "rule_106.json.gz", "tamper": "stable set shortened"}
+{"fails": ["C3", "C6"], "ok": false, "src": "rule_106.json.gz", "tamper": "internal y moved to parent"}
+{"fails": ["C7"], "ok": false, "src": "rule_106.json.gz", "tamper": "explicit tree self-loop"}
+{"fails": [], "ok": true, "src": "n14_rule_076.json.gz", "tamper": "none"}
+{"fails": ["C3", "C5", "C6"], "ok": false, "src": "n14_rule_076.json.gz", "tamper": "leaf y + 1"}
+{"fails": ["C6", "C8", "C9", "C10"], "ok": false, "src": "n14_rule_076.json.gz", "tamper": "gamma - 1"}
+{"fails": ["C3", "C4"], "ok": false, "src": "n14_rule_076.json.gz", "tamper": "selected edge head inside its set"}
+{"fails": ["C9"], "ok": false, "src": "n14_rule_076.json.gz", "tamper": "k_7 + 1"}
+{"fails": ["C1"], "ok": false, "src": "n14_rule_076.json.gz", "tamper": "cycle dropped"}
+{"fails": ["C9"], "ok": false, "src": "n14_rule_076.json.gz", "tamper": "witness end state altered"}
+{"fails": ["C10"], "ok": false, "src": "n14_rule_076.json.gz", "tamper": "kstar + 1"}
+{"fails": ["C8"], "ok": false, "src": "n14_rule_076.json.gz", "tamper": "stable set shortened"}
+{"fails": ["C7"], "ok": false, "src": "n14_rule_076.json.gz", "tamper": "explicit tree self-loop"}
+{"fails": [], "ok": true, "src": "rule_232.json.gz", "tamper": "none"}
+{"fails": ["C3", "C5", "C6"], "ok": false, "src": "rule_232.json.gz", "tamper": "leaf y + 1"}
+{"fails": ["C6", "C8", "C9", "C10"], "ok": false, "src": "rule_232.json.gz", "tamper": "gamma - 1"}
+{"fails": ["C3", "C4"], "ok": false, "src": "rule_232.json.gz", "tamper": "selected edge head inside its set"}
+{"fails": ["C9"], "ok": false, "src": "rule_232.json.gz", "tamper": "k_7 + 1"}
+{"fails": ["C1"], "ok": false, "src": "rule_232.json.gz", "tamper": "cycle dropped"}
+{"fails": ["C9"], "ok": false, "src": "rule_232.json.gz", "tamper": "witness end state altered"}
+{"fails": ["C10"], "ok": false, "src": "rule_232.json.gz", "tamper": "kstar + 1"}
+{"fails": ["C8", "C10"], "ok": false, "src": "rule_232.json.gz", "tamper": "stable set shortened"}
+{"fails": ["C3", "C5", "C6"], "ok": false, "src": "rule_232.json.gz", "tamper": "internal y moved to parent"}
+{"fails": ["C7"], "ok": false, "src": "rule_232.json.gz", "tamper": "explicit tree self-loop"}

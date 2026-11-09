@@ -1,0 +1,2 @@
+{"argmin_codes": [3, 6, 7], "consistent": true, "cycle_orders_hist": [15127], "k_c": [0, 0, 0, 1, 0, 0, 1, 1], "k_star": 1, "m_cycles": 15127, "max_h": 10, "maxrss_MB": 4050.6, "n": 20, "rule": 4, "sec": 642.8}
+{"argmin_codes": [5, 7], "consistent": true, "cycle_orders_hist": [1, 20, 150, 520, 825, 504, 70], "k_c": [0, 1, 1, 1, 1, 2, 1, 2], "k_star": 2, "m_cycles": 2090, "max_h": 14, "maxrss_MB": 4050.6, "n": 20, "rule": 72, "sec": 54.31}

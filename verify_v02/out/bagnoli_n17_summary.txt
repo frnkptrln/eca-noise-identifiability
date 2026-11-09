@@ -1,0 +1,7 @@
+classes: 88; attractor counts: Table 2 = own = fw_sweep for 88
+S* rebuilt from their Section 5 recipe vs Table 2: max |diff| = 0.0005 (table has 3 decimals)
+single-flip graph: one closed class for 87 classes; several closed classes: [[232, 2, [1, 1]]]
+one closed class: support of their limit law = number of noise-selected cycles in fw_sweep (n_stable) for 87 of 87
+one closed class: (support covers all 8 codes) == (k* = 0 in fw_sweep) for 87 of 87
+own route (b) at n=17 available for 16 classes [4, 22, 26, 29, 35, 37, 43, 45, 60, 72, 73, 90, 94, 122, 142, 154]: support size = own noise-selected count for 16
+class 232: 2 closed classes, their limit support 2 cycles (min states [0, 131071]), fw_sweep n_stable 2, k* 1, cover mask 129
