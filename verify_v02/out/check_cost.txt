@@ -1,0 +1,15 @@
+cost table rows mismatching: []
+n=20: CPU sum 4416 s, longest 510.4 s (class 76), peak 2554 MB (class 76)
+cost_expanded values [0 1 2 3 4]
+ rule  cycles20  orbits20   cpu20  rss20_mb  cycles22  orbits22   cpu22_est  vrows22_gb  seconds
+   -1       NaN       NaN     NaN       NaN       NaN       NaN         NaN         NaN      NaN
+   76  196331.0    9844.0 510.427    2554.0  664183.0   30229.0 6941.880641   20.077588      1.2
+  154   41626.0   10904.0 502.809    1207.7   76600.0   38328.0 8872.947407    2.935925      1.7
+   42    9844.0    9844.0 493.997     543.7   30229.0   30229.0 7565.039246    0.913792      1.2
+   29   98167.0    4935.0 246.679     870.7  332093.0   15134.0 3395.676844    5.025895      1.1
+  138    3855.0    3855.0 226.998     448.8   10764.0   10764.0 3295.267123    0.115864      1.1
+  200   76725.0    3855.0 194.708     829.7  236282.0   10764.0 2361.039127    2.543339      1.1
+growth factors 18->20 for [76, 154, 42, 29, 138, 200] [13.6, 17.65, 15.31, 13.77, 14.52, 12.13] median 14.14
+sum of cpu22_est in file (6 classes): 32431.850388623883
+all-class n=22 extrapolation with own factor (cpu20 * cpu20/cpu18) summed over 88 classes: 16.0 CPU h
+n=17 class 76 (the class above my cap): their cost 11.8 s, 210 MB

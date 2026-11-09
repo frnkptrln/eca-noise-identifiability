@@ -1,0 +1,7 @@
+rows file 549 mine 549 joined 549
+kernel_dim mismatches 0
+gen_kernel_dim mismatches 0
+bijective mismatches 0
+bad_characters file == n * mine (per window): 0 mismatches
+kstar_analytic values [np.int64(-1), np.int64(0)] ; file says k*=0 exactly where mine has uniform marginals or bijective: 0 mismatches
+uniform-marginal (or bijective) rows, n<=20: 128

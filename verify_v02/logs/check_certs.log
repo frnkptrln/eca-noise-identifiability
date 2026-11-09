@@ -1,0 +1,9 @@
+batch: check 88 + 898 certificates, expected <10 min wall, <1 GB per worker, 2 workers
+
+real	0m4.950s
+user	0m4.572s
+sys	0m0.322s
+
+real	0m7.125s
+user	0m6.647s
+sys	0m0.413s

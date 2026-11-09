@@ -1,0 +1,5 @@
+batch route b n=17 sample (4,22,37,72 | 29): expected 6-10 min wall, peak ~4.5 GB (worker with class 29), 2 workers; refuse if > 8 GB
+        9.78 real         9.56 user         0.21 sys
+time: sysctl kern.clockrate: Operation not permitted
+      334.27 real       332.10 user         1.90 sys
+time: sysctl kern.clockrate: Operation not permitted
