@@ -1,0 +1,1 @@
+batch route b n=11,12 all 88 + full tropical: expected ~5 min wall, <1 GB per worker, 2 workers
