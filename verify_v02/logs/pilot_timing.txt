@@ -1,0 +1,3 @@
+17 7 m 42 V sec 0.14 per-cycle BFS sec 0.0034 full BFS sec 0.002
+20 7 m 127 V sec 2.68 per-cycle BFS sec 0.0211 full BFS sec 0.022
+20 0 m 1 V sec 0.0 per-cycle BFS sec 0.0002 full BFS sec 0.018
