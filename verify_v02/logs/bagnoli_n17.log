@@ -1,0 +1,9 @@
+batch: single-flip attractor chain (Bagnoli et al.) for 88 classes at n=17: expected < 10 min wall, < 1 GB per worker, 2 workers
+
+real	0m4.074s
+user	0m0.855s
+sys	0m0.154s
+
+real	0m4.221s
+user	0m1.004s
+sys	0m0.153s

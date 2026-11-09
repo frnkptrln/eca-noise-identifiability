@@ -1,0 +1,2 @@
+manifest entries 1009 hash mismatches [] missing files []
+tracked files under data/ 1025 ; not in manifest: ['log_finite_horizon.txt', 'log_fw_check_n12_certs.txt', 'log_fw_check_sweep_certs.txt', 'log_fw_gth.txt', 'log_fw_n12_gth.txt', 'log_fw_pytest.txt', 'log_fw_resume_test.txt', 'log_fw_sweep.txt', 'log_fw_verify_trees.txt', 'log_numbers.txt', 'log_radius2.txt', 'log_refine.txt', 'log_stationary_reps.txt', 'log_stationary_rest.txt', 'log_zero_noise.txt']
