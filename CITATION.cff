@@ -19,6 +19,9 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.23399101
     description: "Version 0.1"
+  - type: doi
+    value: 10.5281/zenodo.24093547
+    description: "Version 0.2"
 keywords:
   - elementary cellular automata
   - identifiability
