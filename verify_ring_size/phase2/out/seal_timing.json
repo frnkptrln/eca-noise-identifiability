@@ -1,0 +1,65 @@
+{
+ "seal_commit": "8d68e54",
+ "seal_commit_time_local": "2026-11-13 23:19:23",
+ "commits": [
+  "1e256cd | 2026-11-14 09:41:01 | Ring-size report, literature review, atlas of all 88 classes (n = 4..20), prediction outcomes, manifest",
+  "8bcad22 | 2026-11-14 01:37:13 | Mechanism analysis of the 13 switching classes: one-flip graph, crystal test, verifier, n = 8..22, seed orbits, certificates, sampled reachability, figures",
+  "8d68e54 | 2026-11-13 23:19:23 | Seal predictions for the ring-size study (before any new computation)"
+ ],
+ "files_in_seal_commit": [
+  "PREDICTIONS_ring_size.md | 96 ++++++++++++++++++++++++++++++++++++++++++++++++",
+  " 1 file changed, 96 insertions(+)"
+ ],
+ "predictions_file_changed_since_seal": false,
+ "ring_size_files_and_folders": 76,
+ "ring_size_earliest_births": [
+  [
+   "2026-11-13 23:21:22",
+   "2026-11-14 09:39:16",
+   "code/ring_size"
+  ],
+  [
+   "2026-11-13 23:21:22",
+   "2026-11-14 09:40:26",
+   "data/ring_size"
+  ],
+  [
+   "2026-11-13 23:21:47",
+   "2026-11-13 23:28:18",
+   "code/ring_size/mech.py"
+  ],
+  [
+   "2026-11-13 23:22:25",
+   "2026-11-13 23:23:06",
+   "code/ring_size/verify_mech.py"
+  ],
+  [
+   "2026-11-13 23:28:18",
+   "2026-11-14 00:26:46",
+   "code/ring_size/test_ring_size.py"
+  ],
+  [
+   "2026-11-13 23:28:49",
+   "2026-11-14 00:53:41",
+   "code/ring_size/run_mech.py"
+  ],
+  [
+   "2026-11-13 23:29:00",
+   "2026-11-13 23:34:20",
+   "data/ring_size/log_verify_mech.txt"
+  ],
+  [
+   "2026-11-13 23:32:52",
+   "2026-11-13 23:32:52",
+   "data/ring_size/verify_mech_n4_8_all.csv"
+  ]
+ ],
+ "ring_size_born_before_seal": [],
+ "ring_size_modified_before_seal": [],
+ "data_cache_entries": 3115,
+ "data_cache_latest_birth": "2026-11-09 20:11:28",
+ "data_cache_latest_mtime": "2026-11-09 20:11:28",
+ "data_cache_born_on_or_after_2026-11-13": [],
+ "predictions_file_birth": "2026-11-13 23:19:06",
+ "predictions_file_mtime": "2026-11-13 23:19:06"
+}

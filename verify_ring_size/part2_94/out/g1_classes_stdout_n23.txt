@@ -1,0 +1,3 @@
+{'n': 23, 'states': 8388608, 'squarings': 6, 'periodic_states': 48301, 'cycles': 16952, 'g1_edges': 358846, 'strong_components': 2, 'closed_classes': 1, 'closed_class_sizes': [16951], 'cycles_without_out_edge': 0, 'cpu_seconds': 0.33, 'peak_rss_mb': 232.1}
+        0.58 real         0.44 user         0.10 sys
+time: sysctl kern.clockrate: Operation not permitted

@@ -1,0 +1,4 @@
+rule,n,rep,orbit_size,temporal_period,spatial_period,t_rot,rot,codes,radius,in_closed_class,scc,gamma
+37,8,00000000,1,2,1,2,0,07,1,1,0,12
+37,8,00000011,8,2,8,2,0,013467,1,1,0,12
+37,8,00000111,4,2,8,1,4,013467,1,1,0,12

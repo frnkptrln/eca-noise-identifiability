@@ -1,0 +1,10 @@
+nice: setpriority: Operation not permitted
+rule 22 pass 1 done 0.8
+rule 26 pass 1 done 1.6
+rule 122 pass 1 done 2.4
+rule 154 pass 1 done 3.2
+nice: setpriority: Operation not permitted
+rule 22 pass 2 done 102.7
+rule 26 pass 2 done 151.4
+rule 122 pass 2 done 367.2
+rule 154 pass 2 done 416.4

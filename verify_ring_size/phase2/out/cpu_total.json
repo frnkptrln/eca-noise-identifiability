@@ -1,0 +1,16 @@
+{
+ "cpu_seconds_by_script": {
+  "extras.py (out/extras.jsonl)": 220.668,
+  "sweep88.py (out/sweep88_summary.json)": 517.9,
+  "seed_orbits.py, seed_orbits_pass3.py (out/seed_compare.json)": 932.8,
+  "v154_n22.py (out/v154_n22.json)": 2893.5,
+  "sampled_reach_check.py": 7.5,
+  "compare_sample.py": 1.6,
+  "lemmaZP.py": 0.81,
+  "crystal_checks.py": 0.17,
+  "rule90_identities.py": 0.42
+ },
+ "cpu_seconds_total": 4575.4,
+ "cpu_hours_total": 1.271,
+ "note": "scripts without a recorded CPU time (comparisons and bookkeeping) each ran for a few seconds at most"
+}

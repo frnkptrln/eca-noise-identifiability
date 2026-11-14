@@ -1,0 +1,57 @@
+{
+ "n_range": [
+  3,
+  15
+ ],
+ "lemmaZ": {
+  "cases": 1664,
+  "counterexamples": [],
+  "radius_ge2": 267,
+  "radius_ge2_single_cycle_map": 73,
+  "seed_returns": 267
+ },
+ "lemmaP": {
+  "cases": 3328,
+  "trace_identity_failures": [],
+  "criterion_counterexamples": [],
+  "certified_rules": [
+   15,
+   45,
+   51,
+   75,
+   85,
+   89,
+   101,
+   154,
+   166,
+   170,
+   180,
+   204,
+   210,
+   240
+  ],
+  "bijective_all_odd_n_but_not_certified": [],
+  "injective_iff_trace_failures": []
+ },
+ "injectivity_csv": {
+  "rows": 13,
+  "certified_equal": 13,
+  "periods_equal": 13,
+  "differences": []
+ },
+ "rule154": {
+  "rule": 154,
+  "certified_bijective_odd_n": 1,
+  "offdiag_scc_periods": "2;2",
+  "n_components": 9,
+  "bijective_at_all_odd_n_3_15": 1
+ },
+ "rule45": {
+  "rule": 45,
+  "certified_bijective_odd_n": 1,
+  "offdiag_scc_periods": "2;2",
+  "n_components": 9,
+  "bijective_at_all_odd_n_3_15": 1
+ },
+ "cpu_seconds": 0.81
+}

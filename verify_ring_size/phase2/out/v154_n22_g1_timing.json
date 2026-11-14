@@ -1,0 +1,10 @@
+{
+ "rule": 154,
+ "n": 22,
+ "cycles": 76600,
+ "g1_edges": 4756911,
+ "g1_scc": 1,
+ "cycles_without_out_edge": 0,
+ "cpu_seconds": 0.427,
+ "peak_rss_mb": 226.3
+}

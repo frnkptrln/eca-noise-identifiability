@@ -1,0 +1,359 @@
+{
+ "cases_with_orbit_rows": 180,
+ "cases_without_orbit_rows": [
+  [
+   45,
+   9
+  ],
+  [
+   45,
+   11
+  ],
+  [
+   45,
+   13
+  ],
+  [
+   45,
+   15
+  ],
+  [
+   45,
+   17
+  ],
+  [
+   45,
+   19
+  ],
+  [
+   45,
+   21
+  ],
+  [
+   154,
+   9
+  ],
+  [
+   154,
+   11
+  ],
+  [
+   154,
+   13
+  ],
+  [
+   154,
+   15
+  ],
+  [
+   154,
+   17
+  ],
+  [
+   154,
+   19
+  ],
+  [
+   154,
+   21
+  ]
+ ],
+ "conventions": {
+  "drift_left_min": 49645,
+  "drift_neither": 0,
+  "drift_right_min": 60355,
+  "drift_rows": 60355,
+  "pattern_not_on_cycle": 0,
+  "pattern_on_cycle_x0_first": 60355,
+  "rep_int_is_lsb_first": 60355,
+  "rep_int_other": 0,
+  "rep_is_orbit_minimum_lsb_first": 60355,
+  "rep_not_orbit_minimum": 0
+ },
+ "cpu_seconds": 1.6,
+ "fields": {
+  "bijective": {
+   "compared": 194,
+   "equal": 194,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 0
+  },
+  "crystal_orbit": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 14
+  },
+  "crystal_p": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 14
+  },
+  "cycle_orbits": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 14
+  },
+  "cycles": {
+   "compared": 194,
+   "equal": 194,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 0
+  },
+  "entry_cost_max": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "supplement",
+   "study_has_no_value": 14
+  },
+  "g1_closed": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 14
+  },
+  "g1_sccs": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 14
+  },
+  "g2_holds": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "supplement",
+   "study_has_no_value": 14
+  },
+  "gamma_formula_ok": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "supplement",
+   "study_has_no_value": 14
+  },
+  "gamma_min": {
+   "compared": 194,
+   "equal": 180,
+   "mismatch": 14,
+   "source": "sealed",
+   "study_has_no_value": 0
+  },
+  "k_c": {
+   "compared": 194,
+   "equal": 194,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 0
+  },
+  "kstar": {
+   "compared": 194,
+   "equal": 194,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 0
+  },
+  "mech.jsonl_vs_cycle_orbits.csv.gz:orbit_rows": {
+   "compared": 194,
+   "equal": 194,
+   "mismatch": 0,
+   "source": "study-internal",
+   "study_has_no_value": 0
+  },
+  "mech.jsonl_vs_mechanisms.csv:cycles": {
+   "compared": 194,
+   "equal": 194,
+   "mismatch": 0,
+   "source": "study-internal",
+   "study_has_no_value": 0
+  },
+  "mech.jsonl_vs_mechanisms.csv:gamma_min": {
+   "compared": 194,
+   "equal": 194,
+   "mismatch": 0,
+   "source": "study-internal",
+   "study_has_no_value": 0
+  },
+  "mech.jsonl_vs_mechanisms.csv:k_c": {
+   "compared": 194,
+   "equal": 194,
+   "mismatch": 0,
+   "source": "study-internal",
+   "study_has_no_value": 0
+  },
+  "mech.jsonl_vs_mechanisms.csv:kstar": {
+   "compared": 194,
+   "equal": 194,
+   "mismatch": 0,
+   "source": "study-internal",
+   "study_has_no_value": 0
+  },
+  "mech.jsonl_vs_mechanisms.csv:n_selected": {
+   "compared": 194,
+   "equal": 194,
+   "mismatch": 0,
+   "source": "study-internal",
+   "study_has_no_value": 0
+  },
+  "mech.jsonl_vs_mechanisms.csv:record_present": {
+   "compared": 194,
+   "equal": 194,
+   "mismatch": 0,
+   "source": "study-internal",
+   "study_has_no_value": 0
+  },
+  "n_selected": {
+   "compared": 194,
+   "equal": 194,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 0
+  },
+  "orbit.all_own_orbits_listed": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "supplement",
+   "study_has_no_value": 0
+  },
+  "orbit.codes": {
+   "compared": 60355,
+   "equal": 60355,
+   "mismatch": 0,
+   "source": "supplement",
+   "study_has_no_value": 0
+  },
+  "orbit.gamma": {
+   "compared": 23833,
+   "equal": 23833,
+   "mismatch": 0,
+   "source": "supplement",
+   "study_has_no_value": 0
+  },
+  "orbit.gamma_histogram_by_cycles": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 0
+  },
+  "orbit.orbit_size": {
+   "compared": 60355,
+   "equal": 60355,
+   "mismatch": 0,
+   "source": "supplement",
+   "study_has_no_value": 0
+  },
+  "orbit.radius": {
+   "compared": 60355,
+   "equal": 60355,
+   "mismatch": 0,
+   "source": "supplement",
+   "study_has_no_value": 0
+  },
+  "orbit.selected": {
+   "compared": 60355,
+   "equal": 60355,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 0
+  },
+  "orbit.spatial_period": {
+   "compared": 60355,
+   "equal": 60355,
+   "mismatch": 0,
+   "source": "supplement",
+   "study_has_no_value": 0
+  },
+  "orbit.temporal_period": {
+   "compared": 60355,
+   "equal": 60355,
+   "mismatch": 0,
+   "source": "supplement",
+   "study_has_no_value": 0
+  },
+  "radius_other_max": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "supplement",
+   "study_has_no_value": 14
+  },
+  "radius_other_min": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "supplement",
+   "study_has_no_value": 14
+  },
+  "radius_selected_max": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "supplement",
+   "study_has_no_value": 14
+  },
+  "radius_selected_min": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "supplement",
+   "study_has_no_value": 14
+  },
+  "selected_cover": {
+   "compared": 194,
+   "equal": 194,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 0
+  },
+  "selected_eq_closed_union": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 14
+  },
+  "selected_orbits": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 14
+  },
+  "selected_spatial_periods": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 14
+  },
+  "selected_temporal_periods": {
+   "compared": 180,
+   "equal": 180,
+   "mismatch": 0,
+   "source": "sealed",
+   "study_has_no_value": 14
+  }
+ },
+ "mech_jsonl_orbit_rows": 60355,
+ "mech_jsonl_records": 194,
+ "n_fields": 39,
+ "n_mismatches": 14,
+ "only_in_sample": [],
+ "only_in_study": [],
+ "orbit_rows_study": 60355,
+ "records_common": 194,
+ "records_sample": 194,
+ "records_study": 194
+}

@@ -1,0 +1,46 @@
+line,tag,kind,text_before_tag,verdict,reason
+9,[proved],proved,**,definition of the tag,
+10,[computed],computed,**,definition of the tag,
+11,[observed],observed,**,definition of the tag,
+67,"[computed, `factor_search.csv`]",computed,no factor onto an additive rule exists at these widths,matches the evidence,rebuilt: out/misc_checks.json (same 8 counts; targets 154 and 166 only)
+91,[proved: the spatial period divides n],proved,* **crystal**: a cycle whose states have spatial period p < n; it exists on Z/nZ only if p | n,matches the evidence,the periods of a ring configuration form a subgroup of Z/nZ
+110,[proved],proved,**Lemma 1 (closure),matches the evidence,proof read; 0 counterexamples in out/sweep88_summary.json
+113,[proved],proved,**Lemma 2 (selected cycles lie in closed classes),matches the evidence,proof read line by line; 0 counterexamples in out/sweep88_summary.json
+125,[proved],proved,**Theorem A,matches the evidence,proof read; 0 counterexamples in out/sweep88_summary.json
+134,[computed],computed,selected set equals the union of all closed classes of G1,matches the evidence,180 and 175 reproduced from the sealed sample (out/report_numbers.json)
+137,[proved],proved,**Lemma B (step-by-step criterion),matches the evidence,"proof read; hypotheses hold in the sweep cases counted in out/sweep88_summary.json, conclusion never fails"
+155,[proved],proved,**Lemma Z (zero state),matches the evidence,proof read; out/lemmaZP.json
+159,[proved],proved,**Lemma H (local healing),matches the evidence,proof read; healing check rebuilt in out/crystal_checks.json
+168,[proved],proved,**Lemma P (bijectivity for all odd n),matches the evidence,proof read; out/lemmaZP.json (trace identity and criterion against brute force)
+175,[proved],proved,bijectivity of all 256 rules for n = 3..13 in the tests),matches the evidence,pair graphs of rules 154 and 45 rebuilt: out/pairgraph_all256.csv
+176,[proved],proved,so **k* = 0 for classes 154 and 45 at every odd n,matches the evidence,follows from Lemma P and the bijective case (all cycles at potential m - 1); n >= 3 understood
+218,[computed n = 8..22],computed,"### 5.1 Crystal capture: classes 94, 43, 142",matches the evidence,table 5.1 reproduced: out/report_numbers.json
+247,[proved],proved,n divisible by 3 with n >= 7,matches the evidence,tau = 3 rebuilt (out/crystal_checks.json); Lemma H gives n >= 7
+247,[computed],computed,n divisible by 3 with n >= 7 [proved]; n = 6 is checked directly,matches the evidence,n = 6 in out/crystal_radius_own.csv
+252,[computed],computed,exactly at every n divisible by 4 up to 400 (`crystal_radius.csv`),matches the evidence,"out/crystal_radius_own.csv, all 4 | n up to 400"
+255,[observed],observed,at n = 24..32 (Section 5.6),matches the evidence,sampled test rebuilt: out/sampled_reach_check.json
+256,[proved conditional on reachability],proved,follows from Lemma B,overstated,"for classes 43 and 142 the conclusion is also conditional on the radius beyond n = 400, which is computed, not proved (finding F13)"
+257,[proved],proved,* **The other direction (p does not divide n gives k* = 0).** The crystal cannot exist,matches the evidence,trivial (spatial period divides n)
+259,[computed],computed,k* = 0),matches the evidence,"single closed class with all codes at p not dividing n, n = 8..22: out/report_numbers.json"
+260,[computed n <= 22],computed,"* At 3 ∤ n no cycle of class 94 has its codes within {3, 5, 6}",matches the evidence,out/report_numbers.json (sec5_1_no_356_cycle)
+262,[computed n = 8..22],computed,### 5.2 Class 35: a defect family on a period-3 crystal,matches the evidence,out/compare_derived.json (rule35_blocks)
+265,"[computed, `rule35_blocks.csv`]",computed,cycles carry code 5 (101). In the computed range,matches the evidence,block law reproduced for n = 8..22: out/compare_derived.json
+299,[computed],computed,,overstated,"Lemma B is flagged in 9 of the 13 cases; the other 4 are single-cycle maps (rules 60, 90 at n = 8, 16) where the study's own flag is False (finding F16)"
+300,"[computed, `zero_mechanism.csv`]",computed,"""the single-flip orbit returns to 0"" coincides with ""0 is selected alone""",matches the evidence,59 of 59: out/compare_derived.json
+311,[proved],proved,**Proposition R154,matches the evidence,proof read; orbit identities simulated for all even n <= 256: out/rule90_identities.json
+320,[proved],proved,**Proposition R22,matches the evidence,every case of the induction read; identities simulated for all 4 | n <= 256: out/rule90_identities.json
+332,[computed],computed,,statement under the tag is wrong,the list is incomplete: rule 22 returns at n = 241 as well; the study's file has this n and 24 other n not divisible by 4 as undetermined (finding F1)
+338,[computed],computed,"Spearman 0.94 and 0.96, `g1_distance_154.csv`), and gamma_min = m - 1",matches the evidence,out/compare_derived.json (g1_distance_154) and the sealed sample
+342,[computed for even n <= 20],computed,cycles form one strongly connected G1 and are all selected,matches the evidence,"one strongly connected G1 with all cycles selected at n = [10, 12, 14, 18, 20] in the sealed sample; at n = 22 the same holds (out/v154_n22.json, complete run over 38328 of 38328 orbit representatives: True)"
+343,[observed],observed,is the reachability of 0 from every cycle at all n = 2^k; it was tested at n = 32 (Section 5.6),matches the evidence,sampled test rebuilt
+349,[computed],computed,"n = 7, 15, 31, 63, 127, 255 in n <= 256",overstated,'exactly' is not supported: 33 values of n were undetermined in the study; 13 are still open after this verification (finding F2)
+350,[observed],observed,undetermined n of rules 26 and 154 shifted by one,matches the evidence,the capped n of rule 122 are those of rules 26 and 154 minus one: out/seed_compare.json
+352,[computed n = 8..22],computed,### 5.4 Class 122 at other n: the checkerboard,matches the evidence,out/report_numbers.json (sec5_4_*)
+363,[computed],computed,"of 0 returns to 0 (n = 4..8, 14, 15, 16), and then 0 is selected alone",matches the evidence,"n = 8..22 from the sealed sample, n = 4..7 from out/sweep88.jsonl"
+369,[computed],computed,,matches the evidence,out/report_numbers.json (sec5_5_26_*)
+371,[computed],computed,holds for n = 8..22),matches the evidence,codes and the mod-6 fit: out/report_numbers.json; the description of the carriers was not checked
+374,"[proved, Lemma P]",proved,"* **45.** Odd n: bijective, k* = 0",matches the evidence,Lemma P; brute force at odd n = 9..21 in the sealed sample
+376,[computed],computed,cycles are selected,statement under the tag is wrong,'all cycles are selected' fails at n = 18 and n = 22 (finding F4)
+378,[computed],computed,period-3 cycles are; at all other n it is selected,statement under the tag is wrong,the uniform 2-cycle is not selected at n = 22 either; the temporal period-3 cycles are not selected at n = 9 (finding F5)
+387,[observed],observed,random initial states favour large basins.,matches the evidence,table 5.6 rebuilt: out/sampled_reach_check.json
+511,[computed],computed,Atlas (step 6),matches the evidence,"atlas records compared with the own sweep: out/atlas_check.json (gamma_min placeholder in bijective records, finding F15)"

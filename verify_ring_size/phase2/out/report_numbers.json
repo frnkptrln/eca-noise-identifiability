@@ -1,0 +1,5850 @@
+{
+ "n_checks": 590,
+ "n_equal": 585,
+ "n_unequal": 5,
+ "by_id": {
+  "kstar_sweep_vs_sample": {
+   "checks": 130,
+   "equal": 130
+  },
+  "kstar_table": {
+   "checks": 195,
+   "equal": 195
+  },
+  "kstar_table_n4_7": {
+   "checks": 52,
+   "equal": 52
+  },
+  "sec3_169_pairs": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec3_verifier_pairs": {
+   "checks": 1,
+   "equal": 0
+  },
+  "sec4_nonbijective_records": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec4_selected_equals_union_closed": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec4_single_closed_class": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_1_class43_142_crystal": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_1_class94_crystal": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_1_no_356_cycle": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_1_other_direction": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_1_rules_43_142_agree": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_2_block_law": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_3_154_cycles": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_3_154_even": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_3_154_gamma": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_3_154_maxdist": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_3_154_radius": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_3_154_spearman": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_3_26_n16": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_3_59_pairs": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_3_coincide": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_3_lemmaB_zero": {
+   "checks": 1,
+   "equal": 0
+  },
+  "sec5_4_checkerboard_not_selected": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_4_checkerboard_selected": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_4_code2_missing_odd": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_4_kstar0_iff_4_divides_n_fails_at_22": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_4_n14": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_4_only_carrier": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_5_22_kstar1": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_5_22_kstar_values": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_5_22_zero_alone": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_5_26_missing7": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_5_26_mod3": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_5_26_n22": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_5_37_missing": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_5_37_missing_exact": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_5_37_mod6": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_5_37_periods": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_5_45_even": {
+   "checks": 1,
+   "equal": 0
+  },
+  "sec5_5_45_n8": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_5_45_odd_bijective": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_5_73_n9": {
+   "checks": 1,
+   "equal": 0
+  },
+  "sec5_5_73_switch": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec5_5_73_uniform": {
+   "checks": 1,
+   "equal": 0
+  },
+  "sec8_atlas_records": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec9_jobs": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec9_longest": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec9_peak_gb": {
+   "checks": 1,
+   "equal": 1
+  },
+  "sec9_total_hours": {
+   "checks": 1,
+   "equal": 1
+  },
+  "table_5_1": {
+   "checks": 104,
+   "equal": 104
+  },
+  "table_5_1_rows": {
+   "checks": 1,
+   "equal": 1
+  },
+  "table_5_2": {
+   "checks": 60,
+   "equal": 60
+  }
+ },
+ "unequal": [
+  {
+   "id": "sec3_verifier_pairs",
+   "line": 97,
+   "statement": "432 pairs = all 88 classes at n = 4..8 plus 13 classes at n = 9, 10 (88*5 + 13*2)",
+   "report": 432,
+   "own": 466,
+   "source": "arithmetic; out/compare_derived.json (verify_mech_files)",
+   "equal": false
+  },
+  {
+   "id": "sec5_3_lemmaB_zero",
+   "line": 298,
+   "statement": "(rule, n) in n = 8..22 with the zero state selected alone / with Lemma B holding for A = {0} (the study's own g2_holds column has the same count)",
+   "report": "all",
+   "own": "9 of 13 (the other 4 are maps with a single cycle: rules 60, 90 at n = 8, 16)",
+   "source": "out/compare_derived.json",
+   "equal": false
+  },
+  {
+   "id": "sec5_5_45_even",
+   "line": 375,
+   "statement": "45, even n in 10..22: uniform 2-cycle has radius 1 and all cycles are selected",
+   "report": true,
+   "own": false,
+   "source": "same",
+   "equal": false
+  },
+  {
+   "id": "sec5_5_73_uniform",
+   "line": 377,
+   "statement": "73: n in 8..22 where the uniform 2-cycle is not selected",
+   "report": [
+    9
+   ],
+   "own": [
+    9,
+    22
+   ],
+   "source": "../out/sample.jsonl",
+   "equal": false
+  },
+  {
+   "id": "sec5_5_73_n9",
+   "line": 378,
+   "statement": "73, n = 9: missing code 7; selected cycles include temporal period 3",
+   "report": true,
+   "own": false,
+   "source": "../out/sample.jsonl",
+   "equal": false
+  }
+ ],
+ "checks": [
+  {
+   "id": "kstar_table_n4_7",
+   "line": 188,
+   "statement": "k* class 94 n=4",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 188,
+   "statement": "k* class 94 n=5",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 188,
+   "statement": "k* class 94 n=6",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 188,
+   "statement": "k* class 94 n=7",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=8",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=9",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=10",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=11",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=12",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=13",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=14",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=15",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=16",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=17",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=18",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=19",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=20",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=21",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 188,
+   "statement": "k* class 94 n=22",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 188,
+   "statement": "own sweep k* equals sealed sample, class 94 n=8",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 188,
+   "statement": "own sweep k* equals sealed sample, class 94 n=9",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 188,
+   "statement": "own sweep k* equals sealed sample, class 94 n=10",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 188,
+   "statement": "own sweep k* equals sealed sample, class 94 n=11",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 188,
+   "statement": "own sweep k* equals sealed sample, class 94 n=12",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 188,
+   "statement": "own sweep k* equals sealed sample, class 94 n=13",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 188,
+   "statement": "own sweep k* equals sealed sample, class 94 n=14",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 188,
+   "statement": "own sweep k* equals sealed sample, class 94 n=15",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 188,
+   "statement": "own sweep k* equals sealed sample, class 94 n=16",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 188,
+   "statement": "own sweep k* equals sealed sample, class 94 n=17",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 189,
+   "statement": "k* class 43 n=4",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 189,
+   "statement": "k* class 43 n=5",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 189,
+   "statement": "k* class 43 n=6",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 189,
+   "statement": "k* class 43 n=7",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=8",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=9",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=10",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=11",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=12",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=13",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=14",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=15",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=16",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=17",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=18",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=19",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=20",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=21",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 189,
+   "statement": "k* class 43 n=22",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 189,
+   "statement": "own sweep k* equals sealed sample, class 43 n=8",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 189,
+   "statement": "own sweep k* equals sealed sample, class 43 n=9",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 189,
+   "statement": "own sweep k* equals sealed sample, class 43 n=10",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 189,
+   "statement": "own sweep k* equals sealed sample, class 43 n=11",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 189,
+   "statement": "own sweep k* equals sealed sample, class 43 n=12",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 189,
+   "statement": "own sweep k* equals sealed sample, class 43 n=13",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 189,
+   "statement": "own sweep k* equals sealed sample, class 43 n=14",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 189,
+   "statement": "own sweep k* equals sealed sample, class 43 n=15",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 189,
+   "statement": "own sweep k* equals sealed sample, class 43 n=16",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 189,
+   "statement": "own sweep k* equals sealed sample, class 43 n=17",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 190,
+   "statement": "k* class 142 n=4",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 190,
+   "statement": "k* class 142 n=5",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 190,
+   "statement": "k* class 142 n=6",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 190,
+   "statement": "k* class 142 n=7",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=8",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=9",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=10",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=11",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=12",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=13",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=14",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=15",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=16",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=17",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=18",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=19",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=20",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=21",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 190,
+   "statement": "k* class 142 n=22",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 190,
+   "statement": "own sweep k* equals sealed sample, class 142 n=8",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 190,
+   "statement": "own sweep k* equals sealed sample, class 142 n=9",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 190,
+   "statement": "own sweep k* equals sealed sample, class 142 n=10",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 190,
+   "statement": "own sweep k* equals sealed sample, class 142 n=11",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 190,
+   "statement": "own sweep k* equals sealed sample, class 142 n=12",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 190,
+   "statement": "own sweep k* equals sealed sample, class 142 n=13",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 190,
+   "statement": "own sweep k* equals sealed sample, class 142 n=14",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 190,
+   "statement": "own sweep k* equals sealed sample, class 142 n=15",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 190,
+   "statement": "own sweep k* equals sealed sample, class 142 n=16",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 190,
+   "statement": "own sweep k* equals sealed sample, class 142 n=17",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 191,
+   "statement": "k* class 35 n=4",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 191,
+   "statement": "k* class 35 n=5",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 191,
+   "statement": "k* class 35 n=6",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 191,
+   "statement": "k* class 35 n=7",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=8",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=9",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=10",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=11",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=12",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=13",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=14",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=15",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=16",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=17",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=18",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=19",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=20",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=21",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 191,
+   "statement": "k* class 35 n=22",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 191,
+   "statement": "own sweep k* equals sealed sample, class 35 n=8",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 191,
+   "statement": "own sweep k* equals sealed sample, class 35 n=9",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 191,
+   "statement": "own sweep k* equals sealed sample, class 35 n=10",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 191,
+   "statement": "own sweep k* equals sealed sample, class 35 n=11",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 191,
+   "statement": "own sweep k* equals sealed sample, class 35 n=12",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 191,
+   "statement": "own sweep k* equals sealed sample, class 35 n=13",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 191,
+   "statement": "own sweep k* equals sealed sample, class 35 n=14",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 191,
+   "statement": "own sweep k* equals sealed sample, class 35 n=15",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 191,
+   "statement": "own sweep k* equals sealed sample, class 35 n=16",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 191,
+   "statement": "own sweep k* equals sealed sample, class 35 n=17",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 192,
+   "statement": "k* class 26 n=4",
+   "report": "2",
+   "own": "2",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 192,
+   "statement": "k* class 26 n=5",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 192,
+   "statement": "k* class 26 n=6",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 192,
+   "statement": "k* class 26 n=7",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=8",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=9",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=10",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=11",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=12",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=13",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=14",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=15",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=16",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=17",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=18",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=19",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=20",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=21",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 192,
+   "statement": "k* class 26 n=22",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 192,
+   "statement": "own sweep k* equals sealed sample, class 26 n=8",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 192,
+   "statement": "own sweep k* equals sealed sample, class 26 n=9",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 192,
+   "statement": "own sweep k* equals sealed sample, class 26 n=10",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 192,
+   "statement": "own sweep k* equals sealed sample, class 26 n=11",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 192,
+   "statement": "own sweep k* equals sealed sample, class 26 n=12",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 192,
+   "statement": "own sweep k* equals sealed sample, class 26 n=13",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 192,
+   "statement": "own sweep k* equals sealed sample, class 26 n=14",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 192,
+   "statement": "own sweep k* equals sealed sample, class 26 n=15",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 192,
+   "statement": "own sweep k* equals sealed sample, class 26 n=16",
+   "report": 2,
+   "own": 2,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 192,
+   "statement": "own sweep k* equals sealed sample, class 26 n=17",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 193,
+   "statement": "k* class 37 n=4",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 193,
+   "statement": "k* class 37 n=5",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 193,
+   "statement": "k* class 37 n=6",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 193,
+   "statement": "k* class 37 n=7",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=8",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=9",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=10",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=11",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=12",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=13",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=14",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=15",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=16",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=17",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=18",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=19",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=20",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=21",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 193,
+   "statement": "k* class 37 n=22",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 193,
+   "statement": "own sweep k* equals sealed sample, class 37 n=8",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 193,
+   "statement": "own sweep k* equals sealed sample, class 37 n=9",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 193,
+   "statement": "own sweep k* equals sealed sample, class 37 n=10",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 193,
+   "statement": "own sweep k* equals sealed sample, class 37 n=11",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 193,
+   "statement": "own sweep k* equals sealed sample, class 37 n=12",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 193,
+   "statement": "own sweep k* equals sealed sample, class 37 n=13",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 193,
+   "statement": "own sweep k* equals sealed sample, class 37 n=14",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 193,
+   "statement": "own sweep k* equals sealed sample, class 37 n=15",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 193,
+   "statement": "own sweep k* equals sealed sample, class 37 n=16",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 193,
+   "statement": "own sweep k* equals sealed sample, class 37 n=17",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 194,
+   "statement": "k* class 154 n=4",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 194,
+   "statement": "k* class 154 n=5",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 194,
+   "statement": "k* class 154 n=6",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 194,
+   "statement": "k* class 154 n=7",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=8",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=9",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=10",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=11",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=12",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=13",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=14",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=15",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=16",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=17",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=18",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=19",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=20",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=21",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 194,
+   "statement": "k* class 154 n=22",
+   "report": ".",
+   "own": ".",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 194,
+   "statement": "own sweep k* equals sealed sample, class 154 n=8",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 194,
+   "statement": "own sweep k* equals sealed sample, class 154 n=9",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 194,
+   "statement": "own sweep k* equals sealed sample, class 154 n=10",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 194,
+   "statement": "own sweep k* equals sealed sample, class 154 n=11",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 194,
+   "statement": "own sweep k* equals sealed sample, class 154 n=12",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 194,
+   "statement": "own sweep k* equals sealed sample, class 154 n=13",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 194,
+   "statement": "own sweep k* equals sealed sample, class 154 n=14",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 194,
+   "statement": "own sweep k* equals sealed sample, class 154 n=15",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 194,
+   "statement": "own sweep k* equals sealed sample, class 154 n=16",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 194,
+   "statement": "own sweep k* equals sealed sample, class 154 n=17",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 195,
+   "statement": "k* class 22 n=4",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 195,
+   "statement": "k* class 22 n=5",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 195,
+   "statement": "k* class 22 n=6",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 195,
+   "statement": "k* class 22 n=7",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=8",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=9",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=10",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=11",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=12",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=13",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=14",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=15",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=16",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=17",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=18",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=19",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=20",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=21",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 195,
+   "statement": "k* class 22 n=22",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 195,
+   "statement": "own sweep k* equals sealed sample, class 22 n=8",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 195,
+   "statement": "own sweep k* equals sealed sample, class 22 n=9",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 195,
+   "statement": "own sweep k* equals sealed sample, class 22 n=10",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 195,
+   "statement": "own sweep k* equals sealed sample, class 22 n=11",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 195,
+   "statement": "own sweep k* equals sealed sample, class 22 n=12",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 195,
+   "statement": "own sweep k* equals sealed sample, class 22 n=13",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 195,
+   "statement": "own sweep k* equals sealed sample, class 22 n=14",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 195,
+   "statement": "own sweep k* equals sealed sample, class 22 n=15",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 195,
+   "statement": "own sweep k* equals sealed sample, class 22 n=16",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 195,
+   "statement": "own sweep k* equals sealed sample, class 22 n=17",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 196,
+   "statement": "k* class 60 n=4",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 196,
+   "statement": "k* class 60 n=5",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 196,
+   "statement": "k* class 60 n=6",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 196,
+   "statement": "k* class 60 n=7",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=8",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=9",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=10",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=11",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=12",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=13",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=14",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=15",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=16",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=17",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=18",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=19",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=20",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=21",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 196,
+   "statement": "k* class 60 n=22",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 196,
+   "statement": "own sweep k* equals sealed sample, class 60 n=8",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 196,
+   "statement": "own sweep k* equals sealed sample, class 60 n=9",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 196,
+   "statement": "own sweep k* equals sealed sample, class 60 n=10",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 196,
+   "statement": "own sweep k* equals sealed sample, class 60 n=11",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 196,
+   "statement": "own sweep k* equals sealed sample, class 60 n=12",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 196,
+   "statement": "own sweep k* equals sealed sample, class 60 n=13",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 196,
+   "statement": "own sweep k* equals sealed sample, class 60 n=14",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 196,
+   "statement": "own sweep k* equals sealed sample, class 60 n=15",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 196,
+   "statement": "own sweep k* equals sealed sample, class 60 n=16",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 196,
+   "statement": "own sweep k* equals sealed sample, class 60 n=17",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 197,
+   "statement": "k* class 90 n=4",
+   "report": "2",
+   "own": "2",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 197,
+   "statement": "k* class 90 n=5",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 197,
+   "statement": "k* class 90 n=6",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 197,
+   "statement": "k* class 90 n=7",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=8",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=9",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=10",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=11",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=12",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=13",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=14",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=15",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=16",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=17",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=18",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=19",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=20",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=21",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 197,
+   "statement": "k* class 90 n=22",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 197,
+   "statement": "own sweep k* equals sealed sample, class 90 n=8",
+   "report": 2,
+   "own": 2,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 197,
+   "statement": "own sweep k* equals sealed sample, class 90 n=9",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 197,
+   "statement": "own sweep k* equals sealed sample, class 90 n=10",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 197,
+   "statement": "own sweep k* equals sealed sample, class 90 n=11",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 197,
+   "statement": "own sweep k* equals sealed sample, class 90 n=12",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 197,
+   "statement": "own sweep k* equals sealed sample, class 90 n=13",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 197,
+   "statement": "own sweep k* equals sealed sample, class 90 n=14",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 197,
+   "statement": "own sweep k* equals sealed sample, class 90 n=15",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 197,
+   "statement": "own sweep k* equals sealed sample, class 90 n=16",
+   "report": 2,
+   "own": 2,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 197,
+   "statement": "own sweep k* equals sealed sample, class 90 n=17",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 198,
+   "statement": "k* class 122 n=4",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 198,
+   "statement": "k* class 122 n=5",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 198,
+   "statement": "k* class 122 n=6",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 198,
+   "statement": "k* class 122 n=7",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=8",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=9",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=10",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=11",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=12",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=13",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=14",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=15",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=16",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=17",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=18",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=19",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=20",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=21",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 198,
+   "statement": "k* class 122 n=22",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 198,
+   "statement": "own sweep k* equals sealed sample, class 122 n=8",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 198,
+   "statement": "own sweep k* equals sealed sample, class 122 n=9",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 198,
+   "statement": "own sweep k* equals sealed sample, class 122 n=10",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 198,
+   "statement": "own sweep k* equals sealed sample, class 122 n=11",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 198,
+   "statement": "own sweep k* equals sealed sample, class 122 n=12",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 198,
+   "statement": "own sweep k* equals sealed sample, class 122 n=13",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 198,
+   "statement": "own sweep k* equals sealed sample, class 122 n=14",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 198,
+   "statement": "own sweep k* equals sealed sample, class 122 n=15",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 198,
+   "statement": "own sweep k* equals sealed sample, class 122 n=16",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 198,
+   "statement": "own sweep k* equals sealed sample, class 122 n=17",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 199,
+   "statement": "k* class 45 n=4",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 199,
+   "statement": "k* class 45 n=5",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 199,
+   "statement": "k* class 45 n=6",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 199,
+   "statement": "k* class 45 n=7",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=8",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=9",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=10",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=11",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=12",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=13",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=14",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=15",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=16",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=17",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=18",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=19",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=20",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=21",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 199,
+   "statement": "k* class 45 n=22",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 199,
+   "statement": "own sweep k* equals sealed sample, class 45 n=8",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 199,
+   "statement": "own sweep k* equals sealed sample, class 45 n=9",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 199,
+   "statement": "own sweep k* equals sealed sample, class 45 n=10",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 199,
+   "statement": "own sweep k* equals sealed sample, class 45 n=11",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 199,
+   "statement": "own sweep k* equals sealed sample, class 45 n=12",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 199,
+   "statement": "own sweep k* equals sealed sample, class 45 n=13",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 199,
+   "statement": "own sweep k* equals sealed sample, class 45 n=14",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 199,
+   "statement": "own sweep k* equals sealed sample, class 45 n=15",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 199,
+   "statement": "own sweep k* equals sealed sample, class 45 n=16",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 199,
+   "statement": "own sweep k* equals sealed sample, class 45 n=17",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 200,
+   "statement": "k* class 73 n=4",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 200,
+   "statement": "k* class 73 n=5",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 200,
+   "statement": "k* class 73 n=6",
+   "report": "1",
+   "own": "1",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table_n4_7",
+   "line": 200,
+   "statement": "k* class 73 n=7",
+   "report": "0",
+   "own": "0",
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=8",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=9",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=10",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=11",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=12",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=13",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=14",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=15",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=16",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=17",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=18",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=19",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=20",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=21",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_table",
+   "line": 200,
+   "statement": "k* class 73 n=22",
+   "report": "0",
+   "own": "0",
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 200,
+   "statement": "own sweep k* equals sealed sample, class 73 n=8",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 200,
+   "statement": "own sweep k* equals sealed sample, class 73 n=9",
+   "report": 1,
+   "own": 1,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 200,
+   "statement": "own sweep k* equals sealed sample, class 73 n=10",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 200,
+   "statement": "own sweep k* equals sealed sample, class 73 n=11",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 200,
+   "statement": "own sweep k* equals sealed sample, class 73 n=12",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 200,
+   "statement": "own sweep k* equals sealed sample, class 73 n=13",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 200,
+   "statement": "own sweep k* equals sealed sample, class 73 n=14",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 200,
+   "statement": "own sweep k* equals sealed sample, class 73 n=15",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 200,
+   "statement": "own sweep k* equals sealed sample, class 73 n=16",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "kstar_sweep_vs_sample",
+   "line": 200,
+   "statement": "own sweep k* equals sealed sample, class 73 n=17",
+   "report": 0,
+   "own": 0,
+   "source": "out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec4_nonbijective_records",
+   "line": 133,
+   "statement": "non-bijective (rule, n) records, n = 8..22",
+   "report": 180,
+   "own": 180,
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec4_selected_equals_union_closed",
+   "line": 133,
+   "statement": "records among them with selected set = union of all closed classes",
+   "report": 180,
+   "own": 180,
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec4_single_closed_class",
+   "line": 135,
+   "statement": "records among them with a single closed class",
+   "report": 175,
+   "own": 175,
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec3_verifier_pairs",
+   "line": 97,
+   "statement": "432 pairs = all 88 classes at n = 4..8 plus 13 classes at n = 9, 10 (88*5 + 13*2)",
+   "report": 432,
+   "own": 466,
+   "source": "arithmetic; out/compare_derived.json (verify_mech_files)",
+   "equal": false
+  },
+  {
+   "id": "sec3_169_pairs",
+   "line": 101,
+   "statement": "13 classes x n = 8..20",
+   "report": 169,
+   "own": 169,
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 230,
+   "statement": "class 43 n=8: cycles",
+   "report": "13",
+   "own": "13",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 230,
+   "statement": "class 43 n=8: q (selected)",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 230,
+   "statement": "class 43 n=8: radius crystal",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 230,
+   "statement": "class 43 n=8: max radius others",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 230,
+   "statement": "class 43 n=8: max direct entry cost",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 230,
+   "statement": "class 43 n=8: Lemma B holds",
+   "report": "True",
+   "own": "True",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 230,
+   "statement": "class 43 n=8: gamma_min",
+   "report": "12",
+   "own": "12",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 230,
+   "statement": "class 43 n=8: m + q - 2",
+   "report": "12",
+   "own": "12",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 231,
+   "statement": "class 43 n=12: cycles",
+   "report": "61",
+   "own": "61",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 231,
+   "statement": "class 43 n=12: q (selected)",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 231,
+   "statement": "class 43 n=12: radius crystal",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 231,
+   "statement": "class 43 n=12: max radius others",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 231,
+   "statement": "class 43 n=12: max direct entry cost",
+   "report": "3",
+   "own": "3",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 231,
+   "statement": "class 43 n=12: Lemma B holds",
+   "report": "True",
+   "own": "True",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 231,
+   "statement": "class 43 n=12: gamma_min",
+   "report": "60",
+   "own": "60",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 231,
+   "statement": "class 43 n=12: m + q - 2",
+   "report": "60",
+   "own": "60",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 232,
+   "statement": "class 43 n=16: cycles",
+   "report": "283",
+   "own": "283",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 232,
+   "statement": "class 43 n=16: q (selected)",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 232,
+   "statement": "class 43 n=16: radius crystal",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 232,
+   "statement": "class 43 n=16: max radius others",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 232,
+   "statement": "class 43 n=16: max direct entry cost",
+   "report": "4",
+   "own": "4",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 232,
+   "statement": "class 43 n=16: Lemma B holds",
+   "report": "True",
+   "own": "True",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 232,
+   "statement": "class 43 n=16: gamma_min",
+   "report": "282",
+   "own": "282",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 232,
+   "statement": "class 43 n=16: m + q - 2",
+   "report": "282",
+   "own": "282",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 233,
+   "statement": "class 43 n=20: cycles",
+   "report": "1529",
+   "own": "1529",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 233,
+   "statement": "class 43 n=20: q (selected)",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 233,
+   "statement": "class 43 n=20: radius crystal",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 233,
+   "statement": "class 43 n=20: max radius others",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 233,
+   "statement": "class 43 n=20: max direct entry cost",
+   "report": "5",
+   "own": "5",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 233,
+   "statement": "class 43 n=20: Lemma B holds",
+   "report": "True",
+   "own": "True",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 233,
+   "statement": "class 43 n=20: gamma_min",
+   "report": "1528",
+   "own": "1528",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 233,
+   "statement": "class 43 n=20: m + q - 2",
+   "report": "1528",
+   "own": "1528",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 234,
+   "statement": "class 94 n=9: cycles",
+   "report": "31",
+   "own": "31",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 234,
+   "statement": "class 94 n=9: q (selected)",
+   "report": "3",
+   "own": "3",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 234,
+   "statement": "class 94 n=9: radius crystal",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 234,
+   "statement": "class 94 n=9: max radius others",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 234,
+   "statement": "class 94 n=9: max direct entry cost",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 234,
+   "statement": "class 94 n=9: Lemma B holds",
+   "report": "True",
+   "own": "True",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 234,
+   "statement": "class 94 n=9: gamma_min",
+   "report": "32",
+   "own": "32",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 234,
+   "statement": "class 94 n=9: m + q - 2",
+   "report": "32",
+   "own": "32",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 235,
+   "statement": "class 94 n=12: cycles",
+   "report": "147",
+   "own": "147",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 235,
+   "statement": "class 94 n=12: q (selected)",
+   "report": "3",
+   "own": "3",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 235,
+   "statement": "class 94 n=12: radius crystal",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 235,
+   "statement": "class 94 n=12: max radius others",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 235,
+   "statement": "class 94 n=12: max direct entry cost",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 235,
+   "statement": "class 94 n=12: Lemma B holds",
+   "report": "True",
+   "own": "True",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 235,
+   "statement": "class 94 n=12: gamma_min",
+   "report": "148",
+   "own": "148",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 235,
+   "statement": "class 94 n=12: m + q - 2",
+   "report": "148",
+   "own": "148",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 236,
+   "statement": "class 94 n=15: cycles",
+   "report": "509",
+   "own": "509",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 236,
+   "statement": "class 94 n=15: q (selected)",
+   "report": "3",
+   "own": "3",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 236,
+   "statement": "class 94 n=15: radius crystal",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 236,
+   "statement": "class 94 n=15: max radius others",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 236,
+   "statement": "class 94 n=15: max direct entry cost",
+   "report": "3",
+   "own": "3",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 236,
+   "statement": "class 94 n=15: Lemma B holds",
+   "report": "True",
+   "own": "True",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 236,
+   "statement": "class 94 n=15: gamma_min",
+   "report": "510",
+   "own": "510",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 236,
+   "statement": "class 94 n=15: m + q - 2",
+   "report": "510",
+   "own": "510",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 237,
+   "statement": "class 94 n=18: cycles",
+   "report": "1881",
+   "own": "1881",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 237,
+   "statement": "class 94 n=18: q (selected)",
+   "report": "3",
+   "own": "3",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 237,
+   "statement": "class 94 n=18: radius crystal",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 237,
+   "statement": "class 94 n=18: max radius others",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 237,
+   "statement": "class 94 n=18: max direct entry cost",
+   "report": "3",
+   "own": "3",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 237,
+   "statement": "class 94 n=18: Lemma B holds",
+   "report": "True",
+   "own": "True",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 237,
+   "statement": "class 94 n=18: gamma_min",
+   "report": "1882",
+   "own": "1882",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 237,
+   "statement": "class 94 n=18: m + q - 2",
+   "report": "1882",
+   "own": "1882",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 238,
+   "statement": "class 94 n=21: cycles",
+   "report": "6927",
+   "own": "6927",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 238,
+   "statement": "class 94 n=21: q (selected)",
+   "report": "3",
+   "own": "3",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 238,
+   "statement": "class 94 n=21: radius crystal",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 238,
+   "statement": "class 94 n=21: max radius others",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 238,
+   "statement": "class 94 n=21: max direct entry cost",
+   "report": "4",
+   "own": "4",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 238,
+   "statement": "class 94 n=21: Lemma B holds",
+   "report": "True",
+   "own": "True",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 238,
+   "statement": "class 94 n=21: gamma_min",
+   "report": "6928",
+   "own": "6928",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 238,
+   "statement": "class 94 n=21: m + q - 2",
+   "report": "6928",
+   "own": "6928",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 239,
+   "statement": "class 142 n=8: cycles",
+   "report": "15",
+   "own": "15",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 239,
+   "statement": "class 142 n=8: q (selected)",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 239,
+   "statement": "class 142 n=8: radius crystal",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 239,
+   "statement": "class 142 n=8: max radius others",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 239,
+   "statement": "class 142 n=8: max direct entry cost",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 239,
+   "statement": "class 142 n=8: Lemma B holds",
+   "report": "True",
+   "own": "True",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 239,
+   "statement": "class 142 n=8: gamma_min",
+   "report": "14",
+   "own": "14",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 239,
+   "statement": "class 142 n=8: m + q - 2",
+   "report": "14",
+   "own": "14",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 240,
+   "statement": "class 142 n=12: cycles",
+   "report": "61",
+   "own": "61",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 240,
+   "statement": "class 142 n=12: q (selected)",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 240,
+   "statement": "class 142 n=12: radius crystal",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 240,
+   "statement": "class 142 n=12: max radius others",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 240,
+   "statement": "class 142 n=12: max direct entry cost",
+   "report": "3",
+   "own": "3",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 240,
+   "statement": "class 142 n=12: Lemma B holds",
+   "report": "True",
+   "own": "True",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 240,
+   "statement": "class 142 n=12: gamma_min",
+   "report": "60",
+   "own": "60",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 240,
+   "statement": "class 142 n=12: m + q - 2",
+   "report": "60",
+   "own": "60",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 241,
+   "statement": "class 142 n=16: cycles",
+   "report": "285",
+   "own": "285",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 241,
+   "statement": "class 142 n=16: q (selected)",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 241,
+   "statement": "class 142 n=16: radius crystal",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 241,
+   "statement": "class 142 n=16: max radius others",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 241,
+   "statement": "class 142 n=16: max direct entry cost",
+   "report": "4",
+   "own": "4",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 241,
+   "statement": "class 142 n=16: Lemma B holds",
+   "report": "True",
+   "own": "True",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 241,
+   "statement": "class 142 n=16: gamma_min",
+   "report": "284",
+   "own": "284",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 241,
+   "statement": "class 142 n=16: m + q - 2",
+   "report": "284",
+   "own": "284",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 242,
+   "statement": "class 142 n=20: cycles",
+   "report": "1531",
+   "own": "1531",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 242,
+   "statement": "class 142 n=20: q (selected)",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 242,
+   "statement": "class 142 n=20: radius crystal",
+   "report": "2",
+   "own": "2",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 242,
+   "statement": "class 142 n=20: max radius others",
+   "report": "1",
+   "own": "1",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 242,
+   "statement": "class 142 n=20: max direct entry cost",
+   "report": "5",
+   "own": "5",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 242,
+   "statement": "class 142 n=20: Lemma B holds",
+   "report": "True",
+   "own": "True",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 242,
+   "statement": "class 142 n=20: gamma_min",
+   "report": "1530",
+   "own": "1530",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1",
+   "line": 242,
+   "statement": "class 142 n=20: m + q - 2",
+   "report": "1530",
+   "own": "1530",
+   "source": "../out/sample.jsonl + out/extras.jsonl + out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "table_5_1_rows",
+   "line": 230,
+   "statement": "rows = all p | n in 8..22 for classes 94, 43, 142",
+   "report": [
+    [
+     43,
+     8
+    ],
+    [
+     43,
+     12
+    ],
+    [
+     43,
+     16
+    ],
+    [
+     43,
+     20
+    ],
+    [
+     94,
+     9
+    ],
+    [
+     94,
+     12
+    ],
+    [
+     94,
+     15
+    ],
+    [
+     94,
+     18
+    ],
+    [
+     94,
+     21
+    ],
+    [
+     142,
+     8
+    ],
+    [
+     142,
+     12
+    ],
+    [
+     142,
+     16
+    ],
+    [
+     142,
+     20
+    ]
+   ],
+   "own": [
+    [
+     43,
+     8
+    ],
+    [
+     43,
+     12
+    ],
+    [
+     43,
+     16
+    ],
+    [
+     43,
+     20
+    ],
+    [
+     94,
+     9
+    ],
+    [
+     94,
+     12
+    ],
+    [
+     94,
+     15
+    ],
+    [
+     94,
+     18
+    ],
+    [
+     94,
+     21
+    ],
+    [
+     142,
+     8
+    ],
+    [
+     142,
+     12
+    ],
+    [
+     142,
+     16
+    ],
+    [
+     142,
+     20
+    ]
+   ],
+   "source": "enumeration",
+   "equal": true
+  },
+  {
+   "id": "sec5_1_class94_crystal",
+   "line": 222,
+   "statement": "94, 3|n: selected = 3 phases of fixed point (011)^(n/3), codes 3,5,6",
+   "report": true,
+   "own": true,
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_1_class43_142_crystal",
+   "line": 223,
+   "statement": "43/142, 4|n: selected = one cycle (0011)^(n/4), T = 4, codes 1,3,4,6",
+   "report": true,
+   "own": true,
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_1_rules_43_142_agree",
+   "line": 224,
+   "statement": "codes on which rules 43 and 142 agree",
+   "report": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "own": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "source": "rule tables",
+   "equal": true
+  },
+  {
+   "id": "sec5_1_no_356_cycle",
+   "line": 260,
+   "statement": "94, 3 does not divide n (8..22): cycles with codes within {3,5,6}",
+   "report": 0,
+   "own": 0,
+   "source": "out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "sec5_1_other_direction",
+   "line": 258,
+   "statement": "94/43/142, p does not divide n (8..22): single closed class, all codes, k* = 0",
+   "report": true,
+   "own": true,
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 275,
+   "statement": "class 35 n=8: a0",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 275,
+   "statement": "class 35 n=8: selected_a",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 275,
+   "statement": "class 35 n=8: not_selected_a",
+   "report": "4",
+   "own": "4",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 275,
+   "statement": "class 35 n=8: code5_missing",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 276,
+   "statement": "class 35 n=9: a0",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 276,
+   "statement": "class 35 n=9: selected_a",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 276,
+   "statement": "class 35 n=9: not_selected_a",
+   "report": "3",
+   "own": "3",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 276,
+   "statement": "class 35 n=9: code5_missing",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 277,
+   "statement": "class 35 n=10: a0",
+   "report": "2",
+   "own": "2",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 277,
+   "statement": "class 35 n=10: selected_a",
+   "report": "2",
+   "own": "2",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 277,
+   "statement": "class 35 n=10: not_selected_a",
+   "report": "5",
+   "own": "5",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 277,
+   "statement": "class 35 n=10: code5_missing",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 278,
+   "statement": "class 35 n=11: a0",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 278,
+   "statement": "class 35 n=11: selected_a",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 278,
+   "statement": "class 35 n=11: not_selected_a",
+   "report": "4",
+   "own": "4",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 278,
+   "statement": "class 35 n=11: code5_missing",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 279,
+   "statement": "class 35 n=12: a0",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 279,
+   "statement": "class 35 n=12: selected_a",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 279,
+   "statement": "class 35 n=12: not_selected_a",
+   "report": "3,6",
+   "own": "3,6",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 279,
+   "statement": "class 35 n=12: code5_missing",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 280,
+   "statement": "class 35 n=13: a0",
+   "report": "2",
+   "own": "2",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 280,
+   "statement": "class 35 n=13: selected_a",
+   "report": "2",
+   "own": "2",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 280,
+   "statement": "class 35 n=13: not_selected_a",
+   "report": "5",
+   "own": "5",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 280,
+   "statement": "class 35 n=13: code5_missing",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 281,
+   "statement": "class 35 n=14: a0",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 281,
+   "statement": "class 35 n=14: selected_a",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 281,
+   "statement": "class 35 n=14: not_selected_a",
+   "report": "4,7",
+   "own": "4,7",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 281,
+   "statement": "class 35 n=14: code5_missing",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 282,
+   "statement": "class 35 n=15: a0",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 282,
+   "statement": "class 35 n=15: selected_a",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 282,
+   "statement": "class 35 n=15: not_selected_a",
+   "report": "3,6",
+   "own": "3,6",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 282,
+   "statement": "class 35 n=15: code5_missing",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 283,
+   "statement": "class 35 n=16: a0",
+   "report": "2",
+   "own": "2",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 283,
+   "statement": "class 35 n=16: selected_a",
+   "report": "2",
+   "own": "2",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 283,
+   "statement": "class 35 n=16: not_selected_a",
+   "report": "5,8",
+   "own": "5,8",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 283,
+   "statement": "class 35 n=16: code5_missing",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 284,
+   "statement": "class 35 n=17: a0",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 284,
+   "statement": "class 35 n=17: selected_a",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 284,
+   "statement": "class 35 n=17: not_selected_a",
+   "report": "4,7",
+   "own": "4,7",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 284,
+   "statement": "class 35 n=17: code5_missing",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 285,
+   "statement": "class 35 n=18: a0",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 285,
+   "statement": "class 35 n=18: selected_a",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 285,
+   "statement": "class 35 n=18: not_selected_a",
+   "report": "3,6,9",
+   "own": "3,6,9",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 285,
+   "statement": "class 35 n=18: code5_missing",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 286,
+   "statement": "class 35 n=19: a0",
+   "report": "2",
+   "own": "2",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 286,
+   "statement": "class 35 n=19: selected_a",
+   "report": "2",
+   "own": "2",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 286,
+   "statement": "class 35 n=19: not_selected_a",
+   "report": "5,8",
+   "own": "5,8",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 286,
+   "statement": "class 35 n=19: code5_missing",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 287,
+   "statement": "class 35 n=20: a0",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 287,
+   "statement": "class 35 n=20: selected_a",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 287,
+   "statement": "class 35 n=20: not_selected_a",
+   "report": "4,7,10",
+   "own": "4,7,10",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 287,
+   "statement": "class 35 n=20: code5_missing",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 288,
+   "statement": "class 35 n=21: a0",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 288,
+   "statement": "class 35 n=21: selected_a",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 288,
+   "statement": "class 35 n=21: not_selected_a",
+   "report": "3,6,9",
+   "own": "3,6,9",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 288,
+   "statement": "class 35 n=21: code5_missing",
+   "report": "1",
+   "own": "1",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 289,
+   "statement": "class 35 n=22: a0",
+   "report": "2",
+   "own": "2",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 289,
+   "statement": "class 35 n=22: selected_a",
+   "report": "2",
+   "own": "2",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 289,
+   "statement": "class 35 n=22: not_selected_a",
+   "report": "5,8,11",
+   "own": "5,8,11",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "table_5_2",
+   "line": 289,
+   "statement": "class 35 n=22: code5_missing",
+   "report": "0",
+   "own": "0",
+   "source": "out/compare_derived.json (rule35_blocks.law_by_n)",
+   "equal": true
+  },
+  {
+   "id": "sec5_2_block_law",
+   "line": 266,
+   "statement": "violations of the block law of 5.2 over n = 8..22 (code-5 cycle not a {10,100}-word with a>=1; a state of a family cycle not such a word; non-family cycle not selected; selected a != a0 or unselected a = a0)",
+   "report": 0,
+   "own": 0,
+   "source": "out/compare_derived.json",
+   "equal": true
+  },
+  {
+   "id": "sec5_3_59_pairs",
+   "line": 299,
+   "statement": "pairs of classes 22, 26, 122, 154 in n = 8..22",
+   "report": 59,
+   "own": 59,
+   "source": "out/compare_derived.json",
+   "equal": true
+  },
+  {
+   "id": "sec5_3_coincide",
+   "line": 299,
+   "statement": "pairs where 'seed orbit returns to 0' equals '0 selected alone'",
+   "report": 59,
+   "own": 59,
+   "source": "out/compare_derived.json",
+   "equal": true
+  },
+  {
+   "id": "sec5_3_lemmaB_zero",
+   "line": 298,
+   "statement": "(rule, n) in n = 8..22 with the zero state selected alone / with Lemma B holding for A = {0} (the study's own g2_holds column has the same count)",
+   "report": "all",
+   "own": "9 of 13 (the other 4 are maps with a single cycle: rules 60, 90 at n = 8, 16)",
+   "source": "out/compare_derived.json",
+   "equal": false
+  },
+  {
+   "id": "sec5_3_154_cycles",
+   "line": 336,
+   "statement": "154: cycles at n = 8, 16",
+   "report": [
+    31,
+    4081
+   ],
+   "own": [
+    31,
+    4081
+   ],
+   "source": "out/compare_derived.json",
+   "equal": true
+  },
+  {
+   "id": "sec5_3_154_radius",
+   "line": 336,
+   "statement": "154 at n = 8, 16: number of cycles with radius >= 2 (only the zero state)",
+   "report": [
+    1,
+    1
+   ],
+   "own": [
+    1,
+    1
+   ],
+   "source": "out/compare_derived.json",
+   "equal": true
+  },
+  {
+   "id": "sec5_3_154_maxdist",
+   "line": 337,
+   "statement": "154: maximum G1 distance to 0 at n = 8, 16; unreachable cycles",
+   "report": [
+    4,
+    8,
+    0,
+    0
+   ],
+   "own": [
+    4,
+    8,
+    0,
+    0
+   ],
+   "source": "out/compare_derived.json",
+   "equal": true
+  },
+  {
+   "id": "sec5_3_154_spearman",
+   "line": 338,
+   "statement": "154: Spearman(mean ones, distance) at n = 8, 16 (2 decimals)",
+   "report": [
+    0.94,
+    0.96
+   ],
+   "own": [
+    0.94,
+    0.96
+   ],
+   "source": "out/compare_derived.json",
+   "equal": true
+  },
+  {
+   "id": "sec5_3_154_gamma",
+   "line": 338,
+   "statement": "154: gamma_min = m - 1 at n = 8, 16",
+   "report": true,
+   "own": true,
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_3_154_even",
+   "line": 342,
+   "statement": "154, even n <= 20 not a power of two: one strongly connected G1, all cycles selected, n list",
+   "report": [
+    10,
+    12,
+    14,
+    18,
+    20
+   ],
+   "own": [
+    10,
+    12,
+    14,
+    18,
+    20
+   ],
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_3_26_n16",
+   "line": 347,
+   "statement": "26, n = 16: zero state alone, k* = 2; n = 8: zero state alone",
+   "report": true,
+   "own": true,
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_4_only_carrier",
+   "line": 354,
+   "statement": "122: carriers of code 2 are exactly the checkerboard at even n and none at odd n (n = 8..22)",
+   "report": true,
+   "own": true,
+   "source": "out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "sec5_4_checkerboard_selected",
+   "line": 356,
+   "statement": "122: n with the checkerboard selected",
+   "report": [
+    8,
+    12,
+    14,
+    16,
+    20,
+    22
+   ],
+   "own": [
+    8,
+    12,
+    14,
+    16,
+    20,
+    22
+   ],
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_4_checkerboard_not_selected",
+   "line": 356,
+   "statement": "122: even n with the checkerboard not selected",
+   "report": [
+    10,
+    18
+   ],
+   "own": [
+    10,
+    18
+   ],
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_4_n14",
+   "line": 357,
+   "statement": "122, n = 14: selected = zero state and checkerboard, codes 0, 2, 5",
+   "report": true,
+   "own": true,
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_4_kstar0_iff_4_divides_n_fails_at_22",
+   "line": 357,
+   "statement": "122: n in 8..22 where (k* = 0) differs from (4 | n)",
+   "report": [
+    22
+   ],
+   "own": [
+    22
+   ],
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_4_code2_missing_odd",
+   "line": 355,
+   "statement": "122: odd n in 8..22 where code 2 is NOT missing from the selected set",
+   "report": [],
+   "own": [],
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_5_22_kstar1",
+   "line": 363,
+   "statement": "22: n in 4..22 with k* = 1",
+   "report": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    14,
+    15,
+    16
+   ],
+   "own": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    14,
+    15,
+    16
+   ],
+   "source": "../out/sample.jsonl, out/sweep88.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_5_22_kstar_values",
+   "line": 363,
+   "statement": "22: all k* in 4..22 are 0 or 1",
+   "report": true,
+   "own": true,
+   "source": "same",
+   "equal": true
+  },
+  {
+   "id": "sec5_5_22_zero_alone",
+   "line": 364,
+   "statement": "22: n in 4..22 with the zero state selected alone",
+   "report": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    14,
+    15,
+    16
+   ],
+   "own": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    14,
+    15,
+    16
+   ],
+   "source": "same",
+   "equal": true
+  },
+  {
+   "id": "sec5_5_26_missing7",
+   "line": 366,
+   "statement": "26: n with k* >= 1 other than 8, 16, and whether the missing code is exactly 7 there",
+   "report": true,
+   "own": true,
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_5_26_mod3",
+   "line": 368,
+   "statement": "26: n in 9..21 with a selected carrier of code 7",
+   "report": [
+    11,
+    14,
+    17,
+    20
+   ],
+   "own": [
+    11,
+    14,
+    17,
+    20
+   ],
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_5_26_n22",
+   "line": 368,
+   "statement": "26, n = 22: k* = 0 and a selected carrier of code 7 exists",
+   "report": true,
+   "own": true,
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_5_37_missing",
+   "line": 370,
+   "statement": "37: n in 8..22 where codes 2 and 5 are not both missing",
+   "report": [
+    11,
+    12,
+    17,
+    18
+   ],
+   "own": [
+    11,
+    12,
+    17,
+    18
+   ],
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_5_37_missing_exact",
+   "line": 370,
+   "statement": "37: at all other n the missing codes are exactly {2, 5}",
+   "report": true,
+   "own": true,
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_5_37_mod6",
+   "line": 370,
+   "statement": "37: n in 8..22 with k* = 0",
+   "report": [
+    11,
+    12,
+    17,
+    18
+   ],
+   "own": [
+    11,
+    12,
+    17,
+    18
+   ],
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_5_37_periods",
+   "line": 372,
+   "statement": "37: temporal periods of the selected carriers of code 2 or 5 lie between 6 and 3n (n = 11, 12, 17, 18)",
+   "report": true,
+   "own": true,
+   "source": "../out/sample.jsonl; own values: {\"11\": [33], \"12\": [6, 12], \"17\": [51], \"18\": [6, 18]}",
+   "equal": true
+  },
+  {
+   "id": "sec5_5_45_n8",
+   "line": 374,
+   "statement": "45, n = 8: uniform 2-cycle selected alone, radius 2, codes 0 and 7",
+   "report": true,
+   "own": true,
+   "source": "../out/sample.jsonl, out/own_orbits/",
+   "equal": true
+  },
+  {
+   "id": "sec5_5_45_even",
+   "line": 375,
+   "statement": "45, even n in 10..22: uniform 2-cycle has radius 1 and all cycles are selected",
+   "report": true,
+   "own": false,
+   "source": "same",
+   "equal": false
+  },
+  {
+   "id": "sec5_5_45_odd_bijective",
+   "line": 374,
+   "statement": "45, odd n in 9..21: F bijective (brute force), k* = 0",
+   "report": true,
+   "own": true,
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_5_73_switch",
+   "line": 377,
+   "statement": "73: n in 8..22 with k* >= 1",
+   "report": [
+    9
+   ],
+   "own": [
+    9
+   ],
+   "source": "../out/sample.jsonl",
+   "equal": true
+  },
+  {
+   "id": "sec5_5_73_uniform",
+   "line": 377,
+   "statement": "73: n in 8..22 where the uniform 2-cycle is not selected",
+   "report": [
+    9
+   ],
+   "own": [
+    9,
+    22
+   ],
+   "source": "../out/sample.jsonl",
+   "equal": false
+  },
+  {
+   "id": "sec5_5_73_n9",
+   "line": 378,
+   "statement": "73, n = 9: missing code 7; selected cycles include temporal period 3",
+   "report": true,
+   "own": false,
+   "source": "../out/sample.jsonl",
+   "equal": false
+  },
+  {
+   "id": "sec9_jobs",
+   "line": 534,
+   "statement": "mechanism jobs in mech_cost.csv",
+   "report": 194,
+   "own": 194,
+   "source": "data/ring_size/mech_cost.csv (study file)",
+   "equal": true
+  },
+  {
+   "id": "sec9_total_hours",
+   "line": 534,
+   "statement": "sum of cost_seconds in hours, 1 decimal (the report calls it CPU; the column is wall time, see step 6)",
+   "report": 1.9,
+   "own": 1.9,
+   "source": "data/ring_size/mech_cost.csv (study file)",
+   "equal": true
+  },
+  {
+   "id": "sec9_longest",
+   "line": 534,
+   "statement": "longest job: minutes, rule, n",
+   "report": [
+    25,
+    35,
+    22
+   ],
+   "own": [
+    25,
+    35,
+    22
+   ],
+   "source": "data/ring_size/mech_cost.csv (study file)",
+   "equal": true
+  },
+  {
+   "id": "sec9_peak_gb",
+   "line": 534,
+   "statement": "peak memory GB, 1 decimal",
+   "report": 2.0,
+   "own": 2.0,
+   "source": "data/ring_size/mech_cost.csv (study file)",
+   "equal": true
+  },
+  {
+   "id": "sec8_atlas_records",
+   "line": 511,
+   "statement": "atlas records: 75 classes x 17 sizes + 13 x 4",
+   "report": 1327,
+   "own": 1327,
+   "source": "data/ring_size/atlas/mechanisms_atlas.csv (study file)",
+   "equal": true
+  }
+ ]
+}

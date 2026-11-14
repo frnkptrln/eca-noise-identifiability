@@ -1,0 +1,9 @@
+L1                 ok=True  n=3..20  violations=0
+L2                 ok=True  n=3..20  violations=0
+L3_all_states      ok=True  n=5..16  violations=0
+L3_cycle_states    ok=True  n=5..20  violations=0
+L4_swap            ok=True  n=5..30  violations=0
+L5_merge           ok=True  n=6..30  violations=0
+L6_crystal         ok=True  n=6..99  violations=0
+C2_codes           ok=True  n=6..99  violations=0
+cpu_seconds 3.39 peak_rss_mb 122.2 all_ok True

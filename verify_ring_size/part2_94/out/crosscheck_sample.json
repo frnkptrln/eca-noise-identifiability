@@ -1,0 +1,402 @@
+{
+ "compared_n": [
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22
+ ],
+ "all_agree": true,
+ "rows": [
+  {
+   "n": 8,
+   "cycles": [
+    27,
+    27
+   ],
+   "periodic_states": [
+    43,
+    43
+   ],
+   "g1_edges": [
+    146,
+    146
+   ],
+   "closed_class_sizes": [
+    [
+     27
+    ],
+    [
+     27
+    ]
+   ],
+   "agree": true
+  },
+  {
+   "n": 9,
+   "cycles": [
+    31,
+    31
+   ],
+   "periodic_states": [
+    58,
+    58
+   ],
+   "g1_edges": [
+    189,
+    189
+   ],
+   "closed_class_sizes": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "agree": true
+  },
+  {
+   "n": 10,
+   "cycles": [
+    73,
+    73
+   ],
+   "periodic_states": [
+    158,
+    158
+   ],
+   "g1_edges": [
+    610,
+    610
+   ],
+   "closed_class_sizes": [
+    [
+     67
+    ],
+    [
+     67
+    ]
+   ],
+   "agree": true
+  },
+  {
+   "n": 11,
+   "cycles": [
+    78,
+    78
+   ],
+   "periodic_states": [
+    144,
+    144
+   ],
+   "g1_edges": [
+    638,
+    638
+   ],
+   "closed_class_sizes": [
+    [
+     77
+    ],
+    [
+     77
+    ]
+   ],
+   "agree": true
+  },
+  {
+   "n": 12,
+   "cycles": [
+    147,
+    147
+   ],
+   "periodic_states": [
+    348,
+    348
+   ],
+   "g1_edges": [
+    1628,
+    1628
+   ],
+   "closed_class_sizes": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "agree": true
+  },
+  {
+   "n": 13,
+   "cycles": [
+    209,
+    209
+   ],
+   "periodic_states": [
+    404,
+    404
+   ],
+   "g1_edges": [
+    2145,
+    2145
+   ],
+   "closed_class_sizes": [
+    [
+     208
+    ],
+    [
+     208
+    ]
+   ],
+   "agree": true
+  },
+  {
+   "n": 14,
+   "cycles": [
+    320,
+    320
+   ],
+   "periodic_states": [
+    871,
+    871
+   ],
+   "g1_edges": [
+    4284,
+    4284
+   ],
+   "closed_class_sizes": [
+    [
+     317
+    ],
+    [
+     317
+    ]
+   ],
+   "agree": true
+  },
+  {
+   "n": 15,
+   "cycles": [
+    509,
+    509
+   ],
+   "periodic_states": [
+    1189,
+    1189
+   ],
+   "g1_edges": [
+    6705,
+    6705
+   ],
+   "closed_class_sizes": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "agree": true
+  },
+  {
+   "n": 16,
+   "cycles": [
+    747,
+    747
+   ],
+   "periodic_states": [
+    1723,
+    1723
+   ],
+   "g1_edges": [
+    10130,
+    10130
+   ],
+   "closed_class_sizes": [
+    [
+     746
+    ],
+    [
+     746
+    ]
+   ],
+   "agree": true
+  },
+  {
+   "n": 17,
+   "cycles": [
+    1191,
+    1191
+   ],
+   "periodic_states": [
+    3112,
+    3112
+   ],
+   "g1_edges": [
+    18088,
+    18088
+   ],
+   "closed_class_sizes": [
+    [
+     1190
+    ],
+    [
+     1190
+    ]
+   ],
+   "agree": true
+  },
+  {
+   "n": 18,
+   "cycles": [
+    1881,
+    1881
+   ],
+   "periodic_states": [
+    4998,
+    4998
+   ],
+   "g1_edges": [
+    32820,
+    32820
+   ],
+   "closed_class_sizes": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "agree": true
+  },
+  {
+   "n": 19,
+   "cycles": [
+    2832,
+    2832
+   ],
+   "periodic_states": [
+    7677,
+    7677
+   ],
+   "g1_edges": [
+    48773,
+    48773
+   ],
+   "closed_class_sizes": [
+    [
+     2831
+    ],
+    [
+     2831
+    ]
+   ],
+   "agree": true
+  },
+  {
+   "n": 20,
+   "cycles": [
+    4513,
+    4513
+   ],
+   "periodic_states": [
+    12498,
+    12498
+   ],
+   "g1_edges": [
+    86322,
+    86322
+   ],
+   "closed_class_sizes": [
+    [
+     4477
+    ],
+    [
+     4477
+    ]
+   ],
+   "agree": true
+  },
+  {
+   "n": 21,
+   "cycles": [
+    6927,
+    6927
+   ],
+   "periodic_states": [
+    18988,
+    18988
+   ],
+   "g1_edges": [
+    132573,
+    132573
+   ],
+   "closed_class_sizes": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "agree": true
+  },
+  {
+   "n": 22,
+   "cycles": [
+    10827,
+    10827
+   ],
+   "periodic_states": [
+    33388,
+    33388
+   ],
+   "g1_edges": [
+    237886,
+    237886
+   ],
+   "closed_class_sizes": [
+    [
+     10793
+    ],
+    [
+     10793
+    ]
+   ],
+   "agree": true
+  }
+ ]
+}
