@@ -1,0 +1,4 @@
+rule35: code5 => family True; family & no code5 <=> a = 0 True; family selected <=> a = a0 True; non-family all selected True; a = a0 mod 3 True; n = 8..22
+rule154 n=8: cycles 31, unreachable 0, max distance 4, Spearman(mean ones, distance) 0.936
+rule154 n=16: cycles 4081, unreachable 0, max distance 8, Spearman(mean ones, distance) 0.964
+zero mechanism: seed returns <=> zero alone selected: True over 59 (rule, n) pairs rules [np.int64(22), np.int64(26), np.int64(122), np.int64(154)]

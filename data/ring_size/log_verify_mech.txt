@@ -1,0 +1,10 @@
+verify_mech: 408 (rule, n) pairs, 0 disagreements
+
+real	3m52.647s
+user	3m49.370s
+sys	0m3.063s
+verify_mech: 24 (rule, n) pairs, 0 disagreements
+
+real	1m28.034s
+user	1m27.538s
+sys	0m0.423s
