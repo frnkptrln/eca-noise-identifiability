@@ -1,0 +1,88 @@
+{
+ "A": {
+  "bijective_cases": 90,
+  "cases": 1536,
+  "cases_gamma_16_sampled_roots": 15,
+  "cases_gamma_all_roots": 1521,
+  "cases_gamma_exhaustive": 1114,
+  "cases_selected_equals_union_closed_false": 0,
+  "cpu_seconds": 25.4,
+  "failures": 0,
+  "max_V_seen": 8,
+  "max_cycles": 256,
+  "n_range": [
+   3,
+   8
+  ],
+  "rules": 256
+ },
+ "B": {
+  "cases": 562,
+  "cpu_seconds": 437.2,
+  "eps": [
+   "1e-8",
+   "1e-16",
+   "1e-24"
+  ],
+  "failures": 0,
+  "max_abs_dev_order": 5.4467732102381206e-08,
+  "n_range": [
+   3,
+   6
+  ],
+  "rules_n3_n4": 256,
+  "rules_n5_n6": [
+   22,
+   26,
+   35,
+   37,
+   43,
+   45,
+   60,
+   73,
+   90,
+   94,
+   122,
+   142,
+   154,
+   0,
+   1,
+   4,
+   18,
+   30,
+   50,
+   54,
+   110,
+   150,
+   184,
+   204,
+   232
+  ]
+ },
+ "C": {
+  "cases": 52,
+  "cases_with_per_root_edmonds": 52,
+  "cpu_seconds": 0.4,
+  "failures": 0,
+  "n_range": [
+   9,
+   12
+  ],
+  "peak_rss_mb": 196.9,
+  "rules": [
+   22,
+   26,
+   35,
+   37,
+   43,
+   45,
+   60,
+   73,
+   90,
+   94,
+   122,
+   142,
+   154
+  ]
+ }
+}

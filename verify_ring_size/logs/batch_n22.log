@@ -1,0 +1,14 @@
+# start 2026-11-14 11:48:51: 12 cases requested, 0 already done, workers=2
+ok rule=22 n=22 cycles=108 method=full cpu=1.2s rss=130MB checks=True
+ok rule=26 n=22 cycles=3695 method=full cpu=164.6s rss=198MB checks=True
+ok rule=37 n=22 cycles=2235 method=full cpu=9.9s rss=172MB checks=True
+ok rule=43 n=22 cycles=3620 method=full cpu=214.6s rss=172MB checks=True
+ok rule=45 n=22 cycles=272 method=full cpu=16.0s rss=145MB checks=True
+ok rule=35 n=22 cycles=5407 method=full cpu=432.3s rss=190MB checks=True
+ok rule=60 n=22 cycles=1540 method=full cpu=83.7s rss=250MB checks=True
+ok rule=73 n=22 cycles=13304 method=full cpu=58.0s rss=363MB checks=True
+ok rule=94 n=22 cycles=10827 method=full cpu=44.6s rss=289MB checks=True
+ok rule=122 n=22 cycles=466 method=full cpu=3.0s rss=127MB checks=True
+ok rule=90 n=22 cycles=16930 method=full cpu=176.1s rss=1083MB checks=True
+ok rule=142 n=22 cycles=3622 method=full cpu=219.3s rss=171MB checks=True
+# end {"batch": "n22", "cases_run": 12, "cases_failed": [], "cpu_seconds_sum": 1423.3, "peak_rss_mb_max_single_case": 1082.8, "finished": "2026-11-14 12:01:36"}
