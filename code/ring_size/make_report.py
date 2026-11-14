@@ -50,6 +50,7 @@ def build(figs, literature):
     assert bool((nb.selected_eq_closed_union == True).all()), "selected != union of closed classes somewhere"
     V["N_SINGLE_CLOSED"] = int((nb.g1_closed == 1).sum())
     V["NMAX154"] = int(M[M.rule == 154].n.max())
+    V["N154EVEN"] = int(M[(M.rule == 154) & (M.n % 2 == 0)].n.max())
     cr = M[M.rule.isin([94, 43, 142]) & (M.crystal_orbit == True)]
     V["NMAX_CRYSTAL"] = int(M[M.rule.isin([94, 43, 142])].n.max())
     # k* table
@@ -148,22 +149,34 @@ def build(figs, literature):
              ("data/ring_size/injectivity.csv", "pair-graph certificates (Lemma P)"),
              ("data/ring_size/rule35_blocks.csv, code_carriers.csv, g1_distance_154.csv, zero_mechanism.csv", "derived tables (analyze_mechanisms.py)"),
              ("data/ring_size/sampled_reach/", "sampled reachability beyond n = 22"),
+             ("data/ring_size/factor_search.csv", "block maps of width <= 4 intertwining rule 154 with a radius-1 rule"),
+             ("data/ring_size/stopped_runs.csv", "runs stopped above the stated cost cap"),
              ("data/ring_size/predictions_outcome.csv", "outcome of every sealed prediction"),
              ("data/ring_size/MANIFEST.sha256", "SHA-256 of every file in data/ring_size"),
              ("code/ring_size/", "mech, verify_mech, run_mech, run_local, ringlang, lightcone, sample_reach, analyze_mechanisms, check_predictions, figures_ring_size, make_report, tests")]
     if os.path.exists(os.path.join(OUT, "atlas", "mechanisms_atlas.csv")):
-        files.append(("data/ring_size/atlas/", "atlas: all 88 classes, n = 4..20, selected cycles (count, spatial and temporal periods, codes)"))
+        files.append(("data/ring_size/atlas/", "atlas: 75 non-switching classes at n = 4..20 and the 13 switching classes at n = 4..7; selected cycles (count, spatial and temporal periods, codes); checkpoint as mech_atlas.jsonl.gz"))
     V["TABLE_FILES"] = md_table(pd.DataFrame(files, columns=["file", "content"]))
     cost = pd.read_csv(os.path.join(OUT, "mech_cost.csv"))
-    V["COST_LINE"] = (f"mechanism jobs {len(cost)}, total CPU {cost.cost_seconds.sum() / 3600:.1f} h, longest job "
+    st = pd.read_csv(os.path.join(OUT, "stopped_runs.csv"))
+    stop = " ".join(f"Class {int(r.rule)} at n = {int(r.n)} was stopped after {r.wall_hours} h, above the stated cap of {r.cap_hours} h; it is not computed (`stopped_runs.csv`)." for r in st.itertuples())
+    V["COST_LINE"] = stop + " " + (f"Mechanism jobs {len(cost)}, total CPU {cost.cost_seconds.sum() / 3600:.1f} h, longest job "
                       f"{cost.cost_seconds.max() / 60:.0f} min (class {int(cost.loc[cost.cost_seconds.idxmax(), 'rule'])}, "
                       f"n = {int(cost.loc[cost.cost_seconds.idxmax(), 'n'])}), peak memory {cost.cost_maxrss_mb.max() / 1000:.1f} GB "
                       f"(`mech_cost.csv`).")
     atlas = os.path.join(OUT, "atlas", "mechanisms_atlas.csv")
     if os.path.exists(atlas):
         A = rsdata.load(os.path.join("atlas", "mechanisms_atlas.csv"))
-        V["ATLAS_NOTE"] = (f"\nAtlas (step 6): {len(A)} (class, n) records for all 88 classes at n = 4..20 in "
-                           "`data/ring_size/atlas/` (selected-cycle count, spatial and temporal periods, codes covered) [computed].")
+        log = open(os.path.join(OUT, "atlas", "log_atlas.txt")).read()
+        fin = re.findall(r"finalize: (\d+) records, (\d+) compared with v0.2, (\d+) disagreements", log)[-1]
+        V["ATLAS_NOTE"] = (f"\nAtlas (step 6) [computed]: `data/ring_size/atlas/mechanisms_atlas.csv` holds {len(A)} (class, n) records "
+                           f"({A.rule.nunique()} classes: the 75 non-switching classes at n = 4..20 and the 13 switching classes at "
+                           f"n = 4..7) with the selected-cycle count, the spatial and temporal periods of the selected cycles, "
+                           f"the codes they cover, k_c and k*; the selected orbits are in `cycle_orbits_atlas.csv.gz`. The 13 "
+                           f"switching classes at n >= 8 are in `mechanisms.csv`; together these cover all 88 classes at n = 4..20. "
+                           f"All {fin[1]} atlas records agree with v0.2 in cycles, selected count, gamma_min, k_c and k* "
+                           f"({fin[2]} disagreements, `atlas/log_atlas.txt`). Space-time pictures of selected cycles for the 13 "
+                           f"switching classes: the figure in 5.5.")
     else:
         V["ATLAS_NOTE"] = "\nAtlas (step 6): not produced in this run."
     V["LITERATURE"] = literature

@@ -10,6 +10,21 @@ Every claim carries one tag:
 **[computed]** an exact computation for the ring sizes stated, nothing beyond them;
 **[observed]** a pattern in computed data, or a sampled test, without exactness for the statement as a whole.
 
+## Summary
+
+The ring size enters through one object, the one-flip graph G1 between the cycles of the map: the
+noise-selected cycles are exactly a union of its closed classes (Theorem A, proved for all n), and a
+cycle that cannot be left with one flip is selected alone as soon as every other cycle reaches it by
+one-flip steps, however large the direct entry cost (Lemma B). In the switching classes that cycle is a spatially periodic crystal that exists only
+when its period divides n (classes 94, 43, 142, and class 35 within its code-carrying family), or the
+zero state, which cannot be left with one flip exactly when a single flip dies out on the ring (classes
+154, 26, 22, 60, 90, 122; inherited from rule 90's nilpotency at n = 2^k for 154 and 26, proved). What is
+proved for all n: the general statements, k* = 0 for classes 154 and 45 at odd n, the one-flip radius of
+the selected cycle (class 94 for all 3 | n; the zero state of 154, 26 for even n and of 22 for 4 | n).
+What is not proved for any of these classes: that every cycle reaches the selected crystal or zero state by
+one-flip steps; this single statement is computed for n <= {{NMAX}} and sampled up to n = 32.
+Class 122 at even n, class 26 away from powers of two, and the single switches of classes 45 and 73 resist.
+
 ## 1. Question
 
 For n = 8..20, v0.2 found 13 of the 88 classes whose small-noise order k* changes side with the ring
@@ -146,7 +161,7 @@ direct entry cost grows with n:
   (`crystal_radius.csv`, which also gives r >= 2 at every 3 | n up to 399 except n = 3). Classes 43 and
   142 do not heal locally: half of the single flips start a domain of another phase of the same
   travelling cycle that grows with both walls moving outward until it fills the ring, so the orbit
-  returns to the cycle only through the ring (Figure 4). Lemma H does not apply; r >= 2 is computed
+  returns to the cycle only through the ring (space-time figure in 5.5). Lemma H does not apply; r >= 2 is computed
   exactly at every n divisible by 4 up to {{CRYSTAL_NMAX}} (`crystal_radius.csv`) [computed].
 * **Reachability.** Lemma B needs every cycle to reach the crystal by one-flip steps (two flips allowed
   only out of the crystal phases). This is computed for n <= {{NMAX_CRYSTAL}} and tested by sampling
@@ -172,7 +187,7 @@ Not proved for any n beyond the computed range.
 
 ![class 35 block counts]({{FIG_35}})
 
-### 5.3 The zero state: classes 154, 26, 22 (and 60, 90, 122 at n = 2^k - 1)
+### 5.3 The zero state: classes 154, 26, 22, 60, 90, and 122 at n = 2^k - 1
 
 For rules with F(0) = 0, Lemma Z reduces "0 cannot be left by one flip" to the single-seed orbit.
 Wherever in n = 8..{{NMAX}} the zero state is selected alone, Lemma B holds with A = {0}
@@ -214,7 +229,7 @@ Spearman {{S154_8}} and {{S154_16}}, `g1_distance_154.csv`), and gamma_min = m -
 number of cycles is irrelevant to the selection; what decides it is that rule 90's nilpotency at 2^k
 makes a single flip of 0 die (Proposition R154), while at other even n it lands on a rule-90 cycle
 on one parity sublattice, so 0 has radius 1 and is no longer a closed class on its own. At even n not a power of two all
-cycles form one strongly connected G1 and are all selected [computed n <= {{NMAX}}]. What is not proved
+cycles form one strongly connected G1 and are all selected [computed for even n <= {{N154EVEN}}]. What is not proved
 is the reachability of 0 from every cycle at all n = 2^k; it was tested at n = 32 (Section 5.6) [observed].
 Prediction beyond 20: k* >= 1 at n = 32 follows from Proposition R154 and Lemma B if every cycle reaches 0;
 k* itself is not computed there.
@@ -290,7 +305,7 @@ Outcomes decided from the data files by `code/ring_size/check_predictions.py`
 * Classes 94, 43, 142 (crystal capture): reachability computed for n <= {{NMAX_CRYSTAL}}, sampled at n = 24..32;
   radius proved (94) or computed up to {{CRYSTAL_NMAX}} (43, 142); "p ∤ n gives k* = 0" computed only.
 * Class 154 at n = 2^k (zero state, inherited from rule 90): radius proved, reachability computed for
-  n = 8, 16 and sampled at n = 32. At even n not a power of two: k* = 0 computed for n <= {{NMAX154}}.
+  n = 8, 16 and sampled at n = 32. At even n not a power of two: k* = 0 computed for even n <= {{N154EVEN}}.
 * Class 22 (zero state): its switches are explained by the seed set, which is proved for 4 | n and
   computed up to 256 otherwise; v0.2 had no pattern.
 * Class 26 at n = 2^k and class 122 at n = 2^k - 1 (zero state).

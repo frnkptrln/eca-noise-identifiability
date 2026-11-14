@@ -1,0 +1,2 @@
+rule,n,workers,started_cet,stopped_cet,wall_hours,cap_hours,outcome
+154,22,1,2026-11-14 00:46,2026-11-14 08:09,7.4,5,stopped above the stated cap; no record written

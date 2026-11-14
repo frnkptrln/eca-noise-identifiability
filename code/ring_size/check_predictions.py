@@ -64,7 +64,7 @@ def main():
     d14 = m(122, lambda M: M.n == 14).iloc[0]; d15 = m(122, lambda M: M.n == 15).iloc[0]
     add("P4", "n = 15: zero state alone with radius >= 2", bool(d15.n_selected == 1 and d15.radius_selected_min >= 2), "mechanisms.csv")
     add("P4", "n = 14: uniform states selected with radius >= 2", bool(d14.radius_selected_min >= 2),
-        f"mechanisms.csv: selected = zero state and checkerboard, radius {d14.radius_selected_min}")
+        f"mechanisms.csv: selected = zero state and checkerboard, radius {int(d14.radius_selected_min)}")
     # P5
     d = m(154, lambda M: (M.n % 2 == 0) & ~M.n.isin([8, 16]))
     add("P5", "154, even n not a power of 2: every cycle radius 1, one-flip graph strongly connected",
@@ -103,7 +103,7 @@ def main():
             if len(d):
                 add("k*(21,22)", f"class {r}, n = {n}: k* = {k}", int(d.kstar.iloc[0]) == k, f"mechanisms.csv (computed {int(d.kstar.iloc[0])})")
             else:
-                add("k*(21,22)", f"class {r}, n = {n}: k* = {k}", False, "not computed", outcome="not tested")
+                add("k*(21,22)", f"class {r}, n = {n}: k* = {k}", False, "not computed: run stopped above the stated cost cap (stopped_runs.csv)", outcome="not tested")
     for n in (21, 22):
         d = m(22, lambda M: M.n == n); s = so[(so.rule == 22) & (so.n == n)]
         add("k*(21,22)", f"class 22, n = {n}: k* = 1 iff seed returns", int(d.kstar.iloc[0] >= 1) == int(s.returns_to_zero.iloc[0]),

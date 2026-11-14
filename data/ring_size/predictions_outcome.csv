@@ -11,7 +11,7 @@ P3,they have spatial period 3 or consist of 3-periodic segments,fails,rule35_blo
 P4,4|n: a selected cycle with spatial period 4 carries code 2,fails,cycle_orbits.csv.gz: the only carrier of code 2 is the checkerboard (spatial period 2)
 P4,"missing code is 2 at n in {9,10,11,13,17,18,19}",holds,mechanisms.csv
 P4,n = 15: zero state alone with radius >= 2,holds,mechanisms.csv
-P4,n = 14: uniform states selected with radius >= 2,fails,"mechanisms.csv: selected = zero state and checkerboard, radius 1.0"
+P4,n = 14: uniform states selected with radius >= 2,fails,"mechanisms.csv: selected = zero state and checkerboard, radius 1"
 P5,"154, even n not a power of 2: every cycle radius 1, one-flip graph strongly connected",holds,"mechanisms.csv, n = [10, 12, 14, 18, 20]"
 P5,"154, n = 8, 16: zero radius 2, others radius 1, {0} the single closed class",holds,mechanisms.csv
 P6,22: k* = 1 exactly where the single-flip orbit of 0 returns to 0,holds,"zero_mechanism.csv, n = 8..22"
@@ -37,7 +37,7 @@ P8,73: the only switch for n >= 8 is n = 9,holds,"mechanisms.csv, n = 8..22"
 "k*(21,22)","class 90, n = 21: k* = 0",holds,mechanisms.csv (computed 0)
 "k*(21,22)","class 90, n = 22: k* = 0",holds,mechanisms.csv (computed 0)
 "k*(21,22)","class 154, n = 21: k* = 0",holds,mechanisms.csv (computed 0)
-"k*(21,22)","class 154, n = 22: k* = 0",not tested,not computed
+"k*(21,22)","class 154, n = 22: k* = 0",not tested,not computed: run stopped above the stated cost cap (stopped_runs.csv)
 "k*(21,22)","class 45, n = 21: k* = 0",holds,mechanisms.csv (computed 0)
 "k*(21,22)","class 45, n = 22: k* = 0",holds,mechanisms.csv (computed 0)
 "k*(21,22)","class 73, n = 21: k* = 0",holds,mechanisms.csv (computed 0)
