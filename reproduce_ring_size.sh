@@ -18,8 +18,8 @@ python3 verify_mech.py --nmin 9 --nmax 10 --rules switching --out ../../data/rin
 python3 run_mech.py --nmin 8 --nmax 20 --workers 2
 python3 run_mech.py --nmin 21 --nmax 22 --rules 22,26,35,37,43,45,60,73,90,94,122,142 --workers 2
 python3 run_mech.py --nmin 21 --nmax 21 --rules 154 --workers 1
-# class 154 at n = 22 is not run here. A first attempt was stopped unfinished; the machine was asleep for
-# most of its 7.4 h of wall time, so it ran for at most about 1.3 h and its CPU time was not recorded
+# class 154 at n = 22 is not run here. A first attempt was stopped unfinished after at most about 1.3 h of
+# computation (wall time 7.4 h, not a measure of cost); its CPU time was not recorded
 # (data/ring_size/stopped_runs.csv, written by stopped_runs.py). The verification computed the case with
 # its own solver in 48 CPU-minutes: k* = 0 (verify_ring_size/phase2/out/v154_n22.json). To run it here:
 # python3 run_mech.py --nmin 22 --nmax 22 --rules 154 --workers 1

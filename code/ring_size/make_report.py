@@ -260,10 +260,9 @@ def build(figs, literature):
     st = pd.read_csv(os.path.join(OUT, "stopped_runs.csv"))
     assert len(st) == 1 and (int(st.rule.iloc[0]), int(st.n.iloc[0])) == (154, 22)
     r = st.iloc[0]
-    stop = (f"Class {int(r.rule)} at n = {int(r.n)} was started at {r.started_local[11:]} and stopped at {r.stopped_local[11:]}; the machine "
-            f"was asleep from {r.asleep_from} to {r.asleep_to}, so the job ran for at most about {float(r.awake_hours_upper):.1f} h and was "
-            f"stopped unfinished; its CPU time was not recorded. It is not computed in this study (`stopped_runs.csv`; sleep interval from "
-            f"`{r.source_of_sleep_interval}`). The verification computed the case with its own solver: k* = {V['V154_KSTAR']}, "
+    stop = (f"Class {int(r.rule)} at n = {int(r.n)}: the job was stopped unfinished after at most about {float(r.awake_hours_upper):.1f} h of "
+            f"computation; its wall time of {float(r.wall_hours):.1f} h is not a measure of cost, and its CPU time was not recorded "
+            f"(`stopped_runs.csv`). It is not computed in this study. The verification computed the case with its own solver: k* = {V['V154_KSTAR']}, "
             f"{V['V154_CYCLES']} cycles, all selected, {V['V154_CPUMIN']} CPU-minutes, peak memory {V['V154_GB']} GB (`{verif.V154_N22}`).")
     ncpu = int(cost.cpu_seconds.notna().sum())
     V["COST_LINE"] = stop + " " + (f"Mechanism jobs {len(cost)}: sum of the wall times of the jobs {cost.wall_seconds.sum() / 3600:.1f} h, longest job "
