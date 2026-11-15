@@ -1,0 +1,56 @@
+check,n,source,source_value,study_fw_sweep,study_mechanisms,oeis,study_cycle_orbits
+rule 90 number of cycles,3,MOW 1984 Table 2 (p. 235),4,,,,
+rule 90 number of cycles,4,MOW 1984 Table 2 (p. 235),1,1.0,1.0,,
+rule 90 number of cycles,5,MOW 1984 Table 2 (p. 235),6,6.0,6.0,,
+rule 90 number of cycles,6,MOW 1984 Table 2 (p. 235),10,10.0,10.0,,
+rule 90 number of cycles,7,MOW 1984 Table 2 (p. 235),10,10.0,10.0,,
+rule 90 number of cycles,8,MOW 1984 Table 2 (p. 235),1,1.0,1.0,,
+rule 90 number of cycles,9,MOW 1984 Table 2 (p. 235),40,40.0,40.0,,
+rule 90 number of cycles,10,MOW 1984 Table 2 (p. 235),46,46.0,46.0,,
+rule 90 number of cycles,11,MOW 1984 Table 2 (p. 235),34,34.0,34.0,,
+rule 90 number of cycles,12,MOW 1984 Table 2 (p. 235),70,70.0,70.0,,
+rule 90 number of cycles,13,MOW 1984 Table 2 (p. 235),66,66.0,66.0,,
+rule 90 number of cycles,14,MOW 1984 Table 2 (p. 235),298,298.0,298.0,,
+rule 90 number of cycles,15,MOW 1984 Table 2 (p. 235),1112,1112.0,1112.0,,
+rule 90 number of cycles,16,MOW 1984 Table 2 (p. 235),1,1.0,1.0,,
+rule 90 number of cycles,17,MOW 1984 Table 2 (p. 235),4404,4404.0,4404.0,,
+rule 90 number of cycles,18,MOW 1984 Table 2 (p. 235),4708,4708.0,4708.0,,
+rule 90 number of cycles,19,MOW 1984 Table 2 (p. 235),514,514.0,514.0,,
+rule 90 number of cycles,20,MOW 1984 Table 2 (p. 235),5486,5486.0,5486.0,,
+rule 90 number of cycles,21,MOW 1984 Table 2 (p. 235),16680,,16680.0,,
+rule 90 number of cycles,22,MOW 1984 Table 2 (p. 235),16930,,16930.0,,
+rule 90 maximal cycle length,3,MOW 1984 Table 1 (p. 233); OEIS A085587,1,,,1.0,
+rule 90 maximal cycle length,4,MOW 1984 Table 1 (p. 233); OEIS A085587,1,,,1.0,
+rule 90 maximal cycle length,5,MOW 1984 Table 1 (p. 233); OEIS A085587,3,,,3.0,
+rule 90 maximal cycle length,6,MOW 1984 Table 1 (p. 233); OEIS A085587,2,,,2.0,
+rule 90 maximal cycle length,7,MOW 1984 Table 1 (p. 233); OEIS A085587,7,,,7.0,
+rule 90 maximal cycle length,8,MOW 1984 Table 1 (p. 233); OEIS A085587,1,,,1.0,1.0
+rule 90 maximal cycle length,9,MOW 1984 Table 1 (p. 233); OEIS A085587,7,,,7.0,7.0
+rule 90 maximal cycle length,10,MOW 1984 Table 1 (p. 233); OEIS A085587,6,,,6.0,6.0
+rule 90 maximal cycle length,11,MOW 1984 Table 1 (p. 233); OEIS A085587,31,,,31.0,31.0
+rule 90 maximal cycle length,12,MOW 1984 Table 1 (p. 233); OEIS A085587,4,,,4.0,4.0
+rule 90 maximal cycle length,13,MOW 1984 Table 1 (p. 233); OEIS A085587,63,,,63.0,63.0
+rule 90 maximal cycle length,14,MOW 1984 Table 1 (p. 233); OEIS A085587,14,,,14.0,14.0
+rule 90 maximal cycle length,15,MOW 1984 Table 1 (p. 233); OEIS A085587,15,,,15.0,15.0
+rule 90 maximal cycle length,16,MOW 1984 Table 1 (p. 233); OEIS A085587,1,,,1.0,1.0
+rule 90 maximal cycle length,17,MOW 1984 Table 1 (p. 233); OEIS A085587,15,,,15.0,15.0
+rule 90 maximal cycle length,18,MOW 1984 Table 1 (p. 233); OEIS A085587,14,,,14.0,14.0
+rule 90 maximal cycle length,19,MOW 1984 Table 1 (p. 233); OEIS A085587,511,,,511.0,511.0
+rule 90 maximal cycle length,20,MOW 1984 Table 1 (p. 233); OEIS A085587,12,,,12.0,12.0
+rule 90 maximal cycle length,21,MOW 1984 Table 1 (p. 233); OEIS A085587,63,,,63.0,63.0
+rule 90 maximal cycle length,22,MOW 1984 Table 1 (p. 233); OEIS A085587,62,,,62.0,62.0
+rule 45 maximal cycle length,8,OEIS A401854,32,,,,32.0
+rule 45 maximal cycle length,9,OEIS A401854,504,,,,
+rule 45 maximal cycle length,10,OEIS A401854,430,,,,430.0
+rule 45 maximal cycle length,11,OEIS A401854,979,,,,
+rule 45 maximal cycle length,12,OEIS A401854,240,,,,240.0
+rule 45 maximal cycle length,13,OEIS A401854,1105,,,,
+rule 45 maximal cycle length,14,OEIS A401854,2198,,,,2198.0
+rule 45 maximal cycle length,15,OEIS A401854,6820,,,,
+rule 45 maximal cycle length,16,OEIS A401854,2816,,,,2816.0
+rule 45 maximal cycle length,17,OEIS A401854,78812,,,,
+rule 45 maximal cycle length,18,OEIS A401854,7812,,,,7812.0
+rule 45 maximal cycle length,19,OEIS A401854,183920,,,,
+rule 45 maximal cycle length,20,OEIS A401854,142580,,,,142580.0
+rule 45 maximal cycle length,21,OEIS A401854,352884,,,,
+rule 45 maximal cycle length,22,OEIS A401854,122870,,,,122870.0

@@ -1,0 +1,2051 @@
+{
+ "L1": {
+  "rows": [
+   {
+    "n": 3,
+    "states": 8,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 4,
+    "states": 16,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 5,
+    "states": 32,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 6,
+    "states": 64,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 7,
+    "states": 128,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 8,
+    "states": 256,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 9,
+    "states": 512,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 10,
+    "states": 1024,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 11,
+    "states": 2048,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 12,
+    "states": 4096,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 13,
+    "states": 8192,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 14,
+    "states": 16384,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 15,
+    "states": 32768,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 16,
+    "states": 65536,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 17,
+    "states": 131072,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 18,
+    "states": 262144,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 19,
+    "states": 524288,
+    "violations_monotone": 0,
+    "violations_value": 0
+   },
+   {
+    "n": 20,
+    "states": 1048576,
+    "violations_monotone": 0,
+    "violations_value": 0
+   }
+  ],
+  "ok": true
+ },
+ "L2": {
+  "rows": [
+   {
+    "n": 3,
+    "fully_frozen": 3,
+    "block_words": 3,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 4,
+    "fully_frozen": 2,
+    "block_words": 2,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 5,
+    "fully_frozen": 5,
+    "block_words": 5,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 6,
+    "fully_frozen": 5,
+    "block_words": 5,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 7,
+    "fully_frozen": 7,
+    "block_words": 7,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 8,
+    "fully_frozen": 10,
+    "block_words": 10,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 9,
+    "fully_frozen": 12,
+    "block_words": 12,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 10,
+    "fully_frozen": 17,
+    "block_words": 17,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 11,
+    "fully_frozen": 22,
+    "block_words": 22,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 12,
+    "fully_frozen": 29,
+    "block_words": 29,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 13,
+    "fully_frozen": 39,
+    "block_words": 39,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 14,
+    "fully_frozen": 51,
+    "block_words": 51,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 15,
+    "fully_frozen": 68,
+    "block_words": 68,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 16,
+    "fully_frozen": 90,
+    "block_words": 90,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 17,
+    "fully_frozen": 119,
+    "block_words": 119,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 18,
+    "fully_frozen": 158,
+    "block_words": 158,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 19,
+    "fully_frozen": 209,
+    "block_words": 209,
+    "equal": true,
+    "all_fixed": true
+   },
+   {
+    "n": 20,
+    "fully_frozen": 277,
+    "block_words": 277,
+    "equal": true,
+    "all_fixed": true
+   }
+  ],
+  "ok": true
+ },
+ "L3_all_states": {
+  "rows": [
+   {
+    "n": 5,
+    "not_fully_frozen_states": 27,
+    "violations": 0
+   },
+   {
+    "n": 6,
+    "not_fully_frozen_states": 59,
+    "violations": 0
+   },
+   {
+    "n": 7,
+    "not_fully_frozen_states": 121,
+    "violations": 0
+   },
+   {
+    "n": 8,
+    "not_fully_frozen_states": 246,
+    "violations": 0
+   },
+   {
+    "n": 9,
+    "not_fully_frozen_states": 500,
+    "violations": 0
+   },
+   {
+    "n": 10,
+    "not_fully_frozen_states": 1007,
+    "violations": 0
+   },
+   {
+    "n": 11,
+    "not_fully_frozen_states": 2026,
+    "violations": 0
+   },
+   {
+    "n": 12,
+    "not_fully_frozen_states": 4067,
+    "violations": 0
+   },
+   {
+    "n": 13,
+    "not_fully_frozen_states": 8153,
+    "violations": 0
+   },
+   {
+    "n": 14,
+    "not_fully_frozen_states": 16333,
+    "violations": 0
+   },
+   {
+    "n": 15,
+    "not_fully_frozen_states": 32700,
+    "violations": 0
+   },
+   {
+    "n": 16,
+    "not_fully_frozen_states": 65446,
+    "violations": 0
+   }
+  ],
+  "ok": true
+ },
+ "L3_cycle_states": {
+  "rows": [
+   {
+    "n": 5,
+    "cycles": 11,
+    "cycle_states": 16,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 11,
+    "violations": 0
+   },
+   {
+    "n": 6,
+    "cycles": 9,
+    "cycle_states": 12,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 7,
+    "violations": 0
+   },
+   {
+    "n": 7,
+    "cycles": 22,
+    "cycle_states": 43,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 36,
+    "violations": 0
+   },
+   {
+    "n": 8,
+    "cycles": 27,
+    "cycle_states": 43,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 33,
+    "violations": 0
+   },
+   {
+    "n": 9,
+    "cycles": 31,
+    "cycle_states": 58,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 46,
+    "violations": 0
+   },
+   {
+    "n": 10,
+    "cycles": 73,
+    "cycle_states": 158,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 141,
+    "violations": 0
+   },
+   {
+    "n": 11,
+    "cycles": 78,
+    "cycle_states": 144,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 122,
+    "violations": 0
+   },
+   {
+    "n": 12,
+    "cycles": 147,
+    "cycle_states": 348,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 319,
+    "violations": 0
+   },
+   {
+    "n": 13,
+    "cycles": 209,
+    "cycle_states": 404,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 365,
+    "violations": 0
+   },
+   {
+    "n": 14,
+    "cycles": 320,
+    "cycle_states": 871,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 820,
+    "violations": 0
+   },
+   {
+    "n": 15,
+    "cycles": 509,
+    "cycle_states": 1189,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 1121,
+    "violations": 0
+   },
+   {
+    "n": 16,
+    "cycles": 747,
+    "cycle_states": 1723,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 1633,
+    "violations": 0
+   },
+   {
+    "n": 17,
+    "cycles": 1191,
+    "cycle_states": 3112,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 2993,
+    "violations": 0
+   },
+   {
+    "n": 18,
+    "cycles": 1881,
+    "cycle_states": 4998,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 4840,
+    "violations": 0
+   },
+   {
+    "n": 19,
+    "cycles": 2832,
+    "cycle_states": 7677,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 7468,
+    "violations": 0
+   },
+   {
+    "n": 20,
+    "cycles": 4513,
+    "cycle_states": 12498,
+    "frozen_constant_on_cycles": true,
+    "cycle_states_not_fully_frozen": 12221,
+    "violations": 0
+   }
+  ],
+  "ok": true
+ },
+ "L4_swap": {
+  "rows": [
+   {
+    "n": 5,
+    "block_words": 5,
+    "occurrences": 5,
+    "violations": 0
+   },
+   {
+    "n": 6,
+    "block_words": 5,
+    "occurrences": 0,
+    "violations": 0
+   },
+   {
+    "n": 7,
+    "block_words": 7,
+    "occurrences": 7,
+    "violations": 0
+   },
+   {
+    "n": 8,
+    "block_words": 10,
+    "occurrences": 8,
+    "violations": 0
+   },
+   {
+    "n": 9,
+    "block_words": 12,
+    "occurrences": 9,
+    "violations": 0
+   },
+   {
+    "n": 10,
+    "block_words": 17,
+    "occurrences": 20,
+    "violations": 0
+   },
+   {
+    "n": 11,
+    "block_words": 22,
+    "occurrences": 22,
+    "violations": 0
+   },
+   {
+    "n": 12,
+    "block_words": 29,
+    "occurrences": 36,
+    "violations": 0
+   },
+   {
+    "n": 13,
+    "block_words": 39,
+    "occurrences": 52,
+    "violations": 0
+   },
+   {
+    "n": 14,
+    "block_words": 51,
+    "occurrences": 70,
+    "violations": 0
+   },
+   {
+    "n": 15,
+    "block_words": 68,
+    "occurrences": 105,
+    "violations": 0
+   },
+   {
+    "n": 16,
+    "block_words": 90,
+    "occurrences": 144,
+    "violations": 0
+   },
+   {
+    "n": 17,
+    "block_words": 119,
+    "occurrences": 204,
+    "violations": 0
+   },
+   {
+    "n": 18,
+    "block_words": 158,
+    "occurrences": 288,
+    "violations": 0
+   },
+   {
+    "n": 19,
+    "block_words": 209,
+    "occurrences": 399,
+    "violations": 0
+   },
+   {
+    "n": 20,
+    "block_words": 277,
+    "occurrences": 560,
+    "violations": 0
+   },
+   {
+    "n": 21,
+    "block_words": 367,
+    "occurrences": 777,
+    "violations": 0
+   },
+   {
+    "n": 22,
+    "block_words": 486,
+    "occurrences": 1078,
+    "violations": 0
+   },
+   {
+    "n": 23,
+    "block_words": 644,
+    "occurrences": 1495,
+    "violations": 0
+   },
+   {
+    "n": 24,
+    "block_words": 853,
+    "occurrences": 2064,
+    "violations": 0
+   },
+   {
+    "n": 25,
+    "block_words": 1130,
+    "occurrences": 2850,
+    "violations": 0
+   },
+   {
+    "n": 26,
+    "block_words": 1497,
+    "occurrences": 3926,
+    "violations": 0
+   },
+   {
+    "n": 27,
+    "block_words": 1983,
+    "occurrences": 5400,
+    "violations": 0
+   },
+   {
+    "n": 28,
+    "block_words": 2627,
+    "occurrences": 7420,
+    "violations": 0
+   },
+   {
+    "n": 29,
+    "block_words": 3480,
+    "occurrences": 10179,
+    "violations": 0
+   },
+   {
+    "n": 30,
+    "block_words": 4610,
+    "occurrences": 13950,
+    "violations": 0
+   }
+  ],
+  "ok": true
+ },
+ "L5_merge": {
+  "rows": [
+   {
+    "n": 6,
+    "block_words": 5,
+    "occurrences": 6,
+    "violations": 0
+   },
+   {
+    "n": 7,
+    "block_words": 7,
+    "occurrences": 0,
+    "violations": 0
+   },
+   {
+    "n": 8,
+    "block_words": 10,
+    "occurrences": 8,
+    "violations": 0
+   },
+   {
+    "n": 9,
+    "block_words": 12,
+    "occurrences": 9,
+    "violations": 0
+   },
+   {
+    "n": 10,
+    "block_words": 17,
+    "occurrences": 10,
+    "violations": 0
+   },
+   {
+    "n": 11,
+    "block_words": 22,
+    "occurrences": 22,
+    "violations": 0
+   },
+   {
+    "n": 12,
+    "block_words": 29,
+    "occurrences": 24,
+    "violations": 0
+   },
+   {
+    "n": 13,
+    "block_words": 39,
+    "occurrences": 39,
+    "violations": 0
+   },
+   {
+    "n": 14,
+    "block_words": 51,
+    "occurrences": 56,
+    "violations": 0
+   },
+   {
+    "n": 15,
+    "block_words": 68,
+    "occurrences": 75,
+    "violations": 0
+   },
+   {
+    "n": 16,
+    "block_words": 90,
+    "occurrences": 112,
+    "violations": 0
+   },
+   {
+    "n": 17,
+    "block_words": 119,
+    "occurrences": 153,
+    "violations": 0
+   },
+   {
+    "n": 18,
+    "block_words": 158,
+    "occurrences": 216,
+    "violations": 0
+   },
+   {
+    "n": 19,
+    "block_words": 209,
+    "occurrences": 304,
+    "violations": 0
+   },
+   {
+    "n": 20,
+    "block_words": 277,
+    "occurrences": 420,
+    "violations": 0
+   },
+   {
+    "n": 21,
+    "block_words": 367,
+    "occurrences": 588,
+    "violations": 0
+   },
+   {
+    "n": 22,
+    "block_words": 486,
+    "occurrences": 814,
+    "violations": 0
+   },
+   {
+    "n": 23,
+    "block_words": 644,
+    "occurrences": 1127,
+    "violations": 0
+   },
+   {
+    "n": 24,
+    "block_words": 853,
+    "occurrences": 1560,
+    "violations": 0
+   },
+   {
+    "n": 25,
+    "block_words": 1130,
+    "occurrences": 2150,
+    "violations": 0
+   },
+   {
+    "n": 26,
+    "block_words": 1497,
+    "occurrences": 2964,
+    "violations": 0
+   },
+   {
+    "n": 27,
+    "block_words": 1983,
+    "occurrences": 4077,
+    "violations": 0
+   },
+   {
+    "n": 28,
+    "block_words": 2627,
+    "occurrences": 5600,
+    "violations": 0
+   },
+   {
+    "n": 29,
+    "block_words": 3480,
+    "occurrences": 7685,
+    "violations": 0
+   },
+   {
+    "n": 30,
+    "block_words": 4610,
+    "occurrences": 10530,
+    "violations": 0
+   }
+  ],
+  "ok": true
+ },
+ "L6_crystal": {
+  "rows": [
+   {
+    "n": 6,
+    "flips": 6,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 9,
+    "flips": 9,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 12,
+    "flips": 12,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 15,
+    "flips": 15,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 18,
+    "flips": 18,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 21,
+    "flips": 21,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 24,
+    "flips": 24,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 27,
+    "flips": 27,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 30,
+    "flips": 30,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 33,
+    "flips": 33,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 36,
+    "flips": 36,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 39,
+    "flips": 39,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 42,
+    "flips": 42,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 45,
+    "flips": 45,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 48,
+    "flips": 48,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 51,
+    "flips": 51,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 54,
+    "flips": 54,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 57,
+    "flips": 57,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 60,
+    "flips": 60,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 63,
+    "flips": 63,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 66,
+    "flips": 66,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 69,
+    "flips": 69,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 72,
+    "flips": 72,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 75,
+    "flips": 75,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 78,
+    "flips": 78,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 81,
+    "flips": 81,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 84,
+    "flips": 84,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 87,
+    "flips": 87,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 90,
+    "flips": 90,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 93,
+    "flips": 93,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 96,
+    "flips": 96,
+    "violations": 0,
+    "max_healing_time": 3
+   },
+   {
+    "n": 99,
+    "flips": 99,
+    "violations": 0,
+    "max_healing_time": 3
+   }
+  ],
+  "ok": true
+ },
+ "C2_codes": {
+  "rows": [
+   {
+    "n": 6,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      4,
+      5
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 9,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 12,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 15,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 18,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 21,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 24,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 27,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 30,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 33,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 36,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 39,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 42,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 45,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 48,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 51,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 54,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 57,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 60,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 63,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 66,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 69,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 72,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 75,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 78,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 81,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 84,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 87,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 90,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 93,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 96,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   },
+   {
+    "n": 99,
+    "crystal_codes": [
+     3,
+     5,
+     6
+    ],
+    "codes_on_path": {
+     "y": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "Fy": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "FFy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "violations": 0
+   }
+  ],
+  "ok": true
+ },
+ "cpu_seconds": 3.39,
+ "peak_rss_mb": 122.2,
+ "all_ok": true
+}

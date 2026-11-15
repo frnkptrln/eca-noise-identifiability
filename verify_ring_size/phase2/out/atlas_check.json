@@ -1,0 +1,494 @@
+{
+ "atlas_records": 1327,
+ "records_compared": 1232,
+ "records_not_in_own_sweep": [
+  [
+   0,
+   20
+  ],
+  [
+   1,
+   20
+  ],
+  [
+   2,
+   20
+  ],
+  [
+   3,
+   20
+  ],
+  [
+   4,
+   20
+  ],
+  [
+   5,
+   19
+  ],
+  [
+   5,
+   20
+  ],
+  [
+   6,
+   20
+  ],
+  [
+   7,
+   20
+  ],
+  [
+   8,
+   20
+  ],
+  [
+   9,
+   20
+  ],
+  [
+   10,
+   20
+  ],
+  [
+   11,
+   20
+  ],
+  [
+   12,
+   20
+  ],
+  [
+   13,
+   20
+  ],
+  [
+   14,
+   20
+  ],
+  [
+   15,
+   20
+  ],
+  [
+   18,
+   20
+  ],
+  [
+   19,
+   20
+  ],
+  [
+   23,
+   20
+  ],
+  [
+   24,
+   20
+  ],
+  [
+   25,
+   20
+  ],
+  [
+   27,
+   20
+  ],
+  [
+   28,
+   20
+  ],
+  [
+   29,
+   18
+  ],
+  [
+   29,
+   19
+  ],
+  [
+   29,
+   20
+  ],
+  [
+   30,
+   20
+  ],
+  [
+   32,
+   20
+  ],
+  [
+   33,
+   20
+  ],
+  [
+   34,
+   20
+  ],
+  [
+   36,
+   20
+  ],
+  [
+   38,
+   20
+  ],
+  [
+   40,
+   20
+  ],
+  [
+   41,
+   20
+  ],
+  [
+   42,
+   20
+  ],
+  [
+   44,
+   20
+  ],
+  [
+   46,
+   20
+  ],
+  [
+   50,
+   20
+  ],
+  [
+   51,
+   16
+  ],
+  [
+   51,
+   17
+  ],
+  [
+   51,
+   18
+  ],
+  [
+   51,
+   19
+  ],
+  [
+   51,
+   20
+  ],
+  [
+   54,
+   20
+  ],
+  [
+   56,
+   20
+  ],
+  [
+   57,
+   20
+  ],
+  [
+   58,
+   20
+  ],
+  [
+   62,
+   20
+  ],
+  [
+   72,
+   20
+  ],
+  [
+   74,
+   20
+  ],
+  [
+   76,
+   17
+  ],
+  [
+   76,
+   18
+  ],
+  [
+   76,
+   19
+  ],
+  [
+   76,
+   20
+  ],
+  [
+   77,
+   20
+  ],
+  [
+   78,
+   20
+  ],
+  [
+   104,
+   20
+  ],
+  [
+   105,
+   20
+  ],
+  [
+   106,
+   20
+  ],
+  [
+   108,
+   18
+  ],
+  [
+   108,
+   19
+  ],
+  [
+   108,
+   20
+  ],
+  [
+   110,
+   20
+  ],
+  [
+   126,
+   20
+  ],
+  [
+   128,
+   20
+  ],
+  [
+   130,
+   20
+  ],
+  [
+   132,
+   20
+  ],
+  [
+   134,
+   20
+  ],
+  [
+   136,
+   20
+  ],
+  [
+   138,
+   20
+  ],
+  [
+   140,
+   20
+  ],
+  [
+   146,
+   20
+  ],
+  [
+   150,
+   20
+  ],
+  [
+   152,
+   20
+  ],
+  [
+   156,
+   20
+  ],
+  [
+   160,
+   20
+  ],
+  [
+   162,
+   20
+  ],
+  [
+   164,
+   20
+  ],
+  [
+   168,
+   20
+  ],
+  [
+   170,
+   19
+  ],
+  [
+   170,
+   20
+  ],
+  [
+   172,
+   20
+  ],
+  [
+   178,
+   20
+  ],
+  [
+   184,
+   20
+  ],
+  [
+   200,
+   18
+  ],
+  [
+   200,
+   19
+  ],
+  [
+   200,
+   20
+  ],
+  [
+   204,
+   15
+  ],
+  [
+   204,
+   16
+  ],
+  [
+   204,
+   17
+  ],
+  [
+   204,
+   18
+  ],
+  [
+   204,
+   19
+  ],
+  [
+   204,
+   20
+  ],
+  [
+   232,
+   20
+  ]
+ ],
+ "classes_compared": 88,
+ "non_switching_classes_compared": 75,
+ "n_range_compared": [
+  4,
+  19
+ ],
+ "fields": {
+  "bijective": {
+   "compared": 1232,
+   "equal": 1232,
+   "study_has_no_value": 0
+  },
+  "cycle_orbits": {
+   "compared": 1152,
+   "equal": 1152,
+   "study_has_no_value": 80
+  },
+  "cycles": {
+   "compared": 1232,
+   "equal": 1232,
+   "study_has_no_value": 0
+  },
+  "g1_closed": {
+   "compared": 1152,
+   "equal": 1152,
+   "study_has_no_value": 80
+  },
+  "g1_sccs": {
+   "compared": 1152,
+   "equal": 1152,
+   "study_has_no_value": 80
+  },
+  "gamma_min": {
+   "compared": 1232,
+   "equal": 1152,
+   "study_has_no_value": 0
+  },
+  "k_c": {
+   "compared": 1232,
+   "equal": 1232,
+   "study_has_no_value": 0
+  },
+  "kstar": {
+   "compared": 1232,
+   "equal": 1232,
+   "study_has_no_value": 0
+  },
+  "n_selected": {
+   "compared": 1232,
+   "equal": 1232,
+   "study_has_no_value": 0
+  },
+  "radius_other_max": {
+   "compared": 1098,
+   "equal": 1098,
+   "study_has_no_value": 0
+  },
+  "radius_other_min": {
+   "compared": 1098,
+   "equal": 1098,
+   "study_has_no_value": 0
+  },
+  "radius_selected_max": {
+   "compared": 1098,
+   "equal": 1098,
+   "study_has_no_value": 0
+  },
+  "radius_selected_min": {
+   "compared": 1098,
+   "equal": 1098,
+   "study_has_no_value": 0
+  },
+  "selected_cover": {
+   "compared": 1232,
+   "equal": 1232,
+   "study_has_no_value": 0
+  },
+  "selected_eq_closed_union": {
+   "compared": 1152,
+   "equal": 1152,
+   "study_has_no_value": 80
+  },
+  "selected_orbit_patterns_n_le_14": {
+   "compared": 813,
+   "equal": 813,
+   "study_has_no_value": 0
+  },
+  "selected_orbits": {
+   "compared": 1152,
+   "equal": 1152,
+   "study_has_no_value": 80
+  },
+  "selected_spatial_periods": {
+   "compared": 1152,
+   "equal": 1152,
+   "study_has_no_value": 80
+  },
+  "selected_temporal_periods": {
+   "compared": 1152,
+   "equal": 1152,
+   "study_has_no_value": 80
+  }
+ },
+ "n_mismatches": 80,
+ "mismatch_fields": {
+  "gamma_min": 80
+ },
+ "gamma_min_mismatches_all_bijective": true
+}

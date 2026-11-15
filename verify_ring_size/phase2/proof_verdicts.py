@@ -1,0 +1,125 @@
+"""Step 3: verdicts on the proofs of report_ring_size.md (read line by line; verdict correct / gap / wrong), with the
+own computation that tested each statement.  Also a small computation for a remark of this verification on rule 26
+at odd n.  Writes out/proof_verdicts.json."""
+import json
+import os
+import sys
+
+import numpy as np
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import p2lib as P
+from p2lib import K
+
+OUT = os.path.join(P.HERE, "out")
+
+# Remark (rule 26, odd n): F(x) = 0 only for x = 0 and x = 1^n, and 1^n has no preimage; hence the orbit of e_0
+# never reaches 0 and r(0) = 1.  Checked here by enumeration for odd n = 3..21.
+r26 = {}
+for n in range(3, 22, 2):
+    F, cm = K.build_F(26, n)
+    pre0 = np.nonzero(F == 0)[0]
+    ones = (1 << n) - 1
+    r26[str(n)] = {"preimages_of_0": [P.bits(v, n) for v in pre0], "preimages_of_all_ones": int((F == ones).sum())}
+r26_ok = all(len(d["preimages_of_0"]) == 2 and d["preimages_of_all_ones"] == 0 for d in r26.values())
+
+V = {
+    "Re-rooting (lines 105-108)": {
+        "verdict": "correct",
+        "reason": ["Removing the out-edge of N splits the in-tree into an in-tree rooted at R and one rooted at N.",
+                   "Adding R -> N gives every node except N exactly one out-edge; a directed cycle would have to leave N, which has no out-edge.",
+                   "Weight changes by V(R, N) minus the weight of the removed edge, which is at least 1 because V >= 1 between distinct cycles."],
+        "tested": "gamma(N) <= gamma(R) + V(R, N) - 1 for all ordered pairs: out/sweep88_summary.json, test rerooting_inequality"},
+    "Lemma 1 (line 110)": {
+        "verdict": "correct", "reason": ["Direct use of re-rooting along an edge of weight 1."],
+        "tested": "out/sweep88_summary.json, tests lemma1 and lemma1_gamma_monotone_on_G1"},
+    "Lemma 2 (lines 113-123)": {
+        "verdict": "correct",
+        "reason": ["A closed class K is reachable from every node of a finite digraph (follow the condensation to a sink).",
+                   "A shortest G1-path from C to K is simple and has D_i outside K for i < k.",
+                   "In the optimal tree rooted at C (outside K) the tree path from a node of K to C leaves K by an edge e* = (E -> X); its weight is >= 2 since K is closed in G1.",
+                   "Each re-rooting step removes only the out-edge of the new root and adds an edge of weight 1; E is not among D_1..D_{k-1} (they lie outside K), so e* is still in the tree.",
+                   "If D_k = E the last step removes e*; otherwise a simple G1-path inside K from D_k to E is followed and its last step removes e*, the out-edge of E, which was untouched.",
+                   "The final in-tree is rooted at E and weighs at most gamma(C) - 1, contradicting minimality."],
+        "tested": "out/sweep88_summary.json, test lemma2"},
+    "Theorem A (lines 125-131), incl. gamma_min = m - 1 and the k* consequence": {
+        "verdict": "correct",
+        "reason": ["Union of closed classes: Lemma 2 plus Lemma 1 along the weight-1 edges of a strongly connected class.",
+                   "Unique closed class K: S is a non-empty union of closed classes, hence K; every node reaches K in G1 and K is strongly connected, so a breadth-first in-tree of weight-1 edges toward a node of K has m - 1 edges of weight 1, the lower bound.",
+                   "The k* sentence restates the definition (k* = 0 iff the selected cycles jointly contain all eight codes).",
+                   "Not claimed and not true in general: S = union of ALL closed classes (rule 164 at n = 16 has two closed classes of which one is selected, out/sweep88_summary.json)."],
+        "tested": "out/sweep88_summary.json, tests thmA_*; out/v154_n22.json"},
+    "Lemma B (lines 137-143), incl. gamma_min = m + q - 2": {
+        "verdict": "correct",
+        "reason": ["Upper bound: the breadth-first in-tree toward A_1 in G2 has m - q edges of weight 1 (out of cycles outside A) and q - 1 edges of weight 2 (out of A_2..A_q).",
+                   "Lower bound, root in A: q - 1 edges leave cycles of A (each >= 2 because r(A_i) >= 2) and m - q edges leave other cycles (each >= 1): at least m + q - 2.",
+                   "Lower bound, root outside A: q edges of weight >= 2 and m - 1 - q of weight >= 1: at least m + q - 1.",
+                   "gamma is constant on a rotation orbit because rotation commutes with F and preserves resistances."],
+        "tested": "out/sweep88_summary.json, block lemmaB; out/extras.jsonl for the 194 sample cases",
+        "observation": "The weight-2 edges are needed only for the value m + q - 2. For S = A it is enough that every cycle outside A reaches A by weight-1 edges: then the closed classes of G1 are exactly the singletons {A_i}, Theorem A gives S inside A and rotation symmetry gives S = A. In the sweep the weaker hypothesis and the G2 hypothesis hold in the same cases (out/sweep88_summary.json, weak_holds_but_G2_fails is empty)."},
+    "Relation to Ellison (lines 147-153), internal logic only": {
+        "verdict": "correct",
+        "reason": ["r(A_i) >= 2 for all i gives cost >= 2 for any path from A to a cycle outside A, i.e. R(Omega) >= 2.",
+                   "A G2-path from a cycle outside A uses weight-1 edges through cycles of radius 1 until it first meets A: cost (r - 1) minus (r - 2) intermediate radii = 1.",
+                   "The letter r denotes the number of cycles on the path here and the radius elsewhere (notation only).",
+                   "Whether the cited theorem is quoted correctly is the literature track's question."],
+        "tested": "not a computational statement"},
+    "Lemma Z (lines 155-157)": {
+        "verdict": "correct",
+        "reason": ["The states at distance one from the fixed point 0 are the rotations of e_0; rotation commutes with F and fixes 0, so all n orbits end on {0} iff the orbit of e_0 does.",
+                   "For a map whose only cycle is {0} both sides hold (r(0) is a minimum over an empty set)."],
+        "tested": "out/lemmaZP.json, block lemmaZ"},
+    "Lemma H (lines 159-166), tau = 3 for class 94, n >= 7, n = 6": {
+        "verdict": "correct",
+        "reason": ["For t <= (n - 1)/2 the dependence window [i - t, i + t] has at most n cells and so contains at most one flipped site of the n-periodic lift.",
+                   "Hence cell i of the ring evolution equals cell i of a single-flip evolution on the line; which copy j + kn of the flip is seen depends on i, but the healed states agree because X is p-periodic and p | n.",
+                   "At t = tau the configuration is a state of X (X is invariant, so healing earlier than tau is enough).",
+                   "Class 94: the three flips of ...011011... heal after 2, 3, 3 steps, tau = 3, so n >= 7; n = 6 by direct simulation; at n = 3 the radius is 1."],
+        "tested": "out/crystal_checks.json (rule94_line_flips, lightcone), out/crystal_radius_own.csv"},
+    "Lemma P (lines 168-176), pair graph, periods for 154 and 45": {
+        "verdict": "correct",
+        "reason": ["Closed walks of length n with a base point correspond one to one to pairs (x, y) of ring configurations with F x = F y (the edge condition is f(x-window) = f(y-window) cell by cell).",
+                   "x != y iff an off-diagonal vertex is visited; a closed walk lies in one strongly connected component and its length is a multiple of the period of that component.",
+                   "Rules 154 and 45: two components contain off-diagonal vertices and closed walks, both of period 2, so F is injective, hence bijective, on every odd ring.",
+                   "k* = 0 then follows because for a bijective map every cycle has potential m - 1 and every state is periodic (n >= 3, so that all eight codes occur)."],
+        "tested": "out/lemmaZP.json (trace identity for all 256 rules, n = 3..15, criterion against brute force), out/pairgraph_all256.csv"},
+    "Proposition R154 (lines 311-318)": {
+        "verdict": "correct",
+        "reason": ["Code list: rule 154 agrees with rule 90 on codes 0-5 and differs on 6, 7; rule 26 agrees on all codes but 6. The list 0, 1, 2, 4, 5 in the report is the set of codes without two adjacent ones; it is correct but not the full set of agreement (code 3, and 7 for rule 26).",
+                   "Parity: on an even ring (F_90 x)_i = x_{i-1} + x_{i+1} moves the support from one parity class to the other, so the orbit of e_0 never has two adjacent ones and the three orbits coincide by induction.",
+                   "Algebra: F_90 is multiplication by X + X^{-1} = X^{-1}(1 + X)^2, so the orbit is X^{-t}(1 + X)^{2t}; it vanishes iff X^n - 1 divides a power of 1 + X; with n = 2^a m, X^n - 1 = (X^m - 1)^{2^a} and for odd m > 1 the cofactor 1 + X + ... + X^{m-1} equals 1 at X = 1, so it has a prime factor other than 1 + X.",
+                   "Scope: the conclusion is for even n and both rules; for odd n only rule 154 is addressed (bijective). Nothing is claimed for rule 26 at odd n.",
+                   "Remark of this verification: for rule 26 at odd n the only preimages of 0 are 0 and 1^n and 1^n has no preimage, so r(0) = 1 there; with bijectivity for rule 154 the statement 'r(0) >= 2 iff n is a power of two' then holds for every n >= 3 for both rules."],
+        "tested": "out/rule90_identities.json (block R154 and the algebra block); rule26_odd_n block of this file"},
+    "Proposition R22 (lines 320-330)": {
+        "verdict": "correct",
+        "reason": ["Rule 22 is 'exactly one of three cells', f = a + b + c + abc.",
+                   "Even t -> t + 1: the state R_t lies on parity t; at sites of parity t + 1 the centre is 0 and exactly-one is the XOR of the neighbours (R_{t+1}); at sites of parity t both neighbours are 0 and the cell keeps its value (R_t).",
+                   "Odd t -> t + 1, sites of parity t: the triple is (R_{t-1}(i-1), R_t(i), R_{t-1}(i+1)) with centre = sum of the neighbours: 000, 110, 011, 101, all mapped to 0.",
+                   "Odd t -> t + 1, sites of parity t + 1: a + c = R_{t+1}(i), b = R_{t-1}(i); the value is R_{t+1}(i) iff abc = b, i.e. iff R_{t-1}(i) = 1 implies R_{t-1}(i +- 2) = 0.",
+                   "That condition holds because for even s, R_s is R_{s/2} of the ring of size n/2 dilated by 2 (Frobenius: (X^{-1}(1+X)^2)^{2u} is a polynomial in X^2), and on the ring of even size n/2 that orbit has no two adjacent ones; this is where 4 | n is used.",
+                   "Conclusion: the rule-22 orbit reaches 0 iff R_t does, i.e. iff n is a power of two; Lemma Z applies since F_22(0) = 0."],
+        "tested": "out/rule90_identities.json (block R22: identity, distance-2 claim and dilation claim for all 4 | n <= 256)"},
+    "[proved: the spatial period divides n] (line 91)": {
+        "verdict": "correct", "reason": ["The set of s with sigma^s x = x is a subgroup of Z/nZ, generated by a divisor of n."],
+        "tested": "all spatial periods in out/own_orbits/ divide n by construction of the solver"},
+    "[proved] at line 175 (periods of the off-diagonal components of rules 154 and 45)": {
+        "verdict": "correct", "reason": ["Finite computation named in the text; rebuilt."], "tested": "out/pairgraph_all256.csv, out/lemmaZP.json"},
+    "[proved] at line 176 and line 374 (k* = 0 for classes 154 and 45 at every odd n)": {
+        "verdict": "correct", "reason": ["Lemma P plus the bijective case; reflection and complementation preserve bijectivity, so the statement holds for the whole class."],
+        "tested": "sealed sample: 14 bijective cases with gamma = m - 1 for every cycle and k* = 0 (out/compare_sample.json)"},
+    "[proved] at line 247 (class 94 radius for 3 | n, n >= 7)": {
+        "verdict": "correct", "reason": ["Lemma H with tau = 3."], "tested": "out/crystal_checks.json"},
+    "[proved conditional on reachability] at line 256": {
+        "verdict": "gap",
+        "reason": ["For class 94 the statement is as tagged (radius proved for n >= 6).",
+                   "For classes 43 and 142 Lemma B also needs r(crystal) >= 2, which is computed for 4 | n up to 400 and not proved; beyond n = 400 the statement is conditional on the radius as well."],
+        "tested": "out/crystal_radius_own.csv"},
+    "[proved] at line 257 (the crystal cannot exist when p does not divide n)": {
+        "verdict": "correct", "reason": ["Same as line 91."], "tested": ""},
+}
+res = {"verdicts": V, "counts": {}, "rule26_odd_n": {"n_checked": sorted(int(k) for k in r26), "claim_holds": bool(r26_ok), "detail": r26}}
+for k, d in V.items():
+    res["counts"][d["verdict"]] = res["counts"].get(d["verdict"], 0) + 1
+json.dump(res, open(os.path.join(OUT, "proof_verdicts.json"), "w"), indent=1)
+print(res["counts"], res["rule26_odd_n"]["claim_holds"], r26["9"])

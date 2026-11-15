@@ -1,0 +1,4 @@
+nice: setpriority: Operation not permitted
+n 15 done 5.5
+n 16 done 20.2
+n 17 done 61.7

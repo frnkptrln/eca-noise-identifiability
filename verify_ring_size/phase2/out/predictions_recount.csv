@@ -1,0 +1,93 @@
+id,sealed_part,basis,own_outcome,own_detail,study_data_outcome,study_data_detail,study_reported_outcome,study_row,differs_from_study_report
+P1a,"94, 3|n: selected set is exactly the 3 shifts of (011)^{n/3}",data,holds,"n = [9, 12, 15, 18, 21]",holds,"n = [9, 12, 15, 18, 21]",holds,3|n: selected set = the 3 shifts of (011)^{n/3},False
+P1b,"94, 3|n: its radius is 2",data,holds,,holds,,holds,"3|n: radius of the crystal 2, every other cycle radius 1",False
+P1c,"94, 3|n: every other cycle has radius 1",data,holds,,holds,,holds,"3|n: radius of the crystal 2, every other cycle radius 1",False
+P1d,"94, 3|n: the one-flip graph has a single closed class, the crystal orbit",data,fails,closed classes: [3],fails,closed classes: [3],fails,"3|n: one-flip graph has a single closed class, the crystal orbit",False
+P1e,"94, 3 does not divide n: no cycle avoids all of codes 0, 1, 2, 4, 7",data,holds,,holds,,holds,"3 does not divide n: no cycle avoids all of codes 0,1,2,4,7",False
+P2a_43,"43, 4|n: selected set is exactly the rotation orbit of the travelling wave (0011)^{n/4}, one cycle of temporal period 4",data,holds,"n = [8, 12, 16, 20]",holds,"n = [8, 12, 16, 20]",holds,"class 43, 4|n: selected = one travelling cycle (0011)^{n/4}, T = 4, radius 2, others radius 1, single closed class",False
+P2b_43,"43, 4|n: radius 2",data,holds,,holds,,holds,"class 43, 4|n: selected = one travelling cycle (0011)^{n/4}, T = 4, radius 2, others radius 1, single closed class",False
+P2c_43,"43, 4|n: all other cycles radius 1",data,holds,,holds,,holds,"class 43, 4|n: selected = one travelling cycle (0011)^{n/4}, T = 4, radius 2, others radius 1, single closed class",False
+P2d_43,"43, 4|n: single closed class",data,holds,,holds,,holds,"class 43, 4|n: selected = one travelling cycle (0011)^{n/4}, T = 4, radius 2, others radius 1, single closed class",False
+P2a_142,"142, 4|n: selected set is exactly the rotation orbit of the travelling wave (0011)^{n/4}, one cycle of temporal period 4",data,holds,"n = [8, 12, 16, 20]",holds,"n = [8, 12, 16, 20]",holds,"class 142, 4|n: selected = one travelling cycle (0011)^{n/4}, T = 4, radius 2, others radius 1, single closed class",False
+P2b_142,"142, 4|n: radius 2",data,holds,,holds,,holds,"class 142, 4|n: selected = one travelling cycle (0011)^{n/4}, T = 4, radius 2, others radius 1, single closed class",False
+P2c_142,"142, 4|n: all other cycles radius 1",data,holds,,holds,,holds,"class 142, 4|n: selected = one travelling cycle (0011)^{n/4}, T = 4, radius 2, others radius 1, single closed class",False
+P2d_142,"142, 4|n: single closed class",data,holds,,holds,,holds,"class 142, 4|n: selected = one travelling cycle (0011)^{n/4}, T = 4, radius 2, others radius 1, single closed class",False
+P2e,"43, 142, 4 does not divide n: no cycle has spatial period 4",data,holds (trivially),the spatial period divides n,holds (trivially),the spatial period divides n,holds (trivially),4 does not divide n: no cycle with spatial period 4,False
+P3a,"35, 3|n: the cycles that contain code 5 are exactly the cycles that are not selected",data,holds,,holds,,holds,3|n: cycles containing code 5 = cycles not selected,False
+P3a2,"35: 11 of 12 cycles selected at n = 9, 700 of 710 at n = 18",data,holds,"selected/cycles: 11/12 at n = 9, 700/710 at n = 18",holds,"selected/cycles: 11/12 at n = 9, 700/710 at n = 18",omitted,,False
+P3b,"35, 3|n: each of them has spatial period 3 or consists of 3-periodic segments",data,fails,"spatial periods of the code-5 cycles: [2, 5, 7, 9, 12, 15, 18, 21]; they are words over the blocks 10 and 100 (out/compare_derived.json); '3-periodic segments' is not a mechanical test: the 100-blocks are, the 10-blocks are not",fails,"spatial periods of the code-5 cycles: [2, 5, 7, 9, 12, 15, 18, 21]; they are words over the blocks 10 and 100 (out/compare_derived.json); '3-periodic segments' is not a mechanical test: the 100-blocks are, the 10-blocks are not",fails,they have spatial period 3 or consist of 3-periodic segments,False
+P3c,35: crystal capture is falsified (already known),data,holds,more than one selected orbit at every 3|n,holds,more than one selected orbit at every 3|n,omitted,,False
+P4a,"122, 4|n: some noise-selected cycle has spatial period 4 and carries code 2",data,fails,selected carriers of code 2 have spatial periods [2],fails,selected carriers of code 2 have spatial periods [2],fails,4|n: a selected cycle with spatial period 4 carries code 2,False
+P4b,"122: the missing code is 2 for n in {9, 10, 11, 13, 17, 18, 19}",data,holds,"missing codes: [(2,)]",holds,"missing codes: [(2,)]",holds,"missing code is 2 at n in {9,10,11,13,17,18,19}",False
+P4c,"122, n = 14: the selected cycles are the uniform states",data,fails,"selected: ['00000000000000', '01010101010101']",fails,"selected: ['00000000000000', '10101010101010']",fails,n = 14: uniform states selected with radius >= 2,False
+P4c2,"122, n = 14: codes 0, 2, 5",data,holds,,holds,,omitted,,False
+P4d,"122, n = 15: the selected cycles are the uniform states, code 0",data,holds,,holds,,holds,n = 15: zero state alone with radius >= 2,False
+P4e14,"122, n = 14: mechanism = zero state with radius >= 2",data,fails,radius of the zero state: 1,fails,radius of the zero state: 1,fails,n = 14: uniform states selected with radius >= 2,False
+P4e15,"122, n = 15: mechanism = zero state with radius >= 2",data,holds,radius of the zero state: 3,holds,radius of the zero state: 3,holds,n = 15: zero state alone with radius >= 2,False
+P5a,"154, even n not a power of two (n <= 20): every cycle has radius 1",data,holds,"n = [10, 12, 14, 18, 20]",holds,"n = [10, 12, 14, 18, 20]",holds,"154, even n not a power of 2: every cycle radius 1, one-flip graph strongly connected",False
+P5b,"154, even n not a power of two (n <= 20): the one-flip graph is strongly connected (all cycles selected)",data,holds,,holds,,holds,"154, even n not a power of 2: every cycle radius 1, one-flip graph strongly connected",False
+P5c,"154, n = 8, 16: the zero state has radius 2, every other cycle radius 1, {0} is the single closed class",data,holds,,holds,,holds,"154, n = 8, 16: zero radius 2, others radius 1, {0} the single closed class",False
+P6a,"22: k* = 1 exactly where the zero state has radius >= 2, i.e. where the single-flip orbit of 0 returns to 0 (n = 8..20; here 8..22)",data,holds,"k* = 1 at n = [8, 14, 15, 16]",holds,"k* = 1 at n = [8, 14, 15, 16]",holds,22: k* = 1 exactly where the single-flip orbit of 0 returns to 0,False
+P6b,"26, n = 16: the same holds (k* = 2, zero state alone)",data,holds,,holds,,holds,"26, n = 16: zero state alone, k* = 2",False
+P6c,"26: at the other n with k* = 1 the missing code is 7 (111), with a different mechanism",data,fails,"n with k* = 1: [8, 9, 10, 12, 13, 15, 18, 19, 21]; n among them where the missing codes are not exactly {7}: [8] (n = 8: zero state selected alone, codes [1, 2, 3, 4, 5, 6, 7] missing)",fails,"n with k* = 1: [8, 9, 10, 12, 13, 15, 18, 19, 21]; n among them where the missing codes are not exactly {7}: [8] (n = 8: zero state selected alone, codes [1, 2, 3, 4, 5, 6, 7] missing)",holds,"26, other n with k* >= 1: missing code 7",True
+P7a,"45, n = 8: the 2-cycle of the uniform states is selected alone",data,holds,,holds,,holds,"45, n = 8: uniform 2-cycle selected alone",False
+P7b,"45, odd n: F_45 is bijective (k* = 0)",data,holds,pair-graph certificate and n = 9..21,holds,pair-graph certificate and n = 9..21,holds,"45, odd n: bijective",False
+P7c,"45, even n >= 10: the uniform 2-cycle has radius 1",data,holds,,holds,,holds,"45, even n >= 10: the uniform 2-cycle has radius 1",False
+P8a,"37, 73: no crystal of a fixed period explains the switches",reading,not a testable statement,,not a testable statement,,omitted,,False
+P8b,"37: k* = 0 iff n mod 6 in {0, 5} (n = 8..20; here 8..22)",data,holds,,holds,,holds,"37: k* = 0 iff n mod 6 in {0, 5}",False
+P8c,73: the only switch for n >= 8 is n = 9,data,holds,,holds,,holds,73: the only switch for n >= 8 is n = 9,False
+P8d,"73, n = 9: code 7 missing",data,holds,,holds,,omitted,,False
+K_35_21,"class 35, n = 21: k* = 1",data,holds,computed k* = 1,holds,computed k* = 1,holds,"class 35, n = 21: k* = 1",False
+K_35_22,"class 35, n = 22: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 35, n = 22: k* = 0",False
+K_94_21,"class 94, n = 21: k* = 1",data,holds,computed k* = 1,holds,computed k* = 1,holds,"class 94, n = 21: k* = 1",False
+K_94_22,"class 94, n = 22: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 94, n = 22: k* = 0",False
+K_43_21,"class 43, n = 21: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 43, n = 21: k* = 0",False
+K_43_22,"class 43, n = 22: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 43, n = 22: k* = 0",False
+K_142_21,"class 142, n = 21: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 142, n = 21: k* = 0",False
+K_142_22,"class 142, n = 22: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 142, n = 22: k* = 0",False
+K_122_21,"class 122, n = 21: k* = 1",data,holds,computed k* = 1,holds,computed k* = 1,holds,"class 122, n = 21: k* = 1",False
+K_122_22,"class 122, n = 22: k* = 1",data,fails,computed k* = 0,fails,computed k* = 0,fails,"class 122, n = 22: k* = 1",False
+K_60_21,"class 60, n = 21: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 60, n = 21: k* = 0",False
+K_60_22,"class 60, n = 22: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 60, n = 22: k* = 0",False
+K_90_21,"class 90, n = 21: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 90, n = 21: k* = 0",False
+K_90_22,"class 90, n = 22: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 90, n = 22: k* = 0",False
+K_154_21,"class 154, n = 21: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 154, n = 21: k* = 0",False
+K_154_22,"class 154, n = 22: k* = 0",data,holds,computed k* = 0,not tested,no record,not tested,"class 154, n = 22: k* = 0",True
+K_45_21,"class 45, n = 21: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 45, n = 21: k* = 0",False
+K_45_22,"class 45, n = 22: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 45, n = 22: k* = 0",False
+K_73_21,"class 73, n = 21: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 73, n = 21: k* = 0",False
+K_73_22,"class 73, n = 22: k* = 0",data,holds,computed k* = 0,holds,computed k* = 0,holds,"class 73, n = 22: k* = 0",False
+K_37_21,"class 37, n = 21: k* = 1",data,holds,computed k* = 1,holds,computed k* = 1,holds,"class 37, n = 21: k* = 1",False
+K_37_22,"class 37, n = 22: k* = 1",data,holds,computed k* = 1,holds,computed k* = 1,holds,"class 37, n = 22: k* = 1",False
+K_22_21,"class 22, n = 21: k* = 1 iff the single-flip orbit of 0 returns to 0",data,holds,"k* = 0, seed returns = 0",holds,"k* = 0, seed returns = 0",holds,"class 22, n = 21: k* = 1 iff seed returns",False
+K_22_22,"class 22, n = 22: k* = 1 iff the single-flip orbit of 0 returns to 0",data,holds,"k* = 0, seed returns = 0",holds,"k* = 0, seed returns = 0",holds,"class 22, n = 22: k* = 1 iff seed returns",False
+P9a32,"154, n = 32: the zero state has radius >= 2",data,holds,seed orbit returns,holds,seed orbit returns,holds,"154, n = 32: zero radius >= 2",False
+P9a64,"154, n = 64: the zero state has radius >= 2",data,holds,seed orbit returns,holds,seed orbit returns,omitted,,False
+P9b32,"154, n = 32: every cycle reached from sampled initial states reaches the zero state by one-flip steps",data,"holds (observed, sampled)",200 of 200 samples,"holds (observed, sampled)",200 of 200 samples,"holds (observed, sampled)","154, n = 32: sampled cycles reach 0 by one-flip steps",False
+P9b64,"154, n = 64: the same sampled test",data,not tested,no sample at n = 64,not tested,no sample at n = 64,omitted,,False
+P9c,154: k* = 1 at n = 32,data,not tested,k* not computed,not tested,k* not computed,not tested,"154: k* = 1 at n = 32, k* = 0 at n = 24, 28",False
+P9d,154: k* = 0 at n = 24,data,not tested,k* not computed,not tested,k* not computed,not tested,"154: k* = 1 at n = 32, k* = 0 at n = 24, 28",False
+P9e,154: k* = 0 at n = 28,data,not tested,k* not computed,not tested,k* not computed,not tested,"154: k* = 1 at n = 32, k* = 0 at n = 24, 28",False
+G1,closure (Lemma 1): expected proved,reading,holds,"Lemma 1, proof complete; 0 counterexamples in out/sweep88_summary.json",holds,"Lemma 1, proof complete; 0 counterexamples in out/sweep88_summary.json",omitted,,False
+G2,two-level criterion (Lemma B): expected proved,reading,holds,"Lemma B, proof complete; 0 counterexamples in out/sweep88_summary.json",holds,"Lemma B, proof complete; 0 counterexamples in out/sweep88_summary.json",omitted,,False
+G3,incommensurability: expected proved by a finite machine-checked certificate for every class where it applies,reading,fails,"the tool exists (ringlang.avoid_graph, tested against brute force) but neither the report nor data/ring_size contains such a certificate; 'no cycle of class 94 within codes {3,5,6} at 3 does not divide n' is tagged [computed n <= 22] only",fails,"the tool exists (ringlang.avoid_graph, tested against brute force) but neither the report nor data/ring_size contains such a certificate; 'no cycle of class 94 within codes {3,5,6} at 3 does not divide n' is tagged [computed n <= 22] only",omitted,,False
+T94_dir0,94: direction 0 (3 does not divide n gives k* = 0): proof for all n expected (G3 + G1),reading,fails,report 5.1: 'A proof for all n would need the closed classes of G1 for all n; not found',fails,report 5.1: 'A proof for all n would need the closed classes of G1 for all n; not found',omitted,,False
+T94_radius,94: radius of the crystal = 2: proof expected,reading,holds,"Lemma H with tau = 3, n >= 6",holds,"Lemma H with tau = 3, n >= 6",omitted,,False
+T94_reach,"94: reachability: expected 'explained, not proved'",reading,holds,report 7(b),holds,report 7(b),omitted,,False
+T43_dir0,43: as for 94: direction 0 proof expected,reading,fails,not proved (report 5.1),fails,not proved (report 5.1),omitted,,False
+T43_radius,43: as for 94: radius proof expected,reading,fails,Lemma H does not apply; radius only computed up to n = 400 (report 5.1),fails,Lemma H does not apply; radius only computed up to n = 400 (report 5.1),omitted,,False
+T43_reach,"43: as for 94: reachability 'explained, not proved'",reading,holds,report 7(b),holds,report 7(b),omitted,,False
+T142_dir0,142: as for 94: direction 0 proof expected,reading,fails,not proved (report 5.1),fails,not proved (report 5.1),omitted,,False
+T142_radius,142: as for 94: radius proof expected,reading,fails,Lemma H does not apply; radius only computed up to n = 400 (report 5.1),fails,Lemma H does not apply; radius only computed up to n = 400 (report 5.1),omitted,,False
+T142_reach,"142: as for 94: reachability 'explained, not proved'",reading,holds,report 7(b),holds,report 7(b),omitted,,False
+T142_codes,"rules 43 and 142 agree on codes 1, 3, 4, 6 and differ exactly on the four codes the crystal misses",data,holds,rule tables,holds,rule tables,omitted,,False
+T35_missing5,35: the missing code at 3|n is 5,data,holds,,holds,,omitted,,False
+T35_radius,"35, 3|n: the cycles carrying 101 have radius 1 and are not selected",data,holds,,holds,,omitted,,False
+T35_other,"35, 3 does not divide n: cycles carrying 101 are selected",data,holds,,holds,,omitted,,False
+T122_4notdiv,122: at 4 does not divide n code 010 is missing from the selected cycles (n = 14 is excepted by P4 itself),data,fails,code 2 not missing at n = [22],fails,code 2 not missing at n = [22],fails,"class 122, n = 22: k* = 1",False
+T154_identity,rule 154 = rule 90 XOR (l AND c); equal to rule 90 on configurations without two adjacent ones,data,holds,rule tables,holds,rule tables,omitted,,False
+T154_radius_proof,154: radius part proved for all n = 2^k,reading,holds,Proposition R154,holds,Proposition R154,omitted,,False
+T154_odd_proof,"154: odd n bijective, k* = 0, proof expected",reading,holds,Lemma P,holds,Lemma P,omitted,,False
+T154_even_left,154: the zero state can be left with one flip at even n that are not powers of two,data,holds,"n = [10, 12, 14, 18, 20]; for all even n by Proposition R154",holds,"n = [10, 12, 14, 18, 20]; for all even n by Proposition R154",omitted,,False
+T154_reach_2k,"154: at n = 2^k every other cycle reaches 0 by one-flip steps, so 0 is selected alone (computed range n = 8, 16)",data,holds,,holds,,omitted,,False
+T154_even_k0,154: even n not a power of two: k* = 0 expected,data,holds,"n = [10, 12, 14, 18, 20, 22]",holds,"n = [10, 12, 14, 18, 20]",omitted,,False

@@ -1,0 +1,251 @@
+{
+ "timezone": "CET +0100",
+ "stopped_runs_csv": [
+  {
+   "rule": "154",
+   "n": "22",
+   "workers": "1",
+   "started_cet": "2026-11-14 00:46",
+   "stopped_cet": "2026-11-14 08:09",
+   "wall_hours": "7.4",
+   "cap_hours": "5",
+   "outcome": "stopped above the stated cap; no record written"
+  }
+ ],
+ "stopped_runs_csv_columns": [
+  "rule",
+  "n",
+  "workers",
+  "started_cet",
+  "stopped_cet",
+  "wall_hours",
+  "cap_hours",
+  "outcome"
+ ],
+ "log_mech_154_n22_txt": "1 jobs to run, 194 already in checkpoint\n",
+ "file_times": {
+  "log_mech_154_n22.txt": {
+   "birth": "2026-11-14 00:46:21",
+   "mtime": "2026-11-14 00:46:21",
+   "size": 41
+  },
+  "mech.jsonl": {
+   "birth": "2026-11-13 23:35:20",
+   "mtime": "2026-11-14 00:45:03",
+   "size": 12505424
+  },
+  "mech_cost.csv": {
+   "birth": "2026-11-13 23:45:00",
+   "mtime": "2026-11-14 00:45:03",
+   "size": 3962
+  },
+  "stopped_runs.csv": {
+   "birth": "2026-11-14 08:12:25",
+   "mtime": "2026-11-14 08:12:25",
+   "size": 165
+  },
+  "log_mech_n21_22.txt": {
+   "birth": "2026-11-13 23:54:00",
+   "mtime": "2026-11-14 00:45:03",
+   "size": 1738
+  },
+  "log_mech_n8_20.txt": {
+   "birth": "2026-11-13 23:35:18",
+   "mtime": "2026-11-13 23:45:00",
+   "size": 8788
+  },
+  "factor_search.csv": {
+   "birth": "2026-11-14 08:25:54",
+   "mtime": "2026-11-14 08:25:54",
+   "size": 174
+  }
+ },
+ "mech_jsonl_cost_fields": [
+  "cost_maxrss_mb",
+  "cost_seconds"
+ ],
+ "run_mech_cost_seconds_definition": [
+  "t0 = time.time()",
+  "rec[\"cost_seconds\"] = round(time.time() - t0, 2)",
+  "cost = df[[\"rule\", \"n\", \"cycles\", \"cost_seconds\", \"cost_maxrss_mb\"]]",
+  "df.drop(columns=[\"cost_seconds\", \"cost_maxrss_mb\"]).to_csv(os.path.join(OUT, f\"mechanisms{tag}.csv\"), index=False)"
+ ],
+ "run_mech_has_cap_or_timeout_option": false,
+ "run_mech_docstring_mentions_max_rss_gb": true,
+ "cap_mentions": {
+  "reproduce_ring_size.sh": [
+   [
+    5,
+    "# class 154 at n = 22 ~2-3 h (one worker, several GB); local results ~1 min; sampled tests ~2 min;"
+   ],
+   [
+    15,
+    "# class 154 at n = 22 was stopped here after 7.4 h (cap 5 h; data/ring_size/stopped_runs.csv); to attempt it:"
+   ]
+  ],
+  "PREDICTIONS_ring_size.md": [],
+  "report_ring_size.md": [
+   [
+    454,
+    "| k*(21,22) | class 154, n = 22: k* = 0 | not tested | not computed: run stopped above the stated cost cap (stopped_runs.csv) |"
+   ],
+   [
+    528,
+    "| data/ring_size/stopped_runs.csv | runs stopped above the stated cost cap |"
+   ],
+   [
+    534,
+    "Cost (2 worker processes at most, one batch at a time): Class 154 at n = 22 was stopped after 7.4 h, above the stated cap of 5 h; it is not computed (`stopped_runs.csv`). Mechanism jobs 194, total CPU"
+   ]
+  ],
+  "PR_DRAFT.md": [
+   [
+    43,
+    "of class 122), 2 not tested (class 154 at n = 22 stopped above the cost cap; k* at n = 32)."
+   ],
+   [
+    57,
+    "class 154 at n = 22: stopped after 7.4 h (cap 5 h), not computed; atlas: see `data/ring_size/atlas/`."
+   ],
+   [
+    61,
+    "* Whether to run class 154 at n = 22 with a larger budget (the solver run exceeded 5 h)."
+   ]
+  ],
+  "code/ring_size/run_mech.py": [],
+  "code/ring_size/make_report.py": [
+   [
+    153,
+    "(\"data/ring_size/stopped_runs.csv\", \"runs stopped above the stated cost cap\"),"
+   ],
+   [
+    162,
+    "stop = \" \".join(f\"Class {int(r.rule)} at n = {int(r.n)} was stopped after {r.wall_hours} h, above the stated cap of {r.cap_hours} h; it is not computed (`stopped_runs.csv`).\" for r in st.itertuples())"
+   ]
+  ],
+  "code/ring_size/report_template.md": []
+ },
+ "mech_cost_154": [
+  [
+   8,
+   31,
+   0.0,
+   89.1
+  ],
+  [
+   9,
+   18,
+   0.0,
+   89.0
+  ],
+  [
+   10,
+   62,
+   0.0,
+   90.5
+  ],
+  [
+   11,
+   50,
+   0.0,
+   87.9
+  ],
+  [
+   12,
+   308,
+   0.02,
+   88.2
+  ],
+  [
+   13,
+   156,
+   0.0,
+   87.3
+  ],
+  [
+   14,
+   564,
+   0.16,
+   90.9
+  ],
+  [
+   15,
+   510,
+   0.01,
+   92.1
+  ],
+  [
+   16,
+   4081,
+   2.59,
+   144.9
+  ],
+  [
+   17,
+   1688,
+   0.02,
+   110.6
+  ],
+  [
+   18,
+   6314,
+   28.52,
+   226.7
+  ],
+  [
+   19,
+   5818,
+   0.14,
+   167.5
+  ],
+  [
+   20,
+   41626,
+   437.8,
+   1389.7
+  ],
+  [
+   21,
+   20370,
+   0.68,
+   459.5
+  ]
+ ],
+ "ratio_cost_154_n20_over_n18": 15.35,
+ "extrapolated_wall_seconds_154_n22_same_ratio": 6721.0,
+ "batch_n21_22_time_lines": [
+  [
+   "real",
+   "51m1.820s"
+  ],
+  [
+   "user",
+   "80m42.565s"
+  ],
+  [
+   "sys",
+   "17m20.328s"
+  ]
+ ],
+ "sum_cost_seconds_hours": 1.9,
+ "pmset_sleep_wake_lines": [
+  "2026-11-14 02:00:31 +0100 Sleep    Entering Sleep state due to 'Low Power Sleep':TCPKeepAlive=inactive Using Batt (Charge:1%) 22049 secs",
+  "2026-11-14 08:08:00 +0100 Wake     Wake from Hibernate [CDNVA] : due to lid rtc IOPortFeatureLDCM.measurement/Notification Using AC (Charge:1%)"
+ ],
+ "job_154_n22": {
+  "start_log_birth": "2026-11-14 00:46:21",
+  "stop_upper_bound": "2026-11-14 08:09:59",
+  "elapsed_hours_upper": 7.39,
+  "asleep_intervals_within_job": [
+   [
+    "2026-11-14 02:00:31",
+    "2026-11-14 08:08:00"
+   ]
+  ],
+  "asleep_hours_within_job": 6.12,
+  "awake_hours_upper_bound": 1.27,
+  "awake_minutes_upper_bound": 76.2,
+  "cap_hours_in_stopped_runs_csv": 5.0,
+  "wall_hours_in_stopped_runs_csv": 7.4
+ }
+}

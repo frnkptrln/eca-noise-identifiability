@@ -1,0 +1,29 @@
+# start 2026-11-14 11:26:55: 26 cases requested, 0 already done, workers=2
+ok rule=22 n=20 cycles=170 method=full cpu=0.4s rss=74MB checks=True
+ok rule=26 n=20 cycles=2816 method=full cpu=10.2s rss=121MB checks=True
+ok rule=37 n=20 cycles=1046 method=full cpu=1.0s rss=82MB checks=True
+ok rule=35 n=20 cycles=1944 method=full cpu=24.4s rss=105MB checks=True
+ok rule=43 n=20 cycles=1529 method=full cpu=14.5s rss=91MB checks=True
+ok rule=45 n=20 cycles=282 method=full cpu=1.4s rss=77MB checks=True
+ok rule=60 n=20 cycles=1098 method=full cpu=4.1s rss=94MB checks=True
+ok rule=73 n=20 cycles=5601 method=full cpu=4.4s rss=147MB checks=True
+# start 2026-11-14 11:29:42: 26 cases requested, 8 already done, workers=2
+ok rule=94 n=20 cycles=4513 method=full cpu=3.2s rss=129MB checks=True
+ok rule=122 n=20 cycles=289 method=full cpu=0.5s rss=72MB checks=True
+ok rule=90 n=20 cycles=5486 method=full cpu=7.9s rss=179MB checks=True
+ok rule=142 n=20 cycles=1531 method=full cpu=15.2s rss=93MB checks=True
+ok rule=22 n=21 cycles=114 method=full cpu=0.5s rss=92MB checks=True
+ok rule=26 n=21 cycles=1115 method=full cpu=36.1s rss=103MB checks=True
+ok rule=35 n=21 cycles=3237 method=full cpu=89.4s rss=137MB checks=True
+ok rule=37 n=21 cycles=1527 method=full cpu=2.7s rss=113MB checks=True
+ok rule=154 n=20 cycles=41626 method=full cpu=168.3s rss=1889MB checks=True
+ok rule=45 n=21 cycles=262 method=full cpu=3.4s rss=100MB checks=True
+ok rule=43 n=21 cycles=1755 method=full cpu=48.9s rss=117MB checks=True
+ok rule=73 n=21 cycles=8208 method=full cpu=12.6s rss=196MB checks=True
+ok rule=60 n=21 cycles=16660 method=full cpu=30.1s rss=1521MB checks=True
+ok rule=94 n=21 cycles=6927 method=full cpu=9.6s rss=173MB checks=True
+ok rule=122 n=21 cycles=379 method=full cpu=0.7s rss=92MB checks=True
+ok rule=90 n=21 cycles=16680 method=full cpu=30.0s rss=1598MB checks=True
+ok rule=142 n=21 cycles=1755 method=full cpu=49.5s rss=116MB checks=True
+ok rule=154 n=21 cycles=20370 method=full cpu=660.7s rss=598MB checks=True
+# end {"batch": "n20_21", "cases_run": 18, "cases_failed": [], "cpu_seconds_sum": 1169.5, "peak_rss_mb_max_single_case": 1888.8, "finished": "2026-11-14 11:44:43"}

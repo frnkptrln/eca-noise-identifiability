@@ -1,0 +1,8 @@
+{
+ "batch": "n20_21",
+ "cases_run": 18,
+ "cases_failed": [],
+ "cpu_seconds_sum": 1169.5,
+ "peak_rss_mb_max_single_case": 1888.8,
+ "finished": "2026-11-14 11:44:43"
+}

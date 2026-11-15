@@ -1,0 +1,14 @@
+rule 154: f(a,b,c) = c XOR (a AND NOT b) on all 8 codes: True; right-permutive: True
+diagonal nodes (x = x' locally) only lead to diagonal nodes: True
+off-diagonal nodes: 12; nodes on a closed off-diagonal walk: 6
+  (0, 0, 0, 1) [A] --y=0--> (0, 0, 1, 0) [B]
+  (0, 0, 1, 0) [B] --y=0--> (0, 0, 0, 1) [A]
+  (0, 0, 1, 0) [B] --y=1--> (0, 1, 0, 0) [A]
+  (0, 1, 0, 0) [A] --y=0--> (1, 0, 0, 0) [B]
+  (0, 1, 1, 0) [C] --y=0--> (1, 0, 0, 1) [C]
+  (1, 0, 0, 0) [B] --y=0--> (0, 1, 0, 0) [A]
+  (1, 0, 0, 0) [B] --y=1--> (0, 0, 0, 1) [A]
+  (1, 0, 0, 1) [C] --y=0--> (0, 1, 1, 0) [C]
+every such node is of kind A, B or C: True
+every edge between such nodes is A->B, B->A or C->C (C->C edges join the two different C nodes): True
+RESULT: PASS

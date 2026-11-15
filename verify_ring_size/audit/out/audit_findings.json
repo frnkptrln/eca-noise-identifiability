@@ -1,0 +1,294 @@
+{
+ "rule22_bit_formula_mismatches_n9": 0,
+ "F1_rule22_seed_orbit": {
+  "241": {
+   "reached_zero": true,
+   "steps": 1303564
+  },
+  "121": {
+   "reached_zero": true,
+   "steps": 4437
+  },
+  "125": {
+   "reached_zero": true,
+   "steps": 142
+  },
+  "253": {
+   "reached_zero": true,
+   "steps": 270
+  }
+ },
+ "sample_selected_keys": [
+  "n_cycles",
+  "n_orbits",
+  "orbit_reps_sha256",
+  "orbits",
+  "orbits_complete",
+  "type_summary"
+ ],
+ "F4_class45": {
+  "10": {
+   "cycles": 9,
+   "gamma_hist": [
+    [
+     8,
+     9
+    ]
+   ],
+   "kstar": 0
+  },
+  "12": {
+   "cycles": 33,
+   "gamma_hist": [
+    [
+     32,
+     33
+    ]
+   ],
+   "kstar": 0
+  },
+  "14": {
+   "cycles": 16,
+   "gamma_hist": [
+    [
+     15,
+     16
+    ]
+   ],
+   "kstar": 0
+  },
+  "16": {
+   "cycles": 42,
+   "gamma_hist": [
+    [
+     41,
+     42
+    ]
+   ],
+   "kstar": 0
+  },
+  "18": {
+   "cycles": 201,
+   "gamma_hist": [
+    [
+     200,
+     199
+    ],
+    [
+     201,
+     2
+    ]
+   ],
+   "kstar": 0
+  },
+  "20": {
+   "cycles": 282,
+   "gamma_hist": [
+    [
+     281,
+     282
+    ]
+   ],
+   "kstar": 0
+  },
+  "22": {
+   "cycles": 272,
+   "gamma_hist": [
+    [
+     271,
+     271
+    ],
+    [
+     272,
+     1
+    ]
+   ],
+   "kstar": 0
+  }
+ },
+ "F5_class73": {
+  "9": {
+   "cycles": 40,
+   "min_gamma": 39,
+   "gamma_hist_head": [
+    [
+     39,
+     21
+    ],
+    [
+     40,
+     19
+    ]
+   ],
+   "kstar": 1
+  },
+  "21": {
+   "cycles": 8208,
+   "min_gamma": 8207,
+   "gamma_hist_head": [
+    [
+     8207,
+     8208
+    ]
+   ],
+   "kstar": 0
+  },
+  "22": {
+   "cycles": 13304,
+   "min_gamma": 13303,
+   "gamma_hist_head": [
+    [
+     13303,
+     13303
+    ],
+    [
+     13304,
+     1
+    ]
+   ],
+   "kstar": 0
+  }
+ },
+ "F8_class26": {
+  "8": {
+   "kstar": 1,
+   "codes_missing": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  "9": {
+   "kstar": 1,
+   "codes_missing": [
+    7
+   ]
+  },
+  "10": {
+   "kstar": 1,
+   "codes_missing": [
+    7
+   ]
+  },
+  "12": {
+   "kstar": 1,
+   "codes_missing": [
+    7
+   ]
+  },
+  "13": {
+   "kstar": 1,
+   "codes_missing": [
+    7
+   ]
+  },
+  "15": {
+   "kstar": 1,
+   "codes_missing": [
+    7
+   ]
+  },
+  "16": {
+   "kstar": 2,
+   "codes_missing": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  "18": {
+   "kstar": 1,
+   "codes_missing": [
+    7
+   ]
+  },
+  "19": {
+   "kstar": 1,
+   "codes_missing": [
+    7
+   ]
+  },
+  "21": {
+   "kstar": 1,
+   "codes_missing": [
+    7
+   ]
+  }
+ },
+ "cycle_orbits_columns": [
+  "codes",
+  "drift",
+  "gamma",
+  "n",
+  "orbit_rep_min_state",
+  "orbit_size",
+  "pattern",
+  "radius",
+  "rule",
+  "selected",
+  "spatial_period",
+  "temporal_period"
+ ],
+ "study_rows_uniform_cycle": [
+  {
+   "gamma": "201",
+   "n": "18",
+   "pattern": "000000000000000000",
+   "radius": "1",
+   "rule": "45",
+   "selected": "False",
+   "temporal_period": "2"
+  },
+  {
+   "gamma": "271",
+   "n": "22",
+   "pattern": "0000000000000000000000",
+   "radius": "1",
+   "rule": "45",
+   "selected": "True",
+   "temporal_period": "2"
+  },
+  {
+   "gamma": "40",
+   "n": "9",
+   "pattern": "000000000",
+   "radius": "1",
+   "rule": "73",
+   "selected": "False",
+   "temporal_period": "2"
+  },
+  {
+   "gamma": "2118",
+   "n": "18",
+   "pattern": "000000000000000000",
+   "radius": "1",
+   "rule": "73",
+   "selected": "True",
+   "temporal_period": "2"
+  },
+  {
+   "gamma": "13304",
+   "n": "22",
+   "pattern": "0000000000000000000000",
+   "radius": "1",
+   "rule": "73",
+   "selected": "False",
+   "temporal_period": "2"
+  }
+ ],
+ "stopped_runs_csv": "rule,n,workers,started_cet,stopped_cet,wall_hours,cap_hours,outcome\n154,22,1,2026-11-14 00:46,2026-11-14 08:09,7.4,5,stopped above the stated cap; no record written\n",
+ "log_mech_154_n22": "1 jobs to run, 194 already in checkpoint\n",
+ "log_mech_154_n22_times": {
+  "birth": "2026-11-14 00:46:21",
+  "mtime": "2026-11-14 00:46:21"
+ },
+ "cpu_seconds": 1.8
+}
