@@ -1,11 +1,21 @@
-"""Outcome of every sealed prediction in PREDICTIONS_ring_size.md, decided from the data files only.
-Writes data/ring_size/predictions_outcome.csv (id, part, outcome in {holds, fails, partly, not tested}, evidence).
+"""Outcomes of the sealed predictions P1-P9 and of the k* table for n = 21, 22 in PREDICTIONS_ring_size.md.
+Writes data/ring_size/predictions_outcome.csv (id, part, outcome, evidence).
+
+Scope: 50 rows. They do not cover every sealed statement: the general expectations G1-G3, the column
+"proof for all n expected?" of the class table and some sub-claims of P3, P4, P8, P9 are outside this table
+(29 of the 92 single statements counted by the verification; listed in the report from
+verify_ring_size/phase2/out/predictions_recount.csv).
+Outcomes are decided from the data files, with three exceptions that are stated in the evidence column:
+the row "4 does not divide n: no cycle with spatial period 4" is a triviality (holds (trivially)); the k* of
+class 154 at n = 22 was not computed by this study and is taken from the verification
+(verify_ring_size/phase2/out/v154_n22.json); the k* values of class 154 at n = 24, 28, 32 are not computed
+(not tested), and the evidence column names the proof that now implies them.
 """
 import os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import pandas as pd
-import rsdata
+import rsdata, verif
 
 OUT = rsdata.OUT
 
@@ -51,8 +61,11 @@ def main():
         t = O[(O.rule == 35) & (O.n == n)]
         ok &= set(t[t.codes.str.contains("5")].orbit_rep_min_state) == set(t[~t.selected].orbit_rep_min_state)
     add("P3", "3|n: cycles containing code 5 = cycles not selected", bool(ok), "cycle_orbits.csv.gz")
-    add("P3", "they have spatial period 3 or consist of 3-periodic segments", False,
-        "rule35_blocks.csv: they are travelling words over the blocks 10 and 100 (spatial period n mostly)")
+    car = O[(O.rule == 35) & (O.n % 3 == 0) & O.codes.str.contains("5")]
+    add("P3", "they have spatial period 3 or consist of 3-periodic segments", bool((car.spatial_period == 3).all()),
+        f"cycle_orbits.csv.gz: {int((car.spatial_period == 3).sum())} of {len(car)} carrier orbits have spatial period 3 "
+        f"({int((car.spatial_period == car.n).sum())} have spatial period n); rule35_blocks.csv: they are travelling words "
+        "over the blocks 10 and 100")
     # P4
     c = pd.read_csv(os.path.join(OUT, "code_carriers.csv"), dtype={"carrier_patterns": str})
     c = c[(c.rule == 122) & (c.code == 2)]
@@ -80,8 +93,12 @@ def main():
         f"zero_mechanism.csv, n = {z.n.min()}..{z.n.max()}")
     d = m(26, lambda M: M.n == 16).iloc[0]
     add("P6", "26, n = 16: zero state alone, k* = 2", bool(d.n_selected == 1 and d.kstar == 2), "mechanisms.csv")
-    d = m(26, lambda M: (M.kstar >= 1) & ~M.n.isin([8, 16]))
-    add("P6", "26, other n with k* >= 1: missing code 7", bool((~d.selected_cover.str.contains("7")).all()), "mechanisms.csv")
+    d = m(26, lambda M: (M.kstar >= 1) & (M.n != 16))          # sealed: "at the other n with k* = 1 the missing code is 7"
+    bad = d[d.selected_cover != "0123456"]
+    add("P6", "26, other n with k* >= 1: missing code 7", len(bad) == 0,
+        "mechanisms.csv: " + ("; ".join(f"fails at n = {int(r.n)} (codes covered by the selected set: {r.selected_cover}; number of selected cycles: {int(r.n_selected)})"
+                                         for r in bad.itertuples()) + "; " if len(bad) else "")
+        + "holds at n = " + ", ".join(str(int(v)) for v in d[d.selected_cover == "0123456"].n))
     # P7
     d = m(45, lambda M: M.n == 8).iloc[0]
     add("P7", "45, n = 8: uniform 2-cycle selected alone", bool(d.n_selected == 1 and d.selected_cover == "07"), "mechanisms.csv")
@@ -102,8 +119,14 @@ def main():
             d = m(r, lambda M: M.n == n)
             if len(d):
                 add("k*(21,22)", f"class {r}, n = {n}: k* = {k}", int(d.kstar.iloc[0]) == k, f"mechanisms.csv (computed {int(d.kstar.iloc[0])})")
+            elif (r, n) == (154, 22):
+                v = verif.v154_n22()
+                assert (v["rule"], v["n"]) == (154, 22)
+                add("k*(21,22)", f"class {r}, n = {n}: k* = {k}", int(v["kstar"]) == k,
+                    f"not computed in this study (job stopped unfinished, stopped_runs.csv); computed by the verification: "
+                    f"k* = {int(v['kstar'])} ({verif.V154_N22})")
             else:
-                add("k*(21,22)", f"class {r}, n = {n}: k* = {k}", False, "not computed: run stopped above the stated cost cap (stopped_runs.csv)", outcome="not tested")
+                add("k*(21,22)", f"class {r}, n = {n}: k* = {k}", False, "not computed", outcome="not tested")
     for n in (21, 22):
         d = m(22, lambda M: M.n == n); s = so[(so.rule == 22) & (so.n == n)]
         add("k*(21,22)", f"class 22, n = {n}: k* = 1 iff seed returns", int(d.kstar.iloc[0] >= 1) == int(s.returns_to_zero.iloc[0]),
@@ -112,8 +135,10 @@ def main():
     sr = pd.read_csv(os.path.join(OUT, "sampled_reach", "rule154_n32.csv"))
     add("P9", "154, n = 32: zero radius >= 2", bool(sr.target_radius_ge2.iloc[0] == 1), "sampled_reach/rule154_n32.csv; proved (Proposition R154)")
     add("P9", "154, n = 32: sampled cycles reach 0 by one-flip steps", bool(sr.found.all()),
-        f"sampled_reach/rule154_n32.csv: {int(sr.found.sum())}/{len(sr)} (observed)", outcome="holds (observed, sampled)" if sr.found.all() else None)
-    add("P9", "154: k* = 1 at n = 32, k* = 0 at n = 24, 28", False, "not computed (no method that decides k* without enumeration)",
+        f"sampled_reach/rule154_n32.csv: {int(sr.found.sum())}/{len(sr)} (observed); proved for every cycle and every n = 2^k "
+        f"by the verification ({verif.PROOF_154}, Theorem 1)", outcome="holds (observed, sampled)" if sr.found.all() else None)
+    add("P9", "154: k* = 1 at n = 32, k* = 0 at n = 24, 28", False,
+        f"not computed (no enumeration at these sizes); implied by Theorems 1 and 2 of {verif.PROOF_154} (proved by the verification)",
         outcome="not tested")
     P = pd.DataFrame(rows)
     P.to_csv(os.path.join(OUT, "predictions_outcome.csv"), index=False)

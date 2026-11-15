@@ -4,6 +4,51 @@ Scope: elementary cellular automata (ECA) on Z/nZ with i.i.d. bit-flip noise, X_
 
 Reading rule used here: "read" means the text was opened and read in this session; every statement in Section 1 comes from that text. Statements taken from a search-engine snippet or a publisher abstract are marked as such and are not marked as read.
 
+## Update after the independent verification (15 November 2026)
+
+This review records what the study session read. The independent verification of 14 November 2026 checked
+it against sources it could obtain (`verify_ring_size/literature/literature_check.md`; findings A20 to A31
+of `VERIFICATION_ring_size.md`). The points below correct or complete the review; "read by the
+verification" refers to that check, not to the study session. Passages changed in place are marked
+"(corrected ...)" or "(added ...)".
+
+* **Sources now read (by the verification).** Martin, Odlyzko and Wolfram (1984) in full (author copy at
+  content.wolfram.com); the published version of Ellison (2000) in part (journal pp. 17, 20, 22-26, 28-31,
+  36-39 of 17-45; scan hosted at economics.mit.edu); Fedoriaka (arXiv:2501.06648) in full and Bhattacharjee
+  and Das (arXiv:1903.06011) in part, through a text extraction. Jen (1986, 1988): abstracts only.
+  Wuensche and Lesser (1992) and the Wolfram Atlas: still not obtained. The access statements of Section 0
+  describe the study session (A29).
+* **Known results behind Theorem A and Lemma B (A20, A21).** Lemma 1, Lemma 2 and the first sentence of
+  Theorem A correspond to the results on "mutation-connected" and "locally stable" components of Samuelson
+  (1994) and Nöldeke and Samuelson (1993, Proposition 1); Lemma B is in substance the
+  single-mutation-chain lemma that Ellison (2000, Section 6.2, journal pp. 37-38; working paper p. 30)
+  attributes to Samuelson (1994) and Nöldeke and Samuelson (1993, 1997). The primary texts of Samuelson
+  and of Nöldeke and Samuelson were **not read**, neither by the study nor by the verification; the
+  correspondence rests on Ellison's text, the abstract of Samuelson (1994) and secondary descriptions. Not
+  found in the sources read: the explicit potentials gamma_min = m - 1 and gamma_min = m + q - 2. The
+  report presents both statements as restatements of known results.
+* **Ellison (2000), Theorem 2 (A22, A23).** The published article has the same numbering as the working
+  paper: Definition 1 p. 20; radius and coradius pp. 23-24; Theorem 1 p. 24; modified coradius pp. 28-29;
+  Theorem 2, Section 4.2, p. 30; Theorem 3 p. 38. Theorem 2 has two conclusions: (a) containment of the
+  long-run stochastically stable set in Ω, (b) W(y, Ω, ε) = O(ε^(−CR*(Ω))) for every y outside Ω. When Ω
+  is a single limit set, (a) gives equality (p. 38).
+* **Bijectivity of rules 154 and 45 at odd n (A24)** is stated in Bhattacharjee and Das
+  (arXiv:1903.06011, Example 2) and in Fedoriaka (arXiv:2501.06648, Section 3: exhaustive computation for
+  N in [4, 20] with explicit circuit constructions, not a proof for all odd N), and by its abstract in
+  Nobe and Yura (2004). Rule 45 is the output complement of the mirror image of rule 154.
+* **Rule 90 at n = 2^k (A25).** Martin, Odlyzko and Wolfram (1984), Lemma 3.5 (p. 230); the "iff" follows
+  from their Theorems 3.3 and 3.4 with corollaries.
+* **Precedents of Proposition R154 (A26).** OEIS A070886, comment: rules 18, 26, 82, 90, 146, 154, 210 and
+  218 give the same pattern from a single cell on the line; Martin, Odlyzko and Wolfram, Section 5 (p. 247):
+  the same reduction for rule 18; OEIS A334504 and A334507: single-cell periods of rules 26 and 122 on
+  rings, which agree with `data/ring_size/seed_orbits.csv` for n = 4..120. The ring statements for rules
+  154 and 22 were not found in the sources read.
+* **The class-94 crystal (A30).** The three shifts of 011011... are the non-null fixed points of rule 90
+  for N a multiple of 3 (Martin, Odlyzko and Wolfram, Lemma 3.7, p. 234).
+* **Proved since by the verification** (not literature; see Section 5.7 of the report): k* = 1 iff n is a
+  power of two for rule 154 at every n >= 3; k* = 1 for class 94 at every n >= 6 divisible by 3. No search
+  for these two statements was made after they were proved.
+
 ---
 
 ## 0. Access limits
@@ -166,7 +211,7 @@ Read only partially, or a substitute version was read:
 - Lemma 1 (= MOW Lemma 3.3): in a linear CA, all trees rooted at cycle states are isomorphic.
 - Lemma 3 (= MOW Lemma 3.4): Π_N, the cycle length reached from a single 1, is the maximal cycle length, and all cycle lengths divide it.
 - Lemma 6 (rule 90, odd N; citing MOW Theorems 3.2 and 3.3 and the corollary to 3.3): trees are single edges, reachable states have 2 predecessors, and 2^(N−1) states lie on cycles.
-- Lemma 7 (rule 90, even N; citing MOW Theorem 3.4 and the corollary to Theorem 3.2):
+- Lemma 7 (rule 90, even N; citing MOW; in MOW the content is Theorems 3.2 and 3.4 and the first corollary to Theorem 3.4, and Theorem 3.2 has no corollary (corrected after the verification, A28; the wording in Powley–Stepney was not re-checked)):
   - D2(N) is the largest power of 2 dividing N;
   - trees are balanced of depth D2(N)/2;
   - reachable states have 4 predecessors;
@@ -186,7 +231,7 @@ Read only partially, or a substitute version was read:
 
 ## 2. Sources located but NOT read (metadata only)
 
-- **Martin, Odlyzko, Wolfram (1984)**, "Algebraic properties of cellular automata", *Commun. Math. Phys.* 93:219–258, DOI 10.1007/BF01223745 (verified). Closed; all OA hosts refused. Its statement numbers are known here only through Powley–Stepney (1.7) and the NKS note (1.1).
+- **Martin, Odlyzko, Wolfram (1984)**, "Algebraic properties of cellular automata", *Commun. Math. Phys.* 93:219–258, DOI 10.1007/BF01223745 (verified). Closed; all OA hosts refused. Its statement numbers are known here only through Powley–Stepney (1.7) and the NKS note (1.1). (Added after the verification: read in full by the verification from the author copy; see the update at the top.)
 - **Jen (1988)**, "Cylindrical cellular automata", *Commun. Math. Phys.* 118:569–590, DOI 10.1007/BF01221109 (verified). **Not read.** Summary of the ADS/Springer abstract, as seen in search results:
   - a matrix A whose trace of A^n gives the number of fixed points on a cylinder of size n;
   - limit cycles counted through linear recurrences;
@@ -200,7 +245,7 @@ Read only partially, or a substitute version was read:
   - A search snippet (ResearchGate) shows "Proposition 1: the rule-154 ECA is reversible for the cell size N ≡ 1 (mod 2)", and says the reversible ECA rules are 150, 154, 170 and 204 up to automorphisms.
   - **Not read**; the green-OA host was refused.
 - **Nobe & Yura (2007)**, "Linearizable cellular automata", *J. Phys. A* 40(26):7159, DOI 10.1088/1751-8113/40/26/004 (verified). The abstract says that for a class of reversible ECA with periodic boundaries, the initial value problem reduces to linear systems over a finite commutative ring. Whether rule 154 is in this class is **unknown (not read)**.
-- **Fedoriaka (2025)**, arXiv:2501.06648, "Quantum circuits for elementary cellular automata". Search snippet only: lists rules 45, 75, 89, 101, 154, 166, 180 and 210 as reversible for odd N with periodic boundaries; writes 154 as a_{i+1} ⊕ (¬a_i · a_{i−1}). Not read.
+- **Fedoriaka (2025)**, arXiv:2501.06648, "Quantum circuits for elementary cellular automata". Search snippet only: lists rules 45, 75, 89, 101, 154, 166, 180 and 210 as reversible for odd N with periodic boundaries; writes 154 as a_{i+1} ⊕ (¬a_i · a_{i−1}). Not read. (Added after the verification: read in full by the verification; the list comes from exhaustive computation for N in [4, 20] plus explicit constructions.)
 - **Wuensche & Lesser (1992)**, *The Global Dynamics of Cellular Automata: An Atlas of Basin of Attraction Fields of One-Dimensional Cellular Automata*, SFI Studies in the Sciences of Complexity, Addison-Wesley. Publisher data not verified against the book. Not obtainable (ddlab.org refused).
 - **Wuensche: jump graph.**
   - "Exploring Discrete Dynamics" (Luniver Press 2011; 2nd ed. 2016; online update 2023), §20.7 jump-graph.
@@ -234,9 +279,9 @@ The closest material:
 
 **(Q3) Known exact statements on rule 154 vs rule 90.**
 - *Read:* Powley–Stepney (2009a, §5.2) group 154 with the linear rules: the automorphism count of the transition graph alternates between even and odd N for N ≤ 14. The common property they name is the Sierpiński pattern from a single seed. 154 is otherwise periodic (1.6).
-- *Not read (snippet or abstract only):* rule 154 is reversible for odd N (Nobe–Yura 2004, Proposition 1; also listed by Fedoriaka 2025). Nobe–Yura (2007) linearise a class of reversible ECA over a finite commutative ring; whether 154 belongs to it is unknown.
+- *Not read (snippet or abstract only):* rule 154 is reversible for odd N (Nobe–Yura 2004, Proposition 1; also listed by Fedoriaka 2025; stated for rules 45 and 154 in Bhattacharjee–Das, arXiv:1903.06011, Example 2 (added after the verification)). Nobe–Yura (2007) linearise a class of reversible ECA over a finite commutative ring; whether 154 belongs to it is unknown.
 - *Not found:* a conjugacy or factor map between rule 154 and rule 90; nilpotency or other statements about 154 at n = 2^k; its cycle structure as a function of n.
-- *Known for rule 90 only* (NKS p. 963, read; MOW Lemma 3.5 as cited by Powley–Stepney 2009b, Lemma 9): for N a power of 2, every state reaches the null configuration (Π_N = 1). The project's own data (31 and 4081 cycles for rule 154 at n = 8 and 16) show that 154 is not nilpotent there. This is consistent with the absence of any such statement in the literature.
+- *Known for rule 90 only* (NKS p. 963, read; MOW Lemma 3.5 as cited by Powley–Stepney 2009b, Lemma 9): for N a power of 2, every state reaches the null configuration (Π_N = 1). The project's own data (31 and 4081 cycles for rule 154 at n = 8 and 16) show that 154 is not nilpotent there. No such statement about rule 154 was found in the sources read (corrected after the verification, A27).
 
 **(Q4) Ellison's radius and modified coradius. Read**, in the January 1999 working paper (see 1.3 for the full definitions).
 - R(Ω) = min cost of a path from Ω out of D(Ω).
@@ -247,7 +292,7 @@ The closest material:
 - Theorem 1 is the same statement with CR in place of CR*.
 - Theorem 3 (§6.3) is the pointwise version for a **single** limit set Ω: R(Ω) > c*(x, Ω) ⇒ μ*(x) = 0.
 
-If the note cites theorem numbers, add "(numbering of the 1999 working paper; consistent with later citations of the published version)", or check against the journal text. Paths must consist of distinct states. Theorem 2 gives containment in Ω, not equality.
+If the note cites theorem numbers, add "(numbering of the 1999 working paper; consistent with later citations of the published version)", or check against the journal text. Paths must consist of distinct states. Theorem 2 gives containment in Ω, not equality. (Added after the verification: the published article has the same numbering, Theorem 2, Section 4.2, p. 30; it also gives the waiting-time bound, and equality when Ω is a single limit set, p. 38.)
 
 **(Q5) Cycle structure vs ring size for non-additive ECA.**
 - NKS 6.4 (read): periods depend strongly on n (figures for rules 30 and 45; rule 45 near the maximum). The bound s[n,k] comes from spatial periods: a state cannot evolve to a larger spatial period (p. 950). The networks on pp. 962–963 show identical pieces related by shifts, so their number divides n.
@@ -520,5 +565,33 @@ If the note cites theorem numbers, add "(numbering of the 1999 working paper; co
   title        = {Wolfram Atlas of Simple Programs: elementary cellular automata},
   howpublished = {\url{https://atlas.wolfram.com/01/01/}},
   note         = {Not read (host refused by sandbox).}
+}
+
+@article{Samuelson1994,
+  author  = {Samuelson, Larry},
+  title   = {Stochastic stability in games with alternative best replies},
+  journal = {Journal of Economic Theory},
+  volume  = {64},
+  pages   = {35--65},
+  year    = {1994},
+  note    = {Not read (abstract only, by the verification). Added after the verification.}
+}
+
+@article{NoeldekeSamuelson1993,
+  author  = {N{\"o}ldeke, Georg and Samuelson, Larry},
+  title   = {An evolutionary analysis of backward and forward induction},
+  journal = {Games and Economic Behavior},
+  volume  = {5},
+  pages   = {425--454},
+  year    = {1993},
+  note    = {Not read (known through Ellison 2000, Sect. 6.2, and secondary descriptions). Added after the verification.}
+}
+
+@misc{BhattacharjeeDas2019,
+  author       = {Bhattacharjee, Kamalika and Das, Sukanta},
+  title        = {On finite 1-dimensional cellular automata: reversibility and semi-reversibility},
+  howpublished = {arXiv:1903.06011},
+  year         = {2019},
+  note         = {Not read by the study; read in part by the verification (Example 2). Added after the verification.}
 }
 ```

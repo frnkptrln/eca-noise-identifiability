@@ -11,6 +11,15 @@ What a run establishes (tag "observed" in the report): for each sampled cycle, e
 one-flip path into the target (a certificate that this cycle is not in a closed class other than the
 target's), or "not found within the budget". It does not establish anything about unsampled cycles.
 
+Cycles are handled up to rotation: `cycle_label` names a rotation orbit of cycles, and the column
+`distinct rotation orbits` of the report counts these labels. The path found is stored in the column
+`path` as steps "state:cell>label" joined by ";": `state` (hexadecimal, cell i at bit i) is a state of a
+cycle of the current rotation orbit, `cell` the flipped cell, `label` (hexadecimal) the rotation orbit of
+the cycle reached. Since F commutes with rotations, rotating the later steps turns the stored chain into
+a one-flip path between actual cycles. Every stored path is re-verified step by step before it is
+written (verify_path): the state is periodic, lies in the orbit named by the previous step, and its flip
+ends in the orbit named by this step; the last label is the target's.
+
 Usage: python3 sample_reach.py --rule 154 --n 32 --target zero --samples 200 --seed 1 --out ...csv
        python3 sample_reach.py --rule 94 --n 24 --target crystal:011 ...
 """
@@ -85,6 +94,19 @@ def successors(rule, cyc, n):
     return out
 
 
+def verify_path(rule, n, start_label, path, tlab):
+    """Exact re-check of a stored path [(state, cell, label), ...] from the orbit start_label to the orbit tlab."""
+    cur = start_label
+    for x, i, lab in path:
+        cyc = limit(rule, x, n)
+        assert x in cyc, "path state is not periodic"
+        assert canon_label(cyc, n) == cur, "path state is not in the current rotation orbit"
+        assert canon_label(limit(rule, x ^ (1 << i), n), n) == lab, "flip does not end in the stated orbit"
+        cur = lab
+    assert cur == tlab, "path does not end in the target orbit"
+    return True
+
+
 def popmean(cyc):
     return sum(bin(s).count("1") for s in cyc) / len(cyc)
 
@@ -129,35 +151,45 @@ def main():
         cyc = limit(rule, x0, n)
         lab = canon_label(cyc, n)
         if lab == tlab:
-            rows.append(dict(sample=k, x0=x0, cycle_label=lab, period=len(cyc), found=1, path_len=0, expanded=0))
+            rows.append(dict(sample=k, x0=x0, cycle_label=lab, period=len(cyc), found=1, path_len=0, expanded=0, path=""))
             continue
-        # best-first search over one-flip edges
+        # best-first search over one-flip edges; cache[l] = {l2: (flipped state, cell, a cycle of orbit l2)}
         pq = [(h(cyc), 0, lab)]
-        info = {lab: (cyc, 0)}
+        info = {lab: (cyc, 0, None)}          # label -> (cycle, depth, (parent label, state, cell))
         found, expanded = False, 0
         while pq and expanded < a.budget:
             _, d, l = heapq.heappop(pq)
-            c, _ = info[l]
+            c = info[l][0]
             if l not in cache:
-                cache[l] = {l2: v[2] for l2, v in successors(rule, c, n).items()}
+                cache[l] = {l2: (c[v[0]], v[1], v[2]) for l2, v in successors(rule, c, n).items()}
             expanded += 1
             if tlab in cache[l]:
-                found = True; plen = d + 1; break
-            for l2, c2 in cache[l].items():
+                found = True; plen = d + 1
+                x, i, _ = cache[l][tlab]
+                path = [(x, i, tlab)]
+                while info[l][2] is not None:
+                    pl, px, pi = info[l][2]
+                    path.append((px, pi, l)); l = pl
+                path.reverse()
+                break
+            for l2, (x, i, c2) in cache[l].items():
                 if l2 not in info:
-                    info[l2] = (c2, d + 1)
+                    info[l2] = (c2, d + 1, (l, x, i))
                     heapq.heappush(pq, (h(c2), d + 1, l2))
+        if found:
+            assert len(path) == plen and verify_path(rule, n, lab, path, tlab)
         rows.append(dict(sample=k, x0=x0, cycle_label=lab, period=len(cyc), found=int(found),
-                         path_len=plen if found else -1, expanded=expanded))
+                         path_len=plen if found else -1, expanded=expanded,
+                         path=";".join(f"{x:x}:{i}>{l2:x}" for x, i, l2 in path) if found else ""))
     with open(a.out, "w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=["rule", "n", "target", "target_radius_ge2", "sample", "x0", "cycle_label",
-                                            "period", "found", "path_len", "expanded"])
+                                            "period", "found", "path_len", "expanded", "path"])
         w.writeheader()
         for r in rows:
             w.writerow(dict(rule=rule, n=n, target=a.target, target_radius_ge2=int(rad2), **r))
     nf = sum(r["found"] for r in rows)
     print(f"rule {rule} n {n} target {a.target}: radius>=2 {rad2}; {nf}/{len(rows)} sampled cycles reach the "
-          f"target by one-flip steps; distinct cycles {len(set(r['cycle_label'] for r in rows))}; "
+          f"target by one-flip steps (all stored paths re-verified); distinct rotation orbits {len(set(r['cycle_label'] for r in rows))}; "
           f"{time.time() - t0:.0f}s")
 
 
