@@ -14,7 +14,7 @@ corrupted by independent bit flips with probability ε per cell and step.
 
 Repository: https://github.com/frnkptrln/eca-noise-identifiability · DOI: https://doi.org/10.5281/zenodo.23399100 (all versions) · https://doi.org/10.5281/zenodo.23399101 (v0.1) · https://doi.org/10.5281/zenodo.24093547 (v0.2) · License: CC BY 4.0 (`LICENSE`), covering the note, the data and the code.
 
-Cite as: Peterlein, F. (2026). *Rule identifiability in elementary cellular automata under dynamical noise* (v0.2). Zenodo. https://doi.org/10.5281/zenodo.23399100
+Cite as: Peterlein, F. (2026). *Rule identifiability in elementary cellular automata under dynamical noise* (v0.3). Zenodo. https://doi.org/10.5281/zenodo.23399100
 
 ## What is computed
 
@@ -52,6 +52,17 @@ is a LaTeX macro written by `code/make_numbers.py` from the CSV files — nothin
 * `VERIFICATION_v02.md`, `verify_v02/` — independent verification of v0.2 (own code, sealed sample, outputs, logs) and how each finding was handled
 <!-- v02:end -->
 
+## Version 0.3: ring-size study
+
+Version 0.2 found 13 classes whose small-noise order k* changes side with the ring size n. Version 0.3
+adds a study of why. The note itself is unchanged: `note/note_v0.2.pdf` is the current text.
+
+* `report_ring_size.md` — the report. Mechanisms computed for n ≤ 22: in ten of the 13 classes the selected cycle at the switching sizes is a spatially periodic crystal that exists only when its period divides n, or the zero state, which cannot be left with one flip exactly when a single flip dies out on the ring; classes 37, 45 and 73 are not covered. Proved for all n by the independent verification: for rule 154, k* = 1 iff n is a power of two (n ≥ 3); for class 94, k* = 1 at every n ≥ 6 divisible by 3. The proofs are not peer reviewed; what is not proved is listed in the report
+* `PREDICTIONS_ring_size.md` — predictions sealed before any new computation (first commit of the branch)
+* `literature_ring_size.md` — literature review with read/not-read status per source
+* `code/ring_size/`, `data/ring_size/` (with its own `MANIFEST.sha256`), `figures/ring_size/` — mechanism analysis, data and figures; `reproduce_ring_size.sh` regenerates them and the report
+* `VERIFICATION_ring_size.md`, `verify_ring_size/` — independent verification (sealed blind sample, own solver, 31 findings, the two proofs) and how each finding was handled
+
 ## Conventions
 
 States are integers 0..4095, bit i is cell i (indices mod 12). A rule is its Wolfram number:
@@ -66,3 +77,8 @@ not seen the work recomputed samples of every quantity from the definitions, che
 in the text against the data files and read the proofs; its report is `VERIFICATION.md`, and its
 findings were corrected before release. The author selected the question, set the scope, and is
 responsible for the content.
+
+Versions 0.2 (8 and 9 November 2026) and 0.3 (13 to 15 November 2026) were produced in the same way,
+each with its own independent verification session (`VERIFICATION_v02.md`, `VERIFICATION_ring_size.md`).
+For version 0.3 the verification session also proved the two statements that hold for all n; its proofs
+were read a second time, with separate code, in a further Claude session.
