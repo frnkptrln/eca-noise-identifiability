@@ -1,0 +1,10 @@
+nice: setpriority: Operation not permitted
+{'rule': 122, 'n': 117, 'pass': 3, 'budget': 6000000000, 'determined': True, 'transient': 115, 'limit_period': 1073741822, 'returns_to_zero': 0, 'steps_used': 3221225697, 'cpu_seconds': 33.512}
+{'rule': 122, 'n': 121, 'pass': 3, 'budget': 6000000000, 'determined': True, 'transient': 119, 'limit_period': 2147483646, 'returns_to_zero': 0, 'steps_used': 6442451177, 'cpu_seconds': 67.524}
+{'rule': 122, 'n': 153, 'pass': 3, 'budget': 6000000000, 'determined': True, 'transient': 151, 'limit_period': 2147483646, 'returns_to_zero': 0, 'steps_used': 6442451241, 'cpu_seconds': 66.895}
+{'rule': 122, 'n': 173, 'pass': 3, 'budget': 6000000000, 'determined': True, 'transient': 171, 'limit_period': 536870910, 'returns_to_zero': 0, 'steps_used': 1610613073, 'cpu_seconds': 16.806}
+{'rule': 122, 'n': 235, 'pass': 3, 'budget': 6000000000, 'determined': True, 'transient': 233, 'limit_period': 2147483644, 'returns_to_zero': 0, 'steps_used': 6442451401, 'cpu_seconds': 69.261}
+{'rule': 22, 'n': 234, 'pass': 3, 'budget': 6000000000, 'determined': True, 'transient': 2, 'limit_period': 2147483644, 'returns_to_zero': 0, 'steps_used': 6442450939, 'cpu_seconds': 67.155}
+{'rule': 22, 'n': 235, 'pass': 3, 'budget': 6000000000, 'determined': True, 'transient': 2, 'limit_period': 2147483644, 'returns_to_zero': 0, 'steps_used': 6442450939, 'cpu_seconds': 66.776}
+{'rule': 22, 'n': 242, 'pass': 3, 'budget': 6000000000, 'determined': False, 'transient': None, 'limit_period': None, 'returns_to_zero': None, 'steps_used': 6000000001, 'cpu_seconds': 62.881}
+{'rule': 22, 'n': 243, 'pass': 3, 'budget': 6000000000, 'determined': False, 'transient': None, 'limit_period': None, 'returns_to_zero': None, 'steps_used': 6000000001, 'cpu_seconds': 62.688}

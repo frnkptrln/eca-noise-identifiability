@@ -1,0 +1,51 @@
+id,part,outcome,evidence
+P1,3|n: selected set = the 3 shifts of (011)^{n/3},holds,"mechanisms.csv, cycle_orbits.csv.gz, n = 8..22"
+P1,"3|n: radius of the crystal 2, every other cycle radius 1",holds,mechanisms.csv
+P1,"3|n: one-flip graph has a single closed class, the crystal orbit",fails,mechanisms.csv: g1_closed = [3] (one closed class per phase)
+P1,"3 does not divide n: no cycle avoids all of codes 0,1,2,4,7",holds,cycle_orbits.csv.gz: 0 counterexample orbits
+P2,"class 43, 4|n: selected = one travelling cycle (0011)^{n/4}, T = 4, radius 2, others radius 1, single closed class",holds,mechanisms.csv
+P2,"class 142, 4|n: selected = one travelling cycle (0011)^{n/4}, T = 4, radius 2, others radius 1, single closed class",holds,mechanisms.csv
+P2,4 does not divide n: no cycle with spatial period 4,holds (trivially),trivial: the spatial period divides n
+P3,3|n: cycles containing code 5 = cycles not selected,holds,cycle_orbits.csv.gz
+P3,they have spatial period 3 or consist of 3-periodic segments,fails,cycle_orbits.csv.gz: 0 of 37 carrier orbits have spatial period 3 (32 have spatial period n); rule35_blocks.csv: they are travelling words over the blocks 10 and 100
+P4,4|n: a selected cycle with spatial period 4 carries code 2,fails,cycle_orbits.csv.gz: the only carrier of code 2 is the checkerboard (spatial period 2)
+P4,"missing code is 2 at n in {9,10,11,13,17,18,19}",holds,mechanisms.csv
+P4,n = 15: zero state alone with radius >= 2,holds,mechanisms.csv
+P4,n = 14: uniform states selected with radius >= 2,fails,"mechanisms.csv: selected = zero state and checkerboard, radius 1"
+P5,"154, even n not a power of 2: every cycle radius 1, one-flip graph strongly connected",holds,"mechanisms.csv, n = [10, 12, 14, 18, 20]"
+P5,"154, n = 8, 16: zero radius 2, others radius 1, {0} the single closed class",holds,mechanisms.csv
+P6,22: k* = 1 exactly where the single-flip orbit of 0 returns to 0,holds,"zero_mechanism.csv, n = 8..22"
+P6,"26, n = 16: zero state alone, k* = 2",holds,mechanisms.csv
+P6,"26, other n with k* >= 1: missing code 7",fails,"mechanisms.csv: fails at n = 8 (codes covered by the selected set: 0; number of selected cycles: 1); holds at n = 9, 10, 12, 13, 15, 18, 19, 21"
+P7,"45, n = 8: uniform 2-cycle selected alone",holds,mechanisms.csv
+P7,"45, odd n: bijective",holds,injectivity.csv (proved)
+P7,"45, even n >= 10: the uniform 2-cycle has radius 1",holds,"cycle_orbits.csv.gz, 7 n"
+P8,"37: k* = 0 iff n mod 6 in {0, 5}",holds,"mechanisms.csv, n = 8..22"
+P8,73: the only switch for n >= 8 is n = 9,holds,"mechanisms.csv, n = 8..22"
+"k*(21,22)","class 35, n = 21: k* = 1",holds,mechanisms.csv (computed 1)
+"k*(21,22)","class 35, n = 22: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 94, n = 21: k* = 1",holds,mechanisms.csv (computed 1)
+"k*(21,22)","class 94, n = 22: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 43, n = 21: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 43, n = 22: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 142, n = 21: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 142, n = 22: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 122, n = 21: k* = 1",holds,mechanisms.csv (computed 1)
+"k*(21,22)","class 122, n = 22: k* = 1",fails,mechanisms.csv (computed 0)
+"k*(21,22)","class 60, n = 21: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 60, n = 22: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 90, n = 21: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 90, n = 22: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 154, n = 21: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 154, n = 22: k* = 0",holds,"not computed in this study (job stopped unfinished, stopped_runs.csv); computed by the verification: k* = 0 (verify_ring_size/phase2/out/v154_n22.json)"
+"k*(21,22)","class 45, n = 21: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 45, n = 22: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 73, n = 21: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 73, n = 22: k* = 0",holds,mechanisms.csv (computed 0)
+"k*(21,22)","class 37, n = 21: k* = 1",holds,mechanisms.csv (computed 1)
+"k*(21,22)","class 37, n = 22: k* = 1",holds,mechanisms.csv (computed 1)
+"k*(21,22)","class 22, n = 21: k* = 1 iff seed returns",holds,"mechanisms.csv, seed_orbits.csv"
+"k*(21,22)","class 22, n = 22: k* = 1 iff seed returns",holds,"mechanisms.csv, seed_orbits.csv"
+P9,"154, n = 32: zero radius >= 2",holds,sampled_reach/rule154_n32.csv; proved (Proposition R154)
+P9,"154, n = 32: sampled cycles reach 0 by one-flip steps","holds (observed, sampled)","sampled_reach/rule154_n32.csv: 200/200 (observed); proved for every cycle and every n = 2^k by the verification (verify_ring_size/part2_154/PROOF_154.md, Theorem 1)"
+P9,"154: k* = 1 at n = 32, k* = 0 at n = 24, 28",not tested,not computed (no enumeration at these sizes); implied by Theorems 1 and 2 of verify_ring_size/part2_154/PROOF_154.md (proved by the verification)

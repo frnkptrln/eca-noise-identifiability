@@ -1,0 +1,55 @@
+T1 single seed grows to the checkerboard at time n/2, even n = 4..256: True
+T2 flipping a one of the checkerboard leaves the image unchanged, even n = 4..256: True
+T3 defect orbit equals the formula of Lemma R3 for t <= n/2 - 1, even n = 4..256: True
+T4 n = 2^k - 2 (6..2046): all ones at time n/2 - 1, zero at time n/2: True
+T5 n=  4 end=other        transient=0 period=2 rep=0111
+T5 n=  6 end=zero         transient=3 period=1 rep=000000
+T5 n=  8 end=other        transient=2 period=6 rep=00000111
+T5 n= 10 end=other        transient=3 period=4 rep=0000011011
+T5 n= 12 end=other        transient=4 period=14 rep=000000000111
+T5 n= 14 end=zero         transient=7 period=1 rep=00000000000000
+T5 n= 16 end=other        transient=6 period=14 rep=0000000000000111
+T5 n= 18 end=other        transient=7 period=12 rep=000000000000011011
+T5 n= 20 end=other        transient=8 period=62 rep=00000000000000000111
+T5 n= 22 end=other        transient=9 period=8 rep=0000000000000110000011
+T5 n= 24 end=other        transient=10 period=126 rep=000000000000000000000111
+T5 n= 26 end=other        transient=11 period=28 rep=00000000000000000000011011
+T5 n= 28 end=other        transient=12 period=30 rep=0000000000000000000000000111
+T5 n= 30 end=zero         transient=15 period=1 rep=000000000000000000000000000000
+T5 n= 32 end=other        transient=14 period=30 rep=00000000000000000000000000000111
+T5 n= 34 end=other        transient=15 period=28 rep=0000000000000000000000000000011011
+T5 n= 36 end=other        transient=16 period=1022 rep=000000000000000000000000000000000111
+T5 n= 38 end=other        transient=17 period=24 rep=00000000000000000000000000000110000011
+T5 n= 40 end=other        transient=18 period=126 rep=0000000000000000000000000000000000000111
+T5 n= 42 end=other        transient=19 period=124 rep=000000000000000000000000000000000000011011
+T5 n= 44 end=other        transient=20 period=4094 rep=00000000000000000000000000000000000000000111
+T5 n= 46 end=other        transient=21 period=16 rep=0000000000000000000000000000011000000000000011
+T5 n= 48 end=other        transient=22 period=2046 rep=000000000000000000000000000000000000000000000111
+T5 n= 50 end=other        transient=23 period=252 rep=00000000000000000000000000000000000000000000011011
+T5 n= 52 end=other        transient=24 period=1022 rep=0000000000000000000000000000000000000000000000000111
+T5 n= 54 end=other        transient=25 period=56 rep=000000000000000000000000000000000000000000000110000011
+T5 n= 56 end=other        transient=26 period=32766 rep=00000000000000000000000000000000000000000000000000000111
+T5 n= 58 end=other        transient=27 period=60 rep=0000000000000000000000000000000000000000000000000000011011
+T5 n= 60 end=other        transient=28 period=62 rep=000000000000000000000000000000000000000000000000000000000111
+T5 n= 62 end=zero         transient=31 period=1 rep=00000000000000000000000000000000000000000000000000000000000000
+T5 n= 64 end=other        transient=30 period=62 rep=0000000000000000000000000000000000000000000000000000000000000111
+T5 n= 66 end=other        transient=31 period=60 rep=None
+T5 n= 68 end=other        transient=32 period=8190 rep=None
+T5 n= 70 end=other        transient=33 period=56 rep=None
+T5 n= 72 end=undetermined transient=None period=None rep=None
+T5 n= 74 end=other        transient=35 period=2044 rep=None
+T5 n= 76 end=other        transient=36 period=8190 rep=None
+T5 n= 78 end=other        transient=37 period=48 rep=None
+T5 n= 80 end=other        transient=38 period=2046 rep=None
+T5 n= 82 end=other        transient=39 period=252 rep=None
+T5 n= 84 end=other        transient=40 period=254 rep=None
+T5 n= 86 end=other        transient=41 period=248 rep=None
+T5 n= 88 end=other        transient=42 period=8190 rep=None
+T5 n= 90 end=other        transient=43 period=8188 rep=None
+T5 n= 92 end=undetermined transient=None period=None rep=None
+T5 n= 94 end=other        transient=45 period=32 rep=None
+T5 n= 96 end=undetermined transient=None period=None rep=None
+T5 n= 98 end=other        transient=47 period=4092 rep=None
+T5 n=100 end=other        transient=48 period=510 rep=None
+T6 limit cycle of the defect agrees with the enumerated out-neighbours of the checkerboard (12 even n <= 26): True
+cpu seconds: 2.2

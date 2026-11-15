@@ -1,0 +1,39 @@
+nice: setpriority: Operation not permitted
+24 jobs to run, 169 already in checkpoint
+[      6s] n=22 rule=22 k*=0 cost=5.45s rss=1145.9MB
+[    336s] n=22 rule=26 k*=0 cost=335.82s rss=1402.2MB
+[    350s] n=22 rule=37 k*=1 cost=14.05s rss=1475.9MB
+[   1149s] n=22 rule=43 k*=0 cost=797.9s rss=1636.5MB
+[   1500s] n=22 rule=35 k*=0 cost=1494.0s rss=1958.9MB
+[   1580s] n=22 rule=45 k*=0 cost=431.15s rss=1545.9MB
+[   1631s] n=22 rule=60 k*=0 cost=130.44s rss=1131.2MB
+[   1810s] n=22 rule=73 k*=0 cost=229.07s rss=1879.4MB
+[   1860s] n=22 rule=90 k*=0 cost=228.04s rss=1656.8MB
+[   1868s] n=22 rule=122 k*=0 cost=8.44s rss=1175.8MB
+[   1939s] n=22 rule=94 k*=0 cost=128.4s rss=1233.3MB
+[   1941s] n=21 rule=22 k*=0 cost=1.75s rss=506.7MB
+[   2085s] n=21 rule=26 k*=1 cost=143.46s rss=700.7MB
+[   2500s] n=21 rule=35 k*=1 cost=415.52s rss=722.0MB
+[   2512s] n=21 rule=37 k*=1 cost=11.04s rss=588.7MB
+[   2672s] n=22 rule=142 k*=0 cost=803.25s rss=1611.4MB
+[   2673s] n=21 rule=45 k*=0 cost=0.68s rss=408.6MB
+[   2741s] n=21 rule=60 k*=0 cost=67.38s rss=1533.8MB
+[   2756s] n=21 rule=43 k*=0 cost=243.77s rss=667.9MB
+[   2801s] n=21 rule=73 k*=0 cost=59.73s rss=695.0MB
+[   2829s] n=21 rule=90 k*=0 cost=72.28s rss=1544.5MB
+[   2831s] n=21 rule=122 k*=1 cost=2.43s rss=566.9MB
+[   2843s] n=21 rule=94 k*=1 cost=41.5s rss=658.3MB
+[   3061s] n=21 rule=142 k*=0 cost=229.35s rss=631.8MB
+finalize: 193 records, 169 compared with v0.2, 0 disagreements []
+
+real	51m1.820s
+user	80m42.565s
+sys	17m20.328s
+nice: setpriority: Operation not permitted
+1 jobs to run, 193 already in checkpoint
+[      1s] n=21 rule=154 k*=0 cost=0.68s rss=459.5MB
+finalize: 194 records, 169 compared with v0.2, 0 disagreements []
+
+real	0m1.536s
+user	0m1.322s
+sys	0m0.212s

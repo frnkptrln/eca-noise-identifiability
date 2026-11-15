@@ -1,0 +1,16 @@
+n= 3 periodic=     8 cycles=    3 G1_edges=      4 out(0)=  1 all->0=True  maxdist= 2 strongly_conn=True  lemma_tests= 2 failed=[]
+n= 4 periodic=    10 cycles=    4 G1_edges=      8 out(0)=  0 all->0=True  maxdist= 2 strongly_conn=False lemma_tests=14 failed=[]
+n= 5 periodic=    32 cycles=    4 G1_edges=      6 out(0)=  1 all->0=True  maxdist= 3 strongly_conn=True  lemma_tests= 2 failed=[]
+n= 6 periodic=    56 cycles=   12 G1_edges=     77 out(0)=  3 all->0=True  maxdist= 3 strongly_conn=True  lemma_tests=11 failed=[]
+n= 7 periodic=   128 cycles=    8 G1_edges=     28 out(0)=  1 all->0=True  maxdist= 4 strongly_conn=True  lemma_tests= 2 failed=[]
+n= 8 periodic=   226 cycles=   31 G1_edges=    434 out(0)=  0 all->0=True  maxdist= 4 strongly_conn=False lemma_tests=14 failed=[]
+n= 9 periodic=   512 cycles=   18 G1_edges=    152 out(0)=  1 all->0=True  maxdist= 5 strongly_conn=True  lemma_tests= 2 failed=[]
+n=10 periodic=   992 cycles=   62 G1_edges=   1117 out(0)=  5 all->0=True  maxdist= 5 strongly_conn=True  lemma_tests=11 failed=[]
+n=11 periodic=  2048 cycles=   50 G1_edges=    884 out(0)=  1 all->0=True  maxdist= 6 strongly_conn=True  lemma_tests= 2 failed=[]
+n=12 periodic=  4000 cycles=  308 G1_edges=   9824 out(0)=  6 all->0=True  maxdist= 6 strongly_conn=True  lemma_tests=11 failed=[]
+n=13 periodic=  8192 cycles=  156 G1_edges=   4190 out(0)=  1 all->0=True  maxdist= 7 strongly_conn=True  lemma_tests= 2 failed=[]
+n=14 periodic= 16256 cycles=  564 G1_edges=  19149 out(0)=  7 all->0=True  maxdist= 7 strongly_conn=True  lemma_tests=11 failed=[]
+n=15 periodic= 32768 cycles=  510 G1_edges=  18098 out(0)=  1 all->0=True  maxdist= 8 strongly_conn=True  lemma_tests= 2 failed=[]
+n=16 periodic= 65026 cycles= 4081 G1_edges= 221202 out(0)=  0 all->0=True  maxdist= 8 strongly_conn=False lemma_tests=14 failed=[]
+ALL LEMMA TESTS PASSED: True
+cpu seconds: 0.50

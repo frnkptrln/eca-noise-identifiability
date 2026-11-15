@@ -1,0 +1,223 @@
+{
+"sealed_file_changed_after_sealing": false,
+"sealed_file_equals_working_tree": true,
+"study_table_rows": 50,
+"study_table_counts": {
+"holds": 41,
+"fails": 5,
+"holds (trivially)": 1,
+"not tested": 2,
+"holds (observed, sampled)": 1
+},
+"study_rows_covered_by_own_parts": 50,
+"own_parts_total": 92,
+"own_counts_all_parts": {
+"holds": 71,
+"fails": 14,
+"holds (trivially)": 1,
+"not a testable statement": 1,
+"holds (observed, sampled)": 1,
+"not tested": 4
+},
+"study_data_counts_all_parts": {
+"holds": 70,
+"fails": 14,
+"holds (trivially)": 1,
+"not a testable statement": 1,
+"not tested": 5,
+"holds (observed, sampled)": 1
+},
+"own_counts_on_study_rows": {
+"holds": 41,
+"fails": 6,
+"holds (trivially)": 1,
+"holds (observed, sampled)": 1,
+"not tested": 1
+},
+"study_rows_judged_differently": [
+{
+"row": "26, other n with k* >= 1: missing code 7",
+"study": "holds",
+"own": "fails",
+"parts": [
+[
+"P6c",
+"fails",
+"n with k* = 1: [8, 9, 10, 12, 13, 15, 18, 19, 21]; n among them where the missing codes are not exactly {7}: [8] (n = 8: zero state selected alone, codes [1, 2, 3, 4, 5, 6, 7] missing)"
+]
+]
+},
+{
+"row": "class 154, n = 22: k* = 0",
+"study": "not tested",
+"own": "holds",
+"parts": [
+[
+"K_154_22",
+"holds",
+"computed k* = 0"
+]
+]
+}
+],
+"parts_omitted_by_study_table": [
+[
+"P3a2",
+"35: 11 of 12 cycles selected at n = 9, 700 of 710 at n = 18",
+"holds"
+],
+[
+"P3c",
+"35: crystal capture is falsified (already known)",
+"holds"
+],
+[
+"P4c2",
+"122, n = 14: codes 0, 2, 5",
+"holds"
+],
+[
+"P8a",
+"37, 73: no crystal of a fixed period explains the switches",
+"not a testable statement"
+],
+[
+"P8d",
+"73, n = 9: code 7 missing",
+"holds"
+],
+[
+"P9a64",
+"154, n = 64: the zero state has radius >= 2",
+"holds"
+],
+[
+"P9b64",
+"154, n = 64: the same sampled test",
+"not tested"
+],
+[
+"G1",
+"closure (Lemma 1): expected proved",
+"holds"
+],
+[
+"G2",
+"two-level criterion (Lemma B): expected proved",
+"holds"
+],
+[
+"G3",
+"incommensurability: expected proved by a finite machine-checked certificate for every class where it applies",
+"fails"
+],
+[
+"T94_dir0",
+"94: direction 0 (3 does not divide n gives k* = 0): proof for all n expected (G3 + G1)",
+"fails"
+],
+[
+"T94_radius",
+"94: radius of the crystal = 2: proof expected",
+"holds"
+],
+[
+"T94_reach",
+"94: reachability: expected 'explained, not proved'",
+"holds"
+],
+[
+"T43_dir0",
+"43: as for 94: direction 0 proof expected",
+"fails"
+],
+[
+"T43_radius",
+"43: as for 94: radius proof expected",
+"fails"
+],
+[
+"T43_reach",
+"43: as for 94: reachability 'explained, not proved'",
+"holds"
+],
+[
+"T142_dir0",
+"142: as for 94: direction 0 proof expected",
+"fails"
+],
+[
+"T142_radius",
+"142: as for 94: radius proof expected",
+"fails"
+],
+[
+"T142_reach",
+"142: as for 94: reachability 'explained, not proved'",
+"holds"
+],
+[
+"T142_codes",
+"rules 43 and 142 agree on codes 1, 3, 4, 6 and differ exactly on the four codes the crystal misses",
+"holds"
+],
+[
+"T35_missing5",
+"35: the missing code at 3|n is 5",
+"holds"
+],
+[
+"T35_radius",
+"35, 3|n: the cycles carrying 101 have radius 1 and are not selected",
+"holds"
+],
+[
+"T35_other",
+"35, 3 does not divide n: cycles carrying 101 are selected",
+"holds"
+],
+[
+"T154_identity",
+"rule 154 = rule 90 XOR (l AND c); equal to rule 90 on configurations without two adjacent ones",
+"holds"
+],
+[
+"T154_radius_proof",
+"154: radius part proved for all n = 2^k",
+"holds"
+],
+[
+"T154_odd_proof",
+"154: odd n bijective, k* = 0, proof expected",
+"holds"
+],
+[
+"T154_even_left",
+"154: the zero state can be left with one flip at even n that are not powers of two",
+"holds"
+],
+[
+"T154_reach_2k",
+"154: at n = 2^k every other cycle reaches 0 by one-flip steps, so 0 is selected alone (computed range n = 8, 16)",
+"holds"
+],
+[
+"T154_even_k0",
+"154: even n not a power of two: k* = 0 expected",
+"holds"
+]
+],
+"omitted_counts": {
+"holds": 21,
+"not a testable statement": 1,
+"not tested": 1,
+"fails": 6
+},
+"own_vs_study_data_disagreements": [
+[
+"K_154_22",
+"holds",
+"not tested"
+]
+]
+}

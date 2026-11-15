@@ -1,0 +1,173 @@
+{
+ "rule": 154,
+ "cases": {
+  "3": {
+   "lemma1_formula_ok": true,
+   "collision_pairs_adjacent_in_sort": 0,
+   "bijective": true
+  },
+  "4": {
+   "lemma1_formula_ok": true,
+   "collision_pairs_adjacent_in_sort": 4,
+   "bijective": false,
+   "max_preimages": 3,
+   "lemma5_pairs_checked": 5,
+   "lemma5_violations": 0,
+   "lemma4_F_M_subset_M": true,
+   "periodic_states": 10,
+   "size_M": 9,
+   "lemma6_M_all_periodic": true,
+   "periodic_equals_M_plus_zero": true,
+   "cycles": 4,
+   "g1_edges": 8,
+   "zero_has_out_edge": false,
+   "cycles_not_reaching_zero": 0,
+   "max_g1_distance_to_zero": 2,
+   "g1_strongly_connected": false,
+   "theorem1c_distance_le_mu_violations": 0
+  },
+  "5": {
+   "lemma1_formula_ok": true,
+   "collision_pairs_adjacent_in_sort": 0,
+   "bijective": true
+  },
+  "6": {
+   "lemma1_formula_ok": true,
+   "collision_pairs_adjacent_in_sort": 8,
+   "bijective": false,
+   "max_preimages": 3,
+   "lemma5_pairs_checked": 9,
+   "lemma5_violations": 0,
+   "lemma4_F_M_subset_M": true,
+   "periodic_states": 56,
+   "size_M": 49,
+   "lemma6_M_all_periodic": true,
+   "cycles": 12,
+   "g1_edges": 77,
+   "zero_has_out_edge": true,
+   "cycles_not_reaching_zero": 0,
+   "max_g1_distance_to_zero": 3,
+   "g1_strongly_connected": true
+  },
+  "7": {
+   "lemma1_formula_ok": true,
+   "collision_pairs_adjacent_in_sort": 0,
+   "bijective": true
+  },
+  "8": {
+   "lemma1_formula_ok": true,
+   "collision_pairs_adjacent_in_sort": 16,
+   "bijective": false,
+   "max_preimages": 3,
+   "lemma5_pairs_checked": 17,
+   "lemma5_violations": 0,
+   "lemma4_F_M_subset_M": true,
+   "periodic_states": 226,
+   "size_M": 225,
+   "lemma6_M_all_periodic": true,
+   "periodic_equals_M_plus_zero": true,
+   "cycles": 31,
+   "g1_edges": 434,
+   "zero_has_out_edge": false,
+   "cycles_not_reaching_zero": 0,
+   "max_g1_distance_to_zero": 4,
+   "g1_strongly_connected": false,
+   "theorem1c_distance_le_mu_violations": 0
+  },
+  "9": {
+   "lemma1_formula_ok": true,
+   "collision_pairs_adjacent_in_sort": 0,
+   "bijective": true
+  },
+  "10": {
+   "lemma1_formula_ok": true,
+   "collision_pairs_adjacent_in_sort": 32,
+   "bijective": false,
+   "max_preimages": 3,
+   "lemma5_pairs_checked": 33,
+   "lemma5_violations": 0,
+   "lemma4_F_M_subset_M": true,
+   "periodic_states": 992,
+   "size_M": 961,
+   "lemma6_M_all_periodic": true,
+   "cycles": 62,
+   "g1_edges": 1117,
+   "zero_has_out_edge": true,
+   "cycles_not_reaching_zero": 0,
+   "max_g1_distance_to_zero": 5,
+   "g1_strongly_connected": true
+  },
+  "11": {
+   "lemma1_formula_ok": true,
+   "collision_pairs_adjacent_in_sort": 0,
+   "bijective": true
+  },
+  "12": {
+   "lemma1_formula_ok": true,
+   "collision_pairs_adjacent_in_sort": 64,
+   "bijective": false,
+   "max_preimages": 3,
+   "lemma5_pairs_checked": 65,
+   "lemma5_violations": 0,
+   "lemma4_F_M_subset_M": true,
+   "periodic_states": 4000,
+   "size_M": 3969,
+   "lemma6_M_all_periodic": true,
+   "cycles": 308,
+   "g1_edges": 9824,
+   "zero_has_out_edge": true,
+   "cycles_not_reaching_zero": 0,
+   "max_g1_distance_to_zero": 6,
+   "g1_strongly_connected": true
+  },
+  "13": {
+   "lemma1_formula_ok": true,
+   "collision_pairs_adjacent_in_sort": 0,
+   "bijective": true
+  },
+  "14": {
+   "lemma1_formula_ok": true,
+   "collision_pairs_adjacent_in_sort": 128,
+   "bijective": false,
+   "max_preimages": 3,
+   "lemma5_pairs_checked": 129,
+   "lemma5_violations": 0,
+   "lemma4_F_M_subset_M": true,
+   "periodic_states": 16256,
+   "size_M": 16129,
+   "lemma6_M_all_periodic": true,
+   "cycles": 564,
+   "g1_edges": 19149,
+   "zero_has_out_edge": true,
+   "cycles_not_reaching_zero": 0,
+   "max_g1_distance_to_zero": 7,
+   "g1_strongly_connected": true
+  },
+  "15": {
+   "lemma1_formula_ok": true,
+   "collision_pairs_adjacent_in_sort": 0,
+   "bijective": true
+  },
+  "16": {
+   "lemma1_formula_ok": true,
+   "collision_pairs_adjacent_in_sort": 256,
+   "bijective": false,
+   "max_preimages": 3,
+   "lemma5_pairs_checked": 257,
+   "lemma5_violations": 0,
+   "lemma4_F_M_subset_M": true,
+   "periodic_states": 65026,
+   "size_M": 65025,
+   "lemma6_M_all_periodic": true,
+   "periodic_equals_M_plus_zero": true,
+   "cycles": 4081,
+   "g1_edges": 221202,
+   "zero_has_out_edge": false,
+   "cycles_not_reaching_zero": 0,
+   "max_g1_distance_to_zero": 8,
+   "g1_strongly_connected": false,
+   "theorem1c_distance_le_mu_violations": 0
+  }
+ },
+ "cpu_seconds": 0.6
+}

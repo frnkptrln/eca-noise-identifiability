@@ -1,0 +1,66 @@
+{
+ "tags": 45,
+ "by_kind": {
+  "proved": 17,
+  "computed": 23,
+  "observed": 5
+ },
+ "by_verdict": {
+  "definition of the tag": 3,
+  "matches the evidence": 36,
+  "overstated": 3,
+  "statement under the tag is wrong": 3
+ },
+ "evidence_files_exist": true,
+ "line_342_verdict_computed_after_v154_n22_complete": true,
+ "proved_lines": [
+  91,
+  110,
+  113,
+  125,
+  137,
+  155,
+  159,
+  168,
+  175,
+  176,
+  247,
+  256,
+  257,
+  311,
+  320,
+  374
+ ],
+ "not_matching": [
+  [
+   256,
+   "[proved conditional on reachability]",
+   "overstated"
+  ],
+  [
+   299,
+   "[computed]",
+   "overstated"
+  ],
+  [
+   332,
+   "[computed]",
+   "statement under the tag is wrong"
+  ],
+  [
+   349,
+   "[computed]",
+   "overstated"
+  ],
+  [
+   376,
+   "[computed]",
+   "statement under the tag is wrong"
+  ],
+  [
+   378,
+   "[computed]",
+   "statement under the tag is wrong"
+  ]
+ ]
+}

@@ -1,0 +1,4 @@
+{'n': 24, 'states': 16777216, 'squarings': 6, 'periodic_states': 80116, 'cycles': 26475, 'g1_edges': 601304, 'strong_components': 74, 'closed_classes': 3, 'closed_class_sizes': [1, 1, 1], 'cycles_without_out_edge': 3, 'crystal_phases_found': 3, 'cycles_reaching_crystal': 26475, 'cycles_not_reaching_crystal': 0, 'closed_classes_are_exactly_the_crystal_phases': True, 'cpu_seconds': 0.61, 'peak_rss_mb': 427.7}
+{'n': 27, 'states': 134217728, 'squarings': 6, 'periodic_states': 323383, 'cycles': 101407, 'g1_edges': 2598588, 'strong_components': 5, 'closed_classes': 3, 'closed_class_sizes': [1, 1, 1], 'cycles_without_out_edge': 3, 'crystal_phases_found': 3, 'cycles_reaching_crystal': 101407, 'cycles_not_reaching_crystal': 0, 'closed_classes_are_exactly_the_crystal_phases': True, 'cpu_seconds': 3.91, 'peak_rss_mb': 2945.9}
+        4.77 real         4.28 user         0.46 sys
+time: sysctl kern.clockrate: Operation not permitted

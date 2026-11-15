@@ -1,0 +1,249 @@
+{
+ "lightcone": {
+  "rows": [
+   {
+    "rule": 94,
+    "word": "011",
+    "p": 3,
+    "cycle_length": 1,
+    "N": 402,
+    "healed": true,
+    "tau": 3,
+    "n0": 7,
+    "flips_not_healed_within_200": 0,
+    "flips": 3
+   },
+   {
+    "rule": 43,
+    "word": "0011",
+    "p": 4,
+    "cycle_length": 4,
+    "N": 404,
+    "healed": false,
+    "tau": null,
+    "n0": null,
+    "flips_not_healed_within_200": 8,
+    "flips": 16
+   },
+   {
+    "rule": 142,
+    "word": "0011",
+    "p": 4,
+    "cycle_length": 4,
+    "N": 404,
+    "healed": false,
+    "tau": null,
+    "n0": null,
+    "flips_not_healed_within_200": 8,
+    "flips": 16
+   },
+   {
+    "rule": 35,
+    "word": "100",
+    "p": 3,
+    "cycle_length": 3,
+    "N": 402,
+    "healed": false,
+    "tau": null,
+    "n0": null,
+    "flips_not_healed_within_200": 6,
+    "flips": 9
+   },
+   {
+    "rule": 26,
+    "word": "100",
+    "p": 3,
+    "cycle_length": 6,
+    "N": 402,
+    "healed": false,
+    "tau": null,
+    "n0": null,
+    "flips_not_healed_within_200": 18,
+    "flips": 18
+   },
+   {
+    "rule": 122,
+    "word": "10",
+    "p": 2,
+    "cycle_length": 2,
+    "N": 402,
+    "healed": false,
+    "tau": null,
+    "n0": null,
+    "flips_not_healed_within_200": 2,
+    "flips": 4
+   },
+   {
+    "rule": 37,
+    "word": "100000",
+    "p": 6,
+    "cycle_length": 6,
+    "N": 402,
+    "healed": false,
+    "tau": null,
+    "n0": null,
+    "flips_not_healed_within_200": 30,
+    "flips": 36
+   }
+  ],
+  "comparison_with_study": [
+   {
+    "rule": 94,
+    "word": "011",
+    "equal": true
+   },
+   {
+    "rule": 43,
+    "word": "0011",
+    "equal": true
+   },
+   {
+    "rule": 142,
+    "word": "0011",
+    "equal": true
+   },
+   {
+    "rule": 35,
+    "word": "100",
+    "equal": true
+   },
+   {
+    "rule": 26,
+    "word": "100",
+    "equal": true
+   },
+   {
+    "rule": 122,
+    "word": "10",
+    "equal": true
+   },
+   {
+    "rule": 37,
+    "word": "100000",
+    "equal": true
+   }
+  ],
+  "all_equal": true
+ },
+ "rule94_line_flips": [
+  {
+   "flipped_word_position": 0,
+   "heal_time": 2,
+   "differences": [
+    {
+     "t": 0,
+     "differing_cells": [
+      201
+     ]
+    },
+    {
+     "t": 1,
+     "differing_cells": [
+      200,
+      202
+     ]
+    }
+   ]
+  },
+  {
+   "flipped_word_position": 1,
+   "heal_time": 3,
+   "differences": [
+    {
+     "t": 0,
+     "differing_cells": [
+      202
+     ]
+    },
+    {
+     "t": 1,
+     "differing_cells": [
+      201
+     ]
+    },
+    {
+     "t": 2,
+     "differing_cells": [
+      200,
+      202
+     ]
+    }
+   ]
+  },
+  {
+   "flipped_word_position": 2,
+   "heal_time": 3,
+   "differences": [
+    {
+     "t": 0,
+     "differing_cells": [
+      203
+     ]
+    },
+    {
+     "t": 1,
+     "differing_cells": [
+      204
+     ]
+    },
+    {
+     "t": 2,
+     "differing_cells": [
+      203,
+      205
+     ]
+    }
+   ]
+  }
+ ],
+ "crystal_radius": {
+  "rows_own": 333,
+  "rows_study": 333,
+  "differences": [
+   {
+    "rule": 94,
+    "n": 3,
+    "what": "max_return_time",
+    "study": "3",
+    "own": 0
+   }
+  ],
+  "radius_lt2": [
+   [
+    94,
+    3
+   ]
+  ],
+  "rule94_radius_ge2_all_3_divides_n_from_6_to_399": true,
+  "rule94_max_return_time_n_ge_6": [
+   3
+  ],
+  "rule43_142_radius_ge2_all_4_divides_n_to_400": true,
+  "rule43_max_return_time_first_last": [
+   [
+    4,
+    1
+   ],
+   [
+    8,
+    3
+   ],
+   [
+    12,
+    5
+   ],
+   [
+    396,
+    197
+   ],
+   [
+    400,
+    199
+   ]
+  ],
+  "return_time_grows_linearly_43": true,
+  "translation_symmetry_checks_n_le_64": 53,
+  "translation_symmetry_failures": 0
+ },
+ "cpu_seconds": 0.17
+}

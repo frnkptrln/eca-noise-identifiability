@@ -1,0 +1,11 @@
+A: n=3 done, failures so far 0, cpu 0.8s
+A: n=4 done, failures so far 0, cpu 4.1s
+A: n=5 done, failures so far 0, cpu 6.8s
+A: n=6 done, failures so far 0, cpu 11.1s
+A: n=7 done, failures so far 0, cpu 12.9s
+A: n=8 done, failures so far 0, cpu 25.4s
+B: n=3 done, failures so far 0, cpu 0.4s
+B: n=4 done, failures so far 0, cpu 6.4s
+B: n=5 done, failures so far 0, cpu 21.1s
+B: n=6 done, failures so far 0, cpu 437.2s
+{"A": {"cases": 1536, "failures": 0, "n_range": [3, 8], "rules": 256, "cases_gamma_all_roots": 1521, "cases_gamma_16_sampled_roots": 15, "cases_gamma_exhaustive": 1114, "max_cycles": 256, "max_V_seen": 8, "bijective_cases": 90, "cases_selected_equals_union_closed_false": 0, "cpu_seconds": 25.4}, "B": {"cases": 562, "failures": 0, "n_range": [3, 6], "rules_n3_n4": 256, "rules_n5_n6": [22, 26, 35, 37, 43, 45, 60, 73, 90, 94, 122, 142, 154, 0, 1, 4, 18, 30, 50, 54, 110, 150, 184, 204, 232], "eps": ["1e-8", "1e-16", "1e-24"], "max_abs_dev_order": 5.4467732102381206e-08, "cpu_seconds": 437.2}}

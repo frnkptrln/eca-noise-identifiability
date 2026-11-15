@@ -1,0 +1,56 @@
+{
+ "rule": 94,
+ "tests": {
+  "L1_freezing_n3_14": {
+   "states": 32760,
+   "violations": 0
+  },
+  "L2_fully_frozen_n3_14": {
+   "states": 32760,
+   "violations": 0
+  },
+  "L3_growth_exists_n5_14": {
+   "states": 32539,
+   "violations": 0
+  },
+  "L4_swap_n6_18": {
+   "occurrences": 965,
+   "violations": 0
+  },
+  "L5_merge_n6_18": {
+   "occurrences": 730,
+   "violations": 0
+  },
+  "L5_window_010101_followed_by_1_not_covered_by_lemma": {
+   "occurrences": 550,
+   "violations": 550
+  },
+  "L6_crystal_heals_n6_60": {
+   "flips": 627,
+   "violations": 0
+  }
+ },
+ "closed_class_check_3_divides_n": {
+  "6": {
+   "cycles": 9,
+   "crystal_phases_have_no_out_edge": true,
+   "cycles_without_G1_path_to_crystal": 0
+  },
+  "9": {
+   "cycles": 31,
+   "crystal_phases_have_no_out_edge": true,
+   "cycles_without_G1_path_to_crystal": 0
+  },
+  "12": {
+   "cycles": 147,
+   "crystal_phases_have_no_out_edge": true,
+   "cycles_without_G1_path_to_crystal": 0
+  },
+  "15": {
+   "cycles": 509,
+   "crystal_phases_have_no_out_edge": true,
+   "cycles_without_G1_path_to_crystal": 0
+  }
+ },
+ "cpu_seconds": 0.42
+}

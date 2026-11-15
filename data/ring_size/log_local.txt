@@ -1,0 +1,4 @@
+seed orbits: 1012 rows, 130 capped
+crystal radius: 333 rows, 1 with radius 1
+lightcone: [(94, '011', True, 3), (43, '0011', False, None), (142, '0011', False, None), (35, '100', False, None), (26, '100', False, None), (122, '10', False, None), (37, '100000', False, None)]
+injectivity: [(22, 0), (26, 0), (35, 0), (37, 0), (43, 0), (45, 1), (60, 0), (73, 0), (90, 0), (94, 0), (122, 0), (142, 0), (154, 1)]

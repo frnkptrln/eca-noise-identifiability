@@ -1,0 +1,3 @@
+records recomputed for n = 4..24 (42 cases) identical to out/explore_122_26.jsonl apart from cpu_seconds: True
+cpu seconds: 5.1
+peak RSS (MB): 1686

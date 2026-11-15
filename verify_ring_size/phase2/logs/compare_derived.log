@@ -1,0 +1,579 @@
+{
+"records_study": 194,
+"records_sample": 194,
+"records_common": 194,
+"only_in_study": [],
+"only_in_sample": [],
+"orbit_rows_study": 60355,
+"cases_with_orbit_rows": 180,
+"cases_without_orbit_rows": [
+[
+45,
+9
+],
+[
+45,
+11
+],
+[
+45,
+13
+],
+[
+45,
+15
+],
+[
+45,
+17
+],
+[
+45,
+19
+],
+[
+45,
+21
+],
+[
+154,
+9
+],
+[
+154,
+11
+],
+[
+154,
+13
+],
+[
+154,
+15
+],
+[
+154,
+17
+],
+[
+154,
+19
+],
+[
+154,
+21
+]
+],
+"mech_jsonl_records": 194,
+"mech_jsonl_orbit_rows": 60355,
+"conventions": {
+"pattern_on_cycle_x0_first": 60355,
+"pattern_not_on_cycle": 0,
+"rep_int_is_lsb_first": 60355,
+"rep_int_other": 0,
+"rep_is_orbit_minimum_lsb_first": 60355,
+"rep_not_orbit_minimum": 0,
+"drift_right_min": 60355,
+"drift_left_min": 49645,
+"drift_neither": 0,
+"drift_rows": 60355
+},
+"n_fields": 39,
+"n_mismatches": 14,
+"cpu_seconds": 1.6
+}
+bijective                                        {'compared': 194, 'equal': 194, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'sealed'}
+crystal_orbit                                    {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'sealed'}
+crystal_p                                        {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'sealed'}
+cycle_orbits                                     {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'sealed'}
+cycles                                           {'compared': 194, 'equal': 194, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'sealed'}
+entry_cost_max                                   {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'supplement'}
+g1_closed                                        {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'sealed'}
+g1_sccs                                          {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'sealed'}
+g2_holds                                         {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'supplement'}
+gamma_formula_ok                                 {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'supplement'}
+gamma_min                                        {'compared': 194, 'equal': 180, 'mismatch': 14, 'study_has_no_value': 0, 'source': 'sealed'}
+k_c                                              {'compared': 194, 'equal': 194, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'sealed'}
+kstar                                            {'compared': 194, 'equal': 194, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'sealed'}
+mech.jsonl_vs_cycle_orbits.csv.gz:orbit_rows     {'compared': 194, 'equal': 194, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'study-internal'}
+mech.jsonl_vs_mechanisms.csv:cycles              {'compared': 194, 'equal': 194, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'study-internal'}
+mech.jsonl_vs_mechanisms.csv:gamma_min           {'compared': 194, 'equal': 194, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'study-internal'}
+mech.jsonl_vs_mechanisms.csv:k_c                 {'compared': 194, 'equal': 194, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'study-internal'}
+mech.jsonl_vs_mechanisms.csv:kstar               {'compared': 194, 'equal': 194, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'study-internal'}
+mech.jsonl_vs_mechanisms.csv:n_selected          {'compared': 194, 'equal': 194, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'study-internal'}
+mech.jsonl_vs_mechanisms.csv:record_present      {'compared': 194, 'equal': 194, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'study-internal'}
+n_selected                                       {'compared': 194, 'equal': 194, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'sealed'}
+orbit.all_own_orbits_listed                      {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'supplement'}
+orbit.codes                                      {'compared': 60355, 'equal': 60355, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'supplement'}
+orbit.gamma                                      {'compared': 23833, 'equal': 23833, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'supplement'}
+orbit.gamma_histogram_by_cycles                  {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'sealed'}
+orbit.orbit_size                                 {'compared': 60355, 'equal': 60355, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'supplement'}
+orbit.radius                                     {'compared': 60355, 'equal': 60355, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'supplement'}
+orbit.selected                                   {'compared': 60355, 'equal': 60355, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'sealed'}
+orbit.spatial_period                             {'compared': 60355, 'equal': 60355, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'supplement'}
+orbit.temporal_period                            {'compared': 60355, 'equal': 60355, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'supplement'}
+radius_other_max                                 {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'supplement'}
+radius_other_min                                 {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'supplement'}
+radius_selected_max                              {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'supplement'}
+radius_selected_min                              {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'supplement'}
+selected_cover                                   {'compared': 194, 'equal': 194, 'mismatch': 0, 'study_has_no_value': 0, 'source': 'sealed'}
+selected_eq_closed_union                         {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'sealed'}
+selected_orbits                                  {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'sealed'}
+selected_spatial_periods                         {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'sealed'}
+selected_temporal_periods                        {'compared': 180, 'equal': 180, 'mismatch': 0, 'study_has_no_value': 14, 'source': 'sealed'}
+{
+"code_carriers": {
+"fields_equal": {
+"carrier_orbits": 165,
+"kstar": 165,
+"selected_carrier_orbits": 165
+},
+"rows": 165,
+"rule_code_pairs": [
+[
+26,
+7
+],
+[
+35,
+5
+],
+[
+37,
+2
+],
+[
+37,
+5
+],
+[
+73,
+7
+],
+[
+94,
+0
+],
+[
+94,
+1
+],
+[
+94,
+2
+],
+[
+94,
+4
+],
+[
+94,
+7
+],
+[
+122,
+2
+]
+]
+},
+"g1_distance_154": {
+"fields_equal": {
+"distance": 4112,
+"mean_ones": 4112,
+"period": 4112,
+"rows_equal_cycle_count": 2
+},
+"own": {
+"16": {
+"cycles": 4081,
+"cycles_radius_ge2": 1,
+"max_distance": 8,
+"min_gamma_sample": 4080,
+"radius_zero_cycle": 2,
+"spearman_mean_ones_vs_distance": 0.9643,
+"unreachable": 0
+},
+"8": {
+"cycles": 31,
+"cycles_radius_ge2": 1,
+"max_distance": 4,
+"min_gamma_sample": 30,
+"radius_zero_cycle": 2,
+"spearman_mean_ones_vs_distance": 0.9358,
+"unreachable": 0
+}
+},
+"rows": 4112
+},
+"n_class_representatives": 88,
+"n_mismatches": 0,
+"rule35_blocks": {
+"fields_equal": {
+"a": 13596,
+"a0": 13596,
+"family": 13596,
+"has_code5": 13596,
+"orbit_rows_equal_own_orbit_count": 15,
+"selected": 13596
+},
+"law_by_n": {
+"10": {
+"code5_not_family": 0,
+"code5_orbits": 3,
+"code5_selected": 2,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 17,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+5
+],
+"sel_a": [
+2
+]
+},
+"11": {
+"code5_not_family": 0,
+"code5_orbits": 2,
+"code5_selected": 1,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 22,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+4
+],
+"sel_a": [
+1
+]
+},
+"12": {
+"code5_not_family": 0,
+"code5_orbits": 3,
+"code5_selected": 0,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 29,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+3,
+6
+],
+"sel_a": [
+0
+]
+},
+"13": {
+"code5_not_family": 0,
+"code5_orbits": 3,
+"code5_selected": 2,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 39,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+5
+],
+"sel_a": [
+2
+]
+},
+"14": {
+"code5_not_family": 0,
+"code5_orbits": 5,
+"code5_selected": 1,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 51,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+4,
+7
+],
+"sel_a": [
+1
+]
+},
+"15": {
+"code5_not_family": 0,
+"code5_orbits": 5,
+"code5_selected": 0,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 68,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+3,
+6
+],
+"sel_a": [
+0
+]
+},
+"16": {
+"code5_not_family": 0,
+"code5_orbits": 7,
+"code5_selected": 3,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 90,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+5,
+8
+],
+"sel_a": [
+2
+]
+},
+"17": {
+"code5_not_family": 0,
+"code5_orbits": 7,
+"code5_selected": 1,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 119,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+4,
+7
+],
+"sel_a": [
+1
+]
+},
+"18": {
+"code5_not_family": 0,
+"code5_orbits": 10,
+"code5_selected": 0,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 158,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+3,
+6,
+9
+],
+"sel_a": [
+0
+]
+},
+"19": {
+"code5_not_family": 0,
+"code5_orbits": 11,
+"code5_selected": 3,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 209,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+5,
+8
+],
+"sel_a": [
+2
+]
+},
+"20": {
+"code5_not_family": 0,
+"code5_orbits": 16,
+"code5_selected": 1,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 277,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+4,
+7,
+10
+],
+"sel_a": [
+1
+]
+},
+"21": {
+"code5_not_family": 0,
+"code5_orbits": 18,
+"code5_selected": 0,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 367,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+3,
+6,
+9
+],
+"sel_a": [
+0
+]
+},
+"22": {
+"code5_not_family": 0,
+"code5_orbits": 24,
+"code5_selected": 4,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 486,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+5,
+8,
+11
+],
+"sel_a": [
+2
+]
+},
+"8": {
+"code5_not_family": 0,
+"code5_orbits": 2,
+"code5_selected": 1,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 10,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+4
+],
+"sel_a": [
+1
+]
+},
+"9": {
+"code5_not_family": 0,
+"code5_orbits": 1,
+"code5_selected": 0,
+"family_a_ge1_without_code5": 0,
+"family_a_not_a0_mod3": 0,
+"family_all_states_checked": 12,
+"family_state_not_word": 0,
+"nonfamily_not_selected": 0,
+"notsel_a": [
+3
+],
+"sel_a": [
+0
+]
+}
+},
+"rows": 13596
+},
+"verify_mech_files": {
+"verify_mech_n4_8_all.csv": {
+"agree_1": 408,
+"missing_all_bijective": true,
+"missing_examples": [
+[
+15,
+4
+],
+[
+15,
+5
+],
+[
+15,
+6
+],
+[
+15,
+7
+],
+[
+15,
+8
+],
+[
+45,
+5
+],
+[
+45,
+7
+],
+[
+51,
+4
+]
+],
+"pairs_expected_from_report_text": 440,
+"pairs_missing": 32,
+"rows": 408
+},
+"verify_mech_n9_10_switching.csv": {
+"agree_1": 24,
+"missing_all_bijective": true,
+"missing_examples": [
+[
+45,
+9
+],
+[
+154,
+9
+]
+],
+"pairs_expected_from_report_text": 26,
+"pairs_missing": 2,
+"rows": 24
+}
+},
+"zero_mechanism": {
+"coincide_22_26_122_154": 59,
+"fields_equal": {
+"g2_holds": 89,
+"kstar": 89,
+"seed_returns": 59,
+"seed_returns_study_has_no_value": 30,
+"zero_alone_and_lemmaB": 9,
+"zero_alone_and_study_g2_holds": 9,
+"zero_alone_cases": 13,
+"zero_alone_selected": 89,
+"zero_alone_single_cycle_map": 4
+},
+"pairs_22_26_122_154": 59,
+"rows": 89,
+"seed_returns_equals_zero_alone_by_rule": {
+"122": [
+15,
+15
+],
+"154": [
+14,
+14
+],
+"22": [
+15,
+15
+],
+"26": [
+15,
+15
+],
+"60": [
+15,
+15
+],
+"90": [
+15,
+15
+]
+}
+}
+}

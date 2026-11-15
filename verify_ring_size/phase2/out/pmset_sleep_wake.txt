@@ -1,0 +1,2 @@
+2026-11-14 02:00:31 +0100 Sleep    Entering Sleep state due to 'Low Power Sleep':TCPKeepAlive=inactive Using Batt (Charge:1%) 22049 secs
+2026-11-14 08:08:00 +0100 Wake     Wake from Hibernate [CDNVA] : due to lid rtc IOPortFeatureLDCM.measurement/Notification Using AC (Charge:1%)

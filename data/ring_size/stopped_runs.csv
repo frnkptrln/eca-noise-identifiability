@@ -1,0 +1,2 @@
+rule,n,workers,started_local,stopped_local,wall_hours,asleep_from,asleep_to,asleep_hours,awake_hours_upper,cpu_hours,outcome,source_of_sleep_interval
+154,22,1,2026-11-14 00:46,2026-11-14 08:09,7.4,02:00,08:08,6.12,1.27,not recorded,stopped unfinished; no record written,verify_ring_size/phase2/out/cost_claim.json
