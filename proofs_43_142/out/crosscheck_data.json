@@ -1,0 +1,98 @@
+{
+ "script": "crosscheck_data.py",
+ "all_agree": true,
+ "mechanisms": {
+  "records": 30,
+  "n_min": 8,
+  "n_max": 22,
+  "fields": [
+   "cycles",
+   "g1_closed",
+   "g1_sccs",
+   "n_selected",
+   "gamma_min",
+   "kstar",
+   "k_c",
+   "selected_cover",
+   "entry_cost_max",
+   "radius_selected_min"
+  ],
+  "values_compared": 300,
+  "mismatches": []
+ },
+ "crystal_radius": {
+  "rows": 200,
+  "n_min": 4,
+  "n_max": 400,
+  "rows_per_rule": {
+   "43": 100,
+   "142": 100
+  },
+  "rows_not_matching": []
+ },
+ "sampled_reach": {
+  "files": 6,
+  "starts": 1200,
+  "stored_equal": 1200,
+  "stored_longer": 0,
+  "stored_shorter": 0
+ },
+ "entry_cost": [
+  {
+   "rule": 43,
+   "n": 8,
+   "study": 2.0,
+   "here": 2,
+   "equal": true
+  },
+  {
+   "rule": 43,
+   "n": 12,
+   "study": 3.0,
+   "here": 3,
+   "equal": true
+  },
+  {
+   "rule": 43,
+   "n": 16,
+   "study": 4.0,
+   "here": 4,
+   "equal": true
+  },
+  {
+   "rule": 43,
+   "n": 20,
+   "study": 5.0,
+   "here": 5,
+   "equal": true
+  },
+  {
+   "rule": 142,
+   "n": 8,
+   "study": 2.0,
+   "here": 2,
+   "equal": true
+  },
+  {
+   "rule": 142,
+   "n": 12,
+   "study": 3.0,
+   "here": 3,
+   "equal": true
+  },
+  {
+   "rule": 142,
+   "n": 16,
+   "study": 4.0,
+   "here": 4,
+   "equal": true
+  },
+  {
+   "rule": 142,
+   "n": 20,
+   "study": 5.0,
+   "here": 5,
+   "equal": true
+  }
+ ]
+}
