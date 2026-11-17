@@ -38,19 +38,27 @@ All negative findings are provisional.
 for finite periodic realizations", arXiv:2610.10967v1 [math.SP], submitted 7 October 2026, 16 pages (data from
 the arXiv abstract page as returned by the search).
 
-**Read.** Nothing in full text. Seen: search excerpts of the abstract page and of the HTML version (v1), with
-sentences of Sections 2.3, 4.2 and 4.3 and the caption of Figure 13.
+**Read.** Nothing in full text. Seen: search excerpts of the abstract page and of the HTML version (v1). Search
+excerpts are fragments chosen by the search index and are not stored with the session, so they cannot be
+re-checked. Two sets were seen: those returned to the literature sub-task of this session (seven queries) and
+those returned to one query of the lead.
 
 **Not read.** The PDF and the complete HTML; equation (4); the content of the figures; the reference list.
 
-**What the excerpts say.** Section 2.3 defines a zero eigenvalue ratio: the multiplicity of the eigenvalue 0 of the
-Koopman matrix of the ring of n cells divided by 2^n. Section 4.2: for rules 45 and 154 the operator is unitary
-for every odd n (cited from another paper); for even n the operator of rule 154 is described as close to
-unitary, and its ratio
+**What the excerpts say.**
 
-> "is always below 0.01 for n∈{13,…,27} and seems to decrease with larger n"
+* Seen in both sets: under a heading 2.3 on the Koopman operator, a zero eigenvalue ratio is defined as the
+  multiplicity of the eigenvalue 0 of the Koopman matrix of the ring of n cells divided by 2^n, with a pointer to
+  an equation (4); for rules 45 and 154 the operator is unitary for every odd n (cited from another paper); for
+  rule 154 the ratio
 
-with a pointer to Figure 13 (caption: spectra for rule 154 at n = 22 and n = 24).
+  > "is always below 0.01 for n∈{13,…,27} and seems to decrease with larger n"
+
+  with a pointer to Figure 13 (caption: spectra for rule 154 at n = 22 and n = 24); a list item groups the rules
+  60, 90, 105, 150, 154.
+* Seen only in the sub-task's set, not by the lead: that these sentences stand in a Section 4.2 (the task names
+  the same section) and the list in a Section 4.3, and a sentence that describes the operator of rule 154 at even
+  n as close to unitary. These three points are reported second-hand here.
 
 **Not seen.** The two values 0.00048828 (n = 22) and 0.00045776 (n = 24) named in the task, and any wording that
 the observation is unexplained. The values are presumably printed in Figure 13. No explanation appears in the
@@ -97,8 +105,8 @@ Reading of the table.
   states without preimage gives the same value at n = 22 and a different one at n = 24, so the quoted pair fits
   the first reading and not the second. The comparison is with the values as given in the task; the digits were
   not seen in the paper.
-* **"Below 0.01 for n in {13, ..., 27}"** agrees with the table for the even n in that range (14 to 26) and is 0
-  for odd n, where the map is a bijection. For even n <= 12 the fraction is above 0.01.
+* **"Below 0.01 for n in {13, ..., 27}"** agrees with the table for the even n in that range (14 to 26); for odd n
+  the map is a bijection and the fraction is 0. For even n <= 12 the fraction is above 0.01.
 * **Closed form** [computed for even n = 4..26]: the fraction equals 2^(1 - n/2) (1 - 2^(-2^j)), where n/2 = 2^j q
   with q odd. Sketch of a derivation, not checked against the primary source: by Lemma 2 of `PROOF_154.md` rule 154
   acts on E ∪ O as rule 90, whose square on one parity class is rule 90 on a ring of n/2 cells; the fraction of
@@ -109,7 +117,7 @@ Reading of the table.
   154 on an even ring are exactly the non-periodic states of the embedded rule 90 on the two parity classes, a
   set of at most 2^(n/2+1) states among 2^n.
 
-**Covers.** A numerical observation on rule 154 at even n up to 27 (excerpt). **Does not cover (as far as the
+**Covers.** A numerical observation on rule 154 for n up to 27 (excerpt). **Does not cover (as far as the
 excerpts show).** One-flip graphs between attractors; noise; a relation of the observation to parity classes or to
 rule 90.
 
