@@ -1,0 +1,7813 @@
+{
+ "nmax": 20,
+ "total_failures": 0,
+ "results": {
+  "(R) form of the tables": {
+   "0": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "rules agree exactly on codes 1,3,4,6": {
+   "0": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "142 ones on 001,010,011,111; 43 on 000,001,011,101": {
+   "0": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "descriptions of rules 184, 226; g226(a,b,c)=g184(c,b,a)": {
+   "0": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "D1": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "D2 (w even)": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "D3": {
+   "3": {
+    "checked": 24,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 160,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 384,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 896,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 4608,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 10240,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 22528,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 49152,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 106496,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 229376,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 491520,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 2228224,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 4718592,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9961472,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 20971520,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "isolated/interior via P/Q": {
+   "3": {
+    "checked": 24,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 160,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 384,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 896,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 4608,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 10240,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 22528,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 49152,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 106496,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 229376,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 491520,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 2228224,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 4718592,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9961472,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 20971520,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 6": {
+   "3": {
+    "checked": 24,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 160,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 384,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 896,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 4608,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 10240,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 22528,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 49152,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 106496,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 229376,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 491520,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 2228224,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 4718592,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9961472,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 20971520,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "runs: isolated = run 1, interior iff run >= 3": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 1 (43) cell formula": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 1 (43) delta(Fx)=G184(delta x)": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 5 FC=CF (43)": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 5 w(Fx)=w(x) (43)": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 1 (142) cell formula": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 1 (142) delta(Fx)=G226(delta x)": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 5 FC=CF (142)": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 5 w(Fx)=w(x) (142)": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 2 |G184 d|=|d|": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 2 |G226 d|=|d|": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 3(a) P equivalence": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 3(a) Q equivalence": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 3(a) counts": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 3(a) translation when A empty": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 12,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 22,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 40,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 72,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 132,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 242,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 444,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 816,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 1500,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 2758,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 5072,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 9328,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 17156,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 31554,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 58036,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 106744,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 196332,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 3(b) P equivalence": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 3(b) Q equivalence": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 3(b) counts": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 3(b) translation when A empty": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 12,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 22,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 40,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 72,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 132,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 242,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 444,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 816,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 1500,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 2758,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 5072,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 9328,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 17156,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 31554,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 58036,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 106744,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 196332,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 3(c)": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 4 periodic iff P or Q empty (184)": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 4 action, P empty (184)": {
+   "3": {
+    "checked": 4,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 7,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 11,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 29,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 47,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 76,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 123,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 199,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 322,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 521,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 843,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1364,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2207,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3571,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5778,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9349,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15127,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 4 action, Q empty (184)": {
+   "3": {
+    "checked": 4,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 7,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 11,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 29,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 47,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 76,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 123,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 199,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 322,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 521,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 843,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1364,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2207,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3571,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5778,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9349,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15127,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 4 periodic iff P or Q empty (226)": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 4 action, P empty (226)": {
+   "3": {
+    "checked": 4,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 7,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 11,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 29,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 47,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 76,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 123,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 199,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 322,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 521,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 843,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1364,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2207,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3571,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5778,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9349,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15127,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 4 action, Q empty (226)": {
+   "3": {
+    "checked": 4,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 7,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 11,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 29,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 47,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 76,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 123,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 199,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 322,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 521,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 843,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1364,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2207,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3571,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5778,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9349,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15127,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 7(a) (43)": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 7(b) no isolated (43)": {
+   "3": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 12,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 20,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 30,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 46,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 74,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 122,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 200,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 324,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 522,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 842,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1362,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2206,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3572,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5780,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9350,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15126,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 7(b) no interior (43)": {
+   "3": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 20,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 46,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 78,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 122,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 198,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 324,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 520,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 842,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1366,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2206,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3570,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5780,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9348,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15126,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 7(b) 'no isolated' preserved by F, sigma, C (43)": {
+   "3": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 12,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 20,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 30,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 46,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 74,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 122,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 200,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 324,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 522,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 842,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1362,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2206,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3572,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5780,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9350,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15126,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 7(b) 'no interior' preserved by F, sigma, C (43)": {
+   "3": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 20,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 46,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 78,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 122,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 198,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 324,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 520,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 842,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1366,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2206,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3570,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5780,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9348,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15126,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 7(c) (43)": {
+   "3": {
+    "checked": 48,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 220,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 480,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 812,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 1408,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 2736,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 4880,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 8756,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 15456,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 27092,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 47152,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 81840,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 141056,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 242828,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 416160,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 710524,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1209920,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "periods divide 2n (43)": {
+   "3": {
+    "checked": 3,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 3,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 4,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 7,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 13,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 15,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 61,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 61,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 126,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 141,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 283,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 316,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 658,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 739,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1529,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "family 'no isolated' has w <= n/2 (43)": {
+   "3": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 12,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 20,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 30,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 46,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 74,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 122,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 200,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 324,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 522,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 842,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1362,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2206,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3572,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5780,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9350,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15126,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "family 'no interior' has w >= n/2 (43)": {
+   "3": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 20,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 46,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 78,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 122,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 198,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 324,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 520,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 842,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1366,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2206,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3570,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5780,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9348,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15126,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "families meet exactly in X (43)": {
+   "3": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "wall count constant on cycles (43)": {
+   "3": {
+    "checked": 3,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 3,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 4,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 7,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 13,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 15,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 61,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 61,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 126,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 141,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 283,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 316,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 658,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 739,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1529,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Theorem 2 unique closed class = K (43)": {
+   "3": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 10 slides join cycles both ways (43)": {
+   "3": {
+    "checked": 12,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 0,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 40,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 96,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 140,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 468,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 800,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 1496,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 2688,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 4628,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 8064,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 13980,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 24064,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 41480,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 71136,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 121372,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 206720,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 10(a) procedure (43)": {
+   "3": {
+    "checked": 0,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 4,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 44,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 72,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 120,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 198,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 322,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 520,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 840,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1360,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2204,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3570,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5778,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9348,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15124,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 10(b) procedure (43)": {
+   "3": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 0,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 40,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 78,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 120,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 198,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 318,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 520,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 840,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1366,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2200,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3570,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5778,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9348,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15120,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 7(a) (142)": {
+   "3": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 512,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1024,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2048,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 4096,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 8192,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16384,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 32768,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 65536,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 131072,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 262144,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 524288,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1048576,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 7(b) no isolated (142)": {
+   "3": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 12,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 20,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 30,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 46,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 74,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 122,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 200,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 324,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 522,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 842,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1362,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2206,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3572,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5780,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9350,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15126,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 7(b) no interior (142)": {
+   "3": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 20,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 46,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 78,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 122,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 198,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 324,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 520,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 842,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1366,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2206,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3570,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5780,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9348,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15126,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 7(b) 'no isolated' preserved by F, sigma, C (142)": {
+   "3": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 12,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 20,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 30,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 46,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 74,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 122,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 200,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 324,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 522,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 842,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1362,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2206,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3572,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5780,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9350,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15126,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 7(b) 'no interior' preserved by F, sigma, C (142)": {
+   "3": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 20,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 46,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 78,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 122,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 198,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 324,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 520,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 842,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1366,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2206,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3570,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5780,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9348,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15126,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 7(c) (142)": {
+   "3": {
+    "checked": 48,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 220,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 480,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 812,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 1408,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 2736,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 4880,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 8756,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 15456,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 27092,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 47152,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 81840,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 141056,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 242828,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 416160,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 710524,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1209920,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "periods divide 2n (142)": {
+   "3": {
+    "checked": 3,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 5,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 5,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 15,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 15,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 30,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 29,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 61,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 62,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 141,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 285,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 317,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 658,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 740,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1531,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "family 'no isolated' has w <= n/2 (142)": {
+   "3": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 12,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 20,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 30,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 46,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 74,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 122,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 200,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 324,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 522,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 842,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1362,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2206,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3572,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5780,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9350,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15126,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "family 'no interior' has w >= n/2 (142)": {
+   "3": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 20,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 46,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 78,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 122,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 198,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 324,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 520,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 842,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1366,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2206,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3570,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5780,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9348,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15126,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "families meet exactly in X (142)": {
+   "3": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "wall count constant on cycles (142)": {
+   "3": {
+    "checked": 3,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 5,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 5,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 15,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 15,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 30,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 29,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 61,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 62,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 141,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 285,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 317,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 658,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 740,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1531,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Theorem 2 unique closed class = K (142)": {
+   "3": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 10 slides join cycles both ways (142)": {
+   "3": {
+    "checked": 12,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 0,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 40,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 96,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 140,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 256,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 468,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 800,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 1496,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 2688,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 4628,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 8064,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 13980,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 24064,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 41480,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 71136,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 121372,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 206720,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 10(a) procedure (142)": {
+   "3": {
+    "checked": 0,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 4,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 44,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 72,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 120,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 198,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 322,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 520,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 840,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1360,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2204,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3570,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5778,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9348,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15124,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 10(b) procedure (142)": {
+   "3": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "4": {
+    "checked": 0,
+    "failures": 0,
+    "examples": []
+   },
+   "5": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 40,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 78,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 120,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 198,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 318,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 520,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 840,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1366,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 2200,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3570,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 5778,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 9348,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 15120,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 8 neither 11 nor 00 in wall word => X and 4|n (43)": {
+   "4": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 8 periodic with w=n/2 are X (43)": {
+   "4": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 8 X one cycle of length 4, F = sigma^-1 (43)": {
+   "4": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "codes on X are exactly 1,3,4,6 (43)": {
+   "4": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Theorem 1(1) flips of X return to X (43)": {
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 48,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 80,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Theorem 1 only closed class is {X} (43)": {
+   "4": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Theorem 1(2) G1-distance to X = |w-n/2|/2 (43)": {
+   "4": {
+    "checked": 3,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 13,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 61,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 283,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1529,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Theorem 1(2) interior/isolated cell exists on every state (43)": {
+   "4": {
+    "checked": 4,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 84,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 640,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 4404,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 30244,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Theorem 1(2) proof step, every interior/isolated flip (43)": {
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 352,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 3456,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 31552,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 270640,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Proposition 2 healing time (43)": {
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 48,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 80,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 8 neither 11 nor 00 in wall word => X and 4|n (142)": {
+   "4": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 8 periodic with w=n/2 are X (142)": {
+   "4": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 8 X one cycle of length 4, F = sigma^-1 (142)": {
+   "4": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "codes on X are exactly 1,3,4,6 (142)": {
+   "4": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Theorem 1(1) flips of X return to X (142)": {
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 48,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 80,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Theorem 1 only closed class is {X} (142)": {
+   "4": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Theorem 1(2) G1-distance to X = |w-n/2|/2 (142)": {
+   "4": {
+    "checked": 5,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 15,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 61,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 285,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 1531,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Theorem 1(2) interior/isolated cell exists on every state (142)": {
+   "4": {
+    "checked": 4,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 84,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 640,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 4404,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 30244,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Theorem 1(2) proof step, every interior/isolated flip (142)": {
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 352,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 3456,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 31552,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 270640,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Proposition 2 healing time (142)": {
+   "4": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "8": {
+    "checked": 32,
+    "failures": 0,
+    "examples": []
+   },
+   "12": {
+    "checked": 48,
+    "failures": 0,
+    "examples": []
+   },
+   "16": {
+    "checked": 64,
+    "failures": 0,
+    "examples": []
+   },
+   "20": {
+    "checked": 80,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "w- >= 2, w+ <= n-1, eps in {1,2,3}": {
+   "5": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 2,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 9(a) lower: interior, no isolated (43)": {
+   "5": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 50,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 110,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 26,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 98,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 280,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 34,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 162,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 570,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 9(a) upper: isolated, no interior (43)": {
+   "5": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 14,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 60,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 50,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 22,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 182,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 98,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 30,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 408,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 162,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 38,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 9(b) no edge leaves K (43)": {
+   "5": {
+    "checked": 7,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 40,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 17,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 56,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 156,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 155,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 470,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 1176,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1361,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3817,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 8608,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 10398,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 9(c) edges between the levels (43)": {
+   "5": {
+    "checked": 3,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 4,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 9,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 7,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 15,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 16,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 12,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 25,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 17,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 9(d) every cycle reaches K (43)": {
+   "5": {
+    "checked": 4,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 7,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 15,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 61,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 126,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 141,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 316,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 658,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 739,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 11 (43)": {
+   "5": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Corollary 3 all eight codes on K (43)": {
+   "5": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 9(a) lower: interior, no isolated (142)": {
+   "5": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 28,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 50,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 110,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 26,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 98,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 280,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 34,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 162,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 570,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 9(a) upper: isolated, no interior (142)": {
+   "5": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 18,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 14,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 60,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 50,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 22,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 182,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 98,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 30,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 408,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 162,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 38,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 9(b) no edge leaves K (142)": {
+   "5": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 24,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 15,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 47,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 136,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 140,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 441,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 1100,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1336,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 3757,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 8540,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 10370,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 9(c) edges between the levels (142)": {
+   "5": {
+    "checked": 3,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 5,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 6,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 12,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 11,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 9,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 14,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 21,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 14,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 20,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 31,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 9(d) every cycle reaches K (142)": {
+   "5": {
+    "checked": 5,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 10,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 8,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 15,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 30,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 29,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 62,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 128,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 141,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 317,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 658,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 740,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Lemma 11 (142)": {
+   "5": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  },
+  "Corollary 3 all eight codes on K (142)": {
+   "5": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "6": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "7": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "9": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "10": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "11": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "13": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "14": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "15": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "17": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "18": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   },
+   "19": {
+    "checked": 1,
+    "failures": 0,
+    "examples": []
+   }
+  }
+ },
+ "cycle_info": {
+  "3": {
+   "43": {
+    "m": 3,
+    "n_edges": 6,
+    "closed": [
+     [
+      0,
+      1,
+      2
+     ]
+    ],
+    "n_periodic": 8
+   },
+   "142": {
+    "m": 3,
+    "n_edges": 4,
+    "closed": [
+     [
+      0,
+      1,
+      2
+     ]
+    ],
+    "n_periodic": 8
+   }
+  },
+  "4": {
+   "43": {
+    "m": 3,
+    "n_edges": 2,
+    "closed": [
+     [
+      1
+     ]
+    ],
+    "n_periodic": 8
+   },
+   "142": {
+    "m": 5,
+    "n_edges": 4,
+    "closed": [
+     [
+      1
+     ]
+    ],
+    "n_periodic": 8
+   }
+  },
+  "5": {
+   "43": {
+    "m": 4,
+    "n_edges": 7,
+    "closed": [
+     [
+      1,
+      2,
+      3
+     ]
+    ],
+    "n_periodic": 22,
+    "K_size": 3,
+    "w_minus": 2,
+    "w_plus": 4
+   },
+   "142": {
+    "m": 5,
+    "n_edges": 8,
+    "closed": [
+     [
+      1,
+      2,
+      3
+     ]
+    ],
+    "n_periodic": 22,
+    "K_size": 3,
+    "w_minus": 2,
+    "w_plus": 4
+   }
+  },
+  "6": {
+   "43": {
+    "m": 10,
+    "n_edges": 40,
+    "closed": [
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9
+     ]
+    ],
+    "n_periodic": 40,
+    "K_size": 8,
+    "w_minus": 2,
+    "w_plus": 4
+   },
+   "142": {
+    "m": 10,
+    "n_edges": 24,
+    "closed": [
+     [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    ],
+    "n_periodic": 40,
+    "K_size": 6,
+    "w_minus": 2,
+    "w_plus": 4
+   }
+  },
+  "7": {
+   "43": {
+    "m": 7,
+    "n_edges": 17,
+    "closed": [
+     [
+      1,
+      2,
+      3,
+      5
+     ]
+    ],
+    "n_periodic": 58,
+    "K_size": 4,
+    "w_minus": 2,
+    "w_plus": 4
+   },
+   "142": {
+    "m": 8,
+    "n_edges": 15,
+    "closed": [
+     [
+      1,
+      2,
+      3,
+      4,
+      6
+     ]
+    ],
+    "n_periodic": 58,
+    "K_size": 5,
+    "w_minus": 2,
+    "w_plus": 4
+   }
+  },
+  "8": {
+   "43": {
+    "m": 13,
+    "n_edges": 42,
+    "closed": [
+     [
+      9
+     ]
+    ],
+    "n_periodic": 88
+   },
+   "142": {
+    "m": 15,
+    "n_edges": 30,
+    "closed": [
+     [
+      9
+     ]
+    ],
+    "n_periodic": 88
+   }
+  },
+  "9": {
+   "43": {
+    "m": 15,
+    "n_edges": 56,
+    "closed": [
+     [
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      14
+     ]
+    ],
+    "n_periodic": 152,
+    "K_size": 9,
+    "w_minus": 4,
+    "w_plus": 6
+   },
+   "142": {
+    "m": 15,
+    "n_edges": 47,
+    "closed": [
+     [
+      5,
+      7,
+      8,
+      9,
+      10,
+      12
+     ]
+    ],
+    "n_periodic": 152,
+    "K_size": 6,
+    "w_minus": 4,
+    "w_plus": 6
+   }
+  },
+  "10": {
+   "43": {
+    "m": 28,
+    "n_edges": 156,
+    "closed": [
+     [
+      8,
+      10,
+      11,
+      12,
+      13,
+      15,
+      19,
+      21,
+      22,
+      24
+     ]
+    ],
+    "n_periodic": 244,
+    "K_size": 10,
+    "w_minus": 4,
+    "w_plus": 6
+   },
+   "142": {
+    "m": 30,
+    "n_edges": 136,
+    "closed": [
+     [
+      5,
+      7,
+      8,
+      9,
+      11,
+      13,
+      14,
+      19,
+      21,
+      22,
+      24,
+      25
+     ]
+    ],
+    "n_periodic": 244,
+    "K_size": 12,
+    "w_minus": 4,
+    "w_plus": 6
+   }
+  },
+  "11": {
+   "43": {
+    "m": 28,
+    "n_edges": 155,
+    "closed": [
+     [
+      5,
+      6,
+      7,
+      8,
+      9,
+      13,
+      22
+     ]
+    ],
+    "n_periodic": 398,
+    "K_size": 7,
+    "w_minus": 4,
+    "w_plus": 6
+   },
+   "142": {
+    "m": 29,
+    "n_edges": 140,
+    "closed": [
+     [
+      5,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      19,
+      25,
+      26
+     ]
+    ],
+    "n_periodic": 398,
+    "K_size": 11,
+    "w_minus": 4,
+    "w_plus": 6
+   }
+  },
+  "12": {
+   "43": {
+    "m": 61,
+    "n_edges": 400,
+    "closed": [
+     [
+      49
+     ]
+    ],
+    "n_periodic": 644
+   },
+   "142": {
+    "m": 61,
+    "n_edges": 362,
+    "closed": [
+     [
+      49
+     ]
+    ],
+    "n_periodic": 644
+   }
+  },
+  "13": {
+   "43": {
+    "m": 61,
+    "n_edges": 470,
+    "closed": [
+     [
+      20,
+      21,
+      23,
+      27,
+      29,
+      30,
+      31,
+      33,
+      36,
+      45,
+      48,
+      50,
+      51,
+      52,
+      57
+     ]
+    ],
+    "n_periodic": 1042,
+    "K_size": 15,
+    "w_minus": 6,
+    "w_plus": 8
+   },
+   "142": {
+    "m": 62,
+    "n_edges": 441,
+    "closed": [
+     [
+      28,
+      36,
+      38,
+      42,
+      44,
+      45,
+      46,
+      50,
+      56
+     ]
+    ],
+    "n_periodic": 1042,
+    "K_size": 9,
+    "w_minus": 6,
+    "w_plus": 8
+   }
+  },
+  "14": {
+   "43": {
+    "m": 126,
+    "n_edges": 1176,
+    "closed": [
+     [
+      45,
+      56,
+      57,
+      58,
+      59,
+      60,
+      64,
+      74,
+      76,
+      80,
+      99,
+      107,
+      108,
+      110,
+      111,
+      117
+     ]
+    ],
+    "n_periodic": 1684,
+    "K_size": 16,
+    "w_minus": 6,
+    "w_plus": 8
+   },
+   "142": {
+    "m": 128,
+    "n_edges": 1100,
+    "closed": [
+     [
+      31,
+      42,
+      44,
+      45,
+      48,
+      60,
+      72,
+      74,
+      75,
+      103,
+      111,
+      112,
+      114,
+      115
+     ]
+    ],
+    "n_periodic": 1684,
+    "K_size": 14,
+    "w_minus": 6,
+    "w_plus": 8
+   }
+  },
+  "15": {
+   "43": {
+    "m": 141,
+    "n_edges": 1361,
+    "closed": [
+     [
+      30,
+      37,
+      38,
+      39,
+      40,
+      42,
+      43,
+      44,
+      45,
+      46,
+      71,
+      119
+     ]
+    ],
+    "n_periodic": 2728,
+    "K_size": 12,
+    "w_minus": 6,
+    "w_plus": 8
+   },
+   "142": {
+    "m": 141,
+    "n_edges": 1336,
+    "closed": [
+     [
+      32,
+      45,
+      47,
+      48,
+      49,
+      53,
+      63,
+      64,
+      65,
+      67,
+      68,
+      69,
+      70,
+      73,
+      74,
+      77,
+      107,
+      131,
+      132,
+      133,
+      135
+     ]
+    ],
+    "n_periodic": 2728,
+    "K_size": 21,
+    "w_minus": 6,
+    "w_plus": 8
+   }
+  },
+  "16": {
+   "43": {
+    "m": 283,
+    "n_edges": 3160,
+    "closed": [
+     [
+      251
+     ]
+    ],
+    "n_periodic": 4408
+   },
+   "142": {
+    "m": 285,
+    "n_edges": 3060,
+    "closed": [
+     [
+      259
+     ]
+    ],
+    "n_periodic": 4408
+   }
+  },
+  "17": {
+   "43": {
+    "m": 316,
+    "n_edges": 3817,
+    "closed": [
+     [
+      105,
+      109,
+      119,
+      121,
+      125,
+      150,
+      160,
+      164,
+      166,
+      167,
+      168,
+      170,
+      173,
+      184,
+      188,
+      203,
+      252,
+      255,
+      269,
+      277,
+      278,
+      279,
+      283,
+      285,
+      301
+     ]
+    ],
+    "n_periodic": 7142,
+    "K_size": 25,
+    "w_minus": 8,
+    "w_plus": 10
+   },
+   "142": {
+    "m": 317,
+    "n_edges": 3757,
+    "closed": [
+     [
+      163,
+      200,
+      210,
+      212,
+      216,
+      240,
+      248,
+      252,
+      254,
+      255,
+      256,
+      260,
+      280,
+      302
+     ]
+    ],
+    "n_periodic": 7142,
+    "K_size": 14,
+    "w_minus": 8,
+    "w_plus": 10
+   }
+  },
+  "18": {
+   "43": {
+    "m": 658,
+    "n_edges": 8608,
+    "closed": [
+     [
+      258,
+      314,
+      320,
+      321,
+      322,
+      323,
+      324,
+      351,
+      414,
+      425,
+      429,
+      452,
+      559,
+      597,
+      598,
+      600,
+      601,
+      608
+     ]
+    ],
+    "n_periodic": 11560,
+    "K_size": 18,
+    "w_minus": 8,
+    "w_plus": 10
+   },
+   "142": {
+    "m": 658,
+    "n_edges": 8540,
+    "closed": [
+     [
+      190,
+      247,
+      256,
+      258,
+      259,
+      262,
+      277,
+      339,
+      416,
+      427,
+      429,
+      430,
+      435,
+      584,
+      615,
+      616,
+      618,
+      619,
+      627,
+      628
+     ]
+    ],
+    "n_periodic": 11560,
+    "K_size": 20,
+    "w_minus": 8,
+    "w_plus": 10
+   }
+  },
+  "19": {
+   "43": {
+    "m": 739,
+    "n_edges": 10398,
+    "closed": [
+     [
+      176,
+      219,
+      223,
+      224,
+      225,
+      226,
+      228,
+      238,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      403,
+      664
+     ]
+    ],
+    "n_periodic": 18698,
+    "K_size": 17,
+    "w_minus": 8,
+    "w_plus": 10
+   },
+   "142": {
+    "m": 740,
+    "n_edges": 10370,
+    "closed": [
+     [
+      203,
+      283,
+      295,
+      297,
+      298,
+      299,
+      303,
+      328,
+      381,
+      383,
+      384,
+      387,
+      396,
+      397,
+      399,
+      400,
+      401,
+      402,
+      405,
+      406,
+      409,
+      425,
+      426,
+      429,
+      441,
+      613,
+      715,
+      716,
+      717,
+      719,
+      720
+     ]
+    ],
+    "n_periodic": 18698,
+    "K_size": 31,
+    "w_minus": 8,
+    "w_plus": 10
+   }
+  },
+  "20": {
+   "43": {
+    "m": 1529,
+    "n_edges": 23118,
+    "closed": [
+     [
+      1417
+     ]
+    ],
+    "n_periodic": 30248
+   },
+   "142": {
+    "m": 1531,
+    "n_edges": 22936,
+    "closed": [
+     [
+      1461
+     ]
+    ],
+    "n_periodic": 30248
+   }
+  }
+ },
+ "seconds": 21.927501916885376
+}

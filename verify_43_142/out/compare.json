@@ -1,0 +1,1020 @@
+{
+ "g1_fields_compared": 324,
+ "g1_differences": [],
+ "mechanisms": [
+  {
+   "rule": 43,
+   "n": 8,
+   "n_selected": [
+    1,
+    1
+   ],
+   "gamma_min": [
+    12,
+    12
+   ],
+   "k_c": [
+    "1-0-1-0-0-1-0-1",
+    "1-0-1-0-0-1-0-1"
+   ],
+   "kstar": [
+    1,
+    1
+   ],
+   "cycles": [
+    13,
+    13
+   ],
+   "source": "potentials (definitions)",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 9,
+   "n_selected": [
+    9,
+    9
+   ],
+   "gamma_min": [
+    14,
+    14
+   ],
+   "k_c": [
+    "0-0-0-0-0-0-0-0",
+    "0-0-0-0-0-0-0-0"
+   ],
+   "kstar": [
+    0,
+    0
+   ],
+   "cycles": [
+    15,
+    15
+   ],
+   "source": "potentials (definitions)",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 10,
+   "n_selected": [
+    10,
+    10
+   ],
+   "gamma_min": [
+    27,
+    27
+   ],
+   "k_c": [
+    "0-0-0-0-0-0-0-0",
+    "0-0-0-0-0-0-0-0"
+   ],
+   "kstar": [
+    0,
+    0
+   ],
+   "cycles": [
+    28,
+    28
+   ],
+   "source": "potentials (definitions)",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 11,
+   "n_selected": [
+    7,
+    7
+   ],
+   "gamma_min": [
+    27,
+    27
+   ],
+   "k_c": [
+    "0-0-0-0-0-0-0-0",
+    "0-0-0-0-0-0-0-0"
+   ],
+   "kstar": [
+    0,
+    0
+   ],
+   "cycles": [
+    28,
+    28
+   ],
+   "source": "potentials (definitions)",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 12,
+   "n_selected": [
+    1,
+    1
+   ],
+   "gamma_min": [
+    60,
+    60
+   ],
+   "k_c": [
+    "1-0-1-0-0-1-0-1",
+    "1-0-1-0-0-1-0-1"
+   ],
+   "kstar": [
+    1,
+    1
+   ],
+   "cycles": [
+    61,
+    61
+   ],
+   "source": "potentials (definitions)",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 13,
+   "n_selected": [
+    15,
+    15
+   ],
+   "gamma_min": [
+    60,
+    60
+   ],
+   "k_c": [
+    "0-0-0-0-0-0-0-0",
+    "0-0-0-0-0-0-0-0"
+   ],
+   "kstar": [
+    0,
+    0
+   ],
+   "cycles": [
+    61,
+    61
+   ],
+   "source": "potentials (definitions)",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 14,
+   "n_selected": [
+    16,
+    16
+   ],
+   "gamma_min": [
+    125,
+    125
+   ],
+   "k_c": [
+    "0-0-0-0-0-0-0-0",
+    "0-0-0-0-0-0-0-0"
+   ],
+   "kstar": [
+    0,
+    0
+   ],
+   "cycles": [
+    126,
+    126
+   ],
+   "source": "potentials (definitions)",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 15,
+   "n_selected": [
+    12,
+    12
+   ],
+   "gamma_min": [
+    140,
+    140
+   ],
+   "cycles": [
+    141,
+    141
+   ],
+   "source": "G1 closed class + Theorem A (m - 1)",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 16,
+   "n_selected": [
+    1,
+    1
+   ],
+   "gamma_min": [
+    282,
+    282
+   ],
+   "cycles": [
+    283,
+    283
+   ],
+   "source": "G1 closed class + Theorem A (m - 1)",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 17,
+   "n_selected": [
+    25,
+    25
+   ],
+   "gamma_min": [
+    315,
+    315
+   ],
+   "cycles": [
+    316,
+    316
+   ],
+   "source": "G1 closed class + Theorem A (m - 1)",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 18,
+   "n_selected": [
+    18,
+    18
+   ],
+   "gamma_min": [
+    657,
+    657
+   ],
+   "cycles": [
+    658,
+    658
+   ],
+   "source": "G1 closed class + Theorem A (m - 1)",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 19,
+   "n_selected": [
+    17,
+    17
+   ],
+   "gamma_min": [
+    738,
+    738
+   ],
+   "cycles": [
+    739,
+    739
+   ],
+   "source": "G1 closed class + Theorem A (m - 1)",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 20,
+   "n_selected": [
+    1,
+    1
+   ],
+   "gamma_min": [
+    1528,
+    1528
+   ],
+   "cycles": [
+    1529,
+    1529
+   ],
+   "source": "G1 closed class + Theorem A (m - 1)",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 21,
+   "source": "not computed here (n > 20)",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 22,
+   "source": "not computed here (n > 20)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 8,
+   "n_selected": [
+    1,
+    1
+   ],
+   "gamma_min": [
+    14,
+    14
+   ],
+   "k_c": [
+    "1-0-1-0-0-1-0-1",
+    "1-0-1-0-0-1-0-1"
+   ],
+   "kstar": [
+    1,
+    1
+   ],
+   "cycles": [
+    15,
+    15
+   ],
+   "source": "potentials (definitions)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 9,
+   "n_selected": [
+    6,
+    6
+   ],
+   "gamma_min": [
+    14,
+    14
+   ],
+   "k_c": [
+    "0-0-0-0-0-0-0-0",
+    "0-0-0-0-0-0-0-0"
+   ],
+   "kstar": [
+    0,
+    0
+   ],
+   "cycles": [
+    15,
+    15
+   ],
+   "source": "potentials (definitions)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 10,
+   "n_selected": [
+    12,
+    12
+   ],
+   "gamma_min": [
+    29,
+    29
+   ],
+   "k_c": [
+    "0-0-0-0-0-0-0-0",
+    "0-0-0-0-0-0-0-0"
+   ],
+   "kstar": [
+    0,
+    0
+   ],
+   "cycles": [
+    30,
+    30
+   ],
+   "source": "potentials (definitions)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 11,
+   "n_selected": [
+    11,
+    11
+   ],
+   "gamma_min": [
+    28,
+    28
+   ],
+   "k_c": [
+    "0-0-0-0-0-0-0-0",
+    "0-0-0-0-0-0-0-0"
+   ],
+   "kstar": [
+    0,
+    0
+   ],
+   "cycles": [
+    29,
+    29
+   ],
+   "source": "potentials (definitions)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 12,
+   "n_selected": [
+    1,
+    1
+   ],
+   "gamma_min": [
+    60,
+    60
+   ],
+   "k_c": [
+    "1-0-1-0-0-1-0-1",
+    "1-0-1-0-0-1-0-1"
+   ],
+   "kstar": [
+    1,
+    1
+   ],
+   "cycles": [
+    61,
+    61
+   ],
+   "source": "potentials (definitions)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 13,
+   "n_selected": [
+    9,
+    9
+   ],
+   "gamma_min": [
+    61,
+    61
+   ],
+   "k_c": [
+    "0-0-0-0-0-0-0-0",
+    "0-0-0-0-0-0-0-0"
+   ],
+   "kstar": [
+    0,
+    0
+   ],
+   "cycles": [
+    62,
+    62
+   ],
+   "source": "potentials (definitions)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 14,
+   "n_selected": [
+    14,
+    14
+   ],
+   "gamma_min": [
+    127,
+    127
+   ],
+   "k_c": [
+    "0-0-0-0-0-0-0-0",
+    "0-0-0-0-0-0-0-0"
+   ],
+   "kstar": [
+    0,
+    0
+   ],
+   "cycles": [
+    128,
+    128
+   ],
+   "source": "potentials (definitions)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 15,
+   "n_selected": [
+    21,
+    21
+   ],
+   "gamma_min": [
+    140,
+    140
+   ],
+   "cycles": [
+    141,
+    141
+   ],
+   "source": "G1 closed class + Theorem A (m - 1)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 16,
+   "n_selected": [
+    1,
+    1
+   ],
+   "gamma_min": [
+    284,
+    284
+   ],
+   "cycles": [
+    285,
+    285
+   ],
+   "source": "G1 closed class + Theorem A (m - 1)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 17,
+   "n_selected": [
+    14,
+    14
+   ],
+   "gamma_min": [
+    316,
+    316
+   ],
+   "cycles": [
+    317,
+    317
+   ],
+   "source": "G1 closed class + Theorem A (m - 1)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 18,
+   "n_selected": [
+    20,
+    20
+   ],
+   "gamma_min": [
+    657,
+    657
+   ],
+   "cycles": [
+    658,
+    658
+   ],
+   "source": "G1 closed class + Theorem A (m - 1)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 19,
+   "n_selected": [
+    31,
+    31
+   ],
+   "gamma_min": [
+    739,
+    739
+   ],
+   "cycles": [
+    740,
+    740
+   ],
+   "source": "G1 closed class + Theorem A (m - 1)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 20,
+   "n_selected": [
+    1,
+    1
+   ],
+   "gamma_min": [
+    1530,
+    1530
+   ],
+   "cycles": [
+    1531,
+    1531
+   ],
+   "source": "G1 closed class + Theorem A (m - 1)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 21,
+   "source": "not computed here (n > 20)",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 22,
+   "source": "not computed here (n > 20)",
+   "agree": true
+  }
+ ],
+ "mechanisms_all_agree": true,
+ "session_entry_cost_tests": [
+  {
+   "rule": 43,
+   "n_min": 4,
+   "n_max": 20,
+   "cases": 1889
+  },
+  {
+   "rule": 142,
+   "n_min": 4,
+   "n_max": 20,
+   "cases": 1897
+  }
+ ],
+ "mine_entry_cost": [
+  {
+   "rule": 43,
+   "n": 4,
+   "m": 3,
+   "V_to_X_max": 1,
+   "failures": []
+  },
+  {
+   "rule": 142,
+   "n": 4,
+   "m": 5,
+   "V_to_X_max": 1,
+   "failures": []
+  },
+  {
+   "rule": 43,
+   "n": 8,
+   "m": 13,
+   "V_to_X_max": 2,
+   "failures": []
+  },
+  {
+   "rule": 142,
+   "n": 8,
+   "m": 15,
+   "V_to_X_max": 2,
+   "failures": []
+  },
+  {
+   "rule": 43,
+   "n": 12,
+   "m": 61,
+   "V_to_X_max": 3,
+   "failures": []
+  },
+  {
+   "rule": 142,
+   "n": 12,
+   "m": 61,
+   "V_to_X_max": 3,
+   "failures": []
+  },
+  {
+   "rule": 43,
+   "n": 16,
+   "m": 283,
+   "V_to_X_max": 4,
+   "failures": []
+  },
+  {
+   "rule": 142,
+   "n": 16,
+   "m": 285,
+   "V_to_X_max": 4,
+   "failures": []
+  },
+  {
+   "rule": 43,
+   "n": 20,
+   "m": 1529,
+   "V_to_X_max": 5,
+   "failures": []
+  },
+  {
+   "rule": 142,
+   "n": 20,
+   "m": 1531,
+   "V_to_X_max": 5,
+   "failures": []
+  }
+ ],
+ "session_lemma_tests": [
+  {
+   "test": "L1",
+   "rule": 43,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 2097144,
+   "passed": null
+  },
+  {
+   "test": "L1",
+   "rule": 142,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 2097144,
+   "passed": null
+  },
+  {
+   "test": "L2",
+   "rule": 184,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 2097144,
+   "passed": null
+  },
+  {
+   "test": "L3",
+   "rule": 184,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 2097144,
+   "passed": null
+  },
+  {
+   "test": "L2",
+   "rule": 226,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 2097144,
+   "passed": null
+  },
+  {
+   "test": "L3",
+   "rule": 226,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 2097144,
+   "passed": null
+  },
+  {
+   "test": "L4",
+   "rule": 184,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 2097144,
+   "passed": null
+  },
+  {
+   "test": "L4",
+   "rule": 226,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 2097144,
+   "passed": null
+  },
+  {
+   "test": "L5",
+   "rule": 43,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 2097144,
+   "passed": null
+  },
+  {
+   "test": "L6",
+   "rule": 43,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 39845880,
+   "passed": null
+  },
+  {
+   "test": "L7",
+   "rule": 43,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 2097144,
+   "passed": null
+  },
+  {
+   "test": "L5",
+   "rule": 142,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 2097144,
+   "passed": null
+  },
+  {
+   "test": "L6",
+   "rule": 142,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 39845880,
+   "passed": null
+  },
+  {
+   "test": "L7",
+   "rule": 142,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 2097144,
+   "passed": null
+  },
+  {
+   "test": "L7c",
+   "rule": 43,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 1376544,
+   "passed": null
+  },
+  {
+   "test": "L7c",
+   "rule": 142,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 1376544,
+   "passed": null
+  },
+  {
+   "test": "L8b",
+   "rule": 43,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 20,
+   "passed": null
+  },
+  {
+   "test": "L8",
+   "rule": 43,
+   "n_min": 4,
+   "n_max": 20,
+   "cases": 20,
+   "passed": null
+  },
+  {
+   "test": "L8b",
+   "rule": 142,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 20,
+   "passed": null
+  },
+  {
+   "test": "L8",
+   "rule": 142,
+   "n_min": 4,
+   "n_max": 20,
+   "cases": 20,
+   "passed": null
+  },
+  {
+   "test": "T2s",
+   "rule": 43,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 651148,
+   "passed": null
+  },
+  {
+   "test": "T2s",
+   "rule": 142,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 651148,
+   "passed": null
+  },
+  {
+   "test": "T1",
+   "rule": 43,
+   "n_min": 4,
+   "n_max": 400,
+   "cases": 80800,
+   "passed": null
+  },
+  {
+   "test": "T1",
+   "rule": 142,
+   "n_min": 4,
+   "n_max": 400,
+   "cases": 80800,
+   "passed": null
+  },
+  {
+   "test": "E",
+   "rule": 43,
+   "n_min": 4,
+   "n_max": 20,
+   "cases": 1889,
+   "passed": null
+  },
+  {
+   "test": "E",
+   "rule": 142,
+   "n_min": 4,
+   "n_max": 20,
+   "cases": 1897,
+   "passed": null
+  },
+  {
+   "test": "L9",
+   "rule": 43,
+   "n_min": 5,
+   "n_max": 19,
+   "cases": 38760,
+   "passed": null
+  },
+  {
+   "test": "L10",
+   "rule": 43,
+   "n_min": 5,
+   "n_max": 19,
+   "cases": 10064,
+   "passed": null
+  },
+  {
+   "test": "L9",
+   "rule": 142,
+   "n_min": 5,
+   "n_max": 19,
+   "cases": 38760,
+   "passed": null
+  },
+  {
+   "test": "L10",
+   "rule": 142,
+   "n_min": 5,
+   "n_max": 19,
+   "cases": 10064,
+   "passed": null
+  },
+  {
+   "test": "L9b",
+   "rule": 43,
+   "n_min": 5,
+   "n_max": 19,
+   "cases": 4773,
+   "passed": null
+  },
+  {
+   "test": "L9b",
+   "rule": 142,
+   "n_min": 5,
+   "n_max": 19,
+   "cases": 4791,
+   "passed": null
+  },
+  {
+   "test": "L10s",
+   "rule": 43,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 497440,
+   "passed": null
+  },
+  {
+   "test": "L10s",
+   "rule": 142,
+   "n_min": 3,
+   "n_max": 20,
+   "cases": 497440,
+   "passed": null
+  },
+  {
+   "test": "L10a",
+   "rule": 43,
+   "n_min": 3,
+   "n_max": 16,
+   "cases": 22952,
+   "passed": null
+  },
+  {
+   "test": "L10b",
+   "rule": 43,
+   "n_min": 3,
+   "n_max": 16,
+   "cases": 119808,
+   "passed": null
+  },
+  {
+   "test": "L10a",
+   "rule": 142,
+   "n_min": 3,
+   "n_max": 16,
+   "cases": 22952,
+   "passed": null
+  },
+  {
+   "test": "L10b",
+   "rule": 142,
+   "n_min": 3,
+   "n_max": 16,
+   "cases": 119808,
+   "passed": null
+  },
+  {
+   "test": "L11",
+   "rule": 43,
+   "n_min": 5,
+   "n_max": 401,
+   "cases": 595,
+   "passed": null
+  },
+  {
+   "test": "L11",
+   "rule": 142,
+   "n_min": 5,
+   "n_max": 401,
+   "cases": 595,
+   "passed": null
+  }
+ ],
+ "session_all_passed": true
+}

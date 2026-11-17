@@ -1,0 +1,92 @@
+[
+ {
+  "rule": 43,
+  "n": 4,
+  "m": 3,
+  "iterations": 3,
+  "V_to_X_max": 1,
+  "failures": [],
+  "seconds": 0.0
+ },
+ {
+  "rule": 142,
+  "n": 4,
+  "m": 5,
+  "iterations": 3,
+  "V_to_X_max": 1,
+  "failures": [],
+  "seconds": 0.0
+ },
+ {
+  "rule": 43,
+  "n": 8,
+  "m": 13,
+  "iterations": 4,
+  "V_to_X_max": 2,
+  "failures": [],
+  "seconds": 0.0
+ },
+ {
+  "rule": 142,
+  "n": 8,
+  "m": 15,
+  "iterations": 4,
+  "V_to_X_max": 2,
+  "failures": [],
+  "seconds": 0.0
+ },
+ {
+  "rule": 43,
+  "n": 12,
+  "m": 61,
+  "iterations": 7,
+  "V_to_X_max": 3,
+  "failures": [],
+  "seconds": 0.0
+ },
+ {
+  "rule": 142,
+  "n": 12,
+  "m": 61,
+  "iterations": 7,
+  "V_to_X_max": 3,
+  "failures": [],
+  "seconds": 0.0
+ },
+ {
+  "rule": 43,
+  "n": 16,
+  "m": 283,
+  "iterations": 8,
+  "V_to_X_max": 4,
+  "failures": [],
+  "seconds": 0.0
+ },
+ {
+  "rule": 142,
+  "n": 16,
+  "m": 285,
+  "iterations": 8,
+  "V_to_X_max": 4,
+  "failures": [],
+  "seconds": 0.0
+ },
+ {
+  "rule": 43,
+  "n": 20,
+  "m": 1529,
+  "iterations": 10,
+  "V_to_X_max": 5,
+  "failures": [],
+  "seconds": 2.0
+ },
+ {
+  "rule": 142,
+  "n": 20,
+  "m": 1531,
+  "iterations": 10,
+  "V_to_X_max": 5,
+  "failures": [],
+  "seconds": 2.5
+ }
+]
