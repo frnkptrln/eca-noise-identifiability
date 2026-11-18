@@ -133,7 +133,7 @@ those of the linearizable rules 210, 180, 166, 154 with the exchange of 0 and 1)
 **Not read.** Both full texts ((1) paywalled; (2) host not reachable).
 
 **Covers (abstract only).** The initial value problem of a class of reversible ECA with periodic boundaries is
-reduced to a linear system over Z_2. **Unknown.** What is said for even N. The statement "even N not treated" is
+reduced to a linear system over a finite commutative ring (the deposited abstract does not confirm "over Z_2"). **Unknown.** What is said for even N. The statement "even N not treated" is
 neither confirmed nor contradicted; the abstract speaks only of reversible automata, and rule 154 is reversible
 only at odd N.
 
@@ -234,7 +234,7 @@ much slower than the dynamics, in which
 
 and does not treat it. That regime is the one of the graph G1 of this repository. Section 3.2 groups states by
 attractor and height and counts mutations between the groups. Appendix A tabulates characteristic equations of
-one-point-mutation matrices for rules 60, 90, 150, 18, 22, 30, 54, 110 at ring sizes up to 13.
+one-point-mutation matrices for rules 60, 90, 150, 18, 22, 30, 54, 110 at small ring sizes (up to 13 for rule 60 only, according to the verification's literature check).
 
 **Does not cover.** Costs, stochastic potential, a small-noise limit, a selection of attractors; rules 154, 43,
 142 (pages read).
@@ -252,9 +252,9 @@ Three facts carry the proofs of `proofs_43_142/PROOF_43_142.md`:
 
 | source | how seen | (a) | conservation | (b) | (c) | finite rings | case 4 \| n |
 |---|---|---|---|---|---|---|---|
-| B1 Fukś, "Dynamics of the cellular automaton Rule 142", Complex Systems 16, 123-138 (footer: 2005), DOI 10.25088/ComplexSystems.16.2.123 | read in full (publisher PDF) | rule 142 -> rule 226 under rule 60: yes (abstract; eq. 34, p. 132; Proposition 6, p. 133), credited there to Boccara (1992). Rule 43: not in the pages | yes: rule 142 conserves the number of blocks 10, for periodic configurations of every length (Section 3) | no (infinite lattice, limits in probability) | no | conservation only | no |
+| B1 Fukś, "Dynamics of the cellular automaton Rule 142", Complex Systems 16, 123-138 (footer: 2005), DOI 10.25088/ComplexSystems.16.2.123 | read in full (publisher PDF) | rule 142 -> rule 226 under rule 60: yes (abstract; eq. 34, p. 132; again as eq. 40, p. 133, inside the proof of Proposition 6, which itself is a statement on preimage counts), credited there to Boccara (printed there as 1992; the volume is dated 1993). Rule 43: not in the pages | yes: rule 142 conserves the number of blocks 10, for periodic configurations of every length (Section 3) | no (infinite lattice, limits in probability) | no | conservation only | no |
 | B2 Fukś, "Remarks on the critical behavior of second order additive invariants in elementary cellular automata", Fundamenta Informaticae 78 (2007) 329-341; arXiv:nlin/0502037 | search excerpts only | both identities, f60 ∘ f43 = f184 ∘ f60 and f60 ∘ f142 = f226 ∘ f60 (Section 7 of the arXiv text; location to be checked) | critical density of the invariant 1/4 for rules 14, 43, 142 (figure caption) | ballistic-annihilation picture of rule 184 | not seen | not seen | not seen |
-| B3 Boccara, "Transformations of one-dimensional cellular automaton rules by translation-invariant local surjective mappings", Physica D 68 (1992) 416-426 | not obtained | per B1: source of the identity for rule 142 | ? | ? | ? | ? | ? |
+| B3 Boccara, "Transformations of one-dimensional cellular automaton rules by translation-invariant local surjective mappings", Physica D 68 (1993) 416-426, DOI 10.1016/0167-2789(93)90134-M (Fukś's reference lists print 1992) | not obtained | per B1: source of the identity for rule 142 | ? | ? | ? | ? | ? |
 | B4 Fukś, "Solution of the density classification problem with two cellular automata rules", Phys. Rev. E 55 (1997) R2081; arXiv:comp-gas/9703001v1 | arXiv version read in full (5 pp.) | no | number of ones (implicit) | yes (arXiv p. 3): on a ring of length L, after floor((L - 2)/2) steps of rule 184 there is no block 00 if the density exceeds 1/2, no block 11 if it is below 1/2, and neither at density 1/2; the underlying proposition is proved in sketch | no | yes | no |
 | B5 Capcarrere, Sipper, Tomassini, Phys. Rev. Lett. 77 (1996) 4969-4971 | not obtained | ? | ? | per B6 (p. 4): rule 184 on a ring of size N reaches its invariant state within N/2 steps | ? | yes (second-hand) | ? |
 | B6 Belitsky and Ferrari, "Invariant measures and convergence properties for cellular automaton 184 and related processes", J. Stat. Phys., DOI 10.1007/s10955-004-8822-4; arXiv:math/9811103v1 | arXiv pp. 1-6 of 18 | no (a related map to ballistic annihilation, Assertion 1.1) | n/a | attributes the N/2 bound on a ring to B5; own results on the infinite line | no | no | no |
@@ -267,8 +267,8 @@ Atlas entries for rules 43 and 142. Fukś, Phys. Rev. E 60 (1999) 197-202 was ob
 
 **What follows for `PROOF_43_142.md`.**
 
-* (a) is known for both rules. For rule 142 it was read (B1, which credits Boccara 1992, not read); for rule 43 it
-  was seen in a search excerpt of B2 only. Lemma 1 of the proof re-derives both identities from the rule tables.
+* (a) is known for both rules. For rule 142 it was read (B1, which credits Boccara 1993, not read); for rule 43 it
+  was seen by the session in a search excerpt of B2 only and was read in B2 on 18 November 2026 (update below). Lemma 1 of the proof re-derives both identities from the rule tables.
 * The conservation law is known for rule 142 (B1, read). The number of blocks 10 is half the number of walls. For
   rule 43 a conserved block-10 count was seen only in excerpts.
 * (b) is known for rule 184 on rings in the form "after floor((L - 2)/2) steps" (B4, read; proof sketched there).
@@ -277,7 +277,10 @@ Atlas entries for rules 43 and 142. Fukś, Phys. Rev. E 60 (1999) 197-202 was ob
   n/2 - 1 of Proposition 2 equals the bound of B4 at L = n.
 * (c) was **not found**: no source seen states the run-length description of the periodic configurations of rules
   142 or 43 on a ring, the uniqueness of the cycle with n/2 walls, or the case 4 | n. B1 treats the density 1/4 of
-  blocks 10 (which corresponds to n/2 walls) on the infinite lattice as a jamming-type transition.
+  blocks 10 (which corresponds to n/2 walls) on the infinite lattice as a jamming-type transition. According to
+  the verification's literature check, B1 also gives a local motion law for the blocks 10 (a block moves by one
+  site or stays, depending on the preceding site) and their expected velocity as a function of density (eq. 59,
+  p. 137): infinite-lattice counterparts of the two families of cycles of Lemma 7, without the ring statement.
 * **Noise selection.** No source was found that states which cycles of rules 43 or 142 are selected by small
   bit-flip noise, on any ring. The only related datum found is the table row of Bagnoli, Baia and Matteuzzi
   (arXiv:2406.15408, already Section 1.2 of `literature_ring_size.md`) for rules 43 and 142 at ring size 17, an odd
@@ -286,6 +289,36 @@ Atlas entries for rules 43 and 142. Fukś, Phys. Rev. E 60 (1999) 197-202 was ob
 
 These are statements about a short search with several key texts unread. They do not show that (c) or the
 selection statement is absent from the literature.
+
+## Update of 18 November 2026 (after the verification)
+
+Written by Claude, the reader outside both sessions, after `VERIFICATION_43_142.md`. Findings B6 and B8 to B10 of
+the verification are applied in the text above (Boccara's paper is dated 1993; location of the identity in B1; the
+motion law of B1; A7 and A2).
+
+**B2 read in full.** Fukś, "Second order additive invariants in elementary cellular automata",
+arXiv:nlin/0502037v1 (17 February 2005), 15 pages, read in full through an arXiv reader that the two sessions
+could not reach. The journal version (Fundamenta Informaticae 78 (2007) 329-341, different title) was not seen and
+not compared.
+
+* Section 7, p. 12, eqs. (28) and (29): f60 ∘ f43 = f184 ∘ f60 and f60 ∘ f142 = f226 ∘ f60, with the words
+  "there exists a local mapping (rule 60) which transforms rule 43 into rule 184, and rule 142 into rule 226";
+  credited to its reference [19], Boccara (printed as 1992).
+* Section 5, p. 7, and Table 1, p. 6: rules 12, 14, 15, 34, 35, 42, 43, 51, 140 and 142 "conserve the number of
+  blocks 10"; the result is taken from Hattori and Takesue (1991, not read). Setting: a lattice of length L with
+  periodic boundary conditions (Section 2).
+* Table 2, p. 10, and Figures 1 and 5: for rules 43 and 142 the fundamental diagram has its singularity at density
+  1/4 of the invariant, i.e. at n/2 walls (simulations on 50000 sites); the space-time patterns at that density
+  show localized structures that move in opposite directions and annihilate upon collision (Figure 5; for rule 184
+  the paper states that the two kinds of defects are equally frequent at the critical point). This is the level of
+  the crystal X of `PROOF_43_142.md`, seen there on a very large lattice.
+* Not in the text: the periodic configurations on a ring of given length, the uniqueness of the cycle at density
+  1/4, any role of 4 | L, noise.
+
+**Consequence for Part B.** Fact (a) and the conservation law are known and were read for both rules (rule 142: B1;
+rules 43 and 142: B2). Fact (b) in the form of Lemmas 3 and 4 and fact (c) remain "not found in the sources
+reached"; Boccara (1993), Hattori and Takesue (1991), Fukś (2007, journal version) and Fukś's 2023 book are still
+unread.
 
 ## Search queries (17 November 2026, web search)
 
@@ -315,7 +348,7 @@ it returned the same excerpts.
 2. A2: both Nobe-Yura texts; what is said for even N.
 3. A3: Hurd's appendix (the blocks for rule 154). A4: the entries of Krawczyk's Table 4. A5: the theorems of Chua
    et al., Part VIII. A6, A7: the pages not read.
-4. B2: the location and wording of the identity for rule 43 (seen as an excerpt). B3 (Boccara 1992) and B5
+4. B2: the location and wording of the identity for rule 43 (seen as an excerpt). B3 (Boccara 1993) and B5
    (Capcarrere et al. 1996) are the apparent primary sources of (a) and of the N/2 bound in (b); both
    attributions are second-hand.
 5. Hattori and Takesue (1991): whether its tables list the block-10 invariant for rules 43 and 142.

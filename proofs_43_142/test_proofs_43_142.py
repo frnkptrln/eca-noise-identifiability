@@ -324,5 +324,6 @@ def test_only_new_files_are_touched():
     if r.returncode != 0 or d.returncode != 0:
         pytest.skip("git not usable here")
     changed = [line[3:] for line in r.stdout.splitlines()] + d.stdout.split()
-    allowed = ("proofs_43_142/", "literature_addendum.md", "PR_DRAFT.md")
+    allowed = ("proofs_43_142/", "literature_addendum.md", "PR_DRAFT.md", "PR_BODY.md", "VERIFICATION_43_142.md",
+               "verify_43_142/")
     assert all(p.startswith(allowed) for p in changed), [p for p in changed if not p.startswith(allowed)]

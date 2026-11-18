@@ -1,5 +1,13 @@
 # Verification of `proofs_43_142/PROOF_43_142.md` (rules 43 and 142)
 
+> **Handling of the findings (18 November 2026, added after the verification; the text below is unchanged).**
+> B1, B2, B3, B5: wording corrected in `proofs_43_142/PROOF_43_142.md`. B4 concerns `report_ring_size.md`
+> (Section 4, proof of Lemma 2: read "some closed class is reachable from every node"); that file belongs to v0.3
+> and is not changed here, the correction is listed for its next revision. B6, B8, B9, B10: corrected in
+> `literature_addendum.md`. B7: the attribution is reworded in Sections 0 and 8 of the proof document; in addition
+> Fukś, arXiv:nlin/0502037v1 was read in full outside the sessions, so the wall map and the conservation law are
+> now read for rule 43 as well (`literature_addendum.md`, update of 18 November 2026).
+
 Branch `verify-43-142` (from `crystal-43-142` at 6725208). New files only: this report and `verify_43_142/`.
 No existing file was changed.
 
