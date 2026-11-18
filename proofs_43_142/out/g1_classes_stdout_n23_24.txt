@@ -1,0 +1,6 @@
+rule 43 n 23: cycles 4180, closed classes [24], prediction holds True, CPU 0.44 s, peak 535 MB
+rule 142 n 23: cycles 4181, closed classes [45], prediction holds True, CPU 0.47 s, peak 538 MB
+rule 43 n 24: cycles 8681, closed classes [1], prediction holds True, CPU 0.97 s, peak 1267 MB
+rule 142 n 24: cycles 8681, closed classes [1], prediction holds True, CPU 0.94 s, peak 1272 MB
+        3.08 real         2.53 user         0.48 sys
+time: sysctl kern.clockrate: Operation not permitted

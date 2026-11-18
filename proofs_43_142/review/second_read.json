@@ -1,0 +1,388 @@
+{
+ "not_checked": [
+  "The scripts and output files under proofs_43_142/ (reading them was excluded by the task). Hence NOT checked: that every number in the text comes from a script output file, and what the tests of Table 1 / Table 4 actually execute (the finding on the status row 'Lemmas 1 to 11 ... each also tested exhaustively' is based on the table wording only).",
+  "Section 7 tables beyond a cross-comparison of the columns I can recompute at n <= 16 (cycles, periodic states, G1 edges, strong components, closed-class sizes, upper-level cycle counts). Nothing at n >= 17 exhaustive; Table 4 parts B, C, D chain statistics and Table 5 (comparison with the study's data files) were not re-derived.",
+  "Section 8 (literature attributions to Fuks / Boccara, 'not found' statements) and literature_addendum.md: not checked. Only the arithmetic fact 'rule 184 has no 00 or no 11 after floor((L-2)/2) steps' was tested at L <= 14 as a bonus.",
+  "Section 9 (file list), PR_DRAFT.md, report Sections 5.1/5.6/5.7.",
+  "The proof of Theorem A (report, Section 4) and of the note's theorem defining k_c: taken as given, as the document declares. I only checked that the document uses their statements correctly, and compared with a direct computation (full V matrix + minimum arborescences) at n = 3..10.",
+  "Exhaustive tests stop at n = 14 for the lemmas (n = 16 for Lemma 8, Theorem 1, Proposition 3, Corollaries 1-2; n = 15 for Lemma 9, Lemma 10 first statement and Theorem 2). Larger n only by single-orbit simulation (Proposition 2 to n = 200, Lemma 11 to n = 61)."
+ ],
+ "findings": [
+  {
+   "location": "Whole document, sections 1-6 (overall verdict)",
+   "severity": "ok-note",
+   "problem": "No statement of sections 1-6 was found false and no proof step was found invalid. Every lemma, proposition, theorem and corollary was tested as worded with own code written from the definitions (48 test groups, about 3.6 million cases, 0 violations), and each 'so/hence/therefore' was followed by hand for general n. The n-ranges are right: Lemmas 1-7 hold from n = 3 (Lemma 3 including n = 3, where cells i-1 and i+2 coincide, and n = 4); Lemma 8, Theorem 1, Propositions 2, 3 and Corollary 2 hold at n = 4 (the 4-tuple of wall positions in Proposition 2 fills the whole ring, t* = 0); section 6 needs exactly n >= 5 (w- >= 2 is used in Lemma 10(a) and in the definition of x0 in Lemma 11) and the document says so. The findings below are one small gap of exposition, one imprecise remark, and wording/tagging points.",
+   "suggested_fix": "None required for correctness."
+  },
+  {
+   "location": "Section 4, proof of Theorem 1 part 1, last sentence: 'So no single flip of a state of X leads to another cycle: no edge of G1 leaves X, and every path from X to another cycle has resistance at least 2.' (also behind 'r(X) >= 2' in Theorem 1(1) and row T1 of section 0)",
+   "severity": "gap",
+   "problem": "Minor. The step from 'no single flip leaves X' to 'every path has resistance >= 2' (i.e. r(X) >= 2) uses that a path of total resistance 1 that starts on a cycle is: zero-cost steps (which stay on the cycle), exactly one step F(u)+e_j with F(u) on the cycle, then zero-cost steps along the orbit. The document does not say this; it is only a parenthesis in report_ring_size.md Section 3 ('r(C) >= 2 iff no single flip leaves C', 'a zero-resistance step from a cycle state stays on the cycle'), and it is not among the two things declared as 'used as given' (Theorem A, definition of k_c). The same identity (G1 edge as defined in section 1 by flips <=> V(C,C') = 1 as defined in the report) is also what allows Theorem A to be applied to the document's G1. The statement survives: own computation of the full V matrix gives V = 1 exactly on the document's G1 edges for both rules at n = 3..10, and V(X, C) >= 2 at n = 4, 8.",
+   "suggested_fix": "Add one sentence in section 1 after the definition of G1, tagged [proved]: 'This is the G1 of the report (edge iff V(C,C') = 1): steps of resistance 0 follow F and stay on a cycle, so a path of total resistance 1 from C consists of steps along C, one step to F(u)+e_j = x+e_j with x in C, and steps along the orbit of x+e_j; a periodic state on that orbit lies on the cycle where the orbit ends. Hence also r(C) >= 2 iff no single flip of a state of C ends on another cycle.' Then cite it in the proof of Theorem 1(1)."
+  },
+  {
+   "location": "Section 5, Corollary 2: 'The states of X contain exactly the codes 001, 011, 100, 110 (proof of Lemma 8), so by Corollary 1 k_c = 0 for c in {1, 3, 4, 6}'",
+   "severity": "gap",
+   "problem": "Very minor. The proof of Lemma 8 says the states of X 'contain only the codes 001, 011, 110, 100'. For k_c = 0 one needs that each of the four codes does occur; 'only' is what gives k_c >= 1 for the other four. The claim is true (x0 has 100 at cell 0, 001 at cell 1, 011 at cell 2, 110 at cell 3; tested at n = 4, 8, 12, 16).",
+   "suggested_fix": "Write: '... contain only the codes 001, 011, 100, 110 (proof of Lemma 8) and each of them occurs (in x0 at the cells 1, 2, 0, 3)'."
+  },
+  {
+   "location": "Section 5, Corollary 2: 'R(C -> x) = 0 iff x is in C. Hence k_c = 0 iff a state of a cycle of S contains code c.' (question of the task)",
+   "severity": "ok-note",
+   "problem": "The claim IS justified by the note's definition (note_v0.2.tex line 196: k_c = min_C[gamma(C) + R(C -> D_c)] - min gamma, D_c = states containing code c; same line: 'R(C -> x) = 0 iff x in C'). The 'Hence' silently uses three further facts: gamma(C) - gamma_min >= 0, R >= 0 (both integers), and R(C -> D_c) = min over x in D_c of R(C -> x). With them k_c = 0 iff some C has gamma(C) = gamma_min and R(C -> D_c) = 0 iff some selected cycle has a state in D_c. Also correct: the upper bound k_c <= gamma(X) + R(X -> D_c) - gamma_min = R(X -> D_c) <= r(sigma x0, y) = H(F sigma x0, y) = H(x0, x0 + e_j) = 1. Checked independently with the full V matrix and minimum spanning arborescences (networkx) at n = 4 and 8, both rules: S = {X}, gamma_min = m - 1, k = (1,0,1,0,0,1,0,1); and R(X -> D_c) = (1,0,1,0,0,1,0,1) at n = 4, 8, 12, 16.",
+   "suggested_fix": "Optional: expand 'Hence' to 'Both terms gamma(C) - gamma_min and R(C -> D_c) = min over x in D_c of R(C -> x) are non-negative integers, hence ...'."
+  },
+  {
+   "location": "Section 4, Remark (the domain of the report): 'In the slow case the flip creates one interior cell and one isolated cell next to each other.'",
+   "severity": "wording",
+   "problem": "Imprecise. The two cells are not adjacent: they are the two neighbours of the flipped cell, i.e. two cells apart (right cell j flipped: cell j-1 becomes isolated, cell j+1 interior; example n = 12, x0, j = 1: 011100110011 has the isolated cell 0 and the interior cell 2). What is adjacent are the two blocks 11 and 00 of the wall word (P(e) = {j-2}, Q(e) = {j}). The same pair is created in the fast case too; the difference between the cases is only the direction in which the rule moves them (towards each other: annihilation in one step; apart: n/2 - 2 steps around the ring). As written, 'in the slow case the flip creates' suggests that the creation is special to the slow case.",
+   "suggested_fix": "Write: 'Every flip of a state of X makes one neighbour of the flipped cell isolated and the other interior (in the wall word: a block 11 next to a block 00). In the fast case the rule moves the two blocks towards each other and they annihilate in one step; in the slow case it moves them apart at one cell per step each, and they annihilate when they meet on the far side of the ring.'"
+  },
+  {
+   "location": "Section 0, row 'Lemmas 1 to 11': 'proved; each also tested exhaustively at small n ... Table 1'",
+   "severity": "wording",
+   "problem": "Slightly stronger than what Table 1 lists (judged from the table text only; the scripts were not read). Not visible as an exhaustive test in Table 1: Lemma 7(c); Lemma 8's last sentence (alternating wall word forces 4 | n); Lemma 9(a), (c), (d) (row L9 words only part (b); (a)/(d) are partly covered by row T2s); Lemma 10 as stated - row L10 tests a different, derived statement ('the cycles of one level are connected by slides once x is identified with its complement'), the first statement of Lemma 10 and the procedure (a) are not listed, and procedure (b) is executed in Table 4 part E for cycles/random states, which is execution on samples, not an exhaustive test over all states and all cuts. The tag 'proved' itself is fine; the lemmas pass my own exhaustive tests (Lemma 7(c): 445192 cases; Lemma 9: 30816; Lemma 10 first statement: 59424 slide pairs; 10(a): 7504 (state, cut) pairs; 10(b): 58836 runs; all 0 violations), but those numbers are mine and by the house rule cannot be quoted in the document.",
+   "suggested_fix": "Either add the missing tests to check_lemmas.py (Lemma 7(c) for all periodic u and all r; Lemma 9(a),(c),(d); Lemma 10 first statement for all slide pairs; procedures 10(a) and 10(b) for every admissible state and every cut) and regenerate Table 1, or weaken the cell to: 'proved; Lemmas 1-9 and 11 tested exhaustively at small n (Table 1); the procedures of Lemma 10 executed in Table 4, parts D and E; Lemma 7(c) not tested separately'."
+  },
+  {
+   "location": "Sections 1, 3, 4, 6: notation",
+   "severity": "wording",
+   "problem": "Several symbols carry two or three meanings, which makes the proofs harder to check than necessary. (i) C is the complement map (section 1) and also a generic cycle ('Let C != X be a cycle', 'V(C, X)', 'w(C)'); in section 6 'C Z', 'C x0', 'D', 'D+' appear side by side. (ii) Z(d), Z'(d) are the sets of occurrences of 0011 / 1100 in Lemma 3, while in Lemma 11 Z is the cycle of x0 and in Theorem 2, Step 1, Z' is 'some element of {Z, C Z}'. (iii) x0 is the crystal state (0011)^(n/4) in sections 1-5 and the state 0^(e+2)(1100)^((w-2)/2)11 in section 6. (iv) e is delta(y) in Proposition 2, n - 2w- in section 6, and e_j is the unit vector. (v) T is a period in Lemmas 4, 7 and the return time in Proposition 2. (vi) Labels: 'T2' in section 0 means Theorem 1(2), not Theorem 2, and Table 1 has test ids 'T1', 'T2s'; Theorem/Proposition/Corollary/Lemma each have an item number 2; Lemma 7 has an item (c) but no (a), (b).",
+   "suggested_fix": "Rename without changing content, e.g. kappa (or an overline) for the complement; A(d), A'(d) for the annihilation sets of Lemma 3; z0 (or x_low) for the state of Lemma 11 and Z_low, Z_up for the reference cycles; eps = n - 2w-; 'S1, S2, S3' instead of 'T1, T2, T3' for the three sub-statements of the task; number Lemma 7 as (a) characterisation, (b) formulas, (c) rotations."
+  },
+  {
+   "location": "Section 1 (facts (R), (D1)-(D3)), section 3 ('Description of the cycles (for the record)'), section 4 ('Remark (the domain of the report)'), section 6 ('Remarks', third bullet); header line 5-7 (tag list)",
+   "severity": "wording",
+   "problem": "House rule: a tag on every statement. These passages make statements without a tag. Most are proved in a parenthesis or follow from tagged lemmas, but the 'Description of the cycles' contains claims that are nowhere derived in the text: 'wall count <= n/2' for the family without isolated cell and '>= n/2' for the family without interior cell (one line from Lemma 3(c): P empty gives 2w - n = -|Q| <= 0), 'the two families meet in the states all of whose runs have length 2', and 'Transients are the annihilation of patterns 0011 / 1100', which is an interpretation of Lemma 3, not a precise statement. All precise claims of that paragraph pass my tests (n = 3..14). Separately, the tag '[proved, given Theorem A]' is not one of the four house tags; it is more cautious than '[proved]' (Theorem A is tagged [proved] in the report), so it claims nothing too strong, but it is a new tag.",
+   "suggested_fix": "Tag (R) and (D1)-(D3) as [proved] (the parentheses are the proofs). For the description paragraph either add '[proved]' with the one-line derivations (wall-count bounds from Lemma 3(c); meeting set = P and Q both empty = Lemma 8) and mark the sentence on transients as '[remark, not used]', or mark the whole paragraph '[remark, not used in any proof]'. Do the same for the domain remark. State once in the header that '[proved, given Theorem A]' is a deliberate refinement of the house tag [proved]."
+  },
+  {
+   "location": "Section 6, Lemma 10 (statement and proof of (a), (b)); Lemma 9(d) 'As in Theorem 1(2)'",
+   "severity": "wording",
+   "problem": "(i) Lemma 10 does not say for which n it is claimed; by the section header it is n >= 5, 4 not dividing n, while the remark at the end of the section says the slide lemma does not use divisibility. It indeed holds for all n >= 3 where the hypotheses can be met (tested for all n = 3..14 including 4 | n). (ii) In (a) the hypothesis w < n/2 is never used (it follows from 'no isolated cell' except for the states of X, where the procedure does nothing). (iii) In (b) the numbering R_1, ..., R_w is used without repeating 'cut the ring at a run boundary' from (a); the proof relies on the cut being fixed (only pairs (r_k, r_(k+1)) with k < w are used, never (r_w, r_1)), and on the unstated fact that a word over {1, 2} without an adjacent pair (1, 2) is of the form 2...2 1...1. (iv) Lemma 9(d) refers to the argument of Theorem 1(2), which is written under the hypothesis 4 | n and starts with 'By Lemma 8, w != n/2'; only its middle part (w < n/2 => Q non-empty by Lemma 3(c) => interior cell => edge to a cycle with w + 2, and the mirror case) is meant, and that part does not use 4 | n. None of this affects correctness: procedure (a) terminates and gives (n-2w+2, 2, ..., 2) for every admissible state and every cut; procedure (b) terminates for every choice of k (first, last, random tested), each step is a slide and lowers the inversion count by exactly one.",
+   "suggested_fix": "State in Lemma 10 'for every n >= 3'; drop or explain 'w < n/2' in (a); begin the proof of (b) with 'Number the runs as in (a), with a fixed cut' and end it with 'a sequence of ones and twos without an adjacent pair (1, 2) is (2, ..., 2, 1, ..., 1)'. In Lemma 9(d) spell the step out instead of 'As in Theorem 1(2)': 'a periodic state with w < w- < n/2 walls has an interior cell (Lemma 3(c)); flipping it gives w + 2 walls (Lemma 6), and the orbit ends on a cycle with w + 2 walls (Lemma 5)'."
+  },
+  {
+   "location": "Section 6, proof of Theorem 2, Steps 1-3 (question of the task: is K one strongly connected component and the only closed class?)",
+   "severity": "ok-note",
+   "problem": "Yes. Step 1: Lemma 9(a) + Lemma 10(a) (needs 2 <= w- < n/2, true for n >= 5) bring any state of a lower-level cycle D by slides to a state with runs (e+2, 2, ..., 2), which is sigma^r x0 or C sigma^r x0 = sigma^r(C x0); Lemma 7(c) applied to u = x0 or u = C x0 puts it on Z or C Z; by the first statement of Lemma 10 a chain of slides gives paths in both directions; Lemma 11 joins Z and C Z in both directions. Step 2 is the same with Lemma 10(b) (needs n/2 < w+ < n, true since w+ <= n - 1), and the argument 'Z -> D1 -> Z+ or C Z+; apply C; Z -> C Z' correctly gives paths from Z to both reference cycles; Lemma 9(c) gives the way back. Step 3: K inside one component K0, no edge leaves K (Lemma 9(b)), so K0 = K is closed; Lemma 9(d) gives a path from every cycle into K, and a closed class cannot be left, so it meets K and equals K. Nothing unproved is used except the facts listed in the document. Independent check: own computation of G1 and its strong components for both rules at n = 5, 6, 7, 9, 10, 11, 13, 14, 15 gives exactly one closed class, equal to K, with K strongly connected and reachable from every cycle; the numbers of cycles, |K| and the numbers of strong components agree with Table 3.",
+   "suggested_fix": "None."
+  },
+  {
+   "location": "Section 2 / section 4, Proposition 2: 'T = max(1, n/2 - 1)'; section 0 row 'T1, timing'",
+   "severity": "ok-note",
+   "problem": "For n >= 4 with 4 | n one has n/2 - 1 >= 1, so max(1, n/2 - 1) = n/2 - 1 and the max is redundant; section 0 already writes 'exactly n/2 - 1'. At n = 4 both halves of the flips have T = 1, so 'half ... the other half' has no content there. The statement is correct as worded (6752 flips, n = 4..64 step 4, 100, 200, 0 violations; the sets P(e), Q(e) and the positions {j-2-t}, {j+t} resp. {j+t}, {j-2-t} of the proof were checked for n = 4..40). Index conventions are right: left cell = x_(j-1) != x_j = x_(j+1); rule 43 heals a flipped left cell in one step, rule 142 a flipped right cell.",
+   "suggested_fix": "Optional: write 'T = n/2 - 1 (which is 1 for n = 4)' in both places."
+  },
+  {
+   "location": "Section 6, first remark and section 0 row 'n = 3'",
+   "severity": "ok-note",
+   "problem": "Consistent with own computation: at n = 3 both rules have 3 cycles, G1 is strongly connected, the single closed class consists of all cycles (all have 0 or 2 walls). The remark's reason why the proof fails at n = 3 is right (w- = 0, so Lemma 10(a) and the state x0 of Lemma 11 do not exist). Beyond what the document claims: the direct computation with the note's definition gives k_c = 0 for all c and k* = 0 at n = 3 for both rules (S = all three cycles, gamma_min = 2), so Corollary 4 would also hold at n = 3 as a [computed for n = 3] statement.",
+   "suggested_fix": "None required. If wanted, add the n = 3 values of k_c to the script output and mention them as [computed for n = 3]."
+  },
+  {
+   "location": "Section 7, Tables 2, 3 and 4 (part E), read only for cross-comparison",
+   "severity": "ok-note",
+   "problem": "Own numbers agree with the document wherever they overlap: Table 2 at n = 4, 8, 12, 16 (cycles, periodic states, G1 edges, strong components, closed class {X}); Table 3 at n = 3..15 (cycles, |K|, strong components, closed class size); number of upper-level cycles of Table 4 part E at n = 5..15; the sums quoted under the tables (1889 and 1897 cycles in row E of Table 1, 3786 in part A, 4276 in part D, 136 in part E) are consistent with the rows. The sentence of section 8 'n = 4: three cycles for rule 43, five for rule 142' is confirmed.",
+   "suggested_fix": "None."
+  },
+  {
+   "location": "Section 0, lines 26-28 and section 8 'Who checked the proofs': 'the proofs have had no reader outside this session'",
+   "severity": "ok-note",
+   "problem": "After this reading the sentence should be kept exact rather than strengthened: the proofs have now had one adversarial read by a separate reader process with independently written test code, which is still inside the same working session and is not a human reader or peer review.",
+   "suggested_fix": "If the sentence is updated, write: 'one independent adversarial reading with separate test code inside this session (findings and test counts in <file written by a script or copied verbatim>); no human reader, no peer review'. Otherwise leave it unchanged."
+  }
+ ],
+ "tests": [
+  {
+   "statement": "Sec.1: rule tables, form (R), descriptions of rules 184/226, g226(a,b,c)=g184(c,b,a)",
+   "n_range": "-",
+   "cases": 56,
+   "violations": 0
+  },
+  {
+   "statement": "Sec.1 (D1) delta(x)=delta(y) iff y in {x, Cx}",
+   "n_range": "3..14",
+   "cases": 32760,
+   "violations": 0
+  },
+  {
+   "statement": "Sec.1 (D2) w(x) even",
+   "n_range": "3..14",
+   "cases": 32760,
+   "violations": 0
+  },
+  {
+   "statement": "Sec.1 (D3) delta(x+e_j)=delta(x)+e_(j-1)+e_j",
+   "n_range": "3..14",
+   "cases": 425976,
+   "violations": 0
+  },
+  {
+   "statement": "Sec.1 cell j isolated iff j-1 in P(delta x); interior iff j-1 in Q(delta x)",
+   "n_range": "3..14",
+   "cases": 851952,
+   "violations": 0
+  },
+  {
+   "statement": "Sec.1 G226 = rho G184 rho with (rho d)_i = d_(-i)",
+   "n_range": "3..14",
+   "cases": 32760,
+   "violations": 0
+  },
+  {
+   "statement": "Sec.1 runs: isolated = run of length 1; interior cell iff a run >= 3; constant: all interior; #runs = w",
+   "n_range": "3..12",
+   "cases": 8184,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 1, rule 142: cell formula (F x)_i = x_i + d_i(1-d_(i-1)) and delta(Fx) = G226(delta x), all states",
+   "n_range": "3..14",
+   "cases": 32760,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 1, rule 43: cell formula (F x)_i = x_i + 1 + d_(i-1)(1-d_i) and delta(Fx) = G184(delta x), all states",
+   "n_range": "3..14",
+   "cases": 32760,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 2 (rules 184 and 226): |G d| = |d| (all words)",
+   "n_range": "3..14",
+   "cases": 65520,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 3 (rules 184 and 226): equivalences for P(d'), Q(d'); Z = occurrences of pattern",
+   "n_range": "3..14",
+   "cases": 65520,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 3 (rules 184 and 226): |P'|=|P|-|Z|, |Q'|=|Q|-|Z|",
+   "n_range": "3..14",
+   "cases": 65520,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 3 (rules 184 and 226): Z empty => P, Q translated as stated",
+   "n_range": "3..14",
+   "cases": 65520,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 3(c): |P|-|Q| = 2|d|-n, all words",
+   "n_range": "3..14",
+   "cases": 32760,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 4 (rules 184 and 226): periodic iff P empty or Q empty",
+   "n_range": "3..14",
+   "cases": 65520,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 4 (rules 184 and 226): shift directions (P empty / Q empty)",
+   "n_range": "3..14",
+   "cases": 65520,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 5 (rules 43 and 142): FC=CF, w(Fx)=w(x), w even",
+   "n_range": "3..14",
+   "cases": 65520,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 6: w(x+e_j)-w(x) = +2 / -2 / 0 for interior / isolated / other cell, all (state, cell) pairs",
+   "n_range": "3..14",
+   "cases": 425976,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 7 (rules 43 and 142): periodic iff no isolated cell or no interior cell",
+   "n_range": "3..14",
+   "cases": 65520,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 7 (rules 43 and 142): F = C sigma / sigma^-1 on the two families as stated",
+   "n_range": "3..14",
+   "cases": 65520,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 7 (rules 43 and 142): both properties preserved by F, sigma, C",
+   "n_range": "3..14",
+   "cases": 393120,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 7(c) (rules 43 and 142): sigma^r u on cycle of u or of Cu, all periodic u, r=-2n..2n",
+   "n_range": "3..14",
+   "cases": 445192,
+   "violations": 0
+  },
+  {
+   "statement": "Sec.3 description of cycles (rules 43 and 142): w<=n/2 / w>=n/2, families meet in all-runs-2 states (n<=12), F^(2n)=id on periodic states",
+   "n_range": "3..14",
+   "cases": 8776,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 8 (rules 43 and 142): 4|n: periodic states with w=n/2 are exactly X, one 4-cycle, F=sigma^-1; alternating wall word only for 4|n",
+   "n_range": "3..16",
+   "cases": 28,
+   "violations": 0
+  },
+  {
+   "statement": "Theorem 1(1) (rules 43 and 142): every flip of every state of X returns to X; no G1 edge leaves X",
+   "n_range": "4, 8, 12, 16",
+   "cases": 320,
+   "violations": 0
+  },
+  {
+   "statement": "Theorem 1(2) (rules 43 and 142): every C != X has an edge towards n/2 (w +-2) and G1 distance to X = |w-n/2|/2",
+   "n_range": "4, 8, 12, 16",
+   "cases": 718,
+   "violations": 0
+  },
+  {
+   "statement": "Theorem 1(2) proof step (rules 43 and 142): interior/isolated cell exists and each such flip ends on w+2 / w-2",
+   "n_range": "4, 8, 12, 16",
+   "cases": 70752,
+   "violations": 0
+  },
+  {
+   "statement": "Theorem 1 consequence (rules 43 and 142): closed classes of G1 = [{X}]",
+   "n_range": "4, 8, 12, 16",
+   "cases": 8,
+   "violations": 0
+  },
+  {
+   "statement": "Proposition 3 (rules 43 and 142): V(C,X)=|w(C)-n/2|/2 for every cycle (shortest paths over all states); max n/4 exactly at w in {0,n}",
+   "n_range": "4, 8, 12, 16",
+   "cases": 726,
+   "violations": 0
+  },
+  {
+   "statement": "Corollary 1 (rules 43 and 142): cycles with an in-tree of weight m-1 (reached by all in G1) = [X] => S={X}, gamma_min=m-1",
+   "n_range": "4, 8, 12, 16",
+   "cases": 8,
+   "violations": 0
+  },
+  {
+   "statement": "Corollary 2 (rules 43 and 142): codes of X = {1,3,4,6}; R(X->D_c) = (1,0,1,0,0,1,0,1); explicit y, y' and F sigma(x0)=x0",
+   "n_range": "4, 8, 12, 16",
+   "cases": 104,
+   "violations": 0
+  },
+  {
+   "statement": "Proposition 2 (rules 43 and 142): T=1 / max(1,n/2-1) by left/right cell exactly as worded",
+   "n_range": "4..64 step 4, 100, 200",
+   "cases": 6752,
+   "violations": 0
+  },
+  {
+   "statement": "Corollaries 1, 2 (rules 43 and 142) via full V matrix and minimum arborescences (note's definition of k_c): S={X}, gamma_min=m-1, k=(1,0,1,0,0,1,0,1), k*=1",
+   "n_range": "4, 8",
+   "cases": 44,
+   "violations": 0
+  },
+  {
+   "statement": "Sec.1 Levels formulas; Sec.6: 2 <= w- < n/2 < w+ <= n-1 (n>=5), e = n-2w- = n mod 4",
+   "n_range": "3..400, 4 not | n",
+   "cases": 298,
+   "violations": 0
+  },
+  {
+   "statement": "Theorem 2 / remark n=3 (rules 43 and 142): K = cycles with w- or w+ walls is one SCC, closed, the only closed class; every cycle reaches K",
+   "n_range": "3",
+   "cases": 6,
+   "violations": 0
+  },
+  {
+   "statement": "Theorem 2 (rules 43 and 142): K = cycles with w- or w+ walls is one SCC, closed, the only closed class; every cycle reaches K",
+   "n_range": "5, 6, 7, 9, 10, 11, 13, 14, 15",
+   "cases": 848,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 9(a)-(d) (rules 43 and 142): all periodic states of the two levels, all flips; all cycles",
+   "n_range": "5, 6, 7, 9, 10, 11, 13, 14, 15",
+   "cases": 30816,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 10 (first statement) (rules 43 and 142): cycles of a slide pair equal or joined by G1 edges both ways",
+   "n_range": "5, 6, 7, 9, 10, 11, 13, 14, 15",
+   "cases": 59424,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 10(a) procedure exactly as worded (all states with no isolated cell, 2<=w<n/2; every cut at a run boundary): each flip is a slide, terminates, final lengths (n-2w+2,2,...,2)",
+   "n_range": "3..14 (non-vacuous from n=5; all n incl. 4|n)",
+   "cases": 7504,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 10(b) procedure as worded (all states with no interior cell, n/2<w<n; every cut; 3 choices of k): each flip is a slide, inversion count -1, final (2..2,1..1)",
+   "n_range": "3..14 (all n incl. 4|n)",
+   "cases": 58836,
+   "violations": 0
+  },
+  {
+   "statement": "Lemma 11 (rules 43 and 142): x0, y_s (runs, slides), y_e = 00 1^(e+2) (0011)^.. = sigma^2 C x0, cycle membership via F^2; codes of x0, Cx0; x1 well defined",
+   "n_range": "5..61, 4 not | n",
+   "cases": 170,
+   "violations": 0
+  },
+  {
+   "statement": "Theorem 2 Steps 1-2 (rules 43 and 142): rotations/complements of x0 (x1) lie on Z or CZ (Z+ or CZ+); Z<->CZ; every level cycle <-> Z",
+   "n_range": "5..14, 4 not | n",
+   "cases": 732,
+   "violations": 0
+  },
+  {
+   "statement": "Corollary 3 (rules 43 and 142) via full V matrix and minimum arborescences: S=K, gamma_min=m-1, all 8 codes on K, k_c=0, k*=0",
+   "n_range": "5, 6, 7, 9, 10",
+   "cases": 110,
+   "violations": 0
+  },
+  {
+   "statement": "Proposition 2 proof: P(e), Q(e) for left/right cell; positions of the pairs for t <= t* = n/2-2 and annihilation at t*+1 (both rules)",
+   "n_range": "4..40 step 4",
+   "cases": 880,
+   "violations": 0
+  },
+  {
+   "statement": "Sec.1 G1 edge as defined in the document iff V(C,C') = 1 (report, Section 3); assert inside full V computation, both rules",
+   "n_range": "3,4,5,6,7,8,9,10",
+   "cases": 16,
+   "violations": 0
+  },
+  {
+   "statement": "Sec.8 (bonus, outside the required scope; fact quoted from the literature): rule 184 word has no block 00 or no block 11 after floor((L-2)/2) steps, all words",
+   "n_range": "3..14",
+   "cases": 32760,
+   "violations": 0
+  },
+  {
+   "statement": "Cross-check of Table 2 (cycles, periodic states, G1 edges, SCCs), Table 3 (cycles, |K|, SCCs, closed class) and Table 4E (upper-level cycles) against own computation",
+   "n_range": "3..16",
+   "cases": 46,
+   "violations": 0
+  },
+  {
+   "statement": "Negative controls of the test harness (wrong wall rule for rule 43; wrong index in Lemma 1; wrong translation direction in Lemma 3): violations ARE expected and were found (510, 438, 438 of 512 at n=9); reported as 0 = harness behaved as intended",
+   "n_range": "9",
+   "cases": 3,
+   "violations": 0
+  }
+ ],
+ "cpu_seconds": 7.52,
+ "overall": "No error found. Sections 1-6 were read line by line and every lemma (1-11), Theorem 1, Propositions 2-3, Theorem 2 and Corollaries 1-4 were tested as worded with independently written code (single process): 48 test groups, about 3.6 million cases, 0 violations, including the edge cases n = 3, 4, 5, 6, 7, constant states, states in both families, the index conventions, Lemma 3 at n = 3 and 4, Lemma 7(c), the procedures of Lemma 10 for every admissible state and every cut, Lemma 11 up to n = 61, least resistances by shortest-path search at n = 4, 8, 12, 16, and k_c by full V matrices with minimum arborescences at n = 3..10. The logic of each proof holds for all n in the stated ranges; the proof of Theorem 2 does show that K is one strongly connected component and the only closed class; Corollary 2's bound k_c <= 1 and the criterion 'k_c = 0 iff a selected cycle carries code c' are correct with the note's definition. The status table claims nothing stronger than what is proved, with one exception of wording: 'each [lemma] also tested exhaustively' is more than Table 1 lists for Lemmas 7(c), 9 and 10. Two small gaps of exposition (the identity 'G1 edge by flips = V equal to 1 / r >= 2 iff no single flip leaves' is used but only stated in the report; 'exactly the codes' cites a proof of 'only'), one imprecise remark ('next to each other'), and notation/tagging points. Not checked: the scripts and output files (excluded), sections 7-9 beyond a cross-comparison of counts, the literature statements, and the proof of Theorem A."
+}

@@ -1,0 +1,117 @@
+{'part': 'A', 'rule': 43, 'n': 4, 'starts': 3, 'all_end_on_target': True, 'longest': 1, 'mean': 0.67, 'zero_length': 1, 'note': 'every cycle; two choices of the flipped cell'}
+{'part': 'A', 'rule': 43, 'n': 8, 'starts': 13, 'all_end_on_target': True, 'longest': 2, 'mean': 1.08, 'zero_length': 1, 'note': 'every cycle; two choices of the flipped cell'}
+{'part': 'A', 'rule': 43, 'n': 12, 'starts': 61, 'all_end_on_target': True, 'longest': 3, 'mean': 1.34, 'zero_length': 1, 'note': 'every cycle; two choices of the flipped cell'}
+{'part': 'A', 'rule': 43, 'n': 16, 'starts': 283, 'all_end_on_target': True, 'longest': 4, 'mean': 1.8, 'zero_length': 1, 'note': 'every cycle; two choices of the flipped cell'}
+{'part': 'A', 'rule': 43, 'n': 20, 'starts': 1529, 'all_end_on_target': True, 'longest': 5, 'mean': 2.24, 'zero_length': 1, 'note': 'every cycle; two choices of the flipped cell'}
+{'part': 'A', 'rule': 142, 'n': 4, 'starts': 5, 'all_end_on_target': True, 'longest': 1, 'mean': 0.8, 'zero_length': 1, 'note': 'every cycle; two choices of the flipped cell'}
+{'part': 'A', 'rule': 142, 'n': 8, 'starts': 15, 'all_end_on_target': True, 'longest': 2, 'mean': 1.2, 'zero_length': 1, 'note': 'every cycle; two choices of the flipped cell'}
+{'part': 'A', 'rule': 142, 'n': 12, 'starts': 61, 'all_end_on_target': True, 'longest': 3, 'mean': 1.41, 'zero_length': 1, 'note': 'every cycle; two choices of the flipped cell'}
+{'part': 'A', 'rule': 142, 'n': 16, 'starts': 285, 'all_end_on_target': True, 'longest': 4, 'mean': 1.82, 'zero_length': 1, 'note': 'every cycle; two choices of the flipped cell'}
+{'part': 'A', 'rule': 142, 'n': 20, 'starts': 1531, 'all_end_on_target': True, 'longest': 5, 'mean': 2.24, 'zero_length': 1, 'note': 'every cycle; two choices of the flipped cell'}
+{'part': 'B', 'rule': 43, 'n': 24, 'starts': 223, 'distinct_cycles': 122, 'all_end_on_target': True, 'longest': 6, 'mean': 1.29, 'zero_length': 64, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 43, 'n': 28, 'starts': 223, 'distinct_cycles': 133, 'all_end_on_target': True, 'longest': 7, 'mean': 1.38, 'zero_length': 55, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 43, 'n': 32, 'starts': 223, 'distinct_cycles': 155, 'all_end_on_target': True, 'longest': 8, 'mean': 1.63, 'zero_length': 50, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 43, 'n': 48, 'starts': 223, 'distinct_cycles': 156, 'all_end_on_target': True, 'longest': 12, 'mean': 2.02, 'zero_length': 56, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 43, 'n': 64, 'starts': 223, 'distinct_cycles': 172, 'all_end_on_target': True, 'longest': 16, 'mean': 2.72, 'zero_length': 34, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 43, 'n': 100, 'starts': 223, 'distinct_cycles': 182, 'all_end_on_target': True, 'longest': 25, 'mean': 3.66, 'zero_length': 32, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 43, 'n': 200, 'starts': 223, 'distinct_cycles': 195, 'all_end_on_target': True, 'longest': 50, 'mean': 6.34, 'zero_length': 24, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 43, 'n': 400, 'starts': 223, 'distinct_cycles': 211, 'all_end_on_target': True, 'longest': 100, 'mean': 11.26, 'zero_length': 12, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 142, 'n': 24, 'starts': 223, 'distinct_cycles': 131, 'all_end_on_target': True, 'longest': 6, 'mean': 1.33, 'zero_length': 66, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 142, 'n': 28, 'starts': 223, 'distinct_cycles': 127, 'all_end_on_target': True, 'longest': 7, 'mean': 1.38, 'zero_length': 61, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 142, 'n': 32, 'starts': 223, 'distinct_cycles': 140, 'all_end_on_target': True, 'longest': 8, 'mean': 1.53, 'zero_length': 50, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 142, 'n': 48, 'starts': 223, 'distinct_cycles': 165, 'all_end_on_target': True, 'longest': 12, 'mean': 2.14, 'zero_length': 47, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 142, 'n': 64, 'starts': 223, 'distinct_cycles': 181, 'all_end_on_target': True, 'longest': 16, 'mean': 2.67, 'zero_length': 34, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 142, 'n': 100, 'starts': 223, 'distinct_cycles': 184, 'all_end_on_target': True, 'longest': 25, 'mean': 3.87, 'zero_length': 28, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 142, 'n': 200, 'starts': 223, 'distinct_cycles': 194, 'all_end_on_target': True, 'longest': 50, 'mean': 6.32, 'zero_length': 24, 'note': '200 random initial states and 23 structured states'}
+{'part': 'B', 'rule': 142, 'n': 400, 'starts': 223, 'distinct_cycles': 207, 'all_end_on_target': True, 'longest': 100, 'mean': 11.39, 'zero_length': 16, 'note': '200 random initial states and 23 structured states'}
+{'part': 'C', 'rule': 43, 'n': 24, 'starts': 200, 'all_end_on_target': True, 'longest': 3, 'mean': 0.9, 'zero_length': 64, 'stored_equal': 200, 'stored_longer': 0, 'stored_shorter': 0, 'stored_max': 3, 'note': 'cycles of the stored initial states x0'}
+{'part': 'C', 'rule': 43, 'n': 28, 'starts': 200, 'all_end_on_target': True, 'longest': 4, 'mean': 0.97, 'zero_length': 63, 'stored_equal': 200, 'stored_longer': 0, 'stored_shorter': 0, 'stored_max': 4, 'note': 'cycles of the stored initial states x0'}
+{'part': 'C', 'rule': 43, 'n': 32, 'starts': 200, 'all_end_on_target': True, 'longest': 4, 'mean': 1.05, 'zero_length': 51, 'stored_equal': 200, 'stored_longer': 0, 'stored_shorter': 0, 'stored_max': 4, 'note': 'cycles of the stored initial states x0'}
+{'part': 'C', 'rule': 142, 'n': 24, 'starts': 200, 'all_end_on_target': True, 'longest': 3, 'mean': 0.9, 'zero_length': 64, 'stored_equal': 200, 'stored_longer': 0, 'stored_shorter': 0, 'stored_max': 3, 'note': 'cycles of the stored initial states x0'}
+{'part': 'C', 'rule': 142, 'n': 28, 'starts': 200, 'all_end_on_target': True, 'longest': 4, 'mean': 0.97, 'zero_length': 63, 'stored_equal': 200, 'stored_longer': 0, 'stored_shorter': 0, 'stored_max': 4, 'note': 'cycles of the stored initial states x0'}
+{'part': 'C', 'rule': 142, 'n': 32, 'starts': 200, 'all_end_on_target': True, 'longest': 4, 'mean': 1.05, 'zero_length': 51, 'stored_equal': 200, 'stored_longer': 0, 'stored_shorter': 0, 'stored_max': 4, 'note': 'cycles of the stored initial states x0'}
+{'part': 'D', 'rule': 43, 'n': 5, 'starts': 4, 'all_end_on_target': True, 'longest': 2, 'mean': 1.5, 'zero_length': 0, 'used_lemma11': 0, 'max_towards': 1, 'max_slides': 1, 'note': 'every cycle'}
+{'part': 'D', 'rule': 43, 'n': 6, 'starts': 10, 'all_end_on_target': True, 'longest': 5, 'mean': 3.3, 'zero_length': 0, 'used_lemma11': 7, 'max_towards': 1, 'max_slides': 2, 'note': 'every cycle'}
+{'part': 'D', 'rule': 43, 'n': 7, 'starts': 7, 'all_end_on_target': True, 'longest': 5, 'mean': 3.0, 'zero_length': 0, 'used_lemma11': 0, 'max_towards': 1, 'max_slides': 3, 'note': 'every cycle'}
+{'part': 'D', 'rule': 43, 'n': 9, 'starts': 15, 'all_end_on_target': True, 'longest': 5, 'mean': 2.47, 'zero_length': 0, 'used_lemma11': 0, 'max_towards': 2, 'max_slides': 3, 'note': 'every cycle'}
+{'part': 'D', 'rule': 43, 'n': 10, 'starts': 28, 'all_end_on_target': True, 'longest': 9, 'mean': 5.5, 'zero_length': 0, 'used_lemma11': 11, 'max_towards': 2, 'max_slides': 6, 'note': 'every cycle'}
+{'part': 'D', 'rule': 43, 'n': 11, 'starts': 28, 'all_end_on_target': True, 'longest': 11, 'mean': 6.75, 'zero_length': 0, 'used_lemma11': 0, 'max_towards': 2, 'max_slides': 9, 'note': 'every cycle'}
+{'part': 'D', 'rule': 43, 'n': 13, 'starts': 61, 'all_end_on_target': True, 'longest': 7, 'mean': 3.77, 'zero_length': 0, 'used_lemma11': 0, 'max_towards': 3, 'max_slides': 5, 'note': 'every cycle'}
+{'part': 'D', 'rule': 43, 'n': 14, 'starts': 126, 'all_end_on_target': True, 'longest': 14, 'mean': 8.47, 'zero_length': 0, 'used_lemma11': 76, 'max_towards': 3, 'max_slides': 10, 'note': 'every cycle'}
+{'part': 'D', 'rule': 43, 'n': 15, 'starts': 141, 'all_end_on_target': True, 'longest': 18, 'mean': 10.96, 'zero_length': 0, 'used_lemma11': 0, 'max_towards': 3, 'max_slides': 15, 'note': 'every cycle'}
+{'part': 'D', 'rule': 43, 'n': 17, 'starts': 316, 'all_end_on_target': True, 'longest': 10, 'mean': 5.37, 'zero_length': 0, 'used_lemma11': 0, 'max_towards': 4, 'max_slides': 7, 'note': 'every cycle'}
+{'part': 'D', 'rule': 43, 'n': 18, 'starts': 658, 'all_end_on_target': True, 'longest': 19, 'mean': 10.76, 'zero_length': 0, 'used_lemma11': 288, 'max_towards': 4, 'max_slides': 14, 'note': 'every cycle'}
+{'part': 'D', 'rule': 43, 'n': 19, 'starts': 739, 'all_end_on_target': True, 'longest': 24, 'mean': 14.86, 'zero_length': 0, 'used_lemma11': 0, 'max_towards': 4, 'max_slides': 21, 'note': 'every cycle'}
+{'part': 'D', 'rule': 43, 'n': 21, 'starts': 223, 'distinct_cycles': 92, 'all_end_on_target': True, 'longest': 14, 'mean': 5.61, 'zero_length': 10, 'used_lemma11': 0, 'max_towards': 5, 'max_slides': 9, 'note': '200 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 43, 'n': 22, 'starts': 223, 'distinct_cycles': 116, 'all_end_on_target': True, 'longest': 25, 'mean': 11.73, 'zero_length': 3, 'used_lemma11': 111, 'max_towards': 5, 'max_slides': 18, 'note': '200 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 43, 'n': 23, 'starts': 223, 'distinct_cycles': 104, 'all_end_on_target': True, 'longest': 32, 'mean': 17.39, 'zero_length': 1, 'used_lemma11': 0, 'max_towards': 5, 'max_slides': 27, 'note': '200 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 43, 'n': 25, 'starts': 223, 'distinct_cycles': 131, 'all_end_on_target': True, 'longest': 16, 'mean': 6.79, 'zero_length': 7, 'used_lemma11': 0, 'max_towards': 6, 'max_slides': 11, 'note': '200 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 43, 'n': 26, 'starts': 223, 'distinct_cycles': 122, 'all_end_on_target': True, 'longest': 29, 'mean': 14.35, 'zero_length': 1, 'used_lemma11': 119, 'max_towards': 6, 'max_slides': 22, 'note': '200 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 43, 'n': 27, 'starts': 223, 'distinct_cycles': 110, 'all_end_on_target': True, 'longest': 38, 'mean': 19.33, 'zero_length': 3, 'used_lemma11': 0, 'max_towards': 6, 'max_slides': 33, 'note': '200 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 43, 'n': 50, 'starts': 73, 'distinct_cycles': 55, 'all_end_on_target': True, 'longest': 49, 'mean': 27.85, 'zero_length': 0, 'used_lemma11': 40, 'max_towards': 12, 'max_slides': 46, 'note': '50 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 43, 'n': 101, 'starts': 73, 'distinct_cycles': 68, 'all_end_on_target': True, 'longest': 73, 'mean': 33.85, 'zero_length': 0, 'used_lemma11': 0, 'max_towards': 25, 'max_slides': 49, 'note': '50 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 43, 'n': 202, 'starts': 73, 'distinct_cycles': 69, 'all_end_on_target': True, 'longest': 202, 'mean': 115.34, 'zero_length': 0, 'used_lemma11': 29, 'max_towards': 50, 'max_slides': 198, 'note': '50 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 142, 'n': 5, 'starts': 5, 'all_end_on_target': True, 'longest': 3, 'mean': 1.8, 'zero_length': 0, 'used_lemma11': 4, 'max_towards': 1, 'max_slides': 1, 'note': 'every cycle'}
+{'part': 'D', 'rule': 142, 'n': 6, 'starts': 10, 'all_end_on_target': True, 'longest': 5, 'mean': 3.2, 'zero_length': 0, 'used_lemma11': 8, 'max_towards': 1, 'max_slides': 2, 'note': 'every cycle'}
+{'part': 'D', 'rule': 142, 'n': 7, 'starts': 8, 'all_end_on_target': True, 'longest': 8, 'mean': 4.75, 'zero_length': 0, 'used_lemma11': 7, 'max_towards': 1, 'max_slides': 3, 'note': 'every cycle'}
+{'part': 'D', 'rule': 142, 'n': 9, 'starts': 15, 'all_end_on_target': True, 'longest': 5, 'mean': 3.07, 'zero_length': 0, 'used_lemma11': 8, 'max_towards': 2, 'max_slides': 3, 'note': 'every cycle'}
+{'part': 'D', 'rule': 142, 'n': 10, 'starts': 30, 'all_end_on_target': True, 'longest': 11, 'mean': 5.8, 'zero_length': 0, 'used_lemma11': 18, 'max_towards': 2, 'max_slides': 6, 'note': 'every cycle'}
+{'part': 'D', 'rule': 142, 'n': 11, 'starts': 29, 'all_end_on_target': True, 'longest': 15, 'mean': 8.38, 'zero_length': 0, 'used_lemma11': 18, 'max_towards': 2, 'max_slides': 9, 'note': 'every cycle'}
+{'part': 'D', 'rule': 142, 'n': 13, 'starts': 62, 'all_end_on_target': True, 'longest': 7, 'mean': 4.15, 'zero_length': 0, 'used_lemma11': 29, 'max_towards': 3, 'max_slides': 5, 'note': 'every cycle'}
+{'part': 'D', 'rule': 142, 'n': 14, 'starts': 128, 'all_end_on_target': True, 'longest': 16, 'mean': 8.27, 'zero_length': 0, 'used_lemma11': 63, 'max_towards': 3, 'max_slides': 10, 'note': 'every cycle'}
+{'part': 'D', 'rule': 142, 'n': 15, 'starts': 141, 'all_end_on_target': True, 'longest': 21, 'mean': 12.79, 'zero_length': 0, 'used_lemma11': 85, 'max_towards': 3, 'max_slides': 15, 'note': 'every cycle'}
+{'part': 'D', 'rule': 142, 'n': 17, 'starts': 317, 'all_end_on_target': True, 'longest': 11, 'mean': 5.68, 'zero_length': 0, 'used_lemma11': 158, 'max_towards': 4, 'max_slides': 7, 'note': 'every cycle'}
+{'part': 'D', 'rule': 142, 'n': 18, 'starts': 658, 'all_end_on_target': True, 'longest': 20, 'mean': 11.31, 'zero_length': 0, 'used_lemma11': 339, 'max_towards': 4, 'max_slides': 14, 'note': 'every cycle'}
+{'part': 'D', 'rule': 142, 'n': 19, 'starts': 740, 'all_end_on_target': True, 'longest': 28, 'mean': 16.19, 'zero_length': 0, 'used_lemma11': 364, 'max_towards': 4, 'max_slides': 21, 'note': 'every cycle'}
+{'part': 'D', 'rule': 142, 'n': 21, 'starts': 223, 'distinct_cycles': 107, 'all_end_on_target': True, 'longest': 13, 'mean': 6.17, 'zero_length': 4, 'used_lemma11': 117, 'max_towards': 5, 'max_slides': 9, 'note': '200 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 142, 'n': 22, 'starts': 223, 'distinct_cycles': 121, 'all_end_on_target': True, 'longest': 24, 'mean': 12.31, 'zero_length': 0, 'used_lemma11': 91, 'max_towards': 5, 'max_slides': 18, 'note': '200 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 142, 'n': 23, 'starts': 223, 'distinct_cycles': 114, 'all_end_on_target': True, 'longest': 35, 'mean': 19.39, 'zero_length': 0, 'used_lemma11': 122, 'max_towards': 5, 'max_slides': 27, 'note': '200 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 142, 'n': 25, 'starts': 223, 'distinct_cycles': 125, 'all_end_on_target': True, 'longest': 15, 'mean': 7.4, 'zero_length': 2, 'used_lemma11': 115, 'max_towards': 6, 'max_slides': 11, 'note': '200 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 142, 'n': 26, 'starts': 223, 'distinct_cycles': 129, 'all_end_on_target': True, 'longest': 27, 'mean': 14.16, 'zero_length': 0, 'used_lemma11': 101, 'max_towards': 6, 'max_slides': 22, 'note': '200 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 142, 'n': 27, 'starts': 223, 'distinct_cycles': 129, 'all_end_on_target': True, 'longest': 41, 'mean': 22.49, 'zero_length': 0, 'used_lemma11': 107, 'max_towards': 6, 'max_slides': 33, 'note': '200 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 142, 'n': 50, 'starts': 73, 'distinct_cycles': 58, 'all_end_on_target': True, 'longest': 59, 'mean': 31.51, 'zero_length': 0, 'used_lemma11': 28, 'max_towards': 12, 'max_slides': 46, 'note': '50 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 142, 'n': 101, 'starts': 73, 'distinct_cycles': 61, 'all_end_on_target': True, 'longest': 72, 'mean': 32.08, 'zero_length': 0, 'used_lemma11': 29, 'max_towards': 25, 'max_slides': 49, 'note': '50 random initial states and 23 structured states'}
+{'part': 'D', 'rule': 142, 'n': 202, 'starts': 73, 'distinct_cycles': 68, 'all_end_on_target': True, 'longest': 237, 'mean': 110.89, 'zero_length': 0, 'used_lemma11': 30, 'max_towards': 50, 'max_slides': 198, 'note': '50 random initial states and 23 structured states'}
+{'part': 'E', 'rule': 43, 'n': 5, 'starts': 2, 'all_end_on_target': True, 'longest': 3, 'mean': 1.5, 'zero_length': 1, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 6, 'starts': 4, 'all_end_on_target': True, 'longest': 4, 'mean': 2.5, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 7, 'starts': 2, 'all_end_on_target': True, 'longest': 2, 'mean': 1.5, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 9, 'starts': 8, 'all_end_on_target': True, 'longest': 8, 'mean': 5.25, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 10, 'starts': 5, 'all_end_on_target': True, 'longest': 8, 'mean': 4.4, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 11, 'starts': 2, 'all_end_on_target': True, 'longest': 4, 'mean': 2.5, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 13, 'starts': 14, 'all_end_on_target': True, 'longest': 14, 'mean': 7.79, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 14, 'starts': 8, 'all_end_on_target': True, 'longest': 12, 'mean': 6.0, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 15, 'starts': 2, 'all_end_on_target': True, 'longest': 6, 'mean': 3.5, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 17, 'starts': 24, 'all_end_on_target': True, 'longest': 20, 'mean': 10.42, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 18, 'starts': 9, 'all_end_on_target': True, 'longest': 16, 'mean': 7.56, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 19, 'starts': 2, 'all_end_on_target': True, 'longest': 8, 'mean': 4.5, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 21, 'starts': 100, 'all_end_on_target': True, 'longest': 27, 'mean': 14.07, 'zero_length': 0, 'note': '100 random states of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 22, 'starts': 100, 'all_end_on_target': True, 'longest': 20, 'mean': 10.35, 'zero_length': 2, 'note': '100 random states of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 23, 'starts': 100, 'all_end_on_target': True, 'longest': 11, 'mean': 5.21, 'zero_length': 4, 'note': '100 random states of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 25, 'starts': 100, 'all_end_on_target': True, 'longest': 32, 'mean': 17.83, 'zero_length': 0, 'note': '100 random states of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 26, 'starts': 100, 'all_end_on_target': True, 'longest': 24, 'mean': 12.04, 'zero_length': 1, 'note': '100 random states of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 27, 'starts': 100, 'all_end_on_target': True, 'longest': 13, 'mean': 7.32, 'zero_length': 4, 'note': '100 random states of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 50, 'starts': 50, 'all_end_on_target': True, 'longest': 44, 'mean': 24.28, 'zero_length': 1, 'note': '50 random states of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 101, 'starts': 50, 'all_end_on_target': True, 'longest': 120, 'mean': 81.06, 'zero_length': 0, 'note': '50 random states of the upper level'}
+{'part': 'E', 'rule': 43, 'n': 202, 'starts': 20, 'all_end_on_target': True, 'longest': 170, 'mean': 98.45, 'zero_length': 0, 'note': '20 random states of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 5, 'starts': 1, 'all_end_on_target': True, 'longest': 3, 'mean': 3.0, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 6, 'starts': 3, 'all_end_on_target': True, 'longest': 4, 'mean': 3.0, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 7, 'starts': 1, 'all_end_on_target': True, 'longest': 1, 'mean': 1.0, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 9, 'starts': 4, 'all_end_on_target': True, 'longest': 7, 'mean': 5.25, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 10, 'starts': 6, 'all_end_on_target': True, 'longest': 8, 'mean': 4.67, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 11, 'starts': 1, 'all_end_on_target': True, 'longest': 1, 'mean': 1.0, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 13, 'starts': 7, 'all_end_on_target': True, 'longest': 11, 'mean': 6.86, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 14, 'starts': 7, 'all_end_on_target': True, 'longest': 12, 'mean': 6.43, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 15, 'starts': 1, 'all_end_on_target': True, 'longest': 1, 'mean': 1.0, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 17, 'starts': 12, 'all_end_on_target': True, 'longest': 15, 'mean': 8.67, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 18, 'starts': 10, 'all_end_on_target': True, 'longest': 16, 'mean': 8.2, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 19, 'starts': 1, 'all_end_on_target': True, 'longest': 1, 'mean': 1.0, 'zero_length': 0, 'note': 'every cycle of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 21, 'starts': 100, 'all_end_on_target': True, 'longest': 27, 'mean': 13.92, 'zero_length': 0, 'note': '100 random states of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 22, 'starts': 100, 'all_end_on_target': True, 'longest': 20, 'mean': 10.42, 'zero_length': 1, 'note': '100 random states of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 23, 'starts': 100, 'all_end_on_target': True, 'longest': 11, 'mean': 6.13, 'zero_length': 6, 'note': '100 random states of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 25, 'starts': 100, 'all_end_on_target': True, 'longest': 32, 'mean': 17.22, 'zero_length': 0, 'note': '100 random states of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 26, 'starts': 100, 'all_end_on_target': True, 'longest': 24, 'mean': 12.44, 'zero_length': 1, 'note': '100 random states of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 27, 'starts': 100, 'all_end_on_target': True, 'longest': 13, 'mean': 7.35, 'zero_length': 3, 'note': '100 random states of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 50, 'starts': 50, 'all_end_on_target': True, 'longest': 46, 'mean': 23.14, 'zero_length': 0, 'note': '50 random states of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 101, 'starts': 50, 'all_end_on_target': True, 'longest': 118, 'mean': 68.44, 'zero_length': 0, 'note': '50 random states of the upper level'}
+{'part': 'E', 'rule': 142, 'n': 202, 'starts': 20, 'all_end_on_target': True, 'longest': 169, 'mean': 107.2, 'zero_length': 0, 'note': '20 random states of the upper level'}
+all chains ended on their target (any failure raises); CPU 25.70 s; peak 118 MB

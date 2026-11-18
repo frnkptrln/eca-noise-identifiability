@@ -1,0 +1,5 @@
+mechanisms.csv: 30 records, 300 values compared, 0 mismatches
+crystal_radius.csv: 200 rows, 0 not matching
+sampled_reach: {'files': 6, 'starts': 1200, 'stored_equal': 1200, 'stored_longer': 0, 'stored_shorter': 0}
+entry cost rows: 8, all equal: True
+all agree: True
