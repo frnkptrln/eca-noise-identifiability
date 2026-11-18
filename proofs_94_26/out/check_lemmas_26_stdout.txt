@@ -1,0 +1,11 @@
+M1   n = 4..14                      cases = 32752     violations = 0
+M2   n = 4..20 (even)               cases = 1398096   violations = 0
+M2f  n = 4..16 (even)               cases = 1339840   violations = 0
+M3   n = 4..18 (even)               cases = 349520    violations = 0
+M4   n = 4..16 (even)               cases = 223330    violations = 0
+M5   n = 4..18 (even)               cases = 41267     violations = 0
+M6   n = 4..16 (even)               cases = 73843     violations = 0
+M7   n = 5..31                      cases = 1444      violations = 0
+M8   n = 4..16 (even); 32..1024 (powers of two) cases = 1580      violations = 0
+M9   n = 6..18 (even)               cases = 1219      violations = 0
+all passed: True  cpu s: 6.42

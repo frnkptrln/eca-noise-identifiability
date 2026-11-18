@@ -1,0 +1,124 @@
+{
+ "M1": {
+  "statement": "Lemma 1 (moving frame): sigma F (u)(j) = u(j) + u(j-2)[1 + u(j-1)(1 + u(j))]; every state",
+  "n": "4..14",
+  "cases": 32752,
+  "violations": 0
+ },
+ "M2": {
+  "statement": "Lemma 2 (c does not increase): c(F x) <= c(x); every state",
+  "n": "4..20 (even)",
+  "cases": 1398096,
+  "violations": 0
+ },
+ "M2f": {
+  "statement": "Lemma 2, remark: one flip changes c by -2, 0 or 2, and deleting a one does not raise c; every state, every cell",
+  "n": "4..16 (even)",
+  "cases": 1339840,
+  "violations": 0
+ },
+ "M3": {
+  "statement": "Lemma 3 (domain states): the description by sources equals \"ones on both parities and no pattern 1 0^(2r) 1 1\"; in the moving frame the sources stay, the free cells follow c_k -> c_k + c_(k-1), the other cells stay 0; F permutes the domain states; every state",
+  "n": "4..18 (even)",
+  "cases": 349520,
+  "violations": 0,
+  "domain_states": {
+   "4": 0,
+   "6": 12,
+   "8": 64,
+   "10": 240,
+   "12": 816,
+   "14": 2688,
+   "16": 8704,
+   "18": 27840
+  }
+ },
+ "M4": {
+  "statement": "Lemma 4: if u(j) = u(j+1) = 1 and the preceding one is at distance 2r+1 from j, then after r steps the cells j-1, j, j+1 of the moving frame carry 111; every state, every such pattern",
+  "n": "4..16 (even)",
+  "cases": 223330,
+  "violations": 0
+ },
+ "M5": {
+  "statement": "Theorem 1 (periodic states, even n): c is constant on a cycle; a periodic state is 0, or lies on one parity class, or is a domain state, or its orbit contains 111; domain states are periodic; for n = 4, 8, 16 no periodic state other than 0 lies on one parity class; every periodic state",
+  "n": "4..18 (even)",
+  "cases": 41267,
+  "violations": 0,
+  "periodic_states_by_kind": {
+   "4": {
+    "zero": 1,
+    "one_parity": 0,
+    "domain": 0,
+    "with_111": 0
+   },
+   "6": {
+    "zero": 1,
+    "one_parity": 6,
+    "domain": 12,
+    "with_111": 0
+   },
+   "8": {
+    "zero": 1,
+    "one_parity": 0,
+    "domain": 64,
+    "with_111": 16
+   },
+   "10": {
+    "zero": 1,
+    "one_parity": 30,
+    "domain": 240,
+    "with_111": 5
+   },
+   "12": {
+    "zero": 1,
+    "one_parity": 30,
+    "domain": 816,
+    "with_111": 0
+   },
+   "14": {
+    "zero": 1,
+    "one_parity": 126,
+    "domain": 2688,
+    "with_111": 56
+   },
+   "16": {
+    "zero": 1,
+    "one_parity": 0,
+    "domain": 8704,
+    "with_111": 80
+   },
+   "18": {
+    "zero": 1,
+    "one_parity": 510,
+    "domain": 27840,
+    "with_111": 36
+   }
+  }
+ },
+ "M6": {
+  "statement": "Lemma 5: every state with ones on both parities that is not a domain state has a singleton group, and deleting a singleton group lowers c by 2; every such state",
+  "n": "4..16 (even)",
+  "cases": 73843,
+  "violations": 0
+ },
+ "M7": {
+  "statement": "Lemma 7 (carrier words): F^2(w) is w shifted by one cell for every cyclic word over the blocks 11100 and 100 that contains 11100; every such word, every rotation",
+  "n": "5..31",
+  "cases": 1444,
+  "violations": 0
+ },
+ "M8": {
+  "statement": "Lemma 6: on one parity class rule 26 is rule 90 and maps E into O and O into E (every state of E and O, even n = 4..16); F^(n/2) = 0 there for n = 2^k (every state of E and O for n = 4, 8, 16; the two single seeds for n = 32..1024)",
+  "n": "4..16 (even); 32..1024 (powers of two)",
+  "cases": 1580,
+  "violations": 0
+ },
+ "M9": {
+  "statement": "Lemma 8: every domain cycle contains the codes 001, 010, 011, 100, 101, 110; for n = 8, 16 every cycle other than {0} contains 011 and 110; every such cycle",
+  "n": "6..18 (even)",
+  "cases": 1219,
+  "violations": 0
+ },
+ "all_passed": true,
+ "cpu_s": 6.42
+}

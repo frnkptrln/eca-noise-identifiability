@@ -1,0 +1,273 @@
+{
+ "part_A": [
+  {
+   "n": 4,
+   "cycles": 1,
+   "all_chains_end_on_one_parity_class": true,
+   "chains_ending_at_zero": 1,
+   "max_flips": 0,
+   "max_drops_of_c": 0
+  },
+  {
+   "n": 6,
+   "cycles": 7,
+   "all_chains_end_on_one_parity_class": true,
+   "chains_ending_at_zero": 1,
+   "max_flips": 1,
+   "max_drops_of_c": 1
+  },
+  {
+   "n": 8,
+   "cycles": 10,
+   "all_chains_end_on_one_parity_class": true,
+   "chains_ending_at_zero": 10,
+   "max_flips": 2,
+   "max_drops_of_c": 2
+  },
+  {
+   "n": 10,
+   "cycles": 19,
+   "all_chains_end_on_one_parity_class": true,
+   "chains_ending_at_zero": 1,
+   "max_flips": 2,
+   "max_drops_of_c": 2
+  },
+  {
+   "n": 12,
+   "cycles": 64,
+   "all_chains_end_on_one_parity_class": true,
+   "chains_ending_at_zero": 1,
+   "max_flips": 3,
+   "max_drops_of_c": 2
+  },
+  {
+   "n": 14,
+   "cycles": 76,
+   "all_chains_end_on_one_parity_class": true,
+   "chains_ending_at_zero": 1,
+   "max_flips": 4,
+   "max_drops_of_c": 3
+  },
+  {
+   "n": 16,
+   "cycles": 552,
+   "all_chains_end_on_one_parity_class": true,
+   "chains_ending_at_zero": 552,
+   "max_flips": 4,
+   "max_drops_of_c": 3
+  },
+  {
+   "n": 18,
+   "cycles": 567,
+   "all_chains_end_on_one_parity_class": true,
+   "chains_ending_at_zero": 1,
+   "max_flips": 5,
+   "max_drops_of_c": 4
+  },
+  {
+   "n": 20,
+   "cycles": 2816,
+   "all_chains_end_on_one_parity_class": true,
+   "chains_ending_at_zero": 1,
+   "max_flips": 7,
+   "max_drops_of_c": 5
+  }
+ ],
+ "part_B": [
+  {
+   "n": 32,
+   "start_states": 100,
+   "all_chains_end_at_zero": true,
+   "max_c_of_start_cycle": 10,
+   "max_flips": 9,
+   "max_drops_of_c": 5
+  },
+  {
+   "n": 64,
+   "start_states": 100,
+   "all_chains_end_at_zero": true,
+   "max_c_of_start_cycle": 16,
+   "max_flips": 20,
+   "max_drops_of_c": 8
+  },
+  {
+   "n": 128,
+   "start_states": 50,
+   "all_chains_end_at_zero": true,
+   "max_c_of_start_cycle": 30,
+   "max_flips": 39,
+   "max_drops_of_c": 15
+  },
+  {
+   "n": 256,
+   "start_states": 50,
+   "all_chains_end_at_zero": true,
+   "max_c_of_start_cycle": 58,
+   "max_flips": 79,
+   "max_drops_of_c": 29
+  },
+  {
+   "n": 512,
+   "start_states": 20,
+   "all_chains_end_at_zero": true,
+   "max_c_of_start_cycle": 112,
+   "max_flips": 160,
+   "max_drops_of_c": 56
+  },
+  {
+   "n": 1024,
+   "start_states": 10,
+   "all_chains_end_at_zero": true,
+   "max_c_of_start_cycle": 218,
+   "max_flips": 302,
+   "max_drops_of_c": 109
+  }
+ ],
+ "part_C": [
+  {
+   "n": 8,
+   "q": 1,
+   "flips_after_e0_e5": 2,
+   "all_intermediate_states_are_periodic_domain_states": true,
+   "final_state_is_the_carrier_word": true,
+   "period_of_the_carrier_cycle": 16,
+   "c_of_last_domain_state": 2,
+   "c_of_carrier": 4
+  },
+  {
+   "n": 32,
+   "q": 9,
+   "flips_after_e0_e5": 10,
+   "all_intermediate_states_are_periodic_domain_states": true,
+   "final_state_is_the_carrier_word": true,
+   "period_of_the_carrier_cycle": 64,
+   "c_of_last_domain_state": 10,
+   "c_of_carrier": 12
+  },
+  {
+   "n": 128,
+   "q": 41,
+   "flips_after_e0_e5": 42,
+   "all_intermediate_states_are_periodic_domain_states": true,
+   "final_state_is_the_carrier_word": true,
+   "period_of_the_carrier_cycle": 256,
+   "c_of_last_domain_state": 42,
+   "c_of_carrier": 44
+  },
+  {
+   "n": 512,
+   "q": 169,
+   "flips_after_e0_e5": 170,
+   "all_intermediate_states_are_periodic_domain_states": true,
+   "final_state_is_the_carrier_word": true,
+   "period_of_the_carrier_cycle": 1024,
+   "c_of_last_domain_state": 170,
+   "c_of_carrier": 172
+  }
+ ],
+ "part_D": [
+  {
+   "n": 6,
+   "one_parity_cycles_joined_to_zero_both_ways": 3,
+   "domain_cycles_joined_to_a_one_parity_cycle_by_flips_between_periodic_states": 3
+  },
+  {
+   "n": 10,
+   "one_parity_cycles_joined_to_zero_both_ways": 5,
+   "domain_cycles_joined_to_a_one_parity_cycle_by_flips_between_periodic_states": 12
+  },
+  {
+   "n": 12,
+   "one_parity_cycles_joined_to_zero_both_ways": 9,
+   "domain_cycles_joined_to_a_one_parity_cycle_by_flips_between_periodic_states": 54
+  },
+  {
+   "n": 14,
+   "one_parity_cycles_joined_to_zero_both_ways": 9,
+   "domain_cycles_joined_to_a_one_parity_cycle_by_flips_between_periodic_states": 64
+  },
+  {
+   "n": 18,
+   "one_parity_cycles_joined_to_zero_both_ways": 39,
+   "domain_cycles_joined_to_a_one_parity_cycle_by_flips_between_periodic_states": 526
+  },
+  {
+   "n": 20,
+   "one_parity_cycles_joined_to_zero_both_ways": 45,
+   "domain_cycles_joined_to_a_one_parity_cycle_by_flips_between_periodic_states": 2766
+  }
+ ],
+ "part_E": [
+  {
+   "n": 8,
+   "domain_states": 8,
+   "every_domain_cycle": true,
+   "all_intermediate_states_are_periodic_domain_states": true,
+   "max_flips": 2
+  },
+  {
+   "n": 16,
+   "domain_states": 548,
+   "every_domain_cycle": true,
+   "all_intermediate_states_are_periodic_domain_states": true,
+   "max_flips": 6
+  },
+  {
+   "n": 32,
+   "domain_states": 200,
+   "every_domain_cycle": false,
+   "all_intermediate_states_are_periodic_domain_states": true,
+   "max_flips": 15
+  },
+  {
+   "n": 64,
+   "domain_states": 200,
+   "every_domain_cycle": false,
+   "all_intermediate_states_are_periodic_domain_states": true,
+   "max_flips": 30
+  }
+ ],
+ "part_F": [
+  {
+   "n": 8,
+   "path_of_resistance_2_reaches_111": true,
+   "single_flip_orbit_has_no_adjacent_ones_and_dies": true
+  },
+  {
+   "n": 16,
+   "path_of_resistance_2_reaches_111": true,
+   "single_flip_orbit_has_no_adjacent_ones_and_dies": true
+  },
+  {
+   "n": 32,
+   "path_of_resistance_2_reaches_111": true,
+   "single_flip_orbit_has_no_adjacent_ones_and_dies": true
+  },
+  {
+   "n": 64,
+   "path_of_resistance_2_reaches_111": true,
+   "single_flip_orbit_has_no_adjacent_ones_and_dies": true
+  },
+  {
+   "n": 128,
+   "path_of_resistance_2_reaches_111": true,
+   "single_flip_orbit_has_no_adjacent_ones_and_dies": true
+  },
+  {
+   "n": 256,
+   "path_of_resistance_2_reaches_111": true,
+   "single_flip_orbit_has_no_adjacent_ones_and_dies": true
+  },
+  {
+   "n": 512,
+   "path_of_resistance_2_reaches_111": true,
+   "single_flip_orbit_has_no_adjacent_ones_and_dies": true
+  },
+  {
+   "n": 1024,
+   "path_of_resistance_2_reaches_111": true,
+   "single_flip_orbit_has_no_adjacent_ones_and_dies": true
+  }
+ ],
+ "cpu_s": 36.61
+}
