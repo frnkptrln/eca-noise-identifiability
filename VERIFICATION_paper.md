@@ -4,6 +4,34 @@ Branch `paper-ring-size`, HEAD c926271. Verified on 20 November 2026 by Claude (
 paper, the proof documents or any earlier verification). No existing file was changed. New files: this report and
 the folder `verify_paper/` (own code and its output).
 
+> **Handling of the findings.** Added on 20 November 2026 by Claude, the reader outside the sessions (not the
+> verifying session). The report below is unchanged. The corrections are in the commit that follows 9141d67; none of
+> them was verified after it was made. `paper/TRACE.md`, Part F, lists the sentences added to proofs.
+>
+> * Applied as proposed, or reworded to the same content: D1, D2, D3, D4, D5, D6, D7, D8, D9, D11, D12, D14, D15, D16,
+>   D17, D19, D21, D23, D24 (also in Theorem 5.7(c)), D25, D26, D27, D28, D30, D31, D32, D33, D35, D37, D39, D40, D41,
+>   D42, D43, D45, D46.
+> * Applied with another wording than proposed:
+>   D10 (Remark 3.44 now says that Theorem 3.43 is not proved for n = 3 and 4, that at n = 4 no block word has a long
+>   block, and that part (i) needs n >= 6; the computed facts follow as before);
+>   D13 ("Status of the proofs" is rewritten as proposed and now also reports this verification and says that the
+>   corrections made after it are unverified);
+>   D20 (both sentences now say "search excerpts of secondary descriptions" and "provisional"; of the two notes in
+>   `refs.bib` only that of Freidlin and Wentzell was changed: the edition was seen in search excerpts of Ellison's
+>   list of references; the note of Young agrees with `paper/TRACE.md`, Part B, and stays);
+>   D29 (the parenthesis says "the leading power of eps in pi_eps(x) is eps^o(x)", the definition of the order in
+>   the note, not "has a positive limit", which the note does not state in these words);
+>   D44 ("the dependence on the ring size is not studied"; the pointer to the update of 20 November of the addendum;
+>   the sentence on the two versions reworded).
+> * Applied in part: D18. The clause on chi is added in the proof of Theorem 5.7(a), and Appendix B now says "with
+>   the changes listed in `paper/TRACE.md`". Lemma B.6 is not moved before Theorem 5.7: that would renumber Section
+>   5, to which `reader_checks/README.md`, `literature_addendum.md` and this report refer.
+> * Not applied: D22, D34, D38 (a letter with two meanings; no sentence is ambiguous, and renaming symbols in proofs
+>   that were just verified was judged the larger risk); D36 (no correction proposed).
+> * The statement on the use of AI and "Status of the proofs" now name this report.
+> * The PDF was rebuilt with a full TeX installation and BibTeX: 32 pages. The page numbers below refer to the PDF
+>   of 31 pages that was verified.
+
 ## 1. Summary
 
 **No false statement was found in any theorem, proposition, lemma or corollary of the paper.**

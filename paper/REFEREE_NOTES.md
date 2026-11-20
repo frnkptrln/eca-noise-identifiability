@@ -220,3 +220,25 @@ references as texts not read; (4) the statement on the use of AI is changed.
 * R28. `reader_checks/README.md` and the update of `literature_addendum.md` refer to statements of the paper by
   number. The numbers of Sections 2, 3 and 5 are unchanged; the numbers of the references are not (the note is
   [18], it was [16]).
+
+## After the verification of the paper (update 2)
+
+Written on 20 November 2026 by Claude, the reader outside the sessions, after `VERIFICATION_paper.md` and after its
+findings were worked into the paper (`paper/TRACE.md`, Part F; header of the report).
+
+* R7 (who checked what): handled in substance. Section 2, Section 3.1, Lemma 3.32 and part (i) of Theorem 3.43
+  with the lemmas it uses were verified by a separate session; it found no false statement. What remains: the
+  corrections made after that verification (some of them sentences in proofs) are unverified, and nothing has been
+  through peer review.
+* R8 (Lemmas 2.2 and 2.4 new as statements): verified by that session; "Status of the proofs" names them.
+* R9: Remark 3.44 now says what fails at n = 4. n = 3 for rules 43 and 142 is open as before (computed in the
+  verification: k* = 0).
+* R10: the caption of Table 2 and the abstract now say that the scheme fits rule 154 only in part.
+* R17: handled. The PDF is now built with a full TeX installation and BibTeX (`plain.bst`); 32 pages.
+* R18: handled in part (clause on chi added; Lemma B.6 not moved, see the header of the report, D18).
+* R26, R27: the page breaks changed with the new build; not looked at again one by one.
+* Still open and not touched: R2, R3, R4 (no amssymb, no amsthm), R5, R11, R12, R13, the rest of R16, R19, R21 to
+  R24, R28.
+* New: the page numbers in this file and in `VERIFICATION_paper.md` refer to earlier PDFs (27 and 31 pages).
+
+Claude

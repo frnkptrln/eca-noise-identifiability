@@ -64,8 +64,8 @@ statement on the use of AI at the end of the paper.}}
 \noindent
 An elementary cellular automaton on a ring of $n$ cells is perturbed by independent bit flips of small probability
 $\eps$. As $\eps\to0$ the stationary law concentrates on the cycles of least stochastic potential, the
-noise-selected cycles. An integer $\kst\ge0$ records how far the selected cycles are from containing all eight
-neighbourhood configurations; $\kst=0$ iff they contain all of them. We determine the selected cycles and $\kst$ for
+noise-selected cycles. An integer $\kst\ge0$ is defined from the potentials; $\kst=0$ iff the selected cycles
+contain all eight neighbourhood configurations. We determine $\kst$ and describe the selected cycles for
 four rules, for every ring size from a small bound on. For rule 154, $\kst=1$ if $n$ is a power of two and $\kst=0$
 otherwise ($n\ge3$). For rules 43 and 142, $\kst=1$ if $4$ divides $n$ and $\kst=0$ otherwise ($n\ge4$). For rule 94,
 $\kst=1$ if $3$ divides $n$ ($n\ge6$) and $\kst=0$ if not ($n\ge5$); the ring sizes $3$ and $4$ are not covered, and
@@ -75,7 +75,7 @@ $k\ge3$, and $\kst=1$ for odd $k\ge3$; for even $k$ the value is computed for $k
 ring sizes $\kst$ is not determined by a proof. The proofs use that the
 selected set is a union of closed classes of the graph of one-flip transitions between cycles, a restatement of
 known results on stochastic stability, and they share one structure: a quantity that is conserved or monotone along
-orbits, a description of the periodic states, and one-flip moves that change the quantity by a fixed amount.
+orbits, a description of the periodic states, and one-flip moves that change it in a controlled way.
 \end{abstract}
 
 \section{Introduction}
@@ -90,9 +90,10 @@ over spanning trees of sums of resistances (Section~\ref{sec:setting}). We call 
 question of this paper is which cycles are noise-selected, as a function of $n$.
 
 For the rules treated here the answer depends on the arithmetic of $n$, for two reasons. A state that is periodic
-in space with period $p$ exists on the ring only if $p$ divides $n$. Under rules 43 and 142 the state
-$(\code{0011})^{n/4}$, and under rule 94 the state $(\code{011})^{n/3}$, has a cycle that no single flip can leave
-and that every other cycle can reach by single flips; when it exists it is selected, alone or with its rotations. And on the states whose ones lie on cells of one
+in space with period $p$ exists on the ring only if $p$ divides $n$. For $4\mid n$, $n\ge4$, the cycle of
+$(\code{0011})^{n/4}$ under rules 43 and 142, and for $3\mid n$, $n\ge6$, each of the three rotations of
+$(\code{011})^{n/3}$ under rule 94, is left by no single flip, and every other cycle reaches it, or one of the three,
+by single flips; it is selected, alone or with its rotations. And on the states whose ones lie on cells of one
 parity, rules 154 and 26 act as the linear rule 90, which sends every state to the zero state exactly when $n$ is a
 power of two.
 
@@ -102,7 +103,8 @@ eight configurations of a cell and its two neighbours. In \cite{PeterleinNote}, 
 rate $\rho(\eps)\sim a\,\eps^{\kst}\log\frac1\eps$ at which the rule can be identified from a trajectory of the
 perturbed automaton, and it was computed there for small rings. A study that accompanies that note~\cite{PeterleinStudy} computed $\kst$
 for the \NumSwitching{} classes of rules for which it changes with $n$, for $n=\OpenNmin,\dots,\OpenNmax$ (data file
-\texttt{data/ring\_size/mechanisms.csv} of the repository named at the end). The present paper proves the dependence
+\texttt{data/ring\_size/mechanisms.csv} of the repository named at the end; the value for rule 154 at $n=\OpenNmax$
+is in another file, see the caption of Table~\ref{tab:kstar}). The present paper proves the dependence
 on $n$ for four of these classes, for every $n$ from the bounds stated in Theorem~\ref{thm:main} on, and part of it
 for a fifth.
 
@@ -111,11 +113,12 @@ For rule 154, $\kst=1$ if $n$ is a power of two and $\kst=0$ otherwise, for ever
 $\kst=1$ if $4\mid n$ and $\kst=0$ otherwise, for every $n\ge4$. For rule 94, $\kst=1$ for every $n\ge6$ with
 $3\mid n$ and $\kst=0$ for every $n\ge5$ with $3\ndiv n$ (Theorem~\ref{thm:main}). For rule 94 the ring sizes $n=3$
 and $n=4$ are not covered, and $n=4$ does not follow the pattern: the computed value is
-$\kst=\KstarNinetyFourAtFour$ (Remark~\ref{94:rem:small}). In each case covered by the theorem the set of
-noise-selected cycles and the eight indices $k_v$ behind $\kst$ are determined: the zero state alone, or all cycles
+$\kst=\KstarNinetyFourAtFour$ (Remark~\ref{94:rem:small}). In each case covered by the theorem the eight indices
+$k_v$ behind $\kst$ are determined and the set of noise-selected cycles is described: the zero state alone, or all cycles
 (rule 154); the cycle of $(\code{0011})^{n/4}$, or the cycles on the two levels of the number of walls next to $n/2$
 (rules 43, 142); the three rotations of $(\code{011})^{n/3}$, or one closed class that contains every cycle with an
-occurrence of $\code{101}$ (rule 94). For rule 26 on $n=2^k\ge4$ cells the zero state is the only noise-selected
+occurrence of $\code{101}$ (rule 94; which of the cycles without $\code{101}$ it contains is not determined,
+Section~\ref{sec:open}). For rule 26 on $n=2^k\ge4$ cells the zero state is the only noise-selected
 cycle (Theorem~\ref{26:thm:main}); for $k\ge3$, $\kst$ is $1$ or $2$, and $\kst=1$ if $k$ is odd
 (Proposition~\ref{26:prop:indices}, proved in Appendix~\ref{app:26}). For even $k$ the value is computed for $k=2$
 and $k=4$ ($\kst=\KstarTwentySixAtFour$ at $n=4$ and $\kst=\KstarTwentySixAtSixteen$ at $n=16$) and open for
@@ -133,7 +136,7 @@ Which cycles small noise selects is described by the stochastic potential of the
 for the present model the order of every stationary probability is determined in \cite{PeterleinNote}. That the
 selection can be read off the steps of cost one is known in that theory: Ellison~\cite{Ellison2000} attributes a
 lemma of this kind to Samuelson~\cite{Samuelson1994} and to N\"oldeke and Samuelson~\cite{NoldekeSamuelson1993}, and
-Theorem~\ref{thm:A} restates results of these authors. Bagnoli, Baia and
+the first sentence of Theorem~\ref{thm:A} restates results of these authors. Bagnoli, Baia and
 Matteuzzi~\cite{BagnoliBaiaMatteuzzi2025} iterate the chain of single-flip jumps between attractors for all classes
 of elementary rules at one ring size. The building blocks used for the individual rules are known as well: rule 90
 is nilpotent on $2^k$ cells and, for $3\mid n$, fixes the rotations of
@@ -145,14 +148,22 @@ says what was read of each reference and lists what was not; no claim of novelty
 
 \paragraph{Status of the proofs.}
 The proofs are by hand and use no computation. They were written and checked in the sessions described in the
-statement at the end of the paper, and have not been through peer review. The proofs for rules 43
-and 142, for rule 94 with $3\ndiv n$ and for rule 26 were each verified by a separate session. For rule 26 this
-covers every statement of Section~\ref{sec:26} and of Appendix~\ref{app:26}: the verification excluded none of
-them. It found one false sentence without consequence, in the source of Lemma~\ref{26:lem:domain}(c), which is
-corrected, and no other error. It did not re-prove Theorem~\ref{thm:A}, which Proposition~\ref{26:prop:even} uses
-and which was checked by the verification of the ring-size study. The proofs for rule 154 and for rule 94 with $3\mid n$
-(Section~\ref{sec:154}, Lemma~\ref{94:lem:crystal} and part (i) of Theorem~\ref{94:thm:main}) have not been verified
-by a separate session. Every computed value in the text and in
+statement at the end of the paper, and have not been through peer review. The proof documents for rules 43
+and 142, for rule 94 with $3\ndiv n$ and for rule 26 were each verified by a separate session; the text of this
+paper was assembled from the proof documents afterwards (\texttt{paper/TRACE.md} lists the changes). For rule 26 that
+verification covers the source of every statement of Section~\ref{sec:26} and of Appendix~\ref{app:26}. It found one
+false sentence without consequence, in the source of Lemma~\ref{26:lem:domain}(c), which is corrected, and no other
+error. It did not re-prove Theorem~\ref{thm:A}, which Proposition~\ref{26:prop:even} uses and which was checked by
+the verification of the ring-size study. The proofs for rule 154 and for rule 94 with $3\mid n$
+(Section~\ref{sec:154}, Lemma~\ref{94:lem:crystal} and part (i) of Theorem~\ref{94:thm:main}) had no verification
+by a separate session when the paper was assembled, and Lemmas~\ref{lem:kzero}, \ref{lem:edge}, \ref{lem:sym}
+and~\ref{94:lem:swap}(b) are stated in this paper for the first time as lemmas. A separate session then verified the
+paper itself (\texttt{VERIFICATION\_paper.md}): it read these proofs and those of Section~\ref{sec:setting} line by
+line, tested every statement of the paper on small rings with code of its own, and compared every numbered
+statement with its source. It found no false statement in a theorem, proposition, lemma or corollary. It found
+sentences of the surrounding text that said more than is proved or recorded, and three proofs in which one step was
+not written; these are corrected in the present text. The corrections were made after that verification and have
+not been verified in turn. Every computed value in the text and in
 Table~\ref{tab:kstar} is taken from a data file of the repository by a script.
 
 \section{Setting}\label{sec:setting}
@@ -181,7 +192,7 @@ the model of \cite{PeterleinNote}.
 
 \subsection{Cycles, resistances, potentials}
 A state $x$ is \emph{periodic} if $F^tx=x$ for some $t\ge1$; a \emph{cycle} is the orbit of a periodic state. The
-cycles are $C_1,\dots,C_m$; throughout, $m$ is their number. The orbit of every state $x$ enters exactly one cycle; we
+number of cycles is $m$ throughout. The orbit of every state $x$ enters exactly one cycle; we
 say that the orbit of $x$ \emph{ends on} that cycle. A \emph{path} is a finite sequence of states; its resistance is
 the sum of the resistances of its steps. A step has resistance $0$ iff it is a step of $F$. For sets of states $A$, $B$
 let $R(A\to B)$ be the least resistance of a path from a state of $A$ to a state of $B$, and for cycles let
@@ -207,13 +218,14 @@ step, at which a trajectory of the chain accumulates evidence against the altern
 distinguish from $f$, which differs from $f$ on a single code.
 
 \begin{proposition}\label{prop:order}
-\textup{(\cite{PeterleinNote}, Theorem~1.)} For every state $x$, $\pi_\eps(x)$ is of exact order $\eps^{\,o(x)}$ as $\eps\to0$, where
-$o(x)=\min_C[\gamma(C)+R(C\to\{x\})]-\gmin$. For every code $v$, $\nu_v(\eps)\sim a_v\eps^{k_v}$ with $a_v>0$, and
+\textup{(\cite{PeterleinNote}, Theorem~1.)} For every state $x$, $\pi_\eps(x)$ is of exact order $\eps^{\,o(x)}$ as $\eps\to0$ (the leading power of $\eps$ in
+$\pi_\eps(x)$ is $\eps^{\,o(x)}$), where $o(x)=\min_C[\gamma(C)+R(C\to\{x\})]-\gmin$. For every code $v$, $\nu_v(\eps)\sim a_v\eps^{k_v}$ with $a_v>0$, and
 $\rho(\eps)\sim a\,\eps^{\kst}\log\frac1\eps$.
 \end{proposition}
 
 We use Proposition~\ref{prop:order} only for this interpretation. All statements below are about the integers
-\eqref{eq:kv}, and the following consequence of the definition is all that is needed to evaluate them.
+\eqref{eq:kv}. The following consequences of the definition are used throughout; where they do not suffice,
+\eqref{eq:kv} is used directly.
 
 \begin{lemma}\label{lem:kzero}
 $k_v=0$ iff $v$ is contained in a state of a noise-selected cycle. Hence $\kst=0$ iff the states of the noise-selected
@@ -226,7 +238,7 @@ If $x+e_j\in\Dc{v}$ for a state $x$ of $C\in\Sel$, let $y$ be the state of $C$ w
 $x+e_j$ has resistance $1$, so $R(C\to\Dc{v})\le1$.
 \end{proof}
 
-\subsection{The one-flip graph}
+\subsection{The one-flip graph}\label{sec:g1}
 The \emph{one-flip graph} $\Gone$ has the cycles as nodes and an edge $C\to C'$ iff $V(C,C')=1$. A \emph{closed class}
 is a strongly connected component of $\Gone$ that no edge of $\Gone$ leaves. Every finite directed graph has a closed
 class, and from every node there is a directed path into some closed class.
@@ -249,13 +261,13 @@ $V(\sigma C,\sigma C')=V(C,C')$ and $\gamma(\sigma C)=\gamma(C)$ for all cycles 
 invariant under rotation.
 \end{lemma}
 \begin{proof}
-$F$ commutes with $\sigma$, so $\sigma$ maps cycles to cycles, $r(\sigma x,\sigma y)=H(\sigma Fx,\sigma y)=r(x,y)$,
-paths to paths of the same resistance, and in-trees to in-trees of the same weight.
+$F$ commutes with $\sigma$, so $\sigma$ maps cycles to cycles and $r(\sigma x,\sigma y)=H(\sigma Fx,\sigma y)=r(x,y)$.
+Hence $\sigma$ maps paths to paths of the same resistance and in-trees to in-trees of the same weight.
 \end{proof}
 
 \subsection{Theorem A}
 The following theorem reduces the determination of $\Sel$ to the one-flip graph whenever that graph has a single closed
-class. It restates known results; the attribution is given after the proofs.
+class. Its first sentence restates known results; the attribution is given after the proofs.
 
 \begin{lemma}[re-rooting]\label{lem:reroot}
 Let $T$ be an in-tree rooted at a cycle $B$, and let $N\ne B$. Then $T$ without the out-edge of $N$ and with the edge
@@ -263,7 +275,7 @@ $B\to N$ is an in-tree rooted at $N$. If $V(B,N)=1$, its weight is at most the w
 \end{lemma}
 \begin{proof}
 In the new edge set every cycle still reaches $B$ or $N$, and $B$ reaches $N$; $N$ has no out-edge, so there is no
-directed circuit. Every removed edge weighs at least $1$ by Lemma~\ref{lem:edge}.
+directed circuit (a circuit would consist of cycles that never reach $N$). Every removed edge weighs at least $1$ by Lemma~\ref{lem:edge}.
 \end{proof}
 
 \begin{lemma}[closure]\label{lem:closure}
@@ -313,8 +325,8 @@ correspond to the results on mutation-connected and locally stable components of
 and of N\"oldeke and Samuelson~\cite[Proposition~1]{NoldekeSamuelson1993}, and
 Ellison~\cite[Section~6.2, pp.~37--38]{Ellison2000} attributes to these authors a lemma on sets that can be reached
 from every other limit set by a chain of single mutations. The texts of Samuelson and of N\"oldeke and Samuelson
-were not read; the correspondence rests on Ellison's text, an abstract and secondary descriptions
-(Section~\ref{sec:related}). The proofs are given so that the paper is self-contained. The value $\gmin=m-1$ was
+were not read; the correspondence rests on Ellison's text, an abstract and search excerpts of secondary
+descriptions, and is provisional (Section~\ref{sec:related}). The proofs are given so that the paper is self-contained. The value $\gmin=m-1$ was
 not found in the sources read.
 
 \section{The main theorem}\label{sec:main}
@@ -328,8 +340,8 @@ not found in the sources read.
 \end{theorem}
 
 Parts (a), (b) and (c) are Theorems~\ref{154:thm:main}, \ref{43:thm:main} and~\ref{94:thm:main}, proved in
-Sections~\ref{sec:154}, \ref{sec:43} and~\ref{sec:94}; these theorems also give the noise-selected set and all
-indices $k_v$. In (c) the two directions are proved for different ranges, and the ring sizes $n=3$ and $n=4$ are not
+Sections~\ref{sec:154}, \ref{sec:43} and~\ref{sec:94}; these theorems, and for rules 43 and 142
+Corollaries~\ref{43:cor:div} and~\ref{43:cor:ndiv}, also give the noise-selected set and all indices $k_v$. In (c) the two directions are proved for different ranges, and the ring sizes $n=3$ and $n=4$ are not
 covered (Remark~\ref{94:rem:small}). Rule 43 and rule 142 are not equivalent under reflection and complementation of
 the rule; they are treated together because they share the form of Lemma~\ref{43:lem:R}.
 
@@ -341,8 +353,8 @@ repository~\cite{PeterleinStudy} ($n\ge\TableMechNmin$: \texttt{data/ring\_size/
 \texttt{data/fw\_sweep.csv}; $^\dagger$: \texttt{verify\_ring\_size/phase2/out/v154\_n22.json}, the first file has no
 record for rule 154 at $n=22$). Second rows: the value given by the theorem or section named; ``1/2'' means that $\kst$ is $1$
 or $2$, ``$\ge$1'' that only $\kst\ge1$ follows (from $\Sel=\{\{\zero\}\}$ and Lemma~\ref{lem:kzero}), ``--'' that
-the paper has no statement. The theorems give a value in \TableCompared{} of the \TableCells{} cells; in \TableAgree{} of these the computed
-value is one of the values they admit.}
+the paper has no statement that gives a value or a bound. The second rows have an entry in \TableCompared{} of the \TableCells{} cells; in \TableAgree{} of these the computed
+value is one of the values that the entry admits.}
 \label{tab:kstar}
 \end{table}
 
@@ -372,7 +384,8 @@ $f(a,b,c)=c+a(1+b)$, that is, $(Fx)_i=x_{i+1}+x_{i-1}(1+x_i)$.
 \end{lemma}
 \begin{proof}
 On the codes $\code{000}$, $\code{001}$, $\code{010}$, $\code{011}$, $\code{100}$, $\code{101}$, $\code{110}$,
-$\code{111}$ the right-hand side takes the values $0$, $1$, $0$, $1$, $1$, $0$, $0$, $1$.
+$\code{111}$ the right-hand side takes the values $0$, $1$, $0$, $1$, $1$, $0$, $0$, $1$; these are the values of
+$f$.
 \end{proof}
 
 \begin{lemma}[rule 90 on the parity classes]\label{154:lem:rule90}
@@ -396,8 +409,8 @@ over $\mathrm{GF}(2)$, so $L^{2^s}=\sigma^{2^s}+\sigma^{-2^s}$.
 (b) Identify $e_j$ with $z^j$ in $\mathrm{GF}(2)[z]/(z^n+1)$; then $L^te_0=z^{-t}(1+z)^{2t}$, which is $0$ if and
 only if $z^n+1$ divides $(1+z)^{2t}$ in $\mathrm{GF}(2)[z]$. Write $n=2^aq$ with $q$ odd, $q\ge 3$. Then
 $z^n+1=(z^q+1)^{2^a}$ and $z^q+1=(z+1)(1+z+\dots+z^{q-1})$. The second factor has the value $q\equiv 1\pmod 2$ at
-$z=1$, so it is not divisible by $z+1$; it has degree $q-1\ge 2$ and therefore has an irreducible factor different
-from $z+1$, which does not divide any power of $1+z$. By rotation the same holds for every $e_j$.
+$z=1$, so it is not divisible by $z+1$; it is not constant ($q\ge3$), so it has an irreducible factor, and this
+factor is not $z+1$; it does not divide any power of $1+z$. By rotation the same holds for every $e_j$.
 \end{proof}
 
 For rule 90 itself, the statement that on a ring of $2^k$ cells every state reaches $\zero$ is Lemma~3.5 of
@@ -446,7 +459,7 @@ alternates, so $n$ is even and $\{x,y\}=\{\one_E,\one_O\}$.
 \end{proof}
 
 That rule 154 is a bijection on rings of odd size is known: it is stated in \cite{BhattacharjeeDas2019} and in
-\cite{Fedoriaka2025} and, according to its abstract, in \cite{NobeYura2004}, which was not read.
+\cite{Fedoriaka2025} and, by a search excerpt of its Proposition~1, in \cite{NobeYura2004}, which was not read.
 
 \begin{lemma}[periodic states]\label{154:lem:periodic}
 Let $n$ be even, $n\ge 4$. The restriction of $F$ to $M$ is a permutation of $M$, and every state of $M$ is
@@ -489,7 +502,7 @@ Let $n=2^k$, $k\ge 2$.
 \item No edge of $\Gone$ leaves $\{\zero\}$: $V(\{\zero\},C)\ge 2$ for every cycle $C\neq\{\zero\}$.
 \item Every cycle $C\neq\{\zero\}$ has a directed path in $\Gone$ to $\{\zero\}$, of length at most
 $\mu(C)\le n/2$, where $\mu(C):=\min_{x\in C}\min(|x|_E,|x|_O)$.
-\item $\{\zero\}$ is the only closed class of $\Gone$.
+\item $\{\{\zero\}\}$ is the only closed class of $\Gone$.
 \item $\gamma(\{\zero\})=m-1$ and $\gamma(C)=m$ for every cycle $C\neq\{\zero\}$; hence $\Sel=\{\{\zero\}\}$.
 \item $k_{\code{000}}=0$ and $k_v=1$ for each of the seven codes $v\neq\code{000}$; hence $\kst=1$.
 \end{enumerate}
@@ -513,8 +526,8 @@ its orbit ends in $\zero$ (Lemma~\ref{154:lem:nilpotent}(a)); by Lemma~\ref{lem:
 edge. After deleting repetitions, $C=C_0,C_1,\dots,C_{\mu-1},\{\zero\}$ is a directed path in $\Gone$ of length at
 most $\mu\le n/2$.
 
-(d) By (c) every strongly connected component other than $\{\zero\}$ has an outgoing edge; by (b) $\{\zero\}$ has
-none.
+(d) By (c) every strongly connected component other than $\{\{\zero\}\}$ has an outgoing edge; by (b) the cycle
+$\{\zero\}$ has none.
 
 (e) Every spanning in-tree has $m-1$ edges, each of weight at least $1$ (Lemma~\ref{lem:edge}). By (c) each cycle
 $C\neq\{\zero\}$ has an edge of $\Gone$ to a cycle with a smaller distance to $\{\zero\}$ in $\Gone$; these $m-1$
@@ -805,7 +818,8 @@ $C\to C'$ with $w(C')=w-2$. Repeating this $|w-n/2|/2$ times gives a cycle with 
 Lemma~\ref{43:lem:half}.
 
 (3) Let $K$ be a closed class. If $K$ contains a cycle $C\ne X$, the path of (2) from $C$ to $X$ stays in $K$, so
-$X\in K$; $K$ is strongly connected and no edge leaves $X$, so $K=\{X\}$, a contradiction.
+$X\in K$; $K$ is strongly connected and no edge leaves $X$, so $K=\{X\}$, a contradiction. Hence every closed
+class is $\{X\}$, and a closed class exists (Section~\ref{sec:g1}).
 \end{proof}
 
 \begin{corollary}\label{43:cor:div}
@@ -883,9 +897,11 @@ $w_+$ walls has an isolated cell and no interior cell.
 (a) If $w(x)=w_-<n/2$, then $Q(\delta(x))\ne\emptyset$ by Lemma~\ref{43:lem:pairs}(c), so
 $P(\delta(x))=\emptyset$ by Lemma~\ref{43:lem:per}(a). For $w_+$ exchange the roles.
 (b) By (a) and Lemma~\ref{43:lem:flip} a flip of a periodic state with $w_-$ walls gives wall count $w_-$ or
-$w_-+2=w_+$, and the wall count is conserved along the orbit (Lemma~\ref{43:lem:cons}); likewise for $w_+$.
+$w_-+2=w_+$, and the wall count is conserved along the orbit (Lemma~\ref{43:lem:cons}); likewise for $w_+$. So the
+orbit ends on a cycle of $K$, and by Lemma~\ref{lem:edge} every edge of $\Gone$ from a cycle of $K$ leads to a cycle
+of $K$.
 (c) Flip an interior (isolated) cell, which exists by (a); the cycle reached has the other wall count, so it
-differs from the one left.
+differs from the one left, and the edge is given by Lemma~\ref{lem:edge}.
 (d) A periodic state with $w<w_-$ walls has an interior cell ($w<n/2$ and Lemma~\ref{43:lem:pairs}(c)); flipping
 it gives $w+2$ walls (Lemma~\ref{43:lem:flip}), and the orbit ends on a cycle with $w+2$ walls
 (Lemma~\ref{43:lem:cons}), which differs from the cycle left. Likewise with an isolated cell and $w-2$ for
@@ -896,7 +912,7 @@ wall count is $w_-$ or $w_+$.
 A \emph{slide} is a single flip that leads from a periodic state to a periodic state with the same wall count.
 
 \begin{lemma}[slides]\label{43:lem:slides}
-Let $n\ge 3$. If $y'=y+e_j$ is a slide, the cycles of $y$ and $y'$ are equal or joined by edges of $\Gone$ in
+Let $n\ge 3$ (whether or not $4$ divides $n$). If $y'=y+e_j$ is a slide, the cycles of $y$ and $y'$ are equal or joined by edges of $\Gone$ in
 both directions. Moreover:
 \begin{enumerate}[label=(\alph*),nosep,leftmargin=*]
 \item if $x$ has no isolated cell and $w\ge 2$ walls, a sequence of slides leads from $x$ to a state $x^*$ whose
@@ -965,7 +981,8 @@ strongly connected component $K_0$ of $\Gone$.
 \emph{Step 2 (upper level).} In the same way (Lemma~\ref{43:lem:levels}(a), Lemma~\ref{43:lem:slides}(b),
 Lemma~\ref{43:lem:per}(c)) every cycle $D^+$ of the upper level has paths to and from some
 $Z''\in\{Z^+,\cpl{Z^+}\}$. By Lemma~\ref{43:lem:levels}(c), $Z$ has an edge to a cycle $D_1$ of the upper
-level, and $D_1$ has a path to $Z^+$ or to $\cpl{Z^+}$. Applying the complement, $\cpl{Z}$ has a path to the
+level, and $D_1$ has a path to $Z^+$ or to $\cpl{Z^+}$. Applying the complement, which maps cycles to cycles and
+edges of $\Gone$ to edges of $\Gone$ (end of the proof of Lemma~\ref{43:lem:Z}), $\cpl{Z}$ has a path to the
 other one. Since $Z$ has a path to $\cpl{Z}$, the cycle $Z$ has paths to both $Z^+$ and $\cpl{Z^+}$, hence to
 every cycle of the upper level. Conversely every cycle of the upper level has an edge to a cycle of the lower
 level (Lemma~\ref{43:lem:levels}(c)), which is in $K_0$. So $K\subseteq K_0$.
@@ -983,7 +1000,7 @@ $K$; $k_v=0$ for all $v$; and $\kst=0$.
 Theorems~\ref{43:thm:levels} and~\ref{thm:A} give $\Sel=K$ and $\gmin=m-1$. The state $z$ of
 Lemma~\ref{43:lem:Z} contains $\code{000}$ (it has $\eta+2\ge 3$ zeros in a row) and $\code{001}$,
 $\code{011}$, $\code{110}$, $\code{100}$ (the run $\code{0}^{\eta+2}$ is followed by $\code{11}$ and preceded,
-cyclically, by $\code{11}$); $\cpl{z}$ contains $\code{111}$; both lie on cycles of the lower level. A state of a cycle of the upper level has an
+cyclically, by $\code{11}$); $\cpl{z}$ contains $\code{111}$; both lie on cycles of the lower level. The upper level is not empty (Lemma~\ref{43:lem:levels}(c)). A state of a cycle of the upper level has an
 isolated cell (Lemma~\ref{43:lem:levels}(a)), that is, the code $\code{010}$ or $\code{101}$, and its
 complement, which is also on a cycle of the upper level, has the other one. So every code occurs in a state of a
 selected cycle, and $k_v=0$ for all $v$ by Lemma~\ref{lem:kzero}.
@@ -1203,7 +1220,7 @@ $p-2,\dots,p+3$ the state $y$ is $\code{110010}$, with the code $\code{100}$ at 
 $\code{010}$ at $p+2$; $Fy$ is $\code{111110}$ there, with the code $\code{111}$ at $p$; $F^2y$ is
 $\code{100010}$ there, with the code $\code{000}$ at $p$. So $R(A_i\to\Dc{v})\le1$ for
 $v\in\{\code{000},\code{001},\code{010},\code{100},\code{111}\}$, and
-$k_v\le\gamma(A_i)+1-\gmin=1$. Hence $\kst=1$.
+$k_v\le\gamma(A_i)+1-\gmin=1$ by \eqref{eq:kv}, since $A_i$ is selected. Hence $\kst=1$.
 
 \emph{Part} (ii). Let $n\ge5$, $3\ndiv n$, and let $K$ be the strongly connected component of $\Gone$ that
 contains all block words (Lemma~\ref{94:lem:component}).
@@ -1238,8 +1255,9 @@ contains $v$; by Step~3 this holds for all eight codes, so $\kst=0$.
 \end{proof}
 
 \begin{remark}\label{94:rem:small}
-For $n=3$ and $n=4$ nothing is proved (Lemma~\ref{94:lem:growth} needs $n\ge5$, Lemma~\ref{94:lem:crystal} needs
-$n\ge6$). Computed (files \texttt{proofs\_94\_26/out/g1\_classes\_94.jsonl}, \texttt{data/fw\_sweep.csv} and
+Theorem~\ref{94:thm:main} is not proved for $n=3$ and $n=4$. At $n=4$ no block word has a long block ($2a+3b=4$
+forces $b=0$), so Step~3 of part~(ii) does not give the codes $\code{011}$ and $\code{110}$; part~(i) needs
+$n\ge6$ (Lemma~\ref{94:lem:crystal}). Computed (files \texttt{proofs\_94\_26/out/g1\_classes\_94.jsonl}, \texttt{data/fw\_sweep.csv} and
 \texttt{data/ring\_size/crystal\_radius.csv}): at $n=4$ the number of closed classes of $\Gone$ is
 \NinetyFourFourClosed; the closed class consists of the \NinetyFourFourClassSize{} block words, which are the two
 checkerboards, its states contain the codes \NinetyFourFourCodes{} only, and $\kst=\KstarNinetyFourAtFour$. At $n=3$
@@ -1286,7 +1304,7 @@ deleting a one of the parity class with fewer ones: that number drops by $1$; in
 cycles in both directions (Lemma~\ref{154:lem:moves}) \\
 26, $n$ even & number of parity changes $\chi(x)$; cannot increase (Lemma~\ref{26:lem:chi}) &
 the states with $\chi=0$ that are periodic under rule 90, and the domain states (Lemmas~\ref{26:lem:parity},
-\ref{26:lem:domain}); the periodic states that contain $\code{111}$ are not described &
+\ref{26:lem:domain}); the cycles that contain $\code{111}$ are not described &
 deleting a singleton group: $\chi-2$; flips of free cells of domain states: $\chi$ unchanged
 (Lemmas~\ref{26:lem:singleton}, \ref{26:lem:domain}) \\
 94 & the set of cells that are not frozen, $\Zn\setminus\Fz(x)$; cannot increase (Lemma~\ref{94:lem:freeze}) &
@@ -1297,7 +1315,8 @@ $a-3$; split, $a+3$ (Lemmas~\ref{94:lem:growth}, \ref{94:lem:refreeze}, \ref{94:
 \end{tabular}
 \caption{The three ingredients of Section~\ref{sec:mechanism} in the four proofs. For rule 94 the quantity is a set
 and ``cannot increase'' refers to inclusion; the flips that enlarge the frozen set add at least one cell, not a fixed
-number.}
+number. For rule 154 the quantity has two values only; the number that the moves lower, the number of ones on the
+parity class with fewer ones, is not that quantity and is not constant on a cycle.}
 \label{tab:mech}
 \end{table}
 
@@ -1322,7 +1341,7 @@ parity, the \emph{groups}; consecutive groups have different parity. The first o
 \emph{Domain states.} $x\in M$ is a \emph{domain state} if any two cyclically consecutive sources $s,s'$ are at
 distance $d=s'-s\ge 3$ (the distance is odd). The cells $s,\dots,s'-1$ form a \emph{domain}: the source $s$ carries
 $1$, the cells $s+1,s+3,\dots,s+d-2$ carry $0$, and the cells $s+2,s+4,\dots,s+d-1$ (the \emph{free cells}) carry the
-other ones of the group, in any combination. Conversely, any choice of an even number of sources of alternating parity
+other ones of the group, in any combination. Conversely, any choice of a positive even number of sources of alternating parity
 at distances at least $3$ and of the values of the free cells is a domain state. A cycle that consists of domain states
 is a \emph{domain cycle}.
 \emph{Carrier words.} Cyclic words over the blocks $\code{11100}$ and $\code{100}$ with at least one block
@@ -1388,7 +1407,9 @@ sources, zeros at the odd offsets, and the stated values at the free cells; its 
 (c) By (b), $U$ acts on the free cells of each domain by $z\mapsto z+(\text{shift of }z)+(\text{constant})$, an
 invertible affine map of $\{0,1\}^{(d-1)/2}$ over the field with two elements (the shift is nilpotent). So $U$ is a
 bijection of the finite set of domain states with given sources, and every such state is periodic under $U$, hence
-under $F$. In a domain state two adjacent ones occur only as a free cell followed by the next source, and then the
+under $F$. The set of domain states is invariant under rotation ($n$ is even, so a rotation by one cell exchanges
+the two parity classes and keeps all distances), so $F=\sigma^{-1}U$ maps it bijectively onto itself; in particular
+the cycle of a domain state is a domain cycle. In a domain state two adjacent ones occur only as a free cell followed by the next source, and then the
 cell after the source carries $0$. The last statement is the definition.
 \end{proof}
 
@@ -1424,7 +1445,7 @@ Let $n=2^k\ge4$ and let $m$ be the number of cycles of rule 26.
 \begin{enumerate}[label=\textup{(\alph*)},nosep,leftmargin=*]
 \item Every cycle other than $\{\zero\}$ has a directed path to $\{\zero\}$ in $\Gone$.
 \item No single flip leaves $\{\zero\}$: $V(\{\zero\},C)\ge2$ for every other cycle $C$.
-\item $\{\zero\}$ is the only closed class of $\Gone$.
+\item $\{\{\zero\}\}$ is the only closed class of $\Gone$.
 \item $\gamma(\{\zero\})=m-1$. For $C\ne\{\zero\}$: $\gamma(C)\ge m$, and $\gamma(C)=m$ iff $C$ is reachable in
 $\Gone$ from a cycle $C_1$ with $V(\{\zero\},C_1)=2$ ($C=C_1$ allowed). The noise-selected set is
 $\Sel=\{\{\zero\}\}$.
@@ -1440,7 +1461,8 @@ contained in $E\cup O$.
 \emph{Case 2: no state of $C$ has a singleton group.} By Lemma~\ref{26:lem:singleton}(a) all states of $C$ are domain
 states. Take $x\in C$ and a group with source $s$ and further ones $j_1<\dots<j_r$ ($r\ge1$) in cyclic order. The
 states $x$, $x+e_{j_r}$, $x+e_{j_r}+e_{j_{r-1}}$, \dots\ are domain states with the same sources
-(Lemma~\ref{26:lem:domain}(c)), hence periodic; consecutive ones lie on the same cycle or on cycles joined by an edge
+(Lemma~\ref{26:lem:domain}(c)), hence periodic, and they have the same $\chi$ (the sources and their parities do not
+change); consecutive ones lie on the same cycle or on cycles joined by an edge
 (Lemma~\ref{lem:edge}). The last one has the singleton group $\{s\}$, and Case~1 applies to its cycle.
 In both cases $C$ has a path in $\Gone$ to a cycle with a smaller $\chi$, or ($\chi=2$) to a cycle on which $\chi=0$,
 which is contained in $E\cup O$. By induction every cycle has a path to a cycle contained in $E\cup O$. For $n=2^k$
@@ -1477,7 +1499,7 @@ with $\gamma=m$; so $k_{\code{111}}=1$ and $\kst=1$.
 \end{proposition}
 
 \paragraph{Computed values and the open case.}
-For $k$ even nothing beyond (a) and (b) is proved. Two ring sizes are covered by computation only (file \texttt{proofs\_94\_26/out/g1\_26.jsonl}; the same values are
+For even $k\ge4$ nothing beyond (a) and (b) is proved; for $k=2$ the proposition does not apply. Two ring sizes are covered by computation only (file \texttt{proofs\_94\_26/out/g1\_26.jsonl}; the same values are
 in the data files of Table~\ref{tab:kstar}). At $n=4$ the number of cycles is \TwentySixFourCycles{} (the zero
 state), and the indices $k_v$, for the codes in the order $\code{000},\code{001},\dots,\code{111}$, are
 \TwentySixFourKv; so $\kst=\KstarTwentySixAtFour$. At $n=16$, $k_{\code{111}}=\KsevenTwentySixAtSixteen$ and
@@ -1498,7 +1520,8 @@ contain $\code{111}$
 (at $n=16$, \TwentySixSixteenCarrier{} of the \TwentySixSixteenWith{} cycles that contain $\code{111}$ pass through
 a carrier word),
 and that at another even ring size a cycle that contains $\code{111}$ has $\chi<n/3$
-(at $n=22$ the values of $\chi$ on the cycles that contain $\code{111}$ are \TwentySixTwentyTwoChi). So a lower bound on $\chi$ for the cycles that contain
+(at $n=22$ the values of $\chi$ on the cycles that contain $\code{111}$ are \TwentySixTwentyTwoChi; the independent
+verification of that document recomputed only that a cycle with the smaller value exists). So a lower bound on $\chi$ for the cycles that contain
 $\code{111}$ at $n=2^k$ is not available.
 
 \begin{proposition}[even $n$ that is not a power of two]\label{26:prop:even}
@@ -1531,13 +1554,14 @@ every other limit set by a chain of single mutations. Theorem~\ref{thm:A} restat
 its first sentence and the two steps of its proof correspond to the results of these authors on mutation-connected
 and locally stable components, and its use for a set of cycles that no single flip leaves and that every other cycle
 reaches along edges of $\Gone$ is in substance the chain lemma. The primary texts were not read; the correspondence
-rests on Ellison's text, the abstract of~\cite{Samuelson1994} and secondary descriptions.
+rests on Ellison's text, the abstract of~\cite{Samuelson1994} and search excerpts of secondary descriptions, and is
+provisional.
 
 \emph{Noisy elementary cellular automata.}
 Bagnoli, Baia and Matteuzzi~\cite{BagnoliBaiaMatteuzzi2025} treat all classes of elementary rules on a ring of one
 size under a noise of at most one flip, applied to attractor states: they count, over the states of a cycle and all
 single flips, how often the orbit ends in the basin of each attractor, normalise, and iterate this matrix. Costs
-above one and potentials are not considered, and the ring size is not varied. By~\cite{PeterleinNote} this chain has
+above one and potentials are not considered, and the dependence on the ring size is not studied. By~\cite{PeterleinNote} this chain has
 the correct leading-order law on the cycles whenever $\Gone$ has a single closed class, which is then $\Sel$.
 
 \emph{The rules on rings.}
@@ -1554,8 +1578,8 @@ they state that the operator is unitary for every odd $n$, which they cite from~
 ratio is below \ZRBound{} in their range $n=\ZRNmin,\dots,\ZRNmax$; the two values that they print for even $n$ are
 \ZRValues. They give no explanation. Lemma~\ref{154:lem:periodic} gives one: for even $n$ the states that lie on no cycle lie in $E\cup O$,
 which has $2^{n/2+1}-1$ of the $2^n$ states, and they are the states of $E\cup O$ that are not periodic under rule
-90. The counts are in the table of Section~A1 of \texttt{literature\_addendum.md}, which also records what was read
-of~\cite{ZhuRichard2026} and by whom. That rules 26 and 154 produce the pattern of rule 90
+90. The counts are in the table of Section~A1 of \texttt{literature\_addendum.md}; its update of 20 November 2026
+records what was read of~\cite{ZhuRichard2026} and by whom. That rules 26 and 154 produce the pattern of rule 90
 from a single cell on the line is a comment in entry A070886 of~\cite{OEIS};
 \cite[Section~5]{MartinOdlyzkoWolfram1984} uses this reduction for rule 18, and~\cite{Nordahl1989} lists rules 26,
 94 and 154 among those ``known to be capable of simulating rule 90''. Rule 26 or rule 154 on finite rings also
@@ -1566,7 +1590,7 @@ same credit. The conserved number of blocks $\code{10}$, half the number of wall
 142 and in~\cite{Fuks2005b} for both rules, taken there from a paper of Hattori and
 Takesue~\cite{HattoriTakesue1991}. On a ring of $n$ cells
 rule 184 has no block $\code{00}$ or no block $\code{11}$ after $\lfloor (n-2)/2\rfloor$ steps~\cite{Fuks1997};
-this is the healing time of Proposition~\ref{43:prop:heal}.
+this is the larger of the two healing times of Proposition~\ref{43:prop:heal}.
 
 \emph{What was not found.}
 No claim of novelty is made. Not found in the sources reached:
@@ -1582,7 +1606,9 @@ Lemma~\ref{43:lem:pww};
 (v)~for rule 26, the quantity $\chi$, the domain states and the paths to the zero state;
 (vi)~for any of the five rules, which cycles small noise selects as a function of $n$.
 These negatives are provisional. The searches were short; they are listed in the files
-\texttt{literature\_ring\_size.md} and \texttt{literature\_addendum.md} of the repository. For rule 26 and for rule
+\texttt{literature\_ring\_size.md} and \texttt{literature\_addendum.md} of the repository, except the two short
+searches for rule 26 and for rule 94 with $3\ndiv n$, which are recorded in the two proof documents of
+\texttt{proofs\_94\_26/}, without the wording of the queries. For rule 26 and for rule
 94 with $3\ndiv n$ the searches were not checked by the verification of those proofs, and for rule 154 and for rule
 94 with $3\mid n$ no session searched after the statements were proved, except to look up sources named by a search
 outside the sessions; that search, reported to have found no prior statement, was not repeated.
@@ -1596,7 +1622,7 @@ Abstract or search excerpts only: \cite{Samuelson1994,NobeYura2004,NobeYura2007}
 reader outside the sessions named in the statement on the use of AI: \cite{ZhuRichard2026} (on 20 November 2026) and
 \cite{Fuks2005b}; what this subsection says about them is taken from that reader's record in
 \texttt{literature\_addendum.md}. The other references were read in full by a session, some as preprints, as the
-list of references says. Two versions are named in this subsection, were not read and are not in the list of
+list of references says. Two further versions that this subsection names were not read and are not in the list of
 references: the conference version of \cite{BagnoliBaiaMatteuzzi2025} and the journal version of \cite{Fuks2005b}.
 A further text that concerns rule 154 or rule 26 on finite rings was seen as a search excerpt only and is not used:
 a paper of Aguiar and Severino in Complex Systems 24.
@@ -1611,8 +1637,7 @@ study~\cite{PeterleinStudy} (\texttt{report\_ring\_size.md}, Section~5); nothing
 $n$ unless a proof is named.
 Class 35: $\kst\ge1$ at $n=\KposThirtyFive$, the multiples of $3$ in the range; there the selected cycles do not
 contain the code $\code{101}$. Class 37: $\kst=0$ at $n=\KzeroThirtySeven$ and $\kst\ge1$ at the other $n$ of the
-range. Class 45: $\kst\ge1$ at $n=\KposFortyFive$ only; for odd $n$ rule 45 is a bijection, being the complement of
-the mirror image of rule 154 (compare Lemma~\ref{154:lem:collisions}), and for a bijection $\kst=0$
+range. Class 45: $\kst\ge1$ at $n=\KposFortyFive$ only; for odd $n$ rule 45 is a bijection, being the mirror image of rule 154 with the output negated (compare Lemma~\ref{154:lem:collisions}), and for a bijection $\kst=0$
 \cite{PeterleinNote}. Class 73: $\kst\ge1$ at $n=\KposSeventyThree$ only. Class 122: $\kst=0$ at
 $n=\KzeroOneTwentyTwo$ and $\kst\ge1$ at the other $n$ of the range; according to the study the outcome depends
 on whether the zero state and the checkerboard cycle are selected, and partial results on these two cycles are
@@ -1630,12 +1655,11 @@ that $\kst\ge1$ iff $n$ is a power of two, for both classes and every $n\ge4$, i
 of~\cite{PeterleinNote}; it is not reproduced here.
 
 \emph{Rule 26.}
-The periodic states that contain $\code{111}$ are not described (Section~\ref{sec:26}). Three things depend on
-them: the value of $\kst$ for $n=2^k$ with even $k\ge6$; for even $n$ that is not a power of two, whether a cycle
+The cycles that contain $\code{111}$ are not described (Section~\ref{sec:26}). Two things depend on
+them: the value of $\kst$ for $n=2^k$ with even $k\ge6$; and, for even $n$ that is not a power of two, whether a cycle
 that contains $\code{111}$ lies in the closed class, that is, whether $\kst=0$
 (Proposition~\ref{26:prop:even}; computed: $\kst=0$ at $n=\TwentySixEvenZero$ and $\kst\ge1$ at
-$n=\TwentySixEvenPos$ among the even $n$ of the range $\OpenNmin,\dots,\OpenNmax$ that are not powers of two); and all odd $n$, which the proofs
-do not treat.
+$n=\TwentySixEvenPos$ among the even $n$ of the range $\OpenNmin,\dots,\OpenNmax$ that are not powers of two). Odd $n$ is not treated.
 
 \emph{Rule 94.}
 All periodic states are described (Proposition~\ref{94:prop:periodic}), and $\kst$ is determined for every $n\ge5$.
@@ -1653,16 +1677,17 @@ This statement follows the form of the statement in \cite{PeterleinNote}. The pr
 figures and the text of this paper were produced by Claude (Anthropic) in sessions directed by the author. The
 study that computed the dependence of $\kst$ on $n$~\cite{PeterleinStudy} was produced on 13 and 14 November 2026.
 The proofs for rule 154 and for rule 94 with $3\mid n$ were found on 14 November 2026 by a separate session whose
-task was to verify that study; they were checked inside that session, with separate code. These two proofs have not
-been verified by a separate session. The proofs for rules 43 and 142 (17 November 2026) and for rule 94 with $3\ndiv n$ and
+task was to verify that study; they were checked inside that session, with separate code, and had no verification
+by a separate session until the verification of this paper described below. The proofs for rules 43 and 142 (17 November 2026) and for rule 94 with $3\ndiv n$ and
 rule 26 (18 November 2026) were each written in one session and then verified by a separate session that had not
 seen the work; it read the proofs line by line and tested every lemma exhaustively on small rings with its own code.
-For rules 43 and 142 it found no false statement and no gap in a proof. For rule 94 with $3\ndiv n$ and rule 26 it
+The verification of the second pair read the computed tables of the proof documents before it wrote its tests, and
+says so in its report. For rules 43 and 142 it found no false statement and no gap in a proof. For rule 94 with $3\ndiv n$ and rule 26 it
 found no false statement in a theorem and no gap that affects a result; one false sentence without consequence in a
 lemma and one step that lacked a citation were corrected. The reports of the verifications
 (\texttt{VERIFICATION\_ring\_size.md}, \texttt{VERIFICATION\_43\_142.md}, \texttt{VERIFICATION\_94\_26.md}) are in
 the repository, and their headers say how each finding was handled. Claude, in the conversation outside the
-sessions in which the sessions were planned, read the proof documents and this paper and recomputed the statements
+sessions in which the sessions were planned, read the proof documents and this paper and recomputed the conclusions of the theorems
 on small rings with separate code. That code and its output are in the folder \texttt{reader\_checks/}; by its
 README the ranges are: rules 43 and 142, $n=4,\dots,16$; rule 94, $n=4,\dots,17$ with $3\ndiv n$ and
 $n=3,4,6,9,12$; rule 26, even $n=4,\dots,18$; rule 154, $n=3,\dots,14$; the healing time of
@@ -1673,8 +1698,15 @@ paper was assembled from the proof documents on 20 November 2026 by a further se
 no mathematical step. On the same day, after that reader had read the paper and the author had decided the open
 points of \texttt{paper/REFEREE\_NOTES.md}, another session under the same instruction added
 Appendix~\ref{app:26} from the proof document for rule 26, the classes 60 and 90 in Section~\ref{sec:open}, the
-report on \cite{ZhuRichard2026} and the entries of the list of references for texts that were not read. The file
-\texttt{paper/TRACE.md} maps every statement of the paper to its source and lists every change of wording and
+report on \cite{ZhuRichard2026}, the entries of the list of references for texts that were not read, and the new
+wording of the abstract, of the paragraph on the status of the proofs and of this statement. A separate session
+that had written none of these texts then verified the paper (\texttt{VERIFICATION\_paper.md}): it read line by
+line the proofs that had no separate verification, tested every statement on small rings with its own code and
+compared every numbered statement with its source. It found no false statement in a theorem, proposition, lemma or
+corollary. Its findings on sentences of the surrounding text and on three proof steps that were not written were
+worked into the text by the reader named above, as the header of that report records; this last pass has not been
+verified. The file
+\texttt{paper/TRACE.md} maps every statement of the paper to its source and lists the changes of wording and
 notation. Nothing in this paper has been through peer review. The author selected the question, set the scope, and
 is responsible for the content.
 
@@ -1769,15 +1801,19 @@ $x$ is a block word of long blocks $\code{011}$, hence a fixed point (Lemma~\ref
 (a) $j$ carries a $0$. Then $x_{j-2}\cdots x_{j+2}=\code{11011}$ and $x_{j-3}=x_{j+3}=0$. The only occurrence
 containing $j$ is centred at $j$; its other cells $j-1$, $j+1$ lie in no other occurrence (their other neighbours
 are ones). The cells $j-2$ and $j+2$ lie in the occurrences centred at $j-3$ and $j+3$, which do not contain $j$
-(for $n=6$ these two occurrences coincide). So in $y=x+e_j$ every cell outside $I=\{j-1,j,j+1\}$ is frozen, with
+(for $n=6$ these two occurrences coincide). Every cell outside $I=\{j-1,j,j+1\}$ lies in an occurrence of $x$ whose
+centre is not $j$ ($x$ is fully frozen, and $j$ is the only centre in $I$), and these occurrences are occurrences of
+$y=x+e_j$ by (O2). So in $y$ every cell outside $I$ is frozen, with
 $y_{j-2}=y_{j+2}=1$, and $y=\code{111}$ on $I$. By Lemma~\ref{94:lem:freeze}(iii),
 $\code{111}\to\code{000}\to\code{101}$ on $I$, which is $x$; so $F^2y=x$ and $F^3y=x$.
 
 (b) $j$ carries the first $1$ of a block: the block is on the cells $p,p+1,p+2$ and $j=p+1$. Then
 $x_{p-2}\cdots x_{p+3}=\code{110110}$. The only occurrence containing $p+1$ is centred at $p$ (cells $p-1,p,p+1$);
 the cell $p-1$ lies in no other occurrence ($x_{p-2}=1$). The cell $p-2$ lies in the occurrence centred at $p-3$,
-the cell $p+2$ in the occurrence centred at $p+3$; neither contains $p+1$. So in $y=x+e_{p+1}$ every cell outside
-$I=\{p-1,p,p+1\}$ is frozen, with $y_{p-2}=y_{p+2}=1$, and $y=\code{100}$ on $I$. By
+the cell $p+2$ in the occurrence centred at $p+3$; neither contains $p+1$. As in (a), every cell outside
+$I=\{p-1,p,p+1\}$ lies in an occurrence of $x$ whose centre is not $p$, and these are occurrences of $y=x+e_{p+1}$
+by (O2), because $p$ is the only centre among $p$, $p+1$, $p+2$. So in $y$ every cell outside
+$I$ is frozen, with $y_{p-2}=y_{p+2}=1$, and $y=\code{100}$ on $I$. By
 Lemma~\ref{94:lem:freeze}(iii),
 $\code{100}\to f(1,1,0)f(1,0,0)f(0,0,1)=\code{111}\to\code{000}\to\code{101}$ on $I$, which is $x$. This also
 gives the second statement of the lemma.
@@ -2048,7 +2084,8 @@ in case 2 is that of Lemma~\ref{94:lem:empty}.
 
 Notation and standing assumptions as in Section~\ref{sec:26}: $n\ge4$ is even and $F$ is the global map of rule 26.
 This appendix proves Propositions~\ref{26:prop:indices} and~\ref{26:prop:even}. Its statements and proofs are those
-of the document \texttt{proofs\_94\_26/PROOF\_26.md}, in the notation of Section~\ref{sec:26}.
+of the document \texttt{proofs\_94\_26/PROOF\_26.md}, in the notation of Section~\ref{sec:26}, with the changes listed
+in \texttt{paper/TRACE.md}.
 
 \begin{lemma}[ancestors of $\code{111}$]\label{26:lem:ancestors}
 Let $r\ge0$ and let $u$ be a state with $u_j=u_{j+1}=1$ whose one preceding $j$ in cyclic order is at distance
@@ -2209,7 +2246,9 @@ $y=(1+\Sigma^{2^e})e_a=(1+\Sigma)^{2^e}e_a$ lies in the image of $(1+\Sigma)^{2^
 points of $1+\Sigma$ on a ring of $h=2^eq$ cells: in $\mathrm{GF}(2)[\Sigma]/(\Sigma^h-1)$,
 $\Sigma^h-1=(\Sigma^q-1)^{2^e}$ and $1+\Sigma$ divides $\Sigma^q-1$ exactly once, so the kernels of
 $(1+\Sigma)^j$ stop growing at $j=2^e$, the space is the direct sum of the kernel and the image of
-$(1+\Sigma)^{2^e}$, and $1+\Sigma$ is invertible on the image. So $y$ and $y+e_b$ are periodic: the cycle of $x$ is
+$(1+\Sigma)^{2^e}$, and $1+\Sigma$ is invertible on the image. $\Sigma$ is invertible and commutes with
+$1+\Sigma$, so $F^2=\Sigma^{-1}(1+\Sigma)^2$ maps this image bijectively onto itself; hence every state of it is
+periodic under $F^2$, and under $F$. So $y$ is periodic, and $y+e_b$ is periodic as a domain state: the cycle of $x$ is
 joined, by flips between periodic states, to the cycle of $y$, which is in $\mathcal{R}$. Hence every domain cycle
 lies in $K$.
 
