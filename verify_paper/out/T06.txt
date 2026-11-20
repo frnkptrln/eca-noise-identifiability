@@ -1,0 +1,311 @@
+L3.12  ok    both rules, eight codes
+L3.16  ok    n=3 all 8 words d: (a), (b), (c)
+L3.17  ok    n=3 all words d, both maps
+L3.13  ok    rule 43 n=3 all states
+L3.14  ok    rule 43 n=3 (a) all words, (b) all states
+L3.18  ok    rule 43 n=3 (a) all states, (b), (c) all periodic states and all rotations
+L3.13  ok    rule 142 n=3 all states
+L3.14  ok    rule 142 n=3 (a) all words, (b) all states
+L3.18  ok    rule 142 n=3 (a) all states, (b), (c) all periodic states and all rotations
+L3.15  ok    n=3 all states, all cells
+L3.16  ok    n=4 all 16 words d: (a), (b), (c)
+L3.17  ok    n=4 all words d, both maps
+L3.13  ok    rule 43 n=4 all states
+L3.14  ok    rule 43 n=4 (a) all words, (b) all states
+L3.18  ok    rule 43 n=4 (a) all states, (b), (c) all periodic states and all rotations
+L3.19  ok    rule 43 n=4
+L3.13  ok    rule 142 n=4 all states
+L3.14  ok    rule 142 n=4 (a) all words, (b) all states
+L3.18  ok    rule 142 n=4 (a) all states, (b), (c) all periodic states and all rotations
+L3.19  ok    rule 142 n=4
+L3.15  ok    n=4 all states, all cells
+L3.16  ok    n=5 all 32 words d: (a), (b), (c)
+L3.17  ok    n=5 all words d, both maps
+L3.13  ok    rule 43 n=5 all states
+L3.14  ok    rule 43 n=5 (a) all words, (b) all states
+L3.18  ok    rule 43 n=5 (a) all states, (b), (c) all periodic states and all rotations
+L3.13  ok    rule 142 n=5 all states
+L3.14  ok    rule 142 n=5 (a) all words, (b) all states
+L3.18  ok    rule 142 n=5 (a) all states, (b), (c) all periodic states and all rotations
+L3.15  ok    n=5 all states, all cells
+L3.16  ok    n=6 all 64 words d: (a), (b), (c)
+L3.17  ok    n=6 all words d, both maps
+L3.13  ok    rule 43 n=6 all states
+L3.14  ok    rule 43 n=6 (a) all words, (b) all states
+L3.18  ok    rule 43 n=6 (a) all states, (b), (c) all periodic states and all rotations
+L3.19  ok    rule 43 n=6
+L3.13  ok    rule 142 n=6 all states
+L3.14  ok    rule 142 n=6 (a) all words, (b) all states
+L3.18  ok    rule 142 n=6 (a) all states, (b), (c) all periodic states and all rotations
+L3.19  ok    rule 142 n=6
+L3.15  ok    n=6 all states, all cells
+L3.16  ok    n=7 all 128 words d: (a), (b), (c)
+L3.17  ok    n=7 all words d, both maps
+L3.13  ok    rule 43 n=7 all states
+L3.14  ok    rule 43 n=7 (a) all words, (b) all states
+L3.18  ok    rule 43 n=7 (a) all states, (b), (c) all periodic states and all rotations
+L3.13  ok    rule 142 n=7 all states
+L3.14  ok    rule 142 n=7 (a) all words, (b) all states
+L3.18  ok    rule 142 n=7 (a) all states, (b), (c) all periodic states and all rotations
+L3.15  ok    n=7 all states, all cells
+L3.16  ok    n=8 all 256 words d: (a), (b), (c)
+L3.17  ok    n=8 all words d, both maps
+L3.13  ok    rule 43 n=8 all states
+L3.14  ok    rule 43 n=8 (a) all words, (b) all states
+L3.18  ok    rule 43 n=8 (a) all states, (b), (c) all periodic states and all rotations
+L3.19  ok    rule 43 n=8
+L3.13  ok    rule 142 n=8 all states
+L3.14  ok    rule 142 n=8 (a) all words, (b) all states
+L3.18  ok    rule 142 n=8 (a) all states, (b), (c) all periodic states and all rotations
+L3.19  ok    rule 142 n=8
+L3.15  ok    n=8 all states, all cells
+L3.16  ok    n=9 all 512 words d: (a), (b), (c)
+L3.17  ok    n=9 all words d, both maps
+L3.13  ok    rule 43 n=9 all states
+L3.14  ok    rule 43 n=9 (a) all words, (b) all states
+L3.18  ok    rule 43 n=9 (a) all states, (b), (c) all periodic states and all rotations
+L3.13  ok    rule 142 n=9 all states
+L3.14  ok    rule 142 n=9 (a) all words, (b) all states
+L3.18  ok    rule 142 n=9 (a) all states, (b), (c) all periodic states and all rotations
+L3.15  ok    n=9 all states, all cells
+L3.16  ok    n=10 all 1024 words d: (a), (b), (c)
+L3.17  ok    n=10 all words d, both maps
+L3.13  ok    rule 43 n=10 all states
+L3.14  ok    rule 43 n=10 (a) all words, (b) all states
+L3.18  ok    rule 43 n=10 (a) all states, (b), (c) all periodic states and all rotations
+L3.19  ok    rule 43 n=10
+L3.13  ok    rule 142 n=10 all states
+L3.14  ok    rule 142 n=10 (a) all words, (b) all states
+L3.18  ok    rule 142 n=10 (a) all states, (b), (c) all periodic states and all rotations
+L3.19  ok    rule 142 n=10
+L3.15  ok    n=10 all states, all cells
+L3.16  ok    n=11 all 2048 words d: (a), (b), (c)
+L3.17  ok    n=11 all words d, both maps
+L3.13  ok    rule 43 n=11 all states
+L3.14  ok    rule 43 n=11 (a) all words, (b) all states
+L3.18  ok    rule 43 n=11 (a) all states, (b), (c) all periodic states and all rotations
+L3.13  ok    rule 142 n=11 all states
+L3.14  ok    rule 142 n=11 (a) all words, (b) all states
+L3.18  ok    rule 142 n=11 (a) all states, (b), (c) all periodic states and all rotations
+L3.15  ok    n=11 all states, all cells
+L3.16  ok    n=12 all 4096 words d: (a), (b), (c)
+L3.17  ok    n=12 all words d, both maps
+L3.13  ok    rule 43 n=12 all states
+L3.14  ok    rule 43 n=12 (a) all words, (b) all states
+L3.18  ok    rule 43 n=12 (a) all states, (b), (c) all periodic states and all rotations
+L3.19  ok    rule 43 n=12
+L3.13  ok    rule 142 n=12 all states
+L3.14  ok    rule 142 n=12 (a) all words, (b) all states
+L3.18  ok    rule 142 n=12 (a) all states, (b), (c) all periodic states and all rotations
+L3.19  ok    rule 142 n=12
+L3.15  ok    n=12 all states, all cells
+L3.16  ok    n=13 all 8192 words d: (a), (b), (c)
+L3.17  ok    n=13 all words d, both maps
+L3.13  ok    rule 43 n=13 all states
+L3.14  ok    rule 43 n=13 (a) all words, (b) all states
+L3.18  ok    rule 43 n=13 (a) all states, (b), (c) all periodic states and all rotations
+L3.13  ok    rule 142 n=13 all states
+L3.14  ok    rule 142 n=13 (a) all words, (b) all states
+L3.18  ok    rule 142 n=13 (a) all states, (b), (c) all periodic states and all rotations
+L3.15  ok    n=13 all states, all cells
+L3.16  ok    n=14 all 16384 words d: (a), (b), (c)
+L3.17  ok    n=14 all words d, both maps
+L3.13  ok    rule 43 n=14 all states
+L3.14  ok    rule 43 n=14 (a) all words, (b) all states
+L3.18  ok    rule 43 n=14 (a) all states, (b), (c) all periodic states and all rotations
+L3.19  ok    rule 43 n=14
+L3.13  ok    rule 142 n=14 all states
+L3.14  ok    rule 142 n=14 (a) all words, (b) all states
+L3.18  ok    rule 142 n=14 (a) all states, (b), (c) all periodic states and all rotations
+L3.19  ok    rule 142 n=14
+L3.15  ok    n=14 all states, all cells
+L3.16  ok    n=15 all 32768 words d: (a), (b), (c)
+L3.17  ok    n=15 all words d, both maps
+L3.13  ok    rule 43 n=15 all states
+L3.14  ok    rule 43 n=15 (a) all words, (b) all states
+L3.18  ok    rule 43 n=15 (a) all states, (b), (c) all periodic states and all rotations
+L3.13  ok    rule 142 n=15 all states
+L3.14  ok    rule 142 n=15 (a) all words, (b) all states
+L3.18  ok    rule 142 n=15 (a) all states, (b), (c) all periodic states and all rotations
+L3.15  ok    n=15 all states, all cells
+L3.16  ok    n=16 all 65536 words d: (a), (b), (c)
+L3.17  ok    n=16 all words d, both maps
+L3.13  ok    rule 43 n=16 all states
+L3.14  ok    rule 43 n=16 (a) all words, (b) all states
+L3.18  ok    rule 43 n=16 (a) all states, (b), (c) all periodic states and all rotations
+L3.19  ok    rule 43 n=16
+L3.13  ok    rule 142 n=16 all states
+L3.14  ok    rule 142 n=16 (a) all words, (b) all states
+L3.18  ok    rule 142 n=16 (a) all states, (b), (c) all periodic states and all rotations
+L3.19  ok    rule 142 n=16
+L3.15  ok    n=16 all states, all cells
+P3.22  ok    4 | n, n = 4..64: both rules, all four states of X, all cells: tau as stated (n = 4: tau = 1 for both kinds)
+L3.24  ok    rule 43 n=3 first statement (all slides); (a) 0 states, (b) 6 states: the state x* is reached by slides
+n=3    no   (outside the stated range, reported only)  rule 43 n=3: m = 3, closed classes 1, selected 3, k_v = [0, 0, 0, 0, 0, 0, 0, 0], k* = 0 (the theorems start at n = 4)
+L3.24  ok    rule 142 n=3 first statement (all slides); (a) 0 states, (b) 6 states: the state x* is reached by slides
+n=3    no   (outside the stated range, reported only)  rule 142 n=3: m = 3, closed classes 1, selected 3, k_v = [0, 0, 0, 0, 0, 0, 0, 0], k* = 0 (the theorems start at n = 4)
+T3.20  ok    rule 43 n=4 m=3 (1) True (2) True (3) True
+C3.21  ok    rule 43 n=4 S = {X}, gamma_min = m-1 = 2, k_v = [1, 0, 1, 0, 0, 1, 0, 1], k* = 1
+L3.24  ok    rule 43 n=4 first statement (all slides); (a) 4 states, (b) 0 states: the state x* is reached by slides
+T3.28  ok    rule 43 n=4 k* = 1
+T3.20  ok    rule 142 n=4 m=5 (1) True (2) True (3) True
+C3.21  ok    rule 142 n=4 S = {X}, gamma_min = m-1 = 4, k_v = [1, 0, 1, 0, 0, 1, 0, 1], k* = 1
+L3.24  ok    rule 142 n=4 first statement (all slides); (a) 4 states, (b) 0 states: the state x* is reached by slides
+T3.28  ok    rule 142 n=4 k* = 1
+L3.23  ok    rule 43 n=5 w- = 2, w+ = 4, |K| = 3 of 4 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 43 n=5 z = 00011; Z and its complement cycle are equal
+T3.26  ok    rule 43 n=5 K is the only closed class
+C3.27  ok    rule 43 n=5 S = K, gamma_min = m-1 = 3, all codes in K, k_v = 0
+L3.24  ok    rule 43 n=5 first statement (all slides); (a) 10 states, (b) 10 states: the state x* is reached by slides
+T3.28  ok    rule 43 n=5 k* = 0
+L3.23  ok    rule 142 n=5 w- = 2, w+ = 4, |K| = 3 of 5 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 142 n=5 z = 00011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 142 n=5 K is the only closed class
+C3.27  ok    rule 142 n=5 S = K, gamma_min = m-1 = 4, all codes in K, k_v = 0
+L3.24  ok    rule 142 n=5 first statement (all slides); (a) 10 states, (b) 10 states: the state x* is reached by slides
+T3.28  ok    rule 142 n=5 k* = 0
+L3.23  ok    rule 43 n=6 w- = 2, w+ = 4, |K| = 8 of 10 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 43 n=6 z = 000011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 43 n=6 K is the only closed class
+C3.27  ok    rule 43 n=6 S = K, gamma_min = m-1 = 9, all codes in K, k_v = 0
+L3.24  ok    rule 43 n=6 first statement (all slides); (a) 18 states, (b) 18 states: the state x* is reached by slides
+T3.28  ok    rule 43 n=6 k* = 0
+L3.23  ok    rule 142 n=6 w- = 2, w+ = 4, |K| = 6 of 10 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 142 n=6 z = 000011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 142 n=6 K is the only closed class
+C3.27  ok    rule 142 n=6 S = K, gamma_min = m-1 = 9, all codes in K, k_v = 0
+L3.24  ok    rule 142 n=6 first statement (all slides); (a) 18 states, (b) 18 states: the state x* is reached by slides
+T3.28  ok    rule 142 n=6 k* = 0
+L3.23  ok    rule 43 n=7 w- = 2, w+ = 4, |K| = 4 of 7 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 43 n=7 z = 0000011; Z and its complement cycle are equal
+T3.26  ok    rule 43 n=7 K is the only closed class
+C3.27  ok    rule 43 n=7 S = K, gamma_min = m-1 = 6, all codes in K, k_v = 0
+L3.24  ok    rule 43 n=7 first statement (all slides); (a) 28 states, (b) 28 states: the state x* is reached by slides
+T3.28  ok    rule 43 n=7 k* = 0
+L3.23  ok    rule 142 n=7 w- = 2, w+ = 4, |K| = 5 of 8 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 142 n=7 z = 0000011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 142 n=7 K is the only closed class
+C3.27  ok    rule 142 n=7 S = K, gamma_min = m-1 = 7, all codes in K, k_v = 0
+L3.24  ok    rule 142 n=7 first statement (all slides); (a) 28 states, (b) 28 states: the state x* is reached by slides
+T3.28  ok    rule 142 n=7 k* = 0
+T3.20  ok    rule 43 n=8 m=13 (1) True (2) True (3) True
+C3.21  ok    rule 43 n=8 S = {X}, gamma_min = m-1 = 12, k_v = [1, 0, 1, 0, 0, 1, 0, 1], k* = 1
+L3.24  ok    rule 43 n=8 first statement (all slides); (a) 44 states, (b) 40 states: the state x* is reached by slides
+T3.28  ok    rule 43 n=8 k* = 1
+T3.20  ok    rule 142 n=8 m=15 (1) True (2) True (3) True
+C3.21  ok    rule 142 n=8 S = {X}, gamma_min = m-1 = 14, k_v = [1, 0, 1, 0, 0, 1, 0, 1], k* = 1
+L3.24  ok    rule 142 n=8 first statement (all slides); (a) 44 states, (b) 40 states: the state x* is reached by slides
+T3.28  ok    rule 142 n=8 k* = 1
+L3.23  ok    rule 43 n=9 w- = 4, w+ = 6, |K| = 9 of 15 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 43 n=9 z = 000110011; Z and its complement cycle are equal
+T3.26  ok    rule 43 n=9 K is the only closed class
+C3.27  ok    rule 43 n=9 S = K, gamma_min = m-1 = 14, all codes in K, k_v = 0
+L3.24  ok    rule 43 n=9 first statement (all slides); (a) 72 states, (b) 78 states: the state x* is reached by slides
+T3.28  ok    rule 43 n=9 k* = 0
+L3.23  ok    rule 142 n=9 w- = 4, w+ = 6, |K| = 6 of 15 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 142 n=9 z = 000110011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 142 n=9 K is the only closed class
+C3.27  ok    rule 142 n=9 S = K, gamma_min = m-1 = 14, all codes in K, k_v = 0
+L3.24  ok    rule 142 n=9 first statement (all slides); (a) 72 states, (b) 78 states: the state x* is reached by slides
+T3.28  ok    rule 142 n=9 k* = 0
+L3.23  ok    rule 43 n=10 w- = 4, w+ = 6, |K| = 10 of 28 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 43 n=10 z = 0000110011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 43 n=10 K is the only closed class
+C3.27  ok    rule 43 n=10 S = K, gamma_min = m-1 = 27, all codes in K, k_v = 0
+L3.24  ok    rule 43 n=10 first statement (all slides); (a) 120 states, (b) 120 states: the state x* is reached by slides
+T3.28  ok    rule 43 n=10 k* = 0
+L3.23  ok    rule 142 n=10 w- = 4, w+ = 6, |K| = 12 of 30 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 142 n=10 z = 0000110011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 142 n=10 K is the only closed class
+C3.27  ok    rule 142 n=10 S = K, gamma_min = m-1 = 29, all codes in K, k_v = 0
+L3.24  ok    rule 142 n=10 first statement (all slides); (a) 120 states, (b) 120 states: the state x* is reached by slides
+T3.28  ok    rule 142 n=10 k* = 0
+L3.23  ok    rule 43 n=11 w- = 4, w+ = 6, |K| = 7 of 28 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 43 n=11 z = 00000110011; Z and its complement cycle are equal
+T3.26  ok    rule 43 n=11 K is the only closed class
+C3.27  ok    rule 43 n=11 S = K, gamma_min = m-1 = 27, all codes in K, k_v = 0
+L3.24  ok    rule 43 n=11 first statement (all slides); (a) 198 states, (b) 198 states: the state x* is reached by slides
+T3.28  ok    rule 43 n=11 k* = 0
+L3.23  ok    rule 142 n=11 w- = 4, w+ = 6, |K| = 11 of 29 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 142 n=11 z = 00000110011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 142 n=11 K is the only closed class
+C3.27  ok    rule 142 n=11 S = K, gamma_min = m-1 = 28, all codes in K, k_v = 0
+L3.24  ok    rule 142 n=11 first statement (all slides); (a) 198 states, (b) 198 states: the state x* is reached by slides
+T3.28  ok    rule 142 n=11 k* = 0
+T3.20  ok    rule 43 n=12 m=61 (1) True (2) True (3) True
+C3.21  ok    rule 43 n=12 S = {X}, gamma_min = m-1 = 60, k_v = [1, 0, 1, 0, 0, 1, 0, 1], k* = 1
+L3.24  ok    rule 43 n=12 first statement (all slides); (a) 322 states, (b) 318 states: the state x* is reached by slides
+T3.28  ok    rule 43 n=12 k* = 1
+T3.20  ok    rule 142 n=12 m=61 (1) True (2) True (3) True
+C3.21  ok    rule 142 n=12 S = {X}, gamma_min = m-1 = 60, k_v = [1, 0, 1, 0, 0, 1, 0, 1], k* = 1
+L3.24  ok    rule 142 n=12 first statement (all slides); (a) 322 states, (b) 318 states: the state x* is reached by slides
+T3.28  ok    rule 142 n=12 k* = 1
+L3.23  ok    rule 43 n=13 w- = 6, w+ = 8, |K| = 15 of 61 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 43 n=13 z = 0001100110011; Z and its complement cycle are equal
+T3.26  ok    rule 43 n=13 K is the only closed class
+C3.27  ok    rule 43 n=13 S = K, gamma_min = m-1 = 60, all codes in K, k_v = 0
+L3.24  ok    rule 43 n=13 first statement (all slides); (a) 520 states, (b) 520 states: the state x* is reached by slides
+T3.28  ok    rule 43 n=13 k* = 0
+L3.23  ok    rule 142 n=13 w- = 6, w+ = 8, |K| = 9 of 62 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 142 n=13 z = 0001100110011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 142 n=13 K is the only closed class
+C3.27  ok    rule 142 n=13 S = K, gamma_min = m-1 = 61, all codes in K, k_v = 0
+L3.24  ok    rule 142 n=13 first statement (all slides); (a) 520 states, (b) 520 states: the state x* is reached by slides
+T3.28  ok    rule 142 n=13 k* = 0
+L3.23  ok    rule 43 n=14 w- = 6, w+ = 8, |K| = 16 of 126 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 43 n=14 z = 00001100110011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 43 n=14 K is the only closed class
+C3.27  ok    rule 43 n=14 S = K, gamma_min = m-1 = 125, all codes in K, k_v = 0
+L3.24  ok    rule 43 n=14 first statement (all slides)
+T3.28  ok    rule 43 n=14 k* = 0
+L3.23  ok    rule 142 n=14 w- = 6, w+ = 8, |K| = 14 of 128 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 142 n=14 z = 00001100110011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 142 n=14 K is the only closed class
+C3.27  ok    rule 142 n=14 S = K, gamma_min = m-1 = 127, all codes in K, k_v = 0
+L3.24  ok    rule 142 n=14 first statement (all slides)
+T3.28  ok    rule 142 n=14 k* = 0
+L3.23  ok    rule 43 n=15 w- = 6, w+ = 8, |K| = 12 of 141 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 43 n=15 z = 000001100110011; Z and its complement cycle are equal
+T3.26  ok    rule 43 n=15 K is the only closed class
+C3.27  ok    rule 43 n=15 S = K, gamma_min = m-1 = 140, all codes in K, k_v = 0
+L3.24  ok    rule 43 n=15 first statement (all slides)
+T3.28  ok    rule 43 n=15 k* = 0
+L3.23  ok    rule 142 n=15 w- = 6, w+ = 8, |K| = 21 of 141 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 142 n=15 z = 000001100110011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 142 n=15 K is the only closed class
+C3.27  ok    rule 142 n=15 S = K, gamma_min = m-1 = 140, all codes in K, k_v = 0
+L3.24  ok    rule 142 n=15 first statement (all slides)
+T3.28  ok    rule 142 n=15 k* = 0
+T3.20  ok    rule 43 n=16 m=283 (1) True (2) True (3) True
+C3.21  ok    rule 43 n=16 S = {X}, gamma_min = m-1 = 282, k_v = [1, 0, 1, 0, 0, 1, 0, 1], k* = 1
+L3.24  ok    rule 43 n=16 first statement (all slides)
+T3.28  ok    rule 43 n=16 k* = 1
+T3.20  ok    rule 142 n=16 m=285 (1) True (2) True (3) True
+C3.21  ok    rule 142 n=16 S = {X}, gamma_min = m-1 = 284, k_v = [1, 0, 1, 0, 0, 1, 0, 1], k* = 1
+L3.24  ok    rule 142 n=16 first statement (all slides)
+T3.28  ok    rule 142 n=16 k* = 1
+L3.23  ok    rule 43 n=17 w- = 8, w+ = 10, |K| = 25 of 316 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 43 n=17 z = 00011001100110011; Z and its complement cycle are equal
+T3.26  ok    rule 43 n=17 K is the only closed class
+C3.27  ok    rule 43 n=17 S = K, gamma_min = m-1 = 315, all codes in K, k_v = 0
+L3.24  ok    rule 43 n=17 first statement (all slides)
+T3.28  ok    rule 43 n=17 k* = 0
+L3.23  ok    rule 142 n=17 w- = 8, w+ = 10, |K| = 14 of 317 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 142 n=17 z = 00011001100110011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 142 n=17 K is the only closed class
+C3.27  ok    rule 142 n=17 S = K, gamma_min = m-1 = 316, all codes in K, k_v = 0
+L3.24  ok    rule 142 n=17 first statement (all slides)
+T3.28  ok    rule 142 n=17 k* = 0
+L3.23  ok    rule 43 n=18 w- = 8, w+ = 10, |K| = 18 of 658 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 43 n=18 z = 000011001100110011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 43 n=18 K is the only closed class
+C3.27  ok    rule 43 n=18 S = K, gamma_min = m-1 = 657, all codes in K, k_v = 0
+L3.24  ok    rule 43 n=18 first statement (all slides)
+T3.28  ok    rule 43 n=18 k* = 0
+L3.23  ok    rule 142 n=18 w- = 8, w+ = 10, |K| = 20 of 658 cycles: (a) True (b) True (c) True (d) True
+L3.25  ok    rule 142 n=18 z = 000011001100110011; Z and its complement cycle are in one strongly connected component of G1
+T3.26  ok    rule 142 n=18 K is the only closed class
+C3.27  ok    rule 142 n=18 S = K, gamma_min = m-1 = 657, all codes in K, k_v = 0
+L3.24  ok    rule 142 n=18 first statement (all slides)
+T3.28  ok    rule 142 n=18 k* = 0
+T06 PASS   CPU 0.7 s (Python) wall 3.6 s

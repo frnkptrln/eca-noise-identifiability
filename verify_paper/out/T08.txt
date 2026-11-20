@@ -1,0 +1,6 @@
+(1) recount: 95 cells, 78 with a value of a theorem, 78 of these agree; macros of the paper: 95, 78, 78 -> ok
+    entries of the theorem rows by kind: {'--': 17, '0': 56, '1': 20, '1/2': 1, '>=1': 1} (the caption counts '>=1' and '1/2' as 'give a value')
+(2) theorem rows against the statements of the theorems: 95 of 95 cells equal
+(3) 'computed' rows against own k* from the definitions: 86 of 95 cells recomputed, 0 differ; computed in this script: [(26, 5), (26, 7), (26, 9), (26, 11), (26, 13), (26, 15), (26, 17), (26, 19), (43, 19), (43, 20), (142, 19), (142, 20)]
+    cells not recomputed (rule, n): [(26, 21), (26, 22), (43, 21), (43, 22), (94, 22), (142, 21), (142, 22), (154, 21), (154, 22)]
+T08 PASS   CPU 0.0 s (Python) wall 26.6 s

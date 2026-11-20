@@ -1,0 +1,198 @@
+L3.35  ok    window widths 1..18, all words: the live orbits are exactly those of the lemma
+L3.29  ok    n=3 all 8 states, all 4 cycles
+L3.30  ok    n=3 3 block words
+L3.31  no   (outside the stated range, reported only)  n=3 existence of j for all 5 states that are not fully frozen (x = 0: every j); edge for all 1 cycles that are not fully frozen
+L3.31p ok    n=3 the cell j given by the six cases of the proof works for all 12 pairs (x != 0, cell i outside Fz(x))
+L3.36  ok    n=3 periodic states with empty frozen set: 1 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=4 all 16 states, all 3 cycles
+L3.30  ok    n=4 2 block words
+L3.31  ok    n=4 existence of j for all 14 states that are not fully frozen (x = 0: every j); edge for all 1 cycles that are not fully frozen
+L3.31p ok    n=4 the cell j given by the six cases of the proof works for all 40 pairs (x != 0, cell i outside Fz(x))
+L3.36  ok    n=4 periodic states with empty frozen set: 1 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=5 all 32 states, all 11 cycles
+L3.30  ok    n=5 5 block words
+L3.31  ok    n=5 existence of j for all 27 states that are not fully frozen (x = 0: every j); edge for all 6 cycles that are not fully frozen
+L3.31p ok    n=5 the cell j given by the six cases of the proof works for all 100 pairs (x != 0, cell i outside Fz(x))
+L3.36  ok    n=5 periodic states with empty frozen set: 1 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=6 all 64 states, all 9 cycles
+L3.30  ok    n=6 5 block words
+L3.31  ok    n=6 existence of j for all 59 states that are not fully frozen (x = 0: every j); edge for all 4 cycles that are not fully frozen
+L3.31p ok    n=6 the cell j given by the six cases of the proof works for all 246 pairs (x != 0, cell i outside Fz(x))
+L3.36  ok    n=6 periodic states with empty frozen set: 7 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=7 all 128 states, all 22 cycles
+L3.30  ok    n=7 7 block words
+L3.31  ok    n=7 existence of j for all 121 states that are not fully frozen (x = 0: every j); edge for all 15 cycles that are not fully frozen
+L3.31p ok    n=7 the cell j given by the six cases of the proof works for all 581 pairs (x != 0, cell i outside Fz(x))
+L3.36  ok    n=7 periodic states with empty frozen set: 1 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=8 all 256 states, all 27 cycles
+L3.30  ok    n=8 10 block words
+L3.31  ok    n=8 existence of j for all 246 states that are not fully frozen (x = 0: every j); edge for all 17 cycles that are not fully frozen
+L3.31p ok    n=8 the cell j given by the six cases of the proof works for all 1336 pairs (x != 0, cell i outside Fz(x))
+L3.36  ok    n=8 periodic states with empty frozen set: 1 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=9 all 512 states, all 31 cycles
+L3.30  ok    n=9 12 block words
+L3.31  ok    n=9 existence of j for all 500 states that are not fully frozen (x = 0: every j); edge for all 19 cycles that are not fully frozen
+L3.31p ok    n=9 the cell j given by the six cases of the proof works for all 3015 pairs (x != 0, cell i outside Fz(x))
+L3.36  ok    n=9 periodic states with empty frozen set: 1 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=10 all 1024 states, all 73 cycles
+L3.30  ok    n=10 17 block words
+L3.31  ok    n=10 existence of j for all 1007 states that are not fully frozen (x = 0: every j); edge for all 56 cycles that are not fully frozen
+L3.31p ok    n=10 the cell j given by the six cases of the proof works for all 6710 pairs (x != 0, cell i outside Fz(x))
+L3.36  ok    n=10 periodic states with empty frozen set: 31 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=11 all 2048 states, all 78 cycles
+L3.30  ok    n=11 22 block words
+L3.31  ok    n=11 existence of j for all 2026 states that are not fully frozen (x = 0: every j); edge for all 56 cycles that are not fully frozen
+L3.31p ok    n=11 the cell j given by the six cases of the proof works for all 14773 pairs (x != 0, cell i outside Fz(x))
+L3.36  ok    n=11 periodic states with empty frozen set: 1 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=12 all 4096 states, all 147 cycles
+L3.30  ok    n=12 29 block words
+L3.31  ok    n=12 existence of j for all 4067 states that are not fully frozen (x = 0: every j); edge for all 118 cycles that are not fully frozen
+L3.31p ok    n=12 the cell j given by the six cases of the proof works for all 32244 pairs (x != 0, cell i outside Fz(x))
+L3.36  ok    n=12 periodic states with empty frozen set: 31 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=13 all 8192 states, all 209 cycles
+L3.30  ok    n=13 39 block words
+L3.31  ok    n=13 existence of j for all 8153 states that are not fully frozen (x = 0: every j); edge for all 170 cycles that are not fully frozen
+L3.31p ok    n=13 the cell j given by the six cases of the proof works for all 69875 pairs (x != 0, cell i outside Fz(x))
+L3.36  ok    n=13 periodic states with empty frozen set: 1 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=14 all 16384 states, all 320 cycles
+L3.30  ok    n=14 51 block words
+L3.31  ok    n=14 existence of j for all 16333 states that are not fully frozen (x = 0: every j); edge for all 269 cycles that are not fully frozen
+L3.31p ok    n=14 the cell j given by the six cases of the proof works for all 150514 pairs (x != 0, cell i outside Fz(x))
+L3.36  ok    n=14 periodic states with empty frozen set: 127 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=15 all 32768 states, all 509 cycles
+L3.30  ok    n=15 68 block words
+L3.31  ok    n=15 existence of j for all 32700 states that are not fully frozen (x = 0: every j); edge for all 441 cycles that are not fully frozen
+L3.36  ok    n=15 periodic states with empty frozen set: 1 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=16 all 65536 states, all 747 cycles
+L3.30  ok    n=16 90 block words
+L3.31  ok    n=16 existence of j for all 65446 states that are not fully frozen (x = 0: every j); edge for all 657 cycles that are not fully frozen
+L3.36  ok    n=16 periodic states with empty frozen set: 1 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=17 all 131072 states, all 1191 cycles
+L3.30  ok    n=17 119 block words
+L3.31  ok    n=17 existence of j for all 130953 states that are not fully frozen (x = 0: every j); edge for all 1072 cycles that are not fully frozen
+L3.36  ok    n=17 periodic states with empty frozen set: 1 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=18 all 262144 states, all 1881 cycles
+L3.30  ok    n=18 158 block words
+L3.31  ok    n=18 existence of j for all 261986 states that are not fully frozen (x = 0: every j); edge for all 1723 cycles that are not fully frozen
+L3.36  ok    n=18 periodic states with empty frozen set: 511 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=19 all 524288 states, all 2832 cycles
+L3.30  ok    n=19 209 block words
+L3.31  ok    n=19 existence of j for all 524079 states that are not fully frozen (x = 0: every j); edge for all 2623 cycles that are not fully frozen
+L3.36  ok    n=19 periodic states with empty frozen set: 1 (0 and the doubled words of P_h); |P_h| formula True
+L3.29  ok    n=20 all 1048576 states, all 4513 cycles
+L3.30  ok    n=20 277 block words
+L3.31  ok    n=20 existence of j for all 1048299 states that are not fully frozen (x = 0: every j); edge for all 4236 cycles that are not fully frozen
+L3.36  ok    n=20 periodic states with empty frozen set: 511 (0 and the doubled words of P_h); |P_h| formula True
+L3.32  ok    3 | n, n = 6..300: all three phases, every cell: F^3(x+e_j) = x and the second statement; first return times by kind of cell: [('0', 2), ('first1', 3), ('second1', 3)]
+L3.32  no   (outside the stated range, reported only)  n=3: cells j with F^3(x+e_j) != x for x = 011: [0, 1, 2] (Remark 3.44 says a single flip can leave the crystal phase)
+L3.34  ok    n=4 all block words, all admissible windows, all fillings: 8 states y (one step; all t follow by induction since Fy again agrees with x outside I)
+L3.34  ok    n=5 all block words, all admissible windows, all fillings: 40 states y (one step; all t follow by induction since Fy again agrees with x outside I)
+L3.34  ok    n=6 all block words, all admissible windows, all fillings: 108 states y (one step; all t follow by induction since Fy again agrees with x outside I)
+L3.34  ok    n=7 all block words, all admissible windows, all fillings: 406 states y (one step; all t follow by induction since Fy again agrees with x outside I)
+L3.34  ok    n=8 all block words, all admissible windows, all fillings: 1232 states y (one step; all t follow by induction since Fy again agrees with x outside I)
+L3.34  ok    n=9 all block words, all admissible windows, all fillings: 3564 states y (one step; all t follow by induction since Fy again agrees with x outside I)
+L3.34  ok    n=10 all block words, all admissible windows, all fillings: 11080 states y (one step; all t follow by induction since Fy again agrees with x outside I)
+L3.34  ok    n=11 all block words, all admissible windows, all fillings: 31394 states y (one step; all t follow by induction since Fy again agrees with x outside I)
+L3.34  ok    n=12 all block words, all admissible windows, all fillings: 91776 states y (one step; all t follow by induction since Fy again agrees with x outside I)
+L3.34  ok    n=13 all block words, all admissible windows, all fillings: 264498 states y (one step; all t follow by induction since Fy again agrees with x outside I)
+L3.33  ok    n=3 all states with frozen set neither empty nor full: (a), (b) one step, (c) with periods
+PA.1   ok    n=3 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 0 states (formula 0)
+L3.33  ok    n=4 all states with frozen set neither empty nor full: (a), (b) one step, (c) with periods
+PA.1   ok    n=4 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 0 states (formula 0)
+L3.33  ok    n=5 all states with frozen set neither empty nor full: (a), (b) one step, (c) with periods
+PA.1   ok    n=5 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 0 states (formula 0)
+L3.33  ok    n=6 all states with frozen set neither empty nor full: (a), (b) one step, (c) with periods
+PA.1   ok    n=6 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 6 states (formula 6)
+L3.33  ok    n=7 all states with frozen set neither empty nor full: (a), (b) one step, (c) with periods
+PA.1   ok    n=7 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 0 states (formula 0)
+L3.33  ok    n=8 all states with frozen set neither empty nor full: (a), (b) one step, (c) with periods
+PA.1   ok    n=8 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 0 states (formula 0)
+L3.33  ok    n=9 all states with frozen set neither empty nor full: (a), (b) one step, (c) with periods
+PA.1   ok    n=9 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 0 states (formula 0)
+L3.33  ok    n=10 all states with frozen set neither empty nor full: (a), (b) one step, (c) with periods
+PA.1   ok    n=10 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 30 states (formula 30)
+L3.33  ok    n=11 all states with frozen set neither empty nor full: (a), (b) one step, (c) with periods
+PA.1   ok    n=11 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 0 states (formula 0)
+L3.33  ok    n=12 all states with frozen set neither empty nor full: (a), (b) one step, (c) with periods
+PA.1   ok    n=12 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 30 states (formula 30)
+L3.33  ok    n=13 all states with frozen set neither empty nor full: (a), (b) one step, (c) with periods
+PA.1   ok    n=13 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 0 states (formula 0)
+PA.1   ok    n=14 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 126 states (formula 126)
+PA.1   ok    n=15 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 0 states (formula 0)
+PA.1   ok    n=16 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 0 states (formula 0)
+PA.1   ok    n=17 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 0 states (formula 0)
+PA.1   ok    n=18 periodic <=> cases 1-3 (all states); period divides 6 in case 3; case 2 has 510 states (formula 510)
+L3.37  ok    n=4 all 0 cycles with frozen set neither empty nor full
+L3.41  ok    n=4 the 2 block words lie in 1 strongly connected component(s) of G1
+L3.42  no   (outside the stated range, reported only)  n=4 closed classes containing every cycle with non-empty frozen set contain 000
+L3.37  ok    n=5 all 5 cycles with frozen set neither empty nor full
+L3.38  ok    n=5 (a) 5 pairs s l; (b) 10 pairs (block word, block start)
+L3.41  ok    n=5 the 5 block words lie in 1 strongly connected component(s) of G1
+L3.42  ok    n=5 closed classes containing every cycle with non-empty frozen set contain 000
+L3.37  ok    n=6 all 0 cycles with frozen set neither empty nor full
+L3.38  ok    n=6 (a) 0 pairs s l; (b) 12 pairs (block word, block start)
+L3.39  ok    n=6 6 triples sss
+L3.37  ok    n=7 all 14 cycles with frozen set neither empty nor full
+L3.38  ok    n=7 (a) 7 pairs s l; (b) 21 pairs (block word, block start)
+L3.39  ok    n=7 0 triples sss
+L3.41  ok    n=7 the 7 block words lie in 1 strongly connected component(s) of G1
+L3.42  ok    n=7 closed classes containing every cycle with non-empty frozen set contain 000
+L3.37  ok    n=8 all 16 cycles with frozen set neither empty nor full
+L3.38  ok    n=8 (a) 8 pairs s l; (b) 32 pairs (block word, block start)
+L3.39  ok    n=8 8 triples sss
+L3.40  ok    n=8 8 triples sll
+L3.41  ok    n=8 the 10 block words lie in 1 strongly connected component(s) of G1
+L3.42  ok    n=8 closed classes containing every cycle with non-empty frozen set contain 000
+L3.37  ok    n=9 all 18 cycles with frozen set neither empty nor full
+L3.38  ok    n=9 (a) 9 pairs s l; (b) 45 pairs (block word, block start)
+L3.39  ok    n=9 9 triples sss
+L3.40  ok    n=9 0 triples sll
+L3.37  ok    n=10 all 50 cycles with frozen set neither empty nor full
+L3.38  ok    n=10 (a) 20 pairs s l; (b) 70 pairs (block word, block start)
+L3.39  ok    n=10 10 triples sss
+L3.40  ok    n=10 10 triples sll
+L3.41  ok    n=10 the 17 block words lie in 1 strongly connected component(s) of G1
+L3.42  ok    n=10 closed classes containing every cycle with non-empty frozen set contain 000
+L3.37  ok    n=11 all 55 cycles with frozen set neither empty nor full
+L3.38  ok    n=11 (a) 22 pairs s l; (b) 99 pairs (block word, block start)
+L3.39  ok    n=11 22 triples sss
+L3.40  ok    n=11 11 triples sll
+L3.41  ok    n=11 the 22 block words lie in 1 strongly connected component(s) of G1
+L3.42  ok    n=11 closed classes containing every cycle with non-empty frozen set contain 000
+L3.37  ok    n=12 all 108 cycles with frozen set neither empty nor full
+L3.38  ok    n=12 (a) 36 pairs s l; (b) 144 pairs (block word, block start)
+L3.39  ok    n=12 24 triples sss
+L3.40  ok    n=12 12 triples sll
+L3.37  ok    n=13 all 169 cycles with frozen set neither empty nor full
+L3.38  ok    n=13 (a) 52 pairs s l; (b) 208 pairs (block word, block start)
+L3.39  ok    n=13 39 triples sss
+L3.40  ok    n=13 26 triples sll
+L3.41  ok    n=13 the 39 block words lie in 1 strongly connected component(s) of G1
+L3.42  ok    n=13 closed classes containing every cycle with non-empty frozen set contain 000
+L3.37  ok    n=14 all 259 cycles with frozen set neither empty nor full
+L3.38  ok    n=14 (a) 70 pairs s l; (b) 294 pairs (block word, block start)
+L3.39  ok    n=14 56 triples sss
+L3.40  ok    n=14 28 triples sll
+L3.41  ok    n=14 the 51 block words lie in 1 strongly connected component(s) of G1
+L3.42  ok    n=14 closed classes containing every cycle with non-empty frozen set contain 000
+L3.37  ok    n=15 all 440 cycles with frozen set neither empty nor full
+L3.38  ok    n=15 (a) 105 pairs s l; (b) 420 pairs (block word, block start)
+L3.39  ok    n=15 75 triples sss
+L3.40  ok    n=15 45 triples sll
+L3.37  ok    n=16 all 656 cycles with frozen set neither empty nor full
+L3.38  ok    n=16 (a) 144 pairs s l; (b) 592 pairs (block word, block start)
+L3.39  ok    n=16 112 triples sss
+L3.40  ok    n=16 64 triples sll
+L3.41  ok    n=16 the 90 block words lie in 1 strongly connected component(s) of G1
+L3.42  ok    n=16 closed classes containing every cycle with non-empty frozen set contain 000
+L3.37  ok    n=17 all 1071 cycles with frozen set neither empty nor full
+L3.38  ok    n=17 (a) 204 pairs s l; (b) 833 pairs (block word, block start)
+L3.39  ok    n=17 153 triples sss
+L3.40  ok    n=17 85 triples sll
+L3.41  ok    n=17 the 119 block words lie in 1 strongly connected component(s) of G1
+L3.42  ok    n=17 closed classes containing every cycle with non-empty frozen set contain 000
+L3.37  ok    n=18 all 1683 cycles with frozen set neither empty nor full
+L3.38  ok    n=18 (a) 288 pairs s l; (b) 1170 pairs (block word, block start)
+L3.39  ok    n=18 216 triples sss
+L3.40  ok    n=18 126 triples sll
+T04 PASS   CPU 5.2 s (Python) wall 9.8 s

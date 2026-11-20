@@ -1,0 +1,11 @@
+T02 with rule 26 in place of rule 154 (NS=10, NG=8)                    -> caught (27 failures)
+T03 with rule 26 in place of rule 154 (n <= 8)                         -> caught (exception ValueError)
+T04 with rule 90 in place of rule 94 (short ranges)                    -> caught (42 failures)
+T05 with rule 90 in place of rule 94 (n <= 9)                          -> caught (6 failures)
+T06 with rules 43 and 142 exchanged (n <= 8)                           -> caught (24 failures)
+T07 with rule 154 in place of rule 26 (NS=10, NG=8)                    -> caught (11 failures)
+T04 without the 3-cycle of width 4 in Lemma 3.35                       -> caught (4 failures)
+T07 with domain states defined by distances >= 5                       -> caught (12 failures)
+T08 with the theorem row of rule 94 at n = 4 set to 0                  -> caught (1 failures)
+T01 with perturbed potentials (n <= 6)                                 -> caught (1951 failures)
+T10 PASS (every mutation was caught)   CPU 4.7 s (Python) wall 8.4 s

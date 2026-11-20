@@ -1,0 +1,14 @@
+test,exit_code,wall_s,cpu_s_including_C_program
+T00_engine.py,0,10.2,9.7
+T01_section2.py,0,18.6,17.6
+T02_rule154_lemmas.py,0,5.0,6.6
+T03_rule154_theorems.py,0,397.0,751.0
+T04_rule94_lemmas.py,0,9.9,13.2
+T05_rule94_theorem.py,0,170.7,308.1
+T06_rules43_142.py,0,3.7,6.1
+T07_rule26.py,0,24.5,46.0
+T08_table1.py,0,26.6,52.5
+T09_section6.py,0,46.1,83.7
+T10_mutation.py,0,8.4,7.9
+T11_certificates.py,0,189.9,364.8
+ALL PASS

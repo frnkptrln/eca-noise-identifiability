@@ -1,0 +1,2 @@
+72 systems; the certificate agrees with the C routine in 72; selected set and gamma_min certified without Edmonds in 72; in addition all eight k_v in 72. The systems where something is not certified:
+T11 PASS   CPU 3.1 s (Python) wall 189.7 s
