@@ -25,7 +25,8 @@ given; [computed for n = ...] = seen in enumeration only; [attempted (gap: ...)]
 
 No sub-statement of the goal remains open: the closed class is unique, it is described up to the cycles without 101 on even
 rings, and it carries all eight codes. What the document does not contain is listed in section 6 (in particular: the proofs
-have had no reader outside the session that wrote them; Theorem A and the definition of k_c are used as given; no claim of
+had no reader outside the session that wrote them when this was written, and were verified independently afterwards
+(`VERIFICATION_94_26.md`); Theorem A and the definition of k_c are used as given; no claim of
 novelty is made).
 
 The structure follows the model of the proof for classes 43 and 142: a quantity that cannot decrease along an orbit (the
@@ -222,7 +223,8 @@ the case 0000, the cell 3 has the code 100). So W(y + e_j) is W(y) together with
 three new cells. The remaining part of I named above (the cells 4..w, respectively 3, 4; empty for w = 2) lies between
 frozen ones, contains no centre and is next to no centre, so it is a window of y + e_j, and its content is live (Lemma 8).
 The other windows of y + e_j are the windows of y other than I, with unchanged contents, which are phi-periodic by
-Lemma 7(c) for y. By Lemma 7(c), y + e_j is periodic. It lies on another cycle because the frozen set is constant on a
+Lemma 7(c) for y. By Lemma 7(c), y + e_j is periodic; if the flip leaves no window (I was the only
+window and w = 2), y + e_j is fully frozen, hence a block word and a fixed point by Lemma 2 of P94. It lies on another cycle because the frozen set is constant on a
 cycle. []
 
 **Lemma 11 (swap, both directions) [proved].** Let n >= 5, x a block word, and let the cells p, ..., p+4 carry the blocks
@@ -271,7 +273,7 @@ are available), and Lemma 12 leads back. []
 cycle with a non-empty frozen set. Then some state of a cycle of K contains 000.
 
 *Proof.* n = 7 or n >= 10: let z be the word 0 1 0 0 0 0 1 followed by a block word of length n - 7 written from a block
-start (nothing for n = 7; n - 7 >= 3 and n - 7 is not 1, so such a word exists: n - 7 = 2a + 3b has a solution for every
+start (nothing for n = 7; for n >= 10, n - 7 >= 3, so such a word exists: n - 7 = 2a + 3b has a solution for every
 n - 7 >= 2). The cell 0 is a centre (its neighbours are the cell 1 and the last cell of the ring, both 1), the cell 6 is
 next to a centre, and the cells of the appended block word are frozen as in a block word. So W(z) is the complement of the
 window {2, 3, 4, 5}, whose content 0000 is live (Lemma 8). By Lemma 7(c) z is periodic; its cycle has a non-empty frozen set
@@ -378,7 +380,8 @@ of the report (k* = 1 for 3 | n, n >= 6): **for rule 94 and every n >= 5, k* = 1
   see the author's scripts and re-tested every statement with separate code for n <= 16 and window widths <= 16 (no
   violation; it found no false statement, one unjustified step in the proof of Lemma 10, which is now written out, and
   eight points of wording and labelling, which are corrected). That reader did not recompute the tables beyond n = 16 and
-  did not check Theorem A, the definition of k_c or Theorem V94. No reader outside the session has checked the proofs.
+  did not check Theorem A, the definition of k_c or Theorem V94. No reader outside the session has checked the proofs. (Written before the independent verification of 20 November
+  2026, `VERIFICATION_94_26.md`.)
 * **Literature (short search, two queries, 17 November 2026).** Found: rule 94 is listed among the almost equicontinuous
   rules in the topological classification of elementary cellular automata (Schuele and Stoop, arXiv:1107.2080, search
   excerpt only), and its fixed points appear in a study of fuzzy cellular automata (Flocchini and Cezar, "Radial view of

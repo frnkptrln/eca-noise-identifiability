@@ -1,5 +1,11 @@
 # Verification of `proofs_94_26/`: rule 94 at 3 not dividing n, and rule 26 at n = 2^k
 
+> **Handling of the findings (20 November 2026, added after the verification; the text below is unchanged).**
+> C1 (Lemma 3(c) of `PROOF_26.md`: the statement holds for U; F permutes the set of all domain states), C2 (Lemma 10 of
+> `PROOF_94_converse.md`: the fully frozen case, by Lemma 2 of P94), C3 (wording of Theorem 1 of `PROOF_26.md`),
+> C4 (status row for even k >= 6) and C5 (Lemma 15) are corrected in the two proof documents in the commit that
+> follows the verification on branch `class-94-26`.
+
 Branch `verify-94-26` (from `class-94-26`, commit 67287d7). Objects of the verification:
 `proofs_94_26/PROOF_94_converse.md`, sections 0 to 6 (cited as C94), and `proofs_94_26/PROOF_26.md`, sections 0 to 7
 (cited as C26). Read as cited documents: `verify_ring_size/part2_94/PROOF_94.md` (P94),

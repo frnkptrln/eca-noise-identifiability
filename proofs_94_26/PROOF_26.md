@@ -19,7 +19,7 @@ addition Theorem A of the report (Section 4) is used as given; [computed for n =
 | Theorem 4(b) | for n = 2^k >= 8: k_7 is 1 or 2, and k_7 = 1 iff some cycle that contains 111 has gamma = m, i.e. is reachable in G1 from a cycle at resistance 2 from {0}; k* = k_7 | **[proved]** | section 5 |
 | Theorem 4(c) | for n = 2^k with k odd, k >= 3 (n = 8, 32, 128, ...): k_7 = 1, hence k* = 1 | **[proved]** | section 5 |
 | k* for k even | n = 16: k_7 = 2, k* = 2. n = 4: k = (0, 1, 1, 2, 1, 1, 2, 2), k* = 2 | **[computed for n = 4, 16]** (from the definitions, gamma by Chu-Liu/Edmonds for every root; for n = 16 also from Theorem 4(b) and the enumeration of the cycles with 111) | Table 3 |
-| k* for k even, k >= 6 | whether a cycle with 111 is reachable from the domain cycles at n = 64, 256, ... | **[attempted (gap: no description of the cycles that contain 111; the bound on c that settles n = 16 fails for other even n, see n = 22 in Table 2)]** | section 7 |
+| k* for k even, k >= 6 | whether a cycle with 111 is reachable in G1 from a cycle at resistance 2 from {0}, at n = 64, 256, ... | **[attempted (gap: no description of the cycles that contain 111; the bound on c that settles n = 16 fails for other even n, see n = 22 in Table 2)]** | section 7 |
 | Theorem 5 (optional part) | for every even n >= 6 that is not a power of two: G1 has exactly one closed class K; it contains {0}, all cycles on one parity class and all domain cycles; every cycle outside K contains 111; K carries the codes 0, ..., 6 | **[proved]** | section 6 |
 | Corollary 5 | for these n: S = K, gamma_min = m - 1, k_c = 0 for c <= 6, and k* = 0 iff a cycle that contains 111 lies in K | **[proved, given Theorem A]**; which n have such a cycle in K: **[computed for even n <= 22]** | section 6; Table 2 |
 | odd n | not treated (c is not defined on an odd ring) | not attempted | section 7 |
@@ -69,10 +69,10 @@ in C (again a state of C), and then follows F; conversely the orbit of x + e_j i
 
 ## 2. Statements
 
-**Theorem 1 (periodic states, even n) [proved].** Let n >= 4 be even. c is constant on every cycle. A state x is periodic
-iff one of the following holds: (i) x lies in E or O and is periodic under rule 90 (for n = 2^k: x = 0); (ii) x is a domain
-state; (iii) x is periodic, lies in M, is not a domain state, and then the orbit of x contains the block 111. Every domain
-state is periodic, F permutes the domain states, and no domain state contains 111.
+**Theorem 1 (periodic states, even n) [proved].** Let n >= 4 be even. c is constant on every cycle. Every state
+of E or O that is periodic under rule 90 is periodic (kind (i); for n = 2^k: x = 0 only), and every domain state is
+periodic (kind (ii)). Every other periodic state lies in M, is not a domain state, and its cycle contains the block 111
+(kind (iii)). F permutes the domain states, and no domain state contains 111.
 
 **Theorem 2 (paths to the zero state) [proved].** Let n >= 4 be even and C a cycle not contained in E ∪ O. Then there is a
 directed path in G1 from C to a cycle contained in E ∪ O; along the path c drops at most c(C)/2 times, each time by at
@@ -126,7 +126,8 @@ a letter; adding a one inserts a letter, which changes the number of cyclic chan
     cyclic order (possibly the cell j + 1 itself, if x has only these two ones) is at odd distance from j.
 (b) Let u be a domain state. Then U(u) is a domain state with the same sources, and in each domain with source s and free
     cells c_k = u(s + 2k), k = 1, ..., (d-1)/2, c_0 = 1: U(u)(s + 2k) = c_k + c_(k-1).
-(c) U, and hence F, permutes the set of domain states with a given set of sources; every domain state is periodic. A domain
+(c) U permutes the set of domain states with a given set of sources; hence F = sigma^(-1) U permutes the set of all
+    domain states (it moves every source one cell to the left); every domain state is periodic. A domain
     state contains no 111. Flipping a free cell of a domain state gives a domain state with the same sources.
 
 *Proof.* (a) Consecutive sources s, s' have different parity. Their distance is 1 iff the group of s is {s} and s' = s + 1,
@@ -332,7 +333,7 @@ and the domain cycles lie outside it.)
   "in E or O" for cycles, the restriction of the last sentence of section 6 to n that are not powers of two, and two cited
   steps of the proof of Theorem 5 that are now written out). That reader could not open the report, P154 or
   `PROOF_94_converse.md`, and did not recompute the tables beyond n = 16. No reader outside the session has checked the
-  proofs.
+  proofs. (Written before the independent verification of 20 November 2026, `VERIFICATION_94_26.md`.)
 * **Literature (short search, two queries, 17 November 2026).** Found: Aguiar and Severino, "Two elementary cellular
   automata with a new kind of dynamic", Complex Systems 24(2), study rules 26 and 154 on finite rings and with fixed
   boundaries and note that the two rules differ in the response to 111 only (abstract and search excerpt read; the paper was
