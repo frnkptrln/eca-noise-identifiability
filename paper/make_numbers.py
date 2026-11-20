@@ -9,6 +9,11 @@ Reads (never writes) these files, paths relative to the repository root:
   proofs_94_26/out/g1_26.jsonl                  rule 26, even n: cycles by kind, k_c from the definitions (n = 4, 8, 16)
   proofs_94_26/out/g1_classes_94.jsonl          rule 94, 3 not dividing n: closed class, cycles without 101
   data/ring_size/crystal_radius.csv             can one flip leave the crystal (rule 94 at n = 3)
+  proofs_43_142/out/zhu_richard_154.json        the two values quoted from Zhu and Richard, arXiv:2610.10967 (rule 154)
+  literature_addendum.md                        record of the reading of that text: the bound and the range of n of the
+                                                 quoted sentence (section A1), the two printed values (update of
+                                                 20 November 2026).  A document, not a data file: the numbers of a
+                                                 cited text enter the paper from the record of its reading.
 
 Writes, into the folder of this script (or --outdir):
   numbers.tex       one \\newcommand per number used in the text
@@ -22,6 +27,7 @@ import argparse
 import csv
 import json
 import os
+import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -31,16 +37,19 @@ V154 = "verify_ring_size/phase2/out/v154_n22.json"
 G26 = "proofs_94_26/out/g1_26.jsonl"
 G94 = "proofs_94_26/out/g1_classes_94.jsonl"
 CRYSTAL = "data/ring_size/crystal_radius.csv"
+ZR = "proofs_43_142/out/zhu_richard_154.json"
+ADDENDUM = "literature_addendum.md"
 CODES = ["000", "001", "010", "011", "100", "101", "110", "111"]      # code number 4a + 2b + c -> word abc
 
 RULES = [154, 43, 142, 94, 26]                 # the rules of the theorems, in the order of the paper
-OPEN = [35, 37, 45, 73, 122, 22]               # the classes of the section on open cases
+OPEN = [35, 37, 45, 73, 122, 22, 60, 90]       # the classes of the section on open cases: all classes of MECH
+                                               # that are not in RULES (asserted in build)
 NS = list(range(4, 23))                        # ring sizes of the table
 THM_LABEL = {154: r"Thm.~\ref{154:thm:main}", 43: r"Thm.~\ref{43:thm:main}", 142: r"Thm.~\ref{43:thm:main}",
              94: r"Thm.~\ref{94:thm:main}", 26: r"Sect.~\ref{sec:26}"}
 WORDS = {4: "Four", 8: "Eight", 16: "Sixteen", 22: "TwentyTwo", 26: "TwentySix", 35: "ThirtyFive", 37: "ThirtySeven",
          45: "FortyFive", 73: "SeventyThree", 122: "OneTwentyTwo", 154: "OneFiftyFour", 94: "NinetyFour",
-         43: "FortyThree", 142: "OneFortyTwo"}
+         43: "FortyThree", 142: "OneFortyTwo", 60: "Sixty", 90: "Ninety"}
 
 
 def read_csv(rel):
@@ -236,18 +245,69 @@ def build():
           "at n = 16 the cycle {0} is not in K and no edge of G_1 enters it")
 
     # ---- the classes of the section on open cases: where k* >= 1 in the computed range
-    for r in (35, 45, 73, 22):
+    for r in (35, 45, 73, 22, 60, 90):
         pos = [n for n in range(8, 23) if kstar[(r, n)][0] >= 1]
         num(f"Kpos{WORDS[r]}", nlist(pos), MECH, f"rule={r}, the n in 8..22 with kstar >= 1")
+    # classes 60 and 90: the value of k* and the number of cycles at the n with k* >= 1
+    cyc = set()
+    for r in (60, 90):
+        pos = [n for n in range(8, 23) if kstar[(r, n)][0] >= 1]
+        vals = {kstar[(r, n)][0] for n in pos}
+        assert len(vals) == 1, (r, vals)
+        num(f"Kstar{WORDS[r]}Pos", vals.pop(), MECH, f"rule={r}, field kstar at the n in 8..22 with kstar >= 1")
+        cyc |= {int(float(extra[(r, n)]["cycles"])) for n in pos}
+        claim(f"{r}_only_cycle_is_zero_state",
+              all(int(float(extra[(r, n)]["cycles"])) == 1 and int(float(extra[(r, n)]["n_selected"])) == 1
+                  and extra[(r, n)]["selected_cover"] == "0" and extra[(r, n)]["selected_spatial_periods"] == "1"
+                  and extra[(r, n)]["selected_temporal_periods"] == "1" for n in pos), MECH,
+              f"rule={r}, the n in 8..22 with kstar >= 1: fields cycles, n_selected, selected_cover, "
+              "selected_spatial_periods, selected_temporal_periods",
+              f"class {r}: at the n of the range with k* >= 1 there is one cycle, a fixed point of spatial period 1 "
+              "that contains the code 000 only, i.e. the zero state")
+        claim(f"{r}_kpos_are_the_powers_of_two", pos == [n for n in range(8, 23) if is_pow2(n)], MECH,
+              f"rule={r}, field kstar", f"class {r}: k* >= 1 exactly at the powers of two of the range")
+    assert len(cyc) == 1, cyc
+    num("CyclesSixtyNinetyPos", cyc.pop(), MECH, "rule=60 and rule=90, field cycles at the n in 8..22 with kstar >= 1")
     num("KzeroThirtySeven", nlist([n for n in range(8, 23) if kstar[(37, n)][0] == 0]), MECH,
         "rule=37, the n in 8..22 with kstar = 0")
     num("KzeroOneTwentyTwo", nlist([n for n in range(8, 23) if kstar[(122, n)][0] == 0]), MECH,
         "rule=122, the n in 8..22 with kstar = 0")
     mech_rows = read_csv(MECH)
-    num("NumSwitching", len({int(r["rule"]) for r in mech_rows}), MECH, "number of distinct values of the field rule")
+    classes = {int(r["rule"]) for r in mech_rows}
+    num("NumSwitching", len(classes), MECH, "number of distinct values of the field rule")
+    assert set(RULES) <= classes and classes - set(RULES) == set(OPEN) and len(OPEN) == len(set(OPEN)), \
+        "OPEN must list exactly the classes of mechanisms.csv that the theorems do not treat"
+    num("NumOtherSwitching", len(classes - set(RULES)), MECH,
+        "number of distinct values of the field rule, without the rules 154, 43, 142, 94, 26")
     assert min(int(r["n"]) for r in mech_rows) == 8 and max(int(r["n"]) for r in mech_rows) == 22
     num("OpenNmin", 8, MECH, "smallest n of the file")
     num("OpenNmax", 22, MECH, "largest n of the file")
+
+    # ---- Zhu and Richard, arXiv:2610.10967 (rule 154): numbers of the cited text, from the record of its reading
+    with open(os.path.join(ROOT, ZR)) as fh:
+        zr = json.load(fh)
+    quoted = {int(n): str(v) for n, v in zr["quoted"].items()}
+    assert sorted(quoted) == [22, 24], quoted
+    num("ZRValues", " and ".join(f"{quoted[n]} at $n={n}$" for n in sorted(quoted)), ZR,
+        "field quoted (the values named to the session that wrote the file; printed in Figure 13 of the text "
+        "according to literature_addendum.md, update of 20 November 2026)")
+    with open(os.path.join(ROOT, ADDENDUM), encoding="utf-8") as fh:
+        add = fh.read()
+    a1 = add[add.index("### A1. Zhu and Richard"):add.index("### A2.")]
+    upd = " ".join(add[add.index("## Update of 20 November 2026"):add.index("## Search queries")].split())
+    hit = re.findall(r"is always below ([0-9.]+) for n∈\{(\d+),…,(\d+)\}", a1)
+    assert len(hit) == 1, hit
+    num("ZRBound", hit[0][0], ADDENDUM, "section A1, the sentence quoted from arXiv:2610.10967 (p. 14): the bound")
+    num("ZRNmin", hit[0][1], ADDENDUM, "section A1, the sentence quoted from arXiv:2610.10967: first n of the range")
+    num("ZRNmax", hit[0][2], ADDENDUM, "section A1, the sentence quoted from arXiv:2610.10967: last n of the range")
+    claim("zr_values_printed_in_the_text",
+          all(f'{quoted[n]}" for n = {n}' in upd for n in quoted) and "Figure 13" in upd, ADDENDUM,
+          "update of 20 November 2026, item 'Rule 154'",
+          "the two values are recorded as printed in Figure 13 of arXiv:2610.10967 for n = 22 and n = 24")
+    claim("zr_values_agree_with_the_count", zr["quoted_values_agree"] is True and zr["all_lemma6_equal_direct"] is True,
+          ZR, "fields quoted_values_agree, all_lemma6_equal_direct",
+          "the two values agree with the fraction of states on no cycle counted for rule 154, and the count by the "
+          "description of the periodic states equals the direct count for even n = 4..24")
 
     tex = ["% generated by make_numbers.py from the data files of the repository; do not edit"]
     for d in numbers:

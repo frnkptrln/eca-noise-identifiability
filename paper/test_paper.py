@@ -172,9 +172,14 @@ def test_every_number_against_data_files():
         "KposThirtyFive": _ns(lambda v, n: v >= 1, 35),
         "KposFortyFive": _ns(lambda v, n: v >= 1, 45), "KposSeventyThree": _ns(lambda v, n: v >= 1, 73),
         "KposTwentyTwo": _ns(lambda v, n: v >= 1, 22),
+        "KposSixty": _ns(lambda v, n: v >= 1, 60), "KposNinety": _ns(lambda v, n: v >= 1, 90),
+        "KstarSixtyPos": str(k[(60, 8)]), "KstarNinetyPos": str(k[(90, 8)]),
+        "CyclesSixtyNinetyPos": "1",
+        "NumOtherSwitching": str(len({r["rule"] for r in mech} - {"154", "43", "142", "94", "26"})),
         "KzeroThirtySeven": _ns(lambda v, n: v == 0, 37), "KzeroOneTwentyTwo": _ns(lambda v, n: v == 0, 122),
     }
-    derived = {"TableCompared", "TableAgree"}                            # checked in test_table_against_data_files
+    derived = {"TableCompared", "TableAgree",                           # checked in test_table_against_data_files
+               "ZRValues", "ZRBound", "ZRNmin", "ZRNmax"}               # checked in test_numbers_of_the_cited_text
     assert set(m) == set(expected) | derived, set(m) ^ (set(expected) | derived)
     for name, value in expected.items():
         assert m[name] == value, (name, m[name], value)
@@ -185,6 +190,34 @@ def test_every_number_against_data_files():
     assert m["KposThirtyFive"] == ", ".join(str(n) for n in range(8, 23) if n % 3 == 0)    # "the multiples of 3"
     assert m["KposFortyFive"] == "8" and m["KposSeventyThree"] == "9"                       # "only"
     assert int(m["TwentySixSixteenReach"]) == 0 and int(m["KstarTwentySixAtSixteen"]) == 2
+    # classes 60 and 90: "the powers of two of the range", one value of k* and one cycle at each of them
+    for rule in (60, 90):
+        pos = [n for n in range(8, 23) if k[(rule, n)] >= 1]
+        assert pos == [8, 16] and len({k[(rule, n)] for n in pos}) == 1
+        assert all(r["cycles"] == "1" for r in mech if r["rule"] == str(rule) and int(r["n"]) in pos)
+    # the abstract and the introduction quote these two values in words ("computed for k = 2 and k = 4")
+    assert (m["KstarTwentySixAtFour"], m["KstarTwentySixAtSixteen"], m["KstarNinetyFourAtFour"]) == ("2", "2", "1")
+
+
+def test_numbers_of_the_cited_text():
+    """Zhu and Richard, arXiv:2610.10967: the numbers quoted from it, against the record of its reading."""
+    m = _macros()
+    with open(os.path.join(ROOT, "literature_addendum.md"), encoding="utf-8") as fh:
+        text = " ".join(fh.read().split())
+    a1 = text[text.index("### A1. Zhu and Richard"):text.index("### A2.")]
+    upd = text[text.index("## Update of 20 November 2026"):text.index("## Search queries")]
+    quote = "is always below %s for n∈{%s,…,%s}" % (m["ZRBound"], m["ZRNmin"], m["ZRNmax"])
+    assert quote in a1 and "read in full on 20 November 2026" in upd
+    assert m["ZRValues"] == "0.00048828 at $n=22$ and 0.00045776 at $n=24$"
+    assert 'ratio: 0.00048828" for n = 22 and "0.00045776" for n = 24' in upd
+    # the same two values in the table of section A1 (column "value quoted"), next to the counted fractions
+    rows = {c[1].strip(): [x.strip() for x in c] for c in (l.split("|") for l in open(
+        os.path.join(ROOT, "literature_addendum.md"), encoding="utf-8") if l.startswith("| ")) if len(c) > 9}
+    assert rows["22"][9] == "0.00048828" and rows["22"][6] == "1/2048" and rows["22"][10] == "True"
+    assert rows["24"][9] == "0.00045776" and rows["24"][6] == "15/32768" and rows["24"][10] == "True"
+    # "E u O has 2^(n/2+1) - 1 of the 2^n states": the count of the states of E u O in the data file of that table
+    zr = json.load(open(os.path.join(ROOT, "proofs_43_142/out/zhu_richard_154.json")))
+    assert all(r["states_EO"] == 2 ** (r["n"] // 2 + 1) - 1 for r in zr["rows"])
 
 
 # ---------------------------------------------------------------- 4. claims without a number
@@ -194,7 +227,28 @@ def test_claims_against_data_files():
     g26 = _jsonl("proofs_94_26/out/g1_26.jsonl")
     g94 = _jsonl("proofs_94_26/out/g1_classes_94.jsonl")
     crystal = [r for r in _csv("data/ring_size/crystal_radius.csv") if r["rule"] == "94" and r["n"] == "3"]
+    mech = _csv("data/ring_size/mechanisms.csv")
+    k = _kstar()
+    zr = json.load(open(os.path.join(ROOT, "proofs_43_142/out/zhu_richard_154.json")))
+    with open(os.path.join(ROOT, "literature_addendum.md"), encoding="utf-8") as fh:
+        addendum = " ".join(fh.read().split())
+
+    def only_zero(rule):
+        rows = [r for r in mech if r["rule"] == str(rule) and k[(rule, int(r["n"]))] >= 1]
+        return bool(rows) and all((r["cycles"], r["n_selected"], r["selected_cover"], r["selected_spatial_periods"],
+                                   r["selected_temporal_periods"]) == ("1", "1", "0", "1", "1") for r in rows)
+
+    def pow2_only(rule):
+        return [n for n in range(8, 23) if k[(rule, n)] >= 1] == [8, 16]
+
     checks = {
+        "60_only_cycle_is_zero_state": only_zero(60), "90_only_cycle_is_zero_state": only_zero(90),
+        "60_kpos_are_the_powers_of_two": pow2_only(60), "90_kpos_are_the_powers_of_two": pow2_only(90),
+        "zr_values_printed_in_the_text":
+            'Figure 13, p. 14, prints "Zero eigenvalue ratio: 0.00048828" for n = 22 and "0.00045776" for n = 24'
+            in addendum,
+        "zr_values_agree_with_the_count": zr["quoted_values_agree"] is True and zr["all_lemma6_equal_direct"] is True
+            and {int(n): str(v) for n, v in zr["quoted"].items()} == {22: "0.00048828", 24: "0.00045776"},
         "26_n16_not_only_carriers":
             g26[16]["cycles_with_111_through_a_carrier_word"] < g26[16]["cycles_by_kind"]["with_111"],
         "26_n22_chi_below_n_over_3": min(g26[22]["c_of_cycles_with_111"]) < 22 / 3,
@@ -225,17 +279,64 @@ def test_macros_used_and_defined():
         assert marker not in body, marker
 
 
+def test_other_classes_are_those_of_the_data_file():
+    """The paragraph "Other classes that change with n" names exactly the classes of mechanisms.csv that the
+    theorems do not treat, and its count is the macro derived from the file."""
+    body = _body()
+    par = body[body.index(r"\emph{Other classes that change with $n$.}"):body.index(r"\emph{Rule 26.}")]
+    named = re.findall(r"Class (\d+):", par)
+    assert len(named) == len(set(named)), named
+    classes = {int(r["rule"]) for r in _csv("data/ring_size/mechanisms.csv")}
+    treated = {154, 43, 142, 94, 26}
+    assert treated <= classes
+    assert {int(c) for c in named} == classes - treated, sorted(classes - treated)
+    m = _macros()
+    assert int(m["NumOtherSwitching"]) == len(named) == int(m["NumSwitching"]) - len(treated)
+    assert r"\NumOtherSwitching{}" in par and not re.search(r"\b(five|six|seven|eight|nine)\b", par)
+    # every class of the paragraph has its computed values through a macro of its own
+    for word in ("ThirtyFive", "ThirtySeven", "FortyFive", "SeventyThree", "OneTwentyTwo", "TwentyTwo", "Sixty",
+                 "Ninety"):
+        assert re.search(r"\\K(pos|zero)%s(?![A-Za-z])" % word, par), word
+
+
+def test_ranges_of_the_reader_checks():
+    """The ranges that the statement on the use of AI quotes from reader_checks/README.md stand there."""
+    body = _body()
+    st = body[body.index(r"\section*{Statement on the use of AI}"):body.index(r"\section*{Code and data}")]
+    with open(os.path.join(ROOT, "reader_checks/README.md"), encoding="utf-8") as fh:
+        readme = fh.read()
+    quoted = {
+        r"rules 43 and 142, $n=4,\dots,16$": "rules 43 and 142; G_1 for n = 4..16",
+        r"rule 94, $n=4,\dots,17$ with $3\ndiv n$": "rule 94, n = 4..17 with 3 not dividing n",
+        r"$n=3,4,6,9,12$": "rule 94: n = 3, 4, 6, 9, 12",
+        r"rule 26, even $n=4,\dots,18$": "rule 26, even n = 4..18",
+        r"rule 154, $n=3,\dots,14$": "rule 154: n = 3..14",
+        r"$n=4,8,12,16,20$": "healing time, n = 4, 8, 12, 16, 20",
+    }
+    for in_paper, in_readme in quoted.items():
+        assert in_paper in " ".join(st.split()), in_paper
+        assert in_readme in readme, in_readme
+    assert "Not an independent verification" in readme and "not independent of the planning" in " ".join(st.split())
+
+
 # ---------------------------------------------------------------- 6. no number typed by hand
 
 # Numerals of the source that are not data (kind (b) of the module docstring), with the reason.
 ALLOWED = {
     # rule numbers
     "18", "22", "26", "35", "37", "43", "45", "60", "73", "90", "94", "122", "142", "154", "184", "226",
-    # ring sizes and constants in statements, proofs and captions (16, 12, 24: the simulated rings of the figures)
+    # ring sizes and constants in statements, proofs and captions (16, 12, 24: the simulated rings of the figures;
+    # 12, 16, 20 also: ring sizes quoted from reader_checks/README.md in the statement on the use of AI, which
+    # test_ranges_of_the_reader_checks compares with that file)
     "10", "12", "16", "24", "64", "256",
-    # bibliographic: pages, sections, statement and equation numbers of references, volumes, years, identifiers
-    "28", "29", "38", "49", "61", "1991", "1993", "3.3", "3.4", "3.5", "3.7", "6.2", "2610.10967",
-    # dates of the sessions (statement on the use of AI; from the git log and the verification reports)
+    # bibliographic: pages, sections, statement and equation numbers of references, volumes (24: also the volume of
+    # Complex Systems named in Section 6.1)
+    "28", "29", "38", "3.3", "3.4", "3.5", "3.7", "6.2",
+    # version number of the repository that contains the ring-size study ("Code and data"; tag v0.3)
+    "0.3",
+    # dates of the sessions and of the readings (statement on the use of AI and Section 6.1; from the git log, the
+    # verification reports and literature_addendum.md); 14, 17, 18 and 20 also: ring sizes quoted from
+    # reader_checks/README.md in the statement on the use of AI (test_ranges_of_the_reader_checks)
     "13", "14", "17", "20", "2026",
 }
 
@@ -299,7 +400,7 @@ def test_pdf_builds(tmp_path):
     text = "\n".join((p.extract_text() or "") for p in PdfReader(str(pdf)).pages)
     assert "??" not in text, "unresolved reference in the PDF"
     for needle in ("Theorem A", "Rule 154", "Rules 43 and 142", "Rule 94", "Rule 26", "References",
-                   "Proofs of the lemmas for rule 94"):
+                   "Proofs of the lemmas for rule 94", "Proofs for rule 26"):
         assert needle in text, needle
     # the committed PDF has the same number of pages as a fresh build
     committed = os.path.join(HERE, "ring_size_paper.pdf")
