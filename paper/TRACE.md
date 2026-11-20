@@ -3,6 +3,14 @@
 Written on 20 November 2026 by the session that assembled the paper. Line numbers refer to the repository at branch
 `paper-ring-size` after the two merges (commit d6c6299).
 
+Updated on the same day by a later session (Claude), after the author's reader had read the PDF of commit 72cc2ad and
+the author had decided the four open points of `REFEREE_NOTES.md`. That session added Appendix B (rule 26), the
+classes 60 and 90 in Section 6.2, the report on Zhu and Richard, five entries of the list of references and the new
+wording of the abstract, of "Status of the proofs" and of the statement on the use of AI. Its rows and items are
+marked "(update)". It worked on `HEAD` dc5ac15; `proofs_94_26/PROOF_26.md` and `VERIFICATION_94_26.md` are
+unchanged between d6c6299 and dc5ac15 (`git diff` is empty), so their line numbers hold for both. The statements and
+proofs of Sections 2 and 3 and of Appendix A were not changed; their numbers in the PDF are the same as before.
+
 How the paper was put together. Sections 1, 2, 3 (head), 4, 6 and the statements at the end were written by the
 assembling session. Sections 3.1 (rule 154), 3.2 (rules 43 and 142), 3.3 with Appendix A (rule 94), 5 (rule 26) and
 a draft of Section 6.1 with the bibliography were each written by a sub-session that had one source document as
@@ -88,21 +96,33 @@ tables of the files in `trace/`, where the abbreviations of the verification doc
 | Lemma 5.4 | `26:lem:domain` | S Lemma 3, statement L124-131, proof L133-145 | [proved] | V L91-92 ("(a), (b) (all cell types of a domain, with d >= 3 used where stated) and (c) (apart from C1)": correct). Finding C1 (V L55): the first sentence of (c) was false for F in the verified version; corrected in S (L129-131 now has the form the verification proposes; checked). Tests M3a, M3b, M3c, M3F, V L159-162 (even n = 4..18, 0 violations). | free-cell values c_k -> z_k (the letter c is not free in the paper); GF(2)^((d-1)/2) -> "{0,1}^((d-1)/2) over the field with two elements" (no \mathbb); "contains no 111" -> "does not contain the code 111"; "Flipping a free cell" -> "The flip of a free cell". |
 | Lemma 5.5 | `26:lem:singleton` | S Lemma 5, statement L159-160, proof L162-164 | [proved] | V L93 (correct); test M5, V L163 (even n = 4..18, 0 violations). No finding. | c -> chi. |
 | Lemma 5.6 | `26:lem:parity` | S Lemma 6, statement L166-169, proof L171-173, which refers to P154 Lemma 3 (P154 L71-75); the step F(E) in O is written out in P154 Lemma 2, L63-69 | [proved] (S); P154 Lemmas 2, 3: [proved] | V L93 (Lemma 6: correct); V L104: "Cited results of P154 used by C26 (Lemma 3, Lemma Q1, the conventions of Section 1): correct."; test M6, V L165. No finding. An independent verification of P154 as a whole was not looked up by this track. | "x in E or O" -> "x in E ∪ O"; 0 -> \zero. The algebraic step, which S gives in one line with "(as in P154, Lemma 3)", is written with the wording of P154 L74-75. See section 4 (credit) and section 8, Lemma parity, steps 2 to 4. |
-| Theorem 5.7 | `26:thm:main` | S Theorem 3(c), L84-85, proof L226-232 | [proved] | as (b); V L95-96 names "the in-tree of weight m in (c)" as checked | re-lettered: source 3(c) -> paper (d); wording of the statement as in the source (S -> \Sel, G1 -> \Gone, 0 -> \zero). Theorem 3(d) of the source is NOT part of the theorem; it is quoted after Proposition `26:prop:indices` as "Theorem 3(d) of that document". |
-| Proposition 5.8 | `26:prop:indices` | S Theorem 4, statement L88-91 (rows L18-20), proof L245-267 (not reproduced) | [proved] | V L96-97 ("Theorem 4 (a), (b), (c) (the sources 0, 5, 8, ..., n - 3 of 10100(100)^q, q odd)": correct); test T34ch, V L174; k_c from the definitions at n = 8 and n = 16 (V L212, L222). No finding. | codes c = 0..7 -> code words; k_c -> k_v, k_7 -> k_{111}; k_0 -> k_{000}; "c = 1, ..., 6" -> the six words. |
-| Proposition 5.9 | `26:prop:even` | S Corollary 5, statement L97-98, proof L297-298 | [proved, given Theorem A] | V L98 (Corollary 5: correct); potentials from the definitions, n = 6..14, agree (V L28, L211-215). Theorem A itself: "used as given", not re-proved by V (V L106-108, L257). | k_c = 0 for c = 0..6 -> k_v = 0 for every code v != 111; "Theorem A" -> `thm:A`; the step "k_c = 0 iff a state of a selected cycle contains c" -> `prop:order`. |
+| Theorem 5.7 | `26:thm:main` | S Theorem 3(c), L84-85, proof L226-232 | [proved] | as (b); V L95-96 names "the in-tree of weight m in (c)" as checked | re-lettered: source 3(c) -> paper (d); wording of the statement as in the source (S -> \Sel, G1 -> \Gone, 0 -> \zero). Theorem 3(d) of the source is NOT part of the theorem; (update) it is Lemma B.5 of Appendix B. |
+| Proposition 5.8 | `26:prop:indices` | S Theorem 4, statement L88-91 (rows L18-20). Proof (update): Appendix B, "Proof of Proposition 5.8" = S section 5, L245-267: the formula for k_c L245-249, (a) L251-254, (b) L256-260, (c) L262-267 | [proved] | V L96-97 ("Theorem 4 (a), (b), (c) (the sources 0, 5, 8, ..., n - 3 of 10100(100)^q, q odd)": correct); test T34ch, V L174; k_c from the definitions at n = 8 and n = 16 (V L212, L222). No finding. Not excluded by V. | codes c = 0..7 -> code words; k_c -> k_v, k_7 -> k_{111}; k_0 -> k_{000}; "c = 1, ..., 6" -> the six words. (update) In the proof: D_c -> \Dc{v}; "k_1 = k_2 = k_4 = k_5 = 1" -> "k_v = 1 for v in {001, 010, 100, 101}"; "for c = 3, 6" -> "for v in {011, 110}"; Theorem 3(c) -> Theorem 5.7(d); Theorem 3(d) -> Lemma B.5; Lemma 4, 6, 7, 8 -> Lemma B.1, 5.6, B.3, B.4; The sentence after the statement that named the source's Lemmas 4, 7, 8, Theorem 3(d) and Theorem 1 is replaced by "(Proof in Appendix B.)". |
+| Proposition 5.9 | `26:prop:even` | Statements before "Consequently": S Theorem 5, L93-95. Last sentence: S Corollary 5, L97-98. Proof (update): Appendix B, "Proof of Proposition 5.9" = S section 6: first paragraph L276-280, "Domain cycles" L281-292, "Outside K" L293, "Codes" L294-295, Corollary 5 L297-298 | Theorem 5: [proved]; Corollary 5: [proved, given Theorem A] | V L97-98 ("Theorem 5 (reduction to two domains, L >= 2^(e+1) + 1, y in the image of (1 + S)^(2^e)), Corollary 5: correct"); tests T5 (V L172) and T5ch (V L175), even n <= 20; potentials from the definitions, n = 6..14, agree (V L28, L211-215). Theorem A itself: "used as given", not re-proved by V (V L106-108, L257); in the paper it is Theorem 2.8, whose verdict is in its own row. Not excluded by V. | k_c = 0 for c = 0..6 -> k_v = 0 for every code v != 111; "Theorem A" -> `thm:A`; the step "k_c = 0 iff a state of a selected cycle contains c" -> `lem:kzero`. (update) In the proof: R90 -> calligraphic R (R is a resistance in the paper); the domain lengths L_1, L_2, L -> d_1, d_2, d (L is the map of rule 90 in the paper); the shift S -> \Sigma = sigma^2 (S is the selected set); Theorem 2 -> Lemma B.6; Lemma 9 -> Lemma B.7; Theorem 1 -> Lemma B.2; Lemma 8 -> Lemma B.4. The proof of Corollary 5 is the paragraph "The last sentence of the proposition"; nothing is added to its two clauses. |
+| Lemma B.1 (update) | `26:lem:ancestors` | S Lemma 4, statement L147-149, proof L151-157 | [proved] | V L92-93 ("Lemma 4 (induction, the case p = j + 1)": correct); test M4, V L164 (even n = 4..16, 223330 cases, 0 violations). No finding. Not excluded by V. | u(j) -> u_j; U^r(u) -> U^r u; "Let n be even" is the standing assumption of the appendix; Lemma 1 -> Lemma 5.2; Lemma 3(a) -> Lemma 5.4(a); "the block 111" -> "the code 111"; last sentence: "the F-orbit of every state ... contains 111" -> "a state of its orbit under F contains 111". |
+| Lemma B.2 (update) | `26:lem:kinds` | S Theorem 1, statement L72-75 (in the wording after finding C3), proof L209-212 | [proved] | V L95 ("Theorem 1 (C3 only)": correct; C3, V L57, is a wording point, applied in S L72-75); tests M5 of S and T1 of V (V L167, even n = 4..20, 0 violations). Not excluded by V. | Called a lemma. c -> chi. The first sentence of the source's statement ("c is constant on every cycle") is Lemma 5.3 of the paper and is not repeated; its last sentence ("F permutes the domain states, and no domain state contains 111") is Lemma 5.4(c) and is not repeated. The labels "kind (i), (ii), (iii)" are dropped. Added as a sentence of the statement, from the source's proof (L210-212: "the whole cycle lies in M ... If every state of the cycle is a domain state ... If not ... the cycle contains 111") and from the way Lemma 8 and Theorem 5 of the source cite Theorem 1 (L193, L293): "Hence every cycle is contained in E ∪ O, or is a domain cycle, or contains 111; for n = 2^k the only cycle contained in E ∪ O is {0}". No step is added; the sentence states for cycles what the proof shows. |
+| Lemma B.3 (update) | `26:lem:carrier` | S Lemma 7, statement L175-176, proof L178-182 | [proved] | V L93 ("Lemma 7 (both image steps block by block)": correct); test M7, V L166 (n = 5..31, 1444 cases, 0 violations). No finding. Not excluded by V. | "(n = 5p + 3q)" is left out and "if p >= 1" is written "if w is a carrier word" (Definition 5.1: at least one block 11100); the images are written with \code. |
+| Lemma B.4 (update) | `26:lem:codes` | S Lemma 8, statement L184-185, proof L187-195 | [proved] | V L93-94 ("Lemma 8 (both values of c_1 and c_r; the run argument at 2^k)": correct); test L8 of V, V L168 (even n = 4..20, 0 violations). No finding. Not excluded by V. | Title "codes 011 and 110" -> "codes on the cycles". Free cells c_k -> z_k (as in Lemma 5.4); 1^n -> \one; Lemma 3(b) -> Lemma 5.4(b); Lemma 6 -> Lemma 5.6; Theorem 1 -> Lemma B.2; "(codes are invariant under rotation)" refers to Definition 5.1. |
+| Lemma B.5 (update) | `26:lem:domaingamma` | S Theorem 3(d), statement L86, proof L233-241 | [proved] | V L95-96 ("Theorem 3 (a) to (d) (in particular ... the intermediate states of (d) for even and odd i)": correct); test T34ch, V L174 (n = 8..1024). No finding. Not excluded by V. | Made a lemma of its own (Theorem 5.7 of the paper has the parts (a) to (c) of the source's Theorem 3 and its Theorem 2). "(a)" -> Theorem 5.7(b); "(c)" -> Theorem 5.7(d); Lemma 3 -> Lemma 5.4(c); "equal or G1-adjacent cycles" -> "equal cycles or cycles joined by an edge of G_1 (Lemma 2.3)". |
+| Lemma B.6 (update) | `26:lem:topar` | S Theorem 2, statement L77-79 (first sentence), proof L214-222 | [proved] | V L95 ("Theorem 2 (both cases, the induction)": correct); tests T2 and T2ch, V L170, L173. No finding. Not excluded by V. | The paper has the proof of S Theorem 2 inside the proof of Theorem 5.7(a), written there for every even n >= 4; the lemma states its conclusion for even n and refers to that proof. The second half of the source's statement (the number of drops of c) is not taken over. |
+| Lemma B.7 (update) | `26:lem:oneparity` | S Lemma 9, statement L197-198, proof L200-205 | [proved] | V L94 ("Lemma 9 (the projection pi = F^T)": correct); test L9, V L169 (even n = 4..20, 0 violations). No finding. Not excluded by V. | P -> P_E (P(d) and P_h have other meanings in Section 3); pi -> theta (pi_eps is the stationary law); "is its G1 successor" -> "G_1 has an edge from the cycle of x to it (Lemma 2.3)"; Lemma 6 -> Lemma 5.6. |
 | Proposition A.1 | `94:prop:periodic` | `proofs_94_26/PROOF_94_converse.md`, Theorem 1 (l. 73-79), proof l. 307-311 | [proved] | `VERIFICATION_94_26.md` l. 70-72; tests T1, T1p6 (l. 138-139), n = 3..20 (row "optional block" of `trace/trace_94.md`) | Called a proposition and placed at the end of Appendix A; notation as in Lemmas 94:lem:empty and 94:lem:live. The other two statements of the sub-session's optional block (basin of the zero state; Proposition 3 of the source) were not taken into the paper. |
 
-Statements of the paper that have no proof in the paper: Proposition 2.1 (quoted from the note v0.2);
-Proposition `26:prop:indices` (proof in `proofs_94_26/PROOF_26.md`, Section 5; it needs Lemmas 4, 7, 8 and Theorem
-3(d) of that document and did not fit); the first part of Proposition `26:prop:even` (Theorem 5 of that document).
-The text says so at each place.
+Statements of the paper that have no proof in the paper: Proposition 2.1 (quoted from the note v0.2). (update)
+Propositions `26:prop:indices` and `26:prop:even`, which were without proof in the PDF of commit 72cc2ad, are proved
+in Appendix B. The verification `VERIFICATION_94_26.md` excluded no statement of Section 5 or of Appendix B; what it
+did not check is listed in its section 5 (V L252-266) and concerns, for rule 26: the row n = 22 of the source's
+Table 2 apart from one claim, the potentials at n = 16 for 536 of the 552 roots, Theorem A (used as given), and the
+literature and process statements of the source. "Status of the proofs" in the paper says that Theorem A was not
+re-proved by that verification.
 
 Statements of the sources that the paper does not contain: Lemma B, Lemma Z, Lemma H, Lemma P of
 `report_ring_size.md`; Proposition 3 (entry cost) and the paragraph "Description of the cycles" of
 `PROOF_43_142.md`; Lemma 7(b) and the counts of Lemma 6 of `PROOF_154.md`, and its Section 7 (rules 122, 26);
-Lemma 16 and Proposition 3 of `PROOF_94_converse.md` (quoted in Section 6.2 without proof); Lemmas 4, 7, 8, 9 and
-Theorems 3(d), 4 (proof), 5 (proof) of `PROOF_26.md`; gamma_min for rule 94 at 3 | n (not stated in `PROOF_94.md`).
+Lemma 16 and Proposition 3 of `PROOF_94_converse.md` (quoted in Section 6.2 without proof); gamma_min for rule 94 at
+3 | n (not stated in `PROOF_94.md`). (update) Of `PROOF_26.md` the paper now contains every lemma and theorem; not
+taken over are the second half of the statement of its Theorem 2 (the number of drops of c) and its sections 7
+(scope) and 8 (computations), which the paragraph "Computed values and the open case" quotes in part.
 
 ## Part B. Every reference: how it was seen
 
@@ -116,12 +136,12 @@ the sandbox had no network access to the literature (only package registries wer
 |---|---|---|---|
 | `BagnoliBaiaMatteuzzi2025` | read in full (arXiv v2, 30 April 2025, 16 pp.) by the literature session of v0.2, by the verification of v0.2 and by the ring-size study session; read in part (Table 2 and surrounding text) by the ring-size verification | `literature.md`:60, `VERIFICATION_v02.md`:70, `literature_ring_size.md`:109, `literature_ring_size.md`:110, `verify_ring_size/literature/literature_check.md`:41 | none |
 | `BhattacharjeeDas2019` | read in part by the ring-size verification (abstract, Example 2, Table 3 row lists, theorem statements by keyword scan; text extraction); not read by the study | `verify_ring_size/literature/literature_check.md`:42, `verify_ring_size/literature/literature_check.md`:157, `literature_ring_size.md`:15 | none |
-| `Boccara1993` | not obtained by any session; known through the credit in Fuks2005 and Fuks2005b (both print 1992); date and DOI seen on the publisher page by the verification | `literature_addendum.md`:257, `proofs_43_142/PROOF_43_142.md`:757, `literature_addendum.md`:304, `VERIFICATION_43_142.md`:187, `VERIFICATION_43_142.md`:188, `verify_43_142/literature/lit_check_43_142.md`:9 | given name or initial of the author |
+| `Boccara1993` | not obtained by any session; known through the credit in Fuks2005 and Fuks2005b (both print 1992); date and DOI seen on the publisher page by the verification | `literature_addendum.md`:257, `proofs_43_142/PROOF_43_142.md`:757, `literature_addendum.md`:304, `VERIFICATION_43_142.md`:187, `VERIFICATION_43_142.md`:188, `verify_43_142/literature/lit_check_43_142.md`:9 | (update) given name Nino: `literature_addendum.md`, "Bibliographic data seen on 20 November 2026" (result page of a web search, not the paper) |
 | `Ellison2000` | read in part. Study session: author working paper of January 1999 (45 pp.): Def. 1, Sects. 2.2, 3.1-3.2, 4.1-4.2, 6.3. Ring-size verification: published version, journal pp. 17, 20, 22-26, 28-31, 36-39 (15 of 29), from page images; appendix lemmas not read | `literature_ring_size.md`:138, `literature_ring_size.md`:74, `literature_ring_size.md`:349, `verify_ring_size/literature/literature_check.md`:31, `verify_ring_size/literature/literature_check.md`:32, `literature_ring_size.md`:15, `verify_ring_size/literature/literature_check.md`:406, `VERIFICATION_ring_size.md`:382 | none. An earlier document gives the entry without DOI (`literature.md`:13; `literature.md`:88) |
 | `Fedoriaka2025` | read in full (v1, text extraction) by the ring-size verification; search excerpt only in the study session | `verify_ring_size/literature/literature_check.md`:40, `verify_ring_size/literature/literature_check.md`:159, `literature_ring_size.md`:248 | none |
-| `Fuks1997` | arXiv:comp-gas/9703001v1 read in full (5 pp.) by the session of proofs_43_142 and by the literature sub-task of its verification; journal version not compared | `literature_addendum.md`:258, `VERIFICATION_43_142.md`:168, `literature_addendum.md`:355 | given name or initial; full journal name; issue; end page |
-| `Fuks2005` | read in full (publisher PDF) by the session of proofs_43_142; statements re-read page by page by the literature sub-task of its verification | `literature_addendum.md`:255, `proofs_43_142/PROOF_43_142.md`:757, `VERIFICATION_43_142.md`:159, `verify_43_142/literature/lit_check_43_142.md`:37 | given name or initial; issue number (present only inside the DOI string) |
-| `Fuks2005b` | arXiv:nlin/0502037v1 read in full on 18 November 2026 by the reader outside both sessions; before that a search excerpt only (session of proofs_43_142); not reachable for the verification; journal version (2007, other title) not seen | `literature_addendum.md`:299, `literature_addendum.md`:295, `literature_addendum.md`:256, `proofs_43_142/PROOF_43_142.md`:760, `VERIFICATION_43_142.md`:3, `VERIFICATION_43_142.md`:255 | given name or initial. KEY/YEAR: no document has a year 2006 for this paper (see section 2) (This key was `Fuks2006` in the sub-session's file; no repository document has a paper of Fukś dated 2006.) |
+| `Fuks1997` | arXiv:comp-gas/9703001v1 read in full (5 pp.) by the session of proofs_43_142 and by the literature sub-task of its verification; journal version not compared | `literature_addendum.md`:258, `VERIFICATION_43_142.md`:168, `literature_addendum.md`:355 | (update) given name Henryk: `literature_addendum.md`, update of 20 November 2026 (author line of arXiv:nlin/0502037v1). Journal name in full, issue 3 and pages R2081-R2084: search S2 below (not the paper itself) |
+| `Fuks2005` | read in full (publisher PDF) by the session of proofs_43_142; statements re-read page by page by the literature sub-task of its verification | `literature_addendum.md`:255, `proofs_43_142/PROOF_43_142.md`:757, `VERIFICATION_43_142.md`:159, `verify_43_142/literature/lit_check_43_142.md`:37 | (update) given name Henryk: as for `Fuks1997`. Still missing: issue number (present only inside the DOI string) |
+| `Fuks2005b` | arXiv:nlin/0502037v1 read in full on 18 November 2026 by the reader outside both sessions; before that a search excerpt only (session of proofs_43_142); not reachable for the verification; journal version (2007, other title) not seen | `literature_addendum.md`:299, `literature_addendum.md`:295, `literature_addendum.md`:256, `proofs_43_142/PROOF_43_142.md`:760, `VERIFICATION_43_142.md`:3, `VERIFICATION_43_142.md`:255 | (update) given name Henryk: author line of this preprint (`literature_addendum.md`, update of 20 November 2026). The entry now says that the text was read by the reader outside the sessions, not by a session. KEY/YEAR: no document has a year 2006 for this paper (this key was `Fuks2006` in the sub-session's file) |
 | `MartinOdlyzkoWolfram1984` | read in full (author copy, 40 pp.) by the ring-size verification; not read by the study session (known there second-hand through Powley and Stepney) | `verify_ring_size/literature/literature_check.md`:30, `literature_ring_size.md`:15, `literature_ring_size.md`:234, `VERIFICATION_ring_size.md`:260, `literature_ring_size.md`:210 | none. The note field of the repository's BibTeX block still says 'Not read' (see errors, item 1) |
 | `Newton2018` | read (version of record) by the literature session of v0.2; a secondary source | `literature.md`:76, `literature.md`:77 | none |
 | `NobeYura2004` | abstract only (study session, via the fetch tool; ring-size verification, publisher page in search results); Proposition 1 seen as a search excerpt only | `literature_ring_size.md`:243, `literature_ring_size.md`:244, `literature_ring_size.md`:245, `literature_ring_size.md`:246, `verify_ring_size/literature/literature_check.md`:43, `verify_ring_size/literature/literature_check.md`:402 | none; end page 5804 stands in the repository but was not checked |
@@ -129,10 +149,35 @@ the sandbox had no network access to the literature (only package registries wer
 | `NoldekeSamuelson1993` | not obtained; known only through Ellison2000, pp. 36-38 (read by the verification) and secondary search fragments | `verify_ring_size/literature/literature_check.md`:45, `literature_ring_size.md`:26, `VERIFICATION_ring_size.md`:382, `verify_ring_size/literature/literature_check.md`:92 | issue number, DOI |
 | `Nordahl1989` | read in part (publisher scan: pp. 68-74 and the reference list pp. 76-78) by the session of proofs_43_142; pp. 70, 73, 74 and the references re-read by the literature sub-task of its verification | `literature_addendum.md`:144, `literature_addendum.md`:145, `VERIFICATION_43_142.md`:171 | given names (initials only), issue, DOI |
 | `OEIS` | entries and b-files read by the ring-size verification (oeis.org) | `verify_ring_size/literature/literature_check.md`:39, `verify_ring_size/literature/literature_check.md`:200, `verify_ring_size/literature/literature_check.md`:205 | a title of the database, an author, a year: the repository documents write 'OEIS' only |
-| `PeterleinNote` | source document of the paper (note/note_v0.2.tex) | `note/note_v0.2.tex`:24, `note/note_v0.2.tex`:25, `note/note_v0.2.tex`:26 | The note itself does not contain its version DOI: `note/note_v0.2.tex`:227 gives the DOI of v0.1 and the DOI of all versions only (the links in note_v0.2.pdf are the same two). CITATION.cff describes version 0.3 (`CITATION.cff`:8) |
-| `PitmanTang2018` | read in the version arXiv:1603.09017v3 (8 February 2018) by the literature session of v0.2 | `literature.md`:33, `literature.md`:34, `literature.md`:125 | pages and issue ('Pages not verified') |
+| `PeterleinNote` | source document of the paper (note/note_v0.2.tex) | `note/note_v0.2.tex`:24, `note/note_v0.2.tex`:25, `note/note_v0.2.tex`:26 | The note itself does not contain its version DOI: `note/note_v0.2.tex`:227 gives the DOI of v0.1 and the DOI of all versions only (the links in note_v0.2.pdf are the same two). CITATION.cff describes version 0.3 (`CITATION.cff`:8). (update) Cited where the paper uses the note: the model, Proposition 2.1, the rate, k* = 0 for bijections, Proposition 1 of the note (classes 60 and 90) |
+| `PitmanTang2018` | read in the version arXiv:1603.09017v3 (8 February 2018) by the literature session of v0.2 | `literature.md`:33, `literature.md`:34, `literature.md`:125 | (update) issue 3: `literature_addendum.md`, update of 20 November 2026 (address of the paper at Project Euclid, in a search result). Pages 1942-1972: search S1 below (not the paper itself) |
 | `Samuelson1994` | abstract only, by the ring-size verification (ScienceDirect abstract as shown in search results); primary text not read by anyone | `verify_ring_size/literature/literature_check.md`:44, `literature_ring_size.md`:26, `VERIFICATION_ring_size.md`:382, `verify_ring_size/literature/literature_check.md`:400 | issue number, DOI |
-| `Stricker2023` | read in part (publisher PDF: pp. 229-232; the remaining 19 PDF pages not read) by the session of proofs_43_142; pp. 230, 232 re-read by the verification | `literature_addendum.md`:207, `VERIFICATION_43_142.md`:171 | end page ('229 ff.'); given name (initials only) |
+| `Stricker2023` | read in part (publisher PDF: pp. 229-232; the remaining 19 PDF pages not read) by the session of proofs_43_142; pp. 230, 232 re-read by the verification | `literature_addendum.md`:207, `VERIFICATION_43_142.md`:171 | (update) pages 229-251: `literature_addendum.md`, update of 20 November 2026 (reference list of Zhu and Richard). Still missing: given name (initials only) |
+
+Rows added by the update of 20 November 2026 (same columns):
+
+| key in `refs.bib` | how seen | repository lines that say so | fields, remarks |
+|---|---|---|---|
+| `PeterleinStudy` | source documents of the paper: the repository at tag `v0.3` (commit 0849cd8), which contains `report_ring_size.md`, `data/ring_size/mechanisms.csv`, `data/fw_sweep.csv`, `data/ring_size/crystal_radius.csv`, `verify_ring_size/` (with `PROOF_154.md`, `PROOF_94.md` and `phase2/out/v154_n22.json`) and `VERIFICATION_ring_size.md` (checked with `git cat-file -e v0.3:<path>`); it does not contain `proofs_43_142/`, `proofs_94_26/`, `literature_addendum.md` or `paper/` | `CITATION.cff`:3 (title), :8 (version 0.3), :9 (date 2026-11-16) | The DOI 10.5281/zenodo.24275024 of version 0.3 was given by the author in the task of this session; no file of the branch contains it (`CITATION.cff` lists the DOIs of versions 0.1 and 0.2 and the DOI of all versions). Cited where the paper refers to the ring-size study, its report or its data files: introduction, caption of Table 1, Section 6.2, statement on the use of AI, "Code and data" |
+| `Young1993` | not read by any session and not by the reader (title via the DOI only); the content is known from Newton2018 (read: stochastic potential, stochastically stable = least stochastic potential, with reference to Young 1993) and from Ellison2000 (pp. 22, 36) | `literature.md`:85, :77, :123; `verify_ring_size/literature/ellison2000_published_reading_notes.md`:70 | all fields: BibTeX block at `literature.md`:241 ff. Note in the entry: "Not read; cited after Newton (2018) and Ellison (2000)" |
+| `FreidlinWentzell1984` | not read by any session and not by the reader | `verify_ring_size/literature/ellison2000_published_reading_notes.md`:62, :64 (Ellison, Section 6.3, refers the minimum-cost trees to Freidlin and Wentzell); `literature.md`:89 (chapter title of the third edition only) | The repository does not record which edition Ellison cites (`trace/trace_refs.md`, row RW:6). Year 1984, publisher Springer-Verlag, New York: search S4 below (Ellison's list of references as shown in search results). Given names: `literature.md`:264 (entry of the third edition, 2012, which the note v0.2 cites). Note in the entry: "Not read; cited after Ellison (2000), in the edition named in his list of references" |
+| `HattoriTakesue1991` | not obtained; named in Fuks2005b (read by the reader outside the sessions) as the source of the conserved number of blocks 10 | `literature_addendum.md`:263, :307-308 | journal, volume, year, pages: `literature_addendum.md`:263. Title, given names, issue 3, DOI: search S3 below. Note in the entry: "Not read; cited after Fukś (2005), the preprint" |
+| `ZhuRichard2026` | read in full (v1, 16 pages; the figures only as the text printed in them) on 20 November 2026 by Claude, the reader outside the sessions, through an arXiv reader that the sessions could not reach; before that, search excerpts only (session of proofs_43_142 and its verification). No session read it; this session did not open it | `literature_addendum.md`, section "Update of 20 November 2026 (A1 read in full)"; section A1 (`literature_addendum.md`:37 ff.) | authors, title, arXiv number, version: `literature_addendum.md`:37-39. What the paper says about the text is taken from the update and from section A1 only: the definition of the ratio (equation (4) and Proposition 2.2 there), unitarity at odd n cited from Nobe and Yura (2004), "below 0.01 for n in {13, ..., 27}", the two values printed in Figure 13, no explanation given, and what is not in the text. The numbers enter through `make_numbers.py` (macros `ZRBound`, `ZRNmin`, `ZRNmax`, `ZRValues`) |
+| `Wolfram2002` | read in part by the ring-size study session: Section 6.4 (pp. 255-260) and the notes for Chapter 6 (pp. 947-965), from PDF excerpts; the note "Additive rules" (p. 963) checked by eye; not re-read by the verification of the study | `literature_ring_size.md`:77, :84-85, :100-104; `verify_ring_size/literature/literature_check.md`:38 | all fields: BibTeX block at `literature_ring_size.md`:309 ff. Cited once, for rule 60 in Section 6.2: p. 963 gives the fraction of states on cycles for rules 60 and 90; that only the zero state is left at n = 2^j is the study's inference (`literature_ring_size.md`:104, `report_ring_size.md`:116-118), and the paper says so |
+
+Web searches of 20 November 2026 (update), made by this session with the web search tool; only result pages were
+seen, no paper was opened. Each was made once.
+
+| no. | query | what was seen, and where |
+|---|---|---|
+| S1 | `Pitman Tang "Tree formulas, mean first passage times and Kemeny's constant of a Markov chain" Bernoulli 24(3) pages` | "Bernoulli 24(3): 1942-1972 (August 2018)" on the page of the paper at projecteuclid.org; the same pages in three reference lists and on the home page of W. Tang |
+| S2 | `Fukś "Solution of the density classification problem with two cellular automata rules" Phys. Rev. E 55 R2081 pages` | "Physical Review E, 55(3):R2081-R2084" in two reference lists (arXiv:1409.3588; LIPIcs.STACS.2011.284) and in the Wikidata record of the paper (volume 55, issue 3, pages R2081-R2084) |
+| S3 | `Hattori Takesue 1991 Physica D 49 295-322 "Additive conserved quantities in discrete-time lattice dynamical systems"` | authors Tetsuya Hattori and Shinji Takesue, the title, "Physica D, Volume 49, Issue 3, Pages 295-322", doi 10.1016/0167-2789(91)90150-8 (ACM Digital Library record; record of Keio University) |
+| S4 | `Ellison 2000 "Basins of Attraction, Long-Run Stochastic Stability" references Freidlin Wentzell 1984 "Random Perturbations of Dynamical Systems" Springer-Verlag` | in excerpts of the published paper (copy at dklevine.com) and of the working paper of January 1999 (web.mit.edu): the entry "Freidlin, M. and Wentzell, A. (1984) Random Perturbations of Dynamical Systems (New York: Springer Verlag)", and the phrase "Lemma 3.1 of Chapter 6 of Freidlin and Wentzell (1984)" |
+
+Entries that are still incomplete after the update (no repository record, and not asked for): `OEIS` (no year);
+`Nordahl1989` (initials only, no issue, no DOI); `NoldekeSamuelson1993` and `Samuelson1994` (no issue, no DOI);
+`Stricker2023` (initials only); `Fuks2005` (no issue).
 
 The author's list of credits against the documents. "Boccara 1993": not obtained by any session; cited after the
 two papers of Fukś, with a note in the entry. "Fukś 2005, 2006": the documents have the Complex Systems paper
@@ -142,16 +187,15 @@ and in the entries. "Samuelson 1994": abstract only. "Nöldeke and Samuelson 199
 Ellison (2000). "Ellison 2000": read in part. "Martin, Odlyzko, Wolfram 1984": read in full by the ring-size
 verification.
 
-Named in the text of Section 6.1 without an entry in the list of references, because no session read them (rule of
-the house: cite only what a session has read; the author's own list of credits is the exception made above):
+Named in the text of Section 6.1 without an entry in the list of references. (update) By the author's decision of
+20 November 2026, Young (1993), Freidlin and Wentzell and Hattori and Takesue (1991) now have entries, each with the
+note "Not read; cited after ..." that names the read source; Zhu and Richard has an entry as read in full by the
+reader outside the sessions. Still named without an entry:
 
-| text | how seen (rows `Young1993`, `FreidlinWentzell2012`, `HattoriTakesue1991`, `Bagnoli2024`, `ZhuRichard2026`, `AguiarSeverino` of `trace/trace_refs.md`) |
+| text | how seen (rows `Bagnoli2024`, `AguiarSeverino` of `trace/trace_refs.md`) |
 |---|---|
-| Young, Econometrica 61 (1993) | not read by any session (title via the DOI only); the content is known from the secondary source Newton2018 (read) and from Ellison2000 (pp. 22, 36) |
-| Freidlin and Wentzell, Random Perturbations of Dynamical Systems | not read by any session (title of chapter 6 only) |
-| Hattori and Takesue, Physica D 49 (1991) | not obtained; named in Fuks2005b as the source of the conserved number of blocks 10 |
 | Bagnoli, Baia, Matteuzzi, conference chapter (ACRI 2024) | the chapter was not read by any session; read was the extended arXiv version (BagnoliBaiaMatteuzzi2025) |
-| Zhu and Richard, arXiv:2610.10967 | search excerpts only (two sets, session of proofs_43_142; further excerpts seen by the literature sub-task of its verification); the excerpts are not stored |
+| Fukś, Fundamenta Informaticae 78 (2007), the journal version of Fuks2005b | not seen |
 | Aguiar and Severino, Complex Systems 24 | abstract and a search excerpt only (session of proofs_94_26); the statement was not checked by the verification of those proofs |
 
 Entries of the sub-session's bibliography that the paper does not use (their rows are in `trace/trace_refs.md`):
@@ -186,6 +230,50 @@ citing them.
    the headers of the verification reports.
 10. Layout: the paper is written for a TeX installation without amssymb, amsthm, natbib and booktabs (the only one
     available in the sandbox); "does not divide" is typeset with a slashed bar, Z/nZ in bold.
+
+Changes of the update of 20 November 2026 (second session of that day):
+
+11. Appendix B is new. It contains Lemmas B.1 to B.7 and the proofs of Propositions 5.8 and 5.9, from
+    `proofs_94_26/PROOF_26.md` (rows of Part A). No mathematical step was added, and the session found no gap in
+    the source that would have stopped the task. Three things are not literal: (i) Lemma B.6 has no proof text of
+    its own; it refers to the proof of Theorem 5.7(a), which is the proof of the source's Theorem 2 and is written
+    there for every even n. (ii) Lemma B.2 states for cycles what the source's proof of Theorem 1 shows for states
+    (row of Part A). (iii) Letters: R90, L, S, P, pi of the source are calligraphic R, d, Sigma, P_E, theta, because
+    R, L, S, P, pi have other meanings in the paper.
+12. Section 5: the two paragraphs that said the proofs were not reproduced are replaced by "(Proof in Appendix B.)"
+    inside the two propositions. The sentence "Odd n is not treated ..." is kept.
+13. Abstract: "for four rules and all ring sizes" -> "for four rules, for every ring size from a small bound on";
+    for rule 94 the abstract now says that n = 3 and n = 4 are not covered and that the computed value at n = 4
+    (macro `KstarNinetyFourAtFour`, file `data/fw_sweep.csv`) does not follow the pattern; for rule 26 it gives the
+    ranges of Theorem 5.7 and Proposition 5.8 (k >= 2; k >= 3; odd k >= 3) and says that for even k the value is
+    computed for k = 2 and k = 4 only. Introduction, "Results": the same, with the two computed values as macros,
+    and what Proposition 5.9 proves and leaves open; "for all n" -> "for every n from the bounds stated in Theorem
+    3.1 on".
+14. "Status of the proofs": says which proofs were verified by a separate session, that the verification of the
+    proofs for rule 26 excluded no statement of Section 5 or Appendix B, found one false sentence in the source of
+    Lemma 5.4(c) (finding C1, corrected) and did not re-prove Theorem A, and that the proofs for rule 154 and for
+    rule 94 with 3 | n have not been verified by a separate session.
+15. Section 6.1: Young, Freidlin and Wentzell, Hattori and Takesue are cited (entries with "Not read; cited after
+    ..."). The report on Zhu and Richard is new (Part B, row `ZhuRichard2026`); the sentence after it states what
+    Lemma 3.7 gives, with the count 2^(n/2+1) - 1 of the states of E ∪ O and a pointer to the table of section A1
+    of `literature_addendum.md`; no other arithmetic was added. "What was read" is rewritten accordingly. The
+    sentence on Aguiar and Severino keeps its wording; it had named two texts ("Two further texts ... were seen as
+    search excerpts only"), so its subject and verb are now singular.
+16. Section 6.2: the count of the other classes is the macro `NumOtherSwitching` (file `mechanisms.csv`), not a
+    word; classes 60 and 90 are added with computed values (macros `KposSixty`, `KposNinety`, `KstarSixtyPos`,
+    `KstarNinetyPos`, `CyclesSixtyNinetyPos`). No proof is given for either class. Cited: Martin, Odlyzko and
+    Wolfram, Lemma 3.5, for rule 90; for rule 60 the note of Wolfram (2002), p. 963, which is the only text the
+    repository records as read for it, with the remark that the conclusion for n = 2^j is the study's inference;
+    Proposition 1 of the note v0.2 as the place of a proof for both classes (its proof is the one of finding V5 of
+    `VERIFICATION_v02.md`; the header of that file says so).
+17. Statement on the use of AI: the clause "as reported by the author, by a second reading outside the sessions"
+    is replaced by sentences that name the reader (Claude, in the conversation in which the sessions were
+    planned), the folder `reader_checks/` and the ranges of its README, and that say that this reader is not
+    independent of the planning; the sentence that the two proofs have not been verified by a separate session;
+    this session and its date. `test_paper.py` compares the quoted ranges with the README.
+18. "Code and data" and five other places name version 0.3 of the repository (key `PeterleinStudy`).
+19. References: 19 entries -> 25. With the six new entries the numbers in the PDF change: the note v0.2 is [18]
+    (it was [16]), the study [19].
 
 ## Part D. Errors and inconsistencies found in sources (reported, not corrected)
 
@@ -224,7 +312,33 @@ Differences between the task and the repository:
     (finding A21); the chain lemma corresponds to Lemma B (finding A20). Section 2.5 and Section 6.1 follow the
     documents.
 11. Length: the task asks for 12 to 16 pages; the paper has 27, because the complete proofs asked for do not fit
-    (see `REFEREE_NOTES.md`).
+    (see `REFEREE_NOTES.md`). (update) The author decided that the length stays; with Appendix B the paper has 31
+    pages.
+
+Found by the update of 20 November 2026:
+
+12. `proofs_94_26/PROOF_26.md`: no gap and no wrong step was found in Lemmas 4, 7, 8, 9, Theorems 1, 2, 3(d), 4, 5
+    and Corollary 5 when they were written into Appendix B. Points of form only: Theorem 2 is titled "paths to the
+    zero state" although its statement is about paths to a cycle contained in E ∪ O (the zero state for n = 2^k
+    only); Theorem 3(d) is restricted to n >= 8 although at n = 4 there is no domain state (its Table 1), so the
+    restriction excludes nothing; the proof of Theorem 5 writes the reduction to two domains for one group and
+    leaves the repetition to the reader ("So we may assume ...").
+13. `literature_addendum.md`, section A1, still says "Read. Nothing in full text" and "Not seen. The two values
+    ..."; both are superseded by its update of 20 November 2026, which says so for open item 1 only. The update
+    gives two dates for the text (arXiv stamp 7 October 2026, first page 9 October 2026). Its remark on rule 90 and
+    Martin, Odlyzko and Wolfram is marked there as recalled and not looked up; the paper does not use it.
+14. `literature_ring_size.md` l. 100-104 and `report_ring_size.md` l. 116-118: for rules 60 and 90 at n = 2^k the
+    statement "only the null state lies on a cycle" is an inference of the study session from a formula read in
+    Wolfram (2002), p. 963; the report words it as if the book gave it for both rules. For rule 60 no session read
+    a text that states it (`verify_ring_size/literature/literature_check.md` l. 330: "yes for rule 90").
+15. `CITATION.cff` describes version 0.3 but has no DOI of that version; the DOI used in the paper was given by the
+    author.
+16. `paper/trace/trace_refs.md`, row RW:6, had recorded that the edition of Freidlin and Wentzell in the
+    sub-session's bibliography (third edition, 2012) is the one the note v0.2 cites, not one that Ellison cites.
+    The paper now cites the edition of 1984 (search S4, Part B).
+17. `reader_checks/README.md` and `literature_addendum.md` refer to statements of the paper by their numbers in the
+    PDF of commit 72cc2ad (Lemma 3.7, Theorems 3.9 to 3.11, 3.20, 3.26, Proposition 3.22, Lemma 3.32, Theorem
+    3.43(i), Remark 3.44). These numbers are unchanged; numbers of references in the PDF have changed (Part C, 19).
 
 ## Part E. Numbers
 
@@ -234,5 +348,9 @@ written by `make_numbers.py`, and `numbers.json` lists for each value the data f
 number ("claims" in `numbers.json`) are checked the same way. Numerals that are not data (rule numbers, ring sizes
 in statements and in the simulated figures, numbers inside citations, dates of the sessions) are listed with their
 reason in the allowlist of `test_paper.py`; the test fails if a numeral outside the macros and outside this list
-appears in the text. The figures are simulated by `make_figures.py` from the definition of the rules; the
+appears in the text. (update) 42 macros and 11 claims. Three further tests: the numbers quoted from Zhu and Richard
+against the record of the reading (`literature_addendum.md`, and `proofs_43_142/out/zhu_richard_154.json`; the
+record is a document, not a data file, and is the only place where these numbers stand); the classes named in the
+paragraph "Other classes that change with n" against the classes of `mechanisms.csv` minus the five treated ones;
+the ring sizes that the statement on the use of AI quotes from `reader_checks/README.md` against that file. The figures are simulated by `make_figures.py` from the definition of the rules; the
 statements of their panel titles are asserted in the script.
