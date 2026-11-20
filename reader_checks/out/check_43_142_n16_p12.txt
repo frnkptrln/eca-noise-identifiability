@@ -1,0 +1,26 @@
+{'rule': 43, 'n': 4, 'm': 3, 'closed': [1], 'claim_closed': True, 'X_len': 4, 'dist_ok': True, 'gmin': 2, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [1, 0, 1, 0, 0, 1, 0, 1], 'kstar': 1, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.0}
+{'rule': 43, 'n': 5, 'm': 4, 'closed': [3], 'claim_closed': True, 'gmin': 3, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.0}
+{'rule': 43, 'n': 6, 'm': 10, 'closed': [8], 'claim_closed': True, 'gmin': 9, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.0}
+{'rule': 43, 'n': 7, 'm': 7, 'closed': [4], 'claim_closed': True, 'gmin': 6, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.0}
+{'rule': 43, 'n': 8, 'm': 13, 'closed': [1], 'claim_closed': True, 'X_len': 4, 'dist_ok': True, 'gmin': 12, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [1, 0, 1, 0, 0, 1, 0, 1], 'kstar': 1, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.0}
+{'rule': 43, 'n': 9, 'm': 15, 'closed': [9], 'claim_closed': True, 'gmin': 14, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.1}
+{'rule': 43, 'n': 10, 'm': 28, 'closed': [10], 'claim_closed': True, 'gmin': 27, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.7}
+{'rule': 43, 'n': 11, 'm': 28, 'closed': [7], 'claim_closed': True, 'gmin': 27, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.7}
+{'rule': 43, 'n': 12, 'm': 61, 'closed': [1], 'claim_closed': True, 'X_len': 4, 'dist_ok': True, 'gmin': 60, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [1, 0, 1, 0, 0, 1, 0, 1], 'kstar': 1, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 20.9}
+{'rule': 43, 'n': 13, 'm': 61, 'closed': [15], 'claim_closed': True, 'sec': 0.0}
+{'rule': 43, 'n': 14, 'm': 126, 'closed': [16], 'claim_closed': True, 'sec': 0.0}
+{'rule': 43, 'n': 15, 'm': 141, 'closed': [12], 'claim_closed': True, 'sec': 0.0}
+{'rule': 43, 'n': 16, 'm': 283, 'closed': [1], 'claim_closed': True, 'X_len': 4, 'dist_ok': True, 'sec': 0.0}
+{'rule': 142, 'n': 4, 'm': 5, 'closed': [1], 'claim_closed': True, 'X_len': 4, 'dist_ok': True, 'gmin': 4, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [1, 0, 1, 0, 0, 1, 0, 1], 'kstar': 1, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.0}
+{'rule': 142, 'n': 5, 'm': 5, 'closed': [3], 'claim_closed': True, 'gmin': 4, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.0}
+{'rule': 142, 'n': 6, 'm': 10, 'closed': [6], 'claim_closed': True, 'gmin': 9, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.0}
+{'rule': 142, 'n': 7, 'm': 8, 'closed': [5], 'claim_closed': True, 'gmin': 7, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.0}
+{'rule': 142, 'n': 8, 'm': 15, 'closed': [1], 'claim_closed': True, 'X_len': 4, 'dist_ok': True, 'gmin': 14, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [1, 0, 1, 0, 0, 1, 0, 1], 'kstar': 1, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.1}
+{'rule': 142, 'n': 9, 'm': 15, 'closed': [6], 'claim_closed': True, 'gmin': 14, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.1}
+{'rule': 142, 'n': 10, 'm': 30, 'closed': [12], 'claim_closed': True, 'gmin': 29, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 1.0}
+{'rule': 142, 'n': 11, 'm': 29, 'closed': [11], 'claim_closed': True, 'gmin': 28, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 0.7}
+{'rule': 142, 'n': 12, 'm': 61, 'closed': [1], 'claim_closed': True, 'X_len': 4, 'dist_ok': True, 'gmin': 60, 'gmin_is_m_minus_1': np.True_, 'S_is_claim': True, 'kc': [1, 0, 1, 0, 0, 1, 0, 1], 'kstar': 1, 'kstar_claim': True, 'G1_is_V1': True, 'sec': 15.2}
+{'rule': 142, 'n': 13, 'm': 62, 'closed': [9], 'claim_closed': True, 'sec': 0.0}
+{'rule': 142, 'n': 14, 'm': 128, 'closed': [14], 'claim_closed': True, 'sec': 0.0}
+{'rule': 142, 'n': 15, 'm': 141, 'closed': [21], 'claim_closed': True, 'sec': 0.0}
+{'rule': 142, 'n': 16, 'm': 285, 'closed': [1], 'claim_closed': True, 'X_len': 4, 'dist_ok': True, 'sec': 0.0}

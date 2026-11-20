@@ -320,6 +320,54 @@ rules 43 and 142: B2). Fact (b) in the form of Lemmas 3 and 4 and fact (c) remai
 reached"; Boccara (1993), Hattori and Takesue (1991), Fukś (2007, journal version) and Fukś's 2023 book are still
 unread.
 
+## Update of 20 November 2026 (A1 read in full)
+
+Written by Claude, the reader outside the sessions.
+
+**A1 read in full.** Zhu and Richard, arXiv:2610.10967v1 (arXiv stamp 7 October 2026, first page dated 9 October
+2026), 16 pages, read in full on 20 November 2026 through an arXiv reader that returns the text of every page and
+that the sessions could not reach. The figures were available only as the text printed in them (titles, axis
+labels, the printed ratio), not as images.
+
+* Definition. Equation (4), p. 13: the zero eigenvalue ratio is the number of eigenvalues 0 of the Koopman matrix
+  divided by 2^n. Proposition 2.2, p. 6 (given there as a summary of Lemmas 1 to 6 of Taga et al., Chaos 31, 2021,
+  not read): a cycle of length m contributes the m-th roots of unity, and every state that is a Garden of Eden or
+  transient contributes one eigenvalue 0; the text below it says that the multiplicity of 0 is the number of
+  states that lie on no periodic orbit. So the ratio is the algebraic multiplicity divided by 2^n, the fraction of
+  states on no cycle: the first of the two quantities of the paragraph "The quantity" above.
+* Rule 154. Section 4.2 ("Unitarity"), pp. 13-14: for rules 45 and 154 the operator is unitary for every odd n,
+  cited from Table 1 of Nobe and Yura (2004); for even n the operator of rule 154 is called "not far from being
+  unitary"; the sentence quoted above ("is always below 0.01 ...") is on p. 14, followed by the comparison that
+  for rule 45 the ratio at even n is above 0.5 in the range computed. Figure 13, p. 14, prints "Zero eigenvalue
+  ratio: 0.00048828" for n = 22 and "0.00045776" for n = 24. These are the two values named in the task, and they
+  agree with the table above.
+* No explanation is given. Section 1, p. 2, says of the observations of Section 4 that the authors could not find
+  them in the literature and that for now they are "only observations"; Section 5, p. 15, leaves the properties
+  that depend on n to future work.
+* Rules 60 and 90. Section 4.3, p. 14, groups rules 60, 90, 105, 150 and 154 as one family (IV_2 in Table 1,
+  p. 12). For rules 60 and 90 the ratio is reported as 0.5 for odd n, 0.75 for n = 14, 18, 22, and above 0.93 for
+  n = 16, 20, 24, with the words "We do not have an explanation for this surprising pattern." (For rule 90 the
+  fraction of states on cycles as a function of the power of 2 in n is, as far as the reader recalls, in Martin,
+  Odlyzko and Wolfram (1984); this was not looked up for this note.)
+* Classification, Section 3 and Table 1: rules 26 and 94 are in family IV_0; rules 43 and 142 in family III_1/2
+  (many cycles of length n for even n and of length 2n for odd n); rule 184 in III_1.
+* Not in the text: noise or any other perturbation of the dynamics; the parity classes of rule 154, a relation of
+  rule 154 to rule 90, or rings of 2^k cells; which cycles carry weight under small noise; any statement on rules
+  26, 43, 94 or 142 beyond the classification.
+
+**Consequence.** Open item 1 is settled: the multiplicity of equation (4) is the algebraic one, both digit strings
+are printed in Figure 13, and the paper offers no explanation of the observation for rule 154. The description of
+the periodic states of rule 154 on even rings ("Lemma 6" in the table above; Lemma 3.7 of
+`paper/ring_size_paper.tex`) explains it: the states on no cycle are the states with ones on one parity class
+only that are not periodic under rule 90, at most 2^(n/2+1) - 1 of the 2^n states. Zhu and Richard can now be
+cited as read in full.
+
+**Bibliographic data seen on 20 November 2026.** In the reference list of Zhu and Richard: Stricker, Complex
+Systems 32 (3), 229-251, 2023; Nobe and Yura, J. Phys. A: Math. Gen. 37, 5789-5804, 2004. In the results of a web
+search (result pages, not the papers themselves): Pitman and Tang is in Bernoulli, volume 24, issue 3 (the address
+of the paper at Project Euclid); the author of Physica D 68 (1993) 416-426 is Nino Boccara. The given name of
+Fukś is Henryk (author line of arXiv:nlin/0502037v1, read on 18 November).
+
 ## Search queries (17 November 2026, web search)
 
 Part A: `arXiv 2610.10967 Zhu Richard elementary cellular automata`; `Zhu Richard 2026 elementary cellular automata
@@ -345,6 +393,7 @@ it returned the same excerpts.
 1. A1: Figure 13 and Section 4.2 of arXiv:2610.10967v1 need to be looked at by someone with arXiv access: the two
    digit strings, the definition in equation (4) (algebraic multiplicity or kernel dimension), and whether an
    explanation is offered.
+   Settled on 20 November 2026, see the update of that date.
 2. A2: both Nobe-Yura texts; what is said for even N.
 3. A3: Hurd's appendix (the blocks for rule 154). A4: the entries of Krawczyk's Table 4. A5: the theorems of Chua
    et al., Part VIII. A6, A7: the pages not read.
