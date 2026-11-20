@@ -1,0 +1,30 @@
+L8     n=w=1..22      cases=  8388606 violations=0
+L7ab   n=5..14        cases=    26454 violations=0
+T1     n=3..20        cases=  2097144 violations=0
+T1p6   n=3..20        cases=  2097144 violations=0
+L9n    n=3..20        cases=       18 violations=0
+L10    n=3..20        cases=    50780 violations=0
+LW     n=5..12, w<=7  cases=    40528 violations=0
+L11    n=5..20        cases=     1929 violations=0
+L12    n=6..20        cases=     1454 violations=0
+L13    n=8..20        cases=      826 violations=0
+L15    n=7..200       cases=      132 violations=0
+L16    n=3..20        cases=  2097144 violations=0
+  T2 row 4 [2] 0 of 0 False 0
+  T2 row 5 [11] 0 of 0 True 5
+  T2 row 7 [22] 0 of 0 True 7
+  T2 row 8 [27] 0 of 0 True 8
+  T2 row 10 [67] 0 of 5 False 0
+  T2 row 11 [77] 0 of 0 False 0
+  T2 row 13 [208] 0 of 0 False 0
+  T2 row 14 [317] 7 of 9 False 0
+  T2 row 16 [746] 0 of 0 False 0
+  T2 row 17 [1190] 0 of 0 False 0
+  T2 row 19 [2831] 0 of 0 False 0
+  T2 row 20 [4477] 10 of 45 False 0
+T2     n=4,5,7,8,10,11,13,14,16,17,19,20 cases=       12 violations=0
+ALL PASSED: True CPU s 7.69
+
+real	0m7.861s
+user	0m7.409s
+sys	0m0.437s
