@@ -17,8 +17,8 @@
   A first attempt to display the pages failed without my noticing at once, and notes written during it were
   discarded; everything below comes from the second pass, in which the pages were on screen.
 * After the fixes the changed pages (1, 2, 5, 16, 17, 20, 21, 22, 23) were looked at again as images. Page 3 (three
-  words removed from Proposition 2.1) was not looked at again, and the final PDF was not read a second time as a
-  whole.
+  words removed from Proposition 2.1) and the two pages with figures (5 and 11) were looked at in the PDF that is
+  committed. The final PDF was not read a second time as a whole.
 
 ## Found in the reading and fixed
 
