@@ -1,0 +1,35 @@
+M1     n=3..20          cases=  2097144 violations=0
+M2     n=4..20 even     cases=  1398096 violations=0
+M2f    n=4..20 even     cases= 27029952 violations=0
+M3a    n=4..18 even     cases=   524288 violations=0
+M3b    n=4..18 even     cases=    40364 violations=0
+M3c    n=4..18 even     cases=    40364 violations=0
+M3F    n=4..18 even     cases=    40364 violations=0
+M5     n=4..18 even     cases=   524288 violations=0
+M4     n=4..16 even     cases=   223330 violations=0
+M6     n=4..16; 32..1024 cases=     1015 violations=0
+M7     n=5..31          cases=     1444 violations=0
+  26 row 4 [1] 0 of 0 [] [] 0
+  26 row 6 [7] 0 of 0 [2] [] 0
+  26 row 8 [1] 0 of 1 [2] [4] 1
+  26 row 10 [18] 0 of 1 [2] [6] 1
+  26 row 12 [64] 0 of 0 [2, 4] [] 0
+  26 row 14 [76] 2 of 2 [2, 4] [6] 1
+  26 row 16 [1] 0 of 3 [2, 4] [8] 2
+  26 row 18 [566] 0 of 1 [2, 4, 6] [10] 1
+  26 row 20 [2815] 3 of 4 [2, 4, 6] [8, 12] 2
+T1     n=4..20 even     cases=        9 violations=0
+L8     n=4..20 even     cases=        9 violations=0
+L9     n=4..20 even     cases=        9 violations=0
+T2     n=4..20 even     cases=        9 violations=0
+T3ab   n=4..20 even     cases=        9 violations=0
+T5     n=4..20 even     cases=        9 violations=0
+T2ch   n=4..20; 32..128 cases=     4182 violations=0
+T34ch  n=8..1024        cases=      312 violations=0
+T5ch   n=even n<=20, not 2^k cases=     3425 violations=0
+S7n22  n=22             cases=        1 violations=0
+ALL PASSED: True CPU s 8.07
+
+real	0m8.254s
+user	0m7.835s
+sys	0m0.394s

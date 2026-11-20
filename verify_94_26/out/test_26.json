@@ -1,0 +1,545 @@
+{
+ "rule": 26,
+ "nmax": 20,
+ "results": [
+  {
+   "test": "M1",
+   "statement": "Lemma 1: sigma F(u)(j) = u(j) + u(j-2)[1 + u(j-1)(1 + u(j))]; every state",
+   "n": "3..20",
+   "cases": 2097144,
+   "violations": 0
+  },
+  {
+   "test": "M2",
+   "statement": "Lemma 2: c(Fx) <= c(x); every state",
+   "n": "4..20 even",
+   "cases": 1398096,
+   "violations": 0
+  },
+  {
+   "test": "M2f",
+   "statement": "Lemma 2: a flip changes c by -2, 0, 2; deleting a one does not increase c; every state and cell",
+   "n": "4..20 even",
+   "cases": 27029952,
+   "violations": 0
+  },
+  {
+   "test": "M3a",
+   "statement": "Lemma 3(a): domain state (sources at distances >= 3) iff no adjacent ones (j, j+1) whose preceding one is at odd distance; every state",
+   "n": "4..18 even",
+   "cases": 524288,
+   "violations": 0
+  },
+  {
+   "test": "M3b",
+   "statement": "Lemma 3(b): U(u) is a domain state with the same sources, zeros at odd offsets, free cells c_k + c_(k-1); every domain state",
+   "n": "4..18 even",
+   "cases": 40364,
+   "violations": 0
+  },
+  {
+   "test": "M3c",
+   "statement": "Lemma 3(c): F maps the set of domain states onto itself; no domain state contains 111; flipping a free cell keeps a domain state with the same sources",
+   "n": "4..18 even",
+   "cases": 40364,
+   "violations": 0,
+   "extra": {
+    "domain_state_counts": {
+     "4": 0,
+     "6": 12,
+     "8": 64,
+     "10": 240,
+     "12": 816,
+     "14": 2688,
+     "16": 8704,
+     "18": 27840
+    }
+   }
+  },
+  {
+   "test": "M3F",
+   "statement": "Lemma 3(c), wording: does F (not U) preserve the set of sources? (finding C1 expects: no)",
+   "n": "4..18 even",
+   "cases": 40364,
+   "violations": 0,
+   "extra": {
+    "F_keeps_sources": 0,
+    "F_changes_sources": 40364,
+    "counterexample": {
+     "n": 6,
+     "x": "100100",
+     "sources_x": [
+      0,
+      3
+     ],
+     "Fx": "011011",
+     "sources_Fx": [
+      2,
+      5
+     ]
+    }
+   }
+  },
+  {
+   "test": "M5",
+   "statement": "Lemma 5: every state of M that is not a domain state has a singleton group; deleting a singleton group lowers c by 2",
+   "n": "4..18 even",
+   "cases": 524288,
+   "violations": 0
+  },
+  {
+   "test": "M4",
+   "statement": "Lemma 4: u(j)=u(j+1)=1, preceding one at distance 2r+1 => U^r(u) has 111 at j-1, j, j+1; and every non-domain state of M meets 111 within n/2-1 steps",
+   "n": "4..16 even",
+   "cases": 223330,
+   "violations": 0
+  },
+  {
+   "test": "M6",
+   "statement": "Lemma 6: on E and O rule 26 = rule 90, E -> O -> E; F^(n/2) = 0 there for n = 2^k (all of E u O for n<=16, single seed for n=32..1024)",
+   "n": "4..16; 32..1024",
+   "cases": 1015,
+   "violations": 0
+  },
+  {
+   "test": "M7",
+   "statement": "Lemma 7: F^2(w) = sigma w for every cyclic word over 11100, 100 with at least one 11100; every rotation",
+   "n": "5..31",
+   "cases": 1444,
+   "violations": 0
+  },
+  {
+   "test": "T1",
+   "statement": "Theorem 1: c constant on cycles; periodic states = rule-90 periodic states in E u O, domain states (all periodic), and states of M (not domain) whose cycle contains 111",
+   "n": "4..20 even",
+   "cases": 9,
+   "violations": 0
+  },
+  {
+   "test": "L8",
+   "statement": "Lemma 8: every domain cycle has codes 1..6; for n = 2^k every cycle other than {0} has codes 3 and 6",
+   "n": "4..20 even",
+   "cases": 9,
+   "violations": 0
+  },
+  {
+   "test": "L9",
+   "statement": "Lemma 9: the cycles contained in E u O lie in one strong component of G1",
+   "n": "4..20 even",
+   "cases": 9,
+   "violations": 0
+  },
+  {
+   "test": "T2",
+   "statement": "Theorem 2: every cycle has a G1 path to a cycle contained in E u O; c rises by at most 2 along a G1 edge",
+   "n": "4..20 even",
+   "cases": 9,
+   "violations": 0
+  },
+  {
+   "test": "T3ab",
+   "statement": "Theorem 3(a),(b): for n = 2^k no G1 edge leaves {0}, and {0} is the only closed class",
+   "n": "4..20 even",
+   "cases": 9,
+   "violations": 0
+  },
+  {
+   "test": "T5",
+   "statement": "Theorem 5: for even n not a power of two one closed class K, containing {0}, all E u O cycles and all domain cycles; cycles outside K contain 111; codes 0..6 on K",
+   "n": "4..20 even",
+   "cases": 9,
+   "violations": 0,
+   "extra": [
+    {
+     "n": 4,
+     "cycles": 1,
+     "periodic_states": 1,
+     "g1_edges": 0,
+     "closed_sizes": [
+      1
+     ],
+     "one_parity_cycles_not_zero": 0,
+     "domain_cycles": 0,
+     "cycles_with_111": 0,
+     "c_domain": [],
+     "c_111": [],
+     "max_c_increase_along_edge": 0,
+     "periodic_by_kind": {
+      "zero": 1,
+      "one_parity": 0,
+      "domain": 0,
+      "orbit_111": 0
+     },
+     "cycles_111_through_carrier": 0,
+     "zero_in_K": true,
+     "one_parity_in_K": "1 of 1",
+     "domain_in_K": "0 of 0",
+     "c111_in_K": "0 of 0",
+     "codes_on_K": [
+      0
+     ]
+    },
+    {
+     "n": 6,
+     "cycles": 7,
+     "periodic_states": 19,
+     "g1_edges": 33,
+     "closed_sizes": [
+      7
+     ],
+     "one_parity_cycles_not_zero": 3,
+     "domain_cycles": 3,
+     "cycles_with_111": 0,
+     "c_domain": [
+      2
+     ],
+     "c_111": [],
+     "max_c_increase_along_edge": 2,
+     "periodic_by_kind": {
+      "zero": 1,
+      "one_parity": 6,
+      "domain": 12,
+      "orbit_111": 0
+     },
+     "cycles_111_through_carrier": 0,
+     "zero_in_K": true,
+     "one_parity_in_K": "4 of 4",
+     "domain_in_K": "3 of 3",
+     "c111_in_K": "0 of 0",
+     "codes_on_K": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "n": 8,
+     "cycles": 10,
+     "periodic_states": 81,
+     "g1_edges": 73,
+     "closed_sizes": [
+      1
+     ],
+     "one_parity_cycles_not_zero": 0,
+     "domain_cycles": 8,
+     "cycles_with_111": 1,
+     "c_domain": [
+      2
+     ],
+     "c_111": [
+      4
+     ],
+     "max_c_increase_along_edge": 2,
+     "periodic_by_kind": {
+      "zero": 1,
+      "one_parity": 0,
+      "domain": 64,
+      "orbit_111": 16
+     },
+     "cycles_111_through_carrier": 1,
+     "zero_in_K": true,
+     "one_parity_in_K": "1 of 1",
+     "domain_in_K": "0 of 8",
+     "c111_in_K": "0 of 1",
+     "codes_on_K": [
+      0
+     ]
+    },
+    {
+     "n": 10,
+     "cycles": 19,
+     "periodic_states": 276,
+     "g1_edges": 259,
+     "closed_sizes": [
+      18
+     ],
+     "one_parity_cycles_not_zero": 5,
+     "domain_cycles": 12,
+     "cycles_with_111": 1,
+     "c_domain": [
+      2
+     ],
+     "c_111": [
+      6
+     ],
+     "max_c_increase_along_edge": 2,
+     "periodic_by_kind": {
+      "zero": 1,
+      "one_parity": 30,
+      "domain": 240,
+      "orbit_111": 5
+     },
+     "cycles_111_through_carrier": 1,
+     "zero_in_K": true,
+     "one_parity_in_K": "6 of 6",
+     "domain_in_K": "12 of 12",
+     "c111_in_K": "0 of 1",
+     "codes_on_K": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "n": 12,
+     "cycles": 64,
+     "periodic_states": 847,
+     "g1_edges": 1665,
+     "closed_sizes": [
+      64
+     ],
+     "one_parity_cycles_not_zero": 9,
+     "domain_cycles": 54,
+     "cycles_with_111": 0,
+     "c_domain": [
+      2,
+      4
+     ],
+     "c_111": [],
+     "max_c_increase_along_edge": 2,
+     "periodic_by_kind": {
+      "zero": 1,
+      "one_parity": 30,
+      "domain": 816,
+      "orbit_111": 0
+     },
+     "cycles_111_through_carrier": 0,
+     "zero_in_K": true,
+     "one_parity_in_K": "10 of 10",
+     "domain_in_K": "54 of 54",
+     "c111_in_K": "0 of 0",
+     "codes_on_K": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "n": 14,
+     "cycles": 76,
+     "periodic_states": 2871,
+     "g1_edges": 2493,
+     "closed_sizes": [
+      76
+     ],
+     "one_parity_cycles_not_zero": 9,
+     "domain_cycles": 64,
+     "cycles_with_111": 2,
+     "c_domain": [
+      2,
+      4
+     ],
+     "c_111": [
+      6
+     ],
+     "max_c_increase_along_edge": 2,
+     "periodic_by_kind": {
+      "zero": 1,
+      "one_parity": 126,
+      "domain": 2688,
+      "orbit_111": 56
+     },
+     "cycles_111_through_carrier": 1,
+     "zero_in_K": true,
+     "one_parity_in_K": "10 of 10",
+     "domain_in_K": "64 of 64",
+     "c111_in_K": "2 of 2",
+     "codes_on_K": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "n": 16,
+     "cycles": 552,
+     "periodic_states": 8785,
+     "g1_edges": 32240,
+     "closed_sizes": [
+      1
+     ],
+     "one_parity_cycles_not_zero": 0,
+     "domain_cycles": 548,
+     "cycles_with_111": 3,
+     "c_domain": [
+      2,
+      4
+     ],
+     "c_111": [
+      8
+     ],
+     "max_c_increase_along_edge": 2,
+     "periodic_by_kind": {
+      "zero": 1,
+      "one_parity": 0,
+      "domain": 8704,
+      "orbit_111": 80
+     },
+     "cycles_111_through_carrier": 2,
+     "zero_in_K": true,
+     "one_parity_in_K": "1 of 1",
+     "domain_in_K": "0 of 548",
+     "c111_in_K": "0 of 3",
+     "codes_on_K": [
+      0
+     ]
+    },
+    {
+     "n": 18,
+     "cycles": 567,
+     "periodic_states": 28387,
+     "g1_edges": 33364,
+     "closed_sizes": [
+      566
+     ],
+     "one_parity_cycles_not_zero": 39,
+     "domain_cycles": 526,
+     "cycles_with_111": 1,
+     "c_domain": [
+      2,
+      4,
+      6
+     ],
+     "c_111": [
+      10
+     ],
+     "max_c_increase_along_edge": 2,
+     "periodic_by_kind": {
+      "zero": 1,
+      "one_parity": 510,
+      "domain": 27840,
+      "orbit_111": 36
+     },
+     "cycles_111_through_carrier": 1,
+     "zero_in_K": true,
+     "one_parity_in_K": "40 of 40",
+     "domain_in_K": "526 of 526",
+     "c111_in_K": "0 of 1",
+     "codes_on_K": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "n": 20,
+     "cycles": 2816,
+     "periodic_states": 88956,
+     "g1_edges": 191625,
+     "closed_sizes": [
+      2815
+     ],
+     "one_parity_cycles_not_zero": 45,
+     "domain_cycles": 2766,
+     "cycles_with_111": 4,
+     "c_domain": [
+      2,
+      4,
+      6
+     ],
+     "c_111": [
+      8,
+      12
+     ],
+     "max_c_increase_along_edge": 2,
+     "periodic_by_kind": {
+      "zero": 1,
+      "one_parity": 510,
+      "domain": 88320,
+      "orbit_111": 125
+     },
+     "cycles_111_through_carrier": 2,
+     "zero_in_K": true,
+     "one_parity_in_K": "46 of 46",
+     "domain_in_K": "2766 of 2766",
+     "c111_in_K": "3 of 4",
+     "codes_on_K": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    }
+   ]
+  },
+  {
+   "test": "T2ch",
+   "statement": "Theorem 2: the chain of the proof (case 1 singleton deletion, case 2 deletion inside a group) executed from every cycle (even n<=NMAX) and from random cycles (n=32, 64, 128) ends on E u O, at {0} for n=2^k",
+   "n": "4..20; 32..128",
+   "cases": 4182,
+   "violations": 0,
+   "extra": {
+    "max_flips": {
+     "4": 0,
+     "6": 1,
+     "8": 2,
+     "10": 2,
+     "12": 2,
+     "14": 3,
+     "16": 5,
+     "18": 6,
+     "20": 7
+    }
+   }
+  },
+  {
+   "test": "T34ch",
+   "statement": "Theorems 3(d), 4(b), 4(c): the chains of the proofs (sources s1, s2, then further sources, then free cells: domain states throughout; the resistance-2 path to 111; 10100(100)^q periodic domain state next to the periodic carrier 11100(100)^q)",
+   "n": "8..1024",
+   "cases": 312,
+   "violations": 0
+  },
+  {
+   "test": "T5ch",
+   "statement": "Theorem 5 proof: every domain cycle is joined to the one-parity state e_a + e_(a+2^(e+1)) by flips between periodic domain states (executed for every domain cycle)",
+   "n": "even n<=20, not 2^k",
+   "cases": 3425,
+   "violations": 0
+  },
+  {
+   "test": "S7n22",
+   "statement": "Section 7: at n = 22 some cycle contains 111 and has c = 6 (periodic flags of all 2^22 states, no G1)",
+   "n": "22",
+   "cases": 1,
+   "violations": 0,
+   "extra": {
+    "state": "1010010001110100110000",
+    "period": 33,
+    "c": 6,
+    "contains_111": true,
+    "periodic_states_with_111_and_c6": 55,
+    "c_values_of_periodic_states_with_111": [
+     6,
+     10
+    ]
+   }
+  }
+ ],
+ "cpu_seconds": 8.07,
+ "all_passed": true
+}

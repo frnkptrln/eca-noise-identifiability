@@ -1,0 +1,14 @@
+L7    n = 5..14                        cases = 26454     violations = 0
+L8    n = w = 1..22                    cases = 8388606   violations = 0
+L7c   n = 5..16                        cases = 112255    violations = 0
+L9    n = 3..20                        cases = 1230      violations = 0
+T1    n = 3..16                        cases = 131064    violations = 0
+T1b   n = 17..20                       cases = 28285     violations = 0
+L10   n = 5..20                        cases = 11356     violations = 0
+L11   n = 5..24                        cases = 7343      violations = 0
+L12   n = 6..24                        cases = 5543      violations = 0
+L13   n = 8..24                        cases = 3156      violations = 0
+L16   n = 5..20 (8 not dividing n)     cases = 544       violations = 0
+LW    n = 5..13                        cases = 62082     violations = 0
+L16a  n = 3..16                        cases = 131064    violations = 0
+all passed: True  cpu s: 88.01
