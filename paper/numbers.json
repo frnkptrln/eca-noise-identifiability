@@ -163,6 +163,36 @@
    "where": "rule=22, the n in 8..22 with kstar >= 1"
   },
   {
+   "macro": "KposSixty",
+   "value": "8, 16",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=60, the n in 8..22 with kstar >= 1"
+  },
+  {
+   "macro": "KposNinety",
+   "value": "8, 16",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=90, the n in 8..22 with kstar >= 1"
+  },
+  {
+   "macro": "KstarSixtyPos",
+   "value": "1",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=60, field kstar at the n in 8..22 with kstar >= 1"
+  },
+  {
+   "macro": "KstarNinetyPos",
+   "value": "2",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=90, field kstar at the n in 8..22 with kstar >= 1"
+  },
+  {
+   "macro": "CyclesSixtyNinetyPos",
+   "value": "1",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=60 and rule=90, field cycles at the n in 8..22 with kstar >= 1"
+  },
+  {
    "macro": "KzeroThirtySeven",
    "value": "11, 12, 17, 18",
    "file": "data/ring_size/mechanisms.csv",
@@ -181,6 +211,12 @@
    "where": "number of distinct values of the field rule"
   },
   {
+   "macro": "NumOtherSwitching",
+   "value": "8",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "number of distinct values of the field rule, without the rules 154, 43, 142, 94, 26"
+  },
+  {
    "macro": "OpenNmin",
    "value": "8",
    "file": "data/ring_size/mechanisms.csv",
@@ -191,6 +227,30 @@
    "value": "22",
    "file": "data/ring_size/mechanisms.csv",
    "where": "largest n of the file"
+  },
+  {
+   "macro": "ZRValues",
+   "value": "0.00048828 at $n=22$ and 0.00045776 at $n=24$",
+   "file": "proofs_43_142/out/zhu_richard_154.json",
+   "where": "field quoted (the values named to the session that wrote the file; printed in Figure 13 of the text according to literature_addendum.md, update of 20 November 2026)"
+  },
+  {
+   "macro": "ZRBound",
+   "value": "0.01",
+   "file": "literature_addendum.md",
+   "where": "section A1, the sentence quoted from arXiv:2610.10967 (p. 14): the bound"
+  },
+  {
+   "macro": "ZRNmin",
+   "value": "13",
+   "file": "literature_addendum.md",
+   "where": "section A1, the sentence quoted from arXiv:2610.10967: first n of the range"
+  },
+  {
+   "macro": "ZRNmax",
+   "value": "27",
+   "file": "literature_addendum.md",
+   "where": "section A1, the sentence quoted from arXiv:2610.10967: last n of the range"
   }
  ],
  "claims": [
@@ -228,6 +288,48 @@
    "file": "proofs_94_26/out/g1_classes_94.jsonl",
    "where": "n=16, fields zero_state_in_K, zero_state_in_degree",
    "statement": "at n = 16 the cycle {0} is not in K and no edge of G_1 enters it"
+  },
+  {
+   "key": "60_only_cycle_is_zero_state",
+   "holds": true,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=60, the n in 8..22 with kstar >= 1: fields cycles, n_selected, selected_cover, selected_spatial_periods, selected_temporal_periods",
+   "statement": "class 60: at the n of the range with k* >= 1 there is one cycle, a fixed point of spatial period 1 that contains the code 000 only, i.e. the zero state"
+  },
+  {
+   "key": "60_kpos_are_the_powers_of_two",
+   "holds": true,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=60, field kstar",
+   "statement": "class 60: k* >= 1 exactly at the powers of two of the range"
+  },
+  {
+   "key": "90_only_cycle_is_zero_state",
+   "holds": true,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=90, the n in 8..22 with kstar >= 1: fields cycles, n_selected, selected_cover, selected_spatial_periods, selected_temporal_periods",
+   "statement": "class 90: at the n of the range with k* >= 1 there is one cycle, a fixed point of spatial period 1 that contains the code 000 only, i.e. the zero state"
+  },
+  {
+   "key": "90_kpos_are_the_powers_of_two",
+   "holds": true,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=90, field kstar",
+   "statement": "class 90: k* >= 1 exactly at the powers of two of the range"
+  },
+  {
+   "key": "zr_values_printed_in_the_text",
+   "holds": true,
+   "file": "literature_addendum.md",
+   "where": "update of 20 November 2026, item 'Rule 154'",
+   "statement": "the two values are recorded as printed in Figure 13 of arXiv:2610.10967 for n = 22 and n = 24"
+  },
+  {
+   "key": "zr_values_agree_with_the_count",
+   "holds": true,
+   "file": "proofs_43_142/out/zhu_richard_154.json",
+   "where": "fields quoted_values_agree, all_lemma6_equal_direct",
+   "statement": "the two values agree with the fraction of states on no cycle counted for rule 154, and the count by the description of the periodic states equals the direct count for even n = 4..24"
   }
  ],
  "table": [
