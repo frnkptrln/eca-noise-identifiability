@@ -1,0 +1,17 @@
+{'root': 0, 'kind': 'zero', 'in_T2': False, 'reachable_from_T2': True, 'gamma': 551, 'seconds': 0.8}
+{'root': 537, 'kind': 'with_111', 'in_T2': False, 'reachable_from_T2': False, 'gamma': 553, 'seconds': 291.4}
+{'root': 549, 'kind': 'with_111', 'in_T2': False, 'reachable_from_T2': False, 'gamma': 553, 'seconds': 246.8}
+{'root': 550, 'kind': 'with_111', 'in_T2': False, 'reachable_from_T2': False, 'gamma': 553, 'seconds': 257.5}
+{'root': 371, 'kind': 'domain', 'in_T2': True, 'reachable_from_T2': True, 'gamma': 552, 'seconds': 248.0}
+{'root': 481, 'kind': 'domain', 'in_T2': False, 'reachable_from_T2': True, 'gamma': 552, 'seconds': 259.9}
+{'root': 493, 'kind': 'domain', 'in_T2': False, 'reachable_from_T2': True, 'gamma': 552, 'seconds': 252.8}
+{'root': 292, 'kind': 'domain', 'in_T2': False, 'reachable_from_T2': True, 'gamma': 552, 'seconds': 253.9}
+{'root': 427, 'kind': 'domain', 'in_T2': False, 'reachable_from_T2': True, 'gamma': 552, 'seconds': 236.1}
+{'root': 233, 'kind': 'domain', 'in_T2': False, 'reachable_from_T2': True, 'gamma': 552, 'seconds': 238.8}
+{'root': 458, 'kind': 'domain', 'in_T2': False, 'reachable_from_T2': True, 'gamma': 552, 'seconds': 259.5}
+{'root': 6, 'kind': 'domain', 'in_T2': False, 'reachable_from_T2': True, 'gamma': 552, 'seconds': 1.1}
+{'root': 420, 'kind': 'domain', 'in_T2': False, 'reachable_from_T2': True, 'gamma': 552, 'seconds': 233.6}
+{'root': 266, 'kind': 'domain', 'in_T2': True, 'reachable_from_T2': True, 'gamma': 552, 'seconds': 232.1}
+{'root': 244, 'kind': 'domain', 'in_T2': False, 'reachable_from_T2': True, 'gamma': 552, 'seconds': 256.7}
+{'root': 228, 'kind': 'domain', 'in_T2': False, 'reachable_from_T2': True, 'gamma': 552, 'seconds': 240.5}
+{'n': 16, 'm': 552, 'min_V_out_of_zero': 2, 'lower_bound_gamma_nonzero': 552, 'gamma_zero': 551, 'gamma_zero_eq_m_minus_1': True, 'gmin_is_global': True, 'T2': 88, 'reachable_from_T2': 549, 'c111': [537, 549, 550], 'c111_reachable_from_T2': [False, False, False], 'c111_V_from_zero': [5, 5, 5], 'T2_kinds': ['domain'], 'V0_hist': {0: 1, 2: 88, 3: 392, 4: 68, 5: 3}, 'R0': [0, 1, 1, 2, 1, 1, 2, 2], 'thm3c_on_computed_roots': True, 'k': [0, 1, 1, 1, 1, 1, 1, 2], 'k_exact': [True, True, True, True, True, True, True, True], 'wall_seconds': 3510.2}

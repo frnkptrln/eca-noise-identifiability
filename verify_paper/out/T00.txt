@@ -1,0 +1,5 @@
+(a) C against numpy reference: 1295 (rule, n) cases compared, failures: 0
+(b1) all roots (C) = per root (Python) = enumeration of all in-trees: 1545 roots in 400 random matrices, m = 2..6, failures: 0
+(b2) all roots (C) = per root (Python): 1908 roots in 60 random matrices, m = 7..60, failures: 0
+(b3) all roots (C) = per root (Python) on the V matrices of (a) with 2 <= m <= 40: 7079 roots in 1284 systems, failures: 0
+T00 PASS   CPU 5.6 s (Python process; the C program adds a few seconds)

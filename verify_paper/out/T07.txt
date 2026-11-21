@@ -1,0 +1,108 @@
+L5.2   ok    n=3 all 8 states, all cells
+L5.2   ok    n=4 all 16 states, all cells
+L5.3   ok    n=4 all states: chi(Fx) <= chi(x); constant on all 1 cycles; every flip changes chi by -2, 0 or 2; deleting a one does not increase chi
+L5.4   ok    n=4 (a) all 9 states of M; (b), (c) all 0 domain states, all free cells
+L5.5   ok    n=4 (a) all 9 states of M that are not domain states; (b) all singleton groups
+L5.6   ok    n=4 F = rule 90 on E u O, E -> O -> E; n = 2^k: F^(n/2) x = 0 on E u O, 0 the only periodic state there, flips of 0 return to 0
+LB.1   ok    n=4 12 triples (u, j, r); every state of M that is not a domain state has 111 on its orbit within n/2 - 1 steps
+LB.2   ok    n=4 1 cycles: 1 inside E u O, 0 domain cycles, 0 contain 111
+LB.4   ok    n=4 all domain cycles; n = 2^k: all cycles other than {0}
+L5.2   ok    n=5 all 32 states, all cells
+L5.2   ok    n=6 all 64 states, all cells
+L5.3   ok    n=6 all states: chi(Fx) <= chi(x); constant on all 7 cycles; every flip changes chi by -2, 0 or 2; deleting a one does not increase chi
+L5.4   ok    n=6 (a) all 49 states of M; (b), (c) all 12 domain states, all free cells
+L5.5   ok    n=6 (a) all 37 states of M that are not domain states; (b) all singleton groups
+L5.6   ok    n=6 F = rule 90 on E u O, E -> O -> E
+LB.1   ok    n=6 66 triples (u, j, r); every state of M that is not a domain state has 111 on its orbit within n/2 - 1 steps
+LB.2   ok    n=6 7 cycles: 4 inside E u O, 3 domain cycles, 0 contain 111
+LB.4   ok    n=6 all domain cycles
+L5.2   ok    n=7 all 128 states, all cells
+L5.2   ok    n=8 all 256 states, all cells
+L5.3   ok    n=8 all states: chi(Fx) <= chi(x); constant on all 10 cycles; every flip changes chi by -2, 0 or 2; deleting a one does not increase chi
+L5.4   ok    n=8 (a) all 225 states of M; (b), (c) all 64 domain states, all free cells
+L5.5   ok    n=8 (a) all 161 states of M that are not domain states; (b) all singleton groups
+L5.6   ok    n=8 F = rule 90 on E u O, E -> O -> E; n = 2^k: F^(n/2) x = 0 on E u O, 0 the only periodic state there, flips of 0 return to 0
+LB.1   ok    n=8 344 triples (u, j, r); every state of M that is not a domain state has 111 on its orbit within n/2 - 1 steps
+LB.2   ok    n=8 10 cycles: 1 inside E u O, 8 domain cycles, 1 contain 111
+LB.4   ok    n=8 all domain cycles; n = 2^k: all cycles other than {0}
+L5.2   ok    n=9 all 512 states, all cells
+L5.2   ok    n=10 all 1024 states, all cells
+L5.3   ok    n=10 all states: chi(Fx) <= chi(x); constant on all 19 cycles; every flip changes chi by -2, 0 or 2; deleting a one does not increase chi
+L5.4   ok    n=10 (a) all 961 states of M; (b), (c) all 240 domain states, all free cells
+L5.5   ok    n=10 (a) all 721 states of M that are not domain states; (b) all singleton groups
+L5.6   ok    n=10 F = rule 90 on E u O, E -> O -> E
+LB.1   ok    n=10 1710 triples (u, j, r); every state of M that is not a domain state has 111 on its orbit within n/2 - 1 steps
+LB.2   ok    n=10 19 cycles: 6 inside E u O, 12 domain cycles, 1 contain 111
+LB.4   ok    n=10 all domain cycles
+L5.2   ok    n=11 all 2048 states, all cells
+L5.2   ok    n=12 all 4096 states, all cells
+L5.3   ok    n=12 all states: chi(Fx) <= chi(x); constant on all 64 cycles; every flip changes chi by -2, 0 or 2; deleting a one does not increase chi
+L5.4   ok    n=12 (a) all 3969 states of M; (b), (c) all 816 domain states, all free cells
+L5.5   ok    n=12 (a) all 3153 states of M that are not domain states; (b) all singleton groups
+L5.6   ok    n=12 F = rule 90 on E u O, E -> O -> E
+LB.1   ok    n=12 8196 triples (u, j, r); every state of M that is not a domain state has 111 on its orbit within n/2 - 1 steps
+LB.2   ok    n=12 64 cycles: 10 inside E u O, 54 domain cycles, 0 contain 111
+LB.4   ok    n=12 all domain cycles
+L5.2   ok    n=13 all 8192 states, all cells
+L5.2   ok    n=14 all 16384 states, all cells
+L5.3   ok    n=14 all states: chi(Fx) <= chi(x); constant on all 76 cycles; every flip changes chi by -2, 0 or 2; deleting a one does not increase chi
+L5.4   ok    n=14 (a) all 16129 states of M; (b), (c) all 2688 domain states, all free cells
+L5.5   ok    n=14 (a) all 13441 states of M that are not domain states; (b) all singleton groups
+L5.6   ok    n=14 F = rule 90 on E u O, E -> O -> E
+LB.1   ok    n=14 38234 triples (u, j, r); every state of M that is not a domain state has 111 on its orbit within n/2 - 1 steps
+LB.2   ok    n=14 76 cycles: 10 inside E u O, 64 domain cycles, 2 contain 111
+LB.4   ok    n=14 all domain cycles
+L5.2   ok    n=15 all 32768 states, all cells
+L5.2   ok    n=16 all 65536 states, all cells
+L5.3   ok    n=16 all states: chi(Fx) <= chi(x); constant on all 552 cycles; every flip changes chi by -2, 0 or 2; deleting a one does not increase chi
+L5.4   ok    n=16 (a) all 65025 states of M; (b), (c) all 8704 domain states, all free cells
+L5.5   ok    n=16 (a) all 56321 states of M that are not domain states; (b) all singleton groups
+L5.6   ok    n=16 F = rule 90 on E u O, E -> O -> E; n = 2^k: F^(n/2) x = 0 on E u O, 0 the only periodic state there, flips of 0 return to 0
+LB.1   ok    n=16 174768 triples (u, j, r); every state of M that is not a domain state has 111 on its orbit within n/2 - 1 steps
+LB.2   ok    n=16 552 cycles: 1 inside E u O, 548 domain cycles, 3 contain 111
+LB.4   ok    n=16 all domain cycles; n = 2^k: all cycles other than {0}
+L5.2   ok    n=17 all 131072 states, all cells
+L5.2   ok    n=18 all 262144 states, all cells
+L5.3   ok    n=18 all states: chi(Fx) <= chi(x); constant on all 567 cycles; every flip changes chi by -2, 0 or 2; deleting a one does not increase chi
+L5.4   ok    n=18 (a) all 261121 states of M; (b), (c) all 27840 domain states, all free cells
+L5.5   ok    n=18 (a) all 233281 states of M that are not domain states; (b) all singleton groups
+L5.6   ok    n=18 F = rule 90 on E u O, E -> O -> E
+LB.1   ok    n=18 786438 triples (u, j, r); every state of M that is not a domain state has 111 on its orbit within n/2 - 1 steps
+LB.2   ok    n=18 567 cycles: 40 inside E u O, 526 domain cycles, 1 contain 111
+LB.4   ok    n=18 all domain cycles
+LB.3   ok    n = 3..40: 67187 rotated words over 11100 and 100: F^2 w = sigma w (hence the period divides 2n); for carrier words w or Fw contains 111 (hence every second state of the cycle)
+LB.6   ok    n=4 every cycle has a G1 path to a cycle inside E u O
+LB.7   ok    n=4 the 1 cycles inside E u O lie in one strongly connected component
+T5.7   ok    n=4 m=1 (a) True (b) True (c) True (d) True [cycles with gamma = m: 0 of 0; largest gamma - (m-1): 0]
+n=4    ok    computed values quoted in the text: m = 1, k_v = [0, 1, 1, 2, 1, 1, 2, 2], k* = 2
+LB.6   ok    n=6 every cycle has a G1 path to a cycle inside E u O
+LB.7   ok    n=6 the 4 cycles inside E u O lie in one strongly connected component
+P5.9   ok    n=6 m=7 one closed class True (|K| = 7); contains {0}, the cycles in E u O and the domain cycles True; cycles outside K contain 111 True; codes other than 111 in K True; S = K, gamma_min = m-1, k_v = 0 (v != 111), k* = 0 iff a cycle with 111 is in K True [k* = 1; cycles with 111: 0, in K: 0]
+LB.6   ok    n=8 every cycle has a G1 path to a cycle inside E u O
+LB.7   ok    n=8 the 1 cycles inside E u O lie in one strongly connected component
+T5.7   ok    n=8 m=10 (a) True (b) True (c) True (d) True [cycles with gamma = m: 9 of 9; largest gamma - (m-1): 1]
+P5.8   ok    n=8 (a) True (b) True [k_111 = 1, k* = 1]; (c) k odd: carrier word on a cycle with gamma = m, k_111 = 1, k* = 1: True
+LB.5   ok    n=8 all 8 domain cycles have gamma = m
+LB.6   ok    n=10 every cycle has a G1 path to a cycle inside E u O
+LB.7   ok    n=10 the 6 cycles inside E u O lie in one strongly connected component
+P5.9   ok    n=10 m=19 one closed class True (|K| = 18); contains {0}, the cycles in E u O and the domain cycles True; cycles outside K contain 111 True; codes other than 111 in K True; S = K, gamma_min = m-1, k_v = 0 (v != 111), k* = 0 iff a cycle with 111 is in K True [k* = 1; cycles with 111: 1, in K: 0]
+LB.6   ok    n=12 every cycle has a G1 path to a cycle inside E u O
+LB.7   ok    n=12 the 10 cycles inside E u O lie in one strongly connected component
+P5.9   ok    n=12 m=64 one closed class True (|K| = 64); contains {0}, the cycles in E u O and the domain cycles True; cycles outside K contain 111 True; codes other than 111 in K True; S = K, gamma_min = m-1, k_v = 0 (v != 111), k* = 0 iff a cycle with 111 is in K True [k* = 1; cycles with 111: 0, in K: 0]
+LB.6   ok    n=14 every cycle has a G1 path to a cycle inside E u O
+LB.7   ok    n=14 the 10 cycles inside E u O lie in one strongly connected component
+P5.9   ok    n=14 m=76 one closed class True (|K| = 76); contains {0}, the cycles in E u O and the domain cycles True; cycles outside K contain 111 True; codes other than 111 in K True; S = K, gamma_min = m-1, k_v = 0 (v != 111), k* = 0 iff a cycle with 111 is in K True [k* = 0; cycles with 111: 2, in K: 2]
+LB.6   ok    n=16 every cycle has a G1 path to a cycle inside E u O
+LB.7   ok    n=16 the 1 cycles inside E u O lie in one strongly connected component
+T5.7   ok    n=16 m=552 (a) True (b) True (c) True (d) True [cycles with gamma = m: 548 of 551; largest gamma - (m-1): 2]
+P5.8   ok    n=16 (a) True (b) True [k_111 = 2, k* = 2]
+LB.5   ok    n=16 all 548 domain cycles have gamma = m
+n=16   ok    computed values quoted in the text: k_111 = 2, k* = 2, cycles with 111: 3, of these reachable from a C_1 with V({0}, C_1) = 2: 0, passing through a carrier word: 2
+LB.6   ok    n=18 every cycle has a G1 path to a cycle inside E u O
+LB.7   ok    n=18 the 40 cycles inside E u O lie in one strongly connected component
+P5.9   ok    n=18 m=567 one closed class True (|K| = 566); contains {0}, the cycles in E u O and the domain cycles True; cycles outside K contain 111 True; codes other than 111 in K True; S = K, gamma_min = m-1, k_v = 0 (v != 111), k* = 0 iff a cycle with 111 is in K True [k* = 1; cycles with 111: 1, in K: 0]
+LB.6   ok    n=20 every cycle has a G1 path to a cycle inside E u O
+LB.7   ok    n=20 the 46 cycles inside E u O lie in one strongly connected component
+P5.9   ok    n=20 m=2816 one closed class True (|K| = 2815); contains {0}, the cycles in E u O and the domain cycles True; cycles outside K contain 111 True; codes other than 111 in K True; S = K, gamma_min = m-1, k_v = 0 (v != 111), k* = 0 iff a cycle with 111 is in K True [k* = 0; cycles with 111: 4, in K: 3]
+even n that is not a power of two, n <= 20: k* = 0 at n = [14, 20]; k* > 0 at n = [6, 10, 12, 18] (the paper's macros: zero at 14, 20, 22; positive at 10, 12, 18; Table 1 has 1 at n = 6)
+T07 PASS   CPU 2.7 s (Python) wall 24.5 s

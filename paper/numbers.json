@@ -1,0 +1,1192 @@
+{
+ "numbers": [
+  {
+   "macro": "TableNmin",
+   "value": "4",
+   "file": "-",
+   "where": "first ring size of Table 1"
+  },
+  {
+   "macro": "TableNmax",
+   "value": "22",
+   "file": "-",
+   "where": "last ring size of Table 1"
+  },
+  {
+   "macro": "TableSweepNmax",
+   "value": "7",
+   "file": "data/fw_sweep.csv",
+   "where": "ring sizes 4..7 of Table 1 are taken from this file"
+  },
+  {
+   "macro": "TableMechNmin",
+   "value": "8",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "smallest n of the file"
+  },
+  {
+   "macro": "TableCells",
+   "value": "95",
+   "file": "-",
+   "where": "cells of Table 1"
+  },
+  {
+   "macro": "TableCompared",
+   "value": "78",
+   "file": "table",
+   "where": "cells for which the theorems give a value"
+  },
+  {
+   "macro": "TableAgree",
+   "value": "78",
+   "file": "table",
+   "where": "of these, cells whose computed value is admitted by the theorems"
+  },
+  {
+   "macro": "TwentySixFourCycles",
+   "value": "1",
+   "file": "proofs_94_26/out/g1_26.jsonl",
+   "where": "n=4, field cycles"
+  },
+  {
+   "macro": "TwentySixFourKv",
+   "value": "0, 1, 1, 2, 1, 1, 2, 2",
+   "file": "proofs_94_26/out/g1_26.jsonl",
+   "where": "n=4, field k_c_from_the_definition (codes 000, 001, ..., 111)"
+  },
+  {
+   "macro": "KstarTwentySixAtFour",
+   "value": "2",
+   "file": "proofs_94_26/out/g1_26.jsonl",
+   "where": "n=4, maximum of k_c_from_the_definition"
+  },
+  {
+   "macro": "KsevenTwentySixAtSixteen",
+   "value": "2",
+   "file": "proofs_94_26/out/g1_26.jsonl",
+   "where": "n=16, field k_c_from_the_definition, entry of code 111"
+  },
+  {
+   "macro": "KstarTwentySixAtSixteen",
+   "value": "2",
+   "file": "proofs_94_26/out/g1_26.jsonl",
+   "where": "n=16, maximum of k_c_from_the_definition"
+  },
+  {
+   "macro": "TwentySixSixteenWith",
+   "value": "3",
+   "file": "proofs_94_26/out/g1_26.jsonl",
+   "where": "n=16, field cycles_by_kind, entry with_111"
+  },
+  {
+   "macro": "TwentySixSixteenReach",
+   "value": "0",
+   "file": "proofs_94_26/out/g1_26.jsonl",
+   "where": "n=16, field cycles_with_111_reachable_from_T2"
+  },
+  {
+   "macro": "TwentySixSixteenCarrier",
+   "value": "2",
+   "file": "proofs_94_26/out/g1_26.jsonl",
+   "where": "n=16, field cycles_with_111_through_a_carrier_word"
+  },
+  {
+   "macro": "TwentySixTwentyTwoChi",
+   "value": "6 and 10",
+   "file": "proofs_94_26/out/g1_26.jsonl",
+   "where": "n=22, field c_of_cycles_with_111"
+  },
+  {
+   "macro": "TwentySixEvenZero",
+   "value": "14, 20, 22",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, even n in 8..22 not a power of two, with kstar = 0"
+  },
+  {
+   "macro": "TwentySixEvenPos",
+   "value": "10, 12, 18",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, even n in 8..22 not a power of two, with kstar >= 1"
+  },
+  {
+   "macro": "NinetyFourFourClosed",
+   "value": "1",
+   "file": "proofs_94_26/out/g1_classes_94.jsonl",
+   "where": "n=4, number of entries of closed_classes"
+  },
+  {
+   "macro": "NinetyFourFourClassSize",
+   "value": "2",
+   "file": "proofs_94_26/out/g1_classes_94.jsonl",
+   "where": "n=4, field closed_classes"
+  },
+  {
+   "macro": "NinetyFourFourCodes",
+   "value": "$\\code{010}$ and $\\code{101}$",
+   "file": "proofs_94_26/out/g1_classes_94.jsonl",
+   "where": "n=4, field codes_on_K"
+  },
+  {
+   "macro": "KstarNinetyFourAtFour",
+   "value": "1",
+   "file": "data/fw_sweep.csv",
+   "where": "rule=94, n=4, field kstar"
+  },
+  {
+   "macro": "NinetyFourDoubledInK",
+   "value": "0 of 5 at $n=10$, 7 of 9 at $n=14$, 10 of 45 at $n=20$ and 0 of 33 at $n=22$",
+   "file": "proofs_94_26/out/g1_classes_94.jsonl",
+   "where": "n=10,14,20,22: fields cycles_without_101, cycles_without_101_in_K, zero_state_in_K"
+  },
+  {
+   "macro": "KposThirtyFive",
+   "value": "9, 12, 15, 18, 21",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=35, the n in 8..22 with kstar >= 1"
+  },
+  {
+   "macro": "KposFortyFive",
+   "value": "8",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=45, the n in 8..22 with kstar >= 1"
+  },
+  {
+   "macro": "KposSeventyThree",
+   "value": "9",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=73, the n in 8..22 with kstar >= 1"
+  },
+  {
+   "macro": "KposTwentyTwo",
+   "value": "8, 14, 15, 16",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=22, the n in 8..22 with kstar >= 1"
+  },
+  {
+   "macro": "KposSixty",
+   "value": "8, 16",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=60, the n in 8..22 with kstar >= 1"
+  },
+  {
+   "macro": "KposNinety",
+   "value": "8, 16",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=90, the n in 8..22 with kstar >= 1"
+  },
+  {
+   "macro": "KstarSixtyPos",
+   "value": "1",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=60, field kstar at the n in 8..22 with kstar >= 1"
+  },
+  {
+   "macro": "KstarNinetyPos",
+   "value": "2",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=90, field kstar at the n in 8..22 with kstar >= 1"
+  },
+  {
+   "macro": "CyclesSixtyNinetyPos",
+   "value": "1",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=60 and rule=90, field cycles at the n in 8..22 with kstar >= 1"
+  },
+  {
+   "macro": "KzeroThirtySeven",
+   "value": "11, 12, 17, 18",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=37, the n in 8..22 with kstar = 0"
+  },
+  {
+   "macro": "KzeroOneTwentyTwo",
+   "value": "8, 12, 16, 20, 22",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=122, the n in 8..22 with kstar = 0"
+  },
+  {
+   "macro": "NumSwitching",
+   "value": "13",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "number of distinct values of the field rule"
+  },
+  {
+   "macro": "NumOtherSwitching",
+   "value": "8",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "number of distinct values of the field rule, without the rules 154, 43, 142, 94, 26"
+  },
+  {
+   "macro": "OpenNmin",
+   "value": "8",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "smallest n of the file"
+  },
+  {
+   "macro": "OpenNmax",
+   "value": "22",
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "largest n of the file"
+  },
+  {
+   "macro": "ZRValues",
+   "value": "0.00048828 at $n=22$ and 0.00045776 at $n=24$",
+   "file": "proofs_43_142/out/zhu_richard_154.json",
+   "where": "field quoted (the values named to the session that wrote the file; printed in Figure 13 of the text according to literature_addendum.md, update of 20 November 2026)"
+  },
+  {
+   "macro": "ZRBound",
+   "value": "0.01",
+   "file": "literature_addendum.md",
+   "where": "section A1, the sentence quoted from arXiv:2610.10967 (p. 14): the bound"
+  },
+  {
+   "macro": "ZRNmin",
+   "value": "13",
+   "file": "literature_addendum.md",
+   "where": "section A1, the sentence quoted from arXiv:2610.10967: first n of the range"
+  },
+  {
+   "macro": "ZRNmax",
+   "value": "27",
+   "file": "literature_addendum.md",
+   "where": "section A1, the sentence quoted from arXiv:2610.10967: last n of the range"
+  }
+ ],
+ "claims": [
+  {
+   "key": "26_n16_not_only_carriers",
+   "holds": true,
+   "file": "proofs_94_26/out/g1_26.jsonl",
+   "where": "n=16, fields cycles_by_kind and cycles_with_111_through_a_carrier_word",
+   "statement": "at n = 16 some cycle that contains 111 does not pass through a carrier word"
+  },
+  {
+   "key": "26_n22_chi_below_n_over_3",
+   "holds": true,
+   "file": "proofs_94_26/out/g1_26.jsonl",
+   "where": "n=22, field c_of_cycles_with_111",
+   "statement": "at n = 22 some cycle that contains 111 has chi < n/3"
+  },
+  {
+   "key": "94_n4_class_is_block_words",
+   "holds": true,
+   "file": "proofs_94_26/out/g1_classes_94.jsonl",
+   "where": "n=4, fields block_words, block_words_all_in_K, closed_classes",
+   "statement": "at n = 4 the closed class consists of the block words"
+  },
+  {
+   "key": "94_n3_flip_leaves_crystal",
+   "holds": true,
+   "file": "data/ring_size/crystal_radius.csv",
+   "where": "rule=94, n=3, field radius_ge2",
+   "statement": "at n = 3 a single flip can leave the crystal phase"
+  },
+  {
+   "key": "94_n16_zero_outside_K",
+   "holds": true,
+   "file": "proofs_94_26/out/g1_classes_94.jsonl",
+   "where": "n=16, fields zero_state_in_K, zero_state_in_degree",
+   "statement": "at n = 16 the cycle {0} is not in K and no edge of G_1 enters it"
+  },
+  {
+   "key": "60_only_cycle_is_zero_state",
+   "holds": true,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=60, the n in 8..22 with kstar >= 1: fields cycles, n_selected, selected_cover, selected_spatial_periods, selected_temporal_periods",
+   "statement": "class 60: at the n of the range with k* >= 1 there is one cycle, a fixed point of spatial period 1 that contains the code 000 only, i.e. the zero state"
+  },
+  {
+   "key": "60_kpos_are_the_powers_of_two",
+   "holds": true,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=60, field kstar",
+   "statement": "class 60: k* >= 1 exactly at the powers of two of the range"
+  },
+  {
+   "key": "90_only_cycle_is_zero_state",
+   "holds": true,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=90, the n in 8..22 with kstar >= 1: fields cycles, n_selected, selected_cover, selected_spatial_periods, selected_temporal_periods",
+   "statement": "class 90: at the n of the range with k* >= 1 there is one cycle, a fixed point of spatial period 1 that contains the code 000 only, i.e. the zero state"
+  },
+  {
+   "key": "90_kpos_are_the_powers_of_two",
+   "holds": true,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=90, field kstar",
+   "statement": "class 90: k* >= 1 exactly at the powers of two of the range"
+  },
+  {
+   "key": "zr_values_printed_in_the_text",
+   "holds": true,
+   "file": "literature_addendum.md",
+   "where": "update of 20 November 2026, item 'Rule 154'",
+   "statement": "the two values are recorded as printed in Figure 13 of arXiv:2610.10967 for n = 22 and n = 24"
+  },
+  {
+   "key": "zr_values_agree_with_the_count",
+   "holds": true,
+   "file": "proofs_43_142/out/zhu_richard_154.json",
+   "where": "fields quoted_values_agree, all_lemma6_equal_direct",
+   "statement": "the two values agree with the fraction of states on no cycle counted for rule 154, and the count by the description of the periodic states equals the direct count for even n = 4..24"
+  }
+ ],
+ "table": [
+  {
+   "rule": 154,
+   "n": 4,
+   "data": 1,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=154, n=4, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 5,
+   "data": 0,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=154, n=5, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 6,
+   "data": 0,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=154, n=6, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 7,
+   "data": 0,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=154, n=7, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 8,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=154, n=8, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 9,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=154, n=9, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 10,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=154, n=10, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 11,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=154, n=11, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 12,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=154, n=12, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 13,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=154, n=13, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 14,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=154, n=14, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 15,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=154, n=15, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 16,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=154, n=16, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 17,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=154, n=17, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 18,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=154, n=18, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 19,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=154, n=19, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 20,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=154, n=20, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 21,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=154, n=21, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 154,
+   "n": 22,
+   "data": 0,
+   "file": "verify_ring_size/phase2/out/v154_n22.json",
+   "where": "field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 4,
+   "data": 1,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=43, n=4, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 5,
+   "data": 0,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=43, n=5, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 6,
+   "data": 0,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=43, n=6, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 7,
+   "data": 0,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=43, n=7, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 8,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=8, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 9,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=9, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 10,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=10, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 11,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=11, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 12,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=12, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 13,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=13, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 14,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=14, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 15,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=15, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 16,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=16, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 17,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=17, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 18,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=18, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 19,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=19, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 20,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=20, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 21,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=21, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 43,
+   "n": 22,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=43, n=22, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 4,
+   "data": 1,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=142, n=4, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 5,
+   "data": 0,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=142, n=5, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 6,
+   "data": 0,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=142, n=6, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 7,
+   "data": 0,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=142, n=7, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 8,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=8, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 9,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=9, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 10,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=10, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 11,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=11, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 12,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=12, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 13,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=13, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 14,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=14, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 15,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=15, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 16,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=16, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 17,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=17, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 18,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=18, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 19,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=19, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 20,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=20, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 21,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=21, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 142,
+   "n": 22,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=142, n=22, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "data": 1,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=94, n=4, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "data": 0,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=94, n=5, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 6,
+   "data": 1,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=94, n=6, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "data": 0,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=94, n=7, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=8, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 9,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=9, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=10, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=11, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 12,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=12, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=13, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=14, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 15,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=15, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=16, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=17, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 18,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=18, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=19, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=20, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 21,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=21, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 22,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=94, n=22, field kstar",
+   "theorem": "0",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "data": 2,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=26, n=4, field kstar",
+   "theorem": "$\\ge$1",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 5,
+   "data": 0,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=26, n=5, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "data": 1,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=26, n=6, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 7,
+   "data": 1,
+   "file": "data/fw_sweep.csv",
+   "where": "rule=26, n=7, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=8, field kstar",
+   "theorem": "1",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 9,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=9, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=10, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 11,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=11, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=12, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 13,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=13, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=14, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 15,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=15, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "data": 2,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=16, field kstar",
+   "theorem": "1/2",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 17,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=17, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=18, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 19,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=19, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=20, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 21,
+   "data": 1,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=21, field kstar",
+   "theorem": "--",
+   "agree": null
+  },
+  {
+   "rule": 26,
+   "n": 22,
+   "data": 0,
+   "file": "data/ring_size/mechanisms.csv",
+   "where": "rule=26, n=22, field kstar",
+   "theorem": "--",
+   "agree": null
+  }
+ ]
+}

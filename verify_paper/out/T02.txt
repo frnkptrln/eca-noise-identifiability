@@ -1,0 +1,92 @@
+L3.2  ok    eight codes: values [0, 1, 0, 1, 1, 0, 0, 1]
+L3.2  ok    n=3 all 8 states, all cells
+L3.6  ok    n=3 odd: F is a bijection
+L3.2  ok    n=4 all 16 states, all cells
+L3.6  ok    n=4 5 colliding pairs, all of the three kinds; largest fibre 3; converse (every such pair collides): True
+L3.3  ok    n=4 all 7 states of E u O
+L3.5  ok    n=4 all 9 states of M
+L3.7  ok    n=4 F permutes M; periodic = M u per(L|EuO) (9 + 1 states); power of two: periodic = M u {0}
+L3.4a ok    n=4 F^(n/2) x = 0 for all 7 states of E u O
+L3.2  ok    n=5 all 32 states, all cells
+L3.6  ok    n=5 odd: F is a bijection
+L3.2  ok    n=6 all 64 states, all cells
+L3.6  ok    n=6 9 colliding pairs, all of the three kinds; largest fibre 3; converse (every such pair collides): True
+L3.3  ok    n=6 all 15 states of E u O
+L3.5  ok    n=6 all 49 states of M
+L3.7  ok    n=6 F permutes M; periodic = M u per(L|EuO) (49 + 7 states)
+L3.4b ok    n=6 orbit of every e_j under F followed until it repeats: never 0
+L3.2  ok    n=7 all 128 states, all cells
+L3.6  ok    n=7 odd: F is a bijection
+L3.2  ok    n=8 all 256 states, all cells
+L3.6  ok    n=8 17 colliding pairs, all of the three kinds; largest fibre 3; converse (every such pair collides): True
+L3.3  ok    n=8 all 31 states of E u O
+L3.5  ok    n=8 all 225 states of M
+L3.7  ok    n=8 F permutes M; periodic = M u per(L|EuO) (225 + 1 states); power of two: periodic = M u {0}
+L3.4a ok    n=8 F^(n/2) x = 0 for all 31 states of E u O
+L3.2  ok    n=9 all 512 states, all cells
+L3.6  ok    n=9 odd: F is a bijection
+L3.2  ok    n=10 all 1024 states, all cells
+L3.6  ok    n=10 33 colliding pairs, all of the three kinds; largest fibre 3; converse (every such pair collides): True
+L3.3  ok    n=10 all 63 states of E u O
+L3.5  ok    n=10 all 961 states of M
+L3.7  ok    n=10 F permutes M; periodic = M u per(L|EuO) (961 + 31 states)
+L3.4b ok    n=10 orbit of every e_j under F followed until it repeats: never 0
+L3.2  ok    n=11 all 2048 states, all cells
+L3.6  ok    n=11 odd: F is a bijection
+L3.2  ok    n=12 all 4096 states, all cells
+L3.6  ok    n=12 65 colliding pairs, all of the three kinds; largest fibre 3; converse (every such pair collides): True
+L3.3  ok    n=12 all 127 states of E u O
+L3.5  ok    n=12 all 3969 states of M
+L3.7  ok    n=12 F permutes M; periodic = M u per(L|EuO) (3969 + 31 states)
+L3.4b ok    n=12 orbit of every e_j under F followed until it repeats: never 0
+L3.2  ok    n=13 all 8192 states, all cells
+L3.6  ok    n=13 odd: F is a bijection
+L3.2  ok    n=14 all 16384 states, all cells
+L3.6  ok    n=14 129 colliding pairs, all of the three kinds; largest fibre 3; converse (every such pair collides): True
+L3.3  ok    n=14 all 255 states of E u O
+L3.5  ok    n=14 all 16129 states of M
+L3.7  ok    n=14 F permutes M; periodic = M u per(L|EuO) (16129 + 127 states)
+L3.4b ok    n=14 orbit of every e_j under F followed until it repeats: never 0
+L3.2  ok    n=15 all 32768 states, all cells
+L3.6  ok    n=15 odd: F is a bijection
+L3.2  ok    n=16 all 65536 states, all cells
+L3.6  ok    n=16 257 colliding pairs, all of the three kinds; largest fibre 3; converse (every such pair collides): True
+L3.3  ok    n=16 all 511 states of E u O
+L3.5  ok    n=16 all 65025 states of M
+L3.7  ok    n=16 F permutes M; periodic = M u per(L|EuO) (65025 + 1 states); power of two: periodic = M u {0}
+L3.4a ok    n=16 F^(n/2) x = 0 for all 511 states of E u O
+L3.2  ok    n=17 all 131072 states, all cells
+L3.6  ok    n=17 odd: F is a bijection
+L3.2  ok    n=18 all 262144 states, all cells
+L3.6  ok    n=18 513 colliding pairs, all of the three kinds; largest fibre 3; converse (every such pair collides): True
+L3.3  ok    n=18 all 1023 states of E u O
+L3.5  ok    n=18 all 261121 states of M
+L3.7  ok    n=18 F permutes M; periodic = M u per(L|EuO) (261121 + 511 states)
+L3.4b ok    n=18 orbit of every e_j under F followed until it repeats: never 0
+L3.2  ok    n=19 all 524288 states, all cells
+L3.6  ok    n=19 odd: F is a bijection
+L3.2  ok    n=20 all 1048576 states, all cells
+L3.6  ok    n=20 1025 colliding pairs, all of the three kinds; largest fibre 3; converse (every such pair collides): True
+L3.3  ok    n=20 all 2047 states of E u O
+L3.5  ok    n=20 all 1046529 states of M
+L3.7  ok    n=20 F permutes M; periodic = M u per(L|EuO) (1046529 + 511 states)
+L3.4b ok    n=20 orbit of every e_j under F followed until it repeats: never 0
+L3.2  ok    n=21 all 2097152 states, all cells
+L3.6  ok    n=21 odd: F is a bijection
+L3.2  ok    n=22 all 4194304 states, all cells
+L3.6  ok    n=22 2049 colliding pairs, all of the three kinds; largest fibre 3; converse (every such pair collides): True
+L3.3  ok    n=22 all 4095 states of E u O
+L3.5  ok    n=22 all 4190209 states of M
+L3.7  ok    n=22 F permutes M; periodic = M u per(L|EuO) (4190209 + 2047 states)
+L3.4b ok    n=22 orbit of every e_j under F followed until it repeats: never 0
+L3.4a ok    n=32 L^(n/2) x = 0 for all 2*65536 states of E u O (F = L there by L3.3)
+L3.4a ok    n=64..4096 (powers of two): L^(n/2) e_0 = 0 (e_j by rotation)
+L3.4b ok    even n = 6..4096 not a power of two (2036 ring sizes): L^n e_0 != 0. For a linear map on an n-dimensional space, L^t x = 0 for some t iff L^n x = 0, so this decides 'never 0'
+L3.8  ok    n=4 (a) 24 flips inside M checked; (b) G1 on the 3 cycles in M has 1 strongly connected component(s)
+L3.8  ok    n=6 (a) 252 flips inside M checked; (b) G1 on the 8 cycles in M has 1 strongly connected component(s)
+L3.8  ok    n=8 (a) 1680 flips inside M checked; (b) G1 on the 30 cycles in M has 1 strongly connected component(s)
+L3.8  ok    n=10 (a) 9300 flips inside M checked; (b) G1 on the 56 cycles in M has 1 strongly connected component(s)
+L3.8  ok    n=12 (a) 46872 flips inside M checked; (b) G1 on the 298 cycles in M has 1 strongly connected component(s)
+L3.8  ok    n=14 (a) 224028 flips inside M checked; (b) G1 on the 554 cycles in M has 1 strongly connected component(s)
+L3.8  ok    n=16 (a) 1036320 flips inside M checked; (b) G1 on the 4080 cycles in M has 1 strongly connected component(s)
+T02 PASS   NS=22 NG=16   CPU 2.9 s (Python) wall 5.0 s

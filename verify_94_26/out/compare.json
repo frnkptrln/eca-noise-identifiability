@@ -1,0 +1,3722 @@
+{
+ "compared": 331,
+ "disagreements": [],
+ "rows": [
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "cycles",
+   "mine": 3,
+   "theirs": 3,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "periodic_states",
+   "mine": 3,
+   "theirs": 3,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "g1_edges",
+   "mine": 4,
+   "theirs": 4,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "strong_components",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "closed_classes",
+   "mine": [
+    2
+   ],
+   "theirs": [
+    2
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "block_words",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "block_words_in_one_component",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "K_equals_cycles_reachable_from_block_words",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "zero_state_in_K",
+   "mine": false,
+   "theirs": false,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "zero_state_in_degree",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "codes_on_K",
+   "mine": [
+    2,
+    5
+   ],
+   "theirs": [
+    2,
+    5
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "periods_without_101_in_K",
+   "mine": {},
+   "theirs": {},
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "periods_without_101_outside_K",
+   "mine": {
+    "1": 1
+   },
+   "theirs": {
+    "1": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "cycles_with_101_in_K / cycles_with_101",
+   "mine": [
+    2,
+    2
+   ],
+   "theirs": [
+    2,
+    2
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 4,
+   "field": "cycles_without_101_in_K (= doubled-word cycles in K + [0 in K])",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "cycles",
+   "mine": 11,
+   "theirs": 11,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "periodic_states",
+   "mine": 16,
+   "theirs": 16,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "g1_edges",
+   "mine": 55,
+   "theirs": 55,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "strong_components",
+   "mine": 1,
+   "theirs": 1,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "closed_classes",
+   "mine": [
+    11
+   ],
+   "theirs": [
+    11
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "block_words",
+   "mine": 5,
+   "theirs": 5,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "block_words_in_one_component",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "K_equals_cycles_reachable_from_block_words",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "zero_state_in_K",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "zero_state_in_degree",
+   "mine": 5,
+   "theirs": 5,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "periods_without_101_in_K",
+   "mine": {
+    "1": 1
+   },
+   "theirs": {
+    "1": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "periods_without_101_outside_K",
+   "mine": {},
+   "theirs": {},
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "cycles_with_101_in_K / cycles_with_101",
+   "mine": [
+    10,
+    10
+   ],
+   "theirs": [
+    10,
+    10
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 5,
+   "field": "cycles_without_101_in_K (= doubled-word cycles in K + [0 in K])",
+   "mine": 1,
+   "theirs": 1,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "cycles",
+   "mine": 22,
+   "theirs": 22,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "periodic_states",
+   "mine": 43,
+   "theirs": 43,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "g1_edges",
+   "mine": 147,
+   "theirs": 147,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "strong_components",
+   "mine": 1,
+   "theirs": 1,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "closed_classes",
+   "mine": [
+    22
+   ],
+   "theirs": [
+    22
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "block_words",
+   "mine": 7,
+   "theirs": 7,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "block_words_in_one_component",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "K_equals_cycles_reachable_from_block_words",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "zero_state_in_K",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "zero_state_in_degree",
+   "mine": 7,
+   "theirs": 7,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "periods_without_101_in_K",
+   "mine": {
+    "1": 1
+   },
+   "theirs": {
+    "1": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "periods_without_101_outside_K",
+   "mine": {},
+   "theirs": {},
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "cycles_with_101_in_K / cycles_with_101",
+   "mine": [
+    21,
+    21
+   ],
+   "theirs": [
+    21,
+    21
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 7,
+   "field": "cycles_without_101_in_K (= doubled-word cycles in K + [0 in K])",
+   "mine": 1,
+   "theirs": 1,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "cycles",
+   "mine": 27,
+   "theirs": 27,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "periodic_states",
+   "mine": 43,
+   "theirs": 43,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "g1_edges",
+   "mine": 146,
+   "theirs": 146,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "strong_components",
+   "mine": 1,
+   "theirs": 1,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "closed_classes",
+   "mine": [
+    27
+   ],
+   "theirs": [
+    27
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "block_words",
+   "mine": 10,
+   "theirs": 10,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "block_words_in_one_component",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "K_equals_cycles_reachable_from_block_words",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "zero_state_in_K",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "zero_state_in_degree",
+   "mine": 8,
+   "theirs": 8,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "periods_without_101_in_K",
+   "mine": {
+    "1": 1
+   },
+   "theirs": {
+    "1": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "periods_without_101_outside_K",
+   "mine": {},
+   "theirs": {},
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "cycles_with_101_in_K / cycles_with_101",
+   "mine": [
+    26,
+    26
+   ],
+   "theirs": [
+    26,
+    26
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 8,
+   "field": "cycles_without_101_in_K (= doubled-word cycles in K + [0 in K])",
+   "mine": 1,
+   "theirs": 1,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "cycles",
+   "mine": 73,
+   "theirs": 73,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "periodic_states",
+   "mine": 158,
+   "theirs": 158,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "g1_edges",
+   "mine": 610,
+   "theirs": 610,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "strong_components",
+   "mine": 7,
+   "theirs": 7,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "closed_classes",
+   "mine": [
+    67
+   ],
+   "theirs": [
+    67
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "block_words",
+   "mine": 17,
+   "theirs": 17,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "block_words_in_one_component",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "K_equals_cycles_reachable_from_block_words",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "zero_state_in_K",
+   "mine": false,
+   "theirs": false,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "zero_state_in_degree",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "periods_without_101_in_K",
+   "mine": {},
+   "theirs": {},
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "periods_without_101_outside_K",
+   "mine": {
+    "1": 1,
+    "6": 5
+   },
+   "theirs": {
+    "1": 1,
+    "6": 5
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "cycles_with_101_in_K / cycles_with_101",
+   "mine": [
+    67,
+    67
+   ],
+   "theirs": [
+    67,
+    67
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 10,
+   "field": "cycles_without_101_in_K (= doubled-word cycles in K + [0 in K])",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "cycles",
+   "mine": 78,
+   "theirs": 78,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "periodic_states",
+   "mine": 144,
+   "theirs": 144,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "g1_edges",
+   "mine": 638,
+   "theirs": 638,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "strong_components",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "closed_classes",
+   "mine": [
+    77
+   ],
+   "theirs": [
+    77
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "block_words",
+   "mine": 22,
+   "theirs": 22,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "block_words_in_one_component",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "K_equals_cycles_reachable_from_block_words",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "zero_state_in_K",
+   "mine": false,
+   "theirs": false,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "zero_state_in_degree",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "periods_without_101_in_K",
+   "mine": {},
+   "theirs": {},
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "periods_without_101_outside_K",
+   "mine": {
+    "1": 1
+   },
+   "theirs": {
+    "1": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "cycles_with_101_in_K / cycles_with_101",
+   "mine": [
+    77,
+    77
+   ],
+   "theirs": [
+    77,
+    77
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 11,
+   "field": "cycles_without_101_in_K (= doubled-word cycles in K + [0 in K])",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "cycles",
+   "mine": 209,
+   "theirs": 209,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "periodic_states",
+   "mine": 404,
+   "theirs": 404,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "g1_edges",
+   "mine": 2145,
+   "theirs": 2145,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "strong_components",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "closed_classes",
+   "mine": [
+    208
+   ],
+   "theirs": [
+    208
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "block_words",
+   "mine": 39,
+   "theirs": 39,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "block_words_in_one_component",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "K_equals_cycles_reachable_from_block_words",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "zero_state_in_K",
+   "mine": false,
+   "theirs": false,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "zero_state_in_degree",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "periods_without_101_in_K",
+   "mine": {},
+   "theirs": {},
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "periods_without_101_outside_K",
+   "mine": {
+    "1": 1
+   },
+   "theirs": {
+    "1": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "cycles_with_101_in_K / cycles_with_101",
+   "mine": [
+    208,
+    208
+   ],
+   "theirs": [
+    208,
+    208
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 13,
+   "field": "cycles_without_101_in_K (= doubled-word cycles in K + [0 in K])",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "cycles",
+   "mine": 320,
+   "theirs": 320,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "periodic_states",
+   "mine": 871,
+   "theirs": 871,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "g1_edges",
+   "mine": 4284,
+   "theirs": 4284,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "strong_components",
+   "mine": 4,
+   "theirs": 4,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "closed_classes",
+   "mine": [
+    317
+   ],
+   "theirs": [
+    317
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "block_words",
+   "mine": 51,
+   "theirs": 51,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "block_words_in_one_component",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "K_equals_cycles_reachable_from_block_words",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "zero_state_in_K",
+   "mine": false,
+   "theirs": false,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "zero_state_in_degree",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "periods_without_101_in_K",
+   "mine": {
+    "14": 7
+   },
+   "theirs": {
+    "14": 7
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "periods_without_101_outside_K",
+   "mine": {
+    "1": 1,
+    "14": 2
+   },
+   "theirs": {
+    "1": 1,
+    "14": 2
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "cycles_with_101_in_K / cycles_with_101",
+   "mine": [
+    310,
+    310
+   ],
+   "theirs": [
+    310,
+    310
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 14,
+   "field": "cycles_without_101_in_K (= doubled-word cycles in K + [0 in K])",
+   "mine": 7,
+   "theirs": 7,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "cycles",
+   "mine": 747,
+   "theirs": 747,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "periodic_states",
+   "mine": 1723,
+   "theirs": 1723,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "g1_edges",
+   "mine": 10130,
+   "theirs": 10130,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "strong_components",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "closed_classes",
+   "mine": [
+    746
+   ],
+   "theirs": [
+    746
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "block_words",
+   "mine": 90,
+   "theirs": 90,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "block_words_in_one_component",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "K_equals_cycles_reachable_from_block_words",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "zero_state_in_K",
+   "mine": false,
+   "theirs": false,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "zero_state_in_degree",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "periods_without_101_in_K",
+   "mine": {},
+   "theirs": {},
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "periods_without_101_outside_K",
+   "mine": {
+    "1": 1
+   },
+   "theirs": {
+    "1": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "cycles_with_101_in_K / cycles_with_101",
+   "mine": [
+    746,
+    746
+   ],
+   "theirs": [
+    746,
+    746
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 16,
+   "field": "cycles_without_101_in_K (= doubled-word cycles in K + [0 in K])",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "cycles",
+   "mine": 1191,
+   "theirs": 1191,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "periodic_states",
+   "mine": 3112,
+   "theirs": 3112,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "g1_edges",
+   "mine": 18088,
+   "theirs": 18088,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "strong_components",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "closed_classes",
+   "mine": [
+    1190
+   ],
+   "theirs": [
+    1190
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "block_words",
+   "mine": 119,
+   "theirs": 119,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "block_words_in_one_component",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "K_equals_cycles_reachable_from_block_words",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "zero_state_in_K",
+   "mine": false,
+   "theirs": false,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "zero_state_in_degree",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "periods_without_101_in_K",
+   "mine": {},
+   "theirs": {},
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "periods_without_101_outside_K",
+   "mine": {
+    "1": 1
+   },
+   "theirs": {
+    "1": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "cycles_with_101_in_K / cycles_with_101",
+   "mine": [
+    1190,
+    1190
+   ],
+   "theirs": [
+    1190,
+    1190
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 17,
+   "field": "cycles_without_101_in_K (= doubled-word cycles in K + [0 in K])",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "cycles",
+   "mine": 2832,
+   "theirs": 2832,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "periodic_states",
+   "mine": 7677,
+   "theirs": 7677,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "g1_edges",
+   "mine": 48773,
+   "theirs": 48773,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "strong_components",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "closed_classes",
+   "mine": [
+    2831
+   ],
+   "theirs": [
+    2831
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "block_words",
+   "mine": 209,
+   "theirs": 209,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "block_words_in_one_component",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "K_equals_cycles_reachable_from_block_words",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "zero_state_in_K",
+   "mine": false,
+   "theirs": false,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "zero_state_in_degree",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "periods_without_101_in_K",
+   "mine": {},
+   "theirs": {},
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "periods_without_101_outside_K",
+   "mine": {
+    "1": 1
+   },
+   "theirs": {
+    "1": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "cycles_with_101_in_K / cycles_with_101",
+   "mine": [
+    2831,
+    2831
+   ],
+   "theirs": [
+    2831,
+    2831
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 19,
+   "field": "cycles_without_101_in_K (= doubled-word cycles in K + [0 in K])",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "cycles",
+   "mine": 4513,
+   "theirs": 4513,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "periodic_states",
+   "mine": 12498,
+   "theirs": 12498,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "g1_edges",
+   "mine": 86322,
+   "theirs": 86322,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "strong_components",
+   "mine": 37,
+   "theirs": 37,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "closed_classes",
+   "mine": [
+    4477
+   ],
+   "theirs": [
+    4477
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "block_words",
+   "mine": 277,
+   "theirs": 277,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "block_words_in_one_component",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "K_equals_cycles_reachable_from_block_words",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "zero_state_in_K",
+   "mine": false,
+   "theirs": false,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "zero_state_in_degree",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "periods_without_101_in_K",
+   "mine": {
+    "12": 10
+   },
+   "theirs": {
+    "12": 10
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "periods_without_101_outside_K",
+   "mine": {
+    "1": 1,
+    "12": 30,
+    "6": 5
+   },
+   "theirs": {
+    "1": 1,
+    "6": 5,
+    "12": 30
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "cycles_with_101_in_K / cycles_with_101",
+   "mine": [
+    4467,
+    4467
+   ],
+   "theirs": [
+    4467,
+    4467
+   ],
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": 20,
+   "field": "cycles_without_101_in_K (= doubled-word cycles in K + [0 in K])",
+   "mine": 10,
+   "theirs": 10,
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": "3..20",
+   "field": "periodic states with empty frozen set (L9 counts)",
+   "mine": {
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 7,
+    "7": 1,
+    "8": 1,
+    "9": 1,
+    "10": 31,
+    "11": 1,
+    "12": 31,
+    "13": 1,
+    "14": 127,
+    "15": 1,
+    "16": 1,
+    "17": 1,
+    "18": 511,
+    "19": 1,
+    "20": 511
+   },
+   "theirs": {
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 7,
+    "7": 1,
+    "8": 1,
+    "9": 1,
+    "10": 31,
+    "11": 1,
+    "12": 31,
+    "13": 1,
+    "14": 127,
+    "15": 1,
+    "16": 1,
+    "17": 1,
+    "18": 511,
+    "19": 1,
+    "20": 511
+   },
+   "agree": true
+  },
+  {
+   "rule": 94,
+   "n": "w=1..22",
+   "field": "live window states (L8)",
+   "mine": {
+    "2": [
+     "00",
+     "11"
+    ],
+    "4": [
+     "0000",
+     "1001",
+     "1111"
+    ],
+    "5": [
+     "00111",
+     "11100"
+    ],
+    "8": [
+     "00111100",
+     "11100111"
+    ],
+    "11": [
+     "00111100111",
+     "11100111100"
+    ],
+    "14": [
+     "00111100111100",
+     "11100111100111"
+    ],
+    "17": [
+     "00111100111100111",
+     "11100111100111100"
+    ],
+    "20": [
+     "00111100111100111100",
+     "11100111100111100111"
+    ]
+   },
+   "theirs": {
+    "2": [
+     "00",
+     "11"
+    ],
+    "4": [
+     "0000",
+     "1001",
+     "1111"
+    ],
+    "5": [
+     "00111",
+     "11100"
+    ],
+    "8": [
+     "00111100",
+     "11100111"
+    ],
+    "11": [
+     "00111100111",
+     "11100111100"
+    ],
+    "14": [
+     "00111100111100",
+     "11100111100111"
+    ],
+    "17": [
+     "00111100111100111",
+     "11100111100111100"
+    ],
+    "20": [
+     "00111100111100111100",
+     "11100111100111100111"
+    ]
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "cycles",
+   "mine": 1,
+   "theirs": 1,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "periodic_states",
+   "mine": 1,
+   "theirs": 1,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "g1_edges",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "closed_classes",
+   "mine": [
+    1
+   ],
+   "theirs": [
+    1
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "zero_in_the_closed_class",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "domain_cycles_in_K",
+   "mine": "0 of 0",
+   "theirs": "0 of 0",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "cycles_with_111_in_K",
+   "mine": "0 of 0",
+   "theirs": "0 of 0",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "codes_on_K",
+   "mine": [
+    0
+   ],
+   "theirs": [
+    0
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "c_of_domain_cycles",
+   "mine": [],
+   "theirs": [],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "c_of_cycles_with_111",
+   "mine": [],
+   "theirs": [],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "cycles_with_111_through_a_carrier_word",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "one_parity_cycles_in_K (without {0})",
+   "mine": "0 of 0",
+   "theirs": "0 of 0",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "cycles_by_kind",
+   "mine": {
+    "zero": 1
+   },
+   "theirs": {
+    "zero": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "cycles",
+   "mine": 7,
+   "theirs": 7,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "periodic_states",
+   "mine": 19,
+   "theirs": 19,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "g1_edges",
+   "mine": 33,
+   "theirs": 33,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "closed_classes",
+   "mine": [
+    7
+   ],
+   "theirs": [
+    7
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "zero_in_the_closed_class",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "domain_cycles_in_K",
+   "mine": "3 of 3",
+   "theirs": "3 of 3",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "cycles_with_111_in_K",
+   "mine": "0 of 0",
+   "theirs": "0 of 0",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "c_of_domain_cycles",
+   "mine": [
+    2
+   ],
+   "theirs": [
+    2
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "c_of_cycles_with_111",
+   "mine": [],
+   "theirs": [],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "cycles_with_111_through_a_carrier_word",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "one_parity_cycles_in_K (without {0})",
+   "mine": "3 of 3",
+   "theirs": "3 of 3",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "max_increase_of_c_along_a_G1_edge",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "cycles_by_kind",
+   "mine": {
+    "domain": 3,
+    "zero": 1,
+    "one_parity": 3
+   },
+   "theirs": {
+    "domain": 3,
+    "one_parity": 3,
+    "zero": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "cycles",
+   "mine": 10,
+   "theirs": 10,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "periodic_states",
+   "mine": 81,
+   "theirs": 81,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "g1_edges",
+   "mine": 73,
+   "theirs": 73,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "closed_classes",
+   "mine": [
+    1
+   ],
+   "theirs": [
+    1
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "zero_in_the_closed_class",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "domain_cycles_in_K",
+   "mine": "0 of 8",
+   "theirs": "0 of 8",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "cycles_with_111_in_K",
+   "mine": "0 of 1",
+   "theirs": "0 of 1",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "codes_on_K",
+   "mine": [
+    0
+   ],
+   "theirs": [
+    0
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "c_of_domain_cycles",
+   "mine": [
+    2
+   ],
+   "theirs": [
+    2
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "c_of_cycles_with_111",
+   "mine": [
+    4
+   ],
+   "theirs": [
+    4
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "cycles_with_111_through_a_carrier_word",
+   "mine": 1,
+   "theirs": 1,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "one_parity_cycles_in_K (without {0})",
+   "mine": "0 of 0",
+   "theirs": "0 of 0",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "max_increase_of_c_along_a_G1_edge",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "cycles_by_kind",
+   "mine": {
+    "domain": 8,
+    "with_111": 1,
+    "zero": 1
+   },
+   "theirs": {
+    "domain": 8,
+    "with_111": 1,
+    "zero": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "cycles",
+   "mine": 19,
+   "theirs": 19,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "periodic_states",
+   "mine": 276,
+   "theirs": 276,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "g1_edges",
+   "mine": 259,
+   "theirs": 259,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "closed_classes",
+   "mine": [
+    18
+   ],
+   "theirs": [
+    18
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "zero_in_the_closed_class",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "domain_cycles_in_K",
+   "mine": "12 of 12",
+   "theirs": "12 of 12",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "cycles_with_111_in_K",
+   "mine": "0 of 1",
+   "theirs": "0 of 1",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "c_of_domain_cycles",
+   "mine": [
+    2
+   ],
+   "theirs": [
+    2
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "c_of_cycles_with_111",
+   "mine": [
+    6
+   ],
+   "theirs": [
+    6
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "cycles_with_111_through_a_carrier_word",
+   "mine": 1,
+   "theirs": 1,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "one_parity_cycles_in_K (without {0})",
+   "mine": "5 of 5",
+   "theirs": "5 of 5",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "max_increase_of_c_along_a_G1_edge",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "cycles_by_kind",
+   "mine": {
+    "domain": 12,
+    "with_111": 1,
+    "zero": 1,
+    "one_parity": 5
+   },
+   "theirs": {
+    "domain": 12,
+    "one_parity": 5,
+    "with_111": 1,
+    "zero": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "cycles",
+   "mine": 64,
+   "theirs": 64,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "periodic_states",
+   "mine": 847,
+   "theirs": 847,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "g1_edges",
+   "mine": 1665,
+   "theirs": 1665,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "closed_classes",
+   "mine": [
+    64
+   ],
+   "theirs": [
+    64
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "zero_in_the_closed_class",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "domain_cycles_in_K",
+   "mine": "54 of 54",
+   "theirs": "54 of 54",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "cycles_with_111_in_K",
+   "mine": "0 of 0",
+   "theirs": "0 of 0",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "c_of_domain_cycles",
+   "mine": [
+    2,
+    4
+   ],
+   "theirs": [
+    2,
+    4
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "c_of_cycles_with_111",
+   "mine": [],
+   "theirs": [],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "cycles_with_111_through_a_carrier_word",
+   "mine": 0,
+   "theirs": 0,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "one_parity_cycles_in_K (without {0})",
+   "mine": "9 of 9",
+   "theirs": "9 of 9",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "max_increase_of_c_along_a_G1_edge",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "cycles_by_kind",
+   "mine": {
+    "domain": 54,
+    "zero": 1,
+    "one_parity": 9
+   },
+   "theirs": {
+    "domain": 54,
+    "one_parity": 9,
+    "zero": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "cycles",
+   "mine": 76,
+   "theirs": 76,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "periodic_states",
+   "mine": 2871,
+   "theirs": 2871,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "g1_edges",
+   "mine": 2493,
+   "theirs": 2493,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "closed_classes",
+   "mine": [
+    76
+   ],
+   "theirs": [
+    76
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "zero_in_the_closed_class",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "domain_cycles_in_K",
+   "mine": "64 of 64",
+   "theirs": "64 of 64",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "cycles_with_111_in_K",
+   "mine": "2 of 2",
+   "theirs": "2 of 2",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "c_of_domain_cycles",
+   "mine": [
+    2,
+    4
+   ],
+   "theirs": [
+    2,
+    4
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "c_of_cycles_with_111",
+   "mine": [
+    6
+   ],
+   "theirs": [
+    6
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "cycles_with_111_through_a_carrier_word",
+   "mine": 1,
+   "theirs": 1,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "one_parity_cycles_in_K (without {0})",
+   "mine": "9 of 9",
+   "theirs": "9 of 9",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "max_increase_of_c_along_a_G1_edge",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "cycles_by_kind",
+   "mine": {
+    "domain": 64,
+    "with_111": 2,
+    "zero": 1,
+    "one_parity": 9
+   },
+   "theirs": {
+    "domain": 64,
+    "one_parity": 9,
+    "with_111": 2,
+    "zero": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "cycles",
+   "mine": 552,
+   "theirs": 552,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "periodic_states",
+   "mine": 8785,
+   "theirs": 8785,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "g1_edges",
+   "mine": 32240,
+   "theirs": 32240,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "closed_classes",
+   "mine": [
+    1
+   ],
+   "theirs": [
+    1
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "zero_in_the_closed_class",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "domain_cycles_in_K",
+   "mine": "0 of 548",
+   "theirs": "0 of 548",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "cycles_with_111_in_K",
+   "mine": "0 of 3",
+   "theirs": "0 of 3",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "codes_on_K",
+   "mine": [
+    0
+   ],
+   "theirs": [
+    0
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "c_of_domain_cycles",
+   "mine": [
+    2,
+    4
+   ],
+   "theirs": [
+    2,
+    4
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "c_of_cycles_with_111",
+   "mine": [
+    8
+   ],
+   "theirs": [
+    8
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "cycles_with_111_through_a_carrier_word",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "one_parity_cycles_in_K (without {0})",
+   "mine": "0 of 0",
+   "theirs": "0 of 0",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "max_increase_of_c_along_a_G1_edge",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "cycles_by_kind",
+   "mine": {
+    "domain": 548,
+    "with_111": 3,
+    "zero": 1
+   },
+   "theirs": {
+    "domain": 548,
+    "with_111": 3,
+    "zero": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "cycles",
+   "mine": 567,
+   "theirs": 567,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "periodic_states",
+   "mine": 28387,
+   "theirs": 28387,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "g1_edges",
+   "mine": 33364,
+   "theirs": 33364,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "closed_classes",
+   "mine": [
+    566
+   ],
+   "theirs": [
+    566
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "zero_in_the_closed_class",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "domain_cycles_in_K",
+   "mine": "526 of 526",
+   "theirs": "526 of 526",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "cycles_with_111_in_K",
+   "mine": "0 of 1",
+   "theirs": "0 of 1",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "c_of_domain_cycles",
+   "mine": [
+    2,
+    4,
+    6
+   ],
+   "theirs": [
+    2,
+    4,
+    6
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "c_of_cycles_with_111",
+   "mine": [
+    10
+   ],
+   "theirs": [
+    10
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "cycles_with_111_through_a_carrier_word",
+   "mine": 1,
+   "theirs": 1,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "one_parity_cycles_in_K (without {0})",
+   "mine": "39 of 39",
+   "theirs": "39 of 39",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "max_increase_of_c_along_a_G1_edge",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "cycles_by_kind",
+   "mine": {
+    "domain": 526,
+    "with_111": 1,
+    "zero": 1,
+    "one_parity": 39
+   },
+   "theirs": {
+    "domain": 526,
+    "one_parity": 39,
+    "with_111": 1,
+    "zero": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "field": "cycles",
+   "mine": 2816,
+   "theirs": 2816,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "field": "periodic_states",
+   "mine": 88956,
+   "theirs": 88956,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "field": "g1_edges",
+   "mine": 191625,
+   "theirs": 191625,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "field": "closed_classes",
+   "mine": [
+    2815
+   ],
+   "theirs": [
+    2815
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "field": "zero_in_the_closed_class",
+   "mine": true,
+   "theirs": true,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "field": "domain_cycles_in_K",
+   "mine": "2766 of 2766",
+   "theirs": "2766 of 2766",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "field": "cycles_with_111_in_K",
+   "mine": "3 of 4",
+   "theirs": "3 of 4",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "field": "codes_on_K",
+   "mine": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "theirs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "field": "c_of_domain_cycles",
+   "mine": [
+    2,
+    4,
+    6
+   ],
+   "theirs": [
+    2,
+    4,
+    6
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "field": "c_of_cycles_with_111",
+   "mine": [
+    8,
+    12
+   ],
+   "theirs": [
+    8,
+    12
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "field": "cycles_with_111_through_a_carrier_word",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "field": "one_parity_cycles_in_K (without {0})",
+   "mine": "45 of 45",
+   "theirs": "45 of 45",
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "field": "max_increase_of_c_along_a_G1_edge",
+   "mine": 2,
+   "theirs": 2,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 20,
+   "field": "cycles_by_kind",
+   "mine": {
+    "domain": 2766,
+    "with_111": 4,
+    "zero": 1,
+    "one_parity": 45
+   },
+   "theirs": {
+    "domain": 2766,
+    "one_parity": 45,
+    "with_111": 4,
+    "zero": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": "4..18",
+   "field": "domain states (M3 counts)",
+   "mine": {
+    "4": 0,
+    "6": 12,
+    "8": 64,
+    "10": 240,
+    "12": 816,
+    "14": 2688,
+    "16": 8704,
+    "18": 27840
+   },
+   "theirs": {
+    "4": 0,
+    "6": 12,
+    "8": 64,
+    "10": 240,
+    "12": 816,
+    "14": 2688,
+    "16": 8704,
+    "18": 27840
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "periodic states by kind",
+   "mine": {
+    "zero": 1,
+    "one_parity": 0,
+    "domain": 0,
+    "with_111": 0
+   },
+   "theirs": {
+    "zero": 1,
+    "one_parity": 0,
+    "domain": 0,
+    "with_111": 0
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 6,
+   "field": "periodic states by kind",
+   "mine": {
+    "zero": 1,
+    "one_parity": 6,
+    "domain": 12,
+    "with_111": 0
+   },
+   "theirs": {
+    "zero": 1,
+    "one_parity": 6,
+    "domain": 12,
+    "with_111": 0
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "periodic states by kind",
+   "mine": {
+    "zero": 1,
+    "one_parity": 0,
+    "domain": 64,
+    "with_111": 16
+   },
+   "theirs": {
+    "zero": 1,
+    "one_parity": 0,
+    "domain": 64,
+    "with_111": 16
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 10,
+   "field": "periodic states by kind",
+   "mine": {
+    "zero": 1,
+    "one_parity": 30,
+    "domain": 240,
+    "with_111": 5
+   },
+   "theirs": {
+    "zero": 1,
+    "one_parity": 30,
+    "domain": 240,
+    "with_111": 5
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 12,
+   "field": "periodic states by kind",
+   "mine": {
+    "zero": 1,
+    "one_parity": 30,
+    "domain": 816,
+    "with_111": 0
+   },
+   "theirs": {
+    "zero": 1,
+    "one_parity": 30,
+    "domain": 816,
+    "with_111": 0
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 14,
+   "field": "periodic states by kind",
+   "mine": {
+    "zero": 1,
+    "one_parity": 126,
+    "domain": 2688,
+    "with_111": 56
+   },
+   "theirs": {
+    "zero": 1,
+    "one_parity": 126,
+    "domain": 2688,
+    "with_111": 56
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "periodic states by kind",
+   "mine": {
+    "zero": 1,
+    "one_parity": 0,
+    "domain": 8704,
+    "with_111": 80
+   },
+   "theirs": {
+    "zero": 1,
+    "one_parity": 0,
+    "domain": 8704,
+    "with_111": 80
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 18,
+   "field": "periodic states by kind",
+   "mine": {
+    "zero": 1,
+    "one_parity": 510,
+    "domain": 27840,
+    "with_111": 36
+   },
+   "theirs": {
+    "zero": 1,
+    "one_parity": 510,
+    "domain": 27840,
+    "with_111": 36
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "k_c_from_the_definition",
+   "mine": [
+    0,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    2
+   ],
+   "theirs": [
+    0,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    2
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "V_from_zero_hist",
+   "mine": {
+    "0": 1
+   },
+   "theirs": {
+    "0": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "gamma_by_kind",
+   "mine": {
+    "zero": [
+     0
+    ]
+   },
+   "theirs": {
+    "zero": [
+     0
+    ]
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 4,
+   "field": "R_from_zero_to_code",
+   "mine": [
+    0,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    2
+   ],
+   "theirs": [
+    0,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    2
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "k_c_from_the_definition",
+   "mine": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "theirs": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "V_from_zero_hist",
+   "mine": {
+    "0": 1,
+    "2": 8,
+    "3": 1
+   },
+   "theirs": {
+    "0": 1,
+    "2": 8,
+    "3": 1
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "gamma_by_kind",
+   "mine": {
+    "zero": [
+     9
+    ],
+    "domain": [
+     10
+    ],
+    "with_111": [
+     10
+    ]
+   },
+   "theirs": {
+    "domain": [
+     10
+    ],
+    "with_111": [
+     10
+    ],
+    "zero": [
+     9
+    ]
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 8,
+   "field": "R_from_zero_to_code",
+   "mine": [
+    0,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    2
+   ],
+   "theirs": [
+    0,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    2
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "k_c_from_the_definition",
+   "mine": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2
+   ],
+   "theirs": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "V_from_zero_hist",
+   "mine": {
+    "0": 1,
+    "2": 88,
+    "3": 392,
+    "4": 68,
+    "5": 3
+   },
+   "theirs": {
+    "0": 1,
+    "2": 88,
+    "3": 392,
+    "4": 68,
+    "5": 3
+   },
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "R_from_zero_to_code",
+   "mine": [
+    0,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    2
+   ],
+   "theirs": [
+    0,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    2
+   ],
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "T2_cycles",
+   "mine": 88,
+   "theirs": 88,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "cycles_reachable_from_T2",
+   "mine": 549,
+   "theirs": 549,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "gamma of {0}",
+   "mine": 551,
+   "theirs": 551,
+   "agree": true
+  },
+  {
+   "rule": 26,
+   "n": 16,
+   "field": "gamma by kind (own: 16 of 552 roots)",
+   "mine": {
+    "zero": [
+     551
+    ],
+    "domain": [
+     552
+    ],
+    "with_111": [
+     553
+    ]
+   },
+   "theirs": {
+    "domain": [
+     552
+    ],
+    "with_111": [
+     553
+    ],
+    "zero": [
+     551
+    ]
+   },
+   "agree": true
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+--- rule 154
+{'rule': 154, 'n': 3, 'm': 3, 'n_closed': 1, 'closed_sizes': [3], 'strongly_connected': True, 'gmin_minus_m': -1, 'S_size': 3, 'kv': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'G1_is_V1': True, 'claim': True, 'sec': 0.0}
+{'rule': 154, 'n': 4, 'm': 4, 'n_closed': 1, 'closed_sizes': [1], 'strongly_connected': False, 'gmin_minus_m': -1, 'S_size': 1, 'kv': [0, 1, 1, 1, 1, 1, 1, 1], 'kstar': 1, 'G1_is_V1': True, 'claim': True, 'sec': 0.0}
+{'rule': 154, 'n': 5, 'm': 4, 'n_closed': 1, 'closed_sizes': [4], 'strongly_connected': True, 'gmin_minus_m': -1, 'S_size': 4, 'kv': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'G1_is_V1': True, 'claim': True, 'sec': 0.0}
+{'rule': 154, 'n': 6, 'm': 12, 'n_closed': 1, 'closed_sizes': [12], 'strongly_connected': True, 'gmin_minus_m': -1, 'S_size': 12, 'kv': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'G1_is_V1': True, 'claim': True, 'sec': 0.0}
+{'rule': 154, 'n': 7, 'm': 8, 'n_closed': 1, 'closed_sizes': [8], 'strongly_connected': True, 'gmin_minus_m': -1, 'S_size': 8, 'kv': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'G1_is_V1': True, 'claim': True, 'sec': 0.0}
+{'rule': 154, 'n': 8, 'm': 31, 'n_closed': 1, 'closed_sizes': [1], 'strongly_connected': False, 'gmin_minus_m': -1, 'S_size': 1, 'kv': [0, 1, 1, 1, 1, 1, 1, 1], 'kstar': 1, 'G1_is_V1': True, 'claim': True, 'sec': 1.0}
+{'rule': 154, 'n': 9, 'm': 18, 'n_closed': 1, 'closed_sizes': [18], 'strongly_connected': True, 'gmin_minus_m': -1, 'S_size': 18, 'kv': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'G1_is_V1': True, 'claim': True, 'sec': 0.1}
+{'rule': 154, 'n': 10, 'm': 62, 'n_closed': 1, 'closed_sizes': [62], 'strongly_connected': True, 'gmin_minus_m': -1, 'S_size': 62, 'kv': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'G1_is_V1': True, 'claim': True, 'sec': 23.4}
+{'rule': 154, 'n': 11, 'm': 50, 'n_closed': 1, 'closed_sizes': [50], 'strongly_connected': True, 'gmin_minus_m': -1, 'S_size': 50, 'kv': [0, 0, 0, 0, 0, 0, 0, 0], 'kstar': 0, 'G1_is_V1': True, 'claim': True, 'sec': 5.0}
+{'rule': 154, 'n': 12, 'm': 308, 'n_closed': 1, 'closed_sizes': [308], 'strongly_connected': True, 'claim_G1_only': True, 'sec': 0.0}
+{'rule': 154, 'n': 13, 'm': 156, 'n_closed': 1, 'closed_sizes': [156], 'strongly_connected': True, 'claim_G1_only': True, 'sec': 0.0}
+{'rule': 154, 'n': 14, 'm': 564, 'n_closed': 1, 'closed_sizes': [564], 'strongly_connected': True, 'claim_G1_only': True, 'sec': 0.1}
+--- rule 94
+{'rule': 94, 'n': 3, 'm': 4, 'n_closed': 1, 'closed_sizes': [1], 'strongly_connected': False, 'gmin_minus_m': -1, 'S_size': 1, 'kv': [0, 1, 1, 1, 1, 1, 1, 1], 'kstar': 1, 'G1_is_V1': True, 'crystal_fixed': True, 'closed_are_crystals': False, 'flip_returns_in_3': False, 'S_is_A': False, 'kv_claim': False, 'sec': 0.0}
+{'rule': 94, 'n': 4, 'm': 3, 'n_closed': 1, 'closed_sizes': [2], 'strongly_connected': False, 'gmin_minus_m': -1, 'S_size': 2, 'kv': [1, 1, 0, 1, 1, 0, 1, 1], 'kstar': 1, 'G1_is_V1': True, 'S_states': ['0101', '1010'], 'closed_states': ['0101', '1010'], 'sec': 0.0}
+{'rule': 94, 'n': 6, 'm': 9, 'n_closed': 3, 'closed_sizes': [1, 1, 1], 'strongly_connected': False, 'gmin_minus_m': 1, 'S_size': 3, 'kv': [1, 1, 1, 0, 1, 0, 0, 1], 'kstar': 1, 'G1_is_V1': True, 'crystal_fixed': True, 'closed_are_crystals': True, 'flip_returns_in_3': True, 'S_is_A': True, 'kv_claim': True, 'sec': 0.0}
+{'rule': 94, 'n': 9, 'm': 31, 'n_closed': 3, 'closed_sizes': [1, 1, 1], 'strongly_connected': False, 'gmin_minus_m': 1, 'S_size': 3, 'kv': [1, 1, 1, 0, 1, 0, 0, 1], 'kstar': 1, 'G1_is_V1': True, 'crystal_fixed': True, 'closed_are_crystals': True, 'flip_returns_in_3': True, 'S_is_A': True, 'kv_claim': True, 'sec': 1.0}
+{'rule': 94, 'n': 12, 'm': 147, 'n_closed': 3, 'closed_sizes': [1, 1, 1], 'strongly_connected': False, 'crystal_fixed': True, 'closed_are_crystals': True, 'flip_returns_in_3': True, 'sec': 0.0}
+--- healing time, Prop 3.22
+43 4 4 {'left': [1], 'right': [1]} n/2-1 = 1
+43 8 4 {'left': [1], 'right': [3]} n/2-1 = 3
+43 12 4 {'left': [1], 'right': [5]} n/2-1 = 5
+43 16 4 {'left': [1], 'right': [7]} n/2-1 = 7
+43 20 4 {'left': [1], 'right': [9]} n/2-1 = 9
+142 4 4 {'left': [1], 'right': [1]} n/2-1 = 1
+142 8 4 {'left': [3], 'right': [1]} n/2-1 = 3
+142 12 4 {'left': [5], 'right': [1]} n/2-1 = 5
+142 16 4 {'left': [7], 'right': [1]} n/2-1 = 7
+142 20 4 {'left': [9], 'right': [1]} n/2-1 = 9

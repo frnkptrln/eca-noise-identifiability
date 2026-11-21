@@ -1,0 +1,153 @@
+{
+ "L7": {
+  "statement": "Lemma 7 (windows): boundary cells are frozen ones, width <= n-3, F^t = identity on the frozen set and = phi^t on every window, t = 1..10; every state with non-empty frozen set that is not fully frozen",
+  "n": "5..14",
+  "cases": 26454,
+  "violations": 0
+ },
+ "L8": {
+  "statement": "Lemma 8 (live window orbits): the periodic unfrozen orbits of the window map are {A_w, B_w} for w = 2 mod 3, the 3-cycle 0000, 1001, 1111 for w = 4, and none otherwise; all 2^w window states",
+  "n": "w = 1..22",
+  "cases": 8388606,
+  "violations": 0,
+  "live_orbits": {
+   "2": [
+    [
+     "00",
+     "11"
+    ]
+   ],
+   "4": [
+    [
+     "0000",
+     "1001",
+     "1111"
+    ]
+   ],
+   "5": [
+    [
+     "00111",
+     "11100"
+    ]
+   ],
+   "8": [
+    [
+     "00111100",
+     "11100111"
+    ]
+   ],
+   "11": [
+    [
+     "00111100111",
+     "11100111100"
+    ]
+   ],
+   "14": [
+    [
+     "00111100111100",
+     "11100111100111"
+    ]
+   ],
+   "17": [
+    [
+     "00111100111100111",
+     "11100111100111100"
+    ]
+   ],
+   "20": [
+    [
+     "00111100111100111100",
+     "11100111100111100111"
+    ]
+   ]
+  }
+ },
+ "L7c": {
+  "statement": "Lemma 7(c): a state with non-empty frozen set is periodic iff all its window contents are phi-periodic; every state with non-empty frozen set",
+  "n": "5..16",
+  "cases": 112255,
+  "violations": 0
+ },
+ "L9": {
+  "statement": "Lemma 9: a periodic state with empty frozen set is 0 or has only runs of even length; their number is 1 for odd n and 2(2^(n/2 - 2^e) - 1) + 1 for even n = 2^(e+1) q, q odd (n >= 5); every periodic state",
+  "n": "3..20",
+  "cases": 1230,
+  "violations": 0,
+  "counts": {
+   "3": 1,
+   "4": 1,
+   "5": 1,
+   "6": 7,
+   "7": 1,
+   "8": 1,
+   "9": 1,
+   "10": 31,
+   "11": 1,
+   "12": 31,
+   "13": 1,
+   "14": 127,
+   "15": 1,
+   "16": 1,
+   "17": 1,
+   "18": 511,
+   "19": 1,
+   "20": 511
+  }
+ },
+ "T1": {
+  "statement": "Theorem 1 (periodic states): a state is periodic iff it is 0, or a doubled word with periodic half word, or has non-empty frozen set and only live windows; every state",
+  "n": "3..16",
+  "cases": 131064,
+  "violations": 0
+ },
+ "T1b": {
+  "statement": "Theorem 1, direction \"periodic implies the description\"; every periodic state",
+  "n": "17..20",
+  "cases": 28285,
+  "violations": 0
+ },
+ "L10": {
+  "statement": "Lemma 10 (reversible freezing): in every state of the cycle whose first window is not 1001, the flip named in the lemma gives a periodic state of another cycle with a strictly larger frozen set; every cycle with non-empty frozen set that is not a block word",
+  "n": "5..20",
+  "cases": 11356,
+  "violations": 0
+ },
+ "L11": {
+  "statement": "Lemma 11 (swap, both directions): x + e_(p+2) and x + e_(p+3) form a 2-cycle and x + e_(p+2) + e_(p+3) is the block word with the two blocks exchanged; every block word, every pair of consecutive blocks short, long",
+  "n": "5..24",
+  "cases": 7343,
+  "violations": 0
+ },
+ "L12": {
+  "statement": "Lemma 12 (merge): F(x + e_(p+3)) is the block word with the three short blocks replaced by two long ones; every block word, every triple of consecutive short blocks",
+  "n": "6..24",
+  "cases": 5543,
+  "violations": 0
+ },
+ "L13": {
+  "statement": "Lemma 13 (split): x + e_(p+2) has period 2; five steps after flipping the cell p+6 of its other state the block word with short, long, long replaced by four short blocks is reached; every block word, every occurrence of short, long, long",
+  "n": "8..24",
+  "cases": 3156,
+  "violations": 0
+ },
+ "L16": {
+  "statement": "Lemma 16 (basin of 0): if 8 does not divide n, the states whose orbit ends in 0 are exactly 0, 1^n and the cyclic words over the blocks 001 and 0011 (case = one state of the basin of 0, or one such word)",
+  "n": "5..20 (8 not dividing n)",
+  "cases": 544,
+  "violations": 0
+ },
+ "LW": {
+  "statement": "Lemma W: every cell outside the window is frozen, F^t = identity outside and = phi^t inside, t = 1..6; every block word, every admissible window of width <= 7, every content (case = one content)",
+  "n": "5..13",
+  "cases": 62082,
+  "violations": 0
+ },
+ "L16a": {
+  "statement": "Lemma 16 (i), (ii), (iii): F(x) = 0 iff x is 0 or 1^n; F(x) = 1^n iff x is a word over 001 and 0011; F(z) is such a word only if 8 divides n; every state (case = one state)",
+  "n": "3..16",
+  "cases": 131064,
+  "violations": 0
+ },
+ "all_passed": true,
+ "cpu_s": 88.01
+}

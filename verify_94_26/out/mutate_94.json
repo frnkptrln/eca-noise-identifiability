@@ -1,0 +1,68 @@
+{
+ "T1 without 1001 live": [
+  [
+   "T1",
+   85
+  ],
+  [
+   "T1p6",
+   0
+  ],
+  [
+   "L9n",
+   0
+  ]
+ ],
+ "L8 without 1001 live": [
+  [
+   "L8",
+   1
+  ]
+ ],
+ "T1 with 11111 live": [
+  [
+   "T1",
+   41
+  ],
+  [
+   "T1p6",
+   41
+  ],
+  [
+   "L9n",
+   0
+  ]
+ ],
+ "T1 without doubled words": [
+  [
+   "T1",
+   66
+  ],
+  [
+   "T1p6",
+   0
+  ],
+  [
+   "L9n",
+   0
+  ]
+ ],
+ "L10 with A replaced by B": [
+  [
+   "L10",
+   263
+  ]
+ ],
+ "L15 with a wrong z": [
+  [
+   "L15",
+   15
+  ]
+ ],
+ "L16 with a wrong word set": [
+  [
+   "L16",
+   13
+  ]
+ ]
+}

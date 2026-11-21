@@ -1,0 +1,23 @@
+ok    (1) n=14 fraction of states on no cycle: 0.00781250 from Lemma 3.7 (E u O has 255 states, 127 periodic under rule 90), 0.00781250 directly from F
+ok    (1) n=16 fraction of states on no cycle: 0.00778198 from Lemma 3.7 (E u O has 511 states, 1 periodic under rule 90), 0.00778198 directly from F
+ok    (1) n=18 fraction of states on no cycle: 0.00195312 from Lemma 3.7 (E u O has 1023 states, 511 periodic under rule 90), 0.00195312 directly from F
+ok    (1) n=20 fraction of states on no cycle: 0.00146484 from Lemma 3.7 (E u O has 2047 states, 511 periodic under rule 90), 0.00146484 directly from F
+ok    (1) n=22 fraction of states on no cycle: 0.00048828 from Lemma 3.7 (E u O has 4095 states, 2047 periodic under rule 90), 0.00048828 directly from F
+ok    (1) n=24 fraction of states on no cycle: 0.00045776 from Lemma 3.7 (E u O has 8191 states, 511 periodic under rule 90), 0.00045776 directly from F
+ok    (1) value quoted from Zhu and Richard at n=22: 0.00048828; fraction given by Lemma 3.7: 0.00048828
+ok    (1) value quoted from Zhu and Richard at n=24: 0.00045776; fraction given by Lemma 3.7: 0.00045776
+ok    (1) n = 13..27: largest fraction 0.007812 (at n = 14), bound quoted 0.01; odd n > 24 taken as 0 by Lemma 3.6
+ok    (2) rule 60, n = 4..16: k* >= 1 exactly at n = [4, 8, 16] (powers of two: [4, 8, 16]); k* there: [1, 1, 1] (paper: 1 at n = 8, 16); number of cycles there: [1, 1, 1]
+ok    (2) rule 90, n = 4..16: k* >= 1 exactly at n = [4, 8, 16] (powers of two: [4, 8, 16]); k* there: [2, 2, 2] (paper: 2 at n = 8, 16); number of cycles there: [1, 1, 1]
+ok    (3) mirror image of rule 154 is rule 210; its complement (255 - N) is rule 45
+ok    (3) rule 45 is a bijection for odd n = 3..21 (every state periodic)
+ok    (4) rule 35, n = 8..16: k* >= 1 at n = [9, 12, 15]; list of the paper restricted to this range: [9, 12, 15]; selected cycles without 101 there: True
+ok    (4) rule 37, n = 8..16: k* = 0 at n = [11, 12]; list of the paper restricted to this range: [11, 12]
+ok    (4) rule 45, n = 8..16: k* >= 1 at n = [8]; list of the paper restricted to this range: [8]; k* = 0 at odd n: True
+ok    (4) rule 73, n = 8..16: k* >= 1 at n = [9]; list of the paper restricted to this range: [9]
+ok    (4) rule 122, n = 8..16: k* = 0 at n = [8, 12, 16]; list of the paper restricted to this range: [8, 12, 16]
+ok    (4) rule 22, n = 8..16: k* >= 1 at n = [8, 14, 15, 16]; list of the paper restricted to this range: [8, 14, 15, 16]; zero state selected alone there: True
+ok    (5) rule 94, 3 not dividing n, n = 5..20: {0} lies in K exactly at n = [5, 7, 8] (paper: in K for n = 5, 7, 8; proved not in K for n >= 10 with 8 not dividing n; computed not in K at n = 16)
+ok    (5) cycles of doubled words in K: 0 of 5 at n=10, 7 of 9 at n=14, 10 of 45 at n=20; paper: {10: (0, 5), 14: (7, 9), 20: (10, 45), 22: (0, 33)} (compared for n <= 20)
+ok    (6) classes under reflection and complementation: rule 43: [43, 113]; rule 142: [142, 212] (different classes); also rule 154: [154, 166, 180, 210], rule 94: [94, 133], rule 26: [26, 82, 167, 181]
+T09 PASS   CPU 3.2 s (Python) wall 46.0 s

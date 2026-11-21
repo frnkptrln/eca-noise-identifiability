@@ -1,0 +1,18 @@
+n =  3: 256 rules, 700 cycles in total, 255 rules with a unique closed class, 4160 random in-trees re-rooted
+n =  4: 256 rules, 976 cycles in total, 240 rules with a unique closed class, 4600 random in-trees re-rooted
+n =  5: 256 rules, 1230 cycles in total, 255 rules with a unique closed class, 4680 random in-trees re-rooted
+n =  6: 256 rules, 2022 cycles in total, 238 rules with a unique closed class, 5000 random in-trees re-rooted
+n =  7: 256 rules, 2596 cycles in total, 255 rules with a unique closed class, 4840 random in-trees re-rooted
+n =  8: 256 rules, 4592 cycles in total, 238 rules with a unique closed class, 4880 random in-trees re-rooted
+n =  9: 256 rules, 6533 cycles in total, 253 rules with a unique closed class, 4960 random in-trees re-rooted
+n = 10: 256 rules, 11564 cycles in total, 240 rules with a unique closed class, 5000 random in-trees re-rooted
+n = 11: 256 rules, 17408 cycles in total, 255 rules with a unique closed class, 4960 random in-trees re-rooted
+n = 12: 256 rules, 31636 cycles in total, 238 rules with a unique closed class, 5000 random in-trees re-rooted
+L2.2 failures: 0
+L2.3 failures: 0
+L2.4 failures: 0
+L2.5 failures: 0
+L2.6 failures: 0
+L2.7 failures: 0
+T2.8 failures: 0
+T01 PASS   n = 3..12, all 256 rules; CPU 9.2 s (Python) wall 18.5 s

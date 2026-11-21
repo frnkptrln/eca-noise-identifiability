@@ -1,0 +1,12 @@
+{
+ "walls_rule18_one_step": {
+  "n": "4..16",
+  "cases": 18795,
+  "violations": 0
+ },
+ "carrier_c_formula": {
+  "n": "6..30 even",
+  "cases": 55,
+  "violations": 0
+ }
+}
