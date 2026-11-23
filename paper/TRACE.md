@@ -420,4 +420,8 @@ Build. The PDF of this pass was built by `build.sh` with a full TeX installation
 31-page PDF of commit bdf477b. The two figures were written again by `make_figures.py` (same simulation, another
 version of matplotlib). `test_paper.py`: 12 passed.
 
+23 November 2026: the DOI of the paper's own record (10.5281/zenodo.24482170, reserved by the author) was added
+under the date on the first page and under "Code and data", where the repository version that contains the folder
+`paper/` is now named (0.4). No other change of the text; PDF rebuilt.
+
 Claude
