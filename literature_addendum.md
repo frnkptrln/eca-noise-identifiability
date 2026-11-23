@@ -368,6 +368,54 @@ search (result pages, not the papers themselves): Pitman and Tang is in Bernoull
 of the paper at Project Euclid); the author of Physica D 68 (1993) 416-426 is Nino Boccara. The given name of
 Fukś is Henryk (author line of arXiv:nlin/0502037v1, read on 18 November).
 
+## Update of 23 November 2026 (attempt to reach the texts marked "not read")
+
+Written by Claude, the reader outside the sessions. Aim: to read the texts that the paper cites as not read or as
+seen through an abstract or excerpt only. Result: one related text reached through a tool, none of the texts
+themselves.
+
+**Reached, through a tool only.** Nobe and Yura, "On the integrability of reversible elementary cellular automata"
+(in Japanese), RIMS Kôkyûroku 1541 (2007), pp. 178-191, open at
+https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/1541-13.pdf. This is not one of the two texts of
+Nobe and Yura in the list of references (J. Phys. A 37, 2004, and J. Phys. A 40, 2007); it is a proceedings text by
+the same authors on the subject of the second. How it was seen: a fetch tool answered four questions against the
+text of the PDF (extracted by character recognition). I did not see the pages; what follows is the tool's report,
+and the layout of the table was reported as approximate.
+
+* Theorem 2, p. 180: there are 16 reversible elementary rules with periodic boundary; attributed there to their
+  reference [13], which is the paper of 2004.
+* Table 1, p. 180: rules 150 and 105 for N = 1, 2 (mod 3); rules 154, 166, 180, 210 and 45, 75, 89, 101 for odd N;
+  rules 170, 240, 15, 85 for all N (one further row was garbled in the extraction).
+* Rule 154, pp. 180-183: analysed for odd N only. The configuration is cut into blocks; inside a block the evolution
+  is linear, written with the polynomial 1 + x^2 over the field with two elements; the positions of the cells are
+  separated by parity. Proposition 1, p. 183: the period of a configuration divides 2^(s+1) N, with s the integer
+  part of the binary logarithm of the largest block length. Rule 90 is not named.
+* Even N for rule 154 is not analysed; nothing on states that lie on no cycle.
+* Table 2, p. 189: the rules are classed as trivial, additive, linearizable or unknown; 45, 75, 89, 101 are
+  "unknown".
+
+Consequence: that rule 154 is reversible for odd N is now seen in a text of Nobe and Yura themselves (through a
+tool), with the attribution to their paper of 2004; it was an abstract and a search excerpt before. What Lemma 3.7
+of the paper says for even N is not in this text. The paper's entries for Nobe and Yura stay "not read".
+
+**Not reached** (23 November 2026, tools of this conversation):
+
+| text | why |
+|---|---|
+| Young, Econometrica 61 (1993) | JSTOR; a copy on a third-party archive was not readable by the fetch tool (the site's rules for automated access could not be read) and was not fetched in another way |
+| Nöldeke and Samuelson, Games Econ. Behav. 5 (1993) | as for Young (same archive) |
+| Samuelson, J. Econ. Theory 64 (1994) | publisher's paywall |
+| Nobe and Yura, J. Phys. A 37 (2004) and 40 (2007) | publisher's paywall; not found on arXiv |
+| Boccara, Physica D 68 (1993) | publisher's paywall |
+| Hattori and Takesue, Physica D 49 (1991) | publisher's paywall |
+| Freidlin and Wentzell (book) | not available online |
+
+Search results seen on the way (result pages, not the texts): the abstract of Young (1993) names "a general theorem
+on perturbed Markov processes that characterizes their stochastically stable states graph-theoretically"; the
+abstract of Hattori and Takesue (1991) says that the condition is applied to "Wolfram's elementary CA".
+
+Claude
+
 ## Search queries (17 November 2026, web search)
 
 Part A: `arXiv 2610.10967 Zhu Richard elementary cellular automata`; `Zhu Richard 2026 elementary cellular automata
