@@ -6,18 +6,18 @@ Exact computation (no sampling, no seeds) of how well the rule of an elementary 
 automaton on a ring of 12 cells can be identified from a trajectory when the dynamics is
 corrupted by independent bit flips with probability ε per cell and step.
 
-* `paper/ring_size_paper.pdf` — the ring-size paper (version 2, in version 0.5 of this repository; its own record, first version: https://doi.org/10.5281/zenodo.24482170): for which ring sizes small noise selects cycles that leave part of the rule table unused, proved for rules 154, 43, 142 and 94, in part for rule 26
+* `paper/ring_size_paper.pdf` — the ring-size paper (version 2; its own record: https://doi.org/10.5281/zenodo.24482169): for which ring sizes small noise selects cycles that leave part of the rule table unused, proved for rules 154, 43, 142 and 94, in part for rule 26
 * `note/note_v0.2.pdf` — the note, version 0.2 (English, with all 88 rule classes tabulated in the appendix); `note/note.pdf` is version 0.1
 * `code/` — the computation (Python 3, NumPy, SciPy for one sparse matrix, pandas and matplotlib for tables and figures)
 * `data/` — every data file the note is built from, with `MANIFEST.sha256`
 * `VERIFICATION.md` — report of the independent verification session (its findings A1–A10 are fixed in this version)
 * `reproduce.sh` — regenerates `data/`, the figures, `note/numbers.tex`, `note/table_classes.tex` and the PDF
 
-Repository: https://github.com/frnkptrln/eca-noise-identifiability · DOI: https://doi.org/10.5281/zenodo.23399100 (all versions) · https://doi.org/10.5281/zenodo.23399101 (v0.1) · https://doi.org/10.5281/zenodo.24093547 (v0.2) · https://doi.org/10.5281/zenodo.24275024 (v0.3) · https://doi.org/10.5281/zenodo.24482529 (v0.4) · License: CC BY 4.0 (`LICENSE`), covering the note, the data and the code.
+Repository: https://github.com/frnkptrln/eca-noise-identifiability · DOI: https://doi.org/10.5281/zenodo.23399100 (all versions; the single versions are listed there) · License: CC BY 4.0 (`LICENSE`), covering the note, the data and the code.
 
 Cite as: Peterlein, F. (2026). *Rule identifiability in elementary cellular automata under dynamical noise* (v0.5). Zenodo. https://doi.org/10.5281/zenodo.23399100
 
-Cite the ring-size paper as: Peterlein, F. (2026). *Noise-selected cycles of elementary cellular automata and the arithmetic of the ring size*. Zenodo. https://doi.org/10.5281/zenodo.24482170
+Cite the ring-size paper as: Peterlein, F. (2026). *Noise-selected cycles of elementary cellular automata and the arithmetic of the ring size*. Zenodo. https://doi.org/10.5281/zenodo.24482169
 
 ## In plain words
 
@@ -105,7 +105,7 @@ adds a study of why. The note itself is unchanged: `note/note_v0.2.pdf` is the c
 
 Version 0.3 proved the dependence on the ring size for rule 154 and, in one direction, for class 94. Version 0.4
 adds the proofs for rules 43 and 142, the other direction for rule 94, a partial result for rule 26, and a paper
-that contains all of them. The paper is also archived as a record of its own, https://doi.org/10.5281/zenodo.24482170,
+that contains all of them. The paper is also archived as a record of its own, https://doi.org/10.5281/zenodo.24482169,
 where it can be read without the repository. The note itself is unchanged: `note/note_v0.2.pdf` is the current text.
 
 * `paper/ring_size_paper.pdf` — *Noise-selected cycles of elementary cellular automata and the arithmetic of the ring size* (32 pages). k* = 1 iff n is a power of two for rule 154 (n ≥ 3); iff 4 divides n for rules 43 and 142 (n ≥ 4); for rule 94, k* = 1 if 3 divides n (n ≥ 6) and k* = 0 if not (n ≥ 5); for rule 26 on 2^k cells the zero state is the only selected cycle, k* is 1 or 2 for k ≥ 3 and 1 for odd k. Not peer reviewed

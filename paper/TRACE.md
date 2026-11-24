@@ -469,8 +469,12 @@ Sources (proposals of the sources session; its reading of Young is attributed to
   other seven texts were not reached.
 * `refs.bib`: the note fields of Young (1993) and of Freidlin and Wentzell (1984).
 
-First page and "Code and data": "Version 2, 24 November 2026"; the DOI printed there is that of the first version
-and is labelled so; version 0.5 of the repository is named as the one that contains this version.
+First page and "Code and data": "Version 2, 24 November 2026"; the DOI printed there is the one that stands for all
+versions of the paper's record (10.5281/zenodo.24482169, from the page of the record, given by the author), so the
+text need not change with a new version. The DOI of version 0.3 of the repository is no longer printed in "Code and
+data"; the entry of the list of references has it. Version 0.5 of the repository is named as the one that contains
+this version. In `README.md`, `CITATION.cff` and `.zenodo.json` only the two DOIs for all versions remain (repository
+and paper).
 
 `README.md`, "In plain words": E11 to E15 as proposed in the report.
 
