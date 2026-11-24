@@ -368,6 +368,281 @@ search (result pages, not the papers themselves): Pitman and Tang is in Bernoull
 of the paper at Project Euclid); the author of Physica D 68 (1993) 416-426 is Nino Boccara. The given name of
 Fukś is Henryk (author line of arXiv:nlin/0502037v1, read on 18 November).
 
+## Update of 23 November 2026 (attempt to reach the texts marked "not read")
+
+Written by Claude, the reader outside the sessions. Aim: to read the texts that the paper cites as not read or as
+seen through an abstract or excerpt only. Result: one related text reached through a tool, none of the texts
+themselves.
+
+**Reached, through a tool only.** Nobe and Yura, "On the integrability of reversible elementary cellular automata"
+(in Japanese), RIMS Kôkyûroku 1541 (2007), pp. 178-191, open at
+https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/1541-13.pdf. This is not one of the two texts of
+Nobe and Yura in the list of references (J. Phys. A 37, 2004, and J. Phys. A 40, 2007); it is a proceedings text by
+the same authors on the subject of the second. How it was seen: a fetch tool answered four questions against the
+text of the PDF (extracted by character recognition). I did not see the pages; what follows is the tool's report,
+and the layout of the table was reported as approximate.
+
+* Theorem 2, p. 180: there are 16 reversible elementary rules with periodic boundary; attributed there to their
+  reference [13], which is the paper of 2004.
+* Table 1, p. 180: rules 150 and 105 for N = 1, 2 (mod 3); rules 154, 166, 180, 210 and 45, 75, 89, 101 for odd N;
+  rules 170, 240, 15, 85 for all N (one further row was garbled in the extraction).
+* Rule 154, pp. 180-183: analysed for odd N only. The configuration is cut into blocks; inside a block the evolution
+  is linear, written with the polynomial 1 + x^2 over the field with two elements; the positions of the cells are
+  separated by parity. Proposition 1, p. 183: the period of a configuration divides 2^(s+1) N, with s the integer
+  part of the binary logarithm of the largest block length. Rule 90 is not named.
+* Even N for rule 154 is not analysed; nothing on states that lie on no cycle.
+* Table 2, p. 189: the rules are classed as trivial, additive, linearizable or unknown; 45, 75, 89, 101 are
+  "unknown".
+
+Consequence: that rule 154 is reversible for odd N is now seen in a text of Nobe and Yura themselves (through a
+tool), with the attribution to their paper of 2004; it was an abstract and a search excerpt before. What Lemma 3.7
+of the paper says for even N is not in this text. The paper's entries for Nobe and Yura stay "not read".
+
+**Not reached** (23 November 2026, tools of this conversation):
+
+| text | why |
+|---|---|
+| Young, Econometrica 61 (1993) | JSTOR; a copy on a third-party archive was not readable by the fetch tool (the site's rules for automated access could not be read) and was not fetched in another way |
+| Nöldeke and Samuelson, Games Econ. Behav. 5 (1993) | as for Young (same archive) |
+| Samuelson, J. Econ. Theory 64 (1994) | publisher's paywall |
+| Nobe and Yura, J. Phys. A 37 (2004) and 40 (2007) | publisher's paywall; not found on arXiv |
+| Boccara, Physica D 68 (1993) | publisher's paywall |
+| Hattori and Takesue, Physica D 49 (1991) | publisher's paywall |
+| Freidlin and Wentzell (book) | not available online |
+
+Search results seen on the way (result pages, not the texts): the abstract of Young (1993) names "a general theorem
+on perturbed Markov processes that characterizes their stochastically stable states graph-theoretically"; the
+abstract of Hattori and Takesue (1991) says that the condition is applied to "Wolfram's elementary CA".
+
+Claude
+
+## Update of 24 November 2026 (sources)
+
+Written by Claude in a separate session of 24 November 2026 (the "sources" session, started by the author with a
+task written by the reader outside the sessions). Correction of this line and of the attribution below, made on the
+same day by that reader, who signs the two updates before this one: the session had described itself as "the reader
+outside the sessions". It is not. Where this section says "the reader" or "this conversation", the sources session
+is meant, and Young (1993) was read by that session, not by the reader outside the sessions. The two proposals
+below that name who read Young are to be applied in that sense: "read in full on 24 November 2026 by a separate
+session", and Young belongs with the texts read by a session, not with the two that only the reader outside the
+sessions read. Nothing else in the section was changed.
+
+Applied on 24 November 2026 in version 2 of the paper, in that sense (`paper/TRACE.md`, Part G): the three sentences
+on Samuelson and on Noldeke and Samuelson, the sentences on Young and on Freidlin and Wentzell in Section 6.1, the
+paragraph "What was read" and the two note fields of `refs.bib`.
+
+Aim: a second attempt to obtain and read the eight texts that
+`paper/ring_size_paper.tex` cites as not read (update of 23 November above). Result: one of the eight was read in
+full (Young 1993); the other seven were not reached. The reading rule of this file applies: a text counts as read
+only if its pages were seen. Page numbers are journal pages unless marked otherwise.
+
+**Contradictions first.** Nothing read on 24 November contradicts a statement of the paper. One finding concerns
+the strength of three sentences (item 3 and 4 below): the paper says without qualification that the first sentence
+of Theorem 2.8 (Theorem A) restates known results of Samuelson and of Nöldeke and Samuelson, but neither text was
+read, and the one passage that was read on the point (Ellison) describes a different lemma.
+
+**Access on 24 November 2026.**
+
+* The full-text tool of this conversation was run on the seven DOIs and on the chapter DOIs of Freidlin and
+  Wentzell (Unpaywall, Semantic Scholar, PMC, CrossRef text-mining links, the DOI landing page): no full text for
+  any of them.
+* The Scite connector (full-text reader for licensed papers) refused every request: it needs a paid plan that this
+  workspace does not have.
+* Nobe and Yura (2004, 2007): the open-access pointers found by the tool (handles 10445/1023 and 10445/1024) lead to
+  the repository of Future University Hakodate (fun.repo.nii.ac.jp, records 5400 and 5401). Both records are marked
+  "metadata only access"; there is no file. ResearchGate lists full texts uploaded by A. Nobe; access to the host was
+  approved in this conversation, but the site answered HTTP 403 with its page for automated clients. I
+  did not try to get round that.
+* Young (1993): a scan of the journal article is on Young's own publications page at Johns Hopkins
+  (http://www.econ2.jhu.edu/people/young/scans/EL16.pdf, linked from .../people/young/Publications.html). Access to
+  the host was approved in this conversation.
+* Ellison, working paper of January 1999 (web.mit.edu/gellison/www/basins.pdf, the author's copy, already the
+  version `literature_ring_size.md` reports as read): opened again for the citation of Freidlin and Wentzell.
+* Nöldeke and Samuelson (1993): the only full copy found is in a third-party archive (www.dklevine.com, the
+  archive of D. K. Levine, who is not an author). It is not a publisher, an institutional repository or an author's
+  page, so it was not used.
+* No copy of Samuelson (1994), Boccara (1993), Hattori and Takesue (1991) or the book of Freidlin and Wentzell was
+  found at a publisher, a repository or an author's page.
+
+Web searches (24 November 2026): `Peyton Young "The Evolution of Conventions" Econometrica 1993 pdf`; `Samuelson
+"Stochastic stability in games with alternative best replies" pdf`; `Nöldeke Samuelson "An evolutionary analysis of
+backward and forward induction" pdf`; `Larry Samuelson 1994 "alternative best replies" working paper Wisconsin SSRI
+pdf`; `Hattori Takesue "Additive conserved quantities in discrete-time lattice dynamical systems" pdf`; `Boccara 1993
+"translation-invariant local surjective mappings" cellular automaton rules`; `Nobe Yura "Linearizable cellular
+automata" rule 154 J. Phys. A 2007`. Two further queries on Nobe and Yura were issued but not executed by the tool.
+CrossRef metadata was queried for the chapters of the three Springer editions of Freidlin and Wentzell.
+
+### 1. Young, "The evolution of conventions", Econometrica 61 (1993) 57-84
+
+**Read in full**, pp. 57-84 (28 pages), on 24 November 2026, from the scan named above. The scan has no text layer;
+every page was rendered to an image and each image was displayed and read. No keyword scan was possible, so the
+negative statements below rest on reading the 28 pages.
+
+* **Resistance.** In the text (Section 6, p. 68), for adaptive play: a mistake is a choice that is not a best reply
+  to any sample; the resistance r(h, h') is the total number of mistakes in the transition h -> h' if h' is a
+  successor of h, and infinite otherwise. The recurrent communication classes H_1, ..., H_J are listed by their three
+  properties (the page prints "of P^ε"; P^0 is evidently meant, since P^ε is irreducible). Between two classes,
+  r_ij is the least total resistance of a path from H_i to H_j (pp. 68-69). In the Appendix (p. 77) the general
+  form: a family P^ε is a *regular perturbation* of P^0 if (6) P^ε is aperiodic and irreducible for ε in (0, a],
+  (7) P^ε_xy -> P^0_xy, and (8) if P^ε_xy > 0 for some ε then 0 < lim ε^(-r) P^ε_xy < ∞ for some r >= 0; this r is
+  the resistance r(x, y), and r(x, y) = 0 iff P^0_xy > 0. The r_ij are defined again on p. 78.
+* **Stochastic potential.** p. 69: on the graph whose vertices are the recurrent classes, with weight r_ij on the
+  edge (i, j), an i-tree is a spanning tree with a unique directed path from every vertex j ≠ i to i; its resistance is
+  the sum of its edge weights (eq. 3); the stochastic potential of H_i is the least resistance of an i-tree (eq. 4).
+  The same definition for j-trees and classes X_j is on p. 78, where γ_j is called the stochastic potential of X_j;
+  eq. (9), p. 78, defines γ(z) on the full state graph.
+* **The general theorem** is **Theorem 4**, p. 78 (the abstract, p. 57, and p. 70 call it the general theorem on
+  perturbed Markov processes; Theorem 2, p. 69, is its case for adaptive play). Statement: P^0 a stationary Markov
+  process on a finite space X with recurrent classes X_1, ..., X_J, P^ε a regular perturbation with stationary
+  distribution μ^ε; then (i) as ε -> 0, μ^ε converges to a stationary distribution μ^0 of P^0, and (ii) x is
+  stochastically stable (μ^0_x > 0) iff x lies in a recurrent class X_j that minimizes γ_j. Proof: Lemma 1, p. 78
+  (μ^0_x > 0 iff γ(x) <= γ(y) for all y), and Lemma 2, p. 80 (γ(x) = γ_j for x in X_j), by "tree surgery"
+  (Figures 4 and 5, pp. 81-82); the proof ends on p. 83.
+* **How Freidlin and Wentzell are cited.** p. 58: the paper builds on their work and on Kandori, Mailath and Rob.
+  p. 60: the techniques of Foster and Young (1990) and of Kandori, Mailath and Rob build on their theory of perturbed
+  dynamical systems. p. 69: the i-tree "concept is due to Freidlin and Wentzell (1984)". p. 77: the Appendix result is a finite version of their results
+  for continuous diffusion processes, "(1984, pp. 186-187)". p. 78: they prove an analogous result (pp. 186-187) for
+  diffusions, with the minimum resistance given by an action functional (p. 161) and under regularity conditions not
+  needed here (pp. 155 and 169); Lemma 1 uses a lemma on Markov chains due to them. p. 79: the formula of the
+  stationary distribution of an irreducible aperiodic chain as a sum over z-trees of products of transition
+  probabilities is referred to "Freidlin and Wentzell (1984, Chapter 6, Lemma 3.1)". Reference list, p. 83: Random
+  Perturbations of Dynamical Systems, New York, Springer Verlag, 1984.
+* Not in the text: steps of cost one, closed classes of a one-step graph, a value of the least potential. Samuelson
+  (1994) and Nöldeke and Samuelson (1993) are not cited (the list, p. 83, has Samuelson 1988, 1991a, 1991b and
+  Samuelson and Zhang 1992).
+
+**Relation to the paper.** The potential γ of Section 2.2 is Young's stochastic potential with cycles as the
+recurrent classes and V(C, C') as r_ij; the paper's in-trees are Young's j-trees. What the paper cites from the
+survey of Newton (stochastically stable = least stochastic potential) is Theorem 4 (ii) and can now be cited from
+Young directly. The reader's own check, not in Young: the kernel of Section 2.1 is a regular perturbation of the
+map F, with resistance r(x, y) = H(Fx, y) (it is positive, so (6) holds; it tends to the kernel of F; and
+ε^(-r) P_ε(y | x) = (1 - ε)^(n - r) -> 1). No statement of the paper is contradicted. The value γmin = m - 1 of
+Theorem 2.8 is not in Young either.
+
+### 2. Freidlin and Wentzell, Random Perturbations of Dynamical Systems, chapter 6
+
+**Not reached.** No page of the book was seen. What was seen instead:
+
+* The lemma. Young (1993, p. 79, read) cites "Chapter 6, Lemma 3.1" for the formula μ_z = p_z / Σ_x p_x, with p_z
+  the sum over z-trees of the products of the transition probabilities along the tree. Ellison's working paper of
+  January 1999 (p. 7, footnote 5; page displayed) cites "Lemma 3.1 of Chapter 6 of Freidlin and Wentzell (1984)" as
+  expressing the ratio μ^ε_x / μ^ε_y as a ratio of polynomials in the transition probabilities. Both describe the
+  tree formula for the stationary distribution of a finite chain. The wording of the lemma in the book was not
+  seen.
+* The edition. Young (p. 83) and Ellison's working paper (p. 42; page displayed) both give: Freidlin, M. and
+  Wentzell, A. (1984), Random Perturbations of Dynamical Systems, New York: Springer Verlag. The reference list of
+  the published Ellison (2000) was not seen. CrossRef metadata (not the book): in the 1984 edition, Chapter 6 is
+  "Markov Perturbations on Large Time Intervals", pp. 161-211; the 1998 edition has the same chapter on the same
+  pages; in the 2012 edition it is pp. 142-191. Young's pages 161 and 186-187 thus fall in Chapter 6 of the 1984
+  edition.
+
+### 3. Nöldeke and Samuelson, Games and Economic Behavior 5 (1993) 425-454
+
+**Not reached** (see Access). The definitions of "mutation-connected" and "locally stable" and Proposition 1 were
+not seen.
+
+### 4. Samuelson, Journal of Economic Theory 64 (1994) 35-65
+
+**Not reached** (see Access). The corresponding statements were not seen.
+
+**Comparison with Lemmas 2.6 and 2.7 and the first sentence of Theorem 2.8 (items 3 and 4).** This cannot be
+settled without the two texts. What the evidence supports:
+
+* Read: Ellison, Section 6.2, journal pp. 37-38 (read by the verification) and the same sentence on p. 30 of the
+  working paper (page displayed again today; it prints "R(Ω) > 2", as the verification recorded). Ellison
+  describes, in his own words, one lemma of these authors: a component Ω of limit sets gets probability one in the
+  limit distribution if R(Ω) > 2 and Ω can be reached from every other limit set by a chain of single mutations.
+  In the reader's reading (an inference, not in any text) that is a statement of the kind of the *second* sentence
+  of Theorem 2.8 (a unique closed class is the selected set), under a stronger radius condition than a closed class
+  of the one-flip graph is sure to have (no single flip leaves a closed class, so its radius is at least 2). It is
+  not the closure property of Lemma 2.6, the statement of Lemma 2.7, or the first sentence of Theorem 2.8.
+* Not read: for those three statements the record has only the abstract of Samuelson (1994) as shown in search
+  results and search fragments of secondary descriptions of Proposition 1 of Nöldeke and Samuelson
+  (`verify_ring_size/literature/literature_check.md`, L2). Young (1993), now read, does not contain them.
+
+**Verdict.** The attribution paragraph after the proof of Theorem 2.8 is accurate: it says what the correspondence
+rests on and calls it provisional. Three sentences state it without qualification and are **too strong** for the
+evidence: the Introduction ("the first sentence of Theorem A restates results of these authors"), the opening of
+Section 2.5 ("Its first sentence restates known results"), and Section 6.1 ("Theorem A restates these results
+for this model: ..."). Nothing read suggests that the paper understates; "too weak" is not indicated. Proposed
+wording (not applied):
+
+* Introduction: "... and, according to secondary descriptions, the first sentence of Theorem~\ref{thm:A} corresponds
+  to results of these authors, whose texts were not read."
+* Opening of Section 2.5: "Its first sentence appears to restate known results; the attribution and its limits
+  are given after the proofs."
+* Section 6.1: "Theorem~\ref{thm:A} appears to restate these results for this model: by the abstract
+  of~\cite{Samuelson1994} and secondary descriptions, its first sentence and the two steps of its proof correspond to
+  the results of these authors on mutation-connected and locally stable components, and its use for a set of cycles
+  that no single flip leaves and that every other cycle reaches along edges of $\Gone$ is close to the chain lemma as
+  Ellison words it, which also asks for a radius greater than $2$."
+
+### 5. Boccara, Physica D 68 (1993) 416-426
+
+**Not reached.** Seen only in search results: the abstract (a rule F has a transform Φ by a noninvertible
+translation-invariant local surjective mapping M, defined by Φ ∘ M = M ∘ F). Where and in which form the paper
+states the two transformations by rule 60 was not seen. The statements stay attributed to it through Fukś (B1, B2).
+
+### 6. Hattori and Takesue, Physica D 49 (1991) 295-322
+
+**Not reached.** A search excerpt of Fukś (arXiv:nlin/0305051, not read) says that the paper gives a table of
+additive invariants for the elementary rules. Whether the table lists the number of blocks 10 for rules 43 and 142
+was not seen.
+
+### 7. Nobe and Yura, J. Phys. A 37 (2004) 5789-5804
+
+**Not reached.** A search excerpt (the ResearchGate page of the paper, as shown in search results) contains the
+statement of Proposition 1: rule 154 is reversible for cell size N ≡ 1 (mod 2). That agrees with what the paper
+says and is still an excerpt. Table 1 and anything on even N were not seen.
+
+### 8. Nobe and Yura, "Linearizable cellular automata", J. Phys. A 40 (2007) 7159-7174
+
+**Not reached.** Search results show the abstract as deposited in the OSTI ETDE database and in the Waseda
+researcher database; both name the ring as Z_2 (the caveat in A2 above, that the deposited abstract does not
+confirm "over Z_2", is answered at the level of an abstract). How rule 154 is linearised, even N, and states on no
+cycle were not seen; the RIMS Kôkyûroku text (update of 23 November) remains the only description, seen through a
+tool.
+
+### Summary
+
+| text | obtained how | pages read | verdict |
+|---|---|---|---|
+| Young (1993), Econometrica 61 | scan on the author's page, www.econ2.jhu.edu/people/young/scans/EL16.pdf; no text layer; every page displayed as an image | pp. 57-84 (all 28) | read in full |
+| Freidlin and Wentzell (1984), ch. 6 | not obtained (no open copy at Springer; no repository or author copy). Seen instead: Young pp. 77-79, 83; Ellison working paper pp. 7, 30, 42 (author copy, web.mit.edu); CrossRef chapter metadata | none of the book | not reached |
+| Nöldeke and Samuelson (1993), GEB 5 | not obtained (publisher paywall; only copy found in a third-party archive, not used) | none | not reached |
+| Samuelson (1994), JET 64 | not obtained (publisher paywall; Scite reader refused) | none | not reached |
+| Boccara (1993), Physica D 68 | not obtained (publisher paywall) | none; abstract in search results | not reached |
+| Hattori and Takesue (1991), Physica D 49 | not obtained (publisher paywall) | none | not reached |
+| Nobe and Yura (2004), J. Phys. A 37 | not obtained (repository record metadata only; ResearchGate refused automated access) | none; search excerpt of Proposition 1 | not reached |
+| Nobe and Yura (2007), J. Phys. A 40 | not obtained (as for 2004) | none; abstract in search results | not reached |
+
+**Proposals for the text read (Young 1993; not applied).** Under the numbers convention of `paper/`,
+`test_paper.py` may need allowlist entries for the page and equation numbers in this wording.
+
+* `paper/refs.bib`, entry `Young1993`:
+  `note = {doi:10.2307/2951778. Read in full on 24 November 2026 by the reader outside the sessions, not by a session, in the scan on the author's page at Johns Hopkins}`
+* `paper/refs.bib`, entry `FreidlinWentzell1984` (a consequence of reading Young):
+  `note = {Not read; cited after Young (1993), pp.~77--79, and Ellison (2000). Edition of 1984 as cited by Young (p.~83) and by Ellison's working paper of January 1999}`
+* Section 6.1, first sentence of "Stochastic stability", replace by:
+  "The potential $\gamma$ is the stochastic potential of Young~\cite[p.~69]{Young1993}, defined there on the
+  recurrent classes of the unperturbed process with the least resistance between two classes as edge weight. By
+  Theorem~4 of~\cite[p.~78]{Young1993}, stated for regular perturbations of a finite Markov chain, the stochastically
+  stable states are the states of the recurrent classes of least stochastic potential; the chain of
+  Section~\ref{sec:setting} is such a perturbation of $F$, with resistance $r(x,y)$, so a cycle is noise-selected iff its
+  states are stochastically stable. Young calls this theorem a finite version of results of Freidlin and
+  Wentzell~\cite{FreidlinWentzell1984} and takes from them (Chapter~6, Lemma~3.1) the expression of the stationary
+  law as a sum over trees; Ellison \cite[Section~6.3]{Ellison2000} also refers the description by minimum-cost trees
+  to them, and the survey~\cite{Newton2018} states the characterisation with reference to Young."
+* Section 6.1, "What was read": remove `Young1993` from the list "Not read, and cited after the read source ...",
+  and write the next sentence as "Read in full by no session, but by Claude, the reader outside the sessions named
+  in the statement on the use of AI: \cite{ZhuRichard2026} (on 20 November 2026), \cite{Young1993} (on 24 November
+  2026) and \cite{Fuks2005b}; ...".
+
+The notes of the other seven entries stay as they are. One change of wording only is suggested for
+`NobeYura2007`, if wanted: the abstract seen in search results names the ring Z_2.
+
+Claude
+
 ## Search queries (17 November 2026, web search)
 
 Part A: `arXiv 2610.10967 Zhu Richard elementary cellular automata`; `Zhu Richard 2026 elementary cellular automata

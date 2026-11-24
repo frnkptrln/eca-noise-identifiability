@@ -25,9 +25,13 @@ the folder `verify_paper/` (own code and its output).
 >   the sentence on the two versions reworded).
 > * Applied in part: D18. The clause on chi is added in the proof of Theorem 5.7(a), and Appendix B now says "with
 >   the changes listed in `paper/TRACE.md`". Lemma B.6 is not moved before Theorem 5.7: that would renumber Section
->   5, to which `reader_checks/README.md`, `literature_addendum.md` and this report refer.
-> * Not applied: D22, D34, D38 (a letter with two meanings; no sentence is ambiguous, and renaming symbols in proofs
->   that were just verified was judged the larger risk); D36 (no correction proposed).
+>   5, to whose statements this report, `paper/TRACE.md` and `paper/REFEREE_NOTES.md` refer by number. (Reason
+>   corrected on 24 November 2026 after finding E9 of `VERIFICATION_corrections.md`: the two files named here
+>   before do not name a numbered statement of Section 5.)
+> * Not applied: D22 (a letter with two meanings; no sentence is ambiguous); D34, D38 (a letter with two meanings;
+>   no sentence is ambiguous, and renaming symbols in proofs that were just verified was judged the larger risk);
+>   D36 (no correction proposed). (Reason for D22 corrected on 24 November 2026 after finding E10 of
+>   `VERIFICATION_corrections.md`: the rate rho(eps) occurs in no proof.)
 > * The statement on the use of AI and "Status of the proofs" now name this report.
 > * The PDF was rebuilt with a full TeX installation and BibTeX: 32 pages. The page numbers below refer to the PDF
 >   of 31 pages that was verified.

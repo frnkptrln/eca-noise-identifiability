@@ -332,9 +332,12 @@ ALLOWED = {
     # bibliographic: pages, sections, statement and equation numbers of references, volumes (24: also the volume of
     # Complex Systems named in Section 6.1)
     "28", "29", "38", "3.3", "3.4", "3.5", "3.7", "6.2",
+    # the lemma of Freidlin and Wentzell (Chapter 6, Lemma 3.1) as Young (1993) cites it, in Section 6.1
+    "3.1",
     # version numbers of the repository: the one that contains the ring-size study (tag v0.3) and the one that
-    # contains the other proof documents and the folder paper/ (tag v0.4), both in "Code and data"
-    "0.3", "0.4",
+    # contains the other proof documents and the folder paper/ (tag v0.4), both in "Code and data"; 0.5: the version
+    # that contains version 2 of the paper, named there too
+    "0.3", "0.4", "0.5",
     # dates of the sessions and of the readings (statement on the use of AI and Section 6.1; from the git log, the
     # verification reports and literature_addendum.md); 14, 17, 18 and 20 also: ring sizes quoted from
     # reader_checks/README.md in the statement on the use of AI (test_ranges_of_the_reader_checks)
