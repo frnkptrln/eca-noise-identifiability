@@ -427,6 +427,10 @@ below that name who read Young are to be applied in that sense: "read in full on
 session", and Young belongs with the texts read by a session, not with the two that only the reader outside the
 sessions read. Nothing else in the section was changed.
 
+Applied on 24 November 2026 in version 2 of the paper, in that sense (`paper/TRACE.md`, Part G): the three sentences
+on Samuelson and on Noldeke and Samuelson, the sentences on Young and on Freidlin and Wentzell in Section 6.1, the
+paragraph "What was read" and the two note fields of `refs.bib`.
+
 Aim: a second attempt to obtain and read the eight texts that
 `paper/ring_size_paper.tex` cites as not read (update of 23 November above). Result: one of the eight was read in
 full (Young 1993); the other seven were not reached. The reading rule of this file applies: a text counts as read

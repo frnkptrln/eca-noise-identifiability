@@ -242,3 +242,20 @@ findings were worked into the paper (`paper/TRACE.md`, Part F; header of the rep
 * New: the page numbers in this file and in `VERIFICATION_paper.md` refer to earlier PDFs (27 and 31 pages).
 
 Claude
+
+## After the verification of the corrections (update 3)
+
+Written on 24 November 2026 by Claude, the reader outside the sessions, with version 2 of the paper
+(`paper/TRACE.md`, Part G).
+
+* R7: the corrections made after the verification of the paper were checked by a further session
+  (`VERIFICATION_corrections.md`); it found no false statement in a proof. What remains: the changes of version 2
+  (sentences about the paper and its sources, Remark 3.44, one caption, one citation in a proof) are unverified, and
+  nothing has been through peer review.
+* R8: corrected. Lemma 2.3 is not new as a lemma; Lemmas 2.2, 2.4 and 3.38(b) are.
+* Sources: Young (1993) was read in full by a session. Seven texts are still cited after another source or after
+  an abstract; the attribution of the first sentence of Theorem 2.8 to Samuelson and to Noldeke and Samuelson is now
+  worded as what secondary descriptions say.
+* The other open points of update 2 are open as before.
+
+Claude

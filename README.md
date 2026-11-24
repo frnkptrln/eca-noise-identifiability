@@ -6,7 +6,7 @@ Exact computation (no sampling, no seeds) of how well the rule of an elementary 
 automaton on a ring of 12 cells can be identified from a trajectory when the dynamics is
 corrupted by independent bit flips with probability ε per cell and step.
 
-* `paper/ring_size_paper.pdf` — the ring-size paper (version 0.4; its own record: https://doi.org/10.5281/zenodo.24482170): for which ring sizes small noise selects cycles that leave part of the rule table unused, proved for rules 154, 43, 142 and 94, in part for rule 26
+* `paper/ring_size_paper.pdf` — the ring-size paper (version 2, in version 0.5 of this repository; its own record, first version: https://doi.org/10.5281/zenodo.24482170): for which ring sizes small noise selects cycles that leave part of the rule table unused, proved for rules 154, 43, 142 and 94, in part for rule 26
 * `note/note_v0.2.pdf` — the note, version 0.2 (English, with all 88 rule classes tabulated in the appendix); `note/note.pdf` is version 0.1
 * `code/` — the computation (Python 3, NumPy, SciPy for one sparse matrix, pandas and matplotlib for tables and figures)
 * `data/` — every data file the note is built from, with `MANIFEST.sha256`
@@ -15,7 +15,7 @@ corrupted by independent bit flips with probability ε per cell and step.
 
 Repository: https://github.com/frnkptrln/eca-noise-identifiability · DOI: https://doi.org/10.5281/zenodo.23399100 (all versions) · https://doi.org/10.5281/zenodo.23399101 (v0.1) · https://doi.org/10.5281/zenodo.24093547 (v0.2) · https://doi.org/10.5281/zenodo.24275024 (v0.3) · https://doi.org/10.5281/zenodo.24482529 (v0.4) · License: CC BY 4.0 (`LICENSE`), covering the note, the data and the code.
 
-Cite as: Peterlein, F. (2026). *Rule identifiability in elementary cellular automata under dynamical noise* (v0.4). Zenodo. https://doi.org/10.5281/zenodo.23399100
+Cite as: Peterlein, F. (2026). *Rule identifiability in elementary cellular automata under dynamical noise* (v0.5). Zenodo. https://doi.org/10.5281/zenodo.23399100
 
 Cite the ring-size paper as: Peterlein, F. (2026). *Noise-selected cycles of elementary cellular automata and the arithmetic of the ring size*. Zenodo. https://doi.org/10.5281/zenodo.24482170
 
@@ -25,27 +25,32 @@ An elementary cellular automaton is a row of cells, each 0 or 1. At every step e
 two neighbours and takes its new value from a fixed table with eight entries, one for each thing it can see. The
 table is the rule. Here the row is closed to a ring: there is no first and no last cell.
 
-Left alone, such a system ends in a loop: one pattern, or a short sequence of patterns, that repeats for ever. A
+Left alone, such a system ends in a loop: one pattern, or a sequence of patterns, that repeats for ever. A
 rule usually has many loops, and where the system starts decides which one it ends in.
 
 Now disturb it a little: at every step each cell is flipped by mistake with a small probability. The system no
 longer stays in one loop, because now and then an error throws it into another. But it does not divide its time
-evenly. The rarer the errors, the more of its time it spends in a few loops: those that are hard to leave and easy
-to reach (in the text: the cycles of least stochastic potential, the noise-selected cycles).
+evenly. The rarer the errors, the more of its time it spends in some of the loops (in the text: the cycles of least
+stochastic potential, the noise-selected cycles). Which loops these are, and how many, depends on the rule and on
+the number of cells.
 
 Why this matters here: someone who only watches the patterns can work out the rule, but only those of the eight
 table entries that the patterns use. If the selected loops use all eight, the rule can be read off quickly, and the
 more quickly the rarer the errors. If they leave an entry unused, the watcher learns it only from the rare
 excursions, and more slowly the rarer the errors are. The number k* of the note is 0 in the first case and at least
-1 in the second.
+1 in the second. (This is the result of the note, which the paper quotes; the paper itself proves statements about
+k*.)
 
 The ring-size paper (`paper/ring_size_paper.pdf`) shows that for some rules the outcome depends on the number of
 cells, and on its arithmetic rather than its size: for rule 154 on whether the number of cells is a power of two,
-for rules 43 and 142 on whether it is divisible by 4, for rule 94 on whether it is divisible by 3. In each case
+for rules 43 and 142 on whether it is divisible by 4, for rule 94 on whether it is divisible by 3 (from five or
+six cells on; on four cells rule 94 is an exception). In each case
 there is one special pattern: stripes of period 4 or 3, which fit on the ring only when the period divides the
 number of cells, or the all-zero pattern, which recovers from every single error exactly when the number of cells
-is a power of two. Where the stripes fit, or where the all-zero pattern recovers, the noise selects that pattern,
-and it leaves table entries unused. Add or remove one cell, and other loops win.
+is a power of two. Where the stripes fit (from four cells on for rules 43 and 142, from six cells on for rule 94),
+or where the all-zero pattern recovers, the noise selects that pattern, and it leaves table entries unused. Add or
+remove one cell, and this is no longer so: the stripes do not fit, and for rule 154 every loop is selected, the
+all-zero pattern included.
 
 This section is a summary without formulas. The statements, their ranges and their proofs are in the paper.
 
@@ -109,6 +114,20 @@ where it can be read without the repository. The note itself is unchanged: `note
 * `VERIFICATION_43_142.md`, `VERIFICATION_94_26.md`, `VERIFICATION_paper.md` with `verify_43_142/`, `verify_94_26/`, `verify_paper/` — independent verification of each proof document and of the paper; the header of each report says how every finding was handled
 * `reader_checks/` — the conclusions of the theorems recomputed on small rings with separate code
 
+## Version 0.5: sources and corrections
+
+No new mathematics. Version 0.5 contains version 2 of the ring-size paper.
+
+* The corrections made after the verification of the paper were checked by a separate session
+  (`VERIFICATION_corrections.md`). It found no false statement in a proof. It found one false clause and several
+  inexact sentences in what the paper says about itself, and two sentences of the section "In plain words" above
+  that are false when read literally; these are corrected.
+* Young (1993), which the paper cited as not read, was read in full by a session (`literature_addendum.md`, update
+  of 24 November 2026). Seven texts could not be obtained; the paper cites them after a source that was read, and
+  it no longer says that Theorem 2.8 restates results of Samuelson and of Nöldeke and Samuelson, only that
+  secondary descriptions say so.
+* `paper/TRACE.md`, Part G, lists every change of version 2.
+
 ## Conventions
 
 States are integers 0..4095, bit i is cell i (indices mod 12). A rule is its Wolfram number:
@@ -135,3 +154,7 @@ Claude, in the conversation in which the sessions were planned, read the proof d
 the conclusions on small rings (`reader_checks/`) and worked the findings of the verifications into the texts; the
 corrections made after the last verification were not verified in turn. The paper has its own statement with the
 detail.
+
+Version 0.5 (24 November 2026): one separate session checked those corrections, another read sources; Claude, in
+the conversation named above, worked the findings of both into the paper and this file. These last changes were
+not checked again.

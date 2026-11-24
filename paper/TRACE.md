@@ -379,7 +379,9 @@ to a proof is the correction proposed in the report, or a rewording of it; none 
 Sentences added to proofs (finding; place):
 
 * D7; proof of Proposition 5.9: F^2 = Sigma^(-1)(1 + Sigma)^2 maps the image of (1 + Sigma)^(2^e) bijectively onto
-  itself, hence its states are periodic under F; "y + e_b is periodic as a domain state".
+  itself, hence its states are periodic under F; "y + e_b is periodic as a domain state". The clause on y + e_b is
+  added beyond the proposal of the report (finding E7 of `VERIFICATION_corrections.md`); it rests on Lemma 5.4(c),
+  which version 2 cites at that place.
 * D8; proof of Lemma 5.4(c): the set of domain states is invariant under rotation, so F permutes it; the cycle of a
   domain state is a domain cycle.
 * D9; proof of Lemma 3.32, parts (a) and (b): every cell outside I lies in an occurrence of x whose centre is not
@@ -407,8 +409,9 @@ Changes in statements (no change of content):
   n = 4: 2a + 3b = 4 forces b = 0).
 * A label `sec:g1` is added to Section 2.4.
 
-Not applied: D22, D34, D38 (letters with two meanings; renaming symbols in verified proofs was judged the larger
-risk) and D36 (no correction proposed). D18 in part: Lemma B.6 stays in Appendix B with its pointer into the proof
+Not applied: D22 (a letter with two meanings; no sentence is ambiguous, and the rate rho(eps) occurs in no proof),
+D34, D38 (letters with two meanings; renaming symbols in verified proofs was judged the larger risk) and D36 (no
+correction proposed). D18 in part: Lemma B.6 stays in Appendix B with its pointer into the proof
 of Theorem 5.7(a), so that the numbers of Section 5 do not change.
 
 Text outside statements and proofs (abstract, introduction, "Status of the proofs", captions, Sections 4 and 6, the
@@ -423,5 +426,55 @@ version of matplotlib). `test_paper.py`: 12 passed.
 23 November 2026: the DOI of the paper's own record (10.5281/zenodo.24482170, reserved by the author) was added
 under the date on the first page and under "Code and data", where the repository version that contains the folder
 `paper/` is now named (0.4). No other change of the text; PDF rebuilt.
+
+Claude
+
+## Part G. Version 2 of the paper (24 November 2026)
+
+Written by Claude, the reader outside the sessions. Two sessions of 24 November 2026 are the sources of this pass:
+the verification of the corrections of Part F (`VERIFICATION_corrections.md`, findings E1 to E15) and the session
+that read Young (1993) and looked for the other texts cited as not read (`literature_addendum.md`, "Update of
+24 November 2026 (sources)"). Both wrote proposals and changed no existing file. The header of
+`VERIFICATION_corrections.md` says how each finding was handled. This pass was not verified after it was made.
+
+Statements and proofs. No statement changed. One citation was added in a proof and one remark was reworded:
+
+* E7; proof of Proposition 5.9: "(Lemma 5.4(c))" after "y + e_b is periodic as a domain state".
+* E5; Remark 3.44: "does not extend to n = 3 and n = 4" for "is not proved for"; Step 3 of part (ii) "gives only
+  the codes 010 and 101, and Lemma 3.42 needs n >= 5". The sentence before said which codes Step 3 does not give;
+  the remark then reports the computed values at n = 3 and n = 4, as before.
+
+Sentences about the paper itself:
+
+* E1, E4; "Status of the proofs": Lemma 2.3 is no longer called new (it is Lemma 0 of
+  `verify_ring_size/part2_154/PROOF_154.md`, with its last sentence added); "with the lemmas it uses" added to
+  part (i) of Theorem 3.43.
+* E2; "Status of the proofs" and the statement on the use of AI: "every numbered statement except Proposition 2.1".
+* E3; statement on the use of AI: what the pass of Part F changed is now named (the wording of six statements,
+  additions to the proofs of eleven further statements, five findings not applied or applied in part), and the two
+  sessions of 24 November and this pass are named.
+* E8; caption of Table 2: "need not be constant on a cycle".
+* E6: no change (the report proposes none).
+
+Sources (proposals of the sources session; its reading of Young is attributed to that session, not to me):
+
+* Introduction, opening of Section 2.5, Section 6.1: the first sentence of Theorem 2.8 "appears to restate" results
+  of Samuelson and of Noldeke and Samuelson, "according to secondary descriptions"; their texts were not read. The
+  comparison with the chain lemma now says "close to the chain lemma as Ellison words it, which also asks for a
+  radius greater than 2".
+* Section 6.1, "Stochastic stability": the stochastic potential is cited from Young (1993), p. 69, and the
+  characterisation of the stochastically stable states from his Theorem 4, p. 78; Freidlin and Wentzell are cited
+  after Young (Chapter 6, Lemma 3.1, on p. 79 of Young) and after Ellison.
+* "What was read": Young (1993) leaves the list of texts not read; one sentence says when it was read and that the
+  other seven texts were not reached.
+* `refs.bib`: the note fields of Young (1993) and of Freidlin and Wentzell (1984).
+
+First page and "Code and data": "Version 2, 24 November 2026"; the DOI printed there is that of the first version
+and is labelled so; version 0.5 of the repository is named as the one that contains this version.
+
+`README.md`, "In plain words": E11 to E15 as proposed in the report.
+
+Build: `build.sh` with pdflatex and BibTeX, 32 pages; `test_paper.py`: 12 passed. The allowlist of numerals
+in `test_paper.py` has new entries for the pages of Young (1993) and for the version number 0.5.
 
 Claude

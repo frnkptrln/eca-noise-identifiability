@@ -55,7 +55,7 @@
 \author{Frank Peterlein\thanks{Independent researcher, Berlin. ORCID
 \href{https://orcid.org/0009-0002-1886-1303}{0009-0002-1886-1303}. Contact: \texttt{frnkptrln} on GitHub. See the
 statement on the use of AI at the end of the paper.}}
-\date{November 2026\\[4pt]\normalsize\href{https://doi.org/10.5281/zenodo.24482170}{doi:10.5281/zenodo.24482170}}
+\date{Version 2, 24 November 2026\\[4pt]\normalsize first version: \href{https://doi.org/10.5281/zenodo.24482170}{doi:10.5281/zenodo.24482170}}
 
 \begin{document}
 \maketitle
@@ -135,8 +135,9 @@ the theorems with exact computations for $n\le\TableNmax$.
 Which cycles small noise selects is described by the stochastic potential of the theory of stochastic stability;
 for the present model the order of every stationary probability is determined in \cite{PeterleinNote}. That the
 selection can be read off the steps of cost one is known in that theory: Ellison~\cite{Ellison2000} attributes a
-lemma of this kind to Samuelson~\cite{Samuelson1994} and to N\"oldeke and Samuelson~\cite{NoldekeSamuelson1993}, and
-the first sentence of Theorem~\ref{thm:A} restates results of these authors. Bagnoli, Baia and
+lemma of this kind to Samuelson~\cite{Samuelson1994} and to N\"oldeke and Samuelson~\cite{NoldekeSamuelson1993}, and,
+according to secondary descriptions, the first sentence of Theorem~\ref{thm:A} corresponds to results of these
+authors, whose texts were not read. Bagnoli, Baia and
 Matteuzzi~\cite{BagnoliBaiaMatteuzzi2025} iterate the chain of single-flip jumps between attractors for all classes
 of elementary rules at one ring size. The building blocks used for the individual rules are known as well: rule 90
 is nilpotent on $2^k$ cells and, for $3\mid n$, fixes the rotations of
@@ -155,15 +156,21 @@ verification covers the source of every statement of Section~\ref{sec:26} and of
 false sentence without consequence, in the source of Lemma~\ref{26:lem:domain}(c), which is corrected, and no other
 error. It did not re-prove Theorem~\ref{thm:A}, which Proposition~\ref{26:prop:even} uses and which was checked by
 the verification of the ring-size study. The proofs for rule 154 and for rule 94 with $3\mid n$
-(Section~\ref{sec:154}, Lemma~\ref{94:lem:crystal} and part (i) of Theorem~\ref{94:thm:main}) had no verification
-by a separate session when the paper was assembled, and Lemmas~\ref{lem:kzero}, \ref{lem:edge}, \ref{lem:sym}
-and~\ref{94:lem:swap}(b) are stated in this paper for the first time as lemmas. A separate session then verified the
+(Section~\ref{sec:154}, Lemma~\ref{94:lem:crystal} and part (i) of Theorem~\ref{94:thm:main} with the lemmas it
+uses) had no verification
+by a separate session when the paper was assembled, and Lemmas~\ref{lem:kzero}, \ref{lem:sym}
+and~\ref{94:lem:swap}(b) are stated in this paper for the first time as lemmas (Lemma~\ref{lem:edge} is a lemma of
+the proof document for rule 154, with its last sentence added). A separate session then verified the
 paper itself (\texttt{VERIFICATION\_paper.md}): it read these proofs and those of Section~\ref{sec:setting} line by
-line, tested every statement of the paper on small rings with code of its own, and compared every numbered
+line, tested every numbered statement except Proposition~\ref{prop:order}, which is quoted from the note, on small
+rings with code of its own, and compared every numbered
 statement with its source. It found no false statement in a theorem, proposition, lemma or corollary. It found
 sentences of the surrounding text that said more than is proved or recorded, and three proofs in which one step was
-not written; these are corrected in the present text. The corrections were made after that verification and have
-not been verified in turn. Every computed value in the text and in
+not written; these are corrected in the present text. The corrections were made after that verification and were
+checked afterwards by a further session (\texttt{VERIFICATION\_corrections.md}). It found no false statement in a
+proof; it found one false clause (on Lemma~\ref{lem:edge}, in this paragraph) and several inexact sentences about
+the paper itself, which are corrected in this version as it proposed.
+Every computed value in the text and in
 Table~\ref{tab:kstar} is taken from a data file of the repository by a script.
 
 \section{Setting}\label{sec:setting}
@@ -267,7 +274,8 @@ Hence $\sigma$ maps paths to paths of the same resistance and in-trees to in-tre
 
 \subsection{Theorem A}
 The following theorem reduces the determination of $\Sel$ to the one-flip graph whenever that graph has a single closed
-class. Its first sentence restates known results; the attribution is given after the proofs.
+class. Its first sentence appears to restate known results; the attribution and its limits are given after the
+proofs.
 
 \begin{lemma}[re-rooting]\label{lem:reroot}
 Let $T$ be an in-tree rooted at a cycle $B$, and let $N\ne B$. Then $T$ without the out-edge of $N$ and with the edge
@@ -1255,8 +1263,9 @@ contains $v$; by Step~3 this holds for all eight codes, so $\kst=0$.
 \end{proof}
 
 \begin{remark}\label{94:rem:small}
-Theorem~\ref{94:thm:main} is not proved for $n=3$ and $n=4$. At $n=4$ no block word has a long block ($2a+3b=4$
-forces $b=0$), so Step~3 of part~(ii) does not give the codes $\code{011}$ and $\code{110}$; part~(i) needs
+Theorem~\ref{94:thm:main} does not extend to $n=3$ and $n=4$. At $n=4$ no block word has a long block ($2a+3b=4$
+forces $b=0$), so Step~3 of part~(ii) gives only the codes $\code{010}$ and $\code{101}$, and
+Lemma~\ref{94:lem:000} needs $n\ge5$; part~(i) needs
 $n\ge6$ (Lemma~\ref{94:lem:crystal}). Computed (files \texttt{proofs\_94\_26/out/g1\_classes\_94.jsonl}, \texttt{data/fw\_sweep.csv} and
 \texttt{data/ring\_size/crystal\_radius.csv}): at $n=4$ the number of closed classes of $\Gone$ is
 \NinetyFourFourClosed; the closed class consists of the \NinetyFourFourClassSize{} block words, which are the two
@@ -1316,7 +1325,7 @@ $a-3$; split, $a+3$ (Lemmas~\ref{94:lem:growth}, \ref{94:lem:refreeze}, \ref{94:
 \caption{The three ingredients of Section~\ref{sec:mechanism} in the four proofs. For rule 94 the quantity is a set
 and ``cannot increase'' refers to inclusion; the flips that enlarge the frozen set add at least one cell, not a fixed
 number. For rule 154 the quantity has two values only; the number that the moves lower, the number of ones on the
-parity class with fewer ones, is not that quantity and is not constant on a cycle.}
+parity class with fewer ones, is not that quantity and need not be constant on a cycle.}
 \label{tab:mech}
 \end{table}
 
@@ -1539,10 +1548,15 @@ has no meaning.
 \subsection{Related work}\label{sec:related}
 
 \emph{Stochastic stability.}
-The potential $\gamma$ is the stochastic potential of Young~\cite{Young1993}; that the stochastically stable states
-are those of least stochastic potential is stated, with reference to Young, in the survey~\cite{Newton2018}, and
-Ellison \cite[Section~6.3]{Ellison2000} refers their description by minimum-cost trees to Freidlin and
-Wentzell~\cite{FreidlinWentzell1984}. The
+The potential $\gamma$ is the stochastic potential of Young~\cite[p.~69]{Young1993}, defined there on the
+recurrent classes of the unperturbed process with the least resistance between two classes as edge weight. By
+Theorem~4 of~\cite[p.~78]{Young1993}, stated for regular perturbations of a finite Markov chain, the stochastically
+stable states are the states of the recurrent classes of least stochastic potential; the chain of
+Section~\ref{sec:setting} is such a perturbation of $F$, with resistance $r(x,y)$, so a cycle is noise-selected iff
+its states are stochastically stable. Young calls this theorem a finite version of results of Freidlin and
+Wentzell~\cite{FreidlinWentzell1984} and takes from them (Chapter~6, Lemma~3.1) the expression of the stationary
+law as a sum over trees; Ellison \cite[Section~6.3]{Ellison2000} also refers the description by minimum-cost trees
+to them, and the survey~\cite{Newton2018} states the characterisation with reference to Young. The
 note~\cite{PeterleinNote} takes the Markov chain tree theorem from~\cite[Theorem~1.1]{PitmanTang2018} and proves
 the reduction to cycles (Proposition~\ref{prop:order}) itself; that formula was not found in the sources read for
 the note. By Theorem~2 of~\cite[p.~30]{Ellison2000}, a union $\Omega$ of limit sets whose radius exceeds its
@@ -1550,10 +1564,12 @@ modified coradius $c$ contains the stochastically stable set, and the expected w
 $O(\eps^{-c})$. In Section~6.2 (pp.~37--38) Ellison attributes to Samuelson~\cite{Samuelson1994} and to N\"oldeke
 and Samuelson~\cite{NoldekeSamuelson1993} (and a later paper of theirs) a lemma which, in his words, gives
 probability one in the limit to a component of limit sets that satisfies a radius condition and can be reached from
-every other limit set by a chain of single mutations. Theorem~\ref{thm:A} restates these results for this model:
+every other limit set by a chain of single mutations. Theorem~\ref{thm:A} appears to restate these results for this
+model: by the abstract of~\cite{Samuelson1994} and secondary descriptions,
 its first sentence and the two steps of its proof correspond to the results of these authors on mutation-connected
 and locally stable components, and its use for a set of cycles that no single flip leaves and that every other cycle
-reaches along edges of $\Gone$ is in substance the chain lemma. The primary texts were not read; the correspondence
+reaches along edges of $\Gone$ is close to the chain lemma as Ellison words it, which also asks for a radius greater
+than $2$. The primary texts were not read; the correspondence
 rests on Ellison's text, the abstract of~\cite{Samuelson1994} and search excerpts of secondary descriptions, and is
 provisional.
 
@@ -1616,13 +1632,15 @@ outside the sessions; that search, reported to have found no prior statement, wa
 \emph{What was read.}
 Not read, and cited after the read source that attributes the result to them, which the list of references names in
 each entry:
-\cite{Boccara1993,NoldekeSamuelson1993,Young1993,FreidlinWentzell1984,HattoriTakesue1991}.
+\cite{Boccara1993,NoldekeSamuelson1993,FreidlinWentzell1984,HattoriTakesue1991}.
 Abstract or search excerpts only: \cite{Samuelson1994,NobeYura2004,NobeYura2007}. Read in part:
 \cite{Ellison2000,BhattacharjeeDas2019,Nordahl1989,Stricker2023,Wolfram2002}. Read in full by no session, but by Claude, the
 reader outside the sessions named in the statement on the use of AI: \cite{ZhuRichard2026} (on 20 November 2026) and
 \cite{Fuks2005b}; what this subsection says about them is taken from that reader's record in
 \texttt{literature\_addendum.md}. The other references were read in full by a session, some as preprints, as the
-list of references says. Two further versions that this subsection names were not read and are not in the list of
+list of references says; \cite{Young1993} was read on 24 November 2026, after the first version of this paper, which
+cited it as not read. The same session tried to obtain the seven texts named above as not read or as seen in
+abstract or excerpts only, and reached none of them. Two further versions that this subsection names were not read and are not in the list of
 references: the conference version of \cite{BagnoliBaiaMatteuzzi2025} and the journal version of \cite{Fuks2005b}.
 A further text that concerns rule 154 or rule 26 on finite rings was seen as a search excerpt only and is not used:
 a paper of Aguiar and Severino in Complex Systems 24.
@@ -1701,11 +1719,18 @@ Appendix~\ref{app:26} from the proof document for rule 26, the classes 60 and 90
 report on \cite{ZhuRichard2026}, the entries of the list of references for texts that were not read, and the new
 wording of the abstract, of the paragraph on the status of the proofs and of this statement. A separate session
 that had written none of these texts then verified the paper (\texttt{VERIFICATION\_paper.md}): it read line by
-line the proofs that had no separate verification, tested every statement on small rings with its own code and
+line the proofs that had no separate verification, tested every numbered statement except
+Proposition~\ref{prop:order} on small rings with its own code and
 compared every numbered statement with its source. It found no false statement in a theorem, proposition, lemma or
-corollary. Its findings on sentences of the surrounding text and on three proof steps that were not written were
-worked into the text by the reader named above, as the header of that report records; this last pass has not been
-verified. The file
+corollary. The reader named above then worked its findings into the text: the sentences of the surrounding text,
+the three unwritten steps, the wording of six statements and short additions to the proofs of eleven further
+statements (\texttt{paper/TRACE.md}, Part~F); five findings were not applied or were applied in part, as the header
+of that report records. On 24 November 2026 a further session checked that pass
+(\texttt{VERIFICATION\_corrections.md}) and found no false statement in a proof, and another session read
+\cite{Young1993} in full and tried without success to obtain the other texts that this paper cites as not read
+(\texttt{literature\_addendum.md}). The reader named above worked the findings of both into the present version;
+these last changes concern sentences about the paper and its sources, one remark, one caption and one citation in a
+proof, and were not checked again. The file
 \texttt{paper/TRACE.md} maps every statement of the paper to its source and lists the changes of wording and
 notation. Nothing in this paper has been through peer review. The author selected the question, set the scope, and
 is responsible for the content.
@@ -1717,7 +1742,8 @@ Repository: \url{https://github.com/frnkptrln/eca-noise-identifiability}; archiv
 \texttt{report\_ring\_size.md}, the data files of Table~\ref{tab:kstar} and the proof documents for rule 154 and
 for rule 94 with $3\mid n$ are in version 0.3 of the repository~\cite{PeterleinStudy},
 \href{https://doi.org/10.5281/zenodo.24275024}{doi:10.5281/zenodo.24275024}; the other proof documents, their
-output files and the folder \texttt{paper/} are in version 0.4. This paper is archived as a record of its own,
+output files and the folder \texttt{paper/} are in version 0.4, and the present version of this paper is in
+version 0.5. This paper is archived as a record of its own; its first version is
 \href{https://doi.org/10.5281/zenodo.24482170}{doi:10.5281/zenodo.24482170}. The folder \texttt{paper/} contains
 this text, the script that takes every number and Table~\ref{tab:kstar} from the data files
 (\texttt{make\_numbers.py}), the script that simulates the figures (\texttt{make\_figures.py}), a build script and
@@ -2249,7 +2275,7 @@ $\Sigma^h-1=(\Sigma^q-1)^{2^e}$ and $1+\Sigma$ divides $\Sigma^q-1$ exactly once
 $(1+\Sigma)^j$ stop growing at $j=2^e$, the space is the direct sum of the kernel and the image of
 $(1+\Sigma)^{2^e}$, and $1+\Sigma$ is invertible on the image. $\Sigma$ is invertible and commutes with
 $1+\Sigma$, so $F^2=\Sigma^{-1}(1+\Sigma)^2$ maps this image bijectively onto itself; hence every state of it is
-periodic under $F^2$, and under $F$. So $y$ is periodic, and $y+e_b$ is periodic as a domain state: the cycle of $x$ is
+periodic under $F^2$, and under $F$. So $y$ is periodic, and $y+e_b$ is periodic as a domain state (Lemma~\ref{26:lem:domain}(c)): the cycle of $x$ is
 joined, by flips between periodic states, to the cycle of $y$, which is in $\mathcal{R}$. Hence every domain cycle
 lies in $K$.
 
