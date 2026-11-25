@@ -1,0 +1,31 @@
+MdR2015            'Proposition 3\\.1\\. The elementary'         pdf page(s) [7]  (journal pages [113])
+MdR2015            'if and only if the\\s*number of cells'       pdf page(s) [7]  (journal pages [113])
+MdR2015            '4\\. The reversibility of linear'            pdf page(s) [13]  (journal pages [119])
+MdR2015            'Reversibility of ECA 60'                     pdf page(s) [14]  (journal pages [120])
+MdR2015            'Reversibility of ECA 102'                    pdf page(s) [15]  (journal pages [121])
+MdR2015            'ECA 150 is reversible if n'                  pdf page(s) [15]  (journal pages [121])
+VT2026             'Theorem 3\\.4\\.If'                          pdf page(s) [6]
+VT2026             'Theorem 3\\.6\\.For'                         pdf page(s) [7]
+VT2026             'Theorem 5\\.1\\.If'                          pdf page(s) [9]
+VT2026             'Theorem 6\\.2\\.Consider'                    pdf page(s) [12]
+VT2026             'Lemma B\\.3\\.For'                           pdf page(s) [20]
+VT2026             'usually\\s*does not work'                    pdf page(s) [13]
+Tadaki1994         '\\(2\\.4c\\)'                                pdf page(s) [3, 4]
+Tadaki1994         'N = 3n \\+ 2 there appear'                   pdf page(s) [4]
+Tadaki1994         'TABLE I\\. Periodicity'                      pdf page(s) [11]
+Tadaki1994         '\\n32 U'                                     pdf page(s) [12]
+Bhattacharjee2020  '3\\.3 Reachability tree'                     pdf page(s) [13]
+Bhattacharjee2020  'Fig\\. 6: Reachability Tree'                 pdf page(s) [14]
+Wang2025           'Theorem 1\\. FCA'                            pdf page(s) [5]
+Wang2025           'Theorem 2\\. If'                             pdf page(s) [6]
+Wang2025           'Theorem 3\\. If'                             pdf page(s) [6]
+Wang2025           'Theorem 4\\. If'                             pdf page(s) [7]
+Wang2025           'Theorem 5\\. The'                            pdf page(s) [8]
+Wang2025           'Wolfram number 11110000'                     pdf page(s) [3]
+Wang2025           'Table 1\\. List of reversibility'            pdf page(s) [10]
+Miekisz2008        '7 Stochastic dynamics of ﬁnite populations'  pdf page(s) [22]
+Miekisz2008        'or any other inﬁnite graph'                  pdf page(s) [22]
+Miekisz2008        'only absorbing states can be stochastically' pdf page(s) [23]
+Miekisz2008        'Example\\s*6\\s*Players'                     pdf page(s) [36]
+Miekisz2008        'located\\s+on\\s+the\\s+circle'              pdf page(s) [38]
+Miekisz2008        'Example\\s*9\\s*Players'                     pdf page(s) [40]

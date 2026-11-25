@@ -6,3 +6,5 @@ note/*.out
 note/*.toc
 data/cache/
 .DS_Store
+verify_boundaries/out/wang_table1_crop.png
+lit/

@@ -1,0 +1,4 @@
+Proposition L, 16 affine rules, n = 3..14 ( 192 records): failures none
+Lemma W: cases with hypothesis true 66 ; of these with all 8 codes at cell 1: 66 ; hypothesis false but all codes anyway: []
+Proposition N: orbits of e_i under 154 / 26 differ from rule 90 (n = 3..40, 3n steps): none
+all e_i die under rule 90 exactly at n = [3, 7, 15, 31]
