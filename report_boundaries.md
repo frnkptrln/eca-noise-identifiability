@@ -20,7 +20,8 @@ Status (updated as the work proceeds):
 - Step 4 (comparison, mechanisms): done for every class whose side depends on n for n >= 8 (Section 5).
   Proved: the affine classes for every n (5.1). Everything else is computed or observed, as tagged.
 - Step 5 (reflecting walls, n = 4..12): done (Section 6).
-- Predictions scored (Section 7), open points and plain-words summary (Section 8), commit commands (Section 9).
+- Predictions scored (Section 7), open points and plain-words summary (Section 8), commit commands (Section 9): done.
+  Everything planned is done; nothing is committed (Section 9).
 
 Tags: [proved] = proof written out here (or in the cited source, location given); [computed] = exact result in
 the named data file, produced by the named command; [observed] = pattern seen in computed data, not proved.
@@ -503,9 +504,66 @@ None of these four is proved; the descriptions of the carriers are from the deta
 | isolated switches (45 at 8, 73 at 9) | 45, 73 | **disappear** (k* = 0 for n >= 6) |
 | (none) | 75, 133, 135, 137 | **new**: wall-made crystals and patterns |
 
-## 6. Reflecting walls (Step 5)
+## 6. Reflecting walls (Step 5) [computed n = 4..12]
 
-Not done at this commit.
+Cell -1 copies cell 0 and cell n copies cell n - 1. Both reflection and complement are symmetries (Section 2), so
+the unit is the 88 ring classes. Run: `run_boundaries.py --boundary reflect --nmin 4 --nmax 12` (1.5 min);
+`data/boundaries/reflect_sweep.csv`, details and 792 certificates (all accepted by `check_cert.py`); GTH check
+n = 4..8, all 256 rules, 1280 of 1280 pass (`verify_reflect_gth.csv`).
+
+**Lemma M' [proved].** For every reflection-symmetric rule, the reflecting row of n cells is the mirror-symmetric
+subspace of the ring of 2n cells (ring cell j = x_j = ring cell 2n - 1 - j): the mirror axes lie between cells, a
+cell next to an axis reads its own value as the outside neighbour, which is the reflecting wall. No condition on
+f(000), f(101) is needed. Checked: holds for exactly the 64 symmetric rules, n = 1..10
+(`code/fw/check_mirror_reflect.py`, `data/boundaries/check_mirror_reflect.txt`). Consequently rule 90 under
+reflecting walls is nilpotent iff 2n is a power of two, i.e. n is (n = 1, 2, 4, 8, 16 among 1..16 [computed]).
+
+| | ring | reflect |
+|---|---|---|
+| classes with k* >= 1 at n = 12 | 60 | 62 |
+| B-type classes at n = 12 | 42 | 59 |
+| classes changing side in n = 8..12 | 13 | 1 (class 90) |
+| classes on the same side as the ring at every n = 8..12 | | 65 of 88 |
+
+| class | boundary | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 94 | ring | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 1 |
+| | reflect | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 43 | ring | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 |
+| | reflect | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 142 | ring | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 |
+| | reflect | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 35 | ring | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 1 |
+| | reflect | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 26 | ring | 2 | 0 | 1 | 1 | 1 | 1 | 1 | 0 | 1 |
+| | reflect | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 37 | ring | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 0 | 0 |
+| | reflect | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 154 | ring | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| | reflect | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
+| 22 | ring | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| | reflect | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 60 | ring | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| | reflect | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 90 | ring | 2 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
+| | reflect | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| 122 | ring | 1 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 0 |
+| | reflect | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 45 | ring | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| | reflect | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 73 | ring | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 0 |
+| | reflect | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 150 | ring | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| | reflect | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+What carries over: the power-of-two mechanism of rule 90 (k* = 1 at n = 4, 8; nilpotent at powers of two) with
+the ring's own arithmetic, because of Lemma M'. What disappears: everything else that switches on the ring.
+Class 94: the crystal 101101... exists under reflecting walls exactly at 3 | n (n = 6, 9, 12, 15), but a single
+flip at an edge leaves it (radius 1 at all four sizes, `check_mirror_reflect.txt`), and k* = 0 for n >= 5.
+Class 154 has k* = 2 at every n = 4..12, 43, 142, 35, 37, 122 have k* = 1 at every n (B-type or capture, not
+analysed), 26, 60, 45, 73 have k* = 0 for n >= 6. Rule 60 is not bijective under reflecting walls (cell 0 reads
+x_0 + x_0 = 0); 150 is bijective iff 3 does not divide n (n = 4..12 [computed]; by Lemma M' this is
+bijectivity of rule 150 on the ring of 2n).
 
 ## 7. Predictions scored
 
@@ -600,3 +658,52 @@ The walls also create new size effects that the ring does not have, for instance
 a multiple of 3, or only when n is even. These are computed for rows up to 20 cells and described, but not proved.
 Holding the walls at 1 instead of 0 is the same as complementing the rule, so it needs no separate computation;
 reflecting walls behave much more like the ring.
+
+## 9. How to recreate the commits
+
+Nothing was committed: the sandbox cannot write to `~/git/eca-noise-identifiability/.git` (fetch, branch and
+worktree creation fail with "Operation not permitted"), cannot create `~/git/eca-open-boundaries`, and sees no
+git identity. The work tree was built from `git archive 2765f7e`; its base tree e0bb588 equals the tree of
+2765f7e. The six step patches (`git diff --binary` between successive trees, saved as artifacts
+`open_boundaries_step0.patch` ... `open_boundaries_step5.patch`) reproduce the steps; the git tree hash after
+step 5 is given in the message that delivered the patches. Run in your own
+terminal (with the patch files downloaded, here to ~/Downloads):
+
+```sh
+cd ~/git/eca-noise-identifiability
+git fetch origin
+git worktree add ~/git/eca-open-boundaries -b open-boundaries origin/main
+cd ~/git/eca-open-boundaries
+P=~/Downloads
+git apply --check --numstat --summary $P/open_boundaries_step0.patch && git apply $P/open_boundaries_step0.patch && git add -A && git commit -m "Open boundaries, step 0: literature review (literature_boundaries.md)"
+git apply --check --numstat --summary $P/open_boundaries_step1.patch && git apply $P/open_boundaries_step1.patch && git add -A && git commit -m "Open boundaries, step 1: boundary-aware succ_map/code_mask (ring default), symmetries, 160 null classes, guarding test"
+git apply --check --numstat --summary $P/open_boundaries_step2.patch && git apply $P/open_boundaries_step2.patch && git add -A && git commit -m "Open boundaries, step 2: sealed predictions (PREDICTIONS_boundaries.md)"
+git apply --check --numstat --summary $P/open_boundaries_step3.patch && git apply $P/open_boundaries_step3.patch && git add -A && git commit -m "Open boundaries, step 3: null-wall sweep n = 4..20 with checkpoints, certificates, GTH check"
+git apply --check --numstat --summary $P/open_boundaries_step4.patch && git apply $P/open_boundaries_step4.patch && git add -A && git commit -m "Open boundaries, step 4: ring vs null comparison, mechanisms, affine rules proved, report"
+git apply --check --numstat --summary $P/open_boundaries_step5.patch && git apply $P/open_boundaries_step5.patch && git add -A && git commit -m "Open boundaries, step 5: reflecting walls n = 4..12; report completed"
+python3 -m pytest -q code/fw/test_boundaries.py code/fw/test_boundaries_results.py   # 24 tests, about 4 s
+```
+
+The commits then carry today's date, after the computations; the evidence that the predictions came first is the
+artifact `PREDICTIONS_boundaries.md` saved on 24 Nov 2026 before the first wall computation, with the sha256 given
+in the status block, which the committed file must match (`shasum -a 256 PREDICTIONS_boundaries.md`).
+`data/MANIFEST.sha256` was not updated. Nothing was pushed.
+
+To reproduce the data from scratch (at most 2 workers, about 20 min in total on this machine):
+
+```sh
+cd code/fw
+python3 null_classes.py
+python3 run_boundaries.py --nmin 4 --nmax 16 --workers 2 --cert-nmax 14
+python3 run_boundaries.py --nmin 15 --nmax 16 --workers 2 --cert-nmax 16 --rules 9,22,25,37,47,54,62,73,75,90,91,94,95,105,109,111,122,123,126,127,131,133,135,137,150,151,165,169,173,182,183,26,154,166,167,161,43,142,35,59,45,60,153,15,170
+python3 run_boundaries.py --nmin 17 --nmax 20 --workers 2 --cert-nmax 16 --rules 22,37,75,90,91,94,122,126,133,135,137,165
+python3 verify_boundaries.py --nmin 4 --nmax 9 --workers 2
+python3 check_cert.py ../../data/boundaries/null_certificates/*.json.gz
+python3 run_boundaries.py --boundary reflect --nmin 4 --nmax 12 --workers 2 --cert-nmax 12 --rules $(python3 -c "import fwlib; print(','.join(map(str, fwlib.class_reps())))")
+python3 verify_boundaries.py --boundary reflect --nmin 4 --nmax 8 --workers 2
+python3 affine_null.py --nmax 128; python3 check_mirror.py; python3 check_mirror_reflect.py
+python3 local_boundaries.py --nmax 62; python3 local_boundaries2.py; python3 compare_boundaries.py > ../../data/boundaries/table_ring_vs_null.md
+```
+(The second line recomputes nothing already in the checkpoint; certificates at n = 15, 16 for the 45 classes are
+written only by the third line if those records are not yet in the checkpoint, so for an exact reproduction run
+the third line before the second.)

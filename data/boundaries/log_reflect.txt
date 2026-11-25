@@ -1,0 +1,11 @@
+estimate: 88 classes n=4..12, about 1 min wall at 2 workers (null n=4..12 took 2.7 min for 160 classes, mostly process start)
+792 jobs (0 in checkpoint)
+[160/792] n=5 rule=140 0.003s 72.0MB at 17s
+[320/792] n=7 rule=78 0.004s 71.7MB at 35s
+[480/792] n=9 rule=44 0.008s 72.1MB at 53s
+[640/792] n=11 rule=27 0.018s 72.4MB at 72s
+done in 93s; table has 792 rows
+
+real	1m32.975s
+user	2m11.197s
+sys	0m52.867s
