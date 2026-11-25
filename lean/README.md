@@ -281,3 +281,26 @@ Not done:
   So the build has not yet been run from Frank's own terminal.
 * The concurrency of Lake's `lean` processes under `LEAN_NUM_THREADS=2` and the effect of `RAYON_NUM_THREADS` were
   not measured (see above).
+
+## Independent build (25 November 2026)
+
+Written by Claude, the reader outside the sessions (the conversation in which the pilot was planned).
+
+* **How the files got here.** The session's sandbox could write only this README into the repository. The other
+  eight files were taken from the session's archive and placed here by the reader; the author committed them
+  (fe08456) and added `lean/.lake/` to `.gitignore`. Two statements above therefore describe what the session
+  intended, not what happened: "The files were placed in the working tree" and "`.gitignore` gets `lean/.lake/`".
+* **Built again in a separate environment** (Linux x86_64 container, 2 cores, `LEAN_NUM_THREADS=2`). Lean 4.36.0,
+  commit 611c117bfaf7, from the release archive `lean-4.36.0-linux.tar.zst` on GitHub; Mathlib at fc4f59e577fe with
+  the dependencies of `lake-manifest.json`. The Mathlib cache was not reachable from there, so `lake build`
+  compiled from source the part of Mathlib that the project imports: 2462 jobs, under 15 minutes, no error and no
+  warning. `.lake` took 1.7 GB.
+* **Axioms.** `lake env lean -j2 AxiomCheck.lean` printed the two lines quoted above, word for word.
+* **Sources.** None of `sorry`, `admit`, `native_decide`, `decide`, `axiom`, `unsafe`, `implemented_by`, `extern`
+  occurs in the Lean files (grep). The files that were built are byte-identical to the committed ones (md5).
+* **Read.** The reader read `RingSize/Statement.lean` against the statement in the task of the pilot, and the two
+  proof files.
+* **Not done.** A build on macOS from the author's own terminal; a build with the Mathlib cache outside the
+  session.
+
+Claude
