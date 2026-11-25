@@ -76,10 +76,14 @@ def witness_path(F, n, sources, target_mask):
     return traj, res
 
 
-def bijective_certificate(rule, n, F):
+def bijective_certificate(rule, n, F, boundary="ring"):
     """F bijective => P(x, y) = K(F(x), y) is doubly stochastic, the uniform law is stationary for every
-    eps, every state is on a cycle and ord pi(x) = 0 for all x; every code occurs, so k* = 0."""
-    return dict(rule=rule, n=n, bijective=True, kstar=0, k_c=[dict(code=c, k=0) for c in range(8)])
+    eps, every state is on a cycle and ord pi(x) = 0 for all x; every code occurs, so k* = 0.
+    (With walls, every code occurs at an interior cell when n >= 3.)"""
+    out = dict(rule=rule, n=n, bijective=True, kstar=0, k_c=[dict(code=c, k=0) for c in range(8)])
+    if boundary != "ring":
+        out["boundary"] = boundary
+    return out
 
 
 def make_certificate(res):
@@ -112,6 +116,8 @@ def make_certificate(res):
     out = dict(rule=res["rule"], n=n, m=cs.m, cycles=cycles, gamma=gamma, gamma_min=gmin,
                stable=stable, hierarchy=hierarchy, tree=dict(root=stable[0], parent=par), k_c=kc,
                kstar=kstar, stable_cover_mask=cover)
+    if res.get("boundary", "ring") != "ring":           # ring certificates stay byte-identical
+        out["boundary"] = res["boundary"]
     if kstar == 0:
         # a small set of stable cycles covering all codes (greedy)
         need, chosen = 255, []
