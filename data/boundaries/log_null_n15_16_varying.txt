@@ -1,0 +1,7 @@
+45 rules, n = 15..16: about 1.5 CPU-min, 0.8 min wall at 2 workers, longest job about 0.1 min
+90 jobs (1760 in checkpoint)
+done in 36s; table has 1850 rows
+
+real	0m35.696s
+user	1m4.767s
+sys	0m5.869s

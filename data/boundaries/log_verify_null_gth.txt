@@ -1,0 +1,1 @@
+1536 pairs, 1536 pass, max deviation state 7.00e-06 code 3.00e-06, wall 19s

@@ -1,0 +1,5 @@
+480 jobs (1280 in checkpoint)
+[160/480] n=12 rule=255 0.037s 73.8MB at 21s
+[320/480] n=13 rule=255 0.066s 71.5MB at 48s
+[480/480] n=14 rule=236 2.86s 99.0MB at 90s
+done in 90s; table has 1760 rows
