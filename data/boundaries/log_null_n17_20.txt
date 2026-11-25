@@ -1,0 +1,13 @@
+estimate: 12 rules, n = 17..20: about 9.6 CPU-min, 4.8 min wall at 2 workers
+48 jobs (2080 in checkpoint)
+[32/48] n=19 rule=90 37.565s 280.4MB at 74s
+[35/48] n=19 rule=165 38.233s 273.7MB at 113s
+[37/48] n=19 rule=133 67.489s 280.6MB at 139s
+[40/48] n=20 rule=37 30.997s 454.2MB at 146s
+[44/48] n=20 rule=94 99.339s 451.0MB at 245s
+[48/48] n=20 rule=133 224.205s 480.2MB at 381s
+done in 381s; table has 2128 rows
+
+real	6m21.343s
+user	9m13.508s
+sys	1m14.347s

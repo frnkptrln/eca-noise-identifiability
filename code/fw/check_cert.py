@@ -12,28 +12,38 @@ import scipy.sparse as sp
 from scipy.sparse.csgraph import dijkstra
 
 
-def succ(rule, n):
+def _cells(x, n, boundary):
+    """Per cell i the code 4 l + 2 c + r. Walls: the row is padded explicitly, as an (n + 2)-cell word
+    w_0 .. w_{n+1} with w_{i+1} = x_i and the wall cells w_0, w_{n+1} set by the boundary."""
+    if boundary == "ring":
+        return [4 * ((x >> ((i - 1) % n)) & 1) + 2 * ((x >> i) & 1) + ((x >> ((i + 1) % n)) & 1) for i in range(n)]
+    w = [None] + [(x >> i) & 1 for i in range(n)] + [None]
+    w[0] = {"null": 0 * x, "one": 0 * x + 1, "reflect": w[1]}[boundary]
+    w[n + 1] = {"null": 0 * x, "one": 0 * x + 1, "reflect": w[n]}[boundary]
+    return [4 * w[i] + 2 * w[i + 1] + w[i + 2] for i in range(n)]
+
+
+def succ(rule, n, boundary="ring"):
     x = np.arange(1 << n)
     out = np.zeros_like(x)
-    for i in range(n):
-        c = 4 * ((x >> ((i - 1) % n)) & 1) + 2 * ((x >> i) & 1) + ((x >> ((i + 1) % n)) & 1)
+    for i, c in enumerate(_cells(x, n, boundary)):
         out |= ((rule >> c) & 1) << i
     return out
 
 
-def codes_of(n):
+def codes_of(n, boundary="ring"):
     x = np.arange(1 << n)
     m = np.zeros(1 << n, dtype=np.int64)
-    for i in range(n):
-        c = 4 * ((x >> ((i - 1) % n)) & 1) + 2 * ((x >> i) & 1) + ((x >> ((i + 1) % n)) & 1)
+    for c in _cells(x, n, boundary):
         m |= 1 << c
     return m
 
 
 def check(cert):
     rule, n = cert["rule"], cert["n"]
+    boundary = cert.get("boundary", "ring")
     S = 1 << n
-    F = succ(rule, n)
+    F = succ(rule, n, boundary)
     errs = []
     if cert.get("bijective"):
         if len(np.unique(F)) != S:
@@ -71,7 +81,7 @@ def check(cert):
     cyc_of = np.full(S, -1)
     for j, cyc in enumerate(cert["cycles"]):
         cyc_of[cyc] = j
-    cm = codes_of(n)
+    cm = codes_of(n, boundary)
     V = np.zeros((m, m), dtype=np.int16)
     R = np.zeros((m, 8), dtype=np.int64)
     allst = np.concatenate([np.array(cyc) for cyc in cert["cycles"]])

@@ -29,9 +29,47 @@ UNREACHED = np.uint8(255)
 # ----------------------------------------------------------------------------------------------
 # rules, states, codes
 # ----------------------------------------------------------------------------------------------
-def succ_map(rule: int, n: int) -> np.ndarray:
+BOUNDARIES = ("ring", "null", "one", "reflect")
+
+
+def _edge_neighbours(x: np.ndarray, n: int, i: int, boundary: str):
+    """(l, c, r) bits of cell i on a row of n cells with the given non-ring boundary.
+
+    null: cells -1 and n are 0 at every step; one: they are 1 at every step; reflect: cell -1 copies
+    cell 0 and cell n copies cell n-1. Noise acts on cells 0..n-1 only (the walls carry no state)."""
+    c = (x >> i) & 1
+    if i > 0:
+        l = (x >> (i - 1)) & 1
+    elif boundary == "null":
+        l = np.zeros_like(x)
+    elif boundary == "one":
+        l = np.ones_like(x)
+    elif boundary == "reflect":
+        l = c
+    else:
+        raise ValueError(f"unknown boundary {boundary!r}")
+    if i < n - 1:
+        r = (x >> (i + 1)) & 1
+    elif boundary == "null":
+        r = np.zeros_like(x)
+    elif boundary == "one":
+        r = np.ones_like(x)
+    elif boundary == "reflect":
+        r = c
+    else:
+        raise ValueError(f"unknown boundary {boundary!r}")
+    return l, c, r
+
+
+def succ_map(rule: int, n: int, boundary: str = "ring") -> np.ndarray:
+    """F on {0,1}^n as an array of 2^n successors; boundary 'ring' (default) or one of BOUNDARIES."""
     x = np.arange(1 << n, dtype=np.int64)
     out = np.zeros_like(x)
+    if boundary != "ring":
+        for i in range(n):
+            l, c, r = _edge_neighbours(x, n, i, boundary)
+            out |= ((rule >> (4 * l + 2 * c + r)) & 1) << i
+        return out
     for i in range(n):
         l = (x >> ((i - 1) % n)) & 1
         c = (x >> i) & 1
@@ -40,10 +78,16 @@ def succ_map(rule: int, n: int) -> np.ndarray:
     return out
 
 
-def code_mask(n: int) -> np.ndarray:
-    """(2^n,) uint8: bit c set iff code c occurs somewhere in the state."""
+def code_mask(n: int, boundary: str = "ring") -> np.ndarray:
+    """(2^n,) uint8: bit c set iff code c occurs somewhere in the state (at some cell 0..n-1; with a
+    non-ring boundary the edge cells read codes that include the wall value)."""
     x = np.arange(1 << n, dtype=np.int64)
     m = np.zeros(1 << n, dtype=np.uint8)
+    if boundary != "ring":
+        for i in range(n):
+            l, c, r = _edge_neighbours(x, n, i, boundary)
+            m |= (np.uint8(1) << (4 * l + 2 * c + r).astype(np.uint8))
+        return m
     for i in range(n):
         l = (x >> ((i - 1) % n)) & 1
         c = (x >> i) & 1
@@ -87,10 +131,10 @@ def is_bijective(F: np.ndarray) -> bool:
 class CycleStructure:
     """Cycles of F on {0,1}^n, numbered 0..m-1 in increasing order of their smallest state."""
 
-    def __init__(self, rule: int, n: int, F: np.ndarray | None = None):
-        self.rule, self.n = rule, n
+    def __init__(self, rule: int, n: int, F: np.ndarray | None = None, boundary: str = "ring"):
+        self.rule, self.n, self.boundary = rule, n, boundary
         S = 1 << n
-        self.F = succ_map(rule, n) if F is None else F
+        self.F = succ_map(rule, n, boundary) if F is None else F
         F = self.F
         # transient depth and on-cycle flag: iterate until every orbit has entered a cycle
         G = F.copy()
@@ -142,12 +186,16 @@ class CycleStructure:
             self.Fpow.append(P)
             P = P[P]
         # codes on each cycle
-        cm = code_mask(n)
+        cm = code_mask(n, boundary)
         self.state_codes = cm
         self.cyc_codes = np.zeros(self.m, dtype=np.uint8)
         np.bitwise_or.at(self.cyc_codes, cyc_of_state[self.cyc_states], cm[self.cyc_states])
-        # rotation action on cycles
-        self.rot1 = cyc_of_state[rotate(self.cyc_min, n, 1)]
+        # rotation action on cycles (ring only; with walls the symmetry used is trivial: every cycle is
+        # its own orbit representative, so EdgeStore runs one BFS per cycle)
+        if boundary == "ring":
+            self.rot1 = cyc_of_state[rotate(self.cyc_min, n, 1)]
+        else:
+            self.rot1 = np.arange(self.m, dtype=np.int64)
 
     def states_of(self, j: int) -> np.ndarray:
         return self.cyc_states[self.cyc_start[j]:self.cyc_start[j + 1]]
@@ -300,11 +348,13 @@ class EdgeStore:
         return hj[hj != j]
 
 
-def classify(rule: int, n: int, L0: int = 1, keep_dists: bool = False, F: np.ndarray | None = None) -> dict:
-    """gamma for every cycle, noise-selected cycles, k_c and k* for one rule on one ring (exact)."""
+def classify(rule: int, n: int, L0: int = 1, keep_dists: bool = False, F: np.ndarray | None = None,
+             boundary: str = "ring") -> dict:
+    """gamma for every cycle, noise-selected cycles, k_c and k* for one rule on one ring (exact);
+    boundary='null' etc. for a row of n cells with walls (see succ_map)."""
     import hier
-    F = succ_map(rule, n) if F is None else F
-    cs = CycleStructure(rule, n, F)
+    F = succ_map(rule, n, boundary) if F is None else F
+    cs = CycleStructure(rule, n, F, boundary)
     es = EdgeStore(cs, keep_dists)
     H = hier.edmonds_all_roots(es, L0)
     gamma = H.gamma
@@ -316,4 +366,4 @@ def classify(rule: int, n: int, L0: int = 1, keep_dists: bool = False, F: np.nda
     cover = int(np.bitwise_or.reduce(cs.cyc_codes[stable]))
     return dict(rule=rule, n=n, m=cs.m, cs=cs, es=es, H=H, gamma=gamma, gmin=gmin, stable=stable,
                 Rcode=Rcode, k_c=k_c, kstar=kstar, stable_cover=cover, dists=es.dists,
-                rep=es.rep, shift=es.shift, expanded=H.expanded)
+                rep=es.rep, shift=es.shift, expanded=H.expanded, boundary=boundary)

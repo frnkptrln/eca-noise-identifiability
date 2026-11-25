@@ -1,0 +1,51 @@
+## compare.py null out/null_n04_20.csv
+null_sweep.csv : compared 2128 records; exact k_c compared in 1736 ; differences 0
+## compare.py ringvsnull out/null_n04_20.csv
+ring_vs_null: missed codes given for the mirror rule in 142 records
+ring_vs_null: compared 2704 records; exact k* compared in 2351 ; differences 0
+## compare.py reflect out/reflect_n04_12.csv
+reflect_sweep.csv : compared 792 records; exact k_c compared in 723 ; differences 0
+## affine.py
+affine rules: [0, 15, 51, 60, 85, 90, 102, 105, 150, 153, 165, 170, 195, 204, 240, 255]
+affine_null.csv: compared 2016 records, differences 0
+rule 90, k*>=1 at n = [3, 7, 15, 31, 63, 127]
+rule 165, k*>=1 at n = [3, 7, 15, 31, 63, 127]
+rule 150, k*>=1 at n = [5] ; not bijective exactly at n=2 mod 3: True
+rule 105, k*>=1 at n = [5]
+rule 60 bijective at every n: True ; rule 153: True
+rule 90 nilpotent at n = [3, 7, 15, 31, 63, 127] ; bijective iff n even: True
+## local.py
+94 null, crystal 110..11 fixed and radius 2 at every n=2 mod 3, 5..62: True
+133 null, (010)^k fixed and radius 2 at every 3|n, 6..60: True
+94 with one-walls fixes (101)^k: True
+75 null, crystal radius 2 at n = [5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38, 41] ; not at n = [44, 47, 50, 53, 56, 59, 62]
+22 null, every single flip of 0 dies at n = [6, 14, 30, 62] ; some flip runs into another cycle at every other n in 4..62 except n = [56] (no flip decided within 20000 steps)
+154/26 single-flip orbits equal rule-90 orbits (n=3..69): True ; all flips die at n = [3, 7, 15, 31, 63]
+122 null, checkerboard 2-cycle has radius 2 at n = [7, 15]
+137 null, the 2-cycle from 1000 1000.. has radius 2 at n = [7, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 61]
+Lemma M holds (n=1..7) exactly for rules [0, 4, 18, 22, 72, 76, 90, 94, 128, 132, 146, 150, 200, 204, 218, 222]
+Lemma M' holds (n=1..7) for 64 rules; equal to the 64 reflection-symmetric rules: True
+## counts.py
+null classes, n = 8..16: k* >= 1 at every n: 110 ; k* = 0 at every n: 38 ; change side: [22, 37, 75, 90, 91, 94, 122, 126, 133, 135, 137, 165]
+change side somewhere in n = 4..14: 31 ; in n = 8..14: 9
+n = 12 : rules with k* >= 1: 186 ; rules whose cycles jointly miss a code: 181
+n = 13 : rules with k* >= 1: 187 ; rules whose cycles jointly miss a code: 179
+n = 14 : rules with k* >= 1: 189 ; rules whose cycles jointly miss a code: 181
+n = 16 : rules with k* >= 1: 187 ; rules whose cycles jointly miss a code: 180
+records of class representatives: 2128 ; with a single cycle: 562 ; with more than one closed class of G_1: [(218, 7), (218, 15)]
+bijective under null walls (class: sizes in 4..16): {51: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], 60: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], 90: [4, 6, 8, 10, 12, 14, 16], 105: [4, 6, 7, 9, 10, 12, 13, 15, 16], 150: [4, 6, 7, 9, 10, 12, 13, 15, 16], 153: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], 165: [4, 6, 8, 10, 12, 14, 16], 204: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]}
+n = 12, ring : rules whose cycles jointly miss a code: 138
+n = 12, null : rules whose cycles jointly miss a code: 181
+k* by n = 4..20 (side only, 1 means k* >= 1):
+  22 11100000001000000
+  37 01101101101101101
+  75 11011011011011011
+  90 00010000000100000
+  91 11110010010010010
+  94 11011001001001001
+  122 11010000000100000
+  126 10011000000100000
+  133 01100100100100100
+  135 10101010101010101
+  137 11010001010101010
+  165 00010000000100000

@@ -7,6 +7,7 @@ automaton on a ring of 12 cells can be identified from a trajectory when the dyn
 corrupted by independent bit flips with probability ε per cell and step.
 
 * `paper/ring_size_paper.pdf` — the ring-size paper (version 2; its own record: https://doi.org/10.5281/zenodo.24482169): for which ring sizes small noise selects cycles that leave part of the rule table unused, proved for rules 154, 43, 142 and 94, in part for rule 26
+* `report_boundaries.md` — the same question on a row with walls instead of a ring (version 0.6): computed for rows up to 20 cells, proved for the additive rules 60, 90 and 150
 * `note/note_v0.2.pdf` — the note, version 0.2 (English, with all 88 rule classes tabulated in the appendix); `note/note.pdf` is version 0.1
 * `code/` — the computation (Python 3, NumPy, SciPy for one sparse matrix, pandas and matplotlib for tables and figures)
 * `data/` — every data file the note is built from, with `MANIFEST.sha256`
@@ -15,7 +16,7 @@ corrupted by independent bit flips with probability ε per cell and step.
 
 Repository: https://github.com/frnkptrln/eca-noise-identifiability · DOI: https://doi.org/10.5281/zenodo.23399100 (all versions; the single versions are listed there) · License: CC BY 4.0 (`LICENSE`), covering the note, the data and the code.
 
-Cite as: Peterlein, F. (2026). *Rule identifiability in elementary cellular automata under dynamical noise* (v0.5). Zenodo. https://doi.org/10.5281/zenodo.23399100
+Cite as: Peterlein, F. (2026). *Rule identifiability in elementary cellular automata under dynamical noise* (v0.6). Zenodo. https://doi.org/10.5281/zenodo.23399100
 
 Cite the ring-size paper as: Peterlein, F. (2026). *Noise-selected cycles of elementary cellular automata and the arithmetic of the ring size*. Zenodo. https://doi.org/10.5281/zenodo.24482169
 
@@ -128,6 +129,32 @@ No new mathematics. Version 0.5 contains version 2 of the ring-size paper.
   secondary descriptions say so.
 * `paper/TRACE.md`, Part G, lists every change of version 2.
 
+## Version 0.6: open boundaries
+
+Everything before this version is computed on a ring. Version 0.6 adds a study of the same question on a row of n
+cells whose two outer neighbours are held at 0 (null walls) and, more briefly, on a row with reflecting walls. The
+note and the ring-size paper are unchanged.
+
+In plain words: on the ring, the answer for some rules depends on the arithmetic of the ring size. With walls none
+of those conditions survives unchanged. Two survive shifted by one. The period-3 pattern of rule 94 is selected
+when 3 divides n + 1 (computed for rows of 8 to 20 cells, not proved), and the power-of-two effect of rule 90
+appears exactly when n + 1 is a power of two (proved for every row of at least 4 cells). For the rules whose
+selected patterns travel around the ring (43, 142, 35) the dependence on the size disappears: at every size
+computed (4 to 16 cells) none of their cycles contains some neighbourhoods, so as the noise vanishes those entries
+of the rule table are seen ever more rarely. The walls also create dependences on the size that the ring does not
+have, for instance on n mod 3 (rules 37, 91, 75) or on the parity of n (rules 135, 137); these are computed for
+rows up to 20 cells and not proved. Holding the walls at 1 instead of 0 is the same as exchanging 0 and 1 in the
+rule, in its inputs and in its output.
+
+* `report_boundaries.md` — the report. Under null walls only reflection remains a symmetry, so the 256 rules form 160 classes. Computed: all 160 classes for n = 4..16, the 12 classes that change side for n = 17..20, reflecting walls for n = 4..12, each compared with the ring. Proved for every row of at least 4 cells: the additive rules 60, 90 and 150 and their complements (rule 60: k* = 0; rule 90: k* ≥ 1 exactly when n + 1 is a power of two; rule 150: k* ≥ 1 only at n = 5). Every other statement is tagged as computed or observed
+* `PREDICTIONS_boundaries.md` — predictions sealed before the first computation under walls (sha256 in the report); of the session's own 28 items 17 were correct, 5 partly correct and 6 wrong
+* `literature_boundaries.md` — literature on elementary cellular automata with fixed boundaries; only sources read in that session
+* `code/fw/*boundaries*.py` and the boundary option in `code/fw/fwlib.py` (the ring is the default and is guarded by `code/fw/test_boundaries.py`), `data/boundaries/` (with its own `MANIFEST.sha256`) — computation, data and certificates; Section 9 of the report lists the commands
+* `VERIFICATION_boundaries.md`, `verify_boundaries/` — independent verification with own code: every proof it checked is correct, every number it recomputed agrees, 28 findings on the text around the results; its header says how each was handled
+* `reader_checks/walls/` — a further recomputation with separate code (all records of the null and reflecting tables), described in `reader_checks/README.md`
+
+The changes made to the report after the verification were not verified in turn.
+
 ## Conventions
 
 States are integers 0..4095, bit i is cell i (indices mod 12). A rule is its Wolfram number:
@@ -158,3 +185,8 @@ detail.
 Version 0.5 (24 November 2026): one separate session checked those corrections, another read sources; Claude, in
 the conversation named above, worked the findings of both into the paper and this file. These last changes were
 not checked again.
+
+Version 0.6 (24 and 25 November 2026) was produced in the same way: the study of open boundaries in one session,
+its verification in a separate session that had not seen the work. Claude, in the conversation named above, had
+written the task, recomputed the tables with separate code (`reader_checks/walls/`), applied the patches of the
+session as commits and worked the findings of the verification into the report; that last pass was not verified.

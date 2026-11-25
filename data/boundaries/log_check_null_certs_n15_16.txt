@@ -1,0 +1,5 @@
+90 certificates checked, 0 failed
+
+real	1m16.808s
+user	1m14.816s
+sys	0m1.841s

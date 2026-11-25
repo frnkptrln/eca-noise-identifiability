@@ -1,0 +1,1 @@
+1280 pairs, 1280 pass, max deviation state 4.00e-06 code 0.00e+00, wall 4s
