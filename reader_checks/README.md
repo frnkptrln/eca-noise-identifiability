@@ -105,6 +105,13 @@ Proposition N, and found no gap. That is one reading by the reader who planned t
 
 No disagreement with a computed or proved statement of the report was found in these ranges.
 
+### Afterwards (25 November 2026)
+
+A separate session verified the report on the same day (`VERIFICATION_boundaries.md`). It confirmed finding 2 (312
+rows in the whole file, of which the 142 above lie in the records compared here) and finding 3, and it decided
+n = 56 as well: with more steps a single flip reaches a cycle of period 65532 that does not contain 0. Finding 1 it
+could not decide from the repository. All three are handled as the header of that report records.
+
 ### Not covered
 
 The literature review (`literature_boundaries.md`) and the conflict with a table of Wang et al. that the report

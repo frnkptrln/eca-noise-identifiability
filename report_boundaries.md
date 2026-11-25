@@ -1,5 +1,11 @@
 # Open boundaries: noise-selected cycles of ECA on a row with null walls
 
+Note of 25 November 2026, added by Claude, the reader outside the sessions. The status block below, open point 9
+and Section 9 describe the situation of the session that wrote this report (base 2765f7e, nothing committed). Since
+then the six step patches were applied without change as six commits on branch `open-boundaries`, on b3a73ce
+(version 0.5). A separate session verified the report (`VERIFICATION_boundaries.md`); its findings are worked into
+the text below, as the header of that file records. That last pass was not verified.
+
 Status (updated as the work proceeds):
 
 - 24 Nov 2026, start. Base: commit 2765f7e (= origin/main, version 0.4). The worktree
@@ -25,6 +31,11 @@ Status (updated as the work proceeds):
 
 Tags: [proved] = proof written out here (or in the cited source, location given); [computed] = exact result in
 the named data file, produced by the named command; [observed] = pattern seen in computed data, not proved.
+
+Names of earlier results. "The ring paper" with Lemma 1, Lemma 2, Lemma B, Lemma Z, Lemma H, Theorem A and
+Sections 5.3, 5.5 means `report_ring_size.md` (its Sections 4 and 5); in `paper/ring_size_paper.tex` Lemma 1,
+Lemma 2 and Theorem A are `lem:closure`, `lem:inclosed` and `thm:A`. "The note" with Theorem 1 and Lemma 3 means
+`note/note_v0.2.tex` (`thm:order`, `lem:ends`). PROOF_154.md is `verify_ring_size/part2_154/PROOF_154.md`.
 
 ## Contents
 1. Literature (Step 0)
@@ -54,17 +65,19 @@ Theorem 6.2 (p. 12, reflection principle). Used below:
   invertible for n = 0, 1 mod 3 (Martín del Rey, p. 121, stated) and has transients exactly at N = 3m + 2
   (Tadaki, p. 4 and Table I, numerical, N <= 32). The "only if" for rule 150 was not found proved; it is in 5.1.
 * The reflection principle: a null row of n cells under rule 90 is the mirror-symmetric part of a ring of
-  2n + 2 cells (Vadali and Turner, Thm. 6.2, p. 12, and Lemma B.3, p. 20); they remark that for other automata
+  2n + 2 cells (Vadali and Turner, Thm. 6.2, p. 12); they remark that for other automata
   the principle "usually does not work" (pp. 12-13). Lemma M in 5.1 states which ECA it works for.
 * Reachability under null boundary for one n by the reachability tree (Bhattacharjee et al. 2020, Section 3.3,
-  pp. 13-14); reversibility for all n by two graphs (Wang et al. 2025, Thms. 1-5, pp. 5-8). Wang et al., Table 1
-  (p. 10), lists rule 195 (the complement of rule 60) as never reversible under null walls; that conflicts with
-  Martín del Rey's triangular-matrix argument and with this computation (rule 195, class {153, 195}, is
-  bijective at every n = 4..16 in `data/boundaries/null_sweep.csv` [computed]). Either the entry or our reading
-  of their rule string is wrong.
-* Stochastic stability: the tree representation and "only noise-free recurrent classes can be stochastically
-  stable" hold on any finite configuration space (Miękisz 2008, Section 7, pp. 22-24); all spatial examples read
-  there use rings.
+  pp. 13-14); reversibility for all n by two graphs (Wang et al. 2025, Thms. 1-5, pp. 5-8); page numbers of both
+  are those of the arXiv copies. Wang et al., Table 1 (p. 10 of arXiv v2), gives reversibility sequences for
+  n = 1..12. Its null-boundary entries (rules 170, 169, 166, 165, 150) and its periodic entries (225, 210, 195,
+  169, 166, 150) agree with brute force; rule 195 appears only in the periodic block. (The first version of this
+  report read rule 195 as a null-boundary entry and reported a conflict; that was a misreading of the table,
+  `VERIFICATION_boundaries.md`, finding 1.)
+* Stochastic stability: the tree representation (Miękisz 2008, Section 7, eqs. (49)-(50), p. 23) holds for any
+  finite state space; the source states the consequence only for dynamics whose recurrent classes are single
+  states (only absorbing states can be stochastically stable, p. 23). The spatial examples read there use
+  periodic boundaries (rings; a torus in Example 6, p. 36).
 * Not found in the sources read: anything on noise-selected cycles, stochastic potentials or zero-noise limits of
   ECA (or other CA) on a row with fixed or reflecting walls, or on a path graph rather than a cycle.
 
@@ -165,7 +178,8 @@ recorded with k* = 0 (justified in 5.1: the note's argument uses no ring; the GT
 
 Estimates: `code/fw/wall_estimate_boundaries.py` (per-rule growth factor). BUG-B1: the first version used one
 common "last n" column, so the classes without data at n = 16 counted as zero; fixed (per-rule last n).
-The largest job was class 76 at n = 16 (52 s, 531 MB; 19 k cycles, no rotation symmetry under walls).
+The largest job by memory was class 76 at n = 16 (52 s, 531 MB; 19 k cycles, no rotation symmetry under walls);
+by time it was class 133 at n = 20 (224 s, 480 MB; `null_sweep_cost.csv`).
 n = 17..20 was not run for all classes: the dense V rows grow as m^2 (class 76: about 4 GB at n = 18).
 
 **Checks.**
@@ -190,13 +204,17 @@ n = 17..20 was not run for all classes: the dense V rows grow as m^2 (class 76: 
   codes {3, 6}); rule 90 is nilpotent exactly at n = 1, 3, 7, 15 among n = 1..20.
 
 **Global counts** (`data/boundaries/null_sweep.csv`, `data/boundaries/ring_vs_null.csv`, `code/fw/compare_boundaries.py`) [computed]:
+(Known defect of `ring_vs_null.csv`: for a rule that is not the representative of its null class, the column
+`null_missed` holds the missed codes of the representative; those of the rule itself are their mirror image, codes
+1 and 4 exchanged and 3 and 6 exchanged. 312 rows; k* is not affected. `VERIFICATION_boundaries.md`, finding 27.)
 * 160 null classes at n = 8..16: 110 have k* >= 1 at every n, 38 have k* = 0 at every n, 12 change side
   (22, 37, 75, 90, 91, 94, 122, 126, 133, 135, 137, 165). In n = 4..14, 31 classes change side somewhere.
 * Rules (all 256) with k* >= 1: ring 180, 174, 172, 188 at n = 12, 13, 14, 16; null 186, 187, 189, 187.
 * Rules whose cycles jointly miss a code ("B-type", k* >= 1 by the note's Lemma 3 without any potential):
   ring 138 and 142 at n = 12 and 16; null 181 and 180. Under walls most of the classification is decided at zero
   noise.
-* In 2038 of the 2040 non-bijective null records gamma_min = m - 1, i.e. G1 has a single closed class and it is
+* In 2038 of the 2040 non-bijective null records (160 classes at n = 4..16 and the 12 classes at n = 17..20)
+  gamma_min = m - 1, i.e. G1 has a single closed class and it is
   the selected set (Theorem A of the ring paper, which uses no rotation); the exceptions are rule 218 at n = 7 and
   n = 15. 562 records have a single cycle.
 * Bijective under null walls: classes 51, 60, 153, 204 at every n = 4..16; 90, 165 at even n; 150, 105 at
@@ -273,9 +291,9 @@ Short form, n >= 8 (`ring` from the ring paper; `null` from this table; n <= 20 
 | 43, 142 | k* >= 1 iff 4 \| n | k* = 1 at every n (B-type) | same classes |
 | 35 | k* >= 1 iff 3 \| n | k* = 1 at every n (B-type, one cycle) | 59: k* = 1 at every n (B-type) |
 | 60 | k* >= 1 iff n = 2^k | k* = 0 (bijective) | 153: k* = 0 (bijective) |
-| 90 | k* >= 1 iff n = 2^k | k* = 2 iff n + 1 = 2^k, else 0 [proved] | 165: k* = 1 iff n + 1 = 2^k, else 0 [proved] |
+| 90 | k* >= 1 iff n = 2^k | k* = 2 iff n + 1 = 2^k, else 0 [proved] | 165: k* >= 1 iff n + 1 = 2^k, else 0 [proved]; k* = 1 at n = 7, 15 [computed] |
 | 154 | k* >= 1 iff n = 2^k | k* = 2 iff n + 1 = 2^k, else 1 (B-type) | 166: k* = 1 at every n (B-type) |
-| 26 | 2^k: zero state; else code 7 | same as 154 | 167: k* = 0 at every n |
+| 26 | k* >= 1 at 2^k (zero state) and at most other n (code 7 missing); k* = 0 at n = 11, 14, 17, 20 | same as 154 | 167: k* = 0 at every n |
 | 22 | seed set {2^k - 2, 2^k - 1, 2^k, ...} | k* = 1 at n = 14 only (n = 7..20) | 151: k* = 0 |
 | 122 | k* = 0 iff 4 \| n (to 20) | k* = 1 at n = 15 only (n = 8..20) | 161: k* = 1 at every n (B-type) |
 | 37 | k* = 0 iff n mod 6 in {0, 5} | k* = 0 iff n = 1 mod 3 | 91: k* >= 1 iff n = 1 mod 3 |
@@ -289,7 +307,7 @@ Short form, n >= 8 (`ring` from the ring paper; `null` from this table; n <= 20 
 In words: none of the ring's arithmetic conditions survives unchanged. Two survive shifted (the walls act as
 cells of the pattern): the period-3 crystal of class 94, now at 3 | (n + 1) with zero walls and at 3 | n with
 one-walls, and the nilpotency of rule 90, now at n + 1 = 2^k. The travelling mechanisms (43, 142, 35) disappear,
-and with them the switching: these classes become B-type (a code on no cycle at all), so k* >= 1 at every n.
+and with them the switching: these classes become B-type (a code on no cycle at all), so k* >= 1 at every computed n (4..16).
 New dependences on n appear that have no ring counterpart (37 and 91 mod 3, 75 mod 3, 135 parity, 137 odd n).
 
 ### 5.1 Affine rules [proved]
@@ -330,8 +348,8 @@ onto, so every pattern (x_0, x_1, x_2), i.e. every code at cell 1, occurs in P. 
 **Lemma M (mirror embedding).** For a reflection-symmetric rule with f(000) = f(101) = 0, define the lift of a
 row x (n cells) to the ring of N = 2n + 2 cells by ring cell j = x_j and ring cell N - 2 - j = x_j (0 <= j < n),
 ring cells n and N - 1 equal to 0. Then F_ring(lift x) = lift(F_null x).
-*Proof.* The lift is invariant under the two reflections j -> -2 - j and j -> 2n - j of Z/NZ, which fix the
-cells N - 1 and n. A reflection-symmetric rule commutes with both, so the image is invariant too. A cell fixed
+*Proof.* The lift is invariant under the reflection j -> -2 - j of Z/NZ, which fixes the
+cells N - 1 and n. A reflection-symmetric rule commutes with it, so the image is invariant too. A cell fixed
 by a reflection whose two neighbours are mirror images reads a code (a, b, a) with b its own value; with b = 0
 the new value is f(a0a) in {f(000), f(101)} = {0}. So the wall cells stay 0, and the cells 0..n-1 read exactly
 the codes they read in the null row. ∎ (For rule 90 this is Vadali and Turner, Thm. 6.2, p. 12. Checked for all
@@ -364,7 +382,8 @@ Linear-algebra check of the statement for n = 3..128, all 16 affine rules (`code
 `data/boundaries/affine_null.csv`) [computed]: rule 90 and 165 have k* >= 1 exactly at n = 3, 7, 15, 31, 63, 127.
 
 **Theorem 150.** Under null walls rule 150 is bijective iff n != 2 mod 3, and k* = 0 for every n >= 4 except
-n = 5, where k* = 1. The same holds for rule 105 (= 150 + 1).
+n = 5, where k* = 1. The same holds for rule 105 (= 150 + 1), except that its value k* = 1 at n = 5 is computed,
+not proved (k* >= 1 is proved).
 *Proof.* M = A + I, M_ring = z^(-1)(1 + z + z^2). Write N = 2n + 2 = 2^s q, q odd; z^N - 1 = (z^q - 1)^(2^s) with
 z^q - 1 squarefree. 1 + z + z^2 is irreducible and divides z^q - 1 iff 3 | q iff 3 | (n + 1). If 3 does not divide
 n + 1, M_ring is invertible, hence M is (lift injective): bijective, k* = 0. If 3 | (n + 1), write
@@ -373,9 +392,12 @@ degree (q - 2) 2^s. A nonzero u in V_nil supported on {0, 1, 2} would give a non
 divisible by R^(2^s), so (q - 2) 2^s <= 6; with 3 | q, q odd, s >= 1 this leaves q = 3, s in {1, 2}, i.e. N = 6
 or 12, n = 2 or 5. For n >= 4, n = 2 mod 3, n != 5, Lemma W and Proposition L give k* = 0; also V_nil != 0, so F is
 not bijective. At n = 5 the characteristic polynomial of M is (x + 1) x^4, so V_inv = ker(M + I) = ker A = {00000, 10101}
-(10101 is a fixed point): codes {0, 2, 5}, so k* >= 1; k* = 1 [computed]. Non-bijectivity at n = 2 mod 3: the
+(10101 is a fixed point): codes {0, 2, 5}, so k* >= 1; every code occurs in a single flip of 00000 or of 10101,
+and a code one flip away from a state of a selected cycle has k_c <= 1 (`paper/ring_size_paper.tex`, `lem:kzero`,
+which uses no rotation), so k* = 1. Non-bijectivity at n = 2 mod 3: the
 state 11011...011 (blocks 110, ending in 11) is in ker M (every window sums to 0 with the walls). Rule 105 =
-M x + 1 has the same M (k* = 1 at n = 5 computed). ∎
+M x + 1 has the same M; its periodic states at n = 5 are 00100 and 10001, whose single flips carry the codes
+0..6 only, so for rule 105 the value k* = 1 at n = 5 is computed, not proved. ∎
 
 **Classes 60, 153 and the shifts.** Rule 60 (and 102, 153, 195) has M unit lower (upper) triangular, so F is
 bijective at every n and k* = 0 (Martín del Rey, pp. 120-121, for 60 and 102). Rules 170, 240 (shifts) and
@@ -420,7 +442,7 @@ persist beyond about n = 41 [observed].
 ### 5.3 Zero state and single flips: 154, 26, 22, 122, 126
 
 **Lemma Z' (zero state under walls).** If F(0) = 0, then r(0) >= 2 iff the orbit of every single flip e_i,
-i = 0..n-1, returns to 0 (Lemma 0). Without rotation all n seeds count (n/2 for reflection-symmetric rules). [proved]
+i = 0..n-1, returns to 0 (Lemma 0). Without rotation all n seeds count (ceil(n/2) for reflection-symmetric rules). [proved]
 
 **Proposition N (154, 26) [proved].** Under null walls, for rules 154 and 26 the orbit of e_i equals the rule-90
 orbit of e_i, so r(0) >= 2 iff n + 1 is a power of two.
@@ -435,7 +457,7 @@ one-parity set: no cycle contains 011, 110 or 111 (cycle codes union = {0, 1, 2,
 nilpotent n = 7, 15, where 0 is the only cycle). So both rules are B-type at every n: k* = 1, and k* = 2 at
 n = 7, 15 (one cycle, as for rule 90). The two rules have identical cycle counts at every n = 4..16 (2, 3, 2, 1,
 4, 4, 2, 6, 2, 6, 12, 1, 20). On the ring at even n, rule 154 permutes the states with ones on both parity
-classes (PROOF_154.md, Lemma 6; its proof of F(M) ⊆ M goes once around the ring). Under walls the
+classes (PROOF_154.md, Lemma 4, which Lemma 6 quotes; its proof of F(M) ⊆ M goes once around the ring). Under walls the
 "11" defect travels left one cell per step and disappears at the left wall (space-time printed in this session; the
 left edge cell reads (0, x_0, x_1) and simply copies x_1), so the mixed-parity states are transient [observed;
 the statement "every orbit enters the one-parity set" is not proved here]. The ring mechanism (nilpotency of
@@ -446,23 +468,28 @@ travelling defects that carried codes 3, 6, 7 on the ring are absorbed by a wall
 fixed-1 walls): the cycles jointly carry only the codes {0, 2, 4} at every n = 4..16 (n = 10: the two fixed
 points 0 and 100...0, both selected): B-type, k* = 1 at every n.
 
-*Class 22 (mirror embedding applies).* k* = 1 at n = 14 (and 4, 5, 6) with the zero state selected alone
-(n = 6: it is the only cycle; n = 14: 1 of 11 cycles, gamma_min = m - 1). Seed orbits (`local_seed.csv`): all
-n single flips die exactly at n = 6, 14, 30, 62 among n = 4..54 and 58..62 (n = 55, 56, 57 undecided at 2·10^4
-steps) [computed]. So the zero mechanism survives at n = 2^k - 2 (n + 1 = 2^k - 1); in the mirror picture the
+*Class 22 (mirror embedding applies).* k* = 1 at n = 14 and n = 6 with the zero state selected alone
+(n = 6: it is the only cycle; n = 14: 1 of 11 cycles, gamma_min = m - 1); also at n = 4 and 5, where three and
+two cycles are selected and code 101 is missed. Seed orbits (`local_seed.csv`): all
+n single flips die exactly at n = 6, 14, 30, 62 among n = 4..62 [computed; the study's file leaves n = 55, 56, 57
+undecided at 2·10^4 steps; they are decided in `VERIFICATION_boundaries.md`, finding 2: at each of them a seed
+reaches a cycle that does not contain 0, at n = 56 one of period 65532 after more than 2·10^4 steps]. So the zero mechanism survives at n = 2^k - 2 (n + 1 = 2^k - 1); in the mirror picture the
 ring has N = 2n + 2 = 2^(k+1) - 2 cells, a size at which the ring's own single seed returns (ring paper, 5.3:
 14, 30, 62, 126 are in its return set). The other even ring return sizes (N = 2^k, e.g. N = 16 for n = 7) do
 not appear. Why the symmetric pair of seeds
 dies exactly there is not explained [observed].
 
-*Class 122.* k* = 1 at n = 15 (and 4, 5, 7) with the checkerboard 2-cycle 0101... <-> 1010... selected alone
-(radius 2, missed 0, 3, 6, 7). Under walls the checkerboard exists at every n (it carries code 010 at every n, so
+*Class 122.* k* = 1 at n = 15 and n = 7 with the checkerboard 2-cycle 0101... <-> 1010... selected alone
+(radius 2, missed 0, 3, 6, 7); also at n = 4 and 5, where three and two cycles are selected and code 000 is
+missed. Under walls the checkerboard exists at every n (it carries code 010 at every n, so
 the ring's parity obstruction for code 2 disappears), but its radius is 2 only at n = 7 and 15 among n = 4..61
-(`local_radius2.csv`), so the pattern is not 2^k - 1: at n = 31 the checkerboard has radius 1 [computed]. The ring
+(`local_radius2.csv`; that file leaves n = 56 undecided at 2·10^4 steps, and the verification decides it:
+radius 1, finding 13), so the pattern is not 2^k - 1: at n = 31 the checkerboard has radius 1 [computed]. The ring
 mechanism for 122 (zero state at 2^k - 1, checkerboard at 4 | n) is replaced: the zero state never has radius 2
 under walls (some single flip never dies at every n = 4..62), and the checkerboard is isolated only at 7 and 15.
-*Class 126* (symmetric, f(101) = 1): k* = 1 at n = 7, 8, 15 (missed 000 at n = 8, 15; at n = 7 a single
-selected 2-cycle missing 000, 001, 100); not explained.
+*Class 126* (symmetric, f(101) = 1): k* = 1 at n = 4, 7, 8, 15 (missed 000 at n = 8, 15; at n = 7 a single
+selected 2-cycle missing 000, 001, 100; at n = 4 one of two cycles is selected, missing 000 and 101); not
+explained.
 *Class 161 (= 122 under fixed-1 walls)* and *129 (= 126 under fixed-1 walls)*: B-type at every n.
 
 ### 5.4 Travelling crystals disappear: 43, 142, 35 [computed n = 4..16]
@@ -477,18 +504,20 @@ is not a different selection but the absence of the codes from every cycle, deci
 
 * *37 (null): k* = 0 iff n = 1 mod 3* (n = 4..20 without exception). The selected set always contains the
   domain-wall 2-cycles (blocks 1^a 0^b <-> 0^a' 1^b', codes 0, 1, 3, 4, 6, 7). Codes 010 and 101 are carried
-  only by the period-3 fixed points (010)^k (excess potential >= 1, not selected at n = 9..13, the sizes inspected) and, at n = 1 mod 3, by a
+  only by fixed points of spatial period 3 ((010)^k at 3 | n; e.g. 1001001001 at n = 10; excess potential >= 1, not selected at n = 9..13, the sizes inspected) and, at n = 1 mod 3, by a
   6-cycle on the period-6 pattern 100000 (e.g. 1000001000 at n = 10, 0001000001000 at n = 13), which is
   selected; this is the ring's period-6 family (ring paper 5.5) placed between walls.
-* *91 (= 37 under fixed-1 walls): k* >= 1 iff n = 1 mod 3* (n >= 7; also n = 4, 5, 6), missed code 5 (101): the
+* *91 (= 37 under fixed-1 walls): k* >= 1 iff n = 1 mod 3* (n >= 7; also n = 4, 5, 6), missed code 5 (101) (at n = 4 also 000; at n = 5 the missed code is 000, not 101): the
   complement of the 37 statement, i.e. with one-walls the same family loses the code exactly where with
   zero-walls it gains it.
 * *135 (= 30 under fixed-1 walls): k* = 1 iff n is even* (n = 4..20): two cycles, both selected: the checkerboard
   fixed point 1010...10 and a 2-cycle that differs from it at the right end; missed codes 001 and 111. At odd n the
   second cycle is a 4-cycle carrying all codes.
 * *137 (= 110 under fixed-1 walls): k* = 1 at odd n >= 11* (11..19; also 4, 5, 7). The 2-cycle 1000 1000 ... <->
-  0010 0010 ... (spatial period 4; codes 0, 1, 2, 4) is selected alone, radius 2 at n = 7 and every odd n from 11
-  to 61, not at n = 9 (`local_radius2.csv`). At even n the pattern is not periodic and all cycles carry all codes.
+  0010 0010 ... (spatial period 4; codes 0, 1, 2, 4) is selected alone at n = 7 and at odd n = 11..19; it has
+  radius 2 at n = 7 and every odd n from 11 to 61, not at n = 9 (`local_radius2.csv`). At n = 4 there is a single
+  cycle, which misses code 5; at n = 5 two cycles are selected and codes 5 and 7 are missed. At even n the pattern
+  is not periodic and the selected cycles jointly carry all codes.
 None of these four is proved; the descriptions of the carriers are from the detail files.
 
 ### 5.6 Where the ring mechanisms go
@@ -498,9 +527,9 @@ None of these four is proved; the descriptions of the carriers are from the deta
 | crystal of period p closes iff p \| n | 94 | **carries over shifted**: closes iff 3 \| (n + 1) (walls as zeros); with one-walls iff 3 \| n |
 | travelling crystal (period 4, 3) | 43, 142, 35 | **disappears**; replaced by B-type at every n (codes absent from all cycles) |
 | nilpotent single-flip orbit at n = 2^k | 60, 90, 154, 26 | 60: **disappears** (bijective); 90, 154, 26: **carries over shifted** to n + 1 = 2^k [proved]; 154, 26 off 2^k - 1: **replaced** by B-type (defects absorbed by the left wall) |
-| zero state, seed returns | 22 | **carries over partly**: only at n = 2^k - 2 (to n = 62) |
+| zero state, seed returns | 22 | **carries over partly**: the zero state has radius 2 exactly at n = 6, 14, 30, 62 in 4..62; k* = 1 there is computed for n = 6, 14 |
 | zero state at 2^k - 1, checkerboard at 4 \| n | 122 | **replaced**: checkerboard selected at n = 7, 15 only |
-| period-6 defect family | 37 | **carries over** as a mod-3 condition (37: n = 1 mod 3), mirrored by 91 |
+| period-6 defect family | 37 | **replaced** by a mod-3 condition (k* = 0 iff n = 1 mod 3) carried by the period-6 pattern between walls, mirrored by 91; the ring's condition n mod 6 in {0, 5} does not survive |
 | isolated switches (45 at 8, 73 at 9) | 45, 73 | **disappear** (k* = 0 for n >= 6) |
 | (none) | 75, 133, 135, 137 | **new**: wall-made crystals and patterns |
 
@@ -517,6 +546,9 @@ cell next to an axis reads its own value as the outside neighbour, which is the 
 f(000), f(101) is needed. Checked: holds for exactly the 64 symmetric rules, n = 1..10
 (`code/fw/check_mirror_reflect.py`, `data/boundaries/check_mirror_reflect.txt`). Consequently rule 90 under
 reflecting walls is nilpotent iff 2n is a power of two, i.e. n is (n = 1, 2, 4, 8, 16 among 1..16 [computed]).
+(If 2n is a power of two, the ring of 2n is nilpotent, so the row is. Conversely, write 2n = 2^s q with q odd,
+q > 1. The lift of e_0 is 1 + z^(2n-1) = z^(-1)(1 + z); the generalised kernel of the ring map consists of the
+multiples of ((z^q - 1)/(z - 1))^(2^s), which is coprime to 1 + z, so e_0 does not die.)
 
 | | ring | reflect |
 |---|---|---|
@@ -562,8 +594,8 @@ Class 94: the crystal 101101... exists under reflecting walls exactly at 3 | n (
 flip at an edge leaves it (radius 1 at all four sizes, `check_mirror_reflect.txt`), and k* = 0 for n >= 5.
 Class 154 has k* = 2 at every n = 4..12, 43, 142, 35, 37, 122 have k* = 1 at every n (B-type or capture, not
 analysed), 26, 60, 45, 73 have k* = 0 for n >= 6. Rule 60 is not bijective under reflecting walls (cell 0 reads
-x_0 + x_0 = 0); 150 is bijective iff 3 does not divide n (n = 4..12 [computed]; by Lemma M' this is
-bijectivity of rule 150 on the ring of 2n).
+x_0 + x_0 = 0); 150 is bijective iff 3 does not divide n (n = 4..12 [computed]; for 3 not dividing n the ring of 2n is bijective
+and by Lemma M' so is the row; for 3 | n the row has the kernel vector (101)^(n/3)).
 
 ## 7. Predictions scored
 
@@ -578,14 +610,14 @@ Scored on n = 4..16 (n = 17..20 where computed) against `data/boundaries/null_sw
 | G5 | L | more rules with k* >= 1 under null than on the ring at n = 12..14 | 186/187/189 vs 180/174/172 (at n = 16: 187 vs 188) | correct |
 | G6 | M | >= 90 % of the ring's always-k* >= 1 rules keep k* >= 1 at n = 12..14 | 153 of 166 (92 %) at each n | correct |
 | G7 | L | 15..40 null classes change side in n = 8..14 | 9 | wrong |
-| (a) 94 | Frank | k* >= 1 iff 3 \| (n + 1) | true for n = 8..20; fails at n = 4 and 7 (k* = 1, missed 000) | correct for n >= 8 |
-| (a) 90 | Frank | k* >= 1 iff n + 1 is a power of two | true; proved for every n >= 4 (Theorem 90), k* = 2 there | correct |
-| (a) facts | Frank | mirror embedding; 94 fixed point {3,5,6} iff 3 \| (n + 1); 90 nilpotent iff n + 1 = 2^k | confirmed; embedding proved (Lemma M) and holds for exactly 16 rules; the fixed point statement fails only at n = 2 (outside his range) | correct |
-| (b) | Frank | 4 \| n pattern of 43, 142 disappears | k* = 1 at every n = 4..16 (B-type) | correct |
-| (c) | Frank | 60 bijective for all n, 150 iff n != 2 mod 3; then k* = 0 | confirmed and proved (5.1); open case answered: k* = 0 at n = 2 mod 3 except n = 5 (k* = 1) [proved] | correct |
+| (a) 94 | chat | k* >= 1 iff 3 \| (n + 1) | true for n = 8..20; fails at n = 4 and 7 (k* = 1, missed 000) | partly correct (right pattern, exceptions n = 4, 7) |
+| (a) 90 | chat | k* >= 1 iff n + 1 is a power of two | true; proved for every n >= 4 (Theorem 90), k* = 2 there | correct |
+| (a) facts | chat | mirror embedding; 94 fixed point {3,5,6} iff 3 \| (n + 1); 90 nilpotent iff n + 1 = 2^k | confirmed; embedding proved (Lemma M) and holds for exactly 16 rules; the fixed point statement fails only at n = 2 (outside the range checked in the chat) | not scored: computed in the planning conversation before the session, so not a prediction |
+| (b) | chat | 4 \| n pattern of 43, 142 disappears | k* = 1 at every n = 4..16 (B-type) | correct |
+| (c) | chat | 60 bijective for all n, 150 iff n != 2 mod 3; then k* = 0 | confirmed and proved (5.1); open case answered: k* = 0 at n = 2 mod 3 except n = 5 (k* = 1) [proved] | correct |
 | 60, 153 | H | k* = 0 every n | yes | correct |
 | 90 | H/M | k* = 2 at 7, 15; 0 elsewhere | yes (and proved) | correct |
-| 165 | H/M | k* >= 1 iff n + 1 = 2^k | yes (k* = 1), proved | correct |
+| 165 | H/M | k* >= 1 iff n + 1 = 2^k | yes, proved (k* = 1 at n = 7, 15 computed) | correct |
 | 150 | H/M | k* >= 1 only at n = 5 | yes, proved | correct |
 | 154 | H/M | r(0) >= 2 iff n + 1 = 2^k (H); k* = 1 at 7, 15 and 0 elsewhere (M) | radius statement proved; but k* = 2 at 7, 15 and k* = 1 at every other n (B-type) | radius correct; values wrong |
 | 166 | L | k* = 0 for n >= 8 | k* = 1 every n (B-type) | wrong |
@@ -610,7 +642,11 @@ Mine: 28 items (G1-G7 and 21 class rows; 60/153, 43/142, 35/59, 73/109 count as 
 values for 154 and the exception n = 7 for 94 failed. The errors share one cause: I
 expected walls to make the dynamics richer (wall-pinned structures carrying codes), whereas they mostly make it
 poorer (codes absent from every cycle), and I did not foresee new crystals pinned by the walls (133, 75).
-Frank's: 5 items, all correct; (a) for 94 holds for n >= 8, with the two small-n exceptions 4 and 7.
+The rows marked "chat" are the expectations that the sealed file calls "Frank's expectations". They were written by
+Claude on 24 November 2026 in the conversation in which the session was planned, not by Frank, and the task passed
+them on as "expectations from Frank's chat with Claude" (reader's finding 1 in `reader_checks/README.md`). Four of
+them are predictions: 3 correct, 1 partly correct ((a) for 94 holds for n >= 8, with the two small-n exceptions 4
+and 7). The row "(a) facts" is not scored.
 
 ## 8. Open points
 
@@ -620,7 +656,8 @@ Frank's: 5 items, all correct; (a) for 94 holds for n >= 8, with the two small-n
    k* = 0 at n = 0, 1 mod 3 is computed only (n <= 20). Same for 133 (3 | n) and 75.
 2. Rules 154 and 26 (null): that every orbit enters the one-parity set (no cycle with 011, 110, 111) is computed
    for n <= 16, not proved. The "11"-defect absorption at the left wall is the observed reason.
-3. Class 22: seeds all die at n = 6, 14, 30, 62 (to 62; n = 55..57 undecided). Not explained; k* beyond n = 20
+3. Class 22: seeds all die at n = 6, 14, 30, 62 and at no other n in 4..62 (n = 55..57 decided by the verification,
+   finding 2). Not explained; k* beyond n = 20
    not computed.
 4. Classes 122, 126 (n = 7, 15), 37/91 (n mod 3), 135 (parity), 137 (odd n >= 11): patterns observed in
    n <= 20 with the selected cycles described; none proved. For 122 the checkerboard has radius 1 at n = 31, so
@@ -631,7 +668,7 @@ Frank's: 5 items, all correct; (a) for 94 holds for n >= 8, with the two small-n
 6. Mixed walls (0 on one side, 1 on the other) were not computed; they are not covered by the symmetries.
 7. Reflecting walls: only the symmetric-rule embedding (Lemma M') is explained; why 94's crystal loses its
    radius there and why 154 has k* = 2 at every n was not analysed.
-8. Wang et al. 2025, Table 1, rule 195 under null walls: conflicts with the computation (Section 1).
+8. (Withdrawn. The conflict with Wang et al. 2025, Table 1, came from a misreading of the table; see Section 1.)
 9. The worktree, commits and `nice 10` could not be done from the sandbox (Section 9).
 
 ## Plain-words summary (for a later README; not inserted)
@@ -641,23 +678,25 @@ ring open into a row whose two outer neighbours are held at 0 ("null walls"), an
 behaviour small noise picks out, and whether those patterns use the whole rule table.
 
 On the ring, the answer for some rules depended on the arithmetic of the ring size: a pattern of period 3 or 4
-fits only when the period divides the size, and the all-zero state shakes off any single error only when the
+fits only when the period divides the size, and for rules 60, 90, 154 and 26 the all-zero state shakes off any single error only when the
 size is a power of two. With walls, two of these effects survive in shifted form. The period-3 pattern of
 rule 94 now fits when the period divides n + 1, because the walls act as two of its cells; and the
 power-of-two effect of rule 90 now appears when n + 1 is a power of two. For the additive rules 60, 90 and 150
-this is proved for every row length: rule 60 never leaves part of its table unused under walls, rule 90 does
+this is proved for every row of at least 4 cells: rule 60 never leaves part of its table unused under walls, rule 90 does
 exactly when n + 1 is a power of two, and rule 150 only for a row of 5 cells.
 
 The patterns that travel around the ring (rules 43, 142, 35) cannot travel between walls. These rules no longer
-depend on the size: under walls their long-run patterns never show some neighbourhoods at all, whatever the noise,
-so part of their rule table stays unobserved at every size. This is the most common effect of the walls: they
+depend on the size: under walls none of their cycles contains some neighbourhoods, so as the noise vanishes those
+entries of the rule table are seen ever more rarely; this holds at every size computed (4 to 16 cells). This is the most common effect of the walls: they
 remove the travelling and rotating structures, and more rules end up with neighbourhoods that no long-run pattern
 shows (181 of 256 rules at 12 cells, against 138 on the ring).
 
-The walls also create new size effects that the ring does not have, for instance patterns that fit only when n is
-a multiple of 3, or only when n is even. These are computed for rows up to 20 cells and described, but not proved.
-Holding the walls at 1 instead of 0 is the same as complementing the rule, so it needs no separate computation;
-reflecting walls behave much more like the ring.
+The walls also create new size effects that the ring does not have, for instance dependences on n mod 3 (rules 37, 91, 75)
+or on the parity of n (rules 135, 137). These are computed for rows up to 20 cells and described, but not proved.
+Holding the walls at 1 instead of 0 is the same as exchanging 0 and 1 in the rule (in its inputs and in its
+output), so it needs no separate computation. Reflecting walls keep the ring's power-of-two arithmetic for rule 90,
+but otherwise remove the size dependence much as null walls do (one class changes side between 8 and 12 cells,
+against 13 on the ring).
 
 ## 9. How to recreate the commits
 

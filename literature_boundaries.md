@@ -148,9 +148,8 @@ Relevant statements:
 - Table 1 (p. 10) [numerical]: reversibility sequences for n = 1..12. Rule strings are written f(111)…f(000), by Eq. (1), p. 3. Null-boundary entries:
   - 10010110 (rule 150): 101101101101, i.e. reversible iff n ≢ 2 (mod 3) for n ≤ 12;
   - 10100101 (rule 165, the complement of 90): reversible iff n even;
-  - 10101010 (rule 170): never reversible;
-  - 11000011 (rule 195, the complement of 60): never reversible, 000000000000.
-  - [our remark] The rule-195 entry conflicts with the triangular-matrix argument of [S1] p. 120: rule 195 under null boundary is the affine map x -> M_60 x + 1, which is bijective for every n. Either the entry or our reading of the rule string is wrong. Table 1 should be used with care until this is resolved.
+  - 10101010 (rule 170): never reversible.
+  - Correction of 25 November 2026 (Claude, the reader outside the sessions, after `VERIFICATION_boundaries.md`, finding 1): this list first gave 11000011 (rule 195) as a null-boundary entry, "never reversible", and remarked on a conflict with [S1]. That was a misreading of the table, whose layout is lost in the extracted text. In the typeset table the null-boundary block holds rules 170, 169, 166, 165 and 150; rule 195 stands in the periodic block, together with 225, 210, 169, 166 and 150. The verification checked all eleven sequences against brute force for n = 1..12 and found them correct. There is no conflict.
 - Text p. 9: "a large number of nonlinear FCA have a period of 1", i.e. irreversible for all large n; only a small portion show periodic reversibility (example 11010010 = rule 210) [numerical].
 
 ### [S6] Sfairopoulos, Causer, Mair and Garrahan (2023), Phys. Rev. B 108
