@@ -8,8 +8,12 @@ Status (updated as the work proceeds; the last line of this block is the current
   The work is done in a copy of 2765f7e (`git archive 2765f7e`) in the session workspace; every finished file is
   saved as an artifact, and Section 9 lists the commands that recreate the step commits in the worktree.
 - Step 0 (literature): running.
-- Step 1 (definitions, symmetries, code, guarding test): running.
-- Steps 2-5: not started.
+- Step 1 (definitions, symmetries, code, guarding test): done (Section 2).
+- Step 2 (predictions): sealed 24 Nov 2026, `PREDICTIONS_boundaries.md`, sha256
+  d5e5b52061bb5434b128bb5c0e8a1eef4ab17b13545742d386b5a4e4217ec33d, saved as an artifact before any
+  computation under walls. The literature review (Step 0) was still running when the predictions were sealed, so
+  the predictions use no literature found in this session.
+- Steps 3-5: not started.
 
 ## Contents
 1. Literature (Step 0)
