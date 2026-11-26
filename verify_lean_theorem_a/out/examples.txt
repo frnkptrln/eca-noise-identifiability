@@ -1,0 +1,18 @@
+E1 rule 204, n = 2: D_100 has 0 states; R(C -> D_100) = 0 (sInf of the empty set); k_100 = 0, k* = 0; some state of a selected cycle contains 100: False; so part 1 of Lemma_2_2 fails at n = 2 and the hypothesis 3 <= n is needed
+   codes occurring in some state at n = 1: 000 111
+   codes occurring in some state at n = 2: 000 010 101 111
+E2 instances of the sweep with n = 3..6 whose k_v vector changes under abc -> cba: 0 of 1024
+E2 rows of data/fw_sweep.csv (n = 4..6) whose k_v vector changes under abc -> cba: 0; model = data on all of them: True; first: []
+E3 bijective rows: 18; model gamma_min = m - 1 on all: True; data gamma_min values: ['0']; e.g. [('4', '15', '5', '0', '6'), ('4', '51', '7', '0', '8'), ('4', '105', '9', '0', '10')]
+E4 instances with n = 3..6 and at least two closed classes: 36; in 0 of them S is a proper subset of the union of the closed classes
+   example: rule 232, n = 3: m = 2 cycles
+     C0 = {000}   gamma = 2   [selected]
+     C1 = {111}   gamma = 2   [selected]
+     V (row C, column C'):
+       C0   0  2
+       C1   2  0
+     G1 edges: none
+     closed classes: {C1}; {C0}
+     gamma_min = 2, m - 1 = 1, S = {C0,C1}
+     k_v: 000:0, 001:1, 010:1, 011:1, 100:1, 101:1, 110:1, 111:0   k* = 1
+   here gamma_min = 2 != m - 1 = 1: without uniqueness the second sentence of Theorem 2.8 fails

@@ -1,0 +1,7 @@
+rule 154 (l. 371-372): ruleOfNumber gives f = 1 on ['001', '011', '100', '111']; paper ['001', '011', '100', '111']; agree
+rule 26 (l. 1335-1336): ruleOfNumber gives f = 1 on ['001', '011', '100']; paper ['001', '011', '100']; agree
+rule 142 (table l. 607): ruleOfNumber gives f = 1 on ['001', '010', '011', '111']; paper ['001', '010', '011', '111']; agree
+rule 43 (table l. 608): ruleOfNumber gives f = 1 on ['000', '001', '011', '101']; paper ['000', '001', '011', '101']; agree
+rule 154, Lemma 3.2 (l. 391) f(a,b,c) = c + a(1+b): agree on all 8 codes
+rule 90: ruleOfNumber = a + c: True
+rule 204: ruleOfNumber = b: True
