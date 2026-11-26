@@ -222,7 +222,7 @@ theorem lemma_2_2 : Lemma_2_2 := by
 
 /-! ### The consequence of Theorem 2.8 for `k*` -/
 
-theorem corollary_2_8 : Corollary_2_8 := by
+theorem kStar_unique_class : KStar_unique_class := by
   intro n _ hn f K hK huniq
   have hr := resistanceECA n f
   have hSel : Sel (VE n f) = K := ((theorem_2_8 (State n) (globalMap n f) (resistance n f) hr).2 K hK huniq).1

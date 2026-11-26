@@ -309,13 +309,17 @@ Claude
 
 Written by Claude, the reader outside the sessions, who also wrote this part of the Lean code, in the conversation
 in which the work is planned. It was not written by a Claude Science session: the session started for it could not
-install Lean in its sandbox. **The proofs are checked by Lean. The statement file has not yet been read by anyone
-but its author**; whether its definitions say what the paper says is the open question, and the list of
-differences below is where to start.
+install Lean in its sandbox.
+
+**The proofs are checked by Lean. The statement file was read against the paper by an independent session**
+(`VERIFICATION_lean_theorem_a.md`, on commit 3425cc7): it found no statement that differs from the paper or is
+weaker, one difference that had to be stated (values at n ≤ 2, item 4 below) and seven points of wording and
+missing checks. They are worked in here; what was changed is listed at the top of that file. The changes made
+afterwards (four new statements, one renamed, comments) were checked by Lean and were not read by a second reader.
 
 ### What is proved
 
-`RingSize/TheoremA/Statement.lean` (322 lines, definitions and statements only) has three parts:
+`RingSize/TheoremA/Statement.lean` (361 lines, definitions and statements only) has three parts:
 
 1. a finite set of nodes with weights `V a b`: in-trees, the stochastic potential `gamma`, the selected set `Sel`,
    the one-flip graph `G1`, closed classes;
@@ -329,25 +333,32 @@ Each statement is a `Prop`-valued definition, and a theorem of that type is prov
 | Statement in `Statement.lean` | Paper | Proved in |
 |---|---|---|
 | `EndsOnExactlyOneCycle` | 2.2, "the orbit of every state enters exactly one cycle" | `Paths.lean` |
-| `Lemma_2_3_general` | Lemma 2.3 without the flips: `V(C, C') ≥ 1`; `V = 1` iff one step of resistance 1 leads from `C` to a state whose orbit ends on `C'` | `Paths.lean` |
-| `Lemma_2_5` | Lemma 2.5 (re-rooting) | `Trees.lean`, `Paths.lean` |
-| `Lemma_2_6` | Lemma 2.6 (closure) | `Trees.lean`, `Paths.lean` |
+| `Lemma_2_3_general` | not a statement of the paper: the content of Lemma 2.3 without the flips (`V(C, C') ≥ 1`; `V = 1` iff one step of resistance 1 leads from `C` to a state whose orbit ends on `C'`) | `Paths.lean` |
+| `Lemma_2_5` | Lemma 2.5 (re-rooting), for every `F`, `r` of part 2 | `Trees.lean`, `Paths.lean` |
+| `Lemma_2_6` | Lemma 2.6 (closure), for every `F`, `r` of part 2 | `Trees.lean`, `Paths.lean` |
 | `ClosedClassReachable` | 2.4, "from every node there is a directed path into some closed class" | `Trees.lean` |
-| `Lemma_2_7` | Lemma 2.7 | `Trees.lean`, `Paths.lean` |
-| `Theorem_2_8` | Theorem 2.8 (Theorem A), both sentences, with `γ_min = m - 1` | `Trees.lean`, `Paths.lean` |
+| `Lemma_2_7` | Lemma 2.7, for every `F`, `r` of part 2 | `Trees.lean`, `Paths.lean` |
+| `Theorem_2_8` | Theorem 2.8 (Theorem A), both sentences, with `γ_min = m - 1`, for every `F`, `r` of part 2 | `Trees.lean`, `Paths.lean` |
+| `TreeWeight_lower_bound` | proof of Theorem 2.8, "every in-tree has weight at least `m - 1`" | `Trees.lean`, `Checks.lean` |
 | `ResistanceECA` | 2.2, "a step has resistance 0 iff it is a step of `F`", for `r = H(F x, y)` | `ECA.lean` |
+| `Section_2_4_ECA` | Lemmas 2.5, 2.6, 2.7 and Theorem 2.8 as the paper states them, for an elementary rule on a ring of `n` cells | `Checks.lean` |
 | `Lemma_2_2` | Lemma 2.2, all three parts, for `n ≥ 3` | `ECA.lean` |
 | `Lemma_2_3` | Lemma 2.3 as in the paper, with flips, both sentences | `ECA.lean` |
-| `Corollary_2_8` | the sentence after Theorem 2.8: with a unique closed class `K`, `k* = 0` iff the states of the cycles of `K` contain all eight codes | `ECA.lean` |
+| `KStar_unique_class` | the sentence after the proof of Theorem 2.8 (no number in the paper): with a unique closed class `K`, `k* = 0` iff the states of the cycles of `K` contain all eight codes; for `n ≥ 3` | `ECA.lean` |
 
 Lemmas 2.5 to 2.7 and Theorem 2.8 are proved for every finite weighted graph with `V a b ≥ 1` for `a ≠ b`
-(`Trees.lean`), then for every `F` and `r` as in part 2, and so in particular for every elementary rule and every
-ring size. They do not use the structure of an elementary rule, as the session of the pilot expected.
+(`Trees.lean`), then for every `F` and `r` as in part 2. `Section_2_4_ECA` is their application to
+`globalMap n f` and `resistance n f`, which satisfy the hypothesis by `ResistanceECA`. The proofs do not use the
+structure of an elementary rule, as the session of the pilot expected.
 
 Checks of the definitions, also stated in `Statement.lean` and proved in `Checks.lean` and `ECA.lean`:
-`InTree_iff_reaches`, `ClosedClass_iff_component`, `Gamma_lower_bound`, `Rule204_cycles`,
-`Rule90IsRuleNumber90` (the map `rule90` of the pilot is the global map of rule number 90) and
-`KIndex_subtraction_exact`.
+
+* `InTree_iff_reaches`, `ClosedClass_iff_component`, `Gamma_lower_bound`, `KIndex_subtraction_exact`;
+* `Rule204_cycles` and `Rule90IsRuleNumber90` (the map `rule90` of the pilot is the global map of rule number 90).
+  Rules 90 and 204 are their own mirror images, so these two do not test the orientation of the neighbourhood;
+* `Rule154_local` (rule 154 is `f(a, b, c) = c + a (1 + b)`, as in Lemma 3.2 of the paper) and `Rule170_shift`
+  (under rule 170, `(F x)_i = x_{i+1}`). These two fail if left and right are exchanged in `ruleOfNumber` or in
+  `globalMap`.
 
 ### Differences from the paper
 
@@ -359,16 +370,28 @@ Checks of the definitions, also stated in `Statement.lean` and proved in `Checks
 2. **Closed classes.** The paper says "a strongly connected component of `G_1` that no edge of `G_1` leaves".
    `IsClosedClass` says: non-empty, any two nodes joined by directed paths both ways, no edge leaves.
    `ClosedClass_iff_component` proves the two equivalent.
-3. **Generality.** Lemma 2.3 (first form), Lemmas 2.5 to 2.7 and Theorem 2.8 are stated for any map on a finite set
-   with a resistance that vanishes exactly on the steps of the map. The paper states them for elementary rules.
-4. **Ring size.** The paper fixes `n ≥ 3`. `Lemma_2_3`, `ResistanceECA` and the general statements hold for every
-   `n ≥ 1` and are stated so. `Lemma_2_2` and `Corollary_2_8` assume `n ≥ 3`: for `n ≤ 2` some codes occur in no
-   state.
+3. **Generality.** `Lemma_2_3_general`, `Lemma_2_5`, `Lemma_2_6`, `Lemma_2_7`, `Theorem_2_8`,
+   `TreeWeight_lower_bound` and `Gamma_lower_bound` are stated for any map on a finite set with a resistance that
+   vanishes exactly on the steps of the map (`IsResistance`). The paper states them for elementary rules; that form
+   is `Section_2_4_ECA`.
+4. **Ring size.** The paper fixes `n ≥ 3` and defines `D_v`, `R(C → D_v)`, `k_v` and `k*` only there. The Lean
+   definitions exist for every `n ≥ 1`. For `n ≤ 2` some codes occur in no state (for `n = 1` only 000 and 111
+   occur, for `n = 2` only 000, 010, 101, 111). For such a code `D_v` is empty and **`kIndex` gives the value 0,
+   where the paper defines nothing**; so `kStar` at `n ≤ 2` treats a code that cannot occur like a code with
+   `k_v = 0`. `Lemma_2_2` and `KStar_unique_class` assume `n ≥ 3` and are false without it (rule 204, `n = 2`,
+   code 100). All other statements of part 3 are stated and proved for every `n ≥ 1`: `ResistanceECA`,
+   `Lemma_2_3`, `Section_2_4_ECA`, `Rule90IsRuleNumber90`, `Rule204_cycles`, `Rule170_shift` and
+   `KIndex_subtraction_exact`.
 5. **`R` of an empty set.** `R A B` is an infimum over paths, and the infimum of the empty set of natural numbers
-   is `0` in Mathlib. The statements use `R` only for non-empty sets (cycles, and `D_v` for `n ≥ 3`).
+   is `0` in Mathlib. Cycles are never empty. `D_v` is empty exactly in the case of item 4, and there
+   `KIndex_subtraction_exact` uses `R` of an empty set (it still holds: `γ_min ≤ min_C γ(C)`).
 6. **Subtraction.** `k_v` is defined with the subtraction of natural numbers; `KIndex_subtraction_exact` proves
    that nothing is cut off.
-7. **Proofs.** The proof of Lemma 2.7 re-roots along one path of `G_1` from `C` to `D` and stops at the first visit
+7. **The empty graph.** The paper says in 2.4: "Every finite directed graph has a closed class, and from every
+   node there is a directed path into some closed class." The first half is false for the graph without nodes.
+   `ClosedClassReachable` states the second half, which gives the first for every graph with a node. The graphs
+   of the paper have at least one cycle as a node. The paper is not changed for this.
+8. **Proofs.** The proof of Lemma 2.7 re-roots along one path of `G_1` from `C` to `D` and stops at the first visit
    of `D`, by induction along the path, instead of taking paths without repeated node as the paper does. The tree
    of weight `m - 1` in Theorem 2.8 is built from the sets of nodes that reach the root in at most `k` steps.
 
@@ -377,7 +400,8 @@ listed above.
 
 ### Not formalized
 
-* Proposition 2.1 (the link to the noisy chain), as planned.
+* The noisy chain of 2.2 (its kernel, positivity, uniqueness and full support of the stationary distribution),
+  the quantities `ν_v` and `ρ`, and Proposition 2.1, which links them to the integers above; as planned.
 * Lemma 2.4 (invariance under rotation) and the remark `F σ = σ F` of 2.1.
 * Stage 4 of the plan (rule 154: no edge of `G_1` leaves `{0}` when `n` is a power of two).
 
@@ -385,17 +409,17 @@ listed above.
 
 Built in the environment of the independent build above (Lean 4.36.0, commit 611c117bfaf7; Mathlib at fc4f59e577fe;
 no Mathlib cache there, so the imported part of Mathlib was compiled from source): `lake build` completed 3056 jobs
-without error or warning. `lake env lean -j2 AxiomCheckTheoremA.lean` checks the type of each of the 17 theorems
-against its statement and prints their axioms: 16 depend on `propext`, `Classical.choice`, `Quot.sound`, and
+without error or warning. `lake env lean -j2 AxiomCheckTheoremA.lean` checks the type of each of the 21 theorems
+against its statement and prints their axioms: 20 depend on `propext`, `Classical.choice`, `Quot.sound`, and
 `closedClass_iff_component` on `propext`, `Quot.sound`. The sources contain no `sorry`, `admit`, `native_decide`,
-`axiom`, `unsafe`, `implemented_by` or `extern`. `decide` is used four times, for statements about all elements of
-`ZMod 2` (the tables of rules 90 and 204 and two facts of arithmetic mod 2).
+`axiom`, `unsafe`, `implemented_by` or `extern`. `decide` is used six times, for statements about all elements of
+`ZMod 2` (the tables of rules 90, 154, 170 and 204 and two facts of arithmetic mod 2).
 
 Not done: a build with the Mathlib cache, and a build on macOS.
 
 ### Cost
 
-1318 lines of Lean in five files, of which 322 are definitions and statements. The estimate of the pilot for this
+1380 lines of Lean in five files, of which 361 are definitions and statements. The estimate of the pilot for this
 part was 500 to 1,000 lines and one to three working days of sessions; the lines are above the estimate, the time
 was below it (one conversation; not measured more exactly).
 

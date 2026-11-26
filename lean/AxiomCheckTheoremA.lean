@@ -15,12 +15,16 @@ open RingSize.TheoremA
 #check (rule90IsRuleNumber90 : Rule90IsRuleNumber90)
 #check (lemma_2_2 : Lemma_2_2)
 #check (lemma_2_3 : Lemma_2_3)
-#check (corollary_2_8 : Corollary_2_8)
+#check (kStar_unique_class : KStar_unique_class)
 #check (inTree_iff_reaches : InTree_iff_reaches)
 #check (closedClass_iff_component : ClosedClass_iff_component)
 #check (gamma_lower_bound : Gamma_lower_bound)
 #check (rule204_cycles : Rule204_cycles)
 #check (kIndex_subtraction_exact : KIndex_subtraction_exact)
+#check (treeWeight_lower_bound : TreeWeight_lower_bound)
+#check (rule154_local : Rule154_local)
+#check (rule170_shift : Rule170_shift)
+#check (section_2_4_ECA : Section_2_4_ECA)
 
 #print axioms endsOnExactlyOneCycle
 #print axioms lemma_2_3_general
@@ -33,9 +37,13 @@ open RingSize.TheoremA
 #print axioms rule90IsRuleNumber90
 #print axioms lemma_2_2
 #print axioms lemma_2_3
-#print axioms corollary_2_8
+#print axioms kStar_unique_class
 #print axioms inTree_iff_reaches
 #print axioms closedClass_iff_component
 #print axioms gamma_lower_bound
 #print axioms rule204_cycles
 #print axioms kIndex_subtraction_exact
+#print axioms treeWeight_lower_bound
+#print axioms rule154_local
+#print axioms rule170_shift
+#print axioms section_2_4_ECA

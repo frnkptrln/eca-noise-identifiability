@@ -44,6 +44,11 @@ theorem closedClass_iff_component : ClosedClass_iff_component.{u} := by
     rintro b ⟨-, hba⟩ c ⟨hac, -⟩
     exact reach_trans hba hac
 
+theorem treeWeight_lower_bound : TreeWeight_lower_bound.{u} := by
+  intro X _ _ F r hr C p hT
+  rw [numCycles, Nat.card_eq_fintype_card]
+  exact card_sub_one_le_treeWeight (Vc F r) (fun _ _ hab => one_le_Vc hr hab) hT
+
 theorem gamma_lower_bound : Gamma_lower_bound.{u} := by
   intro X _ _ F r hr C
   obtain ⟨p, hT, hw⟩ := exists_tree_gamma (Vc F r) C
@@ -71,6 +76,24 @@ theorem rule204_cycles : Rule204_cycles := by
   · rintro ⟨t, ht⟩
     rw [hit] at ht
     exact Set.mem_singleton_iff.mpr ht.symm
+
+theorem rule154_local : Rule154_local := by
+  unfold Rule154_local
+  decide
+
+theorem ruleOfNumber_170 : ∀ a b c : ZMod 2, ruleOfNumber 170 a b c = c := by decide
+
+theorem rule170_shift : Rule170_shift := by
+  intro n _ x i
+  simp only [globalMap, ruleOfNumber_170]
+
+theorem section_2_4_ECA : Section_2_4_ECA := by
+  intro n _ f
+  have hr := resistanceECA n f
+  have h8 := theorem_2_8.{0} (State n) (globalMap n f) (resistance n f) hr
+  exact ⟨lemma_2_5.{0} (State n) (globalMap n f) (resistance n f) hr,
+    lemma_2_6.{0} (State n) (globalMap n f) (resistance n f) hr,
+    lemma_2_7.{0} (State n) (globalMap n f) (resistance n f) hr, h8.1, h8.2⟩
 
 theorem kIndex_subtraction_exact : KIndex_subtraction_exact := by
   intro n _ f v

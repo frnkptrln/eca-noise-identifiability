@@ -16,7 +16,8 @@ public import Mathlib.SetTheory.Cardinal.Finite
 # Section 2 of the ring-size paper: definitions and statements
 
 This file contains only definitions and statements (as `Prop`-valued definitions). The proofs are in the
-other files of `RingSize/TheoremA/`; `RingSize/TheoremA/Main.lean` proves every statement of this file.
+other files of `RingSize/TheoremA/` (`Paths.lean`, `ECA.lean`, `Checks.lean`); `AxiomCheckTheoremA.lean` checks
+for every statement of this file that the theorem of that name has this type.
 Source: `paper/ring_size_paper.tex`, Section 2 ("Setting"). Each definition names the place it formalizes.
 
 The file has three parts.
@@ -50,8 +51,8 @@ variable {ι : Type u} [Fintype ι] [DecidableEq ι] (V : ι → ι → ℕ)
 cycles, one out of every cycle `D ≠ C`, without directed circuit".
 Here the tree is given by its parent map `p`: the edges are `d → p d` for `d ≠ c`. The value `p c` plays no
 role (the root has no out-edge). The condition says that these edges contain no directed circuit: no node
-comes back to itself after `k ≥ 1` steps without passing through the root. For `k = 1` this says `p d ≠ d`,
-so the edges join distinct nodes. -/
+comes back to itself after `k ≥ 1` steps without passing through the root. For `d ≠ c` and `k = 1` this says
+`p d ≠ d`, so the edges join distinct nodes. (For `d = c` the condition says nothing.) -/
 def IsInTree (c : ι) (p : ι → ι) : Prop :=
   ∀ (d : ι) (k : ℕ), 0 < k → (∀ j < k, p^[j] d ≠ c) → p^[k] d ≠ d
 
@@ -107,8 +108,8 @@ def pathRes : List X → ℕ
   | x :: y :: l => r x y + pathRes (y :: l)
 
 /-- Paper, 2.2: `R(A → B)`, "the least resistance of a path from a state of `A` to a state of `B`".
-(If `A` or `B` is empty there is no such path and the value is `0`; the statements below use `R` only for
-non-empty sets.) -/
+(If `A` or `B` is empty there is no such path and the value is `0`. Cycles are never empty. `D_v` is empty
+exactly when `n ≤ 2` and no state contains `v`; see `kIndex`.) -/
 noncomputable def R (A B : Set X) : ℕ :=
   sInf {w | ∃ (l : List X) (h : l ≠ []), l.head h ∈ A ∧ l.getLast h ∈ B ∧ pathRes r l = w}
 
@@ -174,7 +175,8 @@ def Lemma_2_6 : Prop :=
     ∀ C C' : Cyc F, C ∈ Sel (Vc F r) → Vc F r C C' = 1 → C' ∈ Sel (Vc F r)
 
 /-- Paper, 2.4: "Every finite directed graph has a closed class, and from every node there is a directed
-path into some closed class." -/
+path into some closed class." Stated here is the second half, which gives the first for every graph with at
+least one node. (For the graph without nodes the first half is false; the graphs of the paper have a node.) -/
 def ClosedClassReachable : Prop :=
   ∀ (ι : Type u) [Fintype ι] [DecidableEq ι] (V : ι → ι → ℕ) (a : ι),
     ∃ K, IsClosedClass V K ∧ ∃ b ∈ K, Reach V a b
@@ -209,7 +211,12 @@ def ClosedClass_iff_component : Prop :=
     IsClosedClass V K ↔
       ∃ a, K = {b | Reach V a b ∧ Reach V b a} ∧ ∀ b ∈ K, ∀ c, G1 V b c → c ∈ K
 
-/-- Paper, proof of Theorem 2.8: "every in-tree has weight at least `m - 1`", hence `γ(C) ≥ m - 1`. -/
+/-- Paper, proof of Theorem 2.8: "every in-tree has weight at least `m - 1`". -/
+def TreeWeight_lower_bound : Prop :=
+  ∀ (X : Type u) [Fintype X] [DecidableEq X] (F : X → X) (r : X → X → ℕ), IsResistance F r →
+    ∀ (C : Cyc F) (p : Cyc F → Cyc F), IsInTree C p → numCycles F - 1 ≤ treeWeight (Vc F r) C p
+
+/-- Consequence of `TreeWeight_lower_bound`: `γ(C) ≥ m - 1` for every cycle `C`. -/
 def Gamma_lower_bound : Prop :=
   ∀ (X : Type u) [Fintype X] [DecidableEq X] (F : X → X) (r : X → X → ℕ), IsResistance F r →
     ∀ C : Cyc F, numCycles F - 1 ≤ gamma (Vc F r) C
@@ -259,7 +266,11 @@ def flip (x : State n) (j : ZMod n) : State n :=
 noncomputable abbrev VE (f : LocalRule) : Cyc (globalMap n f) → Cyc (globalMap n f) → ℕ :=
   Vc (globalMap n f) (resistance n f)
 
-/-- Paper, (1): `k_v = min_C [γ(C) + R(C → D_v)] - γ_min`, the minimum over all cycles. -/
+/-- Paper, (1): `k_v = min_C [γ(C) + R(C → D_v)] - γ_min`, the minimum over all cycles.
+The paper defines `k_v` for `n ≥ 3`. For `n ≤ 2` some codes occur in no state (for `n = 1` only `000` and `111`
+occur, for `n = 2` only `000`, `010`, `101`, `111`); for such a code `D_v` is empty, `R(C → D_v)` is `0` by the
+convention of `R`, and this definition gives `k_v = 0`. The statements about `k_v` and `k*` that need the paper's
+meaning (`Lemma_2_2`, `KStar_unique_class`) assume `n ≥ 3`. -/
 noncomputable def kIndex (f : LocalRule) (v : Code) : ℕ :=
   sInf (Set.range fun C : Cyc (globalMap n f) => gamma (VE n f) C + R (resistance n f) C.1 (D n v))
     - gammaMin (VE n f)
@@ -285,7 +296,19 @@ cycle by itself. -/
 def Rule204_cycles : Prop :=
   ∀ (n : ℕ) [NeZero n] (x : State n), IsCycle (globalMap n (ruleOfNumber 204)) {x}
 
-/-- A check of the definition of `kIndex`: the subtraction in `k_v = min_C [...] - γ_min` is a subtraction
+/-- A check of the rule numbering on a rule that is not its own mirror image: rule 154 has the local rule
+`f(a, b, c) = c + a (1 + b)` (paper, Section 3.1, Lemma 3.2). A numbering with `a` and `c` exchanged would give
+`a + c (1 + b)` instead. -/
+def Rule154_local : Prop :=
+  ∀ a b c : ZMod 2, ruleOfNumber 154 a b c = c + a * (1 + b)
+
+/-- A check of the orientation of rule numbering and global map together: rule 170 (binary `10101010`, the local
+rule `f(a, b, c) = c`) copies the right neighbour, `(F x)_i = x_{i+1}`. With a mirrored neighbourhood in
+`globalMap` it would give `x_{i-1}`. -/
+def Rule170_shift : Prop :=
+  ∀ (n : ℕ) [NeZero n] (x : State n) (i : ZMod n), globalMap n (ruleOfNumber 170) x i = x (i + 1)
+
+/-- A check of the definition of `kIndex`, for every `n ≥ 1` (so also where `D_v` is empty): the subtraction in `k_v = min_C [...] - γ_min` is a subtraction
 of natural numbers and is exact, because the minimum is at least `γ_min`. -/
 def KIndex_subtraction_exact : Prop :=
   ∀ (n : ℕ) [NeZero n] (f : LocalRule) (v : Code),
@@ -310,9 +333,25 @@ def Lemma_2_3 : Prop :=
     (VE n f C C' = 1 ↔ ∃ x ∈ C.1, ∃ j, EndsOn (globalMap n f) (flip n x j) C') ∧
     (∀ x ∈ C.1, ∀ j, flip n x j ∈ C'.1 → G1 (VE n f) C C' ∧ G1 (VE n f) C' C)
 
-/-- Paper, the sentence after Theorem 2.8: "if `G_1` has a unique closed class `K`, then `k* = 0` iff the
-states of the cycles of `K` jointly contain all eight codes." (For `n ≥ 3`.) -/
-def Corollary_2_8 : Prop :=
+/-- Paper, Lemmas 2.5, 2.6, 2.7 and Theorem 2.8 as the paper states them, for the cycles of an elementary rule
+`f` on a ring of `n` cells. These are the general statements `Lemma_2_5`, `Lemma_2_6`, `Lemma_2_7` and
+`Theorem_2_8` with `F = globalMap n f` and `r = resistance n f`; the five parts are, in this order: Lemma 2.5,
+Lemma 2.6, Lemma 2.7, and the two sentences of Theorem 2.8. -/
+def Section_2_4_ECA : Prop :=
+  ∀ (n : ℕ) [NeZero n] (f : LocalRule),
+    (∀ (B N : Cyc (globalMap n f)) (p : Cyc (globalMap n f) → Cyc (globalMap n f)), IsInTree B p → N ≠ B →
+      IsInTree N (update p B N) ∧
+      (VE n f B N = 1 → treeWeight (VE n f) N (update p B N) ≤ treeWeight (VE n f) B p)) ∧
+    (∀ C C' : Cyc (globalMap n f), C ∈ Sel (VE n f) → VE n f C C' = 1 → C' ∈ Sel (VE n f)) ∧
+    (∀ C : Cyc (globalMap n f), C ∈ Sel (VE n f) → ∃ K, IsClosedClass (VE n f) K ∧ C ∈ K) ∧
+    (∀ C ∈ Sel (VE n f), ∃ K, IsClosedClass (VE n f) K ∧ C ∈ K ∧ K ⊆ Sel (VE n f)) ∧
+    (∀ K, IsClosedClass (VE n f) K → (∀ K', IsClosedClass (VE n f) K' → K' = K) →
+      Sel (VE n f) = K ∧ gammaMin (VE n f) = numCycles (globalMap n f) - 1)
+
+/-- Paper, the sentence after the proof of Theorem 2.8 (it has no number in the paper): "if `G_1` has a unique
+closed class `K`, then `k* = 0` iff the states of the cycles of `K` jointly contain all eight codes."
+(For `n ≥ 3`.) -/
+def KStar_unique_class : Prop :=
   ∀ (n : ℕ) [NeZero n], 3 ≤ n → ∀ (f : LocalRule) (K : Set (Cyc (globalMap n f))),
     IsClosedClass (VE n f) K → (∀ K', IsClosedClass (VE n f) K' → K' = K) →
       (kStar n f = 0 ↔ ∀ v : Code, ∃ C ∈ K, ∃ x ∈ C.1, Contains n x v)
