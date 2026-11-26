@@ -118,3 +118,11 @@ The literature review (`literature_boundaries.md`) and the conflict with a table
 names; the certificates and the study's own check of stationary laws; null walls for n >= 17 except the 12 classes;
 which cycles are selected in the descriptions of Sections 5.2 to 5.5, beyond their number and the codes they miss;
 the proofs as a verification.
+
+## Lean statements on rule 154 (26 November 2026)
+
+`lean_rule154/check.py` computes, from the definitions and without code of the repository, the cycles of rule 154
+and `V({0}, C)` for n = 1..6 and 8, and checks Lemmas 3.3 and 3.4(a) of the paper on all states of the parity
+classes for n = 2, 4, 6, 8, 16 (output: `lean_rule154/out.txt`). It is the check outside Lean that
+`lean/README.md` names for the statements of `lean/RingSize/Rule154/Statement.lean`. Result: the least
+`V({0}, C)` is 2 at n = 2, 4, 8 and 1 at n = 1, 3, 5, 6; both lemmas hold on all states checked.

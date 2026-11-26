@@ -402,8 +402,9 @@ listed above.
 
 * The noisy chain of 2.2 (its kernel, positivity, uniqueness and full support of the stationary distribution),
   the quantities `ν_v` and `ρ`, and Proposition 2.1, which links them to the integers above; as planned.
-* Lemma 2.4 (invariance under rotation) and the remark `F σ = σ F` of 2.1.
-* Stage 4 of the plan (rule 154: no edge of `G_1` leaves `{0}` when `n` is a power of two).
+* Not part of this step, and formalized in the next section: Lemma 2.4 (invariance under rotation) with the
+  remark `F σ = σ F` of 2.1, and Stage 4 of the plan (rule 154: no edge of `G_1` leaves `{0}` when `n` is a power
+  of two).
 
 ### Build and axioms
 
@@ -422,5 +423,79 @@ Not done: a build with the Mathlib cache, and a build on macOS.
 1380 lines of Lean in five files, of which 361 are definitions and statements. The estimate of the pilot for this
 part was 500 to 1,000 lines and one to three working days of sessions; the lines are above the estimate, the time
 was below it (one conversation; not measured more exactly).
+
+Claude
+
+## Lemma 2.4 and rule 154 on rings of 2^k cells: Lemmas 3.3, 3.4(a), Theorem 3.9(b) (26 November 2026)
+
+Written by Claude, the reader outside the sessions, who also wrote this part of the Lean code. **The proofs are
+checked by Lean. The two statement files of this part have not yet been read against the paper by anyone but their
+author.**
+
+### What is proved
+
+Statements only: `RingSize/TheoremA/StatementRotation.lean` (72 lines) and `RingSize/Rule154/Statement.lean`
+(77 lines). Proofs: `RingSize/TheoremA/Rotation.lean` and `RingSize/Rule154/Pow2.lean`.
+
+| Statement | Paper | Proved in |
+|---|---|---|
+| `Lemma_2_4_general` | Lemma 2.4 for any bijection of the states that commutes with `F` and preserves the resistance: the image of a cycle is a cycle; `V`, `γ`, membership in `S` and the edges of `G_1` are preserved | `Rotation.lean` |
+| `GlobalMap_rot` | 2.1, "`F σ = σ F`" | `Rotation.lean` |
+| `Resistance_rot` | proof of Lemma 2.4, "`r(σ x, σ y) = r(x, y)`" | `Rotation.lean` |
+| `Lemma_2_4` | Lemma 2.4 for an elementary rule and the rotation `(σ x)_i = x_{i-1}` | `Rotation.lean` |
+| `Zero_cycle` | 3.1: `{0}` is a cycle of rule 154 | `Pow2.lean` |
+| `Lemma_3_3` | Lemma 3.3 (rule 154 acts as rule 90 on the parity classes `E`, `O`), for every even `n ≥ 2` | `Pow2.lean` |
+| `Lemma_3_4_a` | Lemma 3.4(a): `F^(n/2) x = 0` for `x ∈ E ∪ O`, for `n = 2^(k+1)`, `k ≥ 0` | `Pow2.lean` |
+| `Single_mem` | proof of Theorem 3.9(b), "the state `e_j` lies in `E ∪ O`" | `Pow2.lean` |
+| `Theorem_3_9_b` | Theorem 3.9(b): `V({0}, C) ≥ 2` for every cycle `C ≠ {0}`, and no edge of `G_1` leaves `{0}`, for `n = 2^(k+1)`, `k ≥ 0` | `Pow2.lean` |
+
+Lemma 3.2 (the local form of rule 154) is `Rule154_local` of the part above. `Lemma_3_4_a` uses the theorem
+`iterate_half_eq_zero` of the pilot (`RingSize/Proof.lean`): on a ring of `2^(k+1)` cells, `2^k` steps of rule 90
+send every state to zero.
+
+### Differences from the paper
+
+1. **`σC` as a cycle.** In Lean a cycle is a set together with a proof that it is a cycle. `Lemma_2_4` and
+   `Lemma_2_4_general` therefore speak of cycles `D`, `D'` whose sets are the images of the sets of `C`, `C'`, and
+   a first clause says that the image of a cycle is a cycle, so such `D`, `D'` exist.
+2. **"Hence `S` and `G_1` are invariant under rotation."** Stated as: `σC ∈ S` iff `C ∈ S`, and `σC → σC'` is an
+   edge of `G_1` iff `C → C'` is.
+3. **Parity of a cell.** `E` and `O` are defined for every `n` through the representative of a cell in
+   `{0, …, n - 1}` (`ZMod.val`). The paper defines them for even `n`, and all statements here that use them
+   assume `n` even, except `Single_mem`, which holds for every `n` with this definition.
+4. **Ring sizes.** The paper states Lemma 3.3 for even `n ≥ 4` and Lemma 3.4(a) and Theorem 3.9 for `n = 2^k`,
+   `k ≥ 2`. The Lean statements include `n = 2`; they are true there (for `n = 2` the cycles of rule 154 are `{00}`
+   and `{11}`, and `V({00}, {11}) = 2`). `Theorem_3_9_b` is false for `n = 1`, which is excluded.
+5. **Proof of Theorem 3.9(b).** The paper uses part (a) of the theorem (the list of the cycles, from Lemma 3.7)
+   to conclude that no state of the orbit of `e_j` lies on a cycle other than `{0}`. The Lean proof does not use
+   it: a cycle that contains a state of the orbit contains all later states of the orbit, hence `0`, and two
+   cycles with a common state are equal. So part (b) depends only on Lemmas 2.3, 3.2, 3.3 and 3.4(a).
+6. **Proof of Lemma 3.3.** One statement covers both parity classes: if `x` vanishes on the cells of parity `c`,
+   then `F x = L x` and `F x` vanishes on the cells of parity `c + 1`.
+
+No gap or false statement was found in the paper for these statements.
+
+### Check outside Lean
+
+A separate Python computation from the definitions (`reader_checks/lean_rule154/check.py`, output in `out.txt`
+there) gives, for rule 154, the least
+`V({0}, C)` over the cycles `C ≠ {0}`: 2 at `n = 2, 4, 8` and 1 at `n = 1, 3, 5, 6`; and it confirms `Lemma_3_3` at
+`n = 2, 4, 6, 8, 16` and `Lemma_3_4_a` at `n = 2, 4, 8, 16` for all states of `E ∪ O`.
+
+### Not formalized
+
+Of Section 3.1: Lemma 3.4(b), Lemmas 3.5 to 3.8, parts (a) and (c) to (f) of Theorem 3.9, and Theorems 3.10 and
+3.11. So the value `k* = 1` at powers of two is not proved in Lean. Sections 3.2 to 6 are not formalized.
+
+### Build and axioms
+
+Same environment as above. `lake build` completed 3064 jobs without error or warning.
+`lake env lean -j2 AxiomCheckTheoremA.lean` now checks 25 theorems (23 depend on `propext`, `Classical.choice`,
+`Quot.sound`; `closedClass_iff_component` and `globalMap_rot` on `propext`, `Quot.sound`), and
+`lake env lean -j2 AxiomCheckRule154.lean` checks the five theorems on rule 154 (the same three axioms). No
+`sorry`, `admit`, `native_decide`, `axiom`, `unsafe`, `implemented_by` or `extern`; one more `decide`, for
+"every element of `ZMod 2` is 0 or 1".
+
+550 lines of Lean in four files, of which 149 are statements.
 
 Claude
