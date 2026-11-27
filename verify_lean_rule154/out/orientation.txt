@@ -1,0 +1,5 @@
+ruleOfNumber mirrored: False, globalMap mirrored: False -> Rule154_local: True , Rule170_shift: True
+ruleOfNumber mirrored: False, globalMap mirrored: True  -> Rule154_local: True , Rule170_shift: False
+ruleOfNumber mirrored: True , globalMap mirrored: False -> Rule154_local: False, Rule170_shift: False
+ruleOfNumber mirrored: True , globalMap mirrored: True  -> Rule154_local: False, Rule170_shift: True
+mirror image of rule 154 is rule 210; for rule 210: Lemma 3.3 (n even <= 16): True, Lemma 3.4(a) (n = 2, 4, 8, 16): True, Theorem 3.9(b) (n = 2, 4, 8): True
