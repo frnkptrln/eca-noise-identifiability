@@ -1,0 +1,126 @@
+rule 204, n = 3: m = 8 cycles
+  C0 = {000}   gamma = 7   [selected]
+  C1 = {001}   gamma = 7   [selected]
+  C2 = {010}   gamma = 7   [selected]
+  C3 = {011}   gamma = 7   [selected]
+  C4 = {100}   gamma = 7   [selected]
+  C5 = {101}   gamma = 7   [selected]
+  C6 = {110}   gamma = 7   [selected]
+  C7 = {111}   gamma = 7   [selected]
+  V (row C, column C'):
+    C0   0  1  1  2  1  2  2  3
+    C1   1  0  2  1  2  1  3  2
+    C2   1  2  0  1  2  3  1  2
+    C3   2  1  1  0  3  2  2  1
+    C4   1  2  2  3  0  1  1  2
+    C5   2  1  3  2  1  0  2  1
+    C6   2  3  1  2  1  2  0  1
+    C7   3  2  2  1  2  1  1  0
+  G1 edges: C0->C1, C0->C2, C0->C4, C1->C0, C1->C3, C1->C5, C2->C0, C2->C3, C2->C6, C3->C1, C3->C2, C3->C7, C4->C0, C4->C5, C4->C6, C5->C1, C5->C4, C5->C7, C6->C2, C6->C4, C6->C7, C7->C3, C7->C5, C7->C6
+  closed classes: {C0,C1,C2,C3,C4,C5,C6,C7}
+  gamma_min = 7, m - 1 = 7, S = {C0,C1,C2,C3,C4,C5,C6,C7}
+  k_v: 000:0, 001:0, 010:0, 011:0, 100:0, 101:0, 110:0, 111:0   k* = 0
+  statement checks: 17 run, failed: none
+  run: ['ClosedClassReachable', 'Corollary_2_8', 'EndsOnExactlyOneCycle', 'Gamma_lower_bound', 'KIndex_subtraction_exact', 'Lemma_2_2 part 1', 'Lemma_2_2 part 2', 'Lemma_2_2 part 3', 'Lemma_2_3', 'Lemma_2_3_general', 'Lemma_2_5 (sampled trees)', 'Lemma_2_6', 'Lemma_2_7', 'R: Dijkstra = Floyd-Warshall', 'ResistanceECA', 'Theorem_2_8', 'closed classes: subset enumeration = SCC']
+
+rule 204, n = 4: m = 16 cycles
+  C0 = {0000}   gamma = 15   [selected]
+  C1 = {0001}   gamma = 15   [selected]
+  C2 = {0010}   gamma = 15   [selected]
+  C3 = {0011}   gamma = 15   [selected]
+  C4 = {0100}   gamma = 15   [selected]
+  C5 = {0101}   gamma = 15   [selected]
+  C6 = {0110}   gamma = 15   [selected]
+  C7 = {0111}   gamma = 15   [selected]
+  C8 = {1000}   gamma = 15   [selected]
+  C9 = {1001}   gamma = 15   [selected]
+  C10 = {1010}   gamma = 15   [selected]
+  C11 = {1011}   gamma = 15   [selected]
+  C12 = {1100}   gamma = 15   [selected]
+  C13 = {1101}   gamma = 15   [selected]
+  C14 = {1110}   gamma = 15   [selected]
+  C15 = {1111}   gamma = 15   [selected]
+  V (row C, column C'):
+    C0   0  1  1  2  1  2  2  3  1  2  2  3  2  3  3  4
+    C1   1  0  2  1  2  1  3  2  2  1  3  2  3  2  4  3
+    C2   1  2  0  1  2  3  1  2  2  3  1  2  3  4  2  3
+    C3   2  1  1  0  3  2  2  1  3  2  2  1  4  3  3  2
+    C4   1  2  2  3  0  1  1  2  2  3  3  4  1  2  2  3
+    C5   2  1  3  2  1  0  2  1  3  2  4  3  2  1  3  2
+    C6   2  3  1  2  1  2  0  1  3  4  2  3  2  3  1  2
+    C7   3  2  2  1  2  1  1  0  4  3  3  2  3  2  2  1
+    C8   1  2  2  3  2  3  3  4  0  1  1  2  1  2  2  3
+    C9   2  1  3  2  3  2  4  3  1  0  2  1  2  1  3  2
+    C10  2  3  1  2  3  4  2  3  1  2  0  1  2  3  1  2
+    C11  3  2  2  1  4  3  3  2  2  1  1  0  3  2  2  1
+    C12  2  3  3  4  1  2  2  3  1  2  2  3  0  1  1  2
+    C13  3  2  4  3  2  1  3  2  2  1  3  2  1  0  2  1
+    C14  3  4  2  3  2  3  1  2  2  3  1  2  1  2  0  1
+    C15  4  3  3  2  3  2  2  1  3  2  2  1  2  1  1  0
+  G1 edges: C0->C1, C0->C2, C0->C4, C0->C8, C1->C0, C1->C3, C1->C5, C1->C9, C2->C0, C2->C3, C2->C6, C2->C10, C3->C1, C3->C2, C3->C7, C3->C11, C4->C0, C4->C5, C4->C6, C4->C12, C5->C1, C5->C4, C5->C7, C5->C13, C6->C2, C6->C4, C6->C7, C6->C14, C7->C3, C7->C5, C7->C6, C7->C15, C8->C0, C8->C9, C8->C10, C8->C12, C9->C1, C9->C8, C9->C11, C9->C13, C10->C2, C10->C8, C10->C11, C10->C14, C11->C3, C11->C9, C11->C10, C11->C15, C12->C4, C12->C8, C12->C13, C12->C14, C13->C5, C13->C9, C13->C12, C13->C15, C14->C6, C14->C10, C14->C12, C14->C15, C15->C7, C15->C11, C15->C13, C15->C14
+  closed classes: {C0,C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15}
+  gamma_min = 15, m - 1 = 15, S = {C0,C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15}
+  k_v: 000:0, 001:0, 010:0, 011:0, 100:0, 101:0, 110:0, 111:0   k* = 0
+  statement checks: 17 run, failed: none
+  run: ['ClosedClassReachable', 'Corollary_2_8', 'EndsOnExactlyOneCycle', 'Gamma_lower_bound', 'KIndex_subtraction_exact', 'Lemma_2_2 part 1', 'Lemma_2_2 part 2', 'Lemma_2_2 part 3', 'Lemma_2_3', 'Lemma_2_3_general', 'Lemma_2_5 (sampled trees)', 'Lemma_2_6', 'Lemma_2_7', 'R: Dijkstra = Floyd-Warshall', 'ResistanceECA', 'Theorem_2_8', 'closed classes: subset enumeration = SCC']
+
+rule 90, n = 3: m = 4 cycles
+  C0 = {000}   gamma = 3   [selected]
+  C1 = {011}   gamma = 3   [selected]
+  C2 = {101}   gamma = 3   [selected]
+  C3 = {110}   gamma = 3   [selected]
+  V (row C, column C'):
+    C0   0  1  1  1
+    C1   1  0  1  1
+    C2   1  1  0  1
+    C3   1  1  1  0
+  G1 edges: C0->C1, C0->C2, C0->C3, C1->C0, C1->C2, C1->C3, C2->C0, C2->C1, C2->C3, C3->C0, C3->C1, C3->C2
+  closed classes: {C0,C1,C2,C3}
+  gamma_min = 3, m - 1 = 3, S = {C0,C1,C2,C3}
+  k_v: 000:0, 001:1, 010:1, 011:0, 100:1, 101:0, 110:0, 111:1   k* = 1
+  statement checks: 18 run, failed: none
+  run: ['ClosedClassReachable', 'Corollary_2_8', 'EndsOnExactlyOneCycle', 'Gamma_lower_bound', 'KIndex_subtraction_exact', 'Lemma_2_2 part 1', 'Lemma_2_2 part 2', 'Lemma_2_2 part 3', 'Lemma_2_3', 'Lemma_2_3_general', 'Lemma_2_5 (sampled trees)', 'Lemma_2_6', 'Lemma_2_7', 'R: Dijkstra = Floyd-Warshall', 'ResistanceECA', 'Theorem_2_8', 'closed classes: subset enumeration = SCC', 'gamma: parent-map enumeration = Edmonds']
+
+rule 90, n = 4: m = 1 cycles
+  C0 = {0000}   gamma = 0   [selected]
+  V (row C, column C'):
+    C0   0
+  G1 edges: none
+  closed classes: {C0}
+  gamma_min = 0, m - 1 = 0, S = {C0}
+  k_v: 000:0, 001:1, 010:1, 011:2, 100:1, 101:1, 110:2, 111:2   k* = 2
+  statement checks: 18 run, failed: none
+  run: ['ClosedClassReachable', 'Corollary_2_8', 'EndsOnExactlyOneCycle', 'Gamma_lower_bound', 'KIndex_subtraction_exact', 'Lemma_2_2 part 1', 'Lemma_2_2 part 2', 'Lemma_2_2 part 3', 'Lemma_2_3', 'Lemma_2_3_general', 'Lemma_2_5 (sampled trees)', 'Lemma_2_6', 'Lemma_2_7', 'R: Dijkstra = Floyd-Warshall', 'ResistanceECA', 'Theorem_2_8', 'closed classes: subset enumeration = SCC', 'gamma: parent-map enumeration = Edmonds']
+
+rule 154, n = 3: m = 3 cycles
+  C0 = {000}   gamma = 2   [selected]
+  C1 = {001,010,011,100,101,110}   gamma = 2   [selected]
+  C2 = {111}   gamma = 2   [selected]
+  V (row C, column C'):
+    C0   0  1  2
+    C1   1  0  1
+    C2   2  1  0
+  G1 edges: C0->C1, C1->C0, C1->C2, C2->C1
+  closed classes: {C0,C1,C2}
+  gamma_min = 2, m - 1 = 2, S = {C0,C1,C2}
+  k_v: 000:0, 001:0, 010:0, 011:0, 100:0, 101:0, 110:0, 111:0   k* = 0
+  statement checks: 18 run, failed: none
+  run: ['ClosedClassReachable', 'Corollary_2_8', 'EndsOnExactlyOneCycle', 'Gamma_lower_bound', 'KIndex_subtraction_exact', 'Lemma_2_2 part 1', 'Lemma_2_2 part 2', 'Lemma_2_2 part 3', 'Lemma_2_3', 'Lemma_2_3_general', 'Lemma_2_5 (sampled trees)', 'Lemma_2_6', 'Lemma_2_7', 'R: Dijkstra = Floyd-Warshall', 'ResistanceECA', 'Theorem_2_8', 'closed classes: subset enumeration = SCC', 'gamma: parent-map enumeration = Edmonds']
+
+rule 154, n = 4: m = 4 cycles
+  C0 = {0000}   gamma = 3   [selected]
+  C1 = {0011,1011,1100,1110}   gamma = 4
+  C2 = {0110,0111,1001,1101}   gamma = 4
+  C3 = {1111}   gamma = 4
+  V (row C, column C'):
+    C0   0  2  2  3
+    C1   1  0  1  1
+    C2   1  1  0  1
+    C3   2  1  1  0
+  G1 edges: C1->C0, C1->C2, C1->C3, C2->C0, C2->C1, C2->C3, C3->C1, C3->C2
+  closed classes: {C0}
+  gamma_min = 3, m - 1 = 3, S = {C0}
+  k_v: 000:0, 001:1, 010:1, 011:1, 100:1, 101:1, 110:1, 111:1   k* = 1
+  statement checks: 18 run, failed: none
+  run: ['ClosedClassReachable', 'Corollary_2_8', 'EndsOnExactlyOneCycle', 'Gamma_lower_bound', 'KIndex_subtraction_exact', 'Lemma_2_2 part 1', 'Lemma_2_2 part 2', 'Lemma_2_2 part 3', 'Lemma_2_3', 'Lemma_2_3_general', 'Lemma_2_5 (sampled trees)', 'Lemma_2_6', 'Lemma_2_7', 'R: Dijkstra = Floyd-Warshall', 'ResistanceECA', 'Theorem_2_8', 'closed classes: subset enumeration = SCC', 'gamma: parent-map enumeration = Edmonds']
+

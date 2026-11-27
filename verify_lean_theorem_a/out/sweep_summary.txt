@@ -1,0 +1,904 @@
+instances: 1536 (256 rules x n = 1..6), wall time 83 s
+comparison with data/fw_sweep.csv (rows present there):
+  cycles: 264 of 264 agree
+  kstar: 264 of 264 agree
+  k_v (order 4a+2b+c): 264 of 264 agree
+  gamma_min (non-bijective rows): 246 of 246 agree
+  n_stable = |S| (non-bijective rows): 246 of 246 agree
+failures (896):
+  n=1 rule=0: Lemma_2_2 part 1
+  n=1 rule=1: Lemma_2_2 part 1
+  n=1 rule=1: Lemma_2_2 part 2
+  n=1 rule=1: Corollary_2_8
+  n=1 rule=2: Lemma_2_2 part 1
+  n=1 rule=3: Lemma_2_2 part 1
+  n=1 rule=3: Lemma_2_2 part 2
+  n=1 rule=3: Corollary_2_8
+  n=1 rule=4: Lemma_2_2 part 1
+  n=1 rule=5: Lemma_2_2 part 1
+  n=1 rule=5: Lemma_2_2 part 2
+  n=1 rule=5: Corollary_2_8
+  n=1 rule=6: Lemma_2_2 part 1
+  n=1 rule=7: Lemma_2_2 part 1
+  n=1 rule=7: Lemma_2_2 part 2
+  n=1 rule=7: Corollary_2_8
+  n=1 rule=8: Lemma_2_2 part 1
+  n=1 rule=9: Lemma_2_2 part 1
+  n=1 rule=9: Lemma_2_2 part 2
+  n=1 rule=9: Corollary_2_8
+  n=1 rule=10: Lemma_2_2 part 1
+  n=1 rule=11: Lemma_2_2 part 1
+  n=1 rule=11: Lemma_2_2 part 2
+  n=1 rule=11: Corollary_2_8
+  n=1 rule=12: Lemma_2_2 part 1
+  n=1 rule=13: Lemma_2_2 part 1
+  n=1 rule=13: Lemma_2_2 part 2
+  n=1 rule=13: Corollary_2_8
+  n=1 rule=14: Lemma_2_2 part 1
+  n=1 rule=15: Lemma_2_2 part 1
+  n=1 rule=15: Lemma_2_2 part 2
+  n=1 rule=15: Corollary_2_8
+  n=1 rule=16: Lemma_2_2 part 1
+  n=1 rule=17: Lemma_2_2 part 1
+  n=1 rule=17: Lemma_2_2 part 2
+  n=1 rule=17: Corollary_2_8
+  n=1 rule=18: Lemma_2_2 part 1
+  n=1 rule=19: Lemma_2_2 part 1
+  n=1 rule=19: Lemma_2_2 part 2
+  n=1 rule=19: Corollary_2_8
+  n=1 rule=20: Lemma_2_2 part 1
+  n=1 rule=21: Lemma_2_2 part 1
+  n=1 rule=21: Lemma_2_2 part 2
+  n=1 rule=21: Corollary_2_8
+  n=1 rule=22: Lemma_2_2 part 1
+  n=1 rule=23: Lemma_2_2 part 1
+  n=1 rule=23: Lemma_2_2 part 2
+  n=1 rule=23: Corollary_2_8
+  n=1 rule=24: Lemma_2_2 part 1
+  n=1 rule=25: Lemma_2_2 part 1
+  n=1 rule=25: Lemma_2_2 part 2
+  n=1 rule=25: Corollary_2_8
+  n=1 rule=26: Lemma_2_2 part 1
+  n=1 rule=27: Lemma_2_2 part 1
+  n=1 rule=27: Lemma_2_2 part 2
+  n=1 rule=27: Corollary_2_8
+  n=1 rule=28: Lemma_2_2 part 1
+  n=1 rule=29: Lemma_2_2 part 1
+  n=1 rule=29: Lemma_2_2 part 2
+  n=1 rule=29: Corollary_2_8
+  n=1 rule=30: Lemma_2_2 part 1
+  n=1 rule=31: Lemma_2_2 part 1
+  n=1 rule=31: Lemma_2_2 part 2
+  n=1 rule=31: Corollary_2_8
+  n=1 rule=32: Lemma_2_2 part 1
+  n=1 rule=33: Lemma_2_2 part 1
+  n=1 rule=33: Lemma_2_2 part 2
+  n=1 rule=33: Corollary_2_8
+  n=1 rule=34: Lemma_2_2 part 1
+  n=1 rule=35: Lemma_2_2 part 1
+  n=1 rule=35: Lemma_2_2 part 2
+  n=1 rule=35: Corollary_2_8
+  n=1 rule=36: Lemma_2_2 part 1
+  n=1 rule=37: Lemma_2_2 part 1
+  n=1 rule=37: Lemma_2_2 part 2
+  n=1 rule=37: Corollary_2_8
+  n=1 rule=38: Lemma_2_2 part 1
+  n=1 rule=39: Lemma_2_2 part 1
+  n=1 rule=39: Lemma_2_2 part 2
+  n=1 rule=39: Corollary_2_8
+  n=1 rule=40: Lemma_2_2 part 1
+  n=1 rule=41: Lemma_2_2 part 1
+  n=1 rule=41: Lemma_2_2 part 2
+  n=1 rule=41: Corollary_2_8
+  n=1 rule=42: Lemma_2_2 part 1
+  n=1 rule=43: Lemma_2_2 part 1
+  n=1 rule=43: Lemma_2_2 part 2
+  n=1 rule=43: Corollary_2_8
+  n=1 rule=44: Lemma_2_2 part 1
+  n=1 rule=45: Lemma_2_2 part 1
+  n=1 rule=45: Lemma_2_2 part 2
+  n=1 rule=45: Corollary_2_8
+  n=1 rule=46: Lemma_2_2 part 1
+  n=1 rule=47: Lemma_2_2 part 1
+  n=1 rule=47: Lemma_2_2 part 2
+  n=1 rule=47: Corollary_2_8
+  n=1 rule=48: Lemma_2_2 part 1
+  n=1 rule=49: Lemma_2_2 part 1
+  n=1 rule=49: Lemma_2_2 part 2
+  n=1 rule=49: Corollary_2_8
+  n=1 rule=50: Lemma_2_2 part 1
+  n=1 rule=51: Lemma_2_2 part 1
+  n=1 rule=51: Lemma_2_2 part 2
+  n=1 rule=51: Corollary_2_8
+  n=1 rule=52: Lemma_2_2 part 1
+  n=1 rule=53: Lemma_2_2 part 1
+  n=1 rule=53: Lemma_2_2 part 2
+  n=1 rule=53: Corollary_2_8
+  n=1 rule=54: Lemma_2_2 part 1
+  n=1 rule=55: Lemma_2_2 part 1
+  n=1 rule=55: Lemma_2_2 part 2
+  n=1 rule=55: Corollary_2_8
+  n=1 rule=56: Lemma_2_2 part 1
+  n=1 rule=57: Lemma_2_2 part 1
+  n=1 rule=57: Lemma_2_2 part 2
+  n=1 rule=57: Corollary_2_8
+  n=1 rule=58: Lemma_2_2 part 1
+  n=1 rule=59: Lemma_2_2 part 1
+  n=1 rule=59: Lemma_2_2 part 2
+  n=1 rule=59: Corollary_2_8
+  n=1 rule=60: Lemma_2_2 part 1
+  n=1 rule=61: Lemma_2_2 part 1
+  n=1 rule=61: Lemma_2_2 part 2
+  n=1 rule=61: Corollary_2_8
+  n=1 rule=62: Lemma_2_2 part 1
+  n=1 rule=63: Lemma_2_2 part 1
+  n=1 rule=63: Lemma_2_2 part 2
+  n=1 rule=63: Corollary_2_8
+  n=1 rule=64: Lemma_2_2 part 1
+  n=1 rule=65: Lemma_2_2 part 1
+  n=1 rule=65: Lemma_2_2 part 2
+  n=1 rule=65: Corollary_2_8
+  n=1 rule=66: Lemma_2_2 part 1
+  n=1 rule=67: Lemma_2_2 part 1
+  n=1 rule=67: Lemma_2_2 part 2
+  n=1 rule=67: Corollary_2_8
+  n=1 rule=68: Lemma_2_2 part 1
+  n=1 rule=69: Lemma_2_2 part 1
+  n=1 rule=69: Lemma_2_2 part 2
+  n=1 rule=69: Corollary_2_8
+  n=1 rule=70: Lemma_2_2 part 1
+  n=1 rule=71: Lemma_2_2 part 1
+  n=1 rule=71: Lemma_2_2 part 2
+  n=1 rule=71: Corollary_2_8
+  n=1 rule=72: Lemma_2_2 part 1
+  n=1 rule=73: Lemma_2_2 part 1
+  n=1 rule=73: Lemma_2_2 part 2
+  n=1 rule=73: Corollary_2_8
+  n=1 rule=74: Lemma_2_2 part 1
+  n=1 rule=75: Lemma_2_2 part 1
+  n=1 rule=75: Lemma_2_2 part 2
+  n=1 rule=75: Corollary_2_8
+  n=1 rule=76: Lemma_2_2 part 1
+  n=1 rule=77: Lemma_2_2 part 1
+  n=1 rule=77: Lemma_2_2 part 2
+  n=1 rule=77: Corollary_2_8
+  n=1 rule=78: Lemma_2_2 part 1
+  n=1 rule=79: Lemma_2_2 part 1
+  n=1 rule=79: Lemma_2_2 part 2
+  n=1 rule=79: Corollary_2_8
+  n=1 rule=80: Lemma_2_2 part 1
+  n=1 rule=81: Lemma_2_2 part 1
+  n=1 rule=81: Lemma_2_2 part 2
+  n=1 rule=81: Corollary_2_8
+  n=1 rule=82: Lemma_2_2 part 1
+  n=1 rule=83: Lemma_2_2 part 1
+  n=1 rule=83: Lemma_2_2 part 2
+  n=1 rule=83: Corollary_2_8
+  n=1 rule=84: Lemma_2_2 part 1
+  n=1 rule=85: Lemma_2_2 part 1
+  n=1 rule=85: Lemma_2_2 part 2
+  n=1 rule=85: Corollary_2_8
+  n=1 rule=86: Lemma_2_2 part 1
+  n=1 rule=87: Lemma_2_2 part 1
+  n=1 rule=87: Lemma_2_2 part 2
+  n=1 rule=87: Corollary_2_8
+  n=1 rule=88: Lemma_2_2 part 1
+  n=1 rule=89: Lemma_2_2 part 1
+  n=1 rule=89: Lemma_2_2 part 2
+  n=1 rule=89: Corollary_2_8
+  n=1 rule=90: Lemma_2_2 part 1
+  n=1 rule=91: Lemma_2_2 part 1
+  n=1 rule=91: Lemma_2_2 part 2
+  n=1 rule=91: Corollary_2_8
+  n=1 rule=92: Lemma_2_2 part 1
+  n=1 rule=93: Lemma_2_2 part 1
+  n=1 rule=93: Lemma_2_2 part 2
+  n=1 rule=93: Corollary_2_8
+  n=1 rule=94: Lemma_2_2 part 1
+  n=1 rule=95: Lemma_2_2 part 1
+  n=1 rule=95: Lemma_2_2 part 2
+  n=1 rule=95: Corollary_2_8
+  n=1 rule=96: Lemma_2_2 part 1
+  n=1 rule=97: Lemma_2_2 part 1
+  n=1 rule=97: Lemma_2_2 part 2
+  n=1 rule=97: Corollary_2_8
+  n=1 rule=98: Lemma_2_2 part 1
+  n=1 rule=99: Lemma_2_2 part 1
+  n=1 rule=99: Lemma_2_2 part 2
+  n=1 rule=99: Corollary_2_8
+  n=1 rule=100: Lemma_2_2 part 1
+  n=1 rule=101: Lemma_2_2 part 1
+  n=1 rule=101: Lemma_2_2 part 2
+  n=1 rule=101: Corollary_2_8
+  n=1 rule=102: Lemma_2_2 part 1
+  n=1 rule=103: Lemma_2_2 part 1
+  n=1 rule=103: Lemma_2_2 part 2
+  n=1 rule=103: Corollary_2_8
+  n=1 rule=104: Lemma_2_2 part 1
+  n=1 rule=105: Lemma_2_2 part 1
+  n=1 rule=105: Lemma_2_2 part 2
+  n=1 rule=105: Corollary_2_8
+  n=1 rule=106: Lemma_2_2 part 1
+  n=1 rule=107: Lemma_2_2 part 1
+  n=1 rule=107: Lemma_2_2 part 2
+  n=1 rule=107: Corollary_2_8
+  n=1 rule=108: Lemma_2_2 part 1
+  n=1 rule=109: Lemma_2_2 part 1
+  n=1 rule=109: Lemma_2_2 part 2
+  n=1 rule=109: Corollary_2_8
+  n=1 rule=110: Lemma_2_2 part 1
+  n=1 rule=111: Lemma_2_2 part 1
+  n=1 rule=111: Lemma_2_2 part 2
+  n=1 rule=111: Corollary_2_8
+  n=1 rule=112: Lemma_2_2 part 1
+  n=1 rule=113: Lemma_2_2 part 1
+  n=1 rule=113: Lemma_2_2 part 2
+  n=1 rule=113: Corollary_2_8
+  n=1 rule=114: Lemma_2_2 part 1
+  n=1 rule=115: Lemma_2_2 part 1
+  n=1 rule=115: Lemma_2_2 part 2
+  n=1 rule=115: Corollary_2_8
+  n=1 rule=116: Lemma_2_2 part 1
+  n=1 rule=117: Lemma_2_2 part 1
+  n=1 rule=117: Lemma_2_2 part 2
+  n=1 rule=117: Corollary_2_8
+  n=1 rule=118: Lemma_2_2 part 1
+  n=1 rule=119: Lemma_2_2 part 1
+  n=1 rule=119: Lemma_2_2 part 2
+  n=1 rule=119: Corollary_2_8
+  n=1 rule=120: Lemma_2_2 part 1
+  n=1 rule=121: Lemma_2_2 part 1
+  n=1 rule=121: Lemma_2_2 part 2
+  n=1 rule=121: Corollary_2_8
+  n=1 rule=122: Lemma_2_2 part 1
+  n=1 rule=123: Lemma_2_2 part 1
+  n=1 rule=123: Lemma_2_2 part 2
+  n=1 rule=123: Corollary_2_8
+  n=1 rule=124: Lemma_2_2 part 1
+  n=1 rule=125: Lemma_2_2 part 1
+  n=1 rule=125: Lemma_2_2 part 2
+  n=1 rule=125: Corollary_2_8
+  n=1 rule=126: Lemma_2_2 part 1
+  n=1 rule=127: Lemma_2_2 part 1
+  n=1 rule=127: Lemma_2_2 part 2
+  n=1 rule=127: Corollary_2_8
+  n=1 rule=128: Lemma_2_2 part 1
+  n=1 rule=128: Lemma_2_2 part 2
+  n=1 rule=128: Corollary_2_8
+  n=1 rule=129: Lemma_2_2 part 1
+  n=1 rule=130: Lemma_2_2 part 1
+  n=1 rule=130: Lemma_2_2 part 2
+  n=1 rule=130: Corollary_2_8
+  n=1 rule=131: Lemma_2_2 part 1
+  n=1 rule=132: Lemma_2_2 part 1
+  n=1 rule=132: Lemma_2_2 part 2
+  n=1 rule=132: Corollary_2_8
+  n=1 rule=133: Lemma_2_2 part 1
+  n=1 rule=134: Lemma_2_2 part 1
+  n=1 rule=134: Lemma_2_2 part 2
+  n=1 rule=134: Corollary_2_8
+  n=1 rule=135: Lemma_2_2 part 1
+  n=1 rule=136: Lemma_2_2 part 1
+  n=1 rule=136: Lemma_2_2 part 2
+  n=1 rule=136: Corollary_2_8
+  n=1 rule=137: Lemma_2_2 part 1
+  n=1 rule=138: Lemma_2_2 part 1
+  n=1 rule=138: Lemma_2_2 part 2
+  n=1 rule=138: Corollary_2_8
+  n=1 rule=139: Lemma_2_2 part 1
+  n=1 rule=140: Lemma_2_2 part 1
+  n=1 rule=140: Lemma_2_2 part 2
+  n=1 rule=140: Corollary_2_8
+  n=1 rule=141: Lemma_2_2 part 1
+  n=1 rule=142: Lemma_2_2 part 1
+  n=1 rule=142: Lemma_2_2 part 2
+  n=1 rule=142: Corollary_2_8
+  n=1 rule=143: Lemma_2_2 part 1
+  n=1 rule=144: Lemma_2_2 part 1
+  n=1 rule=144: Lemma_2_2 part 2
+  n=1 rule=144: Corollary_2_8
+  n=1 rule=145: Lemma_2_2 part 1
+  n=1 rule=146: Lemma_2_2 part 1
+  n=1 rule=146: Lemma_2_2 part 2
+  n=1 rule=146: Corollary_2_8
+  n=1 rule=147: Lemma_2_2 part 1
+  n=1 rule=148: Lemma_2_2 part 1
+  n=1 rule=148: Lemma_2_2 part 2
+  n=1 rule=148: Corollary_2_8
+  n=1 rule=149: Lemma_2_2 part 1
+  n=1 rule=150: Lemma_2_2 part 1
+  n=1 rule=150: Lemma_2_2 part 2
+  n=1 rule=150: Corollary_2_8
+  n=1 rule=151: Lemma_2_2 part 1
+  n=1 rule=152: Lemma_2_2 part 1
+  n=1 rule=152: Lemma_2_2 part 2
+  n=1 rule=152: Corollary_2_8
+  n=1 rule=153: Lemma_2_2 part 1
+  n=1 rule=154: Lemma_2_2 part 1
+  n=1 rule=154: Lemma_2_2 part 2
+  n=1 rule=154: Corollary_2_8
+  n=1 rule=155: Lemma_2_2 part 1
+  n=1 rule=156: Lemma_2_2 part 1
+  n=1 rule=156: Lemma_2_2 part 2
+  n=1 rule=156: Corollary_2_8
+  n=1 rule=157: Lemma_2_2 part 1
+  n=1 rule=158: Lemma_2_2 part 1
+  n=1 rule=158: Lemma_2_2 part 2
+  n=1 rule=158: Corollary_2_8
+  n=1 rule=159: Lemma_2_2 part 1
+  n=1 rule=160: Lemma_2_2 part 1
+  n=1 rule=160: Lemma_2_2 part 2
+  n=1 rule=160: Corollary_2_8
+  n=1 rule=161: Lemma_2_2 part 1
+  n=1 rule=162: Lemma_2_2 part 1
+  n=1 rule=162: Lemma_2_2 part 2
+  n=1 rule=162: Corollary_2_8
+  n=1 rule=163: Lemma_2_2 part 1
+  n=1 rule=164: Lemma_2_2 part 1
+  n=1 rule=164: Lemma_2_2 part 2
+  n=1 rule=164: Corollary_2_8
+  n=1 rule=165: Lemma_2_2 part 1
+  n=1 rule=166: Lemma_2_2 part 1
+  n=1 rule=166: Lemma_2_2 part 2
+  n=1 rule=166: Corollary_2_8
+  n=1 rule=167: Lemma_2_2 part 1
+  n=1 rule=168: Lemma_2_2 part 1
+  n=1 rule=168: Lemma_2_2 part 2
+  n=1 rule=168: Corollary_2_8
+  n=1 rule=169: Lemma_2_2 part 1
+  n=1 rule=170: Lemma_2_2 part 1
+  n=1 rule=170: Lemma_2_2 part 2
+  n=1 rule=170: Corollary_2_8
+  n=1 rule=171: Lemma_2_2 part 1
+  n=1 rule=172: Lemma_2_2 part 1
+  n=1 rule=172: Lemma_2_2 part 2
+  n=1 rule=172: Corollary_2_8
+  n=1 rule=173: Lemma_2_2 part 1
+  n=1 rule=174: Lemma_2_2 part 1
+  n=1 rule=174: Lemma_2_2 part 2
+  n=1 rule=174: Corollary_2_8
+  n=1 rule=175: Lemma_2_2 part 1
+  n=1 rule=176: Lemma_2_2 part 1
+  n=1 rule=176: Lemma_2_2 part 2
+  n=1 rule=176: Corollary_2_8
+  n=1 rule=177: Lemma_2_2 part 1
+  n=1 rule=178: Lemma_2_2 part 1
+  n=1 rule=178: Lemma_2_2 part 2
+  n=1 rule=178: Corollary_2_8
+  n=1 rule=179: Lemma_2_2 part 1
+  n=1 rule=180: Lemma_2_2 part 1
+  n=1 rule=180: Lemma_2_2 part 2
+  n=1 rule=180: Corollary_2_8
+  n=1 rule=181: Lemma_2_2 part 1
+  n=1 rule=182: Lemma_2_2 part 1
+  n=1 rule=182: Lemma_2_2 part 2
+  n=1 rule=182: Corollary_2_8
+  n=1 rule=183: Lemma_2_2 part 1
+  n=1 rule=184: Lemma_2_2 part 1
+  n=1 rule=184: Lemma_2_2 part 2
+  n=1 rule=184: Corollary_2_8
+  n=1 rule=185: Lemma_2_2 part 1
+  n=1 rule=186: Lemma_2_2 part 1
+  n=1 rule=186: Lemma_2_2 part 2
+  n=1 rule=186: Corollary_2_8
+  n=1 rule=187: Lemma_2_2 part 1
+  n=1 rule=188: Lemma_2_2 part 1
+  n=1 rule=188: Lemma_2_2 part 2
+  n=1 rule=188: Corollary_2_8
+  n=1 rule=189: Lemma_2_2 part 1
+  n=1 rule=190: Lemma_2_2 part 1
+  n=1 rule=190: Lemma_2_2 part 2
+  n=1 rule=190: Corollary_2_8
+  n=1 rule=191: Lemma_2_2 part 1
+  n=1 rule=192: Lemma_2_2 part 1
+  n=1 rule=192: Lemma_2_2 part 2
+  n=1 rule=192: Corollary_2_8
+  n=1 rule=193: Lemma_2_2 part 1
+  n=1 rule=194: Lemma_2_2 part 1
+  n=1 rule=194: Lemma_2_2 part 2
+  n=1 rule=194: Corollary_2_8
+  n=1 rule=195: Lemma_2_2 part 1
+  n=1 rule=196: Lemma_2_2 part 1
+  n=1 rule=196: Lemma_2_2 part 2
+  n=1 rule=196: Corollary_2_8
+  n=1 rule=197: Lemma_2_2 part 1
+  n=1 rule=198: Lemma_2_2 part 1
+  n=1 rule=198: Lemma_2_2 part 2
+  n=1 rule=198: Corollary_2_8
+  n=1 rule=199: Lemma_2_2 part 1
+  n=1 rule=200: Lemma_2_2 part 1
+  n=1 rule=200: Lemma_2_2 part 2
+  n=1 rule=200: Corollary_2_8
+  n=1 rule=201: Lemma_2_2 part 1
+  n=1 rule=202: Lemma_2_2 part 1
+  n=1 rule=202: Lemma_2_2 part 2
+  n=1 rule=202: Corollary_2_8
+  n=1 rule=203: Lemma_2_2 part 1
+  n=1 rule=204: Lemma_2_2 part 1
+  n=1 rule=204: Lemma_2_2 part 2
+  n=1 rule=204: Corollary_2_8
+  n=1 rule=205: Lemma_2_2 part 1
+  n=1 rule=206: Lemma_2_2 part 1
+  n=1 rule=206: Lemma_2_2 part 2
+  n=1 rule=206: Corollary_2_8
+  n=1 rule=207: Lemma_2_2 part 1
+  n=1 rule=208: Lemma_2_2 part 1
+  n=1 rule=208: Lemma_2_2 part 2
+  n=1 rule=208: Corollary_2_8
+  n=1 rule=209: Lemma_2_2 part 1
+  n=1 rule=210: Lemma_2_2 part 1
+  n=1 rule=210: Lemma_2_2 part 2
+  n=1 rule=210: Corollary_2_8
+  n=1 rule=211: Lemma_2_2 part 1
+  n=1 rule=212: Lemma_2_2 part 1
+  n=1 rule=212: Lemma_2_2 part 2
+  n=1 rule=212: Corollary_2_8
+  n=1 rule=213: Lemma_2_2 part 1
+  n=1 rule=214: Lemma_2_2 part 1
+  n=1 rule=214: Lemma_2_2 part 2
+  n=1 rule=214: Corollary_2_8
+  n=1 rule=215: Lemma_2_2 part 1
+  n=1 rule=216: Lemma_2_2 part 1
+  n=1 rule=216: Lemma_2_2 part 2
+  n=1 rule=216: Corollary_2_8
+  n=1 rule=217: Lemma_2_2 part 1
+  n=1 rule=218: Lemma_2_2 part 1
+  n=1 rule=218: Lemma_2_2 part 2
+  n=1 rule=218: Corollary_2_8
+  n=1 rule=219: Lemma_2_2 part 1
+  n=1 rule=220: Lemma_2_2 part 1
+  n=1 rule=220: Lemma_2_2 part 2
+  n=1 rule=220: Corollary_2_8
+  n=1 rule=221: Lemma_2_2 part 1
+  n=1 rule=222: Lemma_2_2 part 1
+  n=1 rule=222: Lemma_2_2 part 2
+  n=1 rule=222: Corollary_2_8
+  n=1 rule=223: Lemma_2_2 part 1
+  n=1 rule=224: Lemma_2_2 part 1
+  n=1 rule=224: Lemma_2_2 part 2
+  n=1 rule=224: Corollary_2_8
+  n=1 rule=225: Lemma_2_2 part 1
+  n=1 rule=226: Lemma_2_2 part 1
+  n=1 rule=226: Lemma_2_2 part 2
+  n=1 rule=226: Corollary_2_8
+  n=1 rule=227: Lemma_2_2 part 1
+  n=1 rule=228: Lemma_2_2 part 1
+  n=1 rule=228: Lemma_2_2 part 2
+  n=1 rule=228: Corollary_2_8
+  n=1 rule=229: Lemma_2_2 part 1
+  n=1 rule=230: Lemma_2_2 part 1
+  n=1 rule=230: Lemma_2_2 part 2
+  n=1 rule=230: Corollary_2_8
+  n=1 rule=231: Lemma_2_2 part 1
+  n=1 rule=232: Lemma_2_2 part 1
+  n=1 rule=232: Lemma_2_2 part 2
+  n=1 rule=232: Corollary_2_8
+  n=1 rule=233: Lemma_2_2 part 1
+  n=1 rule=234: Lemma_2_2 part 1
+  n=1 rule=234: Lemma_2_2 part 2
+  n=1 rule=234: Corollary_2_8
+  n=1 rule=235: Lemma_2_2 part 1
+  n=1 rule=236: Lemma_2_2 part 1
+  n=1 rule=236: Lemma_2_2 part 2
+  n=1 rule=236: Corollary_2_8
+  n=1 rule=237: Lemma_2_2 part 1
+  n=1 rule=238: Lemma_2_2 part 1
+  n=1 rule=238: Lemma_2_2 part 2
+  n=1 rule=238: Corollary_2_8
+  n=1 rule=239: Lemma_2_2 part 1
+  n=1 rule=240: Lemma_2_2 part 1
+  n=1 rule=240: Lemma_2_2 part 2
+  n=1 rule=240: Corollary_2_8
+  n=1 rule=241: Lemma_2_2 part 1
+  n=1 rule=242: Lemma_2_2 part 1
+  n=1 rule=242: Lemma_2_2 part 2
+  n=1 rule=242: Corollary_2_8
+  n=1 rule=243: Lemma_2_2 part 1
+  n=1 rule=244: Lemma_2_2 part 1
+  n=1 rule=244: Lemma_2_2 part 2
+  n=1 rule=244: Corollary_2_8
+  n=1 rule=245: Lemma_2_2 part 1
+  n=1 rule=246: Lemma_2_2 part 1
+  n=1 rule=246: Lemma_2_2 part 2
+  n=1 rule=246: Corollary_2_8
+  n=1 rule=247: Lemma_2_2 part 1
+  n=1 rule=248: Lemma_2_2 part 1
+  n=1 rule=248: Lemma_2_2 part 2
+  n=1 rule=248: Corollary_2_8
+  n=1 rule=249: Lemma_2_2 part 1
+  n=1 rule=250: Lemma_2_2 part 1
+  n=1 rule=250: Lemma_2_2 part 2
+  n=1 rule=250: Corollary_2_8
+  n=1 rule=251: Lemma_2_2 part 1
+  n=1 rule=252: Lemma_2_2 part 1
+  n=1 rule=252: Lemma_2_2 part 2
+  n=1 rule=252: Corollary_2_8
+  n=1 rule=253: Lemma_2_2 part 1
+  n=1 rule=254: Lemma_2_2 part 1
+  n=1 rule=254: Lemma_2_2 part 2
+  n=1 rule=254: Corollary_2_8
+  n=1 rule=255: Lemma_2_2 part 1
+  n=2 rule=0: Lemma_2_2 part 1
+  n=2 rule=1: Lemma_2_2 part 1
+  n=2 rule=2: Lemma_2_2 part 1
+  n=2 rule=3: Lemma_2_2 part 1
+  n=2 rule=4: Lemma_2_2 part 1
+  n=2 rule=5: Lemma_2_2 part 1
+  n=2 rule=5: Lemma_2_2 part 2
+  n=2 rule=5: Corollary_2_8
+  n=2 rule=6: Lemma_2_2 part 1
+  n=2 rule=7: Lemma_2_2 part 1
+  n=2 rule=7: Lemma_2_2 part 2
+  n=2 rule=7: Corollary_2_8
+  n=2 rule=8: Lemma_2_2 part 1
+  n=2 rule=9: Lemma_2_2 part 1
+  n=2 rule=10: Lemma_2_2 part 1
+  n=2 rule=11: Lemma_2_2 part 1
+  n=2 rule=12: Lemma_2_2 part 1
+  n=2 rule=13: Lemma_2_2 part 1
+  n=2 rule=13: Lemma_2_2 part 2
+  n=2 rule=13: Corollary_2_8
+  n=2 rule=14: Lemma_2_2 part 1
+  n=2 rule=15: Lemma_2_2 part 1
+  n=2 rule=15: Lemma_2_2 part 2
+  n=2 rule=15: Corollary_2_8
+  n=2 rule=16: Lemma_2_2 part 1
+  n=2 rule=17: Lemma_2_2 part 1
+  n=2 rule=18: Lemma_2_2 part 1
+  n=2 rule=19: Lemma_2_2 part 1
+  n=2 rule=20: Lemma_2_2 part 1
+  n=2 rule=21: Lemma_2_2 part 1
+  n=2 rule=21: Lemma_2_2 part 2
+  n=2 rule=21: Corollary_2_8
+  n=2 rule=22: Lemma_2_2 part 1
+  n=2 rule=23: Lemma_2_2 part 1
+  n=2 rule=23: Lemma_2_2 part 2
+  n=2 rule=23: Corollary_2_8
+  n=2 rule=24: Lemma_2_2 part 1
+  n=2 rule=25: Lemma_2_2 part 1
+  n=2 rule=26: Lemma_2_2 part 1
+  n=2 rule=27: Lemma_2_2 part 1
+  n=2 rule=28: Lemma_2_2 part 1
+  n=2 rule=29: Lemma_2_2 part 1
+  n=2 rule=29: Lemma_2_2 part 2
+  n=2 rule=29: Corollary_2_8
+  n=2 rule=30: Lemma_2_2 part 1
+  n=2 rule=31: Lemma_2_2 part 1
+  n=2 rule=31: Lemma_2_2 part 2
+  n=2 rule=31: Corollary_2_8
+  n=2 rule=32: Lemma_2_2 part 1
+  n=2 rule=33: Lemma_2_2 part 1
+  n=2 rule=33: Lemma_2_2 part 2
+  n=2 rule=33: Corollary_2_8
+  n=2 rule=34: Lemma_2_2 part 1
+  n=2 rule=35: Lemma_2_2 part 1
+  n=2 rule=35: Lemma_2_2 part 2
+  n=2 rule=35: Corollary_2_8
+  n=2 rule=36: Lemma_2_2 part 1
+  n=2 rule=37: Lemma_2_2 part 1
+  n=2 rule=38: Lemma_2_2 part 1
+  n=2 rule=39: Lemma_2_2 part 1
+  n=2 rule=40: Lemma_2_2 part 1
+  n=2 rule=41: Lemma_2_2 part 1
+  n=2 rule=41: Lemma_2_2 part 2
+  n=2 rule=41: Corollary_2_8
+  n=2 rule=42: Lemma_2_2 part 1
+  n=2 rule=43: Lemma_2_2 part 1
+  n=2 rule=43: Lemma_2_2 part 2
+  n=2 rule=43: Corollary_2_8
+  n=2 rule=44: Lemma_2_2 part 1
+  n=2 rule=45: Lemma_2_2 part 1
+  n=2 rule=46: Lemma_2_2 part 1
+  n=2 rule=47: Lemma_2_2 part 1
+  n=2 rule=48: Lemma_2_2 part 1
+  n=2 rule=49: Lemma_2_2 part 1
+  n=2 rule=49: Lemma_2_2 part 2
+  n=2 rule=49: Corollary_2_8
+  n=2 rule=50: Lemma_2_2 part 1
+  n=2 rule=51: Lemma_2_2 part 1
+  n=2 rule=51: Lemma_2_2 part 2
+  n=2 rule=51: Corollary_2_8
+  n=2 rule=52: Lemma_2_2 part 1
+  n=2 rule=53: Lemma_2_2 part 1
+  n=2 rule=54: Lemma_2_2 part 1
+  n=2 rule=55: Lemma_2_2 part 1
+  n=2 rule=56: Lemma_2_2 part 1
+  n=2 rule=57: Lemma_2_2 part 1
+  n=2 rule=57: Lemma_2_2 part 2
+  n=2 rule=57: Corollary_2_8
+  n=2 rule=58: Lemma_2_2 part 1
+  n=2 rule=59: Lemma_2_2 part 1
+  n=2 rule=59: Lemma_2_2 part 2
+  n=2 rule=59: Corollary_2_8
+  n=2 rule=60: Lemma_2_2 part 1
+  n=2 rule=61: Lemma_2_2 part 1
+  n=2 rule=62: Lemma_2_2 part 1
+  n=2 rule=63: Lemma_2_2 part 1
+  n=2 rule=64: Lemma_2_2 part 1
+  n=2 rule=65: Lemma_2_2 part 1
+  n=2 rule=66: Lemma_2_2 part 1
+  n=2 rule=67: Lemma_2_2 part 1
+  n=2 rule=68: Lemma_2_2 part 1
+  n=2 rule=69: Lemma_2_2 part 1
+  n=2 rule=69: Lemma_2_2 part 2
+  n=2 rule=69: Corollary_2_8
+  n=2 rule=70: Lemma_2_2 part 1
+  n=2 rule=71: Lemma_2_2 part 1
+  n=2 rule=71: Lemma_2_2 part 2
+  n=2 rule=71: Corollary_2_8
+  n=2 rule=72: Lemma_2_2 part 1
+  n=2 rule=73: Lemma_2_2 part 1
+  n=2 rule=74: Lemma_2_2 part 1
+  n=2 rule=75: Lemma_2_2 part 1
+  n=2 rule=76: Lemma_2_2 part 1
+  n=2 rule=77: Lemma_2_2 part 1
+  n=2 rule=77: Lemma_2_2 part 2
+  n=2 rule=77: Corollary_2_8
+  n=2 rule=78: Lemma_2_2 part 1
+  n=2 rule=79: Lemma_2_2 part 1
+  n=2 rule=79: Lemma_2_2 part 2
+  n=2 rule=79: Corollary_2_8
+  n=2 rule=80: Lemma_2_2 part 1
+  n=2 rule=81: Lemma_2_2 part 1
+  n=2 rule=82: Lemma_2_2 part 1
+  n=2 rule=83: Lemma_2_2 part 1
+  n=2 rule=84: Lemma_2_2 part 1
+  n=2 rule=85: Lemma_2_2 part 1
+  n=2 rule=85: Lemma_2_2 part 2
+  n=2 rule=85: Corollary_2_8
+  n=2 rule=86: Lemma_2_2 part 1
+  n=2 rule=87: Lemma_2_2 part 1
+  n=2 rule=87: Lemma_2_2 part 2
+  n=2 rule=87: Corollary_2_8
+  n=2 rule=88: Lemma_2_2 part 1
+  n=2 rule=89: Lemma_2_2 part 1
+  n=2 rule=90: Lemma_2_2 part 1
+  n=2 rule=91: Lemma_2_2 part 1
+  n=2 rule=92: Lemma_2_2 part 1
+  n=2 rule=93: Lemma_2_2 part 1
+  n=2 rule=93: Lemma_2_2 part 2
+  n=2 rule=93: Corollary_2_8
+  n=2 rule=94: Lemma_2_2 part 1
+  n=2 rule=95: Lemma_2_2 part 1
+  n=2 rule=95: Lemma_2_2 part 2
+  n=2 rule=95: Corollary_2_8
+  n=2 rule=96: Lemma_2_2 part 1
+  n=2 rule=97: Lemma_2_2 part 1
+  n=2 rule=97: Lemma_2_2 part 2
+  n=2 rule=97: Corollary_2_8
+  n=2 rule=98: Lemma_2_2 part 1
+  n=2 rule=99: Lemma_2_2 part 1
+  n=2 rule=99: Lemma_2_2 part 2
+  n=2 rule=99: Corollary_2_8
+  n=2 rule=100: Lemma_2_2 part 1
+  n=2 rule=101: Lemma_2_2 part 1
+  n=2 rule=102: Lemma_2_2 part 1
+  n=2 rule=103: Lemma_2_2 part 1
+  n=2 rule=104: Lemma_2_2 part 1
+  n=2 rule=105: Lemma_2_2 part 1
+  n=2 rule=105: Lemma_2_2 part 2
+  n=2 rule=105: Corollary_2_8
+  n=2 rule=106: Lemma_2_2 part 1
+  n=2 rule=107: Lemma_2_2 part 1
+  n=2 rule=107: Lemma_2_2 part 2
+  n=2 rule=107: Corollary_2_8
+  n=2 rule=108: Lemma_2_2 part 1
+  n=2 rule=109: Lemma_2_2 part 1
+  n=2 rule=110: Lemma_2_2 part 1
+  n=2 rule=111: Lemma_2_2 part 1
+  n=2 rule=112: Lemma_2_2 part 1
+  n=2 rule=113: Lemma_2_2 part 1
+  n=2 rule=113: Lemma_2_2 part 2
+  n=2 rule=113: Corollary_2_8
+  n=2 rule=114: Lemma_2_2 part 1
+  n=2 rule=115: Lemma_2_2 part 1
+  n=2 rule=115: Lemma_2_2 part 2
+  n=2 rule=115: Corollary_2_8
+  n=2 rule=116: Lemma_2_2 part 1
+  n=2 rule=117: Lemma_2_2 part 1
+  n=2 rule=118: Lemma_2_2 part 1
+  n=2 rule=119: Lemma_2_2 part 1
+  n=2 rule=120: Lemma_2_2 part 1
+  n=2 rule=121: Lemma_2_2 part 1
+  n=2 rule=121: Lemma_2_2 part 2
+  n=2 rule=121: Corollary_2_8
+  n=2 rule=122: Lemma_2_2 part 1
+  n=2 rule=123: Lemma_2_2 part 1
+  n=2 rule=123: Lemma_2_2 part 2
+  n=2 rule=123: Corollary_2_8
+  n=2 rule=124: Lemma_2_2 part 1
+  n=2 rule=125: Lemma_2_2 part 1
+  n=2 rule=126: Lemma_2_2 part 1
+  n=2 rule=127: Lemma_2_2 part 1
+  n=2 rule=128: Lemma_2_2 part 1
+  n=2 rule=129: Lemma_2_2 part 1
+  n=2 rule=130: Lemma_2_2 part 1
+  n=2 rule=131: Lemma_2_2 part 1
+  n=2 rule=132: Lemma_2_2 part 1
+  n=2 rule=132: Lemma_2_2 part 2
+  n=2 rule=132: Corollary_2_8
+  n=2 rule=133: Lemma_2_2 part 1
+  n=2 rule=134: Lemma_2_2 part 1
+  n=2 rule=134: Lemma_2_2 part 2
+  n=2 rule=134: Corollary_2_8
+  n=2 rule=135: Lemma_2_2 part 1
+  n=2 rule=136: Lemma_2_2 part 1
+  n=2 rule=137: Lemma_2_2 part 1
+  n=2 rule=138: Lemma_2_2 part 1
+  n=2 rule=139: Lemma_2_2 part 1
+  n=2 rule=140: Lemma_2_2 part 1
+  n=2 rule=140: Lemma_2_2 part 2
+  n=2 rule=140: Corollary_2_8
+  n=2 rule=141: Lemma_2_2 part 1
+  n=2 rule=142: Lemma_2_2 part 1
+  n=2 rule=142: Lemma_2_2 part 2
+  n=2 rule=142: Corollary_2_8
+  n=2 rule=143: Lemma_2_2 part 1
+  n=2 rule=144: Lemma_2_2 part 1
+  n=2 rule=145: Lemma_2_2 part 1
+  n=2 rule=146: Lemma_2_2 part 1
+  n=2 rule=147: Lemma_2_2 part 1
+  n=2 rule=148: Lemma_2_2 part 1
+  n=2 rule=148: Lemma_2_2 part 2
+  n=2 rule=148: Corollary_2_8
+  n=2 rule=149: Lemma_2_2 part 1
+  n=2 rule=150: Lemma_2_2 part 1
+  n=2 rule=150: Lemma_2_2 part 2
+  n=2 rule=150: Corollary_2_8
+  n=2 rule=151: Lemma_2_2 part 1
+  n=2 rule=152: Lemma_2_2 part 1
+  n=2 rule=153: Lemma_2_2 part 1
+  n=2 rule=154: Lemma_2_2 part 1
+  n=2 rule=155: Lemma_2_2 part 1
+  n=2 rule=156: Lemma_2_2 part 1
+  n=2 rule=156: Lemma_2_2 part 2
+  n=2 rule=156: Corollary_2_8
+  n=2 rule=157: Lemma_2_2 part 1
+  n=2 rule=158: Lemma_2_2 part 1
+  n=2 rule=158: Lemma_2_2 part 2
+  n=2 rule=158: Corollary_2_8
+  n=2 rule=159: Lemma_2_2 part 1
+  n=2 rule=160: Lemma_2_2 part 1
+  n=2 rule=160: Lemma_2_2 part 2
+  n=2 rule=160: Corollary_2_8
+  n=2 rule=161: Lemma_2_2 part 1
+  n=2 rule=162: Lemma_2_2 part 1
+  n=2 rule=162: Lemma_2_2 part 2
+  n=2 rule=162: Corollary_2_8
+  n=2 rule=163: Lemma_2_2 part 1
+  n=2 rule=164: Lemma_2_2 part 1
+  n=2 rule=165: Lemma_2_2 part 1
+  n=2 rule=166: Lemma_2_2 part 1
+  n=2 rule=167: Lemma_2_2 part 1
+  n=2 rule=168: Lemma_2_2 part 1
+  n=2 rule=168: Lemma_2_2 part 2
+  n=2 rule=168: Corollary_2_8
+  n=2 rule=169: Lemma_2_2 part 1
+  n=2 rule=170: Lemma_2_2 part 1
+  n=2 rule=170: Lemma_2_2 part 2
+  n=2 rule=170: Corollary_2_8
+  n=2 rule=171: Lemma_2_2 part 1
+  n=2 rule=172: Lemma_2_2 part 1
+  n=2 rule=173: Lemma_2_2 part 1
+  n=2 rule=174: Lemma_2_2 part 1
+  n=2 rule=175: Lemma_2_2 part 1
+  n=2 rule=176: Lemma_2_2 part 1
+  n=2 rule=176: Lemma_2_2 part 2
+  n=2 rule=176: Corollary_2_8
+  n=2 rule=177: Lemma_2_2 part 1
+  n=2 rule=178: Lemma_2_2 part 1
+  n=2 rule=178: Lemma_2_2 part 2
+  n=2 rule=178: Corollary_2_8
+  n=2 rule=179: Lemma_2_2 part 1
+  n=2 rule=180: Lemma_2_2 part 1
+  n=2 rule=181: Lemma_2_2 part 1
+  n=2 rule=182: Lemma_2_2 part 1
+  n=2 rule=183: Lemma_2_2 part 1
+  n=2 rule=184: Lemma_2_2 part 1
+  n=2 rule=184: Lemma_2_2 part 2
+  n=2 rule=184: Corollary_2_8
+  n=2 rule=185: Lemma_2_2 part 1
+  n=2 rule=186: Lemma_2_2 part 1
+  n=2 rule=186: Lemma_2_2 part 2
+  n=2 rule=186: Corollary_2_8
+  n=2 rule=187: Lemma_2_2 part 1
+  n=2 rule=188: Lemma_2_2 part 1
+  n=2 rule=189: Lemma_2_2 part 1
+  n=2 rule=190: Lemma_2_2 part 1
+  n=2 rule=191: Lemma_2_2 part 1
+  n=2 rule=192: Lemma_2_2 part 1
+  n=2 rule=193: Lemma_2_2 part 1
+  n=2 rule=194: Lemma_2_2 part 1
+  n=2 rule=195: Lemma_2_2 part 1
+  n=2 rule=196: Lemma_2_2 part 1
+  n=2 rule=196: Lemma_2_2 part 2
+  n=2 rule=196: Corollary_2_8
+  n=2 rule=197: Lemma_2_2 part 1
+  n=2 rule=198: Lemma_2_2 part 1
+  n=2 rule=198: Lemma_2_2 part 2
+  n=2 rule=198: Corollary_2_8
+  n=2 rule=199: Lemma_2_2 part 1
+  n=2 rule=200: Lemma_2_2 part 1
+  n=2 rule=201: Lemma_2_2 part 1
+  n=2 rule=202: Lemma_2_2 part 1
+  n=2 rule=203: Lemma_2_2 part 1
+  n=2 rule=204: Lemma_2_2 part 1
+  n=2 rule=204: Lemma_2_2 part 2
+  n=2 rule=204: Corollary_2_8
+  n=2 rule=205: Lemma_2_2 part 1
+  n=2 rule=206: Lemma_2_2 part 1
+  n=2 rule=206: Lemma_2_2 part 2
+  n=2 rule=206: Corollary_2_8
+  n=2 rule=207: Lemma_2_2 part 1
+  n=2 rule=208: Lemma_2_2 part 1
+  n=2 rule=209: Lemma_2_2 part 1
+  n=2 rule=210: Lemma_2_2 part 1
+  n=2 rule=211: Lemma_2_2 part 1
+  n=2 rule=212: Lemma_2_2 part 1
+  n=2 rule=212: Lemma_2_2 part 2
+  n=2 rule=212: Corollary_2_8
+  n=2 rule=213: Lemma_2_2 part 1
+  n=2 rule=214: Lemma_2_2 part 1
+  n=2 rule=214: Lemma_2_2 part 2
+  n=2 rule=214: Corollary_2_8
+  n=2 rule=215: Lemma_2_2 part 1
+  n=2 rule=216: Lemma_2_2 part 1
+  n=2 rule=217: Lemma_2_2 part 1
+  n=2 rule=218: Lemma_2_2 part 1
+  n=2 rule=219: Lemma_2_2 part 1
+  n=2 rule=220: Lemma_2_2 part 1
+  n=2 rule=220: Lemma_2_2 part 2
+  n=2 rule=220: Corollary_2_8
+  n=2 rule=221: Lemma_2_2 part 1
+  n=2 rule=222: Lemma_2_2 part 1
+  n=2 rule=222: Lemma_2_2 part 2
+  n=2 rule=222: Corollary_2_8
+  n=2 rule=223: Lemma_2_2 part 1
+  n=2 rule=224: Lemma_2_2 part 1
+  n=2 rule=224: Lemma_2_2 part 2
+  n=2 rule=224: Corollary_2_8
+  n=2 rule=225: Lemma_2_2 part 1
+  n=2 rule=226: Lemma_2_2 part 1
+  n=2 rule=226: Lemma_2_2 part 2
+  n=2 rule=226: Corollary_2_8
+  n=2 rule=227: Lemma_2_2 part 1
+  n=2 rule=228: Lemma_2_2 part 1
+  n=2 rule=229: Lemma_2_2 part 1
+  n=2 rule=230: Lemma_2_2 part 1
+  n=2 rule=231: Lemma_2_2 part 1
+  n=2 rule=232: Lemma_2_2 part 1
+  n=2 rule=232: Lemma_2_2 part 2
+  n=2 rule=232: Corollary_2_8
+  n=2 rule=233: Lemma_2_2 part 1
+  n=2 rule=234: Lemma_2_2 part 1
+  n=2 rule=234: Lemma_2_2 part 2
+  n=2 rule=234: Corollary_2_8
+  n=2 rule=235: Lemma_2_2 part 1
+  n=2 rule=236: Lemma_2_2 part 1
+  n=2 rule=237: Lemma_2_2 part 1
+  n=2 rule=238: Lemma_2_2 part 1
+  n=2 rule=239: Lemma_2_2 part 1
+  n=2 rule=240: Lemma_2_2 part 1
+  n=2 rule=240: Lemma_2_2 part 2
+  n=2 rule=240: Corollary_2_8
+  n=2 rule=241: Lemma_2_2 part 1
+  n=2 rule=242: Lemma_2_2 part 1
+  n=2 rule=242: Lemma_2_2 part 2
+  n=2 rule=242: Corollary_2_8
+  n=2 rule=243: Lemma_2_2 part 1
+  n=2 rule=244: Lemma_2_2 part 1
+  n=2 rule=245: Lemma_2_2 part 1
+  n=2 rule=246: Lemma_2_2 part 1
+  n=2 rule=247: Lemma_2_2 part 1
+  n=2 rule=248: Lemma_2_2 part 1
+  n=2 rule=248: Lemma_2_2 part 2
+  n=2 rule=248: Corollary_2_8
+  n=2 rule=249: Lemma_2_2 part 1
+  n=2 rule=250: Lemma_2_2 part 1
+  n=2 rule=250: Lemma_2_2 part 2
+  n=2 rule=250: Corollary_2_8
+  n=2 rule=251: Lemma_2_2 part 1
+  n=2 rule=252: Lemma_2_2 part 1
+  n=2 rule=253: Lemma_2_2 part 1
+  n=2 rule=254: Lemma_2_2 part 1
+  n=2 rule=255: Lemma_2_2 part 1
