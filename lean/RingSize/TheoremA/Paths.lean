@@ -106,6 +106,10 @@ theorem exists_iterate_periodic (x : X) : ∃ t, F^[t] x ∈ periodicPts F := by
 def cycleOf (y : X) (hy : y ∈ periodicPts F) : Cyc F :=
   Subtype.mk (orbit F y) ⟨y, hy, rfl⟩
 
+omit [Fintype X] [DecidableEq X] in
+theorem mem_cycleOf (y : X) (hy : y ∈ periodicPts F) : y ∈ (cycleOf F y hy).1 :=
+  mem_orbit_self F y
+
 omit [DecidableEq X] in
 /-- Paper, 2.2: the orbit of every state ends on exactly one cycle. -/
 theorem endsOn_existsUnique (x : X) : ∃! C : Cyc F, EndsOn F x C := by

@@ -21,7 +21,7 @@ namespace RingSize.Rule154
 open Function RingSize.TheoremA
 
 /-- The parity of a cell. -/
-def par (n : ℕ) (i : ZMod n) : ZMod 2 :=
+@[expose] def par (n : ℕ) (i : ZMod n) : ZMod 2 :=
   ((i.val : ℕ) : ZMod 2)
 
 theorem zmod2_cases : ∀ a : ZMod 2, a = 0 ∨ a = 1 := by decide
