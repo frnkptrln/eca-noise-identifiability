@@ -41,7 +41,8 @@ def parO (n : ℕ) : Set (State n) :=
   {x | ∀ i : ZMod n, Even i.val → x i = 0}
 
 /-- The zero state is a fixed point of rule 154, so `{0}` is a cycle. (Used in the paper throughout
-Section 3.1; needed here so that the cycle `{0}` of `Theorem_3_9_b` exists.) -/
+Section 3.1; needed here so that the cycle `{0}` of `Theorem_3_9_b`, and of `Theorem_3_9` and `Theorem_3_11` in
+`StatementMain.lean`, exists.) -/
 def Zero_cycle : Prop :=
   ∀ (n : ℕ) [NeZero n], IsCycle (F154 n) {(0 : State n)}
 

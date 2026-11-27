@@ -1,0 +1,4 @@
+n=4: m=4; (a)=True (b) no G1 edge leaves {0}=True (c)=True (d)=True G1 on cycles != {0} strongly connected=True (e)=True (f)=True; k_v=[0, 1, 1, 1, 1, 1, 1, 1]; time 0.0 s
+n=8: m=31; (a)=True (b) no G1 edge leaves {0}=True (c)=True (d)=True G1 on cycles != {0} strongly connected=True (e)=True (f)=True; k_v=[0, 1, 1, 1, 1, 1, 1, 1]; time 0.0 s
+n=16: m=4081; (a)=True (b) no G1 edge leaves {0}=True (c)=True (d)=True G1 on cycles != {0} strongly connected=True (e)=True (f)=True; k_v=[0, 1, 1, 1, 1, 1, 1, 1]; time 0.4 s
+ALL OK

@@ -12,3 +12,7 @@ public import RingSize.TheoremA.StatementRotation
 public import RingSize.TheoremA.Rotation
 public import RingSize.Rule154.Statement
 public import RingSize.Rule154.Pow2
+public import RingSize.Rule154.StatementMain
+public import RingSize.Rule154.Periodic
+public import RingSize.Rule154.Moves
+public import RingSize.Rule154.Main

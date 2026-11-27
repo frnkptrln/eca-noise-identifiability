@@ -499,8 +499,8 @@ there) gives, for rule 154, the least
 
 ### Not formalized
 
-Of Section 3.1: Lemma 3.4(b), Lemmas 3.5 to 3.8, parts (a) and (c) to (f) of Theorem 3.9, and Theorems 3.10 and
-3.11. So the value `k* = 1` at powers of two is not proved in Lean. Sections 3.2 to 6 are not formalized.
+Not part of this step, and formalized in the next section: the rest of Section 3.1 (Lemma 3.4(b), Lemmas 3.5 to
+3.8, the other parts of Theorem 3.9, Theorems 3.10 and 3.11). Sections 3.2 to 6 are not formalized.
 
 ### Build and axioms
 
@@ -513,5 +513,115 @@ changes that followed the verification).
 "every element of `ZMod 2` is 0 or 1".
 
 562 lines of Lean in four files, of which 159 are statements.
+
+Claude
+
+## Rule 154 complete: Theorems 3.9, 3.10 and 3.11 (27 November 2026)
+
+Written by Claude, the reader outside the sessions, who also wrote this part of the Lean code.
+
+**The proofs are checked by Lean. The statement file was read against the paper by an independent session**
+(`VERIFICATION_lean_rule154_full.md`, on commit 20f1e9e): no statement differs from the paper beyond the
+weakenings listed below; three points of wording. They are worked in here; what was changed is listed at the top
+of that file. The session's own model of the Lean definitions reproduces every conclusion of Theorems 3.9, 3.10
+and 3.11 for `n = 3, …, 12`.
+
+With this part, part (a) of the main theorem of the paper (Theorem 3.1(a), which is Theorem 3.11) is proved in
+Lean from the definitions of Section 2: for rule 154 and every ring size `n ≥ 3`, `k* = 1` if `n` is a power of
+two and `k* = 0` otherwise. What "from the definitions" does not include: Proposition 2.1, which links `k*` to
+the noisy chain, is not formalized, so the Lean theorem is about the integers `k_v` and `k*` as defined in
+Section 2.2 of the paper, not about the stationary distribution.
+
+### What is proved
+
+Statements only: `RingSize/Rule154/StatementMain.lean` (138 lines). Proofs: `RingSize/Rule154/Periodic.lean`,
+`Moves.lean` and `Main.lean`.
+
+| Statement | Paper | Proved in |
+|---|---|---|
+| `Lemma_3_4_b_zero` | Lemma 3.4(b), for the cell 0: for even `n` that is not a power of two, `F^t(e_0) ≠ 0` for all `t` | `Main.lean` (uses `pow_two_of_iterate_eq_zero` of the pilot) |
+| `Lemma_3_5` | Lemma 3.5: `F(M) ⊆ M`, for every even `n ≥ 2` | `Periodic.lean` |
+| `Lemma_3_6_in_particular` | Lemma 3.6, the part "In particular": two different states with the same image exist only for even `n` and lie in `E ∪ O`; `F` is a bijection for odd `n` | `Periodic.lean` |
+| `Lemma_3_7` | Lemma 3.7, first sentence: `F` restricted to `M` is a permutation of `M`, and every state of `M` is periodic (even `n ≥ 2`) | `Periodic.lean`, `Main.lean` |
+| `Lemma_3_8_a` | Lemma 3.8(a) | `Main.lean` |
+| `Lemma_3_8_b` | Lemma 3.8(b), without the clause "through cycles contained in `M`" | `Moves.lean`, `Main.lean` |
+| `Theorem_3_9` | Theorem 3.9, parts (a) to (f), for `n = 2^k`, `k ≥ 2`; in (c) without the bound on the length of the path | `Main.lean` |
+| `Theorem_3_10` | Theorem 3.10, all five claims, for `n ≥ 3` not a power of two | `Main.lean` |
+| `Theorem_3_11` | Theorem 3.11, both cases with `S` and all `k_v` | `Main.lean` |
+
+### Differences from the paper
+
+1. **Lemma 3.6.** Only the part "In particular" is stated. The list of the three forms of a pair `x ≠ y` with
+   `F(x) = F(y)` (`x + y = 1_E`, `x + y = 1_O`, `{x, y} = {1_E, 1_O}`) is not stated. The Lean proof follows the
+   paper's cases A and B and gets from each that `n` is even and that `x` vanishes on a parity class.
+2. **Lemma 3.7.** The second sentence ("The periodic states of `F` are the states of `M` and the periodic states
+   of `L` in `E ∪ O`") is not stated. Of the third sentence, "the cycles are `{0}` and the cycles contained in
+   `M`" is part (a) of `Theorem_3_9` together with `Zero_cycle`; its other clause, "the periodic states are
+   exactly the states of `M ∪ {0}`", is not stated.
+3. **Lemma 3.8(b).** Stated as: any two cycles that contain a state of `M` are joined by a directed path of
+   `G_1`. The clause "through cycles contained in `M`" is not stated. (For even `n` a cycle that contains a state
+   of `M` is contained in `M`; this is `cycle_subset_parM` in `Main.lean`.)
+4. **Lemma 3.4(b).** Stated for the cell 0 only. The paper's statement for every cell follows by rotation, which
+   is not carried out here; the proofs below need only the cell 0.
+5. **Ring sizes.** Lemmas 3.5, 3.7 and 3.8 are stated for every even `n ≥ 2` (paper: `n ≥ 4`), Lemma 3.6 for
+   every `n ≥ 1` (paper: `n ≥ 3`). Theorems 3.9, 3.10 and 3.11 have the ring sizes of the paper; in `Theorem_3_9`
+   the exponent `k` is the `k` of the paper.
+6. **Theorem 3.9(c).** The paper removes the ones on the odd cells one at a time and gets a path of length at
+   most `μ(C) ≤ n/2`. The Lean proof goes through the cycle `{1}`: from `C` to `{1}` by setting zeros to one
+   (Lemma 3.8(b)), from `{1}` to the cycle of `1_E + e_1` in the same way, and from there to `{0}` by one flip,
+   because `F(1_E) = 0`. It gives a path, not the bound on its length; the bound is not stated.
+7. **Theorem 3.9(e).** The upper bound `γ(C) ≤ m` is the paper's tree: a tree of edges of `G_1` on the cycles
+   other than `{0}`, and one edge out of `{0}` of weight at most 2 (in Lean to the cycle of the state with ones
+   at the cells 2 and 3; in the paper to the cycle of `e_0 + e_1`). The lower bound `γ(C) ≥ m` is obtained
+   differently: `S = {{0}}` and `γ_min = m - 1` follow from Theorem 2.8, so a cycle `C ≠ {0}` is not selected and
+   `γ(C) > m - 1`. The paper counts the edge that leaves `{0}`.
+8. **Theorem 3.9(f).** For `k_v ≤ 1` the paper uses `e_0` and `F(e_0)` for the codes 001, 010, 100 and 101 and
+   the states `e_0 + e_1` and `1` for 011, 110 and 111. Lean uses the flip `e_1` of `0` for 010 (Lemma 2.2), the
+   state with ones at the cells 2, 3 for 001, 011, 110, 100, the state with ones at the cells 2, 4, 5 for 101,
+   and `1` for 111; the last three lie on cycles with `γ = m = γ_min + 1`. For the lower bound `k_v ≥ 1`,
+   `v ≠ 000`, the paper uses `γ({0}) = m - 1`, `γ(C) = m` and `R({0} → D_v) ≥ 1`; Lean uses `S = {{0}}` and
+   Lemma 2.2 (`k_v = 0` would need a selected cycle with a state that contains `v`, and the state `0` contains
+   only 000).
+9. **Theorem 3.10.** "`G_1` is strongly connected" is stated as: every cycle is joined to every cycle by a
+   directed path. In step (3) of the paper's proof Lean flips only the cell 0 of `0` and does not use that the
+   cycle reached lies in `E ∪ O`. For the codes on periodic states Lean uses, for even `n ≥ 6`, the states with
+   ones at the cells 2, 3; at 2, 4, 5; and at 1, 4 (the paper: `0^(n-2)11` and `0^(n-4)1011`), and for odd `n`
+   any state that contains the code, since all states are periodic; this covers `n = 3`, which the paper treats
+   separately. For `γ(C) = m - 1` the paper uses a spanning in-tree of edges of `G_1` rooted at each cycle; Lean
+   applies Theorem 2.8 to the closed class of all cycles, which gives `S` = all cycles and `γ_min = m - 1`.
+10. **"`n` is a power of two"** is `∃ k, n = 2^k`. It includes 1 and 2; the theorems that use it assume `n ≥ 3`.
+11. **The cycle `{0}`.** `Theorem_3_9` (all six parts) and the clause on `S` of `Theorem_3_11` are stated for
+    every cycle `C0` whose set of states is `{0}`; "`S = {{0}}`" is `S = {C0}` for every such `C0`. That `{0}` is
+    a cycle is the separate statement `Zero_cycle`; it makes these statements non-empty, and with it they are the
+    paper's (a cycle is determined by its set of states). Part (a) of `Theorem_3_9` does not itself say that
+    `{0}` is a cycle.
+
+No gap or false statement was found in the paper for these statements.
+
+### Check outside Lean
+
+The conclusions of `Theorem_3_11` (the value of `k*`, the eight `k_v`, the number of selected cycles) agree with
+the computed records of rule 154 in `data/fw_sweep.csv` for every `n = 4, …, 20` (17 records; compared by the
+author of the Lean files, with a few lines of Python that are not in the repository). The file has no record for
+`n = 3`.
+
+### Not formalized
+
+Proposition 2.1; the parts of Lemmas 3.4(b), 3.6, 3.7 (its second sentence and the first clause of its third),
+3.8(b) and Theorem 3.9(c) named above; Sections 3.2 to 6 (rules 43, 142, 94 and 26).
+
+### Build and axioms
+
+Same environment as above. `lake build` completed 3074 jobs without error or warning (run again after the
+changes that followed the verification, which are comments only).
+`lake env lean -j2 AxiomCheckRule154.lean` now checks 14 theorems on rule 154, all depending on `propext`,
+`Classical.choice`, `Quot.sound`; `AxiomCheckTheoremA.lean` is unchanged (25 theorems). No `sorry`, `admit`,
+`native_decide`, `axiom`, `unsafe`, `implemented_by` or `extern`. `decide` is used for facts about bits (elements
+of `ZMod 2`) and for the parity of the numbers 1 to 5.
+
+Two existing files were changed: `RingSize/TheoremA/Paths.lean` (one lemma added, `mem_cycleOf`) and
+`RingSize/Rule154/Pow2.lean` (the definition `par` is now visible to the files that import it).
+
+1307 lines of Lean in four new files, of which 138 are statements.
 
 Claude
