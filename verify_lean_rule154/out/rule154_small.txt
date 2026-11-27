@@ -1,0 +1,101 @@
+n = 1: m = 2 cycles; sizes [1, 1]
+  cycle  0: size  1, least state 0, V({0}, C) = 0   <- {0}
+  cycle  1: size  1, least state 1, V({0}, C) = 1
+  V({0},{0}) = 0; least V({0}, C) over C != {0}: 1; G_1 edges out of {0}: [1]
+  n = 2^(k+1)? False; clause 1 (V >= 2): False; clause 2 (no G_1 edge): False
+n = 2: m = 2 cycles; sizes [1, 1]
+  cycle  0: size  1, least state 00, V({0}, C) = 0   <- {0}
+  cycle  1: size  1, least state 11, V({0}, C) = 2
+  V({0},{0}) = 0; least V({0}, C) over C != {0}: 2; G_1 edges out of {0}: []
+  n = 2^(k+1)? True; clause 1 (V >= 2): True; clause 2 (no G_1 edge): True
+n = 3: m = 3 cycles; sizes [1, 1, 6]
+  cycle  0: size  1, least state 000, V({0}, C) = 0   <- {0}
+  cycle  1: size  1, least state 111, V({0}, C) = 2
+  cycle  2: size  6, least state 001, V({0}, C) = 1
+  V({0},{0}) = 0; least V({0}, C) over C != {0}: 1; G_1 edges out of {0}: [2]
+  n = 2^(k+1)? False; clause 1 (V >= 2): False; clause 2 (no G_1 edge): False
+n = 4: m = 4 cycles; sizes [1, 1, 4, 4]
+  cycle  0: size  1, least state 0000, V({0}, C) = 0   <- {0}
+  cycle  1: size  1, least state 1111, V({0}, C) = 3
+  cycle  2: size  4, least state 0011, V({0}, C) = 2
+  cycle  3: size  4, least state 0110, V({0}, C) = 2
+  V({0},{0}) = 0; least V({0}, C) over C != {0}: 2; G_1 edges out of {0}: []
+  n = 2^(k+1)? True; clause 1 (V >= 2): True; clause 2 (no G_1 edge): True
+n = 5: m = 4 cycles; sizes [1, 1, 10, 20]
+  cycle  0: size  1, least state 00000, V({0}, C) = 0   <- {0}
+  cycle  1: size  1, least state 11111, V({0}, C) = 3
+  cycle  2: size 10, least state 00111, V({0}, C) = 2
+  cycle  3: size 20, least state 00001, V({0}, C) = 1
+  V({0},{0}) = 0; least V({0}, C) over C != {0}: 1; G_1 edges out of {0}: [3]
+  n = 2^(k+1)? False; clause 1 (V >= 2): False; clause 2 (no G_1 edge): False
+n = 6: m = 12 cycles; sizes [1, 1, 2, 2, 2, 3, 3, 6, 6, 6, 12, 12]
+  cycle  0: size  1, least state 000000, V({0}, C) = 0   <- {0}
+  cycle  1: size  1, least state 111111, V({0}, C) = 4
+  cycle  2: size  2, least state 000101, V({0}, C) = 1
+  cycle  3: size  2, least state 001010, V({0}, C) = 1
+  cycle  4: size  2, least state 010100, V({0}, C) = 1
+  cycle  5: size  3, least state 001011, V({0}, C) = 2
+  cycle  6: size  3, least state 010110, V({0}, C) = 2
+  cycle  7: size  6, least state 001001, V({0}, C) = 2
+  cycle  8: size  6, least state 001111, V({0}, C) = 3
+  cycle  9: size  6, least state 011110, V({0}, C) = 3
+  cycle 10: size 12, least state 000011, V({0}, C) = 2
+  cycle 11: size 12, least state 000110, V({0}, C) = 2
+  V({0},{0}) = 0; least V({0}, C) over C != {0}: 1; G_1 edges out of {0}: [2, 3, 4]
+  n = 2^(k+1)? False; clause 1 (V >= 2): False; clause 2 (no G_1 edge): False
+n = 7: m = 8 cycles; sizes [1, 1, 14, 14, 14, 28, 28, 28]
+  cycle  0: size  1, least state 0000000, V({0}, C) = 0   <- {0}
+  cycle  1: size  1, least state 1111111, V({0}, C) = 4
+  cycle  2: size 14, least state 0010011, V({0}, C) = 2
+  cycle  3: size 14, least state 0010111, V({0}, C) = 3
+  cycle  4: size 14, least state 0011111, V({0}, C) = 3
+  cycle  5: size 28, least state 0000001, V({0}, C) = 1
+  cycle  6: size 28, least state 0000011, V({0}, C) = 2
+  cycle  7: size 28, least state 0000111, V({0}, C) = 2
+  V({0},{0}) = 0; least V({0}, C) over C != {0}: 1; G_1 edges out of {0}: [5]
+  n = 2^(k+1)? False; clause 1 (V >= 2): False; clause 2 (no G_1 edge): False
+n = 8: m = 31 cycles; sizes [1, 1, 4, 4, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+  cycle  0: size  1, least state 00000000, V({0}, C) = 0   <- {0}
+  cycle  1: size  1, least state 11111111, V({0}, C) = 5
+  cycle  2: size  4, least state 00110011, V({0}, C) = 3
+  cycle  3: size  4, least state 01100110, V({0}, C) = 3
+  cycle  4: size  8, least state 00000011, V({0}, C) = 2
+  cycle  5: size  8, least state 00000110, V({0}, C) = 2
+  cycle  6: size  8, least state 00000111, V({0}, C) = 2
+  cycle  7: size  8, least state 00001001, V({0}, C) = 2
+  cycle  8: size  8, least state 00001011, V({0}, C) = 2
+  cycle  9: size  8, least state 00001100, V({0}, C) = 2
+  cycle 10: size  8, least state 00001110, V({0}, C) = 2
+  cycle 11: size  8, least state 00001111, V({0}, C) = 3
+  cycle 12: size  8, least state 00010010, V({0}, C) = 2
+  cycle 13: size  8, least state 00010110, V({0}, C) = 2
+  cycle 14: size  8, least state 00010111, V({0}, C) = 2
+  cycle 15: size  8, least state 00011000, V({0}, C) = 2
+  cycle 16: size  8, least state 00011001, V({0}, C) = 2
+  cycle 17: size  8, least state 00011011, V({0}, C) = 2
+  cycle 18: size  8, least state 00011110, V({0}, C) = 3
+  cycle 19: size  8, least state 00011111, V({0}, C) = 3
+  cycle 20: size  8, least state 00100011, V({0}, C) = 2
+  cycle 21: size  8, least state 00100111, V({0}, C) = 3
+  cycle 22: size  8, least state 00101110, V({0}, C) = 2
+  cycle 23: size  8, least state 00101111, V({0}, C) = 3
+  cycle 24: size  8, least state 00110110, V({0}, C) = 2
+  cycle 25: size  8, least state 00110111, V({0}, C) = 3
+  cycle 26: size  8, least state 00111001, V({0}, C) = 3
+  cycle 27: size  8, least state 00111110, V({0}, C) = 3
+  cycle 28: size  8, least state 00111111, V({0}, C) = 4
+  cycle 29: size  8, least state 01011110, V({0}, C) = 3
+  cycle 30: size  8, least state 01111110, V({0}, C) = 4
+  V({0},{0}) = 0; least V({0}, C) over C != {0}: 2; G_1 edges out of {0}: []
+  n = 2^(k+1)? True; clause 1 (V >= 2): True; clause 2 (no G_1 edge): True
+
+n  m  least V({0},C), C != {0}  #G1 edges out of {0}  n=2^(k+1)  Theorem_3_9_b holds
+1  2  1  1  False  False
+2  2  2  0  True  True
+3  3  1  1  False  False
+4  4  2  0  True  True
+5  4  1  1  False  False
+6  12  1  3  False  False
+7  8  1  1  False  False
+8  31  2  0  True  True
+Cross-check: for n = 1..8 the G_1 edges out of {0} are exactly the cycles other than {0} on which the orbit of some e_j ends (Lemma 2.3): OK

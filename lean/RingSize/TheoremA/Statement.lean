@@ -302,9 +302,10 @@ def Rule204_cycles : Prop :=
 def Rule154_local : Prop :=
   ∀ a b c : ZMod 2, ruleOfNumber 154 a b c = c + a * (1 + b)
 
-/-- A check of the orientation of rule numbering and global map together: rule 170 (binary `10101010`, the local
-rule `f(a, b, c) = c`) copies the right neighbour, `(F x)_i = x_{i+1}`. With a mirrored neighbourhood in
-`globalMap` it would give `x_{i-1}`. -/
+/-- A check of the orientation of the global map, given the rule numbering: rule 170 (binary `10101010`, the
+local rule `f(a, b, c) = c`) copies the right neighbour, `(F x)_i = x_{i+1}`. With a mirrored neighbourhood in
+`globalMap` and the numbering as it is, it would give `x_{i-1}`. If both the numbering and the neighbourhood
+were mirrored, this statement would still hold; that case is excluded by `Rule154_local`. -/
 def Rule170_shift : Prop :=
   ∀ (n : ℕ) [NeZero n] (x : State n) (i : ZMod n), globalMap n (ruleOfNumber 170) x i = x (i + 1)
 

@@ -25,6 +25,10 @@ open RingSize.TheoremA
 #check (rule154_local : Rule154_local)
 #check (rule170_shift : Rule170_shift)
 #check (section_2_4_ECA : Section_2_4_ECA)
+#check (lemma_2_4_general : Lemma_2_4_general)
+#check (globalMap_rot : GlobalMap_rot)
+#check (resistance_rot : Resistance_rot)
+#check (lemma_2_4 : Lemma_2_4)
 
 #print axioms endsOnExactlyOneCycle
 #print axioms lemma_2_3_general
@@ -47,3 +51,7 @@ open RingSize.TheoremA
 #print axioms rule154_local
 #print axioms rule170_shift
 #print axioms section_2_4_ECA
+#print axioms lemma_2_4_general
+#print axioms globalMap_rot
+#print axioms resistance_rot
+#print axioms lemma_2_4

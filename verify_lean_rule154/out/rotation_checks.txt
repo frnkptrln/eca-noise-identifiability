@@ -1,0 +1,55 @@
+(1) GlobalMap_rot and Resistance_rot hold for all 256 rules, n = 1..6, all states / pairs; the same holds for the opposite rotation x_{i+1}.
+(2) Lemma_2_4, rot, asymmetric rules [154, 26, 43, 142, 30, 110, 14, 2, 184, 106], n = 3..6:
+    rule 154, n = 3: m =  3, cycles moved by rot: False, gamma values [2], |Sel| = 3; all clauses hold: True
+    rule 154, n = 4: m =  4, cycles moved by rot: True, gamma values [3, 4], |Sel| = 1; all clauses hold: True
+    rule 154, n = 5: m =  4, cycles moved by rot: False, gamma values [3], |Sel| = 4; all clauses hold: True
+    rule 154, n = 6: m = 12, cycles moved by rot: True, gamma values [11], |Sel| = 12; all clauses hold: True
+    rule  26, n = 3: m =  2, cycles moved by rot: False, gamma values [1], |Sel| = 2; all clauses hold: True
+    rule  26, n = 4: m =  1, cycles moved by rot: False, gamma values [0], |Sel| = 1; all clauses hold: True
+    rule  26, n = 5: m =  3, cycles moved by rot: False, gamma values [2], |Sel| = 3; all clauses hold: True
+    rule  26, n = 6: m =  7, cycles moved by rot: True, gamma values [6], |Sel| = 7; all clauses hold: True
+    rule  43, n = 3: m =  3, cycles moved by rot: False, gamma values [2], |Sel| = 3; all clauses hold: True
+    rule  43, n = 4: m =  3, cycles moved by rot: False, gamma values [2, 3], |Sel| = 1; all clauses hold: True
+    rule  43, n = 5: m =  4, cycles moved by rot: False, gamma values [3, 4], |Sel| = 3; all clauses hold: True
+    rule  43, n = 6: m = 10, cycles moved by rot: True, gamma values [9, 10], |Sel| = 8; all clauses hold: True
+    rule 142, n = 3: m =  3, cycles moved by rot: False, gamma values [2], |Sel| = 3; all clauses hold: True
+    rule 142, n = 4: m =  5, cycles moved by rot: True, gamma values [4, 5], |Sel| = 1; all clauses hold: True
+    rule 142, n = 5: m =  5, cycles moved by rot: False, gamma values [4, 5], |Sel| = 3; all clauses hold: True
+    rule 142, n = 6: m = 10, cycles moved by rot: True, gamma values [9, 10], |Sel| = 6; all clauses hold: True
+    rule  30, n = 3: m =  1, cycles moved by rot: False, gamma values [0], |Sel| = 1; all clauses hold: True
+    rule  30, n = 4: m =  4, cycles moved by rot: True, gamma values [3], |Sel| = 4; all clauses hold: True
+    rule  30, n = 5: m =  2, cycles moved by rot: False, gamma values [1, 2], |Sel| = 1; all clauses hold: True
+    rule  30, n = 6: m =  3, cycles moved by rot: True, gamma values [2, 3], |Sel| = 1; all clauses hold: True
+    rule 110, n = 3: m =  1, cycles moved by rot: False, gamma values [0], |Sel| = 1; all clauses hold: True
+    rule 110, n = 4: m =  3, cycles moved by rot: True, gamma values [2], |Sel| = 3; all clauses hold: True
+    rule 110, n = 5: m =  1, cycles moved by rot: False, gamma values [0], |Sel| = 1; all clauses hold: True
+    rule 110, n = 6: m =  3, cycles moved by rot: True, gamma values [2], |Sel| = 3; all clauses hold: True
+    rule  14, n = 3: m =  2, cycles moved by rot: False, gamma values [1], |Sel| = 2; all clauses hold: True
+    rule  14, n = 4: m =  4, cycles moved by rot: True, gamma values [3, 4], |Sel| = 1; all clauses hold: True
+    rule  14, n = 5: m =  3, cycles moved by rot: False, gamma values [2, 3], |Sel| = 2; all clauses hold: True
+    rule  14, n = 6: m =  7, cycles moved by rot: True, gamma values [6, 7], |Sel| = 4; all clauses hold: True
+    rule   2, n = 3: m =  2, cycles moved by rot: False, gamma values [1], |Sel| = 2; all clauses hold: True
+    rule   2, n = 4: m =  2, cycles moved by rot: False, gamma values [1], |Sel| = 2; all clauses hold: True
+    rule   2, n = 5: m =  2, cycles moved by rot: False, gamma values [1], |Sel| = 2; all clauses hold: True
+    rule   2, n = 6: m =  3, cycles moved by rot: False, gamma values [2], |Sel| = 3; all clauses hold: True
+    rule 184, n = 3: m =  4, cycles moved by rot: False, gamma values [3], |Sel| = 4; all clauses hold: True
+    rule 184, n = 4: m =  5, cycles moved by rot: False, gamma values [4], |Sel| = 5; all clauses hold: True
+    rule 184, n = 5: m =  6, cycles moved by rot: False, gamma values [5], |Sel| = 6; all clauses hold: True
+    rule 184, n = 6: m =  9, cycles moved by rot: False, gamma values [8], |Sel| = 9; all clauses hold: True
+    rule 106, n = 3: m =  2, cycles moved by rot: False, gamma values [1], |Sel| = 2; all clauses hold: True
+    rule 106, n = 4: m =  5, cycles moved by rot: True, gamma values [4], |Sel| = 5; all clauses hold: True
+    rule 106, n = 5: m =  4, cycles moved by rot: False, gamma values [3], |Sel| = 4; all clauses hold: True
+    rule 106, n = 6: m =  5, cycles moved by rot: False, gamma values [4], |Sel| = 5; all clauses hold: True
+(3) Lemma_2_4_general with other bijections s:
+    complement, rule 150, n = 3: m = 2, all clauses hold: True
+    complement, rule 150, n = 4: m = 10, all clauses hold: True
+    complement, rule 150, n = 5: m = 12, all clauses hold: True
+    complement, rule 150, n = 6: m = 4, all clauses hold: True
+    complement, rule 105, n = 3: m = 1, all clauses hold: True
+    complement, rule 105, n = 4: m = 10, all clauses hold: True
+    complement, rule 105, n = 5: m = 6, all clauses hold: True
+    complement, rule 105, n = 6: m = 2, all clauses hold: True
+    reflection, rule 154, n = 3: commutes with F: False; images of cycles are cycles: True; V preserved: True; gamma preserved: True
+    reflection, rule 154, n = 4: commutes with F: False; images of cycles are cycles: False (e.g. the image of the cycle ['0011', '1011', '1100', '1110'] is not a cycle)
+    reflection, rule 154, n = 5: commutes with F: False; images of cycles are cycles: True; V preserved: True; gamma preserved: True
+    reflection, rule 154, n = 6: commutes with F: False; images of cycles are cycles: False (e.g. the image of the cycle ['001011', '101100', '110010'] is not a cycle)

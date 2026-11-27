@@ -1,0 +1,22 @@
+n =  2: |E| = |O| = 2; Lemma_3_3 clause 1: True, clause 2: True, clause 3: True
+        F^(n/2) x = 0 for all x in E u O: True  (n power of two: True); largest time to reach 0: 1; states of E u O not at 0 after 4n steps: 0
+n =  4: |E| = |O| = 4; Lemma_3_3 clause 1: True, clause 2: True, clause 3: True
+        F^(n/2) x = 0 for all x in E u O: True  (n power of two: True); largest time to reach 0: 2; states of E u O not at 0 after 4n steps: 0
+n =  6: |E| = |O| = 8; Lemma_3_3 clause 1: True, clause 2: True, clause 3: True
+        F^(n/2) x = 0 for all x in E u O: False  (n power of two: False); largest time to reach 0: 1; states of E u O not at 0 after 4n steps: 12
+n =  8: |E| = |O| = 16; Lemma_3_3 clause 1: True, clause 2: True, clause 3: True
+        F^(n/2) x = 0 for all x in E u O: True  (n power of two: True); largest time to reach 0: 4; states of E u O not at 0 after 4n steps: 0
+n = 10: |E| = |O| = 32; Lemma_3_3 clause 1: True, clause 2: True, clause 3: True
+        F^(n/2) x = 0 for all x in E u O: False  (n power of two: False); largest time to reach 0: 1; states of E u O not at 0 after 4n steps: 60
+n = 12: |E| = |O| = 64; Lemma_3_3 clause 1: True, clause 2: True, clause 3: True
+        F^(n/2) x = 0 for all x in E u O: False  (n power of two: False); largest time to reach 0: 2; states of E u O not at 0 after 4n steps: 120
+n = 14: |E| = |O| = 128; Lemma_3_3 clause 1: True, clause 2: True, clause 3: True
+        F^(n/2) x = 0 for all x in E u O: False  (n power of two: False); largest time to reach 0: 1; states of E u O not at 0 after 4n steps: 252
+n = 16: |E| = |O| = 256; Lemma_3_3 clause 1: True, clause 2: True, clause 3: True
+        F^(n/2) x = 0 for all x in E u O: True  (n power of two: True); largest time to reach 0: 8; states of E u O not at 0 after 4n steps: 0
+Single_mem: e_j in parE u parO for every n = 1..16 and every j: OK
+odd n = 1: |parE| = 2, |parO| = 1; states of parE violating Lemma_3_3 clause 1: 1, e.g. x = 1, F x = 1, L x = 0
+odd n = 3: |parE| = 4, |parO| = 2; states of parE violating Lemma_3_3 clause 1: 3, e.g. x = 001, F x = 110, L x = 110
+odd n = 5: |parE| = 8, |parO| = 4; states of parE violating Lemma_3_3 clause 1: 6, e.g. x = 00001, F x = 10010, L x = 10010
+odd n = 7: |parE| = 16, |parO| = 8; states of parE violating Lemma_3_3 clause 1: 12, e.g. x = 0000001, F x = 1000010, L x = 1000010
+n = 2: F on all states: 00->00, 01->00, 10->00, 11->11; L = rule90 is the zero map: True
