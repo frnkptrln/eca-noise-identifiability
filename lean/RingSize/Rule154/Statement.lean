@@ -14,7 +14,10 @@ Lemma 3.4(a) (nilpotency on `E ∪ O`) and Theorem 3.9(b) (no edge of `G_1` leav
 The local form of rule 154 (Lemma 3.2) is the statement `Rule154_local` of `RingSize/TheoremA/Statement.lean`.
 The map `L` of the paper, `(L x)_i = x_{i-1} + x_{i+1}`, is `RingSize.rule90 n` of the pilot.
 
-Not in this file: Lemma 3.4(b), Lemmas 3.5 to 3.8, the other parts of Theorem 3.9, and Theorem 3.10.
+Not in this file: Lemma 3.4(b), Lemmas 3.5 to 3.8, the other parts of Theorem 3.9, and Theorems 3.10 and 3.11.
+
+The paper writes powers of two as `n = 2^k` with `k ≥ 2`. The statements below write `n = 2^(k+1)` with `k ≥ 0`,
+so the `k` of this file is the paper's `k - 1`.
 -/
 
 @[expose] public section
@@ -53,7 +56,8 @@ def Lemma_3_3 : Prop :=
     (x ∈ parE n ∪ parO n → ∀ t : ℕ, (F154 n)^[t] x = (rule90 n)^[t] x)
 
 /-- Paper, Lemma 3.4(a): "If `n = 2^k`, `k ≥ 2`, then `F^{n/2}(x) = 0` for every `x ∈ E ∪ O`."
-Stated here for `n = 2^(k+1)` with `k ≥ 0`, that is, for every power of two `n ≥ 2`. -/
+Stated here for `n = 2^(k+1)` with `k ≥ 0`, that is, for every power of two `n ≥ 2`. The `k` here is the
+paper's `k - 1`. -/
 def Lemma_3_4_a : Prop :=
   ∀ (n : ℕ) [NeZero n] (k : ℕ), n = 2 ^ (k + 1) →
     ∀ x : State n, x ∈ parE n ∪ parO n → (F154 n)^[n / 2] x = 0
@@ -64,8 +68,8 @@ def Single_mem : Prop :=
 
 /-- Paper, Theorem 3.9(b): "Let `n = 2^k`, `k ≥ 2`. No edge of `G_1` leaves `{0}`: `V({0}, C) ≥ 2` for every
 cycle `C ≠ {0}`."
-Stated here for `n = 2^(k+1)` with `k ≥ 0`, that is, for every power of two `n ≥ 2`. `C0` is the cycle whose
-set of states is `{0}`. -/
+Stated here for `n = 2^(k+1)` with `k ≥ 0`, that is, for every power of two `n ≥ 2`. The `k` here is the
+paper's `k - 1`. `C0` is the cycle whose set of states is `{0}`. -/
 def Theorem_3_9_b : Prop :=
   ∀ (n : ℕ) [NeZero n] (k : ℕ), n = 2 ^ (k + 1) →
     ∀ C0 : Cyc (F154 n), C0.1 = {0} →

@@ -319,7 +319,7 @@ afterwards (four new statements, one renamed, comments) were checked by Lean and
 
 ### What is proved
 
-`RingSize/TheoremA/Statement.lean` (361 lines, definitions and statements only) has three parts:
+`RingSize/TheoremA/Statement.lean` (362 lines, definitions and statements only) has three parts:
 
 1. a finite set of nodes with weights `V a b`: in-trees, the stochastic potential `gamma`, the selected set `Sel`,
    the one-flip graph `G1`, closed classes;
@@ -358,7 +358,10 @@ Checks of the definitions, also stated in `Statement.lean` and proved in `Checks
   Rules 90 and 204 are their own mirror images, so these two do not test the orientation of the neighbourhood;
 * `Rule154_local` (rule 154 is `f(a, b, c) = c + a (1 + b)`, as in Lemma 3.2 of the paper) and `Rule170_shift`
   (under rule 170, `(F x)_i = x_{i+1}`). These two fail if left and right are exchanged in `ruleOfNumber` or in
-  `globalMap`.
+  `globalMap`. `Rule170_shift` alone would not notice it if both were mirrored at once; `Rule154_local` excludes
+  that. The other statements do not depend on the orientation: they hold equally for the mirror image of the
+  rule (both verification reports note this). The two checks make sure that a rule number in Lean names the rule
+  of the paper.
 
 ### Differences from the paper
 
@@ -420,7 +423,7 @@ Not done: a build with the Mathlib cache, and a build on macOS.
 
 ### Cost
 
-1380 lines of Lean in five files, of which 361 are definitions and statements. The estimate of the pilot for this
+1381 lines of Lean in five files, of which 362 are definitions and statements. The estimate of the pilot for this
 part was 500 to 1,000 lines and one to three working days of sessions; the lines are above the estimate, the time
 was below it (one conversation; not measured more exactly).
 
@@ -428,18 +431,22 @@ Claude
 
 ## Lemma 2.4 and rule 154 on rings of 2^k cells: Lemmas 3.3, 3.4(a), Theorem 3.9(b) (26 November 2026)
 
-Written by Claude, the reader outside the sessions, who also wrote this part of the Lean code. **The proofs are
-checked by Lean. The two statement files of this part have not yet been read against the paper by anyone but their
-author.**
+Written by Claude, the reader outside the sessions, who also wrote this part of the Lean code.
+
+**The proofs are checked by Lean. The two statement files were read against the paper by an independent session**
+(`VERIFICATION_lean_rule154.md`, on commit cf6f77e): no statement differs from the paper or is weaker; six points
+of wording. They are worked in here; what was changed is listed at the top of that file. One clause was added to
+`Lemma_2_4_general` and `Lemma_2_4` afterwards (every cycle is the image of a cycle); it was checked by Lean and
+not read by a second reader.
 
 ### What is proved
 
-Statements only: `RingSize/TheoremA/StatementRotation.lean` (72 lines) and `RingSize/Rule154/Statement.lean`
-(77 lines). Proofs: `RingSize/TheoremA/Rotation.lean` and `RingSize/Rule154/Pow2.lean`.
+Statements only: `RingSize/TheoremA/StatementRotation.lean` (78 lines) and `RingSize/Rule154/Statement.lean`
+(81 lines). Proofs: `RingSize/TheoremA/Rotation.lean` and `RingSize/Rule154/Pow2.lean`.
 
 | Statement | Paper | Proved in |
 |---|---|---|
-| `Lemma_2_4_general` | Lemma 2.4 for any bijection of the states that commutes with `F` and preserves the resistance: the image of a cycle is a cycle; `V`, `γ`, membership in `S` and the edges of `G_1` are preserved | `Rotation.lean` |
+| `Lemma_2_4_general` | Lemma 2.4 for any bijection of the states that commutes with `F` and preserves the resistance: the image of a cycle is a cycle; every cycle is such an image; `V`, `γ`, membership in `S` and the edges of `G_1` are preserved | `Rotation.lean` |
 | `GlobalMap_rot` | 2.1, "`F σ = σ F`" | `Rotation.lean` |
 | `Resistance_rot` | proof of Lemma 2.4, "`r(σ x, σ y) = r(x, y)`" | `Rotation.lean` |
 | `Lemma_2_4` | Lemma 2.4 for an elementary rule and the rotation `(σ x)_i = x_{i-1}` | `Rotation.lean` |
@@ -459,17 +466,25 @@ send every state to zero.
    `Lemma_2_4_general` therefore speak of cycles `D`, `D'` whose sets are the images of the sets of `C`, `C'`, and
    a first clause says that the image of a cycle is a cycle, so such `D`, `D'` exist.
 2. **"Hence `S` and `G_1` are invariant under rotation."** Stated as: `σC ∈ S` iff `C ∈ S`, and `σC → σC'` is an
-   edge of `G_1` iff `C → C'` is.
+   edge of `G_1` iff `C → C'` is. A further clause says that every cycle is the image of a cycle. Since `σ` is
+   injective, `C ↦ σC` is then a bijection of the set of cycles, so these clauses give `σ(S) = S` as sets and say
+   that `C ↦ σC` is an automorphism of `G_1`.
 3. **Parity of a cell.** `E` and `O` are defined for every `n` through the representative of a cell in
    `{0, …, n - 1}` (`ZMod.val`). The paper defines them for even `n`, and all statements here that use them
    assume `n` even, except `Single_mem`, which holds for every `n` with this definition.
 4. **Ring sizes.** The paper states Lemma 3.3 for even `n ≥ 4` and Lemma 3.4(a) and Theorem 3.9 for `n = 2^k`,
    `k ≥ 2`. The Lean statements include `n = 2`; they are true there (for `n = 2` the cycles of rule 154 are `{00}`
    and `{11}`, and `V({00}, {11}) = 2`). `Theorem_3_9_b` is false for `n = 1`, which is excluded.
+   The Lean statements write `n = 2^(k+1)` with `k ≥ 0`, so their `k` is the paper's `k - 1`.
+   The paper fixes `n ≥ 3` in Section 2; `GlobalMap_rot`, `Resistance_rot`, `Lemma_2_4` and `Zero_cycle` are
+   stated for every `n ≥ 1`, and `Single_mem` for every `n`.
 5. **Proof of Theorem 3.9(b).** The paper uses part (a) of the theorem (the list of the cycles, from Lemma 3.7)
    to conclude that no state of the orbit of `e_j` lies on a cycle other than `{0}`. The Lean proof does not use
    it: a cycle that contains a state of the orbit contains all later states of the orbit, hence `0`, and two
-   cycles with a common state are equal. So part (b) depends only on Lemmas 2.3, 3.2, 3.3 and 3.4(a).
+   cycles with a common state are equal. So part (b) depends only on Lemmas 2.3, 3.2 and 3.4(a) (which rests
+   on 3.3), on `e_j ∈ E ∪ O`, on `F(0) = 0`, and on the fact that cycles are invariant under `F` and pairwise
+   disjoint (paper, 2.2: "the orbit of every state enters exactly one cycle"). The independent session checked
+   this argument on paper and found it valid; the paper's proof is correct too and uses more than it needs.
 6. **Proof of Lemma 3.3.** One statement covers both parity classes: if `x` vanishes on the cells of parity `c`,
    then `F x = L x` and `F x` vanishes on the cells of parity `c + 1`.
 
@@ -489,13 +504,14 @@ Of Section 3.1: Lemma 3.4(b), Lemmas 3.5 to 3.8, parts (a) and (c) to (f) of The
 
 ### Build and axioms
 
-Same environment as above. `lake build` completed 3064 jobs without error or warning.
+Same environment as above. `lake build` completed 3064 jobs without error or warning (run again after the
+changes that followed the verification).
 `lake env lean -j2 AxiomCheckTheoremA.lean` now checks 25 theorems (23 depend on `propext`, `Classical.choice`,
 `Quot.sound`; `closedClass_iff_component` and `globalMap_rot` on `propext`, `Quot.sound`), and
 `lake env lean -j2 AxiomCheckRule154.lean` checks the five theorems on rule 154 (the same three axioms). No
 `sorry`, `admit`, `native_decide`, `axiom`, `unsafe`, `implemented_by` or `extern`; one more `decide`, for
 "every element of `ZMod 2` is 0 or 1".
 
-550 lines of Lean in four files, of which 149 are statements.
+562 lines of Lean in four files, of which 159 are statements.
 
 Claude

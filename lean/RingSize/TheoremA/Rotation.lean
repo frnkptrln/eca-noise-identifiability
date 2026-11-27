@@ -143,7 +143,9 @@ theorem lemma_2_4_general : Lemma_2_4_general.{u} := by
     have h := hr (s.symm x) (s.symm y)
     rw [Equiv.apply_symm_apply, Equiv.apply_symm_apply] at h
     exact h.symm
-  refine ⟨isCycle_image F s hs, ?_⟩
+  refine ⟨isCycle_image F s hs, ?_, ?_⟩
+  · intro D
+    exact ⟨⟨s.symm '' D.1, isCycle_image F s.symm hs' D⟩, (Equiv.image_symm_image s D.1).symm⟩
   let τ : Cyc F ≃ Cyc F :=
     { toFun := fun C => ⟨s '' C.1, isCycle_image F s hs C⟩
       invFun := fun C => ⟨s.symm '' C.1, isCycle_image F s.symm hs' C⟩
