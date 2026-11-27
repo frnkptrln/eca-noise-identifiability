@@ -1,0 +1,19 @@
+records of rule 154: 17; n = [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+n= 4 cycles=     4 k_c=0-1-1-1-1-1-1-1 kstar=1 n_stable=1 | Theorem_3_11 agrees: True | model (m=4, k_c=0-1-1-1-1-1-1-1, k*=1, |Sel|=1) agrees: True
+n= 5 cycles=     4 k_c=0-0-0-0-0-0-0-0 kstar=0 n_stable=4 | Theorem_3_11 agrees: True | model (m=4, k_c=0-0-0-0-0-0-0-0, k*=0, |Sel|=4) agrees: True
+n= 6 cycles=    12 k_c=0-0-0-0-0-0-0-0 kstar=0 n_stable=12 | Theorem_3_11 agrees: True | model (m=12, k_c=0-0-0-0-0-0-0-0, k*=0, |Sel|=12) agrees: True
+n= 7 cycles=     8 k_c=0-0-0-0-0-0-0-0 kstar=0 n_stable=8 | Theorem_3_11 agrees: True | model (m=8, k_c=0-0-0-0-0-0-0-0, k*=0, |Sel|=8) agrees: True
+n= 8 cycles=    31 k_c=0-1-1-1-1-1-1-1 kstar=1 n_stable=1 | Theorem_3_11 agrees: True | model (m=31, k_c=0-1-1-1-1-1-1-1, k*=1, |Sel|=1) agrees: True
+n= 9 cycles=    18 k_c=0-0-0-0-0-0-0-0 kstar=0 n_stable=18 | Theorem_3_11 agrees: True | model (m=18, k_c=0-0-0-0-0-0-0-0, k*=0, |Sel|=18) agrees: True
+n=10 cycles=    62 k_c=0-0-0-0-0-0-0-0 kstar=0 n_stable=62 | Theorem_3_11 agrees: True | model (m=62, k_c=0-0-0-0-0-0-0-0, k*=0, |Sel|=62) agrees: True
+n=11 cycles=    50 k_c=0-0-0-0-0-0-0-0 kstar=0 n_stable=50 | Theorem_3_11 agrees: True | model (m=50, k_c=0-0-0-0-0-0-0-0, k*=0, |Sel|=50) agrees: True
+n=12 cycles=   308 k_c=0-0-0-0-0-0-0-0 kstar=0 n_stable=308 | Theorem_3_11 agrees: True | model (m=308, k_c=0-0-0-0-0-0-0-0, k*=0, |Sel|=308) agrees: True
+n=13 cycles=   156 k_c=0-0-0-0-0-0-0-0 kstar=0 n_stable=156 | Theorem_3_11 agrees: True
+n=14 cycles=   564 k_c=0-0-0-0-0-0-0-0 kstar=0 n_stable=564 | Theorem_3_11 agrees: True
+n=15 cycles=   510 k_c=0-0-0-0-0-0-0-0 kstar=0 n_stable=510 | Theorem_3_11 agrees: True
+n=16 cycles=  4081 k_c=0-1-1-1-1-1-1-1 kstar=1 n_stable=1 | Theorem_3_11 agrees: True
+n=17 cycles=  1688 k_c=0-0-0-0-0-0-0-0 kstar=0 n_stable=1688 | Theorem_3_11 agrees: True
+n=18 cycles=  6314 k_c=0-0-0-0-0-0-0-0 kstar=0 n_stable=6314 | Theorem_3_11 agrees: True
+n=19 cycles=  5818 k_c=0-0-0-0-0-0-0-0 kstar=0 n_stable=5818 | Theorem_3_11 agrees: True
+n=20 cycles= 41626 k_c=0-0-0-0-0-0-0-0 kstar=0 n_stable=41626 | Theorem_3_11 agrees: True
+ALL AGREE

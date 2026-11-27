@@ -1,0 +1,43 @@
+n= 1 even=False |M|=   0 Lemma_3_5=True  Lemma_3_6(pairs part)=True  (bijection for odd n)=True  colliding pairs=0 paper forms {'E': 0, 'O': 0, 'EO': 0, 'other': 0}
+      (odd n: Lemma 3.5 is not claimed; F(M) in M here: True)
+      R by 0-1 BFS = R by Dijkstra on all steps: V True, R(C -> D_v) True
+n= 2 even=True  |M|=   1 Lemma_3_5=True  Lemma_3_6(pairs part)=True  (bijection for odd n)=True  colliding pairs=3 paper forms {'E': 1, 'O': 1, 'EO': 1, 'other': 0}
+      Lemma_3_7: MapsTo=True InjOn=True SurjOn=True periodic=True; paper 2nd sentence=True; 3rd sentence (n=2^k, k>=2)=None
+      cycles m=2, meeting M=1, contained in M=1, 'meets M' <-> 'contained in M': True
+      Lemma_3_8_a=True Lemma_3_8_b=True; paper 3.8(b) through cycles in M=True; G1 (literal V) = G1 (Lemma 2.3 criterion): True
+      R by 0-1 BFS = R by Dijkstra on all steps: V True, R(C -> D_v) True
+n= 3 even=False |M|=   3 Lemma_3_5=False Lemma_3_6(pairs part)=True  (bijection for odd n)=True  colliding pairs=0 paper forms {'E': 0, 'O': 0, 'EO': 0, 'other': 0}
+      (odd n: Lemma 3.5 is not claimed; F(M) in M here: False)
+      R by 0-1 BFS = R by Dijkstra on all steps: V True, R(C -> D_v) True
+n= 4 even=True  |M|=   9 Lemma_3_5=True  Lemma_3_6(pairs part)=True  (bijection for odd n)=True  colliding pairs=5 paper forms {'E': 2, 'O': 2, 'EO': 1, 'other': 0}
+      Lemma_3_7: MapsTo=True InjOn=True SurjOn=True periodic=True; paper 2nd sentence=True; 3rd sentence (n=2^k, k>=2)=True
+      cycles m=4, meeting M=3, contained in M=3, 'meets M' <-> 'contained in M': True
+      Lemma_3_8_a=True Lemma_3_8_b=True; paper 3.8(b) through cycles in M=True; G1 (literal V) = G1 (Lemma 2.3 criterion): True
+      R by 0-1 BFS = R by Dijkstra on all steps: V True, R(C -> D_v) True
+n= 5 even=False |M|=  21 Lemma_3_5=False Lemma_3_6(pairs part)=True  (bijection for odd n)=True  colliding pairs=0 paper forms {'E': 0, 'O': 0, 'EO': 0, 'other': 0}
+      (odd n: Lemma 3.5 is not claimed; F(M) in M here: False)
+      R by 0-1 BFS = R by Dijkstra on all steps: V True, R(C -> D_v) True
+n= 6 even=True  |M|=  49 Lemma_3_5=True  Lemma_3_6(pairs part)=True  (bijection for odd n)=True  colliding pairs=9 paper forms {'E': 4, 'O': 4, 'EO': 1, 'other': 0}
+      Lemma_3_7: MapsTo=True InjOn=True SurjOn=True periodic=True; paper 2nd sentence=True; 3rd sentence (n=2^k, k>=2)=None
+      cycles m=12, meeting M=8, contained in M=8, 'meets M' <-> 'contained in M': True
+      Lemma_3_8_a=True Lemma_3_8_b=True; paper 3.8(b) through cycles in M=True; G1 (literal V) = G1 (Lemma 2.3 criterion): True
+      R by 0-1 BFS = R by Dijkstra on all steps: V True, R(C -> D_v) True
+n= 7 even=False |M|= 105 Lemma_3_5=False Lemma_3_6(pairs part)=True  (bijection for odd n)=True  colliding pairs=0 paper forms {'E': 0, 'O': 0, 'EO': 0, 'other': 0}
+      (odd n: Lemma 3.5 is not claimed; F(M) in M here: False)
+n= 8 even=True  |M|= 225 Lemma_3_5=True  Lemma_3_6(pairs part)=True  (bijection for odd n)=True  colliding pairs=17 paper forms {'E': 8, 'O': 8, 'EO': 1, 'other': 0}
+      Lemma_3_7: MapsTo=True InjOn=True SurjOn=True periodic=True; paper 2nd sentence=True; 3rd sentence (n=2^k, k>=2)=True
+      cycles m=31, meeting M=30, contained in M=30, 'meets M' <-> 'contained in M': True
+      Lemma_3_8_a=True Lemma_3_8_b=True; paper 3.8(b) through cycles in M=True; G1 (literal V) = G1 (Lemma 2.3 criterion): True
+n= 9 even=False |M|= 465 Lemma_3_5=False Lemma_3_6(pairs part)=True  (bijection for odd n)=True  colliding pairs=0 paper forms {'E': 0, 'O': 0, 'EO': 0, 'other': 0}
+      (odd n: Lemma 3.5 is not claimed; F(M) in M here: False)
+n=10 even=True  |M|= 961 Lemma_3_5=True  Lemma_3_6(pairs part)=True  (bijection for odd n)=True  colliding pairs=33 paper forms {'E': 16, 'O': 16, 'EO': 1, 'other': 0}
+      Lemma_3_7: MapsTo=True InjOn=True SurjOn=True periodic=True; paper 2nd sentence=True; 3rd sentence (n=2^k, k>=2)=None
+      cycles m=62, meeting M=56, contained in M=56, 'meets M' <-> 'contained in M': True
+      Lemma_3_8_a=True Lemma_3_8_b=True; paper 3.8(b) through cycles in M=True; G1 (literal V) = G1 (Lemma 2.3 criterion): True
+n=11 even=False |M|=1953 Lemma_3_5=False Lemma_3_6(pairs part)=True  (bijection for odd n)=True  colliding pairs=0 paper forms {'E': 0, 'O': 0, 'EO': 0, 'other': 0}
+      (odd n: Lemma 3.5 is not claimed; F(M) in M here: False)
+n=12 even=True  |M|=3969 Lemma_3_5=True  Lemma_3_6(pairs part)=True  (bijection for odd n)=True  colliding pairs=65 paper forms {'E': 32, 'O': 32, 'EO': 1, 'other': 0}
+      Lemma_3_7: MapsTo=True InjOn=True SurjOn=True periodic=True; paper 2nd sentence=True; 3rd sentence (n=2^k, k>=2)=None
+      cycles m=308, meeting M=298, contained in M=298, 'meets M' <-> 'contained in M': True
+      Lemma_3_8_a=True Lemma_3_8_b=True; paper 3.8(b) through cycles in M=True; G1 (literal V) = G1 (Lemma 2.3 criterion): True
+ALL OK

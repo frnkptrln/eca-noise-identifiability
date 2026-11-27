@@ -1,0 +1,13 @@
+n= 2 power of two=True  e_0 reaches 0 at t=1 (period reached: None); Lemma_3_4_b_zero applies=False holds=None; paper form (all cells) never zero=False
+n= 4 power of two=True  e_0 reaches 0 at t=2 (period reached: None); Lemma_3_4_b_zero applies=False holds=None; paper form (all cells) never zero=False
+n= 6 power of two=False e_0 reaches 0 at t=None (period reached: 2); Lemma_3_4_b_zero applies=True holds=True; paper form (all cells) never zero=True
+n= 8 power of two=True  e_0 reaches 0 at t=4 (period reached: None); Lemma_3_4_b_zero applies=False holds=None; paper form (all cells) never zero=False
+n=10 power of two=False e_0 reaches 0 at t=None (period reached: 6); Lemma_3_4_b_zero applies=True holds=True; paper form (all cells) never zero=True
+n=12 power of two=False e_0 reaches 0 at t=None (period reached: 4); Lemma_3_4_b_zero applies=True holds=True; paper form (all cells) never zero=True
+n=14 power of two=False e_0 reaches 0 at t=None (period reached: 14); Lemma_3_4_b_zero applies=True holds=True; paper form (all cells) never zero=True
+n=16 power of two=True  e_0 reaches 0 at t=8 (period reached: None); Lemma_3_4_b_zero applies=False holds=None; paper form (all cells) never zero=False
+n=18 power of two=False e_0 reaches 0 at t=None (period reached: 14); Lemma_3_4_b_zero applies=True holds=True; paper form (all cells) never zero=True
+n=20 power of two=False e_0 reaches 0 at t=None (period reached: 12); Lemma_3_4_b_zero applies=True holds=True; paper form (all cells) never zero=True
+n=22 power of two=False e_0 reaches 0 at t=None (period reached: 62); Lemma_3_4_b_zero applies=True holds=True; paper form (all cells) never zero=True
+n=24 power of two=False e_0 reaches 0 at t=None (period reached: 8); Lemma_3_4_b_zero applies=True holds=True; paper form (all cells) never zero=True
+ALL OK
