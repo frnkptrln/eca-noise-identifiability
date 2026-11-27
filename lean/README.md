@@ -518,9 +518,13 @@ Claude
 
 ## Rule 154 complete: Theorems 3.9, 3.10 and 3.11 (27 November 2026)
 
-Written by Claude, the reader outside the sessions, who also wrote this part of the Lean code. **The proofs are
-checked by Lean. The statement file of this part has not yet been read against the paper by anyone but its
-author.**
+Written by Claude, the reader outside the sessions, who also wrote this part of the Lean code.
+
+**The proofs are checked by Lean. The statement file was read against the paper by an independent session**
+(`VERIFICATION_lean_rule154_full.md`, on commit 20f1e9e): no statement differs from the paper beyond the
+weakenings listed below; three points of wording. They are worked in here; what was changed is listed at the top
+of that file. The session's own model of the Lean definitions reproduces every conclusion of Theorems 3.9, 3.10
+and 3.11 for `n = 3, …, 12`.
 
 With this part, part (a) of the main theorem of the paper (Theorem 3.1(a), which is Theorem 3.11) is proved in
 Lean from the definitions of Section 2: for rule 154 and every ring size `n ≥ 3`, `k* = 1` if `n` is a power of
@@ -530,7 +534,7 @@ Section 2.2 of the paper, not about the stationary distribution.
 
 ### What is proved
 
-Statements only: `RingSize/Rule154/StatementMain.lean` (131 lines). Proofs: `RingSize/Rule154/Periodic.lean`,
+Statements only: `RingSize/Rule154/StatementMain.lean` (138 lines). Proofs: `RingSize/Rule154/Periodic.lean`,
 `Moves.lean` and `Main.lean`.
 
 | Statement | Paper | Proved in |
@@ -552,7 +556,8 @@ Statements only: `RingSize/Rule154/StatementMain.lean` (131 lines). Proofs: `Rin
    paper's cases A and B and gets from each that `n` is even and that `x` vanishes on a parity class.
 2. **Lemma 3.7.** The second sentence ("The periodic states of `F` are the states of `M` and the periodic states
    of `L` in `E ∪ O`") is not stated. Of the third sentence, "the cycles are `{0}` and the cycles contained in
-   `M`" is part (a) of `Theorem_3_9`.
+   `M`" is part (a) of `Theorem_3_9` together with `Zero_cycle`; its other clause, "the periodic states are
+   exactly the states of `M ∪ {0}`", is not stated.
 3. **Lemma 3.8(b).** Stated as: any two cycles that contain a state of `M` are joined by a directed path of
    `G_1`. The clause "through cycles contained in `M`" is not stated. (For even `n` a cycle that contains a state
    of `M` is contained in `M`; this is `cycle_subset_parM` in `Main.lean`.)
@@ -573,16 +578,23 @@ Statements only: `RingSize/Rule154/StatementMain.lean` (131 lines). Proofs: `Rin
 8. **Theorem 3.9(f).** For `k_v ≤ 1` the paper uses `e_0` and `F(e_0)` for the codes 001, 010, 100 and 101 and
    the states `e_0 + e_1` and `1` for 011, 110 and 111. Lean uses the flip `e_1` of `0` for 010 (Lemma 2.2), the
    state with ones at the cells 2, 3 for 001, 011, 110, 100, the state with ones at the cells 2, 4, 5 for 101,
-   and `1` for 111; the last three lie on cycles with `γ = m = γ_min + 1`.
+   and `1` for 111; the last three lie on cycles with `γ = m = γ_min + 1`. For the lower bound `k_v ≥ 1`,
+   `v ≠ 000`, the paper uses `γ({0}) = m - 1`, `γ(C) = m` and `R({0} → D_v) ≥ 1`; Lean uses `S = {{0}}` and
+   Lemma 2.2 (`k_v = 0` would need a selected cycle with a state that contains `v`, and the state `0` contains
+   only 000).
 9. **Theorem 3.10.** "`G_1` is strongly connected" is stated as: every cycle is joined to every cycle by a
    directed path. In step (3) of the paper's proof Lean flips only the cell 0 of `0` and does not use that the
    cycle reached lies in `E ∪ O`. For the codes on periodic states Lean uses, for even `n ≥ 6`, the states with
    ones at the cells 2, 3; at 2, 4, 5; and at 1, 4 (the paper: `0^(n-2)11` and `0^(n-4)1011`), and for odd `n`
    any state that contains the code, since all states are periodic; this covers `n = 3`, which the paper treats
-   separately.
+   separately. For `γ(C) = m - 1` the paper uses a spanning in-tree of edges of `G_1` rooted at each cycle; Lean
+   applies Theorem 2.8 to the closed class of all cycles, which gives `S` = all cycles and `γ_min = m - 1`.
 10. **"`n` is a power of two"** is `∃ k, n = 2^k`. It includes 1 and 2; the theorems that use it assume `n ≥ 3`.
-11. **Theorem 3.11, first case.** "`S = {{0}}`" is stated as: `S = {C0}` for every cycle `C0` whose set of states
-    is `{0}`.
+11. **The cycle `{0}`.** `Theorem_3_9` (all six parts) and the clause on `S` of `Theorem_3_11` are stated for
+    every cycle `C0` whose set of states is `{0}`; "`S = {{0}}`" is `S = {C0}` for every such `C0`. That `{0}` is
+    a cycle is the separate statement `Zero_cycle`; it makes these statements non-empty, and with it they are the
+    paper's (a cycle is determined by its set of states). Part (a) of `Theorem_3_9` does not itself say that
+    `{0}` is a cycle.
 
 No gap or false statement was found in the paper for these statements.
 
@@ -595,12 +607,13 @@ author of the Lean files, with a few lines of Python that are not in the reposit
 
 ### Not formalized
 
-Proposition 2.1; the parts of Lemmas 3.4(b), 3.6, 3.7, 3.8(b) and Theorem 3.9(c) named above; Sections 3.2 to 6
-(rules 43, 142, 94 and 26).
+Proposition 2.1; the parts of Lemmas 3.4(b), 3.6, 3.7 (its second sentence and the first clause of its third),
+3.8(b) and Theorem 3.9(c) named above; Sections 3.2 to 6 (rules 43, 142, 94 and 26).
 
 ### Build and axioms
 
-Same environment as above. `lake build` completed 3074 jobs without error or warning.
+Same environment as above. `lake build` completed 3074 jobs without error or warning (run again after the
+changes that followed the verification, which are comments only).
 `lake env lean -j2 AxiomCheckRule154.lean` now checks 14 theorems on rule 154, all depending on `propext`,
 `Classical.choice`, `Quot.sound`; `AxiomCheckTheoremA.lean` is unchanged (25 theorems). No `sorry`, `admit`,
 `native_decide`, `axiom`, `unsafe`, `implemented_by` or `extern`. `decide` is used for facts about bits (elements
@@ -609,6 +622,6 @@ of `ZMod 2`) and for the parity of the numbers 1 to 5.
 Two existing files were changed: `RingSize/TheoremA/Paths.lean` (one lemma added, `mem_cycleOf`) and
 `RingSize/Rule154/Pow2.lean` (the definition `par` is now visible to the files that import it).
 
-1300 lines of Lean in four new files, of which 131 are statements.
+1307 lines of Lean in four new files, of which 138 are statements.
 
 Claude

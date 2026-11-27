@@ -60,7 +60,9 @@ def Lemma_3_6_in_particular : Prop :=
 
 /-- Paper, Lemma 3.7 (periodic states), first sentence: "Let `n` be even, `n ≥ 4`. The restriction of `F` to
 `M` is a permutation of `M`, and every state of `M` is periodic." Stated for every even `n ≥ 2`. (The second
-sentence of the lemma is not stated here; its third sentence is part (a) of `Theorem_3_9`.) -/
+sentence of the lemma is not stated here. Of its third sentence, "the cycles are `{0}` and the cycles contained
+in `M`" is part (a) of `Theorem_3_9` together with `Zero_cycle`; "the periodic states are exactly the states of
+`M ∪ {0}`" is not stated.) -/
 def Lemma_3_7 : Prop :=
   ∀ (n : ℕ) [NeZero n], Even n →
     Set.BijOn (F154 n) (parM n) (parM n) ∧ ∀ x ∈ parM n, x ∈ periodicPts (F154 n)
@@ -89,7 +91,10 @@ def Lemma_3_8_b : Prop :=
 (d) `{{0}}` is the only closed class of `G_1`.
 (e) `γ({0}) = m - 1` and `γ(C) = m` for every cycle `C ≠ {0}`; hence `S = {{0}}`.
 (f) `k_000 = 0` and `k_v = 1` for each of the seven codes `v ≠ 000`; hence `k* = 1`."
-`C0` is the cycle whose set of states is `{0}`. The bound on the length of the path in (c) is not stated. -/
+`C0` is the cycle whose set of states is `{0}`: the theorem is stated for every cycle `C0` with this set of
+states. That `{0}` is a cycle, so that such a `C0` exists, is the statement `Zero_cycle` of
+`RingSize/Rule154/Statement.lean`; without it the statement below would be empty, and part (a) below does not
+itself say that `{0}` is a cycle. The bound on the length of the path in (c) is not stated. -/
 def Theorem_3_9 : Prop :=
   ∀ (n : ℕ) [NeZero n] (k : ℕ), 2 ≤ k → n = 2 ^ k →
     ∀ C0 : Cyc (F154 n), C0.1 = {0} →
@@ -114,7 +119,9 @@ def Theorem_3_10 : Prop :=
 
 /-- Paper, Theorem 3.11 (part (a) of the main theorem): "For rule 154 and every `n ≥ 3`: `k* = 1` if `n` is a
 power of two (`n ≥ 4`), and `k* = 0` otherwise. In the first case `S = {{0}}`, `k_000 = 0` and `k_v = 1` for the
-seven other codes `v`; in the second case `S` is the set of all cycles and `k_v = 0` for all eight codes `v`." -/
+seven other codes `v`; in the second case `S` is the set of all cycles and `k_v = 0` for all eight codes `v`."
+"`S = {{0}}`" is stated as: `S = {C0}` for every cycle `C0` whose set of states is `{0}`; such a cycle exists by
+`Zero_cycle`, and a cycle is determined by its set of states. -/
 def Theorem_3_11 : Prop :=
   ∀ (n : ℕ) [NeZero n], 3 ≤ n →
     (IsPowTwo n →
